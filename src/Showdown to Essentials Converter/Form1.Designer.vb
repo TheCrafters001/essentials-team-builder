@@ -66,8 +66,20 @@ Partial Class Form1
         Me.save_btn = New System.Windows.Forms.Button()
         Me.multiOutput_chkBox = New System.Windows.Forms.CheckBox()
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
+        Me.pokemonOne_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonTwo_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonThree_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonFour_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonFive_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonSix_grp = New System.Windows.Forms.GroupBox()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
+        Me.pg_POne.SuspendLayout()
+        Me.pg_PTwo.SuspendLayout()
+        Me.pg_PThree.SuspendLayout()
+        Me.pg_PFour.SuspendLayout()
+        Me.pg_PFive.SuspendLayout()
+        Me.pg_PSix.SuspendLayout()
         Me.pg_Output.SuspendLayout()
         Me.pg_About.SuspendLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -144,6 +156,7 @@ Partial Class Form1
         '
         'pg_POne
         '
+        Me.pg_POne.Controls.Add(Me.pokemonOne_grp)
         Me.pg_POne.Location = New System.Drawing.Point(4, 22)
         Me.pg_POne.Name = "pg_POne"
         Me.pg_POne.Padding = New System.Windows.Forms.Padding(3)
@@ -154,6 +167,7 @@ Partial Class Form1
         '
         'pg_PTwo
         '
+        Me.pg_PTwo.Controls.Add(Me.pokemonTwo_grp)
         Me.pg_PTwo.Location = New System.Drawing.Point(4, 22)
         Me.pg_PTwo.Name = "pg_PTwo"
         Me.pg_PTwo.Size = New System.Drawing.Size(752, 511)
@@ -163,6 +177,7 @@ Partial Class Form1
         '
         'pg_PThree
         '
+        Me.pg_PThree.Controls.Add(Me.pokemonThree_grp)
         Me.pg_PThree.Location = New System.Drawing.Point(4, 22)
         Me.pg_PThree.Name = "pg_PThree"
         Me.pg_PThree.Size = New System.Drawing.Size(752, 511)
@@ -172,6 +187,7 @@ Partial Class Form1
         '
         'pg_PFour
         '
+        Me.pg_PFour.Controls.Add(Me.pokemonFour_grp)
         Me.pg_PFour.Location = New System.Drawing.Point(4, 22)
         Me.pg_PFour.Name = "pg_PFour"
         Me.pg_PFour.Size = New System.Drawing.Size(752, 511)
@@ -181,6 +197,7 @@ Partial Class Form1
         '
         'pg_PFive
         '
+        Me.pg_PFive.Controls.Add(Me.pokemonFive_grp)
         Me.pg_PFive.Location = New System.Drawing.Point(4, 22)
         Me.pg_PFive.Name = "pg_PFive"
         Me.pg_PFive.Size = New System.Drawing.Size(752, 511)
@@ -190,6 +207,7 @@ Partial Class Form1
         '
         'pg_PSix
         '
+        Me.pg_PSix.Controls.Add(Me.pokemonSix_grp)
         Me.pg_PSix.Location = New System.Drawing.Point(4, 22)
         Me.pg_PSix.Name = "pg_PSix"
         Me.pg_PSix.Size = New System.Drawing.Size(752, 511)
@@ -476,6 +494,60 @@ Partial Class Form1
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
         '
+        'pokemonOne_grp
+        '
+        Me.pokemonOne_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonOne_grp.Name = "pokemonOne_grp"
+        Me.pokemonOne_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonOne_grp.TabIndex = 0
+        Me.pokemonOne_grp.TabStop = False
+        Me.pokemonOne_grp.Text = "Pokémon 1"
+        '
+        'pokemonTwo_grp
+        '
+        Me.pokemonTwo_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonTwo_grp.Name = "pokemonTwo_grp"
+        Me.pokemonTwo_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonTwo_grp.TabIndex = 1
+        Me.pokemonTwo_grp.TabStop = False
+        Me.pokemonTwo_grp.Text = "Pokémon 2"
+        '
+        'pokemonThree_grp
+        '
+        Me.pokemonThree_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonThree_grp.Name = "pokemonThree_grp"
+        Me.pokemonThree_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonThree_grp.TabIndex = 1
+        Me.pokemonThree_grp.TabStop = False
+        Me.pokemonThree_grp.Text = "Pokémon 3"
+        '
+        'pokemonFour_grp
+        '
+        Me.pokemonFour_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonFour_grp.Name = "pokemonFour_grp"
+        Me.pokemonFour_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonFour_grp.TabIndex = 1
+        Me.pokemonFour_grp.TabStop = False
+        Me.pokemonFour_grp.Text = "Pokémon 4"
+        '
+        'pokemonFive_grp
+        '
+        Me.pokemonFive_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonFive_grp.Name = "pokemonFive_grp"
+        Me.pokemonFive_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonFive_grp.TabIndex = 1
+        Me.pokemonFive_grp.TabStop = False
+        Me.pokemonFive_grp.Text = "Pokémon 5"
+        '
+        'pokemonSix_grp
+        '
+        Me.pokemonSix_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonSix_grp.Name = "pokemonSix_grp"
+        Me.pokemonSix_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonSix_grp.TabIndex = 1
+        Me.pokemonSix_grp.TabStop = False
+        Me.pokemonSix_grp.Text = "Pokémon 6"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -491,6 +563,12 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.pg_Trainer.ResumeLayout(False)
         Me.pg_Trainer.PerformLayout()
+        Me.pg_POne.ResumeLayout(False)
+        Me.pg_PTwo.ResumeLayout(False)
+        Me.pg_PThree.ResumeLayout(False)
+        Me.pg_PFour.ResumeLayout(False)
+        Me.pg_PFive.ResumeLayout(False)
+        Me.pg_PSix.ResumeLayout(False)
         Me.pg_Output.ResumeLayout(False)
         Me.pg_Output.PerformLayout()
         Me.pg_About.ResumeLayout(False)
@@ -544,4 +622,10 @@ Partial Class Form1
     Friend WithEvents generate_btn As Button
     Friend WithEvents outputBox_rchBox As RichTextBox
     Friend WithEvents codeExporter_dialog As SaveFileDialog
+    Friend WithEvents pokemonOne_grp As GroupBox
+    Friend WithEvents pokemonTwo_grp As GroupBox
+    Friend WithEvents pokemonThree_grp As GroupBox
+    Friend WithEvents pokemonFour_grp As GroupBox
+    Friend WithEvents pokemonFive_grp As GroupBox
+    Friend WithEvents pokemonSix_grp As GroupBox
 End Class
