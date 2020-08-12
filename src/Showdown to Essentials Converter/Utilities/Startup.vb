@@ -4,6 +4,9 @@
         Form1.pokemonOneGender_cmb.SelectedIndex = 2
         Form1.pokemonOneNature_cmb.SelectedIndex = 0
         Form1.pokemonOneAbility_cmb.SelectedIndex = 0
+        Form1.pokemonOneShinyFalse_rad.Checked = True
+        Form1.pokemonOneShadowFalse_rad.Checked = True
+        Form1.pokemonOnePokeballID_cmb.SelectedIndex = 0
         Form1.Timer1.Start()
     End Sub
     Public Shared Sub TimerChecker()
