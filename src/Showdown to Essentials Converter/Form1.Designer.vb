@@ -73,7 +73,6 @@ Partial Class Form1
         Me.pg_PSix = New System.Windows.Forms.TabPage()
         Me.pokemonSix_grp = New System.Windows.Forms.GroupBox()
         Me.pg_Output = New System.Windows.Forms.TabPage()
-        Me.multiOutput_chkBox = New System.Windows.Forms.CheckBox()
         Me.save_btn = New System.Windows.Forms.Button()
         Me.generate_btn = New System.Windows.Forms.Button()
         Me.outputBox_rchBox = New System.Windows.Forms.RichTextBox()
@@ -662,7 +661,6 @@ Partial Class Form1
         '
         'pg_Output
         '
-        Me.pg_Output.Controls.Add(Me.multiOutput_chkBox)
         Me.pg_Output.Controls.Add(Me.save_btn)
         Me.pg_Output.Controls.Add(Me.generate_btn)
         Me.pg_Output.Controls.Add(Me.outputBox_rchBox)
@@ -672,16 +670,6 @@ Partial Class Form1
         Me.pg_Output.TabIndex = 8
         Me.pg_Output.Text = "Output"
         Me.pg_Output.UseVisualStyleBackColor = True
-        '
-        'multiOutput_chkBox
-        '
-        Me.multiOutput_chkBox.AutoSize = True
-        Me.multiOutput_chkBox.Location = New System.Drawing.Point(3, 489)
-        Me.multiOutput_chkBox.Name = "multiOutput_chkBox"
-        Me.multiOutput_chkBox.Size = New System.Drawing.Size(169, 17)
-        Me.multiOutput_chkBox.TabIndex = 3
-        Me.multiOutput_chkBox.Text = "Multi Output (Experimental)"
-        Me.multiOutput_chkBox.UseVisualStyleBackColor = True
         '
         'save_btn
         '
@@ -1302,7 +1290,6 @@ Partial Class Form1
         Me.pg_PFive.ResumeLayout(False)
         Me.pg_PSix.ResumeLayout(False)
         Me.pg_Output.ResumeLayout(False)
-        Me.pg_Output.PerformLayout()
         Me.pg_About.ResumeLayout(False)
         Me.pg_About.PerformLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1357,7 +1344,6 @@ Partial Class Form1
     Friend WithEvents itemThree_txtBox As TextBox
     Friend WithEvents itemTwo_txtBox As TextBox
     Friend WithEvents itemOne_txtBox As TextBox
-    Friend WithEvents multiOutput_chkBox As CheckBox
     Friend WithEvents save_btn As Button
     Friend WithEvents generate_btn As Button
     Friend WithEvents outputBox_rchBox As RichTextBox
