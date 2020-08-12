@@ -137,6 +137,39 @@ Partial Class Form1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.pokemonTwoName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonTwoName_lbl = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeForm_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeAbility_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeAbility_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonThreeLvl_textBox = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeLvl_lbl = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.pokemonThreeMoves_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonThreeMove4_textBox = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeMove3_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeMove2_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeMove1_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeGender_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeGender_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonThreeHeldItem_txtBox = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.pokemonThreeName_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeName_lbl = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.trainerItems_grp.SuspendLayout()
@@ -146,6 +179,7 @@ Partial Class Form1
         Me.pg_PTwo.SuspendLayout()
         Me.pokemonTwo_grp.SuspendLayout()
         Me.pg_PThree.SuspendLayout()
+        Me.pokemonThree_grp.SuspendLayout()
         Me.pg_PFour.SuspendLayout()
         Me.pg_PFive.SuspendLayout()
         Me.pg_PSix.SuspendLayout()
@@ -158,6 +192,9 @@ Partial Class Form1
         Me.pokemonTwoShadow_grp.SuspendLayout()
         Me.pokemonTwoShiny_grp.SuspendLayout()
         Me.pokemonTwoMoves_grp.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.pokemonThreeMoves_grp.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -595,6 +632,31 @@ Partial Class Form1
         '
         'pokemonThree_grp
         '
+        Me.pokemonThree_grp.Controls.Add(Me.ComboBox1)
+        Me.pokemonThree_grp.Controls.Add(Me.Label1)
+        Me.pokemonThree_grp.Controls.Add(Me.GroupBox1)
+        Me.pokemonThree_grp.Controls.Add(Me.TextBox1)
+        Me.pokemonThree_grp.Controls.Add(Me.Label2)
+        Me.pokemonThree_grp.Controls.Add(Me.TextBox2)
+        Me.pokemonThree_grp.Controls.Add(Me.Label3)
+        Me.pokemonThree_grp.Controls.Add(Me.GroupBox2)
+        Me.pokemonThree_grp.Controls.Add(Me.TextBox3)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeForm_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeAbility_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeAbility_cmb)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeLvl_textBox)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeLvl_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.TextBox5)
+        Me.pokemonThree_grp.Controls.Add(Me.Label7)
+        Me.pokemonThree_grp.Controls.Add(Me.Label8)
+        Me.pokemonThree_grp.Controls.Add(Me.ComboBox3)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeMoves_grp)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeGender_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeGender_cmb)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeHeldItem_txtBox)
+        Me.pokemonThree_grp.Controls.Add(Me.Label11)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeName_txtBox)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeName_lbl)
         Me.pokemonThree_grp.Location = New System.Drawing.Point(6, 6)
         Me.pokemonThree_grp.Name = "pokemonThree_grp"
         Me.pokemonThree_grp.Size = New System.Drawing.Size(740, 499)
@@ -1260,6 +1322,306 @@ Partial Class Form1
         Me.pokemonTwoName_lbl.TabIndex = 24
         Me.pokemonTwoName_lbl.Text = "Pokémon Name"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.ComboBox1.Location = New System.Drawing.Point(330, 166)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(312, 21)
+        Me.ComboBox1.TabIndex = 73
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(327, 150)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(51, 13)
+        Me.Label1.TabIndex = 72
+        Me.Label1.Text = "Pokéball"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.RadioButton2)
+        Me.GroupBox1.Location = New System.Drawing.Point(330, 103)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(312, 44)
+        Me.GroupBox1.TabIndex = 68
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Shadow"
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(63, 21)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(47, 17)
+        Me.RadioButton1.TabIndex = 1
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "True"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(6, 21)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(51, 17)
+        Me.RadioButton2.TabIndex = 0
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "False"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(330, 75)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(312, 22)
+        Me.TextBox1.TabIndex = 71
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(327, 59)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(108, 13)
+        Me.Label2.TabIndex = 70
+        Me.Label2.Text = "Pokémon Nickname"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(330, 34)
+        Me.TextBox2.MaxLength = 3
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(312, 22)
+        Me.TextBox2.TabIndex = 69
+        Me.TextBox2.Text = "70"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(327, 18)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(114, 13)
+        Me.Label3.TabIndex = 67
+        Me.Label3.Text = "Happyness (Max 255)"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.RadioButton3)
+        Me.GroupBox2.Controls.Add(Me.RadioButton4)
+        Me.GroupBox2.Location = New System.Drawing.Point(9, 374)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(312, 44)
+        Me.GroupBox2.TabIndex = 66
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Shiny"
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(63, 21)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(47, 17)
+        Me.RadioButton3.TabIndex = 1
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "True"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Location = New System.Drawing.Point(6, 21)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(51, 17)
+        Me.RadioButton4.TabIndex = 0
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "False"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(9, 346)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(312, 22)
+        Me.TextBox3.TabIndex = 54
+        '
+        'pokemonThreeForm_lbl
+        '
+        Me.pokemonThreeForm_lbl.AutoSize = True
+        Me.pokemonThreeForm_lbl.Location = New System.Drawing.Point(6, 330)
+        Me.pokemonThreeForm_lbl.Name = "pokemonThreeForm_lbl"
+        Me.pokemonThreeForm_lbl.Size = New System.Drawing.Size(84, 13)
+        Me.pokemonThreeForm_lbl.TabIndex = 65
+        Me.pokemonThreeForm_lbl.Text = "Pokémon Form"
+        '
+        'pokemonThreeAbility_lbl
+        '
+        Me.pokemonThreeAbility_lbl.AutoSize = True
+        Me.pokemonThreeAbility_lbl.Location = New System.Drawing.Point(6, 250)
+        Me.pokemonThreeAbility_lbl.Name = "pokemonThreeAbility_lbl"
+        Me.pokemonThreeAbility_lbl.Size = New System.Drawing.Size(218, 13)
+        Me.pokemonThreeAbility_lbl.TabIndex = 64
+        Me.pokemonThreeAbility_lbl.Text = "Pokémon Ability (0-1 Normal, 2-5 Hidden)"
+        '
+        'pokemonThreeAbility_cmb
+        '
+        Me.pokemonThreeAbility_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonThreeAbility_cmb.FormattingEnabled = True
+        Me.pokemonThreeAbility_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.pokemonThreeAbility_cmb.Location = New System.Drawing.Point(9, 266)
+        Me.pokemonThreeAbility_cmb.Name = "pokemonThreeAbility_cmb"
+        Me.pokemonThreeAbility_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonThreeAbility_cmb.TabIndex = 63
+        '
+        'pokemonThreeLvl_textBox
+        '
+        Me.pokemonThreeLvl_textBox.Location = New System.Drawing.Point(9, 75)
+        Me.pokemonThreeLvl_textBox.MaxLength = 3
+        Me.pokemonThreeLvl_textBox.Name = "pokemonThreeLvl_textBox"
+        Me.pokemonThreeLvl_textBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonThreeLvl_textBox.TabIndex = 62
+        '
+        'pokemonThreeLvl_lbl
+        '
+        Me.pokemonThreeLvl_lbl.AutoSize = True
+        Me.pokemonThreeLvl_lbl.Location = New System.Drawing.Point(6, 59)
+        Me.pokemonThreeLvl_lbl.Name = "pokemonThreeLvl_lbl"
+        Me.pokemonThreeLvl_lbl.Size = New System.Drawing.Size(83, 13)
+        Me.pokemonThreeLvl_lbl.TabIndex = 61
+        Me.pokemonThreeLvl_lbl.Text = "Level (Max 100)"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(9, 477)
+        Me.TextBox5.MaxLength = 2
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(312, 22)
+        Me.TextBox5.TabIndex = 60
+        Me.TextBox5.Text = "10"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(6, 461)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(67, 13)
+        Me.Label7.TabIndex = 59
+        Me.Label7.Text = "IVs (Max 31)"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(6, 421)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(93, 13)
+        Me.Label8.TabIndex = 58
+        Me.Label8.Text = "Pokémon Nature"
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"(random)", "HARDY", "LONELY", "BRAVE", "ADAMANT", "NAUGHTY", "BOLD", "DOCILE", "RELAXED", "IMPISH", "LAX", "MODEST", "MILD", "SERIOUS", "QUIET", "RASH", "CALM", "GENTLE", "SASSY", "BASHFUL", "CAREFUL", "TIMID", "HASTY", "JOLLY", "NAIVE", "QUIRKY"})
+        Me.ComboBox3.Location = New System.Drawing.Point(9, 437)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(312, 21)
+        Me.ComboBox3.TabIndex = 57
+        '
+        'pokemonThreeMoves_grp
+        '
+        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeMove4_textBox)
+        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeMove3_txtBox)
+        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeMove2_txtBox)
+        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeMove1_txtBox)
+        Me.pokemonThreeMoves_grp.Location = New System.Drawing.Point(9, 103)
+        Me.pokemonThreeMoves_grp.Name = "pokemonThreeMoves_grp"
+        Me.pokemonThreeMoves_grp.Size = New System.Drawing.Size(312, 144)
+        Me.pokemonThreeMoves_grp.TabIndex = 56
+        Me.pokemonThreeMoves_grp.TabStop = False
+        Me.pokemonThreeMoves_grp.Text = "Moves"
+        '
+        'pokemonThreeMove4_textBox
+        '
+        Me.pokemonThreeMove4_textBox.Location = New System.Drawing.Point(6, 105)
+        Me.pokemonThreeMove4_textBox.Name = "pokemonThreeMove4_textBox"
+        Me.pokemonThreeMove4_textBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonThreeMove4_textBox.TabIndex = 3
+        '
+        'pokemonThreeMove3_txtBox
+        '
+        Me.pokemonThreeMove3_txtBox.Location = New System.Drawing.Point(6, 77)
+        Me.pokemonThreeMove3_txtBox.Name = "pokemonThreeMove3_txtBox"
+        Me.pokemonThreeMove3_txtBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonThreeMove3_txtBox.TabIndex = 2
+        '
+        'pokemonThreeMove2_txtBox
+        '
+        Me.pokemonThreeMove2_txtBox.Location = New System.Drawing.Point(6, 49)
+        Me.pokemonThreeMove2_txtBox.Name = "pokemonThreeMove2_txtBox"
+        Me.pokemonThreeMove2_txtBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonThreeMove2_txtBox.TabIndex = 1
+        '
+        'pokemonThreeMove1_txtBox
+        '
+        Me.pokemonThreeMove1_txtBox.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonThreeMove1_txtBox.Name = "pokemonThreeMove1_txtBox"
+        Me.pokemonThreeMove1_txtBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonThreeMove1_txtBox.TabIndex = 0
+        '
+        'pokemonThreeGender_lbl
+        '
+        Me.pokemonThreeGender_lbl.AutoSize = True
+        Me.pokemonThreeGender_lbl.Location = New System.Drawing.Point(6, 290)
+        Me.pokemonThreeGender_lbl.Name = "pokemonThreeGender_lbl"
+        Me.pokemonThreeGender_lbl.Size = New System.Drawing.Size(96, 13)
+        Me.pokemonThreeGender_lbl.TabIndex = 55
+        Me.pokemonThreeGender_lbl.Text = "Pokémon Gender"
+        '
+        'pokemonThreeGender_cmb
+        '
+        Me.pokemonThreeGender_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonThreeGender_cmb.FormattingEnabled = True
+        Me.pokemonThreeGender_cmb.Items.AddRange(New Object() {"M", "F", "(random)"})
+        Me.pokemonThreeGender_cmb.Location = New System.Drawing.Point(9, 306)
+        Me.pokemonThreeGender_cmb.Name = "pokemonThreeGender_cmb"
+        Me.pokemonThreeGender_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonThreeGender_cmb.TabIndex = 53
+        '
+        'pokemonThreeHeldItem_txtBox
+        '
+        Me.pokemonThreeHeldItem_txtBox.Location = New System.Drawing.Point(180, 34)
+        Me.pokemonThreeHeldItem_txtBox.Name = "pokemonThreeHeldItem_txtBox"
+        Me.pokemonThreeHeldItem_txtBox.Size = New System.Drawing.Size(141, 22)
+        Me.pokemonThreeHeldItem_txtBox.TabIndex = 52
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(156, 37)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(18, 13)
+        Me.Label11.TabIndex = 51
+        Me.Label11.Text = "@"
+        '
+        'pokemonThreeName_txtBox
+        '
+        Me.pokemonThreeName_txtBox.Location = New System.Drawing.Point(9, 34)
+        Me.pokemonThreeName_txtBox.Name = "pokemonThreeName_txtBox"
+        Me.pokemonThreeName_txtBox.Size = New System.Drawing.Size(141, 22)
+        Me.pokemonThreeName_txtBox.TabIndex = 50
+        '
+        'pokemonThreeName_lbl
+        '
+        Me.pokemonThreeName_lbl.AutoSize = True
+        Me.pokemonThreeName_lbl.Location = New System.Drawing.Point(6, 18)
+        Me.pokemonThreeName_lbl.Name = "pokemonThreeName_lbl"
+        Me.pokemonThreeName_lbl.Size = New System.Drawing.Size(87, 13)
+        Me.pokemonThreeName_lbl.TabIndex = 49
+        Me.pokemonThreeName_lbl.Text = "Pokémon Name"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1286,6 +1648,8 @@ Partial Class Form1
         Me.pokemonTwo_grp.ResumeLayout(False)
         Me.pokemonTwo_grp.PerformLayout()
         Me.pg_PThree.ResumeLayout(False)
+        Me.pokemonThree_grp.ResumeLayout(False)
+        Me.pokemonThree_grp.PerformLayout()
         Me.pg_PFour.ResumeLayout(False)
         Me.pg_PFive.ResumeLayout(False)
         Me.pg_PSix.ResumeLayout(False)
@@ -1304,6 +1668,12 @@ Partial Class Form1
         Me.pokemonTwoShiny_grp.PerformLayout()
         Me.pokemonTwoMoves_grp.ResumeLayout(False)
         Me.pokemonTwoMoves_grp.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.pokemonThreeMoves_grp.ResumeLayout(False)
+        Me.pokemonThreeMoves_grp.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1420,4 +1790,37 @@ Partial Class Form1
     Friend WithEvents Label10 As Label
     Friend WithEvents pokemonTwoName_txtBox As TextBox
     Friend WithEvents pokemonTwoName_lbl As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents pokemonThreeForm_lbl As Label
+    Friend WithEvents pokemonThreeAbility_lbl As Label
+    Friend WithEvents pokemonThreeAbility_cmb As ComboBox
+    Friend WithEvents pokemonThreeLvl_textBox As TextBox
+    Friend WithEvents pokemonThreeLvl_lbl As Label
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents pokemonThreeMoves_grp As GroupBox
+    Friend WithEvents pokemonThreeMove4_textBox As TextBox
+    Friend WithEvents pokemonThreeMove3_txtBox As TextBox
+    Friend WithEvents pokemonThreeMove2_txtBox As TextBox
+    Friend WithEvents pokemonThreeMove1_txtBox As TextBox
+    Friend WithEvents pokemonThreeGender_lbl As Label
+    Friend WithEvents pokemonThreeGender_cmb As ComboBox
+    Friend WithEvents pokemonThreeHeldItem_txtBox As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents pokemonThreeName_txtBox As TextBox
+    Friend WithEvents pokemonThreeName_lbl As Label
 End Class
