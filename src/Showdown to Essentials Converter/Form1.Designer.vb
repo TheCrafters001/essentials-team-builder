@@ -49,6 +49,26 @@ Partial Class Form1
         Me.trainerInfoTitle_lbl = New System.Windows.Forms.Label()
         Me.pg_POne = New System.Windows.Forms.TabPage()
         Me.pokemonOne_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonOnePokeballID_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonOnePokeballID_lbl = New System.Windows.Forms.Label()
+        Me.pokemonOneShadow_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonOneShadow_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonOneShadowFalse_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonOneNickName_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonOneNickName_lbl = New System.Windows.Forms.Label()
+        Me.pokemonOneHappyness_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonOneHappyness_lbl = New System.Windows.Forms.Label()
+        Me.pokemonOneShiny_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonOneShiny_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonOneShinyFalse_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonOneForm_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonOneForm_lbl = New System.Windows.Forms.Label()
+        Me.pokemonOneAbility_lbl = New System.Windows.Forms.Label()
+        Me.pokemonOneAbility_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonOneLvl_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonOneLvl_lbl = New System.Windows.Forms.Label()
+        Me.pokemonOneIVs_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonOneIVs_lbl = New System.Windows.Forms.Label()
         Me.pokemonOneNature_lbl = New System.Windows.Forms.Label()
         Me.pokemonOneNature_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonOneMoves_grp = New System.Windows.Forms.GroupBox()
@@ -64,46 +84,6 @@ Partial Class Form1
         Me.pokemonOneName_lbl = New System.Windows.Forms.Label()
         Me.pg_PTwo = New System.Windows.Forms.TabPage()
         Me.pokemonTwo_grp = New System.Windows.Forms.GroupBox()
-        Me.pg_PThree = New System.Windows.Forms.TabPage()
-        Me.pokemonThree_grp = New System.Windows.Forms.GroupBox()
-        Me.pg_PFour = New System.Windows.Forms.TabPage()
-        Me.pokemonFour_grp = New System.Windows.Forms.GroupBox()
-        Me.pg_PFive = New System.Windows.Forms.TabPage()
-        Me.pokemonFive_grp = New System.Windows.Forms.GroupBox()
-        Me.pg_PSix = New System.Windows.Forms.TabPage()
-        Me.pokemonSix_grp = New System.Windows.Forms.GroupBox()
-        Me.pg_Output = New System.Windows.Forms.TabPage()
-        Me.save_btn = New System.Windows.Forms.Button()
-        Me.generate_btn = New System.Windows.Forms.Button()
-        Me.outputBox_rchBox = New System.Windows.Forms.RichTextBox()
-        Me.pg_About = New System.Windows.Forms.TabPage()
-        Me.aboutText_lbl = New System.Windows.Forms.Label()
-        Me.gnuGPL3_picBox = New System.Windows.Forms.PictureBox()
-        Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
-        Me.aboutTitle_lbl = New System.Windows.Forms.Label()
-        Me.Logo_picBox = New System.Windows.Forms.PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
-        Me.pokemonOneIVs_lbl = New System.Windows.Forms.Label()
-        Me.pokemonOneIVs_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonOneLvl_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonOneLvl_lbl = New System.Windows.Forms.Label()
-        Me.pokemonOneAbility_lbl = New System.Windows.Forms.Label()
-        Me.pokemonOneAbility_cmb = New System.Windows.Forms.ComboBox()
-        Me.pokemonOneForm_lbl = New System.Windows.Forms.Label()
-        Me.pokemonOneForm_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonOneShiny_grp = New System.Windows.Forms.GroupBox()
-        Me.pokemonOneShinyFalse_rad = New System.Windows.Forms.RadioButton()
-        Me.pokemonOneShiny_rad = New System.Windows.Forms.RadioButton()
-        Me.pokemonOneHappyness_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonOneHappyness_lbl = New System.Windows.Forms.Label()
-        Me.pokemonOneNickName_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonOneNickName_lbl = New System.Windows.Forms.Label()
-        Me.pokemonOneShadow_grp = New System.Windows.Forms.GroupBox()
-        Me.pokemonOneShadow_rad = New System.Windows.Forms.RadioButton()
-        Me.pokemonOneShadowFalse_rad = New System.Windows.Forms.RadioButton()
-        Me.pokemonOnePokeballID_lbl = New System.Windows.Forms.Label()
-        Me.pokemonOnePokeballID_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonTwoPokeballID_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonTwoPokeballID_lbl = New System.Windows.Forms.Label()
         Me.pokemonTwoShadow_grp = New System.Windows.Forms.GroupBox()
@@ -137,28 +117,30 @@ Partial Class Form1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.pokemonTwoName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonTwoName_lbl = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.pg_PThree = New System.Windows.Forms.TabPage()
+        Me.pokemonThree_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonThreePokeballID_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonThreePokeballID_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeShadow_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonThreeShadow_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonThreeShadowFalse_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonThreeNickname_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeNickname_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeHappyness_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeHappyness_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeShiny_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonThreeShiny_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonThreeShinyFalse_Rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonThreeForm_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonThreeForm_lbl = New System.Windows.Forms.Label()
         Me.pokemonThreeAbility_lbl = New System.Windows.Forms.Label()
         Me.pokemonThreeAbility_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonThreeLvl_textBox = New System.Windows.Forms.TextBox()
         Me.pokemonThreeLvl_lbl = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.pokemonThreeIVs_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeIVs_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeNature = New System.Windows.Forms.Label()
+        Me.pokemonThreeNature_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonThreeMoves_grp = New System.Windows.Forms.GroupBox()
         Me.pokemonThreeMove4_textBox = New System.Windows.Forms.TextBox()
         Me.pokemonThreeMove3_txtBox = New System.Windows.Forms.TextBox()
@@ -170,31 +152,86 @@ Partial Class Form1
         Me.Label11 = New System.Windows.Forms.Label()
         Me.pokemonThreeName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonThreeName_lbl = New System.Windows.Forms.Label()
+        Me.pg_PFour = New System.Windows.Forms.TabPage()
+        Me.pokemonFour_grp = New System.Windows.Forms.GroupBox()
+        Me.pg_PFive = New System.Windows.Forms.TabPage()
+        Me.pokemonFive_grp = New System.Windows.Forms.GroupBox()
+        Me.pg_PSix = New System.Windows.Forms.TabPage()
+        Me.pokemonSix_grp = New System.Windows.Forms.GroupBox()
+        Me.pg_Output = New System.Windows.Forms.TabPage()
+        Me.save_btn = New System.Windows.Forms.Button()
+        Me.generate_btn = New System.Windows.Forms.Button()
+        Me.outputBox_rchBox = New System.Windows.Forms.RichTextBox()
+        Me.pg_About = New System.Windows.Forms.TabPage()
+        Me.aboutText_lbl = New System.Windows.Forms.Label()
+        Me.gnuGPL3_picBox = New System.Windows.Forms.PictureBox()
+        Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
+        Me.aboutTitle_lbl = New System.Windows.Forms.Label()
+        Me.Logo_picBox = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
+        Me.pokemonFourPokeballID_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonFourPokeballID_lbl = New System.Windows.Forms.Label()
+        Me.pokemonFourShadow_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonFourShadow_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonFourShadowFalse_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonFourNickname_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourNickname_lbl = New System.Windows.Forms.Label()
+        Me.pokemonFourHappyness_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourHappyness_lbl = New System.Windows.Forms.Label()
+        Me.pokemonFourShiny_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonFourShiny_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonFourShinyFalse_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonFourForm_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourForm_lbl = New System.Windows.Forms.Label()
+        Me.pokemonFourAbility_lbl = New System.Windows.Forms.Label()
+        Me.pokemonFourAbility_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonFourlvl_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourlvl_lbl = New System.Windows.Forms.Label()
+        Me.pokemonFourIVs_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourIVs_lbl = New System.Windows.Forms.Label()
+        Me.pokemonFourNature_lbl = New System.Windows.Forms.Label()
+        Me.pokemonFourNature_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonFourMoves_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonFourMove4_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourMove3_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourMove2_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourMove1_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourGender_lbl = New System.Windows.Forms.Label()
+        Me.pokemonFourGender_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonFourHeldItem_txtBox = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.pokemonFourName_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonFourName_lbl = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.trainerItems_grp.SuspendLayout()
         Me.pg_POne.SuspendLayout()
         Me.pokemonOne_grp.SuspendLayout()
+        Me.pokemonOneShadow_grp.SuspendLayout()
+        Me.pokemonOneShiny_grp.SuspendLayout()
         Me.pokemonOneMoves_grp.SuspendLayout()
         Me.pg_PTwo.SuspendLayout()
         Me.pokemonTwo_grp.SuspendLayout()
+        Me.pokemonTwoShadow_grp.SuspendLayout()
+        Me.pokemonTwoShiny_grp.SuspendLayout()
+        Me.pokemonTwoMoves_grp.SuspendLayout()
         Me.pg_PThree.SuspendLayout()
         Me.pokemonThree_grp.SuspendLayout()
+        Me.pokemonThreeShadow_grp.SuspendLayout()
+        Me.pokemonThreeShiny_grp.SuspendLayout()
+        Me.pokemonThreeMoves_grp.SuspendLayout()
         Me.pg_PFour.SuspendLayout()
+        Me.pokemonFour_grp.SuspendLayout()
         Me.pg_PFive.SuspendLayout()
         Me.pg_PSix.SuspendLayout()
         Me.pg_Output.SuspendLayout()
         Me.pg_About.SuspendLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pokemonOneShiny_grp.SuspendLayout()
-        Me.pokemonOneShadow_grp.SuspendLayout()
-        Me.pokemonTwoShadow_grp.SuspendLayout()
-        Me.pokemonTwoShiny_grp.SuspendLayout()
-        Me.pokemonTwoMoves_grp.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.pokemonThreeMoves_grp.SuspendLayout()
+        Me.pokemonFourShadow_grp.SuspendLayout()
+        Me.pokemonFourShiny_grp.SuspendLayout()
+        Me.pokemonFourMoves_grp.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -465,6 +502,195 @@ Partial Class Form1
         Me.pokemonOne_grp.TabStop = False
         Me.pokemonOne_grp.Text = "Pokémon 1"
         '
+        'pokemonOnePokeballID_cmb
+        '
+        Me.pokemonOnePokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonOnePokeballID_cmb.FormattingEnabled = True
+        Me.pokemonOnePokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonOnePokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonOnePokeballID_cmb.Name = "pokemonOnePokeballID_cmb"
+        Me.pokemonOnePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonOnePokeballID_cmb.TabIndex = 23
+        '
+        'pokemonOnePokeballID_lbl
+        '
+        Me.pokemonOnePokeballID_lbl.AutoSize = True
+        Me.pokemonOnePokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonOnePokeballID_lbl.Name = "pokemonOnePokeballID_lbl"
+        Me.pokemonOnePokeballID_lbl.Size = New System.Drawing.Size(51, 13)
+        Me.pokemonOnePokeballID_lbl.TabIndex = 22
+        Me.pokemonOnePokeballID_lbl.Text = "Pokéball"
+        '
+        'pokemonOneShadow_grp
+        '
+        Me.pokemonOneShadow_grp.Controls.Add(Me.pokemonOneShadow_rad)
+        Me.pokemonOneShadow_grp.Controls.Add(Me.pokemonOneShadowFalse_rad)
+        Me.pokemonOneShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonOneShadow_grp.Name = "pokemonOneShadow_grp"
+        Me.pokemonOneShadow_grp.Size = New System.Drawing.Size(312, 44)
+        Me.pokemonOneShadow_grp.TabIndex = 18
+        Me.pokemonOneShadow_grp.TabStop = False
+        Me.pokemonOneShadow_grp.Text = "Shadow"
+        '
+        'pokemonOneShadow_rad
+        '
+        Me.pokemonOneShadow_rad.AutoSize = True
+        Me.pokemonOneShadow_rad.Location = New System.Drawing.Point(63, 21)
+        Me.pokemonOneShadow_rad.Name = "pokemonOneShadow_rad"
+        Me.pokemonOneShadow_rad.Size = New System.Drawing.Size(47, 17)
+        Me.pokemonOneShadow_rad.TabIndex = 1
+        Me.pokemonOneShadow_rad.TabStop = True
+        Me.pokemonOneShadow_rad.Text = "True"
+        Me.pokemonOneShadow_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonOneShadowFalse_rad
+        '
+        Me.pokemonOneShadowFalse_rad.AutoSize = True
+        Me.pokemonOneShadowFalse_rad.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonOneShadowFalse_rad.Name = "pokemonOneShadowFalse_rad"
+        Me.pokemonOneShadowFalse_rad.Size = New System.Drawing.Size(51, 17)
+        Me.pokemonOneShadowFalse_rad.TabIndex = 0
+        Me.pokemonOneShadowFalse_rad.TabStop = True
+        Me.pokemonOneShadowFalse_rad.Text = "False"
+        Me.pokemonOneShadowFalse_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonOneNickName_txtBox
+        '
+        Me.pokemonOneNickName_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonOneNickName_txtBox.Name = "pokemonOneNickName_txtBox"
+        Me.pokemonOneNickName_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonOneNickName_txtBox.TabIndex = 21
+        '
+        'pokemonOneNickName_lbl
+        '
+        Me.pokemonOneNickName_lbl.AutoSize = True
+        Me.pokemonOneNickName_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonOneNickName_lbl.Name = "pokemonOneNickName_lbl"
+        Me.pokemonOneNickName_lbl.Size = New System.Drawing.Size(108, 13)
+        Me.pokemonOneNickName_lbl.TabIndex = 20
+        Me.pokemonOneNickName_lbl.Text = "Pokémon Nickname"
+        '
+        'pokemonOneHappyness_txtBox
+        '
+        Me.pokemonOneHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonOneHappyness_txtBox.MaxLength = 3
+        Me.pokemonOneHappyness_txtBox.Name = "pokemonOneHappyness_txtBox"
+        Me.pokemonOneHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonOneHappyness_txtBox.TabIndex = 19
+        Me.pokemonOneHappyness_txtBox.Text = "70"
+        '
+        'pokemonOneHappyness_lbl
+        '
+        Me.pokemonOneHappyness_lbl.AutoSize = True
+        Me.pokemonOneHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonOneHappyness_lbl.Name = "pokemonOneHappyness_lbl"
+        Me.pokemonOneHappyness_lbl.Size = New System.Drawing.Size(114, 13)
+        Me.pokemonOneHappyness_lbl.TabIndex = 18
+        Me.pokemonOneHappyness_lbl.Text = "Happyness (Max 255)"
+        '
+        'pokemonOneShiny_grp
+        '
+        Me.pokemonOneShiny_grp.Controls.Add(Me.pokemonOneShiny_rad)
+        Me.pokemonOneShiny_grp.Controls.Add(Me.pokemonOneShinyFalse_rad)
+        Me.pokemonOneShiny_grp.Location = New System.Drawing.Point(9, 374)
+        Me.pokemonOneShiny_grp.Name = "pokemonOneShiny_grp"
+        Me.pokemonOneShiny_grp.Size = New System.Drawing.Size(312, 44)
+        Me.pokemonOneShiny_grp.TabIndex = 17
+        Me.pokemonOneShiny_grp.TabStop = False
+        Me.pokemonOneShiny_grp.Text = "Shiny"
+        '
+        'pokemonOneShiny_rad
+        '
+        Me.pokemonOneShiny_rad.AutoSize = True
+        Me.pokemonOneShiny_rad.Location = New System.Drawing.Point(63, 21)
+        Me.pokemonOneShiny_rad.Name = "pokemonOneShiny_rad"
+        Me.pokemonOneShiny_rad.Size = New System.Drawing.Size(47, 17)
+        Me.pokemonOneShiny_rad.TabIndex = 1
+        Me.pokemonOneShiny_rad.TabStop = True
+        Me.pokemonOneShiny_rad.Text = "True"
+        Me.pokemonOneShiny_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonOneShinyFalse_rad
+        '
+        Me.pokemonOneShinyFalse_rad.AutoSize = True
+        Me.pokemonOneShinyFalse_rad.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonOneShinyFalse_rad.Name = "pokemonOneShinyFalse_rad"
+        Me.pokemonOneShinyFalse_rad.Size = New System.Drawing.Size(51, 17)
+        Me.pokemonOneShinyFalse_rad.TabIndex = 0
+        Me.pokemonOneShinyFalse_rad.TabStop = True
+        Me.pokemonOneShinyFalse_rad.Text = "False"
+        Me.pokemonOneShinyFalse_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonOneForm_txtBox
+        '
+        Me.pokemonOneForm_txtBox.Location = New System.Drawing.Point(9, 346)
+        Me.pokemonOneForm_txtBox.Name = "pokemonOneForm_txtBox"
+        Me.pokemonOneForm_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonOneForm_txtBox.TabIndex = 4
+        '
+        'pokemonOneForm_lbl
+        '
+        Me.pokemonOneForm_lbl.AutoSize = True
+        Me.pokemonOneForm_lbl.Location = New System.Drawing.Point(6, 330)
+        Me.pokemonOneForm_lbl.Name = "pokemonOneForm_lbl"
+        Me.pokemonOneForm_lbl.Size = New System.Drawing.Size(166, 13)
+        Me.pokemonOneForm_lbl.TabIndex = 16
+        Me.pokemonOneForm_lbl.Text = "Pokémon Form (Numbers Only)"
+        '
+        'pokemonOneAbility_lbl
+        '
+        Me.pokemonOneAbility_lbl.AutoSize = True
+        Me.pokemonOneAbility_lbl.Location = New System.Drawing.Point(6, 250)
+        Me.pokemonOneAbility_lbl.Name = "pokemonOneAbility_lbl"
+        Me.pokemonOneAbility_lbl.Size = New System.Drawing.Size(218, 13)
+        Me.pokemonOneAbility_lbl.TabIndex = 14
+        Me.pokemonOneAbility_lbl.Text = "Pokémon Ability (0-1 Normal, 2-5 Hidden)"
+        '
+        'pokemonOneAbility_cmb
+        '
+        Me.pokemonOneAbility_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonOneAbility_cmb.FormattingEnabled = True
+        Me.pokemonOneAbility_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.pokemonOneAbility_cmb.Location = New System.Drawing.Point(9, 266)
+        Me.pokemonOneAbility_cmb.Name = "pokemonOneAbility_cmb"
+        Me.pokemonOneAbility_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonOneAbility_cmb.TabIndex = 13
+        '
+        'pokemonOneLvl_txtBox
+        '
+        Me.pokemonOneLvl_txtBox.Location = New System.Drawing.Point(9, 75)
+        Me.pokemonOneLvl_txtBox.MaxLength = 3
+        Me.pokemonOneLvl_txtBox.Name = "pokemonOneLvl_txtBox"
+        Me.pokemonOneLvl_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonOneLvl_txtBox.TabIndex = 12
+        '
+        'pokemonOneLvl_lbl
+        '
+        Me.pokemonOneLvl_lbl.AutoSize = True
+        Me.pokemonOneLvl_lbl.Location = New System.Drawing.Point(6, 59)
+        Me.pokemonOneLvl_lbl.Name = "pokemonOneLvl_lbl"
+        Me.pokemonOneLvl_lbl.Size = New System.Drawing.Size(83, 13)
+        Me.pokemonOneLvl_lbl.TabIndex = 11
+        Me.pokemonOneLvl_lbl.Text = "Level (Max 100)"
+        '
+        'pokemonOneIVs_txtBox
+        '
+        Me.pokemonOneIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonOneIVs_txtBox.MaxLength = 2
+        Me.pokemonOneIVs_txtBox.Name = "pokemonOneIVs_txtBox"
+        Me.pokemonOneIVs_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonOneIVs_txtBox.TabIndex = 10
+        Me.pokemonOneIVs_txtBox.Text = "10"
+        '
+        'pokemonOneIVs_lbl
+        '
+        Me.pokemonOneIVs_lbl.AutoSize = True
+        Me.pokemonOneIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonOneIVs_lbl.Name = "pokemonOneIVs_lbl"
+        Me.pokemonOneIVs_lbl.Size = New System.Drawing.Size(67, 13)
+        Me.pokemonOneIVs_lbl.TabIndex = 9
+        Me.pokemonOneIVs_lbl.Text = "IVs (Max 31)"
+        '
         'pokemonOneNature_lbl
         '
         Me.pokemonOneNature_lbl.AutoSize = True
@@ -620,408 +846,6 @@ Partial Class Form1
         Me.pokemonTwo_grp.TabStop = False
         Me.pokemonTwo_grp.Text = "Pokémon 2"
         '
-        'pg_PThree
-        '
-        Me.pg_PThree.Controls.Add(Me.pokemonThree_grp)
-        Me.pg_PThree.Location = New System.Drawing.Point(4, 22)
-        Me.pg_PThree.Name = "pg_PThree"
-        Me.pg_PThree.Size = New System.Drawing.Size(752, 511)
-        Me.pg_PThree.TabIndex = 3
-        Me.pg_PThree.Text = "Pokémon 3"
-        Me.pg_PThree.UseVisualStyleBackColor = True
-        '
-        'pokemonThree_grp
-        '
-        Me.pokemonThree_grp.Controls.Add(Me.ComboBox1)
-        Me.pokemonThree_grp.Controls.Add(Me.Label1)
-        Me.pokemonThree_grp.Controls.Add(Me.GroupBox1)
-        Me.pokemonThree_grp.Controls.Add(Me.TextBox1)
-        Me.pokemonThree_grp.Controls.Add(Me.Label2)
-        Me.pokemonThree_grp.Controls.Add(Me.TextBox2)
-        Me.pokemonThree_grp.Controls.Add(Me.Label3)
-        Me.pokemonThree_grp.Controls.Add(Me.GroupBox2)
-        Me.pokemonThree_grp.Controls.Add(Me.TextBox3)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeForm_lbl)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeAbility_lbl)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeAbility_cmb)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeLvl_textBox)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeLvl_lbl)
-        Me.pokemonThree_grp.Controls.Add(Me.TextBox5)
-        Me.pokemonThree_grp.Controls.Add(Me.Label7)
-        Me.pokemonThree_grp.Controls.Add(Me.Label8)
-        Me.pokemonThree_grp.Controls.Add(Me.ComboBox3)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeMoves_grp)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeGender_lbl)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeGender_cmb)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeHeldItem_txtBox)
-        Me.pokemonThree_grp.Controls.Add(Me.Label11)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeName_txtBox)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeName_lbl)
-        Me.pokemonThree_grp.Location = New System.Drawing.Point(6, 6)
-        Me.pokemonThree_grp.Name = "pokemonThree_grp"
-        Me.pokemonThree_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonThree_grp.TabIndex = 1
-        Me.pokemonThree_grp.TabStop = False
-        Me.pokemonThree_grp.Text = "Pokémon 3"
-        '
-        'pg_PFour
-        '
-        Me.pg_PFour.Controls.Add(Me.pokemonFour_grp)
-        Me.pg_PFour.Location = New System.Drawing.Point(4, 22)
-        Me.pg_PFour.Name = "pg_PFour"
-        Me.pg_PFour.Size = New System.Drawing.Size(752, 511)
-        Me.pg_PFour.TabIndex = 4
-        Me.pg_PFour.Text = "Pokémon 4"
-        Me.pg_PFour.UseVisualStyleBackColor = True
-        '
-        'pokemonFour_grp
-        '
-        Me.pokemonFour_grp.Location = New System.Drawing.Point(6, 6)
-        Me.pokemonFour_grp.Name = "pokemonFour_grp"
-        Me.pokemonFour_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonFour_grp.TabIndex = 1
-        Me.pokemonFour_grp.TabStop = False
-        Me.pokemonFour_grp.Text = "Pokémon 4"
-        '
-        'pg_PFive
-        '
-        Me.pg_PFive.Controls.Add(Me.pokemonFive_grp)
-        Me.pg_PFive.Location = New System.Drawing.Point(4, 22)
-        Me.pg_PFive.Name = "pg_PFive"
-        Me.pg_PFive.Size = New System.Drawing.Size(752, 511)
-        Me.pg_PFive.TabIndex = 5
-        Me.pg_PFive.Text = "Pokémon 5"
-        Me.pg_PFive.UseVisualStyleBackColor = True
-        '
-        'pokemonFive_grp
-        '
-        Me.pokemonFive_grp.Location = New System.Drawing.Point(6, 6)
-        Me.pokemonFive_grp.Name = "pokemonFive_grp"
-        Me.pokemonFive_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonFive_grp.TabIndex = 1
-        Me.pokemonFive_grp.TabStop = False
-        Me.pokemonFive_grp.Text = "Pokémon 5"
-        '
-        'pg_PSix
-        '
-        Me.pg_PSix.Controls.Add(Me.pokemonSix_grp)
-        Me.pg_PSix.Location = New System.Drawing.Point(4, 22)
-        Me.pg_PSix.Name = "pg_PSix"
-        Me.pg_PSix.Size = New System.Drawing.Size(752, 511)
-        Me.pg_PSix.TabIndex = 6
-        Me.pg_PSix.Text = "Pokémon 6"
-        Me.pg_PSix.UseVisualStyleBackColor = True
-        '
-        'pokemonSix_grp
-        '
-        Me.pokemonSix_grp.Location = New System.Drawing.Point(6, 6)
-        Me.pokemonSix_grp.Name = "pokemonSix_grp"
-        Me.pokemonSix_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonSix_grp.TabIndex = 1
-        Me.pokemonSix_grp.TabStop = False
-        Me.pokemonSix_grp.Text = "Pokémon 6"
-        '
-        'pg_Output
-        '
-        Me.pg_Output.Controls.Add(Me.save_btn)
-        Me.pg_Output.Controls.Add(Me.generate_btn)
-        Me.pg_Output.Controls.Add(Me.outputBox_rchBox)
-        Me.pg_Output.Location = New System.Drawing.Point(4, 22)
-        Me.pg_Output.Name = "pg_Output"
-        Me.pg_Output.Size = New System.Drawing.Size(752, 511)
-        Me.pg_Output.TabIndex = 8
-        Me.pg_Output.Text = "Output"
-        Me.pg_Output.UseVisualStyleBackColor = True
-        '
-        'save_btn
-        '
-        Me.save_btn.Location = New System.Drawing.Point(593, 485)
-        Me.save_btn.Name = "save_btn"
-        Me.save_btn.Size = New System.Drawing.Size(75, 23)
-        Me.save_btn.TabIndex = 2
-        Me.save_btn.Text = "Save"
-        Me.save_btn.UseVisualStyleBackColor = True
-        '
-        'generate_btn
-        '
-        Me.generate_btn.Location = New System.Drawing.Point(674, 485)
-        Me.generate_btn.Name = "generate_btn"
-        Me.generate_btn.Size = New System.Drawing.Size(75, 23)
-        Me.generate_btn.TabIndex = 1
-        Me.generate_btn.Text = "Generate"
-        Me.generate_btn.UseVisualStyleBackColor = True
-        '
-        'outputBox_rchBox
-        '
-        Me.outputBox_rchBox.DetectUrls = False
-        Me.outputBox_rchBox.Location = New System.Drawing.Point(3, 3)
-        Me.outputBox_rchBox.Name = "outputBox_rchBox"
-        Me.outputBox_rchBox.ReadOnly = True
-        Me.outputBox_rchBox.Size = New System.Drawing.Size(746, 476)
-        Me.outputBox_rchBox.TabIndex = 0
-        Me.outputBox_rchBox.Text = ""
-        '
-        'pg_About
-        '
-        Me.pg_About.Controls.Add(Me.aboutText_lbl)
-        Me.pg_About.Controls.Add(Me.gnuGPL3_picBox)
-        Me.pg_About.Controls.Add(Me.aboutAuthor_lbl)
-        Me.pg_About.Controls.Add(Me.aboutTitle_lbl)
-        Me.pg_About.Controls.Add(Me.Logo_picBox)
-        Me.pg_About.Location = New System.Drawing.Point(4, 22)
-        Me.pg_About.Name = "pg_About"
-        Me.pg_About.Size = New System.Drawing.Size(752, 511)
-        Me.pg_About.TabIndex = 7
-        Me.pg_About.Text = "About"
-        Me.pg_About.UseVisualStyleBackColor = True
-        '
-        'aboutText_lbl
-        '
-        Me.aboutText_lbl.Location = New System.Drawing.Point(9, 174)
-        Me.aboutText_lbl.Name = "aboutText_lbl"
-        Me.aboutText_lbl.Size = New System.Drawing.Size(737, 263)
-        Me.aboutText_lbl.TabIndex = 9
-        Me.aboutText_lbl.Text = resources.GetString("aboutText_lbl.Text")
-        '
-        'gnuGPL3_picBox
-        '
-        Me.gnuGPL3_picBox.Image = Global.Showdown_to_Essentials_Converter.My.Resources.Resources.gplv3_with_text_136x68
-        Me.gnuGPL3_picBox.Location = New System.Drawing.Point(610, 440)
-        Me.gnuGPL3_picBox.Name = "gnuGPL3_picBox"
-        Me.gnuGPL3_picBox.Size = New System.Drawing.Size(136, 68)
-        Me.gnuGPL3_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.gnuGPL3_picBox.TabIndex = 8
-        Me.gnuGPL3_picBox.TabStop = False
-        '
-        'aboutAuthor_lbl
-        '
-        Me.aboutAuthor_lbl.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.aboutAuthor_lbl.Location = New System.Drawing.Point(6, 142)
-        Me.aboutAuthor_lbl.Name = "aboutAuthor_lbl"
-        Me.aboutAuthor_lbl.Size = New System.Drawing.Size(740, 32)
-        Me.aboutAuthor_lbl.TabIndex = 7
-        Me.aboutAuthor_lbl.Text = "By TheCrafters001"
-        Me.aboutAuthor_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'aboutTitle_lbl
-        '
-        Me.aboutTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.aboutTitle_lbl.Location = New System.Drawing.Point(6, 110)
-        Me.aboutTitle_lbl.Name = "aboutTitle_lbl"
-        Me.aboutTitle_lbl.Size = New System.Drawing.Size(740, 32)
-        Me.aboutTitle_lbl.TabIndex = 6
-        Me.aboutTitle_lbl.Text = "Pokémon Showdown to Pokémon Essentials Converter"
-        Me.aboutTitle_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Logo_picBox
-        '
-        Me.Logo_picBox.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Logo_picBox.Image = Global.Showdown_to_Essentials_Converter.My.Resources.Resources.Showdown_to_Essentials_Logo
-        Me.Logo_picBox.Location = New System.Drawing.Point(0, 0)
-        Me.Logo_picBox.Name = "Logo_picBox"
-        Me.Logo_picBox.Size = New System.Drawing.Size(752, 101)
-        Me.Logo_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Logo_picBox.TabIndex = 5
-        Me.Logo_picBox.TabStop = False
-        '
-        'Timer1
-        '
-        '
-        'codeExporter_dialog
-        '
-        Me.codeExporter_dialog.CheckFileExists = True
-        Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
-        Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
-        '
-        'pokemonOneIVs_lbl
-        '
-        Me.pokemonOneIVs_lbl.AutoSize = True
-        Me.pokemonOneIVs_lbl.Location = New System.Drawing.Point(6, 461)
-        Me.pokemonOneIVs_lbl.Name = "pokemonOneIVs_lbl"
-        Me.pokemonOneIVs_lbl.Size = New System.Drawing.Size(67, 13)
-        Me.pokemonOneIVs_lbl.TabIndex = 9
-        Me.pokemonOneIVs_lbl.Text = "IVs (Max 31)"
-        '
-        'pokemonOneIVs_txtBox
-        '
-        Me.pokemonOneIVs_txtBox.Location = New System.Drawing.Point(9, 477)
-        Me.pokemonOneIVs_txtBox.MaxLength = 2
-        Me.pokemonOneIVs_txtBox.Name = "pokemonOneIVs_txtBox"
-        Me.pokemonOneIVs_txtBox.Size = New System.Drawing.Size(312, 22)
-        Me.pokemonOneIVs_txtBox.TabIndex = 10
-        Me.pokemonOneIVs_txtBox.Text = "10"
-        '
-        'pokemonOneLvl_txtBox
-        '
-        Me.pokemonOneLvl_txtBox.Location = New System.Drawing.Point(9, 75)
-        Me.pokemonOneLvl_txtBox.MaxLength = 3
-        Me.pokemonOneLvl_txtBox.Name = "pokemonOneLvl_txtBox"
-        Me.pokemonOneLvl_txtBox.Size = New System.Drawing.Size(312, 22)
-        Me.pokemonOneLvl_txtBox.TabIndex = 12
-        '
-        'pokemonOneLvl_lbl
-        '
-        Me.pokemonOneLvl_lbl.AutoSize = True
-        Me.pokemonOneLvl_lbl.Location = New System.Drawing.Point(6, 59)
-        Me.pokemonOneLvl_lbl.Name = "pokemonOneLvl_lbl"
-        Me.pokemonOneLvl_lbl.Size = New System.Drawing.Size(83, 13)
-        Me.pokemonOneLvl_lbl.TabIndex = 11
-        Me.pokemonOneLvl_lbl.Text = "Level (Max 100)"
-        '
-        'pokemonOneAbility_lbl
-        '
-        Me.pokemonOneAbility_lbl.AutoSize = True
-        Me.pokemonOneAbility_lbl.Location = New System.Drawing.Point(6, 250)
-        Me.pokemonOneAbility_lbl.Name = "pokemonOneAbility_lbl"
-        Me.pokemonOneAbility_lbl.Size = New System.Drawing.Size(218, 13)
-        Me.pokemonOneAbility_lbl.TabIndex = 14
-        Me.pokemonOneAbility_lbl.Text = "Pokémon Ability (0-1 Normal, 2-5 Hidden)"
-        '
-        'pokemonOneAbility_cmb
-        '
-        Me.pokemonOneAbility_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.pokemonOneAbility_cmb.FormattingEnabled = True
-        Me.pokemonOneAbility_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.pokemonOneAbility_cmb.Location = New System.Drawing.Point(9, 266)
-        Me.pokemonOneAbility_cmb.Name = "pokemonOneAbility_cmb"
-        Me.pokemonOneAbility_cmb.Size = New System.Drawing.Size(312, 21)
-        Me.pokemonOneAbility_cmb.TabIndex = 13
-        '
-        'pokemonOneForm_lbl
-        '
-        Me.pokemonOneForm_lbl.AutoSize = True
-        Me.pokemonOneForm_lbl.Location = New System.Drawing.Point(6, 330)
-        Me.pokemonOneForm_lbl.Name = "pokemonOneForm_lbl"
-        Me.pokemonOneForm_lbl.Size = New System.Drawing.Size(84, 13)
-        Me.pokemonOneForm_lbl.TabIndex = 16
-        Me.pokemonOneForm_lbl.Text = "Pokémon Form"
-        '
-        'pokemonOneForm_txtBox
-        '
-        Me.pokemonOneForm_txtBox.Location = New System.Drawing.Point(9, 346)
-        Me.pokemonOneForm_txtBox.Name = "pokemonOneForm_txtBox"
-        Me.pokemonOneForm_txtBox.Size = New System.Drawing.Size(312, 22)
-        Me.pokemonOneForm_txtBox.TabIndex = 4
-        '
-        'pokemonOneShiny_grp
-        '
-        Me.pokemonOneShiny_grp.Controls.Add(Me.pokemonOneShiny_rad)
-        Me.pokemonOneShiny_grp.Controls.Add(Me.pokemonOneShinyFalse_rad)
-        Me.pokemonOneShiny_grp.Location = New System.Drawing.Point(9, 374)
-        Me.pokemonOneShiny_grp.Name = "pokemonOneShiny_grp"
-        Me.pokemonOneShiny_grp.Size = New System.Drawing.Size(312, 44)
-        Me.pokemonOneShiny_grp.TabIndex = 17
-        Me.pokemonOneShiny_grp.TabStop = False
-        Me.pokemonOneShiny_grp.Text = "Shiny"
-        '
-        'pokemonOneShinyFalse_rad
-        '
-        Me.pokemonOneShinyFalse_rad.AutoSize = True
-        Me.pokemonOneShinyFalse_rad.Location = New System.Drawing.Point(6, 21)
-        Me.pokemonOneShinyFalse_rad.Name = "pokemonOneShinyFalse_rad"
-        Me.pokemonOneShinyFalse_rad.Size = New System.Drawing.Size(51, 17)
-        Me.pokemonOneShinyFalse_rad.TabIndex = 0
-        Me.pokemonOneShinyFalse_rad.TabStop = True
-        Me.pokemonOneShinyFalse_rad.Text = "False"
-        Me.pokemonOneShinyFalse_rad.UseVisualStyleBackColor = True
-        '
-        'pokemonOneShiny_rad
-        '
-        Me.pokemonOneShiny_rad.AutoSize = True
-        Me.pokemonOneShiny_rad.Location = New System.Drawing.Point(63, 21)
-        Me.pokemonOneShiny_rad.Name = "pokemonOneShiny_rad"
-        Me.pokemonOneShiny_rad.Size = New System.Drawing.Size(47, 17)
-        Me.pokemonOneShiny_rad.TabIndex = 1
-        Me.pokemonOneShiny_rad.TabStop = True
-        Me.pokemonOneShiny_rad.Text = "True"
-        Me.pokemonOneShiny_rad.UseVisualStyleBackColor = True
-        '
-        'pokemonOneHappyness_txtBox
-        '
-        Me.pokemonOneHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
-        Me.pokemonOneHappyness_txtBox.MaxLength = 3
-        Me.pokemonOneHappyness_txtBox.Name = "pokemonOneHappyness_txtBox"
-        Me.pokemonOneHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
-        Me.pokemonOneHappyness_txtBox.TabIndex = 19
-        Me.pokemonOneHappyness_txtBox.Text = "70"
-        '
-        'pokemonOneHappyness_lbl
-        '
-        Me.pokemonOneHappyness_lbl.AutoSize = True
-        Me.pokemonOneHappyness_lbl.Location = New System.Drawing.Point(327, 18)
-        Me.pokemonOneHappyness_lbl.Name = "pokemonOneHappyness_lbl"
-        Me.pokemonOneHappyness_lbl.Size = New System.Drawing.Size(114, 13)
-        Me.pokemonOneHappyness_lbl.TabIndex = 18
-        Me.pokemonOneHappyness_lbl.Text = "Happyness (Max 255)"
-        '
-        'pokemonOneNickName_txtBox
-        '
-        Me.pokemonOneNickName_txtBox.Location = New System.Drawing.Point(330, 75)
-        Me.pokemonOneNickName_txtBox.Name = "pokemonOneNickName_txtBox"
-        Me.pokemonOneNickName_txtBox.Size = New System.Drawing.Size(312, 22)
-        Me.pokemonOneNickName_txtBox.TabIndex = 21
-        '
-        'pokemonOneNickName_lbl
-        '
-        Me.pokemonOneNickName_lbl.AutoSize = True
-        Me.pokemonOneNickName_lbl.Location = New System.Drawing.Point(327, 59)
-        Me.pokemonOneNickName_lbl.Name = "pokemonOneNickName_lbl"
-        Me.pokemonOneNickName_lbl.Size = New System.Drawing.Size(108, 13)
-        Me.pokemonOneNickName_lbl.TabIndex = 20
-        Me.pokemonOneNickName_lbl.Text = "Pokémon Nickname"
-        '
-        'pokemonOneShadow_grp
-        '
-        Me.pokemonOneShadow_grp.Controls.Add(Me.pokemonOneShadow_rad)
-        Me.pokemonOneShadow_grp.Controls.Add(Me.pokemonOneShadowFalse_rad)
-        Me.pokemonOneShadow_grp.Location = New System.Drawing.Point(330, 103)
-        Me.pokemonOneShadow_grp.Name = "pokemonOneShadow_grp"
-        Me.pokemonOneShadow_grp.Size = New System.Drawing.Size(312, 44)
-        Me.pokemonOneShadow_grp.TabIndex = 18
-        Me.pokemonOneShadow_grp.TabStop = False
-        Me.pokemonOneShadow_grp.Text = "Shadow"
-        '
-        'pokemonOneShadow_rad
-        '
-        Me.pokemonOneShadow_rad.AutoSize = True
-        Me.pokemonOneShadow_rad.Location = New System.Drawing.Point(63, 21)
-        Me.pokemonOneShadow_rad.Name = "pokemonOneShadow_rad"
-        Me.pokemonOneShadow_rad.Size = New System.Drawing.Size(47, 17)
-        Me.pokemonOneShadow_rad.TabIndex = 1
-        Me.pokemonOneShadow_rad.TabStop = True
-        Me.pokemonOneShadow_rad.Text = "True"
-        Me.pokemonOneShadow_rad.UseVisualStyleBackColor = True
-        '
-        'pokemonOneShadowFalse_rad
-        '
-        Me.pokemonOneShadowFalse_rad.AutoSize = True
-        Me.pokemonOneShadowFalse_rad.Location = New System.Drawing.Point(6, 21)
-        Me.pokemonOneShadowFalse_rad.Name = "pokemonOneShadowFalse_rad"
-        Me.pokemonOneShadowFalse_rad.Size = New System.Drawing.Size(51, 17)
-        Me.pokemonOneShadowFalse_rad.TabIndex = 0
-        Me.pokemonOneShadowFalse_rad.TabStop = True
-        Me.pokemonOneShadowFalse_rad.Text = "False"
-        Me.pokemonOneShadowFalse_rad.UseVisualStyleBackColor = True
-        '
-        'pokemonOnePokeballID_lbl
-        '
-        Me.pokemonOnePokeballID_lbl.AutoSize = True
-        Me.pokemonOnePokeballID_lbl.Location = New System.Drawing.Point(327, 150)
-        Me.pokemonOnePokeballID_lbl.Name = "pokemonOnePokeballID_lbl"
-        Me.pokemonOnePokeballID_lbl.Size = New System.Drawing.Size(51, 13)
-        Me.pokemonOnePokeballID_lbl.TabIndex = 22
-        Me.pokemonOnePokeballID_lbl.Text = "Pokéball"
-        '
-        'pokemonOnePokeballID_cmb
-        '
-        Me.pokemonOnePokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.pokemonOnePokeballID_cmb.FormattingEnabled = True
-        Me.pokemonOnePokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
-        Me.pokemonOnePokeballID_cmb.Location = New System.Drawing.Point(330, 166)
-        Me.pokemonOnePokeballID_cmb.Name = "pokemonOnePokeballID_cmb"
-        Me.pokemonOnePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
-        Me.pokemonOnePokeballID_cmb.TabIndex = 23
-        '
         'pokemonTwoPokeballID_cmb
         '
         Me.pokemonTwoPokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -1153,9 +977,9 @@ Partial Class Form1
         Me.pokemonTwoForm_lbl.AutoSize = True
         Me.pokemonTwoForm_lbl.Location = New System.Drawing.Point(6, 330)
         Me.pokemonTwoForm_lbl.Name = "pokemonTwoForm_lbl"
-        Me.pokemonTwoForm_lbl.Size = New System.Drawing.Size(84, 13)
+        Me.pokemonTwoForm_lbl.Size = New System.Drawing.Size(166, 13)
         Me.pokemonTwoForm_lbl.TabIndex = 40
-        Me.pokemonTwoForm_lbl.Text = "Pokémon Form"
+        Me.pokemonTwoForm_lbl.Text = "Pokémon Form (Numbers Only)"
         '
         'pokemonTwoAbility_lbl
         '
@@ -1322,140 +1146,184 @@ Partial Class Form1
         Me.pokemonTwoName_lbl.TabIndex = 24
         Me.pokemonTwoName_lbl.Text = "Pokémon Name"
         '
-        'ComboBox1
+        'pg_PThree
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
-        Me.ComboBox1.Location = New System.Drawing.Point(330, 166)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(312, 21)
-        Me.ComboBox1.TabIndex = 73
+        Me.pg_PThree.Controls.Add(Me.pokemonThree_grp)
+        Me.pg_PThree.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PThree.Name = "pg_PThree"
+        Me.pg_PThree.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PThree.TabIndex = 3
+        Me.pg_PThree.Text = "Pokémon 3"
+        Me.pg_PThree.UseVisualStyleBackColor = True
         '
-        'Label1
+        'pokemonThree_grp
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(327, 150)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 13)
-        Me.Label1.TabIndex = 72
-        Me.Label1.Text = "Pokéball"
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_cmb)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeShadow_grp)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeNickname_txtBox)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeNickname_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeHappyness_txtBox)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeHappyness_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeShiny_grp)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeForm_txtBox)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeForm_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeAbility_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeAbility_cmb)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeLvl_textBox)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeLvl_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeIVs_txtBox)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeIVs_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeNature)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeNature_cmb)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeMoves_grp)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeGender_lbl)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeGender_cmb)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeHeldItem_txtBox)
+        Me.pokemonThree_grp.Controls.Add(Me.Label11)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeName_txtBox)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeName_lbl)
+        Me.pokemonThree_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonThree_grp.Name = "pokemonThree_grp"
+        Me.pokemonThree_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonThree_grp.TabIndex = 1
+        Me.pokemonThree_grp.TabStop = False
+        Me.pokemonThree_grp.Text = "Pokémon 3"
         '
-        'GroupBox1
+        'pokemonThreePokeballID_cmb
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Location = New System.Drawing.Point(330, 103)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(312, 44)
-        Me.GroupBox1.TabIndex = 68
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Shadow"
+        Me.pokemonThreePokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonThreePokeballID_cmb.FormattingEnabled = True
+        Me.pokemonThreePokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonThreePokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonThreePokeballID_cmb.Name = "pokemonThreePokeballID_cmb"
+        Me.pokemonThreePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonThreePokeballID_cmb.TabIndex = 73
         '
-        'RadioButton1
+        'pokemonThreePokeballID_lbl
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(63, 21)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton1.TabIndex = 1
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "True"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.pokemonThreePokeballID_lbl.AutoSize = True
+        Me.pokemonThreePokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonThreePokeballID_lbl.Name = "pokemonThreePokeballID_lbl"
+        Me.pokemonThreePokeballID_lbl.Size = New System.Drawing.Size(51, 13)
+        Me.pokemonThreePokeballID_lbl.TabIndex = 72
+        Me.pokemonThreePokeballID_lbl.Text = "Pokéball"
         '
-        'RadioButton2
+        'pokemonThreeShadow_grp
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(6, 21)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(51, 17)
-        Me.RadioButton2.TabIndex = 0
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "False"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.pokemonThreeShadow_grp.Controls.Add(Me.pokemonThreeShadow_rad)
+        Me.pokemonThreeShadow_grp.Controls.Add(Me.pokemonThreeShadowFalse_rad)
+        Me.pokemonThreeShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonThreeShadow_grp.Name = "pokemonThreeShadow_grp"
+        Me.pokemonThreeShadow_grp.Size = New System.Drawing.Size(312, 44)
+        Me.pokemonThreeShadow_grp.TabIndex = 68
+        Me.pokemonThreeShadow_grp.TabStop = False
+        Me.pokemonThreeShadow_grp.Text = "Shadow"
         '
-        'TextBox1
+        'pokemonThreeShadow_rad
         '
-        Me.TextBox1.Location = New System.Drawing.Point(330, 75)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(312, 22)
-        Me.TextBox1.TabIndex = 71
+        Me.pokemonThreeShadow_rad.AutoSize = True
+        Me.pokemonThreeShadow_rad.Location = New System.Drawing.Point(63, 21)
+        Me.pokemonThreeShadow_rad.Name = "pokemonThreeShadow_rad"
+        Me.pokemonThreeShadow_rad.Size = New System.Drawing.Size(47, 17)
+        Me.pokemonThreeShadow_rad.TabIndex = 1
+        Me.pokemonThreeShadow_rad.TabStop = True
+        Me.pokemonThreeShadow_rad.Text = "True"
+        Me.pokemonThreeShadow_rad.UseVisualStyleBackColor = True
         '
-        'Label2
+        'pokemonThreeShadowFalse_rad
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(327, 59)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(108, 13)
-        Me.Label2.TabIndex = 70
-        Me.Label2.Text = "Pokémon Nickname"
+        Me.pokemonThreeShadowFalse_rad.AutoSize = True
+        Me.pokemonThreeShadowFalse_rad.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonThreeShadowFalse_rad.Name = "pokemonThreeShadowFalse_rad"
+        Me.pokemonThreeShadowFalse_rad.Size = New System.Drawing.Size(51, 17)
+        Me.pokemonThreeShadowFalse_rad.TabIndex = 0
+        Me.pokemonThreeShadowFalse_rad.TabStop = True
+        Me.pokemonThreeShadowFalse_rad.Text = "False"
+        Me.pokemonThreeShadowFalse_rad.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'pokemonThreeNickname_txtBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(330, 34)
-        Me.TextBox2.MaxLength = 3
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(312, 22)
-        Me.TextBox2.TabIndex = 69
-        Me.TextBox2.Text = "70"
+        Me.pokemonThreeNickname_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonThreeNickname_txtBox.Name = "pokemonThreeNickname_txtBox"
+        Me.pokemonThreeNickname_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonThreeNickname_txtBox.TabIndex = 71
         '
-        'Label3
+        'pokemonThreeNickname_lbl
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(327, 18)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(114, 13)
-        Me.Label3.TabIndex = 67
-        Me.Label3.Text = "Happyness (Max 255)"
+        Me.pokemonThreeNickname_lbl.AutoSize = True
+        Me.pokemonThreeNickname_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonThreeNickname_lbl.Name = "pokemonThreeNickname_lbl"
+        Me.pokemonThreeNickname_lbl.Size = New System.Drawing.Size(108, 13)
+        Me.pokemonThreeNickname_lbl.TabIndex = 70
+        Me.pokemonThreeNickname_lbl.Text = "Pokémon Nickname"
         '
-        'GroupBox2
+        'pokemonThreeHappyness_txtBox
         '
-        Me.GroupBox2.Controls.Add(Me.RadioButton3)
-        Me.GroupBox2.Controls.Add(Me.RadioButton4)
-        Me.GroupBox2.Location = New System.Drawing.Point(9, 374)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(312, 44)
-        Me.GroupBox2.TabIndex = 66
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Shiny"
+        Me.pokemonThreeHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonThreeHappyness_txtBox.MaxLength = 3
+        Me.pokemonThreeHappyness_txtBox.Name = "pokemonThreeHappyness_txtBox"
+        Me.pokemonThreeHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonThreeHappyness_txtBox.TabIndex = 69
+        Me.pokemonThreeHappyness_txtBox.Text = "70"
         '
-        'RadioButton3
+        'pokemonThreeHappyness_lbl
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(63, 21)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton3.TabIndex = 1
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "True"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.pokemonThreeHappyness_lbl.AutoSize = True
+        Me.pokemonThreeHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonThreeHappyness_lbl.Name = "pokemonThreeHappyness_lbl"
+        Me.pokemonThreeHappyness_lbl.Size = New System.Drawing.Size(114, 13)
+        Me.pokemonThreeHappyness_lbl.TabIndex = 67
+        Me.pokemonThreeHappyness_lbl.Text = "Happyness (Max 255)"
         '
-        'RadioButton4
+        'pokemonThreeShiny_grp
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(6, 21)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(51, 17)
-        Me.RadioButton4.TabIndex = 0
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "False"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.pokemonThreeShiny_grp.Controls.Add(Me.pokemonThreeShiny_rad)
+        Me.pokemonThreeShiny_grp.Controls.Add(Me.pokemonThreeShinyFalse_Rad)
+        Me.pokemonThreeShiny_grp.Location = New System.Drawing.Point(9, 374)
+        Me.pokemonThreeShiny_grp.Name = "pokemonThreeShiny_grp"
+        Me.pokemonThreeShiny_grp.Size = New System.Drawing.Size(312, 44)
+        Me.pokemonThreeShiny_grp.TabIndex = 66
+        Me.pokemonThreeShiny_grp.TabStop = False
+        Me.pokemonThreeShiny_grp.Text = "Shiny"
         '
-        'TextBox3
+        'pokemonThreeShiny_rad
         '
-        Me.TextBox3.Location = New System.Drawing.Point(9, 346)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(312, 22)
-        Me.TextBox3.TabIndex = 54
+        Me.pokemonThreeShiny_rad.AutoSize = True
+        Me.pokemonThreeShiny_rad.Location = New System.Drawing.Point(63, 21)
+        Me.pokemonThreeShiny_rad.Name = "pokemonThreeShiny_rad"
+        Me.pokemonThreeShiny_rad.Size = New System.Drawing.Size(47, 17)
+        Me.pokemonThreeShiny_rad.TabIndex = 1
+        Me.pokemonThreeShiny_rad.TabStop = True
+        Me.pokemonThreeShiny_rad.Text = "True"
+        Me.pokemonThreeShiny_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonThreeShinyFalse_Rad
+        '
+        Me.pokemonThreeShinyFalse_Rad.AutoSize = True
+        Me.pokemonThreeShinyFalse_Rad.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonThreeShinyFalse_Rad.Name = "pokemonThreeShinyFalse_Rad"
+        Me.pokemonThreeShinyFalse_Rad.Size = New System.Drawing.Size(51, 17)
+        Me.pokemonThreeShinyFalse_Rad.TabIndex = 0
+        Me.pokemonThreeShinyFalse_Rad.TabStop = True
+        Me.pokemonThreeShinyFalse_Rad.Text = "False"
+        Me.pokemonThreeShinyFalse_Rad.UseVisualStyleBackColor = True
+        '
+        'pokemonThreeForm_txtBox
+        '
+        Me.pokemonThreeForm_txtBox.Location = New System.Drawing.Point(9, 346)
+        Me.pokemonThreeForm_txtBox.Name = "pokemonThreeForm_txtBox"
+        Me.pokemonThreeForm_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonThreeForm_txtBox.TabIndex = 54
         '
         'pokemonThreeForm_lbl
         '
         Me.pokemonThreeForm_lbl.AutoSize = True
         Me.pokemonThreeForm_lbl.Location = New System.Drawing.Point(6, 330)
         Me.pokemonThreeForm_lbl.Name = "pokemonThreeForm_lbl"
-        Me.pokemonThreeForm_lbl.Size = New System.Drawing.Size(84, 13)
+        Me.pokemonThreeForm_lbl.Size = New System.Drawing.Size(166, 13)
         Me.pokemonThreeForm_lbl.TabIndex = 65
-        Me.pokemonThreeForm_lbl.Text = "Pokémon Form"
+        Me.pokemonThreeForm_lbl.Text = "Pokémon Form (Numbers Only)"
         '
         'pokemonThreeAbility_lbl
         '
@@ -1493,42 +1361,42 @@ Partial Class Form1
         Me.pokemonThreeLvl_lbl.TabIndex = 61
         Me.pokemonThreeLvl_lbl.Text = "Level (Max 100)"
         '
-        'TextBox5
+        'pokemonThreeIVs_txtBox
         '
-        Me.TextBox5.Location = New System.Drawing.Point(9, 477)
-        Me.TextBox5.MaxLength = 2
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(312, 22)
-        Me.TextBox5.TabIndex = 60
-        Me.TextBox5.Text = "10"
+        Me.pokemonThreeIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonThreeIVs_txtBox.MaxLength = 2
+        Me.pokemonThreeIVs_txtBox.Name = "pokemonThreeIVs_txtBox"
+        Me.pokemonThreeIVs_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonThreeIVs_txtBox.TabIndex = 60
+        Me.pokemonThreeIVs_txtBox.Text = "10"
         '
-        'Label7
+        'pokemonThreeIVs_lbl
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(6, 461)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(67, 13)
-        Me.Label7.TabIndex = 59
-        Me.Label7.Text = "IVs (Max 31)"
+        Me.pokemonThreeIVs_lbl.AutoSize = True
+        Me.pokemonThreeIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonThreeIVs_lbl.Name = "pokemonThreeIVs_lbl"
+        Me.pokemonThreeIVs_lbl.Size = New System.Drawing.Size(67, 13)
+        Me.pokemonThreeIVs_lbl.TabIndex = 59
+        Me.pokemonThreeIVs_lbl.Text = "IVs (Max 31)"
         '
-        'Label8
+        'pokemonThreeNature
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(6, 421)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(93, 13)
-        Me.Label8.TabIndex = 58
-        Me.Label8.Text = "Pokémon Nature"
+        Me.pokemonThreeNature.AutoSize = True
+        Me.pokemonThreeNature.Location = New System.Drawing.Point(6, 421)
+        Me.pokemonThreeNature.Name = "pokemonThreeNature"
+        Me.pokemonThreeNature.Size = New System.Drawing.Size(93, 13)
+        Me.pokemonThreeNature.TabIndex = 58
+        Me.pokemonThreeNature.Text = "Pokémon Nature"
         '
-        'ComboBox3
+        'pokemonThreeNature_cmb
         '
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"(random)", "HARDY", "LONELY", "BRAVE", "ADAMANT", "NAUGHTY", "BOLD", "DOCILE", "RELAXED", "IMPISH", "LAX", "MODEST", "MILD", "SERIOUS", "QUIET", "RASH", "CALM", "GENTLE", "SASSY", "BASHFUL", "CAREFUL", "TIMID", "HASTY", "JOLLY", "NAIVE", "QUIRKY"})
-        Me.ComboBox3.Location = New System.Drawing.Point(9, 437)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(312, 21)
-        Me.ComboBox3.TabIndex = 57
+        Me.pokemonThreeNature_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonThreeNature_cmb.FormattingEnabled = True
+        Me.pokemonThreeNature_cmb.Items.AddRange(New Object() {"(random)", "HARDY", "LONELY", "BRAVE", "ADAMANT", "NAUGHTY", "BOLD", "DOCILE", "RELAXED", "IMPISH", "LAX", "MODEST", "MILD", "SERIOUS", "QUIET", "RASH", "CALM", "GENTLE", "SASSY", "BASHFUL", "CAREFUL", "TIMID", "HASTY", "JOLLY", "NAIVE", "QUIRKY"})
+        Me.pokemonThreeNature_cmb.Location = New System.Drawing.Point(9, 437)
+        Me.pokemonThreeNature_cmb.Name = "pokemonThreeNature_cmb"
+        Me.pokemonThreeNature_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonThreeNature_cmb.TabIndex = 57
         '
         'pokemonThreeMoves_grp
         '
@@ -1622,6 +1490,500 @@ Partial Class Form1
         Me.pokemonThreeName_lbl.TabIndex = 49
         Me.pokemonThreeName_lbl.Text = "Pokémon Name"
         '
+        'pg_PFour
+        '
+        Me.pg_PFour.Controls.Add(Me.pokemonFour_grp)
+        Me.pg_PFour.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PFour.Name = "pg_PFour"
+        Me.pg_PFour.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PFour.TabIndex = 4
+        Me.pg_PFour.Text = "Pokémon 4"
+        Me.pg_PFour.UseVisualStyleBackColor = True
+        '
+        'pokemonFour_grp
+        '
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_cmb)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_lbl)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourShadow_grp)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourNickname_txtBox)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourNickname_lbl)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourHappyness_txtBox)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourHappyness_lbl)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourShiny_grp)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourForm_txtBox)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourForm_lbl)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourAbility_lbl)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourAbility_cmb)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourlvl_txtBox)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourlvl_lbl)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourIVs_txtBox)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourIVs_lbl)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourNature_lbl)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourNature_cmb)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourMoves_grp)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourGender_lbl)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourGender_cmb)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourHeldItem_txtBox)
+        Me.pokemonFour_grp.Controls.Add(Me.Label12)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourName_txtBox)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourName_lbl)
+        Me.pokemonFour_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonFour_grp.Name = "pokemonFour_grp"
+        Me.pokemonFour_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonFour_grp.TabIndex = 1
+        Me.pokemonFour_grp.TabStop = False
+        Me.pokemonFour_grp.Text = "Pokémon 4"
+        '
+        'pg_PFive
+        '
+        Me.pg_PFive.Controls.Add(Me.pokemonFive_grp)
+        Me.pg_PFive.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PFive.Name = "pg_PFive"
+        Me.pg_PFive.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PFive.TabIndex = 5
+        Me.pg_PFive.Text = "Pokémon 5"
+        Me.pg_PFive.UseVisualStyleBackColor = True
+        '
+        'pokemonFive_grp
+        '
+        Me.pokemonFive_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonFive_grp.Name = "pokemonFive_grp"
+        Me.pokemonFive_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonFive_grp.TabIndex = 1
+        Me.pokemonFive_grp.TabStop = False
+        Me.pokemonFive_grp.Text = "Pokémon 5"
+        '
+        'pg_PSix
+        '
+        Me.pg_PSix.Controls.Add(Me.pokemonSix_grp)
+        Me.pg_PSix.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PSix.Name = "pg_PSix"
+        Me.pg_PSix.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PSix.TabIndex = 6
+        Me.pg_PSix.Text = "Pokémon 6"
+        Me.pg_PSix.UseVisualStyleBackColor = True
+        '
+        'pokemonSix_grp
+        '
+        Me.pokemonSix_grp.Location = New System.Drawing.Point(6, 6)
+        Me.pokemonSix_grp.Name = "pokemonSix_grp"
+        Me.pokemonSix_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonSix_grp.TabIndex = 1
+        Me.pokemonSix_grp.TabStop = False
+        Me.pokemonSix_grp.Text = "Pokémon 6"
+        '
+        'pg_Output
+        '
+        Me.pg_Output.Controls.Add(Me.save_btn)
+        Me.pg_Output.Controls.Add(Me.generate_btn)
+        Me.pg_Output.Controls.Add(Me.outputBox_rchBox)
+        Me.pg_Output.Location = New System.Drawing.Point(4, 22)
+        Me.pg_Output.Name = "pg_Output"
+        Me.pg_Output.Size = New System.Drawing.Size(752, 511)
+        Me.pg_Output.TabIndex = 8
+        Me.pg_Output.Text = "Output"
+        Me.pg_Output.UseVisualStyleBackColor = True
+        '
+        'save_btn
+        '
+        Me.save_btn.Location = New System.Drawing.Point(593, 485)
+        Me.save_btn.Name = "save_btn"
+        Me.save_btn.Size = New System.Drawing.Size(75, 23)
+        Me.save_btn.TabIndex = 2
+        Me.save_btn.Text = "Save"
+        Me.save_btn.UseVisualStyleBackColor = True
+        '
+        'generate_btn
+        '
+        Me.generate_btn.Location = New System.Drawing.Point(674, 485)
+        Me.generate_btn.Name = "generate_btn"
+        Me.generate_btn.Size = New System.Drawing.Size(75, 23)
+        Me.generate_btn.TabIndex = 1
+        Me.generate_btn.Text = "Generate"
+        Me.generate_btn.UseVisualStyleBackColor = True
+        '
+        'outputBox_rchBox
+        '
+        Me.outputBox_rchBox.DetectUrls = False
+        Me.outputBox_rchBox.Location = New System.Drawing.Point(3, 3)
+        Me.outputBox_rchBox.Name = "outputBox_rchBox"
+        Me.outputBox_rchBox.ReadOnly = True
+        Me.outputBox_rchBox.Size = New System.Drawing.Size(746, 476)
+        Me.outputBox_rchBox.TabIndex = 0
+        Me.outputBox_rchBox.Text = ""
+        '
+        'pg_About
+        '
+        Me.pg_About.Controls.Add(Me.aboutText_lbl)
+        Me.pg_About.Controls.Add(Me.gnuGPL3_picBox)
+        Me.pg_About.Controls.Add(Me.aboutAuthor_lbl)
+        Me.pg_About.Controls.Add(Me.aboutTitle_lbl)
+        Me.pg_About.Controls.Add(Me.Logo_picBox)
+        Me.pg_About.Location = New System.Drawing.Point(4, 22)
+        Me.pg_About.Name = "pg_About"
+        Me.pg_About.Size = New System.Drawing.Size(752, 511)
+        Me.pg_About.TabIndex = 7
+        Me.pg_About.Text = "About"
+        Me.pg_About.UseVisualStyleBackColor = True
+        '
+        'aboutText_lbl
+        '
+        Me.aboutText_lbl.Location = New System.Drawing.Point(9, 174)
+        Me.aboutText_lbl.Name = "aboutText_lbl"
+        Me.aboutText_lbl.Size = New System.Drawing.Size(737, 263)
+        Me.aboutText_lbl.TabIndex = 9
+        Me.aboutText_lbl.Text = resources.GetString("aboutText_lbl.Text")
+        '
+        'gnuGPL3_picBox
+        '
+        Me.gnuGPL3_picBox.Image = Global.Showdown_to_Essentials_Converter.My.Resources.Resources.gplv3_with_text_136x68
+        Me.gnuGPL3_picBox.Location = New System.Drawing.Point(610, 440)
+        Me.gnuGPL3_picBox.Name = "gnuGPL3_picBox"
+        Me.gnuGPL3_picBox.Size = New System.Drawing.Size(136, 68)
+        Me.gnuGPL3_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.gnuGPL3_picBox.TabIndex = 8
+        Me.gnuGPL3_picBox.TabStop = False
+        '
+        'aboutAuthor_lbl
+        '
+        Me.aboutAuthor_lbl.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.aboutAuthor_lbl.Location = New System.Drawing.Point(6, 142)
+        Me.aboutAuthor_lbl.Name = "aboutAuthor_lbl"
+        Me.aboutAuthor_lbl.Size = New System.Drawing.Size(740, 32)
+        Me.aboutAuthor_lbl.TabIndex = 7
+        Me.aboutAuthor_lbl.Text = "By TheCrafters001"
+        Me.aboutAuthor_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'aboutTitle_lbl
+        '
+        Me.aboutTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.aboutTitle_lbl.Location = New System.Drawing.Point(6, 110)
+        Me.aboutTitle_lbl.Name = "aboutTitle_lbl"
+        Me.aboutTitle_lbl.Size = New System.Drawing.Size(740, 32)
+        Me.aboutTitle_lbl.TabIndex = 6
+        Me.aboutTitle_lbl.Text = "Pokémon Showdown to Pokémon Essentials Converter"
+        Me.aboutTitle_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Logo_picBox
+        '
+        Me.Logo_picBox.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Logo_picBox.Image = Global.Showdown_to_Essentials_Converter.My.Resources.Resources.Showdown_to_Essentials_Logo
+        Me.Logo_picBox.Location = New System.Drawing.Point(0, 0)
+        Me.Logo_picBox.Name = "Logo_picBox"
+        Me.Logo_picBox.Size = New System.Drawing.Size(752, 101)
+        Me.Logo_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Logo_picBox.TabIndex = 5
+        Me.Logo_picBox.TabStop = False
+        '
+        'Timer1
+        '
+        '
+        'codeExporter_dialog
+        '
+        Me.codeExporter_dialog.CheckFileExists = True
+        Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
+        Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
+        '
+        'pokemonFourPokeballID_cmb
+        '
+        Me.pokemonFourPokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonFourPokeballID_cmb.FormattingEnabled = True
+        Me.pokemonFourPokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonFourPokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonFourPokeballID_cmb.Name = "pokemonFourPokeballID_cmb"
+        Me.pokemonFourPokeballID_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonFourPokeballID_cmb.TabIndex = 98
+        '
+        'pokemonFourPokeballID_lbl
+        '
+        Me.pokemonFourPokeballID_lbl.AutoSize = True
+        Me.pokemonFourPokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonFourPokeballID_lbl.Name = "pokemonFourPokeballID_lbl"
+        Me.pokemonFourPokeballID_lbl.Size = New System.Drawing.Size(51, 13)
+        Me.pokemonFourPokeballID_lbl.TabIndex = 97
+        Me.pokemonFourPokeballID_lbl.Text = "Pokéball"
+        '
+        'pokemonFourShadow_grp
+        '
+        Me.pokemonFourShadow_grp.Controls.Add(Me.pokemonFourShadow_rad)
+        Me.pokemonFourShadow_grp.Controls.Add(Me.pokemonFourShadowFalse_rad)
+        Me.pokemonFourShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonFourShadow_grp.Name = "pokemonFourShadow_grp"
+        Me.pokemonFourShadow_grp.Size = New System.Drawing.Size(312, 44)
+        Me.pokemonFourShadow_grp.TabIndex = 93
+        Me.pokemonFourShadow_grp.TabStop = False
+        Me.pokemonFourShadow_grp.Text = "Shadow"
+        '
+        'pokemonFourShadow_rad
+        '
+        Me.pokemonFourShadow_rad.AutoSize = True
+        Me.pokemonFourShadow_rad.Location = New System.Drawing.Point(63, 21)
+        Me.pokemonFourShadow_rad.Name = "pokemonFourShadow_rad"
+        Me.pokemonFourShadow_rad.Size = New System.Drawing.Size(47, 17)
+        Me.pokemonFourShadow_rad.TabIndex = 1
+        Me.pokemonFourShadow_rad.TabStop = True
+        Me.pokemonFourShadow_rad.Text = "True"
+        Me.pokemonFourShadow_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonFourShadowFalse_rad
+        '
+        Me.pokemonFourShadowFalse_rad.AutoSize = True
+        Me.pokemonFourShadowFalse_rad.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonFourShadowFalse_rad.Name = "pokemonFourShadowFalse_rad"
+        Me.pokemonFourShadowFalse_rad.Size = New System.Drawing.Size(51, 17)
+        Me.pokemonFourShadowFalse_rad.TabIndex = 0
+        Me.pokemonFourShadowFalse_rad.TabStop = True
+        Me.pokemonFourShadowFalse_rad.Text = "False"
+        Me.pokemonFourShadowFalse_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonFourNickname_txtBox
+        '
+        Me.pokemonFourNickname_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonFourNickname_txtBox.Name = "pokemonFourNickname_txtBox"
+        Me.pokemonFourNickname_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonFourNickname_txtBox.TabIndex = 96
+        '
+        'pokemonFourNickname_lbl
+        '
+        Me.pokemonFourNickname_lbl.AutoSize = True
+        Me.pokemonFourNickname_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonFourNickname_lbl.Name = "pokemonFourNickname_lbl"
+        Me.pokemonFourNickname_lbl.Size = New System.Drawing.Size(108, 13)
+        Me.pokemonFourNickname_lbl.TabIndex = 95
+        Me.pokemonFourNickname_lbl.Text = "Pokémon Nickname"
+        '
+        'pokemonFourHappyness_txtBox
+        '
+        Me.pokemonFourHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonFourHappyness_txtBox.MaxLength = 3
+        Me.pokemonFourHappyness_txtBox.Name = "pokemonFourHappyness_txtBox"
+        Me.pokemonFourHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonFourHappyness_txtBox.TabIndex = 94
+        Me.pokemonFourHappyness_txtBox.Text = "70"
+        '
+        'pokemonFourHappyness_lbl
+        '
+        Me.pokemonFourHappyness_lbl.AutoSize = True
+        Me.pokemonFourHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonFourHappyness_lbl.Name = "pokemonFourHappyness_lbl"
+        Me.pokemonFourHappyness_lbl.Size = New System.Drawing.Size(114, 13)
+        Me.pokemonFourHappyness_lbl.TabIndex = 92
+        Me.pokemonFourHappyness_lbl.Text = "Happyness (Max 255)"
+        '
+        'pokemonFourShiny_grp
+        '
+        Me.pokemonFourShiny_grp.Controls.Add(Me.pokemonFourShiny_rad)
+        Me.pokemonFourShiny_grp.Controls.Add(Me.pokemonFourShinyFalse_rad)
+        Me.pokemonFourShiny_grp.Location = New System.Drawing.Point(9, 374)
+        Me.pokemonFourShiny_grp.Name = "pokemonFourShiny_grp"
+        Me.pokemonFourShiny_grp.Size = New System.Drawing.Size(312, 44)
+        Me.pokemonFourShiny_grp.TabIndex = 91
+        Me.pokemonFourShiny_grp.TabStop = False
+        Me.pokemonFourShiny_grp.Text = "Shiny"
+        '
+        'pokemonFourShiny_rad
+        '
+        Me.pokemonFourShiny_rad.AutoSize = True
+        Me.pokemonFourShiny_rad.Location = New System.Drawing.Point(63, 21)
+        Me.pokemonFourShiny_rad.Name = "pokemonFourShiny_rad"
+        Me.pokemonFourShiny_rad.Size = New System.Drawing.Size(47, 17)
+        Me.pokemonFourShiny_rad.TabIndex = 1
+        Me.pokemonFourShiny_rad.TabStop = True
+        Me.pokemonFourShiny_rad.Text = "True"
+        Me.pokemonFourShiny_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonFourShinyFalse_rad
+        '
+        Me.pokemonFourShinyFalse_rad.AutoSize = True
+        Me.pokemonFourShinyFalse_rad.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonFourShinyFalse_rad.Name = "pokemonFourShinyFalse_rad"
+        Me.pokemonFourShinyFalse_rad.Size = New System.Drawing.Size(51, 17)
+        Me.pokemonFourShinyFalse_rad.TabIndex = 0
+        Me.pokemonFourShinyFalse_rad.TabStop = True
+        Me.pokemonFourShinyFalse_rad.Text = "False"
+        Me.pokemonFourShinyFalse_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonFourForm_txtBox
+        '
+        Me.pokemonFourForm_txtBox.Location = New System.Drawing.Point(9, 346)
+        Me.pokemonFourForm_txtBox.Name = "pokemonFourForm_txtBox"
+        Me.pokemonFourForm_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonFourForm_txtBox.TabIndex = 79
+        '
+        'pokemonFourForm_lbl
+        '
+        Me.pokemonFourForm_lbl.AutoSize = True
+        Me.pokemonFourForm_lbl.Location = New System.Drawing.Point(6, 330)
+        Me.pokemonFourForm_lbl.Name = "pokemonFourForm_lbl"
+        Me.pokemonFourForm_lbl.Size = New System.Drawing.Size(166, 13)
+        Me.pokemonFourForm_lbl.TabIndex = 90
+        Me.pokemonFourForm_lbl.Text = "Pokémon Form (Numbers Only)"
+        '
+        'pokemonFourAbility_lbl
+        '
+        Me.pokemonFourAbility_lbl.AutoSize = True
+        Me.pokemonFourAbility_lbl.Location = New System.Drawing.Point(6, 250)
+        Me.pokemonFourAbility_lbl.Name = "pokemonFourAbility_lbl"
+        Me.pokemonFourAbility_lbl.Size = New System.Drawing.Size(218, 13)
+        Me.pokemonFourAbility_lbl.TabIndex = 89
+        Me.pokemonFourAbility_lbl.Text = "Pokémon Ability (0-1 Normal, 2-5 Hidden)"
+        '
+        'pokemonFourAbility_cmb
+        '
+        Me.pokemonFourAbility_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonFourAbility_cmb.FormattingEnabled = True
+        Me.pokemonFourAbility_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.pokemonFourAbility_cmb.Location = New System.Drawing.Point(9, 266)
+        Me.pokemonFourAbility_cmb.Name = "pokemonFourAbility_cmb"
+        Me.pokemonFourAbility_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonFourAbility_cmb.TabIndex = 88
+        '
+        'pokemonFourlvl_txtBox
+        '
+        Me.pokemonFourlvl_txtBox.Location = New System.Drawing.Point(9, 75)
+        Me.pokemonFourlvl_txtBox.MaxLength = 3
+        Me.pokemonFourlvl_txtBox.Name = "pokemonFourlvl_txtBox"
+        Me.pokemonFourlvl_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonFourlvl_txtBox.TabIndex = 87
+        '
+        'pokemonFourlvl_lbl
+        '
+        Me.pokemonFourlvl_lbl.AutoSize = True
+        Me.pokemonFourlvl_lbl.Location = New System.Drawing.Point(6, 59)
+        Me.pokemonFourlvl_lbl.Name = "pokemonFourlvl_lbl"
+        Me.pokemonFourlvl_lbl.Size = New System.Drawing.Size(83, 13)
+        Me.pokemonFourlvl_lbl.TabIndex = 86
+        Me.pokemonFourlvl_lbl.Text = "Level (Max 100)"
+        '
+        'pokemonFourIVs_txtBox
+        '
+        Me.pokemonFourIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonFourIVs_txtBox.MaxLength = 2
+        Me.pokemonFourIVs_txtBox.Name = "pokemonFourIVs_txtBox"
+        Me.pokemonFourIVs_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonFourIVs_txtBox.TabIndex = 85
+        Me.pokemonFourIVs_txtBox.Text = "10"
+        '
+        'pokemonFourIVs_lbl
+        '
+        Me.pokemonFourIVs_lbl.AutoSize = True
+        Me.pokemonFourIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonFourIVs_lbl.Name = "pokemonFourIVs_lbl"
+        Me.pokemonFourIVs_lbl.Size = New System.Drawing.Size(67, 13)
+        Me.pokemonFourIVs_lbl.TabIndex = 84
+        Me.pokemonFourIVs_lbl.Text = "IVs (Max 31)"
+        '
+        'pokemonFourNature_lbl
+        '
+        Me.pokemonFourNature_lbl.AutoSize = True
+        Me.pokemonFourNature_lbl.Location = New System.Drawing.Point(6, 421)
+        Me.pokemonFourNature_lbl.Name = "pokemonFourNature_lbl"
+        Me.pokemonFourNature_lbl.Size = New System.Drawing.Size(93, 13)
+        Me.pokemonFourNature_lbl.TabIndex = 83
+        Me.pokemonFourNature_lbl.Text = "Pokémon Nature"
+        '
+        'pokemonFourNature_cmb
+        '
+        Me.pokemonFourNature_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonFourNature_cmb.FormattingEnabled = True
+        Me.pokemonFourNature_cmb.Items.AddRange(New Object() {"(random)", "HARDY", "LONELY", "BRAVE", "ADAMANT", "NAUGHTY", "BOLD", "DOCILE", "RELAXED", "IMPISH", "LAX", "MODEST", "MILD", "SERIOUS", "QUIET", "RASH", "CALM", "GENTLE", "SASSY", "BASHFUL", "CAREFUL", "TIMID", "HASTY", "JOLLY", "NAIVE", "QUIRKY"})
+        Me.pokemonFourNature_cmb.Location = New System.Drawing.Point(9, 437)
+        Me.pokemonFourNature_cmb.Name = "pokemonFourNature_cmb"
+        Me.pokemonFourNature_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonFourNature_cmb.TabIndex = 82
+        '
+        'pokemonFourMoves_grp
+        '
+        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourMove4_txtBox)
+        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourMove3_txtBox)
+        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourMove2_txtBox)
+        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourMove1_txtBox)
+        Me.pokemonFourMoves_grp.Location = New System.Drawing.Point(9, 103)
+        Me.pokemonFourMoves_grp.Name = "pokemonFourMoves_grp"
+        Me.pokemonFourMoves_grp.Size = New System.Drawing.Size(312, 144)
+        Me.pokemonFourMoves_grp.TabIndex = 81
+        Me.pokemonFourMoves_grp.TabStop = False
+        Me.pokemonFourMoves_grp.Text = "Moves"
+        '
+        'pokemonFourMove4_txtBox
+        '
+        Me.pokemonFourMove4_txtBox.Location = New System.Drawing.Point(6, 105)
+        Me.pokemonFourMove4_txtBox.Name = "pokemonFourMove4_txtBox"
+        Me.pokemonFourMove4_txtBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonFourMove4_txtBox.TabIndex = 3
+        '
+        'pokemonFourMove3_txtBox
+        '
+        Me.pokemonFourMove3_txtBox.Location = New System.Drawing.Point(6, 77)
+        Me.pokemonFourMove3_txtBox.Name = "pokemonFourMove3_txtBox"
+        Me.pokemonFourMove3_txtBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonFourMove3_txtBox.TabIndex = 2
+        '
+        'pokemonFourMove2_txtBox
+        '
+        Me.pokemonFourMove2_txtBox.Location = New System.Drawing.Point(6, 49)
+        Me.pokemonFourMove2_txtBox.Name = "pokemonFourMove2_txtBox"
+        Me.pokemonFourMove2_txtBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonFourMove2_txtBox.TabIndex = 1
+        '
+        'pokemonFourMove1_txtBox
+        '
+        Me.pokemonFourMove1_txtBox.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonFourMove1_txtBox.Name = "pokemonFourMove1_txtBox"
+        Me.pokemonFourMove1_txtBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonFourMove1_txtBox.TabIndex = 0
+        '
+        'pokemonFourGender_lbl
+        '
+        Me.pokemonFourGender_lbl.AutoSize = True
+        Me.pokemonFourGender_lbl.Location = New System.Drawing.Point(6, 290)
+        Me.pokemonFourGender_lbl.Name = "pokemonFourGender_lbl"
+        Me.pokemonFourGender_lbl.Size = New System.Drawing.Size(96, 13)
+        Me.pokemonFourGender_lbl.TabIndex = 80
+        Me.pokemonFourGender_lbl.Text = "Pokémon Gender"
+        '
+        'pokemonFourGender_cmb
+        '
+        Me.pokemonFourGender_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonFourGender_cmb.FormattingEnabled = True
+        Me.pokemonFourGender_cmb.Items.AddRange(New Object() {"M", "F", "(random)"})
+        Me.pokemonFourGender_cmb.Location = New System.Drawing.Point(9, 306)
+        Me.pokemonFourGender_cmb.Name = "pokemonFourGender_cmb"
+        Me.pokemonFourGender_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonFourGender_cmb.TabIndex = 78
+        '
+        'pokemonFourHeldItem_txtBox
+        '
+        Me.pokemonFourHeldItem_txtBox.Location = New System.Drawing.Point(180, 34)
+        Me.pokemonFourHeldItem_txtBox.Name = "pokemonFourHeldItem_txtBox"
+        Me.pokemonFourHeldItem_txtBox.Size = New System.Drawing.Size(141, 22)
+        Me.pokemonFourHeldItem_txtBox.TabIndex = 77
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(156, 37)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(18, 13)
+        Me.Label12.TabIndex = 76
+        Me.Label12.Text = "@"
+        '
+        'pokemonFourName_txtBox
+        '
+        Me.pokemonFourName_txtBox.Location = New System.Drawing.Point(9, 34)
+        Me.pokemonFourName_txtBox.Name = "pokemonFourName_txtBox"
+        Me.pokemonFourName_txtBox.Size = New System.Drawing.Size(141, 22)
+        Me.pokemonFourName_txtBox.TabIndex = 75
+        '
+        'pokemonFourName_lbl
+        '
+        Me.pokemonFourName_lbl.AutoSize = True
+        Me.pokemonFourName_lbl.Location = New System.Drawing.Point(6, 18)
+        Me.pokemonFourName_lbl.Name = "pokemonFourName_lbl"
+        Me.pokemonFourName_lbl.Size = New System.Drawing.Size(87, 13)
+        Me.pokemonFourName_lbl.TabIndex = 74
+        Me.pokemonFourName_lbl.Text = "Pokémon Name"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1642,15 +2004,33 @@ Partial Class Form1
         Me.pg_POne.ResumeLayout(False)
         Me.pokemonOne_grp.ResumeLayout(False)
         Me.pokemonOne_grp.PerformLayout()
+        Me.pokemonOneShadow_grp.ResumeLayout(False)
+        Me.pokemonOneShadow_grp.PerformLayout()
+        Me.pokemonOneShiny_grp.ResumeLayout(False)
+        Me.pokemonOneShiny_grp.PerformLayout()
         Me.pokemonOneMoves_grp.ResumeLayout(False)
         Me.pokemonOneMoves_grp.PerformLayout()
         Me.pg_PTwo.ResumeLayout(False)
         Me.pokemonTwo_grp.ResumeLayout(False)
         Me.pokemonTwo_grp.PerformLayout()
+        Me.pokemonTwoShadow_grp.ResumeLayout(False)
+        Me.pokemonTwoShadow_grp.PerformLayout()
+        Me.pokemonTwoShiny_grp.ResumeLayout(False)
+        Me.pokemonTwoShiny_grp.PerformLayout()
+        Me.pokemonTwoMoves_grp.ResumeLayout(False)
+        Me.pokemonTwoMoves_grp.PerformLayout()
         Me.pg_PThree.ResumeLayout(False)
         Me.pokemonThree_grp.ResumeLayout(False)
         Me.pokemonThree_grp.PerformLayout()
+        Me.pokemonThreeShadow_grp.ResumeLayout(False)
+        Me.pokemonThreeShadow_grp.PerformLayout()
+        Me.pokemonThreeShiny_grp.ResumeLayout(False)
+        Me.pokemonThreeShiny_grp.PerformLayout()
+        Me.pokemonThreeMoves_grp.ResumeLayout(False)
+        Me.pokemonThreeMoves_grp.PerformLayout()
         Me.pg_PFour.ResumeLayout(False)
+        Me.pokemonFour_grp.ResumeLayout(False)
+        Me.pokemonFour_grp.PerformLayout()
         Me.pg_PFive.ResumeLayout(False)
         Me.pg_PSix.ResumeLayout(False)
         Me.pg_Output.ResumeLayout(False)
@@ -1658,22 +2038,12 @@ Partial Class Form1
         Me.pg_About.PerformLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pokemonOneShiny_grp.ResumeLayout(False)
-        Me.pokemonOneShiny_grp.PerformLayout()
-        Me.pokemonOneShadow_grp.ResumeLayout(False)
-        Me.pokemonOneShadow_grp.PerformLayout()
-        Me.pokemonTwoShadow_grp.ResumeLayout(False)
-        Me.pokemonTwoShadow_grp.PerformLayout()
-        Me.pokemonTwoShiny_grp.ResumeLayout(False)
-        Me.pokemonTwoShiny_grp.PerformLayout()
-        Me.pokemonTwoMoves_grp.ResumeLayout(False)
-        Me.pokemonTwoMoves_grp.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.pokemonThreeMoves_grp.ResumeLayout(False)
-        Me.pokemonThreeMoves_grp.PerformLayout()
+        Me.pokemonFourShadow_grp.ResumeLayout(False)
+        Me.pokemonFourShadow_grp.PerformLayout()
+        Me.pokemonFourShiny_grp.ResumeLayout(False)
+        Me.pokemonFourShiny_grp.PerformLayout()
+        Me.pokemonFourMoves_grp.ResumeLayout(False)
+        Me.pokemonFourMoves_grp.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1790,28 +2160,28 @@ Partial Class Form1
     Friend WithEvents Label10 As Label
     Friend WithEvents pokemonTwoName_txtBox As TextBox
     Friend WithEvents pokemonTwoName_lbl As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents pokemonThreePokeballID_cmb As ComboBox
+    Friend WithEvents pokemonThreePokeballID_lbl As Label
+    Friend WithEvents pokemonThreeShadow_grp As GroupBox
+    Friend WithEvents pokemonThreeShadow_rad As RadioButton
+    Friend WithEvents pokemonThreeShadowFalse_rad As RadioButton
+    Friend WithEvents pokemonThreeNickname_txtBox As TextBox
+    Friend WithEvents pokemonThreeNickname_lbl As Label
+    Friend WithEvents pokemonThreeHappyness_txtBox As TextBox
+    Friend WithEvents pokemonThreeHappyness_lbl As Label
+    Friend WithEvents pokemonThreeShiny_grp As GroupBox
+    Friend WithEvents pokemonThreeShiny_rad As RadioButton
+    Friend WithEvents pokemonThreeShinyFalse_Rad As RadioButton
+    Friend WithEvents pokemonThreeForm_txtBox As TextBox
     Friend WithEvents pokemonThreeForm_lbl As Label
     Friend WithEvents pokemonThreeAbility_lbl As Label
     Friend WithEvents pokemonThreeAbility_cmb As ComboBox
     Friend WithEvents pokemonThreeLvl_textBox As TextBox
     Friend WithEvents pokemonThreeLvl_lbl As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents pokemonThreeIVs_txtBox As TextBox
+    Friend WithEvents pokemonThreeIVs_lbl As Label
+    Friend WithEvents pokemonThreeNature As Label
+    Friend WithEvents pokemonThreeNature_cmb As ComboBox
     Friend WithEvents pokemonThreeMoves_grp As GroupBox
     Friend WithEvents pokemonThreeMove4_textBox As TextBox
     Friend WithEvents pokemonThreeMove3_txtBox As TextBox
@@ -1823,4 +2193,37 @@ Partial Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents pokemonThreeName_txtBox As TextBox
     Friend WithEvents pokemonThreeName_lbl As Label
+    Friend WithEvents pokemonFourPokeballID_cmb As ComboBox
+    Friend WithEvents pokemonFourPokeballID_lbl As Label
+    Friend WithEvents pokemonFourShadow_grp As GroupBox
+    Friend WithEvents pokemonFourShadow_rad As RadioButton
+    Friend WithEvents pokemonFourShadowFalse_rad As RadioButton
+    Friend WithEvents pokemonFourNickname_txtBox As TextBox
+    Friend WithEvents pokemonFourNickname_lbl As Label
+    Friend WithEvents pokemonFourHappyness_txtBox As TextBox
+    Friend WithEvents pokemonFourHappyness_lbl As Label
+    Friend WithEvents pokemonFourShiny_grp As GroupBox
+    Friend WithEvents pokemonFourShiny_rad As RadioButton
+    Friend WithEvents pokemonFourShinyFalse_rad As RadioButton
+    Friend WithEvents pokemonFourForm_txtBox As TextBox
+    Friend WithEvents pokemonFourForm_lbl As Label
+    Friend WithEvents pokemonFourAbility_lbl As Label
+    Friend WithEvents pokemonFourAbility_cmb As ComboBox
+    Friend WithEvents pokemonFourlvl_txtBox As TextBox
+    Friend WithEvents pokemonFourlvl_lbl As Label
+    Friend WithEvents pokemonFourIVs_txtBox As TextBox
+    Friend WithEvents pokemonFourIVs_lbl As Label
+    Friend WithEvents pokemonFourNature_lbl As Label
+    Friend WithEvents pokemonFourNature_cmb As ComboBox
+    Friend WithEvents pokemonFourMoves_grp As GroupBox
+    Friend WithEvents pokemonFourMove4_txtBox As TextBox
+    Friend WithEvents pokemonFourMove3_txtBox As TextBox
+    Friend WithEvents pokemonFourMove2_txtBox As TextBox
+    Friend WithEvents pokemonFourMove1_txtBox As TextBox
+    Friend WithEvents pokemonFourGender_lbl As Label
+    Friend WithEvents pokemonFourGender_cmb As ComboBox
+    Friend WithEvents pokemonFourHeldItem_txtBox As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents pokemonFourName_txtBox As TextBox
+    Friend WithEvents pokemonFourName_lbl As Label
 End Class

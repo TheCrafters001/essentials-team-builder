@@ -1,18 +1,49 @@
 ﻿Public Class Startup
     Public Shared Sub Init()
         Form1.numPoké_cmb.SelectedIndex = 0
+        '
+        ' pokemonOne
+        '
         Form1.pokemonOneGender_cmb.SelectedIndex = 2
         Form1.pokemonOneNature_cmb.SelectedIndex = 0
         Form1.pokemonOneAbility_cmb.SelectedIndex = 0
         Form1.pokemonOneShinyFalse_rad.Checked = True
         Form1.pokemonOneShadowFalse_rad.Checked = True
         Form1.pokemonOnePokeballID_cmb.SelectedIndex = 0
+        '
+        ' pokemonTwo
+        '
         Form1.pokemonTwoGender_cmb.SelectedIndex = 2
         Form1.pokemonTwoNature_cmb.SelectedIndex = 0
         Form1.pokemonTwoAbility_cmb.SelectedIndex = 0
         Form1.pokemonTwoShinyFalse_rad.Checked = True
         Form1.pokemonTwoShadowFalse_rad.Checked = True
         Form1.pokemonTwoPokeballID_cmb.SelectedIndex = 0
+        '
+        ' pokemonThree
+        '
+        Form1.pokemonThreeGender_cmb.SelectedIndex = 2
+        Form1.pokemonThreeNature_cmb.SelectedIndex = 0
+        Form1.pokemonThreeAbility_cmb.SelectedIndex = 0
+        Form1.pokemonThreeShinyFalse_Rad.Checked = True
+        Form1.pokemonThreeShadowFalse_rad.Checked = True
+        Form1.pokemonThreePokeballID_cmb.SelectedIndex = 0
+        '
+        ' pokemonFour
+        '
+        Form1.pokemonFourGender_cmb.SelectedIndex = 2
+        Form1.pokemonFourNature_cmb.SelectedIndex = 0
+        Form1.pokemonFourAbility_cmb.SelectedIndex = 0
+        Form1.pokemonFourShinyFalse_Rad.Checked = True
+        Form1.pokemonFourShadowFalse_rad.Checked = True
+        Form1.pokemonFourPokeballID_cmb.SelectedIndex = 0
+        '
+        ' pokemonFive
+        '
+
+        '
+        ' pokemonSix
+        '
 
         Form1.Timer1.Start()
     End Sub
