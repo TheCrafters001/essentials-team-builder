@@ -7,6 +7,13 @@
         Form1.pokemonOneShinyFalse_rad.Checked = True
         Form1.pokemonOneShadowFalse_rad.Checked = True
         Form1.pokemonOnePokeballID_cmb.SelectedIndex = 0
+        Form1.pokemonTwoGender_cmb.SelectedIndex = 2
+        Form1.pokemonTwoNature_cmb.SelectedIndex = 0
+        Form1.pokemonTwoAbility_cmb.SelectedIndex = 0
+        Form1.pokemonTwoShinyFalse_rad.Checked = True
+        Form1.pokemonTwoShadowFalse_rad.Checked = True
+        Form1.pokemonTwoPokeballID_cmb.SelectedIndex = 0
+
         Form1.Timer1.Start()
     End Sub
     Public Shared Sub TimerChecker()

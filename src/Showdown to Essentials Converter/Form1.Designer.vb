@@ -105,6 +105,39 @@ Partial Class Form1
         Me.pokemonOneShadowFalse_rad = New System.Windows.Forms.RadioButton()
         Me.pokemonOnePokeballID_lbl = New System.Windows.Forms.Label()
         Me.pokemonOnePokeballID_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonTwoPokeballID_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonTwoPokeballID_lbl = New System.Windows.Forms.Label()
+        Me.pokemonTwoShadow_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonTwoShadow_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonTwoShadowFalse_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonTwoNickName_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoNickName_lbl = New System.Windows.Forms.Label()
+        Me.pokemonTwoHappyness_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoHappyness_lbl = New System.Windows.Forms.Label()
+        Me.pokemonTwoShiny_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonTwoShiny_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonTwoShinyFalse_rad = New System.Windows.Forms.RadioButton()
+        Me.pokemonTwoForm_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoForm_lbl = New System.Windows.Forms.Label()
+        Me.pokemonTwoAbility_lbl = New System.Windows.Forms.Label()
+        Me.pokemonTwoAbility_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonTwoLevel_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoLevel_lbl = New System.Windows.Forms.Label()
+        Me.pokemonTwoIVs_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoIVs_lbl = New System.Windows.Forms.Label()
+        Me.pokemonTwoNature_lbl = New System.Windows.Forms.Label()
+        Me.pokemonTwoNature_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonTwoMoves_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonTwoMove4_TextBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoMove3_TextBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoMove2_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoMove1_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoGender_lbl = New System.Windows.Forms.Label()
+        Me.pokemonTwoGender_cmb = New System.Windows.Forms.ComboBox()
+        Me.pokemonTwoHeldItem_txtBox = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.pokemonTwoName_txtBox = New System.Windows.Forms.TextBox()
+        Me.pokemonTwoName_lbl = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.trainerItems_grp.SuspendLayout()
@@ -112,6 +145,7 @@ Partial Class Form1
         Me.pokemonOne_grp.SuspendLayout()
         Me.pokemonOneMoves_grp.SuspendLayout()
         Me.pg_PTwo.SuspendLayout()
+        Me.pokemonTwo_grp.SuspendLayout()
         Me.pg_PThree.SuspendLayout()
         Me.pg_PFour.SuspendLayout()
         Me.pg_PFive.SuspendLayout()
@@ -122,6 +156,9 @@ Partial Class Form1
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pokemonOneShiny_grp.SuspendLayout()
         Me.pokemonOneShadow_grp.SuspendLayout()
+        Me.pokemonTwoShadow_grp.SuspendLayout()
+        Me.pokemonTwoShiny_grp.SuspendLayout()
+        Me.pokemonTwoMoves_grp.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -515,6 +552,31 @@ Partial Class Form1
         '
         'pokemonTwo_grp
         '
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoPokeballID_cmb)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoPokeballID_lbl)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoShadow_grp)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoNickName_txtBox)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoNickName_lbl)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoHappyness_txtBox)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoHappyness_lbl)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoShiny_grp)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoForm_txtBox)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoForm_lbl)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoAbility_lbl)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoAbility_cmb)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoLevel_txtBox)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoLevel_lbl)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoIVs_txtBox)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoIVs_lbl)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoNature_lbl)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoNature_cmb)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoMoves_grp)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoGender_lbl)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoGender_cmb)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoHeldItem_txtBox)
+        Me.pokemonTwo_grp.Controls.Add(Me.Label10)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoName_txtBox)
+        Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoName_lbl)
         Me.pokemonTwo_grp.Location = New System.Drawing.Point(6, 6)
         Me.pokemonTwo_grp.Name = "pokemonTwo_grp"
         Me.pokemonTwo_grp.Size = New System.Drawing.Size(740, 499)
@@ -910,6 +972,306 @@ Partial Class Form1
         Me.pokemonOnePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonOnePokeballID_cmb.TabIndex = 23
         '
+        'pokemonTwoPokeballID_cmb
+        '
+        Me.pokemonTwoPokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonTwoPokeballID_cmb.FormattingEnabled = True
+        Me.pokemonTwoPokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonTwoPokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonTwoPokeballID_cmb.Name = "pokemonTwoPokeballID_cmb"
+        Me.pokemonTwoPokeballID_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonTwoPokeballID_cmb.TabIndex = 48
+        '
+        'pokemonTwoPokeballID_lbl
+        '
+        Me.pokemonTwoPokeballID_lbl.AutoSize = True
+        Me.pokemonTwoPokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonTwoPokeballID_lbl.Name = "pokemonTwoPokeballID_lbl"
+        Me.pokemonTwoPokeballID_lbl.Size = New System.Drawing.Size(51, 13)
+        Me.pokemonTwoPokeballID_lbl.TabIndex = 47
+        Me.pokemonTwoPokeballID_lbl.Text = "Pokéball"
+        '
+        'pokemonTwoShadow_grp
+        '
+        Me.pokemonTwoShadow_grp.Controls.Add(Me.pokemonTwoShadow_rad)
+        Me.pokemonTwoShadow_grp.Controls.Add(Me.pokemonTwoShadowFalse_rad)
+        Me.pokemonTwoShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonTwoShadow_grp.Name = "pokemonTwoShadow_grp"
+        Me.pokemonTwoShadow_grp.Size = New System.Drawing.Size(312, 44)
+        Me.pokemonTwoShadow_grp.TabIndex = 43
+        Me.pokemonTwoShadow_grp.TabStop = False
+        Me.pokemonTwoShadow_grp.Text = "Shadow"
+        '
+        'pokemonTwoShadow_rad
+        '
+        Me.pokemonTwoShadow_rad.AutoSize = True
+        Me.pokemonTwoShadow_rad.Location = New System.Drawing.Point(63, 21)
+        Me.pokemonTwoShadow_rad.Name = "pokemonTwoShadow_rad"
+        Me.pokemonTwoShadow_rad.Size = New System.Drawing.Size(47, 17)
+        Me.pokemonTwoShadow_rad.TabIndex = 1
+        Me.pokemonTwoShadow_rad.TabStop = True
+        Me.pokemonTwoShadow_rad.Text = "True"
+        Me.pokemonTwoShadow_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonTwoShadowFalse_rad
+        '
+        Me.pokemonTwoShadowFalse_rad.AutoSize = True
+        Me.pokemonTwoShadowFalse_rad.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonTwoShadowFalse_rad.Name = "pokemonTwoShadowFalse_rad"
+        Me.pokemonTwoShadowFalse_rad.Size = New System.Drawing.Size(51, 17)
+        Me.pokemonTwoShadowFalse_rad.TabIndex = 0
+        Me.pokemonTwoShadowFalse_rad.TabStop = True
+        Me.pokemonTwoShadowFalse_rad.Text = "False"
+        Me.pokemonTwoShadowFalse_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonTwoNickName_txtBox
+        '
+        Me.pokemonTwoNickName_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonTwoNickName_txtBox.Name = "pokemonTwoNickName_txtBox"
+        Me.pokemonTwoNickName_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonTwoNickName_txtBox.TabIndex = 46
+        '
+        'pokemonTwoNickName_lbl
+        '
+        Me.pokemonTwoNickName_lbl.AutoSize = True
+        Me.pokemonTwoNickName_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonTwoNickName_lbl.Name = "pokemonTwoNickName_lbl"
+        Me.pokemonTwoNickName_lbl.Size = New System.Drawing.Size(108, 13)
+        Me.pokemonTwoNickName_lbl.TabIndex = 45
+        Me.pokemonTwoNickName_lbl.Text = "Pokémon Nickname"
+        '
+        'pokemonTwoHappyness_txtBox
+        '
+        Me.pokemonTwoHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonTwoHappyness_txtBox.MaxLength = 3
+        Me.pokemonTwoHappyness_txtBox.Name = "pokemonTwoHappyness_txtBox"
+        Me.pokemonTwoHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonTwoHappyness_txtBox.TabIndex = 44
+        Me.pokemonTwoHappyness_txtBox.Text = "70"
+        '
+        'pokemonTwoHappyness_lbl
+        '
+        Me.pokemonTwoHappyness_lbl.AutoSize = True
+        Me.pokemonTwoHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonTwoHappyness_lbl.Name = "pokemonTwoHappyness_lbl"
+        Me.pokemonTwoHappyness_lbl.Size = New System.Drawing.Size(114, 13)
+        Me.pokemonTwoHappyness_lbl.TabIndex = 42
+        Me.pokemonTwoHappyness_lbl.Text = "Happyness (Max 255)"
+        '
+        'pokemonTwoShiny_grp
+        '
+        Me.pokemonTwoShiny_grp.Controls.Add(Me.pokemonTwoShiny_rad)
+        Me.pokemonTwoShiny_grp.Controls.Add(Me.pokemonTwoShinyFalse_rad)
+        Me.pokemonTwoShiny_grp.Location = New System.Drawing.Point(9, 374)
+        Me.pokemonTwoShiny_grp.Name = "pokemonTwoShiny_grp"
+        Me.pokemonTwoShiny_grp.Size = New System.Drawing.Size(312, 44)
+        Me.pokemonTwoShiny_grp.TabIndex = 41
+        Me.pokemonTwoShiny_grp.TabStop = False
+        Me.pokemonTwoShiny_grp.Text = "Shiny"
+        '
+        'pokemonTwoShiny_rad
+        '
+        Me.pokemonTwoShiny_rad.AutoSize = True
+        Me.pokemonTwoShiny_rad.Location = New System.Drawing.Point(63, 21)
+        Me.pokemonTwoShiny_rad.Name = "pokemonTwoShiny_rad"
+        Me.pokemonTwoShiny_rad.Size = New System.Drawing.Size(47, 17)
+        Me.pokemonTwoShiny_rad.TabIndex = 1
+        Me.pokemonTwoShiny_rad.TabStop = True
+        Me.pokemonTwoShiny_rad.Text = "True"
+        Me.pokemonTwoShiny_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonTwoShinyFalse_rad
+        '
+        Me.pokemonTwoShinyFalse_rad.AutoSize = True
+        Me.pokemonTwoShinyFalse_rad.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonTwoShinyFalse_rad.Name = "pokemonTwoShinyFalse_rad"
+        Me.pokemonTwoShinyFalse_rad.Size = New System.Drawing.Size(51, 17)
+        Me.pokemonTwoShinyFalse_rad.TabIndex = 0
+        Me.pokemonTwoShinyFalse_rad.TabStop = True
+        Me.pokemonTwoShinyFalse_rad.Text = "False"
+        Me.pokemonTwoShinyFalse_rad.UseVisualStyleBackColor = True
+        '
+        'pokemonTwoForm_txtBox
+        '
+        Me.pokemonTwoForm_txtBox.Location = New System.Drawing.Point(9, 346)
+        Me.pokemonTwoForm_txtBox.Name = "pokemonTwoForm_txtBox"
+        Me.pokemonTwoForm_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonTwoForm_txtBox.TabIndex = 29
+        '
+        'pokemonTwoForm_lbl
+        '
+        Me.pokemonTwoForm_lbl.AutoSize = True
+        Me.pokemonTwoForm_lbl.Location = New System.Drawing.Point(6, 330)
+        Me.pokemonTwoForm_lbl.Name = "pokemonTwoForm_lbl"
+        Me.pokemonTwoForm_lbl.Size = New System.Drawing.Size(84, 13)
+        Me.pokemonTwoForm_lbl.TabIndex = 40
+        Me.pokemonTwoForm_lbl.Text = "Pokémon Form"
+        '
+        'pokemonTwoAbility_lbl
+        '
+        Me.pokemonTwoAbility_lbl.AutoSize = True
+        Me.pokemonTwoAbility_lbl.Location = New System.Drawing.Point(6, 250)
+        Me.pokemonTwoAbility_lbl.Name = "pokemonTwoAbility_lbl"
+        Me.pokemonTwoAbility_lbl.Size = New System.Drawing.Size(218, 13)
+        Me.pokemonTwoAbility_lbl.TabIndex = 39
+        Me.pokemonTwoAbility_lbl.Text = "Pokémon Ability (0-1 Normal, 2-5 Hidden)"
+        '
+        'pokemonTwoAbility_cmb
+        '
+        Me.pokemonTwoAbility_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonTwoAbility_cmb.FormattingEnabled = True
+        Me.pokemonTwoAbility_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.pokemonTwoAbility_cmb.Location = New System.Drawing.Point(9, 266)
+        Me.pokemonTwoAbility_cmb.Name = "pokemonTwoAbility_cmb"
+        Me.pokemonTwoAbility_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonTwoAbility_cmb.TabIndex = 38
+        '
+        'pokemonTwoLevel_txtBox
+        '
+        Me.pokemonTwoLevel_txtBox.Location = New System.Drawing.Point(9, 75)
+        Me.pokemonTwoLevel_txtBox.MaxLength = 3
+        Me.pokemonTwoLevel_txtBox.Name = "pokemonTwoLevel_txtBox"
+        Me.pokemonTwoLevel_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonTwoLevel_txtBox.TabIndex = 37
+        '
+        'pokemonTwoLevel_lbl
+        '
+        Me.pokemonTwoLevel_lbl.AutoSize = True
+        Me.pokemonTwoLevel_lbl.Location = New System.Drawing.Point(6, 59)
+        Me.pokemonTwoLevel_lbl.Name = "pokemonTwoLevel_lbl"
+        Me.pokemonTwoLevel_lbl.Size = New System.Drawing.Size(83, 13)
+        Me.pokemonTwoLevel_lbl.TabIndex = 36
+        Me.pokemonTwoLevel_lbl.Text = "Level (Max 100)"
+        '
+        'pokemonTwoIVs_txtBox
+        '
+        Me.pokemonTwoIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonTwoIVs_txtBox.MaxLength = 2
+        Me.pokemonTwoIVs_txtBox.Name = "pokemonTwoIVs_txtBox"
+        Me.pokemonTwoIVs_txtBox.Size = New System.Drawing.Size(312, 22)
+        Me.pokemonTwoIVs_txtBox.TabIndex = 35
+        Me.pokemonTwoIVs_txtBox.Text = "10"
+        '
+        'pokemonTwoIVs_lbl
+        '
+        Me.pokemonTwoIVs_lbl.AutoSize = True
+        Me.pokemonTwoIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonTwoIVs_lbl.Name = "pokemonTwoIVs_lbl"
+        Me.pokemonTwoIVs_lbl.Size = New System.Drawing.Size(67, 13)
+        Me.pokemonTwoIVs_lbl.TabIndex = 34
+        Me.pokemonTwoIVs_lbl.Text = "IVs (Max 31)"
+        '
+        'pokemonTwoNature_lbl
+        '
+        Me.pokemonTwoNature_lbl.AutoSize = True
+        Me.pokemonTwoNature_lbl.Location = New System.Drawing.Point(6, 421)
+        Me.pokemonTwoNature_lbl.Name = "pokemonTwoNature_lbl"
+        Me.pokemonTwoNature_lbl.Size = New System.Drawing.Size(93, 13)
+        Me.pokemonTwoNature_lbl.TabIndex = 33
+        Me.pokemonTwoNature_lbl.Text = "Pokémon Nature"
+        '
+        'pokemonTwoNature_cmb
+        '
+        Me.pokemonTwoNature_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonTwoNature_cmb.FormattingEnabled = True
+        Me.pokemonTwoNature_cmb.Items.AddRange(New Object() {"(random)", "HARDY", "LONELY", "BRAVE", "ADAMANT", "NAUGHTY", "BOLD", "DOCILE", "RELAXED", "IMPISH", "LAX", "MODEST", "MILD", "SERIOUS", "QUIET", "RASH", "CALM", "GENTLE", "SASSY", "BASHFUL", "CAREFUL", "TIMID", "HASTY", "JOLLY", "NAIVE", "QUIRKY"})
+        Me.pokemonTwoNature_cmb.Location = New System.Drawing.Point(9, 437)
+        Me.pokemonTwoNature_cmb.Name = "pokemonTwoNature_cmb"
+        Me.pokemonTwoNature_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonTwoNature_cmb.TabIndex = 32
+        '
+        'pokemonTwoMoves_grp
+        '
+        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoMove4_TextBox)
+        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoMove3_TextBox)
+        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoMove2_txtBox)
+        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoMove1_txtBox)
+        Me.pokemonTwoMoves_grp.Location = New System.Drawing.Point(9, 103)
+        Me.pokemonTwoMoves_grp.Name = "pokemonTwoMoves_grp"
+        Me.pokemonTwoMoves_grp.Size = New System.Drawing.Size(312, 144)
+        Me.pokemonTwoMoves_grp.TabIndex = 31
+        Me.pokemonTwoMoves_grp.TabStop = False
+        Me.pokemonTwoMoves_grp.Text = "Moves"
+        '
+        'pokemonTwoMove4_TextBox
+        '
+        Me.pokemonTwoMove4_TextBox.Location = New System.Drawing.Point(6, 105)
+        Me.pokemonTwoMove4_TextBox.Name = "pokemonTwoMove4_TextBox"
+        Me.pokemonTwoMove4_TextBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonTwoMove4_TextBox.TabIndex = 3
+        '
+        'pokemonTwoMove3_TextBox
+        '
+        Me.pokemonTwoMove3_TextBox.Location = New System.Drawing.Point(6, 77)
+        Me.pokemonTwoMove3_TextBox.Name = "pokemonTwoMove3_TextBox"
+        Me.pokemonTwoMove3_TextBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonTwoMove3_TextBox.TabIndex = 2
+        '
+        'pokemonTwoMove2_txtBox
+        '
+        Me.pokemonTwoMove2_txtBox.Location = New System.Drawing.Point(6, 49)
+        Me.pokemonTwoMove2_txtBox.Name = "pokemonTwoMove2_txtBox"
+        Me.pokemonTwoMove2_txtBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonTwoMove2_txtBox.TabIndex = 1
+        '
+        'pokemonTwoMove1_txtBox
+        '
+        Me.pokemonTwoMove1_txtBox.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonTwoMove1_txtBox.Name = "pokemonTwoMove1_txtBox"
+        Me.pokemonTwoMove1_txtBox.Size = New System.Drawing.Size(300, 22)
+        Me.pokemonTwoMove1_txtBox.TabIndex = 0
+        '
+        'pokemonTwoGender_lbl
+        '
+        Me.pokemonTwoGender_lbl.AutoSize = True
+        Me.pokemonTwoGender_lbl.Location = New System.Drawing.Point(6, 290)
+        Me.pokemonTwoGender_lbl.Name = "pokemonTwoGender_lbl"
+        Me.pokemonTwoGender_lbl.Size = New System.Drawing.Size(96, 13)
+        Me.pokemonTwoGender_lbl.TabIndex = 30
+        Me.pokemonTwoGender_lbl.Text = "Pokémon Gender"
+        '
+        'pokemonTwoGender_cmb
+        '
+        Me.pokemonTwoGender_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.pokemonTwoGender_cmb.FormattingEnabled = True
+        Me.pokemonTwoGender_cmb.Items.AddRange(New Object() {"M", "F", "(random)"})
+        Me.pokemonTwoGender_cmb.Location = New System.Drawing.Point(9, 306)
+        Me.pokemonTwoGender_cmb.Name = "pokemonTwoGender_cmb"
+        Me.pokemonTwoGender_cmb.Size = New System.Drawing.Size(312, 21)
+        Me.pokemonTwoGender_cmb.TabIndex = 28
+        '
+        'pokemonTwoHeldItem_txtBox
+        '
+        Me.pokemonTwoHeldItem_txtBox.Location = New System.Drawing.Point(180, 34)
+        Me.pokemonTwoHeldItem_txtBox.Name = "pokemonTwoHeldItem_txtBox"
+        Me.pokemonTwoHeldItem_txtBox.Size = New System.Drawing.Size(141, 22)
+        Me.pokemonTwoHeldItem_txtBox.TabIndex = 27
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(156, 37)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(18, 13)
+        Me.Label10.TabIndex = 26
+        Me.Label10.Text = "@"
+        '
+        'pokemonTwoName_txtBox
+        '
+        Me.pokemonTwoName_txtBox.Location = New System.Drawing.Point(9, 34)
+        Me.pokemonTwoName_txtBox.Name = "pokemonTwoName_txtBox"
+        Me.pokemonTwoName_txtBox.Size = New System.Drawing.Size(141, 22)
+        Me.pokemonTwoName_txtBox.TabIndex = 25
+        '
+        'pokemonTwoName_lbl
+        '
+        Me.pokemonTwoName_lbl.AutoSize = True
+        Me.pokemonTwoName_lbl.Location = New System.Drawing.Point(6, 18)
+        Me.pokemonTwoName_lbl.Name = "pokemonTwoName_lbl"
+        Me.pokemonTwoName_lbl.Size = New System.Drawing.Size(87, 13)
+        Me.pokemonTwoName_lbl.TabIndex = 24
+        Me.pokemonTwoName_lbl.Text = "Pokémon Name"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -933,6 +1295,8 @@ Partial Class Form1
         Me.pokemonOneMoves_grp.ResumeLayout(False)
         Me.pokemonOneMoves_grp.PerformLayout()
         Me.pg_PTwo.ResumeLayout(False)
+        Me.pokemonTwo_grp.ResumeLayout(False)
+        Me.pokemonTwo_grp.PerformLayout()
         Me.pg_PThree.ResumeLayout(False)
         Me.pg_PFour.ResumeLayout(False)
         Me.pg_PFive.ResumeLayout(False)
@@ -947,6 +1311,12 @@ Partial Class Form1
         Me.pokemonOneShiny_grp.PerformLayout()
         Me.pokemonOneShadow_grp.ResumeLayout(False)
         Me.pokemonOneShadow_grp.PerformLayout()
+        Me.pokemonTwoShadow_grp.ResumeLayout(False)
+        Me.pokemonTwoShadow_grp.PerformLayout()
+        Me.pokemonTwoShiny_grp.ResumeLayout(False)
+        Me.pokemonTwoShiny_grp.PerformLayout()
+        Me.pokemonTwoMoves_grp.ResumeLayout(False)
+        Me.pokemonTwoMoves_grp.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1031,4 +1401,37 @@ Partial Class Form1
     Friend WithEvents pokemonOneShadow_grp As GroupBox
     Friend WithEvents pokemonOneShadow_rad As RadioButton
     Friend WithEvents pokemonOneShadowFalse_rad As RadioButton
+    Friend WithEvents pokemonTwoPokeballID_cmb As ComboBox
+    Friend WithEvents pokemonTwoPokeballID_lbl As Label
+    Friend WithEvents pokemonTwoShadow_grp As GroupBox
+    Friend WithEvents pokemonTwoShadow_rad As RadioButton
+    Friend WithEvents pokemonTwoShadowFalse_rad As RadioButton
+    Friend WithEvents pokemonTwoNickName_txtBox As TextBox
+    Friend WithEvents pokemonTwoNickName_lbl As Label
+    Friend WithEvents pokemonTwoHappyness_txtBox As TextBox
+    Friend WithEvents pokemonTwoHappyness_lbl As Label
+    Friend WithEvents pokemonTwoShiny_grp As GroupBox
+    Friend WithEvents pokemonTwoShiny_rad As RadioButton
+    Friend WithEvents pokemonTwoShinyFalse_rad As RadioButton
+    Friend WithEvents pokemonTwoForm_txtBox As TextBox
+    Friend WithEvents pokemonTwoForm_lbl As Label
+    Friend WithEvents pokemonTwoAbility_lbl As Label
+    Friend WithEvents pokemonTwoAbility_cmb As ComboBox
+    Friend WithEvents pokemonTwoLevel_txtBox As TextBox
+    Friend WithEvents pokemonTwoLevel_lbl As Label
+    Friend WithEvents pokemonTwoIVs_txtBox As TextBox
+    Friend WithEvents pokemonTwoIVs_lbl As Label
+    Friend WithEvents pokemonTwoNature_lbl As Label
+    Friend WithEvents pokemonTwoNature_cmb As ComboBox
+    Friend WithEvents pokemonTwoMoves_grp As GroupBox
+    Friend WithEvents pokemonTwoMove4_TextBox As TextBox
+    Friend WithEvents pokemonTwoMove3_TextBox As TextBox
+    Friend WithEvents pokemonTwoMove2_txtBox As TextBox
+    Friend WithEvents pokemonTwoMove1_txtBox As TextBox
+    Friend WithEvents pokemonTwoGender_lbl As Label
+    Friend WithEvents pokemonTwoGender_cmb As ComboBox
+    Friend WithEvents pokemonTwoHeldItem_txtBox As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents pokemonTwoName_txtBox As TextBox
+    Friend WithEvents pokemonTwoName_lbl As Label
 End Class
