@@ -34,17 +34,27 @@
         Form1.pokemonFourGender_cmb.SelectedIndex = 2
         Form1.pokemonFourNature_cmb.SelectedIndex = 0
         Form1.pokemonFourAbility_cmb.SelectedIndex = 0
-        Form1.pokemonFourShinyFalse_Rad.Checked = True
+        Form1.pokemonFourShinyFalse_rad.Checked = True
         Form1.pokemonFourShadowFalse_rad.Checked = True
         Form1.pokemonFourPokeballID_cmb.SelectedIndex = 0
         '
         ' pokemonFive
         '
-
+        Form1.pokemonFiveGender_cmb.SelectedIndex = 2
+        Form1.pokemonFiveNature_cmb.SelectedIndex = 0
+        Form1.pokemonFiveAbility_cmb.SelectedIndex = 0
+        Form1.pokemonFiveShinyFalse_rad.Checked = True
+        Form1.pokemonFiveShadowFalse_rad.Checked = True
+        Form1.pokemonFivePokeballID_cmb.SelectedIndex = 0
         '
         ' pokemonSix
         '
-
+        Form1.pokemonSixGender_cmb.SelectedIndex = 2
+        Form1.pokemonSixNature_cmb.SelectedIndex = 0
+        Form1.pokemonSixAbility_cmb.SelectedIndex = 0
+        Form1.pokemonSixShinyFalse_rad.Checked = True
+        Form1.pokemonSixShadowFalse_rad.Checked = True
+        Form1.pokemonSixPokeballID_cmb.SelectedIndex = 0
         Form1.Timer1.Start()
     End Sub
     Public Shared Sub TimerChecker()

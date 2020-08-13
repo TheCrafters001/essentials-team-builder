@@ -14,4 +14,20 @@ Public Class Form1
             MessageBox.Show("File Saved at: " & codeExporter_dialog.FileName)
         End If
     End Sub
+
+    Private Sub generate_btn_Click(sender As Object, e As EventArgs) Handles generate_btn.Click
+        If numPoké_cmb.Text = "1" Then
+            Generator.OnePokemon()
+        ElseIf numPoké_cmb.Text = "2" Then
+
+        ElseIf numPoké_cmb.Text = "3" Then
+
+        ElseIf numPoké_cmb.Text = "4" Then
+
+        ElseIf numPoké_cmb.Text = "5" Then
+
+        ElseIf numPoké_cmb.Text = "6" Then
+
+        End If
+    End Sub
 End Class
