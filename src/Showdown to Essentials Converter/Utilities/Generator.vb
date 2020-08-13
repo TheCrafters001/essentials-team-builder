@@ -68,7 +68,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneForm_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -144,7 +144,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneForm_txtBox.Text
+            pokemonIVs = Form1.pokemonOneivs_txtBox.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -190,7 +190,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonTwoNature_cmb.Text
-            pokemonIVs = Form1.pokemonTwoForm_txtBox.Text
+            pokemonIVs = Form1.pokemonTwoIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonTwoHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonTwoNickName_txtBox.Text
             If Form1.pokemonTwoShadowFalse_rad.Checked = True Then
@@ -265,7 +265,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneForm_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -311,7 +311,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonTwoNature_cmb.Text
-            pokemonIVs = Form1.pokemonTwoForm_txtBox.Text
+            pokemonIVs = Form1.pokemonTwoIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonTwoHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonTwoNickName_txtBox.Text
             If Form1.pokemonTwoShadowFalse_rad.Checked = True Then
@@ -356,7 +356,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonThreeNature_cmb.Text
-            pokemonIVs = Form1.pokemonThreeForm_txtBox.Text
+            pokemonIVs = Form1.pokemonThreeIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonThreeHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonThreeNickname_txtBox.Text
             If Form1.pokemonThreeShadowFalse_rad.Checked = True Then
@@ -431,7 +431,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneForm_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -477,7 +477,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonTwoNature_cmb.Text
-            pokemonIVs = Form1.pokemonTwoForm_txtBox.Text
+            pokemonIVs = Form1.pokemonTwoIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonTwoHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonTwoNickName_txtBox.Text
             If Form1.pokemonTwoShadowFalse_rad.Checked = True Then
@@ -522,7 +522,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonThreeNature_cmb.Text
-            pokemonIVs = Form1.pokemonThreeForm_txtBox.Text
+            pokemonIVs = Form1.pokemonThreeIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonThreeHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonThreeNickname_txtBox.Text
             If Form1.pokemonThreeShadowFalse_rad.Checked = True Then
@@ -567,7 +567,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonFourNature_cmb.Text
-            pokemonIVs = Form1.pokemonFourForm_txtBox.Text
+            pokemonIVs = Form1.pokemonFourIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonFourHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonFourNickname_txtBox.Text
             If Form1.pokemonFourShadowFalse_rad.Checked = True Then
@@ -642,7 +642,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneForm_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -688,7 +688,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonTwoNature_cmb.Text
-            pokemonIVs = Form1.pokemonTwoForm_txtBox.Text
+            pokemonIVs = Form1.pokemonTwoIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonTwoHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonTwoNickName_txtBox.Text
             If Form1.pokemonTwoShadowFalse_rad.Checked = True Then
@@ -733,7 +733,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonThreeNature_cmb.Text
-            pokemonIVs = Form1.pokemonThreeForm_txtBox.Text
+            pokemonIVs = Form1.pokemonThreeIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonThreeHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonThreeNickname_txtBox.Text
             If Form1.pokemonThreeShadowFalse_rad.Checked = True Then
@@ -778,7 +778,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonFourNature_cmb.Text
-            pokemonIVs = Form1.pokemonFourForm_txtBox.Text
+            pokemonIVs = Form1.pokemonFourIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonFourHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonFourNickname_txtBox.Text
             If Form1.pokemonFourShadowFalse_rad.Checked = True Then
@@ -823,7 +823,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonFiveNature_cmb.Text
-            pokemonIVs = Form1.pokemonFiveForm_txtBox.Text
+            pokemonIVs = Form1.pokemonFiveIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonFiveHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonFiveNickname_txtBox.Text
             If Form1.pokemonFiveShadowFalse_rad.Checked = True Then
@@ -898,7 +898,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneForm_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -944,7 +944,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonTwoNature_cmb.Text
-            pokemonIVs = Form1.pokemonTwoForm_txtBox.Text
+            pokemonIVs = Form1.pokemonTwoIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonTwoHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonTwoNickName_txtBox.Text
             If Form1.pokemonTwoShadowFalse_rad.Checked = True Then
@@ -989,7 +989,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonThreeNature_cmb.Text
-            pokemonIVs = Form1.pokemonThreeForm_txtBox.Text
+            pokemonIVs = Form1.pokemonThreeIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonThreeHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonThreeNickname_txtBox.Text
             If Form1.pokemonThreeShadowFalse_rad.Checked = True Then
@@ -1034,7 +1034,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonFourNature_cmb.Text
-            pokemonIVs = Form1.pokemonFourForm_txtBox.Text
+            pokemonIVs = Form1.pokemonFourIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonFourHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonFourNickname_txtBox.Text
             If Form1.pokemonFourShadowFalse_rad.Checked = True Then
@@ -1079,7 +1079,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonFiveNature_cmb.Text
-            pokemonIVs = Form1.pokemonFiveForm_txtBox.Text
+            pokemonIVs = Form1.pokemonFiveIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonFiveHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonFiveNickname_txtBox.Text
             If Form1.pokemonFiveShadowFalse_rad.Checked = True Then
@@ -1124,7 +1124,7 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonSixNature_cmb.Text
-            pokemonIVs = Form1.pokemonSixForm_txtBox.Text
+            pokemonIVs = Form1.pokemonSixIVs_txtBox.Text
             pokemonHappyness = Form1.pokemonSixHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonSixNickname_txtBox.Text
             If Form1.pokemonSixShadowFalse_rad.Checked = True Then
