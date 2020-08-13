@@ -95,7 +95,7 @@
                 shadowString = ""
             End If
 
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID
             Form1.outputBox_rchBox.Text &= output
         Catch ex As Exception
             MessageBox.Show("Oh no!" & vbCrLf & ex.ToString, "Error")
@@ -171,7 +171,7 @@
                 shadowString = ""
             End If
 
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonTwoName_txtBox.Text.ToUpper
@@ -216,7 +216,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID
             Form1.outputBox_rchBox.Text &= output
         Catch ex As Exception
             MessageBox.Show("Oh no!" & vbCrLf & ex.ToString, "Error")
@@ -292,7 +292,7 @@
                 shadowString = ""
             End If
 
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonTwoName_txtBox.Text.ToUpper
@@ -337,7 +337,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonThreeName_txtBox.Text.ToUpper
@@ -382,7 +382,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
         Catch ex As Exception
             MessageBox.Show("Oh no!" & vbCrLf & ex.ToString, "Error")
@@ -458,7 +458,7 @@
                 shadowString = ""
             End If
 
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonTwoName_txtBox.Text.ToUpper
@@ -503,7 +503,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonThreeName_txtBox.Text.ToUpper
@@ -548,7 +548,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonFourName_txtBox.Text.ToUpper
@@ -593,7 +593,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
         Catch ex As Exception
             MessageBox.Show("Oh no!" & vbCrLf & ex.ToString, "Error")
@@ -669,7 +669,7 @@
                 shadowString = ""
             End If
 
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonTwoName_txtBox.Text.ToUpper
@@ -714,7 +714,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonThreeName_txtBox.Text.ToUpper
@@ -759,7 +759,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonFourName_txtBox.Text.ToUpper
@@ -804,7 +804,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonFiveName_txtBox.Text.ToUpper
@@ -849,7 +849,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
         Catch ex As Exception
             MessageBox.Show("Oh no!" & vbCrLf & ex.ToString, "Error")
@@ -925,7 +925,7 @@
                 shadowString = ""
             End If
 
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonTwoName_txtBox.Text.ToUpper
@@ -970,7 +970,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonThreeName_txtBox.Text.ToUpper
@@ -1015,7 +1015,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonFourName_txtBox.Text.ToUpper
@@ -1060,7 +1060,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonFiveName_txtBox.Text.ToUpper
@@ -1105,7 +1105,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonSixName_txtBox.Text.ToUpper
@@ -1150,7 +1150,7 @@
             ElseIf shadow = False Then
                 shadowString = ""
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
         Catch ex As Exception
             MessageBox.Show("Oh no!" & vbCrLf & ex.ToString, "Error")
