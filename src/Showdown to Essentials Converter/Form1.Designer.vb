@@ -26,6 +26,7 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
+        Me.example_btn = New System.Windows.Forms.Button()
         Me.properSpellingNote_lbl = New System.Windows.Forms.Label()
         Me.numPoké_lbl = New System.Windows.Forms.Label()
         Me.numPoké_cmb = New System.Windows.Forms.ComboBox()
@@ -49,6 +50,7 @@ Partial Class Form1
         Me.trainerInfoTitle_lbl = New System.Windows.Forms.Label()
         Me.pg_POne = New System.Windows.Forms.TabPage()
         Me.pokemonOne_grp = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.pokemonOnePokeballID_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonOnePokeballID_lbl = New System.Windows.Forms.Label()
         Me.pokemonOneShadow_grp = New System.Windows.Forms.GroupBox()
@@ -84,6 +86,7 @@ Partial Class Form1
         Me.pokemonOneName_lbl = New System.Windows.Forms.Label()
         Me.pg_PTwo = New System.Windows.Forms.TabPage()
         Me.pokemonTwo_grp = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.pokemonTwoPokeballID_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonTwoPokeballID_lbl = New System.Windows.Forms.Label()
         Me.pokemonTwoShadow_grp = New System.Windows.Forms.GroupBox()
@@ -119,6 +122,7 @@ Partial Class Form1
         Me.pokemonTwoName_lbl = New System.Windows.Forms.Label()
         Me.pg_PThree = New System.Windows.Forms.TabPage()
         Me.pokemonThree_grp = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.pokemonThreePokeballID_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonThreePokeballID_lbl = New System.Windows.Forms.Label()
         Me.pokemonThreeShadow_grp = New System.Windows.Forms.GroupBox()
@@ -154,6 +158,7 @@ Partial Class Form1
         Me.pokemonThreeName_lbl = New System.Windows.Forms.Label()
         Me.pg_PFour = New System.Windows.Forms.TabPage()
         Me.pokemonFour_grp = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.pokemonFourPokeballID_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonFourPokeballID_lbl = New System.Windows.Forms.Label()
         Me.pokemonFourShadow_grp = New System.Windows.Forms.GroupBox()
@@ -189,6 +194,7 @@ Partial Class Form1
         Me.pokemonFourName_lbl = New System.Windows.Forms.Label()
         Me.pg_PFive = New System.Windows.Forms.TabPage()
         Me.pokemonFive_grp = New System.Windows.Forms.GroupBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.pokemonFivePokeballID_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonFivePokeballID_lbl = New System.Windows.Forms.Label()
         Me.pokemonFiveShadow_grp = New System.Windows.Forms.GroupBox()
@@ -224,6 +230,7 @@ Partial Class Form1
         Me.pokemonFiveName_lbl = New System.Windows.Forms.Label()
         Me.pg_PSix = New System.Windows.Forms.TabPage()
         Me.pokemonSix_grp = New System.Windows.Forms.GroupBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.pokemonSixPokeballID_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonSixPokeballID_lbl = New System.Windows.Forms.Label()
         Me.pokemonSixShadow_grp = New System.Windows.Forms.GroupBox()
@@ -258,6 +265,7 @@ Partial Class Form1
         Me.pokemonSixName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonSixName_lbl = New System.Windows.Forms.Label()
         Me.pg_Output = New System.Windows.Forms.TabPage()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.save_btn = New System.Windows.Forms.Button()
         Me.generate_btn = New System.Windows.Forms.Button()
         Me.outputBox_rchBox = New System.Windows.Forms.RichTextBox()
@@ -327,6 +335,7 @@ Partial Class Form1
         '
         'pg_Trainer
         '
+        Me.pg_Trainer.Controls.Add(Me.example_btn)
         Me.pg_Trainer.Controls.Add(Me.properSpellingNote_lbl)
         Me.pg_Trainer.Controls.Add(Me.numPoké_lbl)
         Me.pg_Trainer.Controls.Add(Me.numPoké_cmb)
@@ -347,6 +356,15 @@ Partial Class Form1
         Me.pg_Trainer.TabIndex = 0
         Me.pg_Trainer.Text = "Trainer Info"
         Me.pg_Trainer.UseVisualStyleBackColor = True
+        '
+        'example_btn
+        '
+        Me.example_btn.Location = New System.Drawing.Point(254, 482)
+        Me.example_btn.Name = "example_btn"
+        Me.example_btn.Size = New System.Drawing.Size(273, 23)
+        Me.example_btn.TabIndex = 8
+        Me.example_btn.Text = "Use Example"
+        Me.example_btn.UseVisualStyleBackColor = True
         '
         'properSpellingNote_lbl
         '
@@ -544,6 +562,7 @@ Partial Class Form1
         '
         'pokemonOne_grp
         '
+        Me.pokemonOne_grp.Controls.Add(Me.Label2)
         Me.pokemonOne_grp.Controls.Add(Me.pokemonOnePokeballID_cmb)
         Me.pokemonOne_grp.Controls.Add(Me.pokemonOnePokeballID_lbl)
         Me.pokemonOne_grp.Controls.Add(Me.pokemonOneShadow_grp)
@@ -575,6 +594,15 @@ Partial Class Form1
         Me.pokemonOne_grp.TabIndex = 0
         Me.pokemonOne_grp.TabStop = False
         Me.pokemonOne_grp.Text = "Pokémon 1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(327, 190)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(272, 13)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "Moves MUST be one word. (ie: Fire Blast = FireBlast)"
         '
         'pokemonOnePokeballID_cmb
         '
@@ -888,6 +916,7 @@ Partial Class Form1
         '
         'pokemonTwo_grp
         '
+        Me.pokemonTwo_grp.Controls.Add(Me.Label3)
         Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoPokeballID_cmb)
         Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoPokeballID_lbl)
         Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoShadow_grp)
@@ -919,6 +948,15 @@ Partial Class Form1
         Me.pokemonTwo_grp.TabIndex = 1
         Me.pokemonTwo_grp.TabStop = False
         Me.pokemonTwo_grp.Text = "Pokémon 2"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(327, 190)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(272, 13)
+        Me.Label3.TabIndex = 49
+        Me.Label3.Text = "Moves MUST be one word. (ie: Fire Blast = FireBlast)"
         '
         'pokemonTwoPokeballID_cmb
         '
@@ -1232,6 +1270,7 @@ Partial Class Form1
         '
         'pokemonThree_grp
         '
+        Me.pokemonThree_grp.Controls.Add(Me.Label5)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_cmb)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_lbl)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeShadow_grp)
@@ -1263,6 +1302,15 @@ Partial Class Form1
         Me.pokemonThree_grp.TabIndex = 1
         Me.pokemonThree_grp.TabStop = False
         Me.pokemonThree_grp.Text = "Pokémon 3"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(327, 190)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(272, 13)
+        Me.Label5.TabIndex = 74
+        Me.Label5.Text = "Moves MUST be one word. (ie: Fire Blast = FireBlast)"
         '
         'pokemonThreePokeballID_cmb
         '
@@ -1576,6 +1624,7 @@ Partial Class Form1
         '
         'pokemonFour_grp
         '
+        Me.pokemonFour_grp.Controls.Add(Me.Label6)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_cmb)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_lbl)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourShadow_grp)
@@ -1607,6 +1656,15 @@ Partial Class Form1
         Me.pokemonFour_grp.TabIndex = 1
         Me.pokemonFour_grp.TabStop = False
         Me.pokemonFour_grp.Text = "Pokémon 4"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(327, 190)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(272, 13)
+        Me.Label6.TabIndex = 99
+        Me.Label6.Text = "Moves MUST be one word. (ie: Fire Blast = FireBlast)"
         '
         'pokemonFourPokeballID_cmb
         '
@@ -1920,6 +1978,7 @@ Partial Class Form1
         '
         'pokemonFive_grp
         '
+        Me.pokemonFive_grp.Controls.Add(Me.Label7)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFivePokeballID_cmb)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFivePokeballID_lbl)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveShadow_grp)
@@ -1951,6 +2010,15 @@ Partial Class Form1
         Me.pokemonFive_grp.TabIndex = 1
         Me.pokemonFive_grp.TabStop = False
         Me.pokemonFive_grp.Text = "Pokémon 5"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(327, 190)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(272, 13)
+        Me.Label7.TabIndex = 124
+        Me.Label7.Text = "Moves MUST be one word. (ie: Fire Blast = FireBlast)"
         '
         'pokemonFivePokeballID_cmb
         '
@@ -2264,6 +2332,7 @@ Partial Class Form1
         '
         'pokemonSix_grp
         '
+        Me.pokemonSix_grp.Controls.Add(Me.Label8)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixPokeballID_cmb)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixPokeballID_lbl)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixShadow_grp)
@@ -2295,6 +2364,15 @@ Partial Class Form1
         Me.pokemonSix_grp.TabIndex = 1
         Me.pokemonSix_grp.TabStop = False
         Me.pokemonSix_grp.Text = "Pokémon 6"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(327, 190)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(272, 13)
+        Me.Label8.TabIndex = 149
+        Me.Label8.Text = "Moves MUST be one word. (ie: Fire Blast = FireBlast)"
         '
         'pokemonSixPokeballID_cmb
         '
@@ -2598,6 +2676,7 @@ Partial Class Form1
         '
         'pg_Output
         '
+        Me.pg_Output.Controls.Add(Me.Label1)
         Me.pg_Output.Controls.Add(Me.save_btn)
         Me.pg_Output.Controls.Add(Me.generate_btn)
         Me.pg_Output.Controls.Add(Me.outputBox_rchBox)
@@ -2607,6 +2686,16 @@ Partial Class Form1
         Me.pg_Output.TabIndex = 8
         Me.pg_Output.Text = "Output"
         Me.pg_Output.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(3, 490)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(519, 13)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Warning: Be careful when replacing trainers.txt! Replacing it will remove all oth" &
+    "er trainers in the list!"
         '
         'save_btn
         '
@@ -2780,6 +2869,7 @@ Partial Class Form1
         Me.pokemonSixMoves_grp.ResumeLayout(False)
         Me.pokemonSixMoves_grp.PerformLayout()
         Me.pg_Output.ResumeLayout(False)
+        Me.pg_Output.PerformLayout()
         Me.pg_About.ResumeLayout(False)
         Me.pg_About.PerformLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3032,4 +3122,12 @@ Partial Class Form1
     Friend WithEvents Label14 As Label
     Friend WithEvents pokemonSixName_txtBox As TextBox
     Friend WithEvents pokemonSixName_lbl As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents example_btn As Button
 End Class

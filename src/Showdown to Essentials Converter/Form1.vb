@@ -17,6 +17,7 @@ Public Class Form1
 
     Private Sub generate_btn_Click(sender As Object, e As EventArgs) Handles generate_btn.Click
         If numPoké_cmb.Text = "1" Then
+            Generator.Trainer()
             Generator.OnePokemon()
         ElseIf numPoké_cmb.Text = "2" Then
 
@@ -29,5 +30,18 @@ Public Class Form1
         ElseIf numPoké_cmb.Text = "6" Then
 
         End If
+    End Sub
+
+    Private Sub example_btn_Click(sender As Object, e As EventArgs) Handles example_btn.Click
+        trainerName_txtBox.Text = "Trainer"
+        trainerType_txtBox.Text = "Rival"
+        numPoké_cmb.SelectedIndex = 0
+        trainerUsesItems_chkBox.Checked = True
+        itemOne_txtBox.Text = "potion"
+        pokemonOneName_txtBox.Text = "Weezing"
+        pokemonOneMove1_txtBox.Text = "FireBlast"
+        pokemonOneGender_cmb.SelectedIndex = 0
+        pokemonOneNickName_txtBox.Text = "Gonzalos"
+        pokemonOneLvl_txtBox.Text = "20"
     End Sub
 End Class
