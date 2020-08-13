@@ -20,15 +20,20 @@ Public Class Form1
             Generator.Trainer()
             Generator.OnePokemon()
         ElseIf numPoké_cmb.Text = "2" Then
-
+            Generator.Trainer()
+            Generator.TwoPokemon()
         ElseIf numPoké_cmb.Text = "3" Then
-
+            Generator.Trainer()
+            Generator.ThreePokemon()
         ElseIf numPoké_cmb.Text = "4" Then
-
+            Generator.Trainer()
+            Generator.FourPokemon()
         ElseIf numPoké_cmb.Text = "5" Then
-
+            Generator.Trainer()
+            Generator.FivePokemon()
         ElseIf numPoké_cmb.Text = "6" Then
-
+            Generator.Trainer()
+            Generator.SixPokemon()
         End If
     End Sub
 
