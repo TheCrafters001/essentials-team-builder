@@ -608,7 +608,7 @@ Partial Class Form1
         '
         Me.pokemonOnePokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonOnePokeballID_cmb.FormattingEnabled = True
-        Me.pokemonOnePokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonOnePokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.pokemonOnePokeballID_cmb.Location = New System.Drawing.Point(330, 166)
         Me.pokemonOnePokeballID_cmb.Name = "pokemonOnePokeballID_cmb"
         Me.pokemonOnePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
@@ -962,7 +962,7 @@ Partial Class Form1
         '
         Me.pokemonTwoPokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonTwoPokeballID_cmb.FormattingEnabled = True
-        Me.pokemonTwoPokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonTwoPokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.pokemonTwoPokeballID_cmb.Location = New System.Drawing.Point(330, 166)
         Me.pokemonTwoPokeballID_cmb.Name = "pokemonTwoPokeballID_cmb"
         Me.pokemonTwoPokeballID_cmb.Size = New System.Drawing.Size(312, 21)
@@ -1316,7 +1316,7 @@ Partial Class Form1
         '
         Me.pokemonThreePokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonThreePokeballID_cmb.FormattingEnabled = True
-        Me.pokemonThreePokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonThreePokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.pokemonThreePokeballID_cmb.Location = New System.Drawing.Point(330, 166)
         Me.pokemonThreePokeballID_cmb.Name = "pokemonThreePokeballID_cmb"
         Me.pokemonThreePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
@@ -1670,7 +1670,7 @@ Partial Class Form1
         '
         Me.pokemonFourPokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonFourPokeballID_cmb.FormattingEnabled = True
-        Me.pokemonFourPokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonFourPokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.pokemonFourPokeballID_cmb.Location = New System.Drawing.Point(330, 166)
         Me.pokemonFourPokeballID_cmb.Name = "pokemonFourPokeballID_cmb"
         Me.pokemonFourPokeballID_cmb.Size = New System.Drawing.Size(312, 21)
@@ -2024,7 +2024,7 @@ Partial Class Form1
         '
         Me.pokemonFivePokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonFivePokeballID_cmb.FormattingEnabled = True
-        Me.pokemonFivePokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonFivePokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.pokemonFivePokeballID_cmb.Location = New System.Drawing.Point(330, 166)
         Me.pokemonFivePokeballID_cmb.Name = "pokemonFivePokeballID_cmb"
         Me.pokemonFivePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
@@ -2378,7 +2378,7 @@ Partial Class Form1
         '
         Me.pokemonSixPokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonSixPokeballID_cmb.FormattingEnabled = True
-        Me.pokemonSixPokeballID_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"})
+        Me.pokemonSixPokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
         Me.pokemonSixPokeballID_cmb.Location = New System.Drawing.Point(330, 166)
         Me.pokemonSixPokeballID_cmb.Name = "pokemonSixPokeballID_cmb"
         Me.pokemonSixPokeballID_cmb.Size = New System.Drawing.Size(312, 21)
@@ -2793,7 +2793,6 @@ Partial Class Form1
         '
         'codeExporter_dialog
         '
-        Me.codeExporter_dialog.CheckFileExists = True
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
         '
@@ -2805,6 +2804,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TabControl1)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
