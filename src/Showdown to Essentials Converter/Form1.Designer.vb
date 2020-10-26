@@ -277,6 +277,7 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
+        Me.updateCheck_lnk = New System.Windows.Forms.LinkLabel()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.trainerItems_grp.SuspendLayout()
@@ -2727,6 +2728,7 @@ Partial Class Form1
         '
         'pg_About
         '
+        Me.pg_About.Controls.Add(Me.updateCheck_lnk)
         Me.pg_About.Controls.Add(Me.aboutText_lbl)
         Me.pg_About.Controls.Add(Me.gnuGPL3_picBox)
         Me.pg_About.Controls.Add(Me.aboutAuthor_lbl)
@@ -2795,6 +2797,16 @@ Partial Class Form1
         '
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
+        '
+        'updateCheck_lnk
+        '
+        Me.updateCheck_lnk.AutoSize = True
+        Me.updateCheck_lnk.Location = New System.Drawing.Point(3, 495)
+        Me.updateCheck_lnk.Name = "updateCheck_lnk"
+        Me.updateCheck_lnk.Size = New System.Drawing.Size(102, 13)
+        Me.updateCheck_lnk.TabIndex = 10
+        Me.updateCheck_lnk.TabStop = True
+        Me.updateCheck_lnk.Text = "Check for Updates"
         '
         'Form1
         '
@@ -3130,4 +3142,5 @@ Partial Class Form1
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents example_btn As Button
+    Friend WithEvents updateCheck_lnk As LinkLabel
 End Class

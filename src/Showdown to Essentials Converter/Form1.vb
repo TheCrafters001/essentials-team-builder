@@ -1,4 +1,6 @@
 ﻿
+Imports AutoUpdaterDotNET
+
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Startup.Init()
@@ -48,5 +50,18 @@ Public Class Form1
         pokemonOneGender_cmb.SelectedIndex = 0
         pokemonOneNickName_txtBox.Text = "Gonzalos"
         pokemonOneLvl_txtBox.Text = "20"
+    End Sub
+
+    Private Sub updateCheck_lnk_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles updateCheck_lnk.LinkClicked
+        ' Check For Updates
+        AutoUpdater.ShowSkipButton = True
+        AutoUpdater.ShowRemindLaterButton = True
+        AutoUpdater.ReportErrors = True
+        AutoUpdater.RunUpdateAsAdmin = True
+        AutoUpdater.LetUserSelectRemindLater = True
+        AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Hours
+        AutoUpdater.RemindLaterAt = 1
+        AutoUpdater.UpdateFormSize = New System.Drawing.Size(800, 600)
+        AutoUpdater.Start("https://api.thecrafters001.ga/updates/showdown-to-essentials.xml")
     End Sub
 End Class
