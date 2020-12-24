@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{15092154-3D1E-42E6-A151-D500596E5092}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Showdown_to_Essentials_Converter.My.MyApplication</StartupObject>
-    <RootNamespace>Showdown_to_Essentials_Converter</RootNamespace>
-    <AssemblyName>Showdown to Essentials Converter</AssemblyName>
+    <StartupObject>Showdown_to_Essentials_17_Converter.My.MyApplication</StartupObject>
+    <RootNamespace>Showdown_to_Essentials_17_Converter</RootNamespace>
+    <AssemblyName>Showdown to Essentials 17 Converter</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Showdown to Essentials Converter.xml</DocumentationFile>
+    <DocumentationFile>Showdown to Essentials 17 Converter.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Showdown to Essentials Converter.xml</DocumentationFile>
+    <DocumentationFile>Showdown to Essentials 17 Converter.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -84,6 +84,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extra\New_Splash.Designer.vb">
+      <DependentUpon>New_Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra\New_Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     <Compile Include="Utilities\Startup.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Extra\New_Splash.resx">
+      <DependentUpon>New_Splash.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -156,5 +165,9 @@
   <ItemGroup>
     <None Include="Resources\gplv3-with-text-136x68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

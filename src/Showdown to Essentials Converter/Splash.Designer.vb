@@ -39,7 +39,7 @@ Partial Class Splash
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Showdown_to_Essentials_Converter.My.Resources.Resources.Showdown_to_Essentials_Logo
+        Me.PictureBox1.Image = Global.Showdown_to_Essentials_17_Converter.My.Resources.Resources.Showdown_to_Essentials_Logo
         Me.PictureBox1.Location = New System.Drawing.Point(12, 64)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(387, 145)

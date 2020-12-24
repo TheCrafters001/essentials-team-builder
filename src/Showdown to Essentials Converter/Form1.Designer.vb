@@ -2751,7 +2751,7 @@ Partial Class Form1
         '
         'gnuGPL3_picBox
         '
-        Me.gnuGPL3_picBox.Image = Global.Showdown_to_Essentials_Converter.My.Resources.Resources.gplv3_with_text_136x68
+        Me.gnuGPL3_picBox.Image = Global.Showdown_to_Essentials_17_Converter.My.Resources.Resources.gplv3_with_text_136x68
         Me.gnuGPL3_picBox.Location = New System.Drawing.Point(610, 440)
         Me.gnuGPL3_picBox.Name = "gnuGPL3_picBox"
         Me.gnuGPL3_picBox.Size = New System.Drawing.Size(136, 68)
@@ -2782,7 +2782,7 @@ Partial Class Form1
         'Logo_picBox
         '
         Me.Logo_picBox.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Logo_picBox.Image = Global.Showdown_to_Essentials_Converter.My.Resources.Resources.Showdown_to_Essentials_Logo
+        Me.Logo_picBox.Image = Global.Showdown_to_Essentials_17_Converter.My.Resources.Resources.Showdown_to_Essentials_Logo
         Me.Logo_picBox.Location = New System.Drawing.Point(0, 0)
         Me.Logo_picBox.Name = "Logo_picBox"
         Me.Logo_picBox.Size = New System.Drawing.Size(752, 101)

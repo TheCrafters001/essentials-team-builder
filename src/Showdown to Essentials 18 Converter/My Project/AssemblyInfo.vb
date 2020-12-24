@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Showdown to Essentials 17 Converter")>
+<Assembly: AssemblyTitle("Showdown to Essentials 18 Converter")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Showdown to Essentials 17 Converter")>
-<Assembly: AssemblyCopyright("Copyright © TheCrafters001 2020")>
+<Assembly: AssemblyProduct("Showdown to Essentials 18 Converter")>
+<Assembly: AssemblyCopyright("Copyright ©  2020")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("d2c0e7f6-686f-44de-a15e-f7297abc708f")>
+<Assembly: Guid("8fb4bbd0-a597-4c23-9c3a-bc35e3807e47")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.3.0.0")>
-<Assembly: AssemblyFileVersion("1.3.0.0")>
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>
