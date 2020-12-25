@@ -2829,7 +2829,7 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Showdown to Essentials Converter"
         Me.TabControl1.ResumeLayout(False)
         Me.pg_Trainer.ResumeLayout(False)
         Me.pg_Trainer.PerformLayout()
