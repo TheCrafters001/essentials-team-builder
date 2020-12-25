@@ -3,7 +3,7 @@
         Application.Exit()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles pe17_pic.Click
         Try
             Dim pHelp As New ProcessStartInfo
             pHelp.FileName = ".\Showdown to Essentials 17 Converter.exe"
@@ -17,7 +17,7 @@
         End Try
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles pe18_pic.Click
         Try
             Dim pHelp As New ProcessStartInfo
             pHelp.FileName = ".\Showdown to Essentials 18 Converter.exe"
@@ -31,18 +31,18 @@
         End Try
     End Sub
 
-    Private Sub PictureBox1_MouseHover(sender As Object, e As EventArgs) Handles PictureBox1.MouseHover
-        PictureBox1.BackColor = Color.Gray
+    Private Sub PictureBox1_MouseHover(sender As Object, e As EventArgs) Handles pe17_pic.MouseHover
+        pe17_pic.BackColor = Color.Gray
     End Sub
 
-    Private Sub PictureBox1_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox1.MouseLeave
-        PictureBox1.BackColor = SystemColors.Control
+    Private Sub PictureBox1_MouseLeave(sender As Object, e As EventArgs) Handles pe17_pic.MouseLeave
+        pe17_pic.BackColor = SystemColors.Control
     End Sub
-    Private Sub PictureBox2_MouseHover(sender As Object, e As EventArgs) Handles PictureBox2.MouseHover
-        PictureBox2.BackColor = Color.Gray
+    Private Sub PictureBox2_MouseHover(sender As Object, e As EventArgs) Handles pe18_pic.MouseHover
+        pe18_pic.BackColor = Color.Gray
     End Sub
 
-    Private Sub PictureBox2_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox2.MouseLeave
-        PictureBox2.BackColor = SystemColors.Control
+    Private Sub PictureBox2_MouseLeave(sender As Object, e As EventArgs) Handles pe18_pic.MouseLeave
+        pe18_pic.BackColor = SystemColors.Control
     End Sub
 End Class

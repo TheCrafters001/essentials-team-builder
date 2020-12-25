@@ -22,10 +22,10 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
+        Me.pe17_pic = New System.Windows.Forms.PictureBox()
         Me.example_btn = New System.Windows.Forms.Button()
         Me.properSpellingNote_lbl = New System.Windows.Forms.Label()
         Me.numPoké_lbl = New System.Windows.Forms.Label()
@@ -270,16 +270,16 @@ Partial Class Form1
         Me.generate_btn = New System.Windows.Forms.Button()
         Me.outputBox_rchBox = New System.Windows.Forms.RichTextBox()
         Me.pg_About = New System.Windows.Forms.TabPage()
-        Me.updateCheck_lnk = New System.Windows.Forms.LinkLabel()
         Me.aboutText_lbl = New System.Windows.Forms.Label()
         Me.gnuGPL3_picBox = New System.Windows.Forms.PictureBox()
         Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
         Me.aboutTitle_lbl = New System.Windows.Forms.Label()
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer1 = New System.Windows.Forms.Timer()
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
+        CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.trainerItems_grp.SuspendLayout()
         Me.pg_POne.SuspendLayout()
         Me.pokemonOne_grp.SuspendLayout()
@@ -336,6 +336,7 @@ Partial Class Form1
         '
         'pg_Trainer
         '
+        Me.pg_Trainer.Controls.Add(Me.pe17_pic)
         Me.pg_Trainer.Controls.Add(Me.example_btn)
         Me.pg_Trainer.Controls.Add(Me.properSpellingNote_lbl)
         Me.pg_Trainer.Controls.Add(Me.numPoké_lbl)
@@ -357,6 +358,17 @@ Partial Class Form1
         Me.pg_Trainer.TabIndex = 0
         Me.pg_Trainer.Text = "Trainer Info"
         Me.pg_Trainer.UseVisualStyleBackColor = True
+        '
+        'pe17_pic
+        '
+        Me.pe17_pic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pe17_pic.Image = Global.Showdown_to_Essentials_17_Converter.My.Resources.Resources.Essentials17Only
+        Me.pe17_pic.Location = New System.Drawing.Point(533, 399)
+        Me.pe17_pic.Name = "pe17_pic"
+        Me.pe17_pic.Size = New System.Drawing.Size(207, 106)
+        Me.pe17_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pe17_pic.TabIndex = 13
+        Me.pe17_pic.TabStop = False
         '
         'example_btn
         '
@@ -418,7 +430,7 @@ Partial Class Form1
         Me.trainerItems_grp.Controls.Add(Me.itemOne_txtBox)
         Me.trainerItems_grp.Location = New System.Drawing.Point(533, 29)
         Me.trainerItems_grp.Name = "trainerItems_grp"
-        Me.trainerItems_grp.Size = New System.Drawing.Size(213, 476)
+        Me.trainerItems_grp.Size = New System.Drawing.Size(213, 252)
         Me.trainerItems_grp.TabIndex = 8
         Me.trainerItems_grp.TabStop = False
         Me.trainerItems_grp.Text = "Items"
@@ -2728,7 +2740,6 @@ Partial Class Form1
         '
         'pg_About
         '
-        Me.pg_About.Controls.Add(Me.updateCheck_lnk)
         Me.pg_About.Controls.Add(Me.aboutText_lbl)
         Me.pg_About.Controls.Add(Me.gnuGPL3_picBox)
         Me.pg_About.Controls.Add(Me.aboutAuthor_lbl)
@@ -2740,16 +2751,6 @@ Partial Class Form1
         Me.pg_About.TabIndex = 7
         Me.pg_About.Text = "About"
         Me.pg_About.UseVisualStyleBackColor = True
-        '
-        'updateCheck_lnk
-        '
-        Me.updateCheck_lnk.AutoSize = True
-        Me.updateCheck_lnk.Location = New System.Drawing.Point(3, 495)
-        Me.updateCheck_lnk.Name = "updateCheck_lnk"
-        Me.updateCheck_lnk.Size = New System.Drawing.Size(102, 13)
-        Me.updateCheck_lnk.TabIndex = 10
-        Me.updateCheck_lnk.TabStop = True
-        Me.updateCheck_lnk.Text = "Check for Updates"
         '
         'aboutText_lbl
         '
@@ -2824,6 +2825,7 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.pg_Trainer.ResumeLayout(False)
         Me.pg_Trainer.PerformLayout()
+        CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.trainerItems_grp.ResumeLayout(False)
         Me.trainerItems_grp.PerformLayout()
         Me.pg_POne.ResumeLayout(False)
@@ -3142,5 +3144,5 @@ Partial Class Form1
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents example_btn As Button
-    Friend WithEvents updateCheck_lnk As LinkLabel
+    Friend WithEvents pe17_pic As PictureBox
 End Class

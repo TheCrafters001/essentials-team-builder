@@ -52,7 +52,7 @@ Public Class Form1
         pokemonOneLvl_txtBox.Text = "20"
     End Sub
 
-    Private Sub updateCheck_lnk_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles updateCheck_lnk.LinkClicked
+    Private Sub updateCheck_lnk_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) 
         ' Check For Updates
         AutoUpdater.ShowSkipButton = True
         AutoUpdater.ShowRemindLaterButton = True

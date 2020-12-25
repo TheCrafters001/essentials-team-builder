@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Essentials17Only() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Essentials17Only", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Essentials18Only() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Essentials18Only", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property gplv3_with_text_136x68() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("gplv3_with_text_136x68", resourceCulture)
