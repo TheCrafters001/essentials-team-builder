@@ -270,6 +270,7 @@ Partial Class Form1
         Me.generate_btn = New System.Windows.Forms.Button()
         Me.outputBox_rchBox = New System.Windows.Forms.RichTextBox()
         Me.pg_About = New System.Windows.Forms.TabPage()
+        Me.updateCheck_lnk = New System.Windows.Forms.LinkLabel()
         Me.aboutText_lbl = New System.Windows.Forms.Label()
         Me.gnuGPL3_picBox = New System.Windows.Forms.PictureBox()
         Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
@@ -277,7 +278,6 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
-        Me.updateCheck_lnk = New System.Windows.Forms.LinkLabel()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.trainerItems_grp.SuspendLayout()
@@ -2741,6 +2741,16 @@ Partial Class Form1
         Me.pg_About.Text = "About"
         Me.pg_About.UseVisualStyleBackColor = True
         '
+        'updateCheck_lnk
+        '
+        Me.updateCheck_lnk.AutoSize = True
+        Me.updateCheck_lnk.Location = New System.Drawing.Point(3, 495)
+        Me.updateCheck_lnk.Name = "updateCheck_lnk"
+        Me.updateCheck_lnk.Size = New System.Drawing.Size(102, 13)
+        Me.updateCheck_lnk.TabIndex = 10
+        Me.updateCheck_lnk.TabStop = True
+        Me.updateCheck_lnk.Text = "Check for Updates"
+        '
         'aboutText_lbl
         '
         Me.aboutText_lbl.Location = New System.Drawing.Point(9, 174)
@@ -2797,16 +2807,6 @@ Partial Class Form1
         '
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
-        '
-        'updateCheck_lnk
-        '
-        Me.updateCheck_lnk.AutoSize = True
-        Me.updateCheck_lnk.Location = New System.Drawing.Point(3, 495)
-        Me.updateCheck_lnk.Name = "updateCheck_lnk"
-        Me.updateCheck_lnk.Size = New System.Drawing.Size(102, 13)
-        Me.updateCheck_lnk.TabIndex = 10
-        Me.updateCheck_lnk.TabStop = True
-        Me.updateCheck_lnk.Text = "Check for Updates"
         '
         'Form1
         '

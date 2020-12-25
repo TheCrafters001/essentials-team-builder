@@ -110,6 +110,9 @@
     <EmbeddedResource Include="Extra\New_Splash.resx">
       <DependentUpon>New_Splash.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -154,6 +157,11 @@
   <ItemGroup>
     <None Include="Resources\Thumbnail.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Essentials18Only.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Essentials17Only.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
