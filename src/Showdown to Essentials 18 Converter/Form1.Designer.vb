@@ -275,6 +275,8 @@ Partial Class Form1
         Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
         Me.aboutTitle_lbl = New System.Windows.Forms.Label()
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer()
+        Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2818,6 +2820,11 @@ Partial Class Form1
         Me.Logo_picBox.TabIndex = 5
         Me.Logo_picBox.TabStop = False
         '
+        'codeExporter_dialog
+        '
+        Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
+        Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3152,4 +3159,6 @@ Partial Class Form1
     Friend WithEvents aboutAuthor_lbl As Label
     Friend WithEvents aboutTitle_lbl As Label
     Friend WithEvents Logo_picBox As PictureBox
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents codeExporter_dialog As SaveFileDialog
 End Class

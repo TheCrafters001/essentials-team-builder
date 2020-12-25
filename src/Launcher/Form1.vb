@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports AutoUpdaterDotNET
+
+Public Class Form1
     Private Sub exit_btn_Click(sender As Object, e As EventArgs) Handles exit_btn.Click
         Application.Exit()
     End Sub
@@ -44,5 +46,18 @@
 
     Private Sub PictureBox2_MouseLeave(sender As Object, e As EventArgs) Handles pe18_pic.MouseLeave
         pe18_pic.BackColor = SystemColors.Control
+    End Sub
+
+    Private Sub updateCheck_lnk_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles updateCheck_lnk.LinkClicked
+        ' Check For Updates
+        AutoUpdater.ShowSkipButton = True
+        AutoUpdater.ShowRemindLaterButton = True
+        AutoUpdater.ReportErrors = True
+        AutoUpdater.RunUpdateAsAdmin = True
+        AutoUpdater.LetUserSelectRemindLater = True
+        AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Hours
+        AutoUpdater.RemindLaterAt = 1
+        AutoUpdater.UpdateFormSize = New System.Drawing.Size(800, 600)
+        AutoUpdater.Start("https://api.thecrafters001.ga/updates/showdown-to-essentials.xml")
     End Sub
 End Class

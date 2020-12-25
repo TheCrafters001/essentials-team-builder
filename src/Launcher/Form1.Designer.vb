@@ -25,6 +25,8 @@ Partial Class Form1
         Me.pe17_pic = New System.Windows.Forms.PictureBox()
         Me.pe18_pic = New System.Windows.Forms.PictureBox()
         Me.exit_btn = New System.Windows.Forms.Button()
+        Me.updateCheck_lnk = New System.Windows.Forms.LinkLabel()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pe18_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -60,11 +62,32 @@ Partial Class Form1
         Me.exit_btn.Text = "Cancel"
         Me.exit_btn.UseVisualStyleBackColor = True
         '
+        'updateCheck_lnk
+        '
+        Me.updateCheck_lnk.AutoSize = True
+        Me.updateCheck_lnk.Location = New System.Drawing.Point(12, 133)
+        Me.updateCheck_lnk.Name = "updateCheck_lnk"
+        Me.updateCheck_lnk.Size = New System.Drawing.Size(96, 13)
+        Me.updateCheck_lnk.TabIndex = 3
+        Me.updateCheck_lnk.TabStop = True
+        Me.updateCheck_lnk.Text = "Check for Updates"
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(15, 154)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(452, 35)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "This is a non-profit fan-made tool. No copyright infringements intended. Please s" &
+    "upport the official games!"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(479, 159)
+        Me.ClientSize = New System.Drawing.Size(479, 198)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.updateCheck_lnk)
         Me.Controls.Add(Me.exit_btn)
         Me.Controls.Add(Me.pe18_pic)
         Me.Controls.Add(Me.pe17_pic)
@@ -76,10 +99,13 @@ Partial Class Form1
         CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pe18_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents pe17_pic As PictureBox
     Friend WithEvents pe18_pic As PictureBox
     Friend WithEvents exit_btn As Button
+    Friend WithEvents updateCheck_lnk As LinkLabel
+    Friend WithEvents Label1 As Label
 End Class
