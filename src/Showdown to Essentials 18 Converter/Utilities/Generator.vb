@@ -39,10 +39,10 @@
             End If
         ElseIf Form1.existingBattle_chkBox.Checked = False Then
             If Form1.trainerUsesItems_chkBox.Checked = False Then
-                Form1.outputBox_rchBox.Text &= vbCrLf & "[" & Form1.trainerType_txtBox.Text().ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text() & "]" _
+                Form1.outputBox_rchBox.Text &= vbCrLf & "[" & Form1.trainerType_txtBox.Text().ToUpper & "," & Form1.trainerName_txtBox.Text & "]" _
                      & vbCrLf & "LoseText = """ & Form1.loseText_txt.Text & """" & vbCrLf
             ElseIf Form1.trainerUsesItems_chkBox.Checked = True Then
-                Form1.outputBox_rchBox.Text &= vbCrLf & "[" & Form1.trainerType_txtBox.Text().ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text() & "]" _
+                Form1.outputBox_rchBox.Text &= vbCrLf & "[" & Form1.trainerType_txtBox.Text().ToUpper & "," & Form1.trainerName_txtBox.Text & "]" _
                      & vbCrLf & "Items = " & Form1.itemOne_txtBox.Text.ToUpper & "," & Form1.itemTwo_txtBox.Text.ToUpper & "," & Form1.itemThree_txtBox.Text.ToUpper & "," & Form1.itemFour_txtBox.Text.ToUpper & "," & Form1.itemFive_txtBox.Text.ToUpper & "," & Form1.itemSix_txtBox.Text.ToUpper & "," & Form1.itemSeven_txtBox.Text.ToUpper & "," & Form1.itemEight_txtBox.Text.ToUpper & vbCrLf &
                      "LoseText = """ & Form1.loseText_txt.Text & """" & vbCrLf
             End If
