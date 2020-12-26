@@ -68,6 +68,7 @@
         Dim shinyString As String
         Dim pokemonNature As String
         Dim pokemonIVs As String
+        Dim pokemonEVs As String
         Dim pokemonHappyness As String
         Dim pokemonNickname As String
         Dim shadow As Boolean
@@ -93,6 +94,7 @@
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
             pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
+            pokemonEVs = Form1.pokemonOneEVs_txt.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -109,17 +111,31 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
 
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID
+            output = pokemonName & vbCrLf &
+                "    Name = " & pokemonNickname & "," & lvl & vbCrLf &
+                "    Form = " & pokemonForm & vbCrLf &
+                "    Gender = " & gender & vbCrLf &
+                "    Shiny = " & shinyString & vbCrLf &
+                "    Shadow = " & shadowString & vbCrLf &
+                "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf &
+                "    Ability = " & pokemonAbility & vbCrLf &
+                "    Item = " & heldItem & vbCrLf &
+                "    Nature = " & pokemonNature & vbCrLf &
+                "    IV = " & pokemonIVs & vbCrLf &
+                "    EV = " & pokemonEVs & vbCrLf &
+                "    Happiness = " & pokemonHappyness & vbCrLf &
+                "    Ball = " & pokeballID
+            ' old code pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID
             Form1.outputBox_rchBox.Text &= output
         Catch ex As Exception
             MessageBox.Show("Oh no!" & vbCrLf & ex.ToString, "Error")

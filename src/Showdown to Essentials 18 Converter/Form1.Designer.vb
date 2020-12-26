@@ -905,7 +905,7 @@ Partial Class Form1
         '
         Me.pokemonOneGender_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonOneGender_cmb.FormattingEnabled = True
-        Me.pokemonOneGender_cmb.Items.AddRange(New Object() {"M", "F", "(random)"})
+        Me.pokemonOneGender_cmb.Items.AddRange(New Object() {"male", "female", "(random)"})
         Me.pokemonOneGender_cmb.Location = New System.Drawing.Point(9, 306)
         Me.pokemonOneGender_cmb.Name = "pokemonOneGender_cmb"
         Me.pokemonOneGender_cmb.Size = New System.Drawing.Size(312, 21)
@@ -1261,7 +1261,7 @@ Partial Class Form1
         '
         Me.pokemonTwoGender_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonTwoGender_cmb.FormattingEnabled = True
-        Me.pokemonTwoGender_cmb.Items.AddRange(New Object() {"M", "F", "(random)"})
+        Me.pokemonTwoGender_cmb.Items.AddRange(New Object() {"male", "female", "(random)"})
         Me.pokemonTwoGender_cmb.Location = New System.Drawing.Point(9, 306)
         Me.pokemonTwoGender_cmb.Name = "pokemonTwoGender_cmb"
         Me.pokemonTwoGender_cmb.Size = New System.Drawing.Size(312, 21)
@@ -1617,7 +1617,7 @@ Partial Class Form1
         '
         Me.pokemonThreeGender_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonThreeGender_cmb.FormattingEnabled = True
-        Me.pokemonThreeGender_cmb.Items.AddRange(New Object() {"M", "F", "(random)"})
+        Me.pokemonThreeGender_cmb.Items.AddRange(New Object() {"male", "female", "(random)"})
         Me.pokemonThreeGender_cmb.Location = New System.Drawing.Point(9, 306)
         Me.pokemonThreeGender_cmb.Name = "pokemonThreeGender_cmb"
         Me.pokemonThreeGender_cmb.Size = New System.Drawing.Size(312, 21)
@@ -1973,7 +1973,7 @@ Partial Class Form1
         '
         Me.pokemonFourGender_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonFourGender_cmb.FormattingEnabled = True
-        Me.pokemonFourGender_cmb.Items.AddRange(New Object() {"M", "F", "(random)"})
+        Me.pokemonFourGender_cmb.Items.AddRange(New Object() {"male", "female", "(random)"})
         Me.pokemonFourGender_cmb.Location = New System.Drawing.Point(9, 306)
         Me.pokemonFourGender_cmb.Name = "pokemonFourGender_cmb"
         Me.pokemonFourGender_cmb.Size = New System.Drawing.Size(312, 21)
@@ -2329,7 +2329,7 @@ Partial Class Form1
         '
         Me.pokemonFiveGender_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonFiveGender_cmb.FormattingEnabled = True
-        Me.pokemonFiveGender_cmb.Items.AddRange(New Object() {"M", "F", "(random)"})
+        Me.pokemonFiveGender_cmb.Items.AddRange(New Object() {"male", "female", "(random)"})
         Me.pokemonFiveGender_cmb.Location = New System.Drawing.Point(9, 306)
         Me.pokemonFiveGender_cmb.Name = "pokemonFiveGender_cmb"
         Me.pokemonFiveGender_cmb.Size = New System.Drawing.Size(312, 21)
@@ -2685,7 +2685,7 @@ Partial Class Form1
         '
         Me.pokemonSixGender_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonSixGender_cmb.FormattingEnabled = True
-        Me.pokemonSixGender_cmb.Items.AddRange(New Object() {"M", "F", "(random)"})
+        Me.pokemonSixGender_cmb.Items.AddRange(New Object() {"male", "female", "(random)"})
         Me.pokemonSixGender_cmb.Location = New System.Drawing.Point(9, 306)
         Me.pokemonSixGender_cmb.Name = "pokemonSixGender_cmb"
         Me.pokemonSixGender_cmb.Size = New System.Drawing.Size(312, 21)
