@@ -1,26 +1,50 @@
 ﻿Public Class Generator
     ' Generator Code Sample
     ' 
-    ' #-------------------------------
-    ' TRAINERTYPE
-    ' Trainer Name,ID
-    ' # of PKMN,ITEMS
-    ' POKEMON,LVL,HELDITEM,MOVE1,MOVE2,MOVE3,MOVE4,ABILITY#,M/F,FORM#,shiny,NATURE,IVs,HAPPYNESS,NickName,SHADOW (true/false),POKEBALLID
+    ' [TYPE,Name,ID]
+    ' Items = ITEM,ITEM2,ITEM3,ITEM4,ITEM5,ITEM6,ITEM7,ITEM8
+    ' LoseText = "Lose Text"
+    ' Pokemon = PKMN1,LVL
+    '     Name = NickName
+    '     Form = FormID
+    '     Gender = GENDER
+    '     Shiny = YESNO
+    '     Shadow = YESNO
+    '     Moves = MOVE,MOVE2,MOVE3,MOVE4
+    '     Ability = NUMBER (Between 0-5)
+    '     Item = HELDITEM
+    '     Nature = NATURE
+    '     IV = HP,ATK,DEF,SPD,SPATK,SPDEF
+    '     EV = HP,ATK,DEF,SPD,SPATK,SPDEF
+    '     Happiness = NUMBER (1-255)
+    '     Ball = ID (0-25)
+    ' Pokemon = MELMETAL,10
+    ' Pokemon = BULBASAUR,10
+    ' Pokemon = BULBASAUR,10
+    ' Pokemon = BULBASAUR,10
+    ' Pokemon = BULBASAUR,10
+
 
 #Region "Trainer"
     Public Shared Sub Trainer()
         Form1.outputBox_rchBox.Text = "#-------------------------------"
         If Form1.existingBattle_chkBox.Checked = True Then
             If Form1.trainerUsesItems_chkBox.Checked = False Then
-                Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & vbCrLf
+                Form1.outputBox_rchBox.Text &= vbCrLf & "[" & Form1.trainerType_txtBox.Text().ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text() & "]" _
+                     & vbCrLf & "LoseText = """ & Form1.loseText_txt.Text & """" & vbCrLf
             ElseIf Form1.trainerUsesItems_chkBox.Checked = True Then
-                Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & "," & Form1.itemOne_txtBox.Text.ToUpper & "," & Form1.itemTwo_txtBox.Text.ToUpper & "," & Form1.itemThree_txtBox.Text.ToUpper & "," & Form1.itemFour_txtBox.Text.ToUpper & "," & Form1.itemFive_txtBox.Text.ToUpper & "," & Form1.itemSix_txtBox.Text.ToUpper & "," & Form1.itemSeven_txtBox.Text.ToUpper & "," & Form1.itemEight_txtBox.Text.ToUpper & vbCrLf
+                Form1.outputBox_rchBox.Text &= vbCrLf & "[" & Form1.trainerType_txtBox.Text().ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text() & "]" _
+                     & vbCrLf & "Items = " & Form1.itemOne_txtBox.Text.ToUpper & "," & Form1.itemTwo_txtBox.Text.ToUpper & "," & Form1.itemThree_txtBox.Text.ToUpper & "," & Form1.itemFour_txtBox.Text.ToUpper & "," & Form1.itemFive_txtBox.Text.ToUpper & "," & Form1.itemSix_txtBox.Text.ToUpper & "," & Form1.itemSeven_txtBox.Text.ToUpper & "," & Form1.itemEight_txtBox.Text.ToUpper & vbCrLf &
+                     "LoseText = """ & Form1.loseText_txt.Text & """" & vbCrLf
             End If
         ElseIf Form1.existingBattle_chkBox.Checked = False Then
             If Form1.trainerUsesItems_chkBox.Checked = False Then
-                Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & vbCrLf
+                Form1.outputBox_rchBox.Text &= vbCrLf & "[" & Form1.trainerType_txtBox.Text().ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text() & "]" _
+                     & vbCrLf & "LoseText = """ & Form1.loseText_txt.Text & """" & vbCrLf
             ElseIf Form1.trainerUsesItems_chkBox.Checked = True Then
-                Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & "," & Form1.itemOne_txtBox.Text.ToUpper & "," & Form1.itemTwo_txtBox.Text.ToUpper & "," & Form1.itemThree_txtBox.Text.ToUpper & "," & Form1.itemFour_txtBox.Text.ToUpper & "," & Form1.itemFive_txtBox.Text.ToUpper & "," & Form1.itemSix_txtBox.Text.ToUpper & "," & Form1.itemSeven_txtBox.Text.ToUpper & "," & Form1.itemEight_txtBox.Text.ToUpper & vbCrLf
+                Form1.outputBox_rchBox.Text &= vbCrLf & "[" & Form1.trainerType_txtBox.Text().ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text() & "]" _
+                     & vbCrLf & "Items = " & Form1.itemOne_txtBox.Text.ToUpper & "," & Form1.itemTwo_txtBox.Text.ToUpper & "," & Form1.itemThree_txtBox.Text.ToUpper & "," & Form1.itemFour_txtBox.Text.ToUpper & "," & Form1.itemFive_txtBox.Text.ToUpper & "," & Form1.itemSix_txtBox.Text.ToUpper & "," & Form1.itemSeven_txtBox.Text.ToUpper & "," & Form1.itemEight_txtBox.Text.ToUpper & vbCrLf &
+                     "LoseText = """ & Form1.loseText_txt.Text & """" & vbCrLf
             End If
         End If
 
