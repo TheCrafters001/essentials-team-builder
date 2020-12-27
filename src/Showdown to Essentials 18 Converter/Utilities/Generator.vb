@@ -203,14 +203,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
 
             output = pokemonName & "," & lvl & vbCrLf &
@@ -227,7 +227,6 @@
                 "    EV = " & pokemonEVs & vbCrLf &
                 "    Happiness = " & pokemonHappyness & vbCrLf &
                 "    Ball = " & pokeballID
-            ' old code pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonTwoName_txtBox.Text.ToUpper
@@ -246,7 +245,8 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonTwoNature_cmb.Text
-            pokemonIVs = Form1.pokemonTwoIVs_txtBox.Text
+            pokemonIVs = Form1.pokemonTwoIVsHP_txt.Text & "," & Form1.pokemonTwoIVsATK_txt.Text & "," & Form1.pokemonTwoIVsSPD_txt.Text & "," & Form1.pokemonTwoIVsSPATK_txt.Text & "," & Form1.pokemonTwoIVsSPDEF_txt.Text
+            pokemonEVs = Form1.pokemonTwoEVsHP_txt.Text & "," & Form1.pokemonTwoEVsATK_txt.Text & "," & Form1.pokemonTwoEVsSPD_txt.Text & "," & Form1.pokemonTwoEVsSPATK_txt.Text & "," & Form1.pokemonTwoEVsSPDEF_txt.Text
             pokemonHappyness = Form1.pokemonTwoHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonTwoNickName_txtBox.Text
             If Form1.pokemonTwoShadowFalse_rad.Checked = True Then
@@ -263,16 +263,29 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID
+            output = pokemonName & "," & lvl & vbCrLf &
+                "    Name = " & pokemonNickname & vbCrLf &
+                "    Form = " & pokemonForm & vbCrLf &
+                "    Gender = " & gender & vbCrLf &
+                "    Shiny = " & shinyString & vbCrLf &
+                "    Shadow = " & shadowString & vbCrLf &
+                "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf &
+                "    Ability = " & pokemonAbility & vbCrLf &
+                "    Item = " & heldItem & vbCrLf &
+                "    Nature = " & pokemonNature & vbCrLf &
+                "    IV = " & pokemonIVs & vbCrLf &
+                "    EV = " & pokemonEVs & vbCrLf &
+                "    Happiness = " & pokemonHappyness & vbCrLf &
+                "    Ball = " & pokeballID
             Form1.outputBox_rchBox.Text &= output
         Catch ex As Exception
             MessageBox.Show("Oh no!" & vbCrLf & ex.ToString, "Error")
@@ -340,14 +353,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
 
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
@@ -386,14 +399,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -431,14 +444,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -508,14 +521,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
 
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
@@ -554,14 +567,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -591,7 +604,6 @@
                 shadow = True
             End If
             pokeballID = Form1.pokemonThreePokeballID_cmb.Text
-
             If gender = "(random)" Then
                 gender = ""
             End If
@@ -599,14 +611,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -644,14 +656,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -713,7 +725,6 @@
                 shadow = True
             End If
             pokeballID = Form1.pokemonOnePokeballID_cmb.Text
-
             If gender = "(random)" Then
                 gender = ""
             End If
@@ -721,14 +732,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
 
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
@@ -767,14 +778,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -812,14 +823,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -857,14 +868,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -902,14 +913,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -979,14 +990,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
 
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
@@ -1025,14 +1036,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -1070,14 +1081,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -1115,14 +1126,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -1160,14 +1171,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
@@ -1205,14 +1216,14 @@
                 pokemonNature = ""
             End If
             If shiny = True Then
-                shinyString = "shiny"
+                shinyString = "yes"
             ElseIf shiny = False Then
-                shinyString = ""
+                shinyString = "no"
             End If
             If shadow = True Then
-                shadowString = "true"
+                shadowString = "yes"
             ElseIf shadow = False Then
-                shadowString = ""
+                shadowString = "no"
             End If
             output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
             Form1.outputBox_rchBox.Text &= output
