@@ -213,7 +213,21 @@
                 shadowString = ""
             End If
 
-            output = pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID & vbCrLf
+            output = pokemonName & "," & lvl & vbCrLf &
+                "    Name = " & pokemonNickname & vbCrLf &
+                "    Form = " & pokemonForm & vbCrLf &
+                "    Gender = " & gender & vbCrLf &
+                "    Shiny = " & shinyString & vbCrLf &
+                "    Shadow = " & shadowString & vbCrLf &
+                "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf &
+                "    Ability = " & pokemonAbility & vbCrLf &
+                "    Item = " & heldItem & vbCrLf &
+                "    Nature = " & pokemonNature & vbCrLf &
+                "    IV = " & pokemonIVs & vbCrLf &
+                "    EV = " & pokemonEVs & vbCrLf &
+                "    Happiness = " & pokemonHappyness & vbCrLf &
+                "    Ball = " & pokeballID
+            ' old code pokemonName & "," & lvl & "," & heldItem & "," & move1 & "," & move2 & "," & move3 & "," & move4 & "," & pokemonAbility & "," & gender & "," & pokemonForm & "," & shinyString & "," & pokemonNature & "," & pokemonIVs & "," & pokemonHappyness & "," & pokemonNickname & "," & shadowString & "," & pokeballID
             Form1.outputBox_rchBox.Text &= output
 
             pokemonName = Form1.pokemonTwoName_txtBox.Text.ToUpper
