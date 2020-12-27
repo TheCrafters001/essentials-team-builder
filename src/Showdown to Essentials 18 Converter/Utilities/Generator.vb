@@ -93,8 +93,8 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
-            pokemonEVs = Form1.pokemonOneEVs_txt.Text
+            pokemonIVs = Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text
+            pokemonEVs = Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -121,8 +121,8 @@
                 shadowString = "no"
             End If
 
-            output = pokemonName & vbCrLf &
-                "    Name = " & pokemonNickname & "," & lvl & vbCrLf &
+            output = pokemonName & "," & lvl & vbCrLf &
+                "    Name = " & pokemonNickname & vbCrLf &
                 "    Form = " & pokemonForm & vbCrLf &
                 "    Gender = " & gender & vbCrLf &
                 "    Shiny = " & shinyString & vbCrLf &
@@ -160,6 +160,7 @@
         Dim shinyString As String
         Dim pokemonNature As String
         Dim pokemonIVs As String
+        Dim pokemonEVs As String
         Dim pokemonHappyness As String
         Dim pokemonNickname As String
         Dim shadow As Boolean
@@ -184,7 +185,8 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneivs_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text
+            pokemonEVs = Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -281,6 +283,7 @@
         Dim shinyString As String
         Dim pokemonNature As String
         Dim pokemonIVs As String
+        Dim pokemonEVs As String
         Dim pokemonHappyness As String
         Dim pokemonNickname As String
         Dim shadow As Boolean
@@ -305,7 +308,8 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text
+            pokemonEVs = Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -447,6 +451,7 @@
         Dim shinyString As String
         Dim pokemonNature As String
         Dim pokemonIVs As String
+        Dim pokemonEVs As String
         Dim pokemonHappyness As String
         Dim pokemonNickname As String
         Dim shadow As Boolean
@@ -471,7 +476,8 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text
+            pokemonEVs = Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -658,6 +664,7 @@
         Dim shinyString As String
         Dim pokemonNature As String
         Dim pokemonIVs As String
+        Dim pokemonEVs As String
         Dim pokemonHappyness As String
         Dim pokemonNickname As String
         Dim shadow As Boolean
@@ -682,7 +689,8 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text
+            pokemonEVs = Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
@@ -914,6 +922,7 @@
         Dim shinyString As String
         Dim pokemonNature As String
         Dim pokemonIVs As String
+        Dim pokemonEVs As String
         Dim pokemonHappyness As String
         Dim pokemonNickname As String
         Dim shadow As Boolean
@@ -938,7 +947,8 @@
                 shiny = True
             End If
             pokemonNature = Form1.pokemonOneNature_cmb.Text
-            pokemonIVs = Form1.pokemonOneIVs_txtBox.Text
+            pokemonIVs = Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text
+            pokemonEVs = Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text
             pokemonHappyness = Form1.pokemonOneHappyness_txtBox.Text
             pokemonNickname = Form1.pokemonOneNickName_txtBox.Text
             If Form1.pokemonOneShadowFalse_rad.Checked = True Then
