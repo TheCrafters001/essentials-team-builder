@@ -279,28 +279,28 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Label23 = New System.Windows.Forms.Label()
+        Me.pokemonThreeEVs_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonThreeEVsSPDEF_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeEVsSPDEF_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeEVsSPATK_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeEVsSPATK_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeEVsSPD_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeEVsSPD_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeEVsATK_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeEVsATK_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeEVsHP_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeEVsHP_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeIVs_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonThreeIVsSPDEF_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeIVsSPDEF_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeIVsSPATK_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeIVsSPATK_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeIVsSPD_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeIVsSPD_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeIVsATK_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeIVsATK_lbl = New System.Windows.Forms.Label()
+        Me.pokemonThreeIVsHP_txt = New System.Windows.Forms.TextBox()
+        Me.pokemonThreeIVsHP_lbl = New System.Windows.Forms.Label()
         Me.pokemonFourName_lbl = New System.Windows.Forms.Label()
         Me.pokemonFourName_txtBox = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -334,7 +334,7 @@ Partial Class Form1
         Me.pokemonFourPokeballID_cmb = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.pokemonFour_grp = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.pokemonFourEVs_grp = New System.Windows.Forms.GroupBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
@@ -345,7 +345,7 @@ Partial Class Form1
         Me.Label27 = New System.Windows.Forms.Label()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.pokemonFourIVs_grp = New System.Windows.Forms.GroupBox()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.TextBox17 = New System.Windows.Forms.TextBox()
@@ -356,7 +356,7 @@ Partial Class Form1
         Me.Label32 = New System.Windows.Forms.Label()
         Me.TextBox20 = New System.Windows.Forms.TextBox()
         Me.Label33 = New System.Windows.Forms.Label()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.pokemonFiveEVs_grp = New System.Windows.Forms.GroupBox()
         Me.TextBox21 = New System.Windows.Forms.TextBox()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.TextBox22 = New System.Windows.Forms.TextBox()
@@ -367,7 +367,7 @@ Partial Class Form1
         Me.Label37 = New System.Windows.Forms.Label()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.pokemonFiveIVs_grp = New System.Windows.Forms.GroupBox()
         Me.TextBox26 = New System.Windows.Forms.TextBox()
         Me.Label39 = New System.Windows.Forms.Label()
         Me.TextBox27 = New System.Windows.Forms.TextBox()
@@ -378,7 +378,7 @@ Partial Class Form1
         Me.Label42 = New System.Windows.Forms.Label()
         Me.TextBox30 = New System.Windows.Forms.TextBox()
         Me.Label43 = New System.Windows.Forms.Label()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.pokemonSixEVs_grp = New System.Windows.Forms.GroupBox()
         Me.TextBox31 = New System.Windows.Forms.TextBox()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.TextBox32 = New System.Windows.Forms.TextBox()
@@ -389,7 +389,7 @@ Partial Class Form1
         Me.Label47 = New System.Windows.Forms.Label()
         Me.TextBox35 = New System.Windows.Forms.TextBox()
         Me.Label48 = New System.Windows.Forms.Label()
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.pokemonSixIVs_grp = New System.Windows.Forms.GroupBox()
         Me.TextBox36 = New System.Windows.Forms.TextBox()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.TextBox37 = New System.Windows.Forms.TextBox()
@@ -438,18 +438,18 @@ Partial Class Form1
         Me.pg_About.SuspendLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
+        Me.pokemonThreeEVs_grp.SuspendLayout()
+        Me.pokemonThreeIVs_grp.SuspendLayout()
         Me.pokemonFourMoves_grp.SuspendLayout()
         Me.pokemonFourShiny_grp.SuspendLayout()
         Me.pokemonFourShadow_grp.SuspendLayout()
         Me.pokemonFour_grp.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
-        Me.GroupBox7.SuspendLayout()
-        Me.GroupBox8.SuspendLayout()
+        Me.pokemonFourEVs_grp.SuspendLayout()
+        Me.pokemonFourIVs_grp.SuspendLayout()
+        Me.pokemonFiveEVs_grp.SuspendLayout()
+        Me.pokemonFiveIVs_grp.SuspendLayout()
+        Me.pokemonSixEVs_grp.SuspendLayout()
+        Me.pokemonSixIVs_grp.SuspendLayout()
         Me.SuspendLayout()
         '
         'pages_tabGrp
@@ -1826,8 +1826,8 @@ Partial Class Form1
         '
         'pokemonThree_grp
         '
-        Me.pokemonThree_grp.Controls.Add(Me.GroupBox1)
-        Me.pokemonThree_grp.Controls.Add(Me.GroupBox2)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeEVs_grp)
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeIVs_grp)
         Me.pokemonThree_grp.Controls.Add(Me.Label5)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_cmb)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_lbl)
@@ -2173,8 +2173,8 @@ Partial Class Form1
         '
         'pokemonFive_grp
         '
-        Me.pokemonFive_grp.Controls.Add(Me.GroupBox5)
-        Me.pokemonFive_grp.Controls.Add(Me.GroupBox6)
+        Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveEVs_grp)
+        Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveIVs_grp)
         Me.pokemonFive_grp.Controls.Add(Me.Label7)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFivePokeballID_cmb)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFivePokeballID_lbl)
@@ -2510,8 +2510,8 @@ Partial Class Form1
         '
         'pokemonSix_grp
         '
-        Me.pokemonSix_grp.Controls.Add(Me.GroupBox7)
-        Me.pokemonSix_grp.Controls.Add(Me.GroupBox8)
+        Me.pokemonSix_grp.Controls.Add(Me.pokemonSixEVs_grp)
+        Me.pokemonSix_grp.Controls.Add(Me.pokemonSixIVs_grp)
         Me.pokemonSix_grp.Controls.Add(Me.Label8)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixPokeballID_cmb)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixPokeballID_lbl)
@@ -2963,213 +2963,213 @@ Partial Class Form1
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
         '
-        'GroupBox1
+        'pokemonThreeEVs_grp
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.Label16)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.Label17)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.Label18)
-        Me.GroupBox1.Location = New System.Drawing.Point(327, 104)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(306, 77)
-        Me.GroupBox1.TabIndex = 76
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "EVs (Max 31 Each)"
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsSPDEF_txt)
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsSPDEF_lbl)
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsSPATK_txt)
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsSPATK_lbl)
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsSPD_txt)
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsSPD_lbl)
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsATK_txt)
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsATK_lbl)
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsHP_txt)
+        Me.pokemonThreeEVs_grp.Controls.Add(Me.pokemonThreeEVsHP_lbl)
+        Me.pokemonThreeEVs_grp.Location = New System.Drawing.Point(327, 104)
+        Me.pokemonThreeEVs_grp.Name = "pokemonThreeEVs_grp"
+        Me.pokemonThreeEVs_grp.Size = New System.Drawing.Size(306, 77)
+        Me.pokemonThreeEVs_grp.TabIndex = 76
+        Me.pokemonThreeEVs_grp.TabStop = False
+        Me.pokemonThreeEVs_grp.Text = "EVs (Max 31 Each)"
         '
-        'TextBox1
+        'pokemonThreeEVsSPDEF_txt
         '
-        Me.TextBox1.Location = New System.Drawing.Point(214, 32)
-        Me.TextBox1.MaxLength = 2
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox1.TabIndex = 9
+        Me.pokemonThreeEVsSPDEF_txt.Location = New System.Drawing.Point(214, 32)
+        Me.pokemonThreeEVsSPDEF_txt.MaxLength = 2
+        Me.pokemonThreeEVsSPDEF_txt.Name = "pokemonThreeEVsSPDEF_txt"
+        Me.pokemonThreeEVsSPDEF_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeEVsSPDEF_txt.TabIndex = 9
         '
-        'Label9
+        'pokemonThreeEVsSPDEF_lbl
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(214, 16)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(42, 13)
-        Me.Label9.TabIndex = 8
-        Me.Label9.Text = "SPDEF"
+        Me.pokemonThreeEVsSPDEF_lbl.AutoSize = True
+        Me.pokemonThreeEVsSPDEF_lbl.Location = New System.Drawing.Point(214, 16)
+        Me.pokemonThreeEVsSPDEF_lbl.Name = "pokemonThreeEVsSPDEF_lbl"
+        Me.pokemonThreeEVsSPDEF_lbl.Size = New System.Drawing.Size(42, 13)
+        Me.pokemonThreeEVsSPDEF_lbl.TabIndex = 8
+        Me.pokemonThreeEVsSPDEF_lbl.Text = "SPDEF"
         '
-        'TextBox2
+        'pokemonThreeEVsSPATK_txt
         '
-        Me.TextBox2.Location = New System.Drawing.Point(164, 32)
-        Me.TextBox2.MaxLength = 2
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox2.TabIndex = 7
+        Me.pokemonThreeEVsSPATK_txt.Location = New System.Drawing.Point(164, 32)
+        Me.pokemonThreeEVsSPATK_txt.MaxLength = 2
+        Me.pokemonThreeEVsSPATK_txt.Name = "pokemonThreeEVsSPATK_txt"
+        Me.pokemonThreeEVsSPATK_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeEVsSPATK_txt.TabIndex = 7
         '
-        'Label15
+        'pokemonThreeEVsSPATK_lbl
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(165, 16)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(42, 13)
-        Me.Label15.TabIndex = 6
-        Me.Label15.Text = "SPATK"
+        Me.pokemonThreeEVsSPATK_lbl.AutoSize = True
+        Me.pokemonThreeEVsSPATK_lbl.Location = New System.Drawing.Point(165, 16)
+        Me.pokemonThreeEVsSPATK_lbl.Name = "pokemonThreeEVsSPATK_lbl"
+        Me.pokemonThreeEVsSPATK_lbl.Size = New System.Drawing.Size(42, 13)
+        Me.pokemonThreeEVsSPATK_lbl.TabIndex = 6
+        Me.pokemonThreeEVsSPATK_lbl.Text = "SPATK"
         '
-        'TextBox3
+        'pokemonThreeEVsSPD_txt
         '
-        Me.TextBox3.Location = New System.Drawing.Point(114, 32)
-        Me.TextBox3.MaxLength = 2
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.pokemonThreeEVsSPD_txt.Location = New System.Drawing.Point(114, 32)
+        Me.pokemonThreeEVsSPD_txt.MaxLength = 2
+        Me.pokemonThreeEVsSPD_txt.Name = "pokemonThreeEVsSPD_txt"
+        Me.pokemonThreeEVsSPD_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeEVsSPD_txt.TabIndex = 5
         '
-        'Label16
+        'pokemonThreeEVsSPD_lbl
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(122, 16)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(29, 13)
-        Me.Label16.TabIndex = 4
-        Me.Label16.Text = "SPD"
+        Me.pokemonThreeEVsSPD_lbl.AutoSize = True
+        Me.pokemonThreeEVsSPD_lbl.Location = New System.Drawing.Point(122, 16)
+        Me.pokemonThreeEVsSPD_lbl.Name = "pokemonThreeEVsSPD_lbl"
+        Me.pokemonThreeEVsSPD_lbl.Size = New System.Drawing.Size(29, 13)
+        Me.pokemonThreeEVsSPD_lbl.TabIndex = 4
+        Me.pokemonThreeEVsSPD_lbl.Text = "SPD"
         '
-        'TextBox4
+        'pokemonThreeEVsATK_txt
         '
-        Me.TextBox4.Location = New System.Drawing.Point(60, 32)
-        Me.TextBox4.MaxLength = 2
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox4.TabIndex = 3
+        Me.pokemonThreeEVsATK_txt.Location = New System.Drawing.Point(60, 32)
+        Me.pokemonThreeEVsATK_txt.MaxLength = 2
+        Me.pokemonThreeEVsATK_txt.Name = "pokemonThreeEVsATK_txt"
+        Me.pokemonThreeEVsATK_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeEVsATK_txt.TabIndex = 3
         '
-        'Label17
+        'pokemonThreeEVsATK_lbl
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(68, 16)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(28, 13)
-        Me.Label17.TabIndex = 2
-        Me.Label17.Text = "ATK"
+        Me.pokemonThreeEVsATK_lbl.AutoSize = True
+        Me.pokemonThreeEVsATK_lbl.Location = New System.Drawing.Point(68, 16)
+        Me.pokemonThreeEVsATK_lbl.Name = "pokemonThreeEVsATK_lbl"
+        Me.pokemonThreeEVsATK_lbl.Size = New System.Drawing.Size(28, 13)
+        Me.pokemonThreeEVsATK_lbl.TabIndex = 2
+        Me.pokemonThreeEVsATK_lbl.Text = "ATK"
         '
-        'TextBox5
+        'pokemonThreeEVsHP_txt
         '
-        Me.TextBox5.Location = New System.Drawing.Point(6, 32)
-        Me.TextBox5.MaxLength = 2
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox5.TabIndex = 1
+        Me.pokemonThreeEVsHP_txt.Location = New System.Drawing.Point(6, 32)
+        Me.pokemonThreeEVsHP_txt.MaxLength = 2
+        Me.pokemonThreeEVsHP_txt.Name = "pokemonThreeEVsHP_txt"
+        Me.pokemonThreeEVsHP_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeEVsHP_txt.TabIndex = 1
         '
-        'Label18
+        'pokemonThreeEVsHP_lbl
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(17, 16)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(22, 13)
-        Me.Label18.TabIndex = 0
-        Me.Label18.Text = "HP"
+        Me.pokemonThreeEVsHP_lbl.AutoSize = True
+        Me.pokemonThreeEVsHP_lbl.Location = New System.Drawing.Point(17, 16)
+        Me.pokemonThreeEVsHP_lbl.Name = "pokemonThreeEVsHP_lbl"
+        Me.pokemonThreeEVsHP_lbl.Size = New System.Drawing.Size(22, 13)
+        Me.pokemonThreeEVsHP_lbl.TabIndex = 0
+        Me.pokemonThreeEVsHP_lbl.Text = "HP"
         '
-        'GroupBox2
+        'pokemonThreeIVs_grp
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
-        Me.GroupBox2.Controls.Add(Me.Label19)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
-        Me.GroupBox2.Controls.Add(Me.Label20)
-        Me.GroupBox2.Controls.Add(Me.TextBox8)
-        Me.GroupBox2.Controls.Add(Me.Label21)
-        Me.GroupBox2.Controls.Add(Me.TextBox9)
-        Me.GroupBox2.Controls.Add(Me.Label22)
-        Me.GroupBox2.Controls.Add(Me.TextBox10)
-        Me.GroupBox2.Controls.Add(Me.Label23)
-        Me.GroupBox2.Location = New System.Drawing.Point(327, 19)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(306, 77)
-        Me.GroupBox2.TabIndex = 75
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "IVs (Max 252 Each)"
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsSPDEF_txt)
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsSPDEF_lbl)
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsSPATK_txt)
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsSPATK_lbl)
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsSPD_txt)
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsSPD_lbl)
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsATK_txt)
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsATK_lbl)
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsHP_txt)
+        Me.pokemonThreeIVs_grp.Controls.Add(Me.pokemonThreeIVsHP_lbl)
+        Me.pokemonThreeIVs_grp.Location = New System.Drawing.Point(327, 19)
+        Me.pokemonThreeIVs_grp.Name = "pokemonThreeIVs_grp"
+        Me.pokemonThreeIVs_grp.Size = New System.Drawing.Size(306, 77)
+        Me.pokemonThreeIVs_grp.TabIndex = 75
+        Me.pokemonThreeIVs_grp.TabStop = False
+        Me.pokemonThreeIVs_grp.Text = "IVs (Max 252 Each)"
         '
-        'TextBox6
+        'pokemonThreeIVsSPDEF_txt
         '
-        Me.TextBox6.Location = New System.Drawing.Point(214, 32)
-        Me.TextBox6.MaxLength = 3
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox6.TabIndex = 9
+        Me.pokemonThreeIVsSPDEF_txt.Location = New System.Drawing.Point(214, 32)
+        Me.pokemonThreeIVsSPDEF_txt.MaxLength = 3
+        Me.pokemonThreeIVsSPDEF_txt.Name = "pokemonThreeIVsSPDEF_txt"
+        Me.pokemonThreeIVsSPDEF_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeIVsSPDEF_txt.TabIndex = 9
         '
-        'Label19
+        'pokemonThreeIVsSPDEF_lbl
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(214, 16)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(42, 13)
-        Me.Label19.TabIndex = 8
-        Me.Label19.Text = "SPDEF"
+        Me.pokemonThreeIVsSPDEF_lbl.AutoSize = True
+        Me.pokemonThreeIVsSPDEF_lbl.Location = New System.Drawing.Point(214, 16)
+        Me.pokemonThreeIVsSPDEF_lbl.Name = "pokemonThreeIVsSPDEF_lbl"
+        Me.pokemonThreeIVsSPDEF_lbl.Size = New System.Drawing.Size(42, 13)
+        Me.pokemonThreeIVsSPDEF_lbl.TabIndex = 8
+        Me.pokemonThreeIVsSPDEF_lbl.Text = "SPDEF"
         '
-        'TextBox7
+        'pokemonThreeIVsSPATK_txt
         '
-        Me.TextBox7.Location = New System.Drawing.Point(164, 32)
-        Me.TextBox7.MaxLength = 3
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox7.TabIndex = 7
+        Me.pokemonThreeIVsSPATK_txt.Location = New System.Drawing.Point(164, 32)
+        Me.pokemonThreeIVsSPATK_txt.MaxLength = 3
+        Me.pokemonThreeIVsSPATK_txt.Name = "pokemonThreeIVsSPATK_txt"
+        Me.pokemonThreeIVsSPATK_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeIVsSPATK_txt.TabIndex = 7
         '
-        'Label20
+        'pokemonThreeIVsSPATK_lbl
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(165, 16)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(42, 13)
-        Me.Label20.TabIndex = 6
-        Me.Label20.Text = "SPATK"
+        Me.pokemonThreeIVsSPATK_lbl.AutoSize = True
+        Me.pokemonThreeIVsSPATK_lbl.Location = New System.Drawing.Point(165, 16)
+        Me.pokemonThreeIVsSPATK_lbl.Name = "pokemonThreeIVsSPATK_lbl"
+        Me.pokemonThreeIVsSPATK_lbl.Size = New System.Drawing.Size(42, 13)
+        Me.pokemonThreeIVsSPATK_lbl.TabIndex = 6
+        Me.pokemonThreeIVsSPATK_lbl.Text = "SPATK"
         '
-        'TextBox8
+        'pokemonThreeIVsSPD_txt
         '
-        Me.TextBox8.Location = New System.Drawing.Point(114, 32)
-        Me.TextBox8.MaxLength = 3
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox8.TabIndex = 5
+        Me.pokemonThreeIVsSPD_txt.Location = New System.Drawing.Point(114, 32)
+        Me.pokemonThreeIVsSPD_txt.MaxLength = 3
+        Me.pokemonThreeIVsSPD_txt.Name = "pokemonThreeIVsSPD_txt"
+        Me.pokemonThreeIVsSPD_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeIVsSPD_txt.TabIndex = 5
         '
-        'Label21
+        'pokemonThreeIVsSPD_lbl
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(122, 16)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(29, 13)
-        Me.Label21.TabIndex = 4
-        Me.Label21.Text = "SPD"
+        Me.pokemonThreeIVsSPD_lbl.AutoSize = True
+        Me.pokemonThreeIVsSPD_lbl.Location = New System.Drawing.Point(122, 16)
+        Me.pokemonThreeIVsSPD_lbl.Name = "pokemonThreeIVsSPD_lbl"
+        Me.pokemonThreeIVsSPD_lbl.Size = New System.Drawing.Size(29, 13)
+        Me.pokemonThreeIVsSPD_lbl.TabIndex = 4
+        Me.pokemonThreeIVsSPD_lbl.Text = "SPD"
         '
-        'TextBox9
+        'pokemonThreeIVsATK_txt
         '
-        Me.TextBox9.Location = New System.Drawing.Point(60, 32)
-        Me.TextBox9.MaxLength = 3
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox9.TabIndex = 3
+        Me.pokemonThreeIVsATK_txt.Location = New System.Drawing.Point(60, 32)
+        Me.pokemonThreeIVsATK_txt.MaxLength = 3
+        Me.pokemonThreeIVsATK_txt.Name = "pokemonThreeIVsATK_txt"
+        Me.pokemonThreeIVsATK_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeIVsATK_txt.TabIndex = 3
         '
-        'Label22
+        'pokemonThreeIVsATK_lbl
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(68, 16)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(28, 13)
-        Me.Label22.TabIndex = 2
-        Me.Label22.Text = "ATK"
+        Me.pokemonThreeIVsATK_lbl.AutoSize = True
+        Me.pokemonThreeIVsATK_lbl.Location = New System.Drawing.Point(68, 16)
+        Me.pokemonThreeIVsATK_lbl.Name = "pokemonThreeIVsATK_lbl"
+        Me.pokemonThreeIVsATK_lbl.Size = New System.Drawing.Size(28, 13)
+        Me.pokemonThreeIVsATK_lbl.TabIndex = 2
+        Me.pokemonThreeIVsATK_lbl.Text = "ATK"
         '
-        'TextBox10
+        'pokemonThreeIVsHP_txt
         '
-        Me.TextBox10.Location = New System.Drawing.Point(6, 32)
-        Me.TextBox10.MaxLength = 3
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox10.TabIndex = 1
+        Me.pokemonThreeIVsHP_txt.Location = New System.Drawing.Point(6, 32)
+        Me.pokemonThreeIVsHP_txt.MaxLength = 3
+        Me.pokemonThreeIVsHP_txt.Name = "pokemonThreeIVsHP_txt"
+        Me.pokemonThreeIVsHP_txt.Size = New System.Drawing.Size(44, 20)
+        Me.pokemonThreeIVsHP_txt.TabIndex = 1
         '
-        'Label23
+        'pokemonThreeIVsHP_lbl
         '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(17, 16)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(22, 13)
-        Me.Label23.TabIndex = 0
-        Me.Label23.Text = "HP"
+        Me.pokemonThreeIVsHP_lbl.AutoSize = True
+        Me.pokemonThreeIVsHP_lbl.Location = New System.Drawing.Point(17, 16)
+        Me.pokemonThreeIVsHP_lbl.Name = "pokemonThreeIVsHP_lbl"
+        Me.pokemonThreeIVsHP_lbl.Size = New System.Drawing.Size(22, 13)
+        Me.pokemonThreeIVsHP_lbl.TabIndex = 0
+        Me.pokemonThreeIVsHP_lbl.Text = "HP"
         '
         'pokemonFourName_lbl
         '
@@ -3464,8 +3464,8 @@ Partial Class Form1
         '
         'pokemonFour_grp
         '
-        Me.pokemonFour_grp.Controls.Add(Me.GroupBox3)
-        Me.pokemonFour_grp.Controls.Add(Me.GroupBox4)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourEVs_grp)
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourIVs_grp)
         Me.pokemonFour_grp.Controls.Add(Me.Label6)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_cmb)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_lbl)
@@ -3498,24 +3498,24 @@ Partial Class Form1
         Me.pokemonFour_grp.TabStop = False
         Me.pokemonFour_grp.Text = "Pokémon 4"
         '
-        'GroupBox3
+        'pokemonFourEVs_grp
         '
-        Me.GroupBox3.Controls.Add(Me.TextBox11)
-        Me.GroupBox3.Controls.Add(Me.Label24)
-        Me.GroupBox3.Controls.Add(Me.TextBox12)
-        Me.GroupBox3.Controls.Add(Me.Label25)
-        Me.GroupBox3.Controls.Add(Me.TextBox13)
-        Me.GroupBox3.Controls.Add(Me.Label26)
-        Me.GroupBox3.Controls.Add(Me.TextBox14)
-        Me.GroupBox3.Controls.Add(Me.Label27)
-        Me.GroupBox3.Controls.Add(Me.TextBox15)
-        Me.GroupBox3.Controls.Add(Me.Label28)
-        Me.GroupBox3.Location = New System.Drawing.Point(327, 104)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(306, 77)
-        Me.GroupBox3.TabIndex = 101
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "EVs (Max 31 Each)"
+        Me.pokemonFourEVs_grp.Controls.Add(Me.TextBox11)
+        Me.pokemonFourEVs_grp.Controls.Add(Me.Label24)
+        Me.pokemonFourEVs_grp.Controls.Add(Me.TextBox12)
+        Me.pokemonFourEVs_grp.Controls.Add(Me.Label25)
+        Me.pokemonFourEVs_grp.Controls.Add(Me.TextBox13)
+        Me.pokemonFourEVs_grp.Controls.Add(Me.Label26)
+        Me.pokemonFourEVs_grp.Controls.Add(Me.TextBox14)
+        Me.pokemonFourEVs_grp.Controls.Add(Me.Label27)
+        Me.pokemonFourEVs_grp.Controls.Add(Me.TextBox15)
+        Me.pokemonFourEVs_grp.Controls.Add(Me.Label28)
+        Me.pokemonFourEVs_grp.Location = New System.Drawing.Point(327, 104)
+        Me.pokemonFourEVs_grp.Name = "pokemonFourEVs_grp"
+        Me.pokemonFourEVs_grp.Size = New System.Drawing.Size(306, 77)
+        Me.pokemonFourEVs_grp.TabIndex = 101
+        Me.pokemonFourEVs_grp.TabStop = False
+        Me.pokemonFourEVs_grp.Text = "EVs (Max 31 Each)"
         '
         'TextBox11
         '
@@ -3602,24 +3602,24 @@ Partial Class Form1
         Me.Label28.TabIndex = 0
         Me.Label28.Text = "HP"
         '
-        'GroupBox4
+        'pokemonFourIVs_grp
         '
-        Me.GroupBox4.Controls.Add(Me.TextBox16)
-        Me.GroupBox4.Controls.Add(Me.Label29)
-        Me.GroupBox4.Controls.Add(Me.TextBox17)
-        Me.GroupBox4.Controls.Add(Me.Label30)
-        Me.GroupBox4.Controls.Add(Me.TextBox18)
-        Me.GroupBox4.Controls.Add(Me.Label31)
-        Me.GroupBox4.Controls.Add(Me.TextBox19)
-        Me.GroupBox4.Controls.Add(Me.Label32)
-        Me.GroupBox4.Controls.Add(Me.TextBox20)
-        Me.GroupBox4.Controls.Add(Me.Label33)
-        Me.GroupBox4.Location = New System.Drawing.Point(327, 19)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(306, 77)
-        Me.GroupBox4.TabIndex = 100
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "IVs (Max 252 Each)"
+        Me.pokemonFourIVs_grp.Controls.Add(Me.TextBox16)
+        Me.pokemonFourIVs_grp.Controls.Add(Me.Label29)
+        Me.pokemonFourIVs_grp.Controls.Add(Me.TextBox17)
+        Me.pokemonFourIVs_grp.Controls.Add(Me.Label30)
+        Me.pokemonFourIVs_grp.Controls.Add(Me.TextBox18)
+        Me.pokemonFourIVs_grp.Controls.Add(Me.Label31)
+        Me.pokemonFourIVs_grp.Controls.Add(Me.TextBox19)
+        Me.pokemonFourIVs_grp.Controls.Add(Me.Label32)
+        Me.pokemonFourIVs_grp.Controls.Add(Me.TextBox20)
+        Me.pokemonFourIVs_grp.Controls.Add(Me.Label33)
+        Me.pokemonFourIVs_grp.Location = New System.Drawing.Point(327, 19)
+        Me.pokemonFourIVs_grp.Name = "pokemonFourIVs_grp"
+        Me.pokemonFourIVs_grp.Size = New System.Drawing.Size(306, 77)
+        Me.pokemonFourIVs_grp.TabIndex = 100
+        Me.pokemonFourIVs_grp.TabStop = False
+        Me.pokemonFourIVs_grp.Text = "IVs (Max 252 Each)"
         '
         'TextBox16
         '
@@ -3706,24 +3706,24 @@ Partial Class Form1
         Me.Label33.TabIndex = 0
         Me.Label33.Text = "HP"
         '
-        'GroupBox5
+        'pokemonFiveEVs_grp
         '
-        Me.GroupBox5.Controls.Add(Me.TextBox21)
-        Me.GroupBox5.Controls.Add(Me.Label34)
-        Me.GroupBox5.Controls.Add(Me.TextBox22)
-        Me.GroupBox5.Controls.Add(Me.Label35)
-        Me.GroupBox5.Controls.Add(Me.TextBox23)
-        Me.GroupBox5.Controls.Add(Me.Label36)
-        Me.GroupBox5.Controls.Add(Me.TextBox24)
-        Me.GroupBox5.Controls.Add(Me.Label37)
-        Me.GroupBox5.Controls.Add(Me.TextBox25)
-        Me.GroupBox5.Controls.Add(Me.Label38)
-        Me.GroupBox5.Location = New System.Drawing.Point(327, 104)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(306, 77)
-        Me.GroupBox5.TabIndex = 126
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "EVs (Max 31 Each)"
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.TextBox21)
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.Label34)
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.TextBox22)
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.Label35)
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.TextBox23)
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.Label36)
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.TextBox24)
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.Label37)
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.TextBox25)
+        Me.pokemonFiveEVs_grp.Controls.Add(Me.Label38)
+        Me.pokemonFiveEVs_grp.Location = New System.Drawing.Point(327, 104)
+        Me.pokemonFiveEVs_grp.Name = "pokemonFiveEVs_grp"
+        Me.pokemonFiveEVs_grp.Size = New System.Drawing.Size(306, 77)
+        Me.pokemonFiveEVs_grp.TabIndex = 126
+        Me.pokemonFiveEVs_grp.TabStop = False
+        Me.pokemonFiveEVs_grp.Text = "EVs (Max 31 Each)"
         '
         'TextBox21
         '
@@ -3810,24 +3810,24 @@ Partial Class Form1
         Me.Label38.TabIndex = 0
         Me.Label38.Text = "HP"
         '
-        'GroupBox6
+        'pokemonFiveIVs_grp
         '
-        Me.GroupBox6.Controls.Add(Me.TextBox26)
-        Me.GroupBox6.Controls.Add(Me.Label39)
-        Me.GroupBox6.Controls.Add(Me.TextBox27)
-        Me.GroupBox6.Controls.Add(Me.Label40)
-        Me.GroupBox6.Controls.Add(Me.TextBox28)
-        Me.GroupBox6.Controls.Add(Me.Label41)
-        Me.GroupBox6.Controls.Add(Me.TextBox29)
-        Me.GroupBox6.Controls.Add(Me.Label42)
-        Me.GroupBox6.Controls.Add(Me.TextBox30)
-        Me.GroupBox6.Controls.Add(Me.Label43)
-        Me.GroupBox6.Location = New System.Drawing.Point(327, 19)
-        Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(306, 77)
-        Me.GroupBox6.TabIndex = 125
-        Me.GroupBox6.TabStop = False
-        Me.GroupBox6.Text = "IVs (Max 252 Each)"
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.TextBox26)
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.Label39)
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.TextBox27)
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.Label40)
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.TextBox28)
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.Label41)
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.TextBox29)
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.Label42)
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.TextBox30)
+        Me.pokemonFiveIVs_grp.Controls.Add(Me.Label43)
+        Me.pokemonFiveIVs_grp.Location = New System.Drawing.Point(327, 19)
+        Me.pokemonFiveIVs_grp.Name = "pokemonFiveIVs_grp"
+        Me.pokemonFiveIVs_grp.Size = New System.Drawing.Size(306, 77)
+        Me.pokemonFiveIVs_grp.TabIndex = 125
+        Me.pokemonFiveIVs_grp.TabStop = False
+        Me.pokemonFiveIVs_grp.Text = "IVs (Max 252 Each)"
         '
         'TextBox26
         '
@@ -3914,24 +3914,24 @@ Partial Class Form1
         Me.Label43.TabIndex = 0
         Me.Label43.Text = "HP"
         '
-        'GroupBox7
+        'pokemonSixEVs_grp
         '
-        Me.GroupBox7.Controls.Add(Me.TextBox31)
-        Me.GroupBox7.Controls.Add(Me.Label44)
-        Me.GroupBox7.Controls.Add(Me.TextBox32)
-        Me.GroupBox7.Controls.Add(Me.Label45)
-        Me.GroupBox7.Controls.Add(Me.TextBox33)
-        Me.GroupBox7.Controls.Add(Me.Label46)
-        Me.GroupBox7.Controls.Add(Me.TextBox34)
-        Me.GroupBox7.Controls.Add(Me.Label47)
-        Me.GroupBox7.Controls.Add(Me.TextBox35)
-        Me.GroupBox7.Controls.Add(Me.Label48)
-        Me.GroupBox7.Location = New System.Drawing.Point(327, 104)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(306, 77)
-        Me.GroupBox7.TabIndex = 151
-        Me.GroupBox7.TabStop = False
-        Me.GroupBox7.Text = "EVs (Max 31 Each)"
+        Me.pokemonSixEVs_grp.Controls.Add(Me.TextBox31)
+        Me.pokemonSixEVs_grp.Controls.Add(Me.Label44)
+        Me.pokemonSixEVs_grp.Controls.Add(Me.TextBox32)
+        Me.pokemonSixEVs_grp.Controls.Add(Me.Label45)
+        Me.pokemonSixEVs_grp.Controls.Add(Me.TextBox33)
+        Me.pokemonSixEVs_grp.Controls.Add(Me.Label46)
+        Me.pokemonSixEVs_grp.Controls.Add(Me.TextBox34)
+        Me.pokemonSixEVs_grp.Controls.Add(Me.Label47)
+        Me.pokemonSixEVs_grp.Controls.Add(Me.TextBox35)
+        Me.pokemonSixEVs_grp.Controls.Add(Me.Label48)
+        Me.pokemonSixEVs_grp.Location = New System.Drawing.Point(327, 104)
+        Me.pokemonSixEVs_grp.Name = "pokemonSixEVs_grp"
+        Me.pokemonSixEVs_grp.Size = New System.Drawing.Size(306, 77)
+        Me.pokemonSixEVs_grp.TabIndex = 151
+        Me.pokemonSixEVs_grp.TabStop = False
+        Me.pokemonSixEVs_grp.Text = "EVs (Max 31 Each)"
         '
         'TextBox31
         '
@@ -4018,24 +4018,24 @@ Partial Class Form1
         Me.Label48.TabIndex = 0
         Me.Label48.Text = "HP"
         '
-        'GroupBox8
+        'pokemonSixIVs_grp
         '
-        Me.GroupBox8.Controls.Add(Me.TextBox36)
-        Me.GroupBox8.Controls.Add(Me.Label49)
-        Me.GroupBox8.Controls.Add(Me.TextBox37)
-        Me.GroupBox8.Controls.Add(Me.Label50)
-        Me.GroupBox8.Controls.Add(Me.TextBox38)
-        Me.GroupBox8.Controls.Add(Me.Label51)
-        Me.GroupBox8.Controls.Add(Me.TextBox39)
-        Me.GroupBox8.Controls.Add(Me.Label52)
-        Me.GroupBox8.Controls.Add(Me.TextBox40)
-        Me.GroupBox8.Controls.Add(Me.Label53)
-        Me.GroupBox8.Location = New System.Drawing.Point(327, 19)
-        Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(306, 77)
-        Me.GroupBox8.TabIndex = 150
-        Me.GroupBox8.TabStop = False
-        Me.GroupBox8.Text = "IVs (Max 252 Each)"
+        Me.pokemonSixIVs_grp.Controls.Add(Me.TextBox36)
+        Me.pokemonSixIVs_grp.Controls.Add(Me.Label49)
+        Me.pokemonSixIVs_grp.Controls.Add(Me.TextBox37)
+        Me.pokemonSixIVs_grp.Controls.Add(Me.Label50)
+        Me.pokemonSixIVs_grp.Controls.Add(Me.TextBox38)
+        Me.pokemonSixIVs_grp.Controls.Add(Me.Label51)
+        Me.pokemonSixIVs_grp.Controls.Add(Me.TextBox39)
+        Me.pokemonSixIVs_grp.Controls.Add(Me.Label52)
+        Me.pokemonSixIVs_grp.Controls.Add(Me.TextBox40)
+        Me.pokemonSixIVs_grp.Controls.Add(Me.Label53)
+        Me.pokemonSixIVs_grp.Location = New System.Drawing.Point(327, 19)
+        Me.pokemonSixIVs_grp.Name = "pokemonSixIVs_grp"
+        Me.pokemonSixIVs_grp.Size = New System.Drawing.Size(306, 77)
+        Me.pokemonSixIVs_grp.TabIndex = 150
+        Me.pokemonSixIVs_grp.TabStop = False
+        Me.pokemonSixIVs_grp.Text = "IVs (Max 252 Each)"
         '
         'TextBox36
         '
@@ -4200,10 +4200,10 @@ Partial Class Form1
         Me.pg_About.PerformLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
+        Me.pokemonThreeEVs_grp.ResumeLayout(False)
+        Me.pokemonThreeEVs_grp.PerformLayout()
+        Me.pokemonThreeIVs_grp.ResumeLayout(False)
+        Me.pokemonThreeIVs_grp.PerformLayout()
         Me.pokemonFourMoves_grp.ResumeLayout(False)
         Me.pokemonFourMoves_grp.PerformLayout()
         Me.pokemonFourShiny_grp.ResumeLayout(False)
@@ -4212,18 +4212,18 @@ Partial Class Form1
         Me.pokemonFourShadow_grp.PerformLayout()
         Me.pokemonFour_grp.ResumeLayout(False)
         Me.pokemonFour_grp.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
-        Me.GroupBox6.ResumeLayout(False)
-        Me.GroupBox6.PerformLayout()
-        Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox7.PerformLayout()
-        Me.GroupBox8.ResumeLayout(False)
-        Me.GroupBox8.PerformLayout()
+        Me.pokemonFourEVs_grp.ResumeLayout(False)
+        Me.pokemonFourEVs_grp.PerformLayout()
+        Me.pokemonFourIVs_grp.ResumeLayout(False)
+        Me.pokemonFourIVs_grp.PerformLayout()
+        Me.pokemonFiveEVs_grp.ResumeLayout(False)
+        Me.pokemonFiveEVs_grp.PerformLayout()
+        Me.pokemonFiveIVs_grp.ResumeLayout(False)
+        Me.pokemonFiveIVs_grp.PerformLayout()
+        Me.pokemonSixEVs_grp.ResumeLayout(False)
+        Me.pokemonSixEVs_grp.PerformLayout()
+        Me.pokemonSixIVs_grp.ResumeLayout(False)
+        Me.pokemonSixIVs_grp.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -4483,30 +4483,30 @@ Partial Class Form1
     Friend WithEvents pokemonTwoIVsATK_lbl As Label
     Friend WithEvents pokemonTwoIVsHP_txt As TextBox
     Friend WithEvents pokemonTwoIVsHP_lbl As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label17 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label18 As Label
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents Label22 As Label
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents Label23 As Label
+    Friend WithEvents pokemonThreeEVs_grp As GroupBox
+    Friend WithEvents pokemonThreeEVsSPDEF_txt As TextBox
+    Friend WithEvents pokemonThreeEVsSPDEF_lbl As Label
+    Friend WithEvents pokemonThreeEVsSPATK_txt As TextBox
+    Friend WithEvents pokemonThreeEVsSPATK_lbl As Label
+    Friend WithEvents pokemonThreeEVsSPD_txt As TextBox
+    Friend WithEvents pokemonThreeEVsSPD_lbl As Label
+    Friend WithEvents pokemonThreeEVsATK_txt As TextBox
+    Friend WithEvents pokemonThreeEVsATK_lbl As Label
+    Friend WithEvents pokemonThreeEVsHP_txt As TextBox
+    Friend WithEvents pokemonThreeEVsHP_lbl As Label
+    Friend WithEvents pokemonThreeIVs_grp As GroupBox
+    Friend WithEvents pokemonThreeIVsSPDEF_txt As TextBox
+    Friend WithEvents pokemonThreeIVsSPDEF_lbl As Label
+    Friend WithEvents pokemonThreeIVsSPATK_txt As TextBox
+    Friend WithEvents pokemonThreeIVsSPATK_lbl As Label
+    Friend WithEvents pokemonThreeIVsSPD_txt As TextBox
+    Friend WithEvents pokemonThreeIVsSPD_lbl As Label
+    Friend WithEvents pokemonThreeIVsATK_txt As TextBox
+    Friend WithEvents pokemonThreeIVsATK_lbl As Label
+    Friend WithEvents pokemonThreeIVsHP_txt As TextBox
+    Friend WithEvents pokemonThreeIVsHP_lbl As Label
     Friend WithEvents pokemonFour_grp As GroupBox
-    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents pokemonFourEVs_grp As GroupBox
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents Label24 As Label
     Friend WithEvents TextBox12 As TextBox
@@ -4517,7 +4517,7 @@ Partial Class Form1
     Friend WithEvents Label27 As Label
     Friend WithEvents TextBox15 As TextBox
     Friend WithEvents Label28 As Label
-    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents pokemonFourIVs_grp As GroupBox
     Friend WithEvents TextBox16 As TextBox
     Friend WithEvents Label29 As Label
     Friend WithEvents TextBox17 As TextBox
@@ -4560,7 +4560,7 @@ Partial Class Form1
     Friend WithEvents Label12 As Label
     Friend WithEvents pokemonFourName_txtBox As TextBox
     Friend WithEvents pokemonFourName_lbl As Label
-    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents pokemonFiveEVs_grp As GroupBox
     Friend WithEvents TextBox21 As TextBox
     Friend WithEvents Label34 As Label
     Friend WithEvents TextBox22 As TextBox
@@ -4571,7 +4571,7 @@ Partial Class Form1
     Friend WithEvents Label37 As Label
     Friend WithEvents TextBox25 As TextBox
     Friend WithEvents Label38 As Label
-    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents pokemonFiveIVs_grp As GroupBox
     Friend WithEvents TextBox26 As TextBox
     Friend WithEvents Label39 As Label
     Friend WithEvents TextBox27 As TextBox
@@ -4582,7 +4582,7 @@ Partial Class Form1
     Friend WithEvents Label42 As Label
     Friend WithEvents TextBox30 As TextBox
     Friend WithEvents Label43 As Label
-    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents pokemonSixEVs_grp As GroupBox
     Friend WithEvents TextBox31 As TextBox
     Friend WithEvents Label44 As Label
     Friend WithEvents TextBox32 As TextBox
@@ -4593,7 +4593,7 @@ Partial Class Form1
     Friend WithEvents Label47 As Label
     Friend WithEvents TextBox35 As TextBox
     Friend WithEvents Label48 As Label
-    Friend WithEvents GroupBox8 As GroupBox
+    Friend WithEvents pokemonSixIVs_grp As GroupBox
     Friend WithEvents TextBox36 As TextBox
     Friend WithEvents Label49 As Label
     Friend WithEvents TextBox37 As TextBox
