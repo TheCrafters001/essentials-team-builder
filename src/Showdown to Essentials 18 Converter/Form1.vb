@@ -38,6 +38,7 @@
     Private Sub example_btn_Click(sender As Object, e As EventArgs) Handles example_btn.Click
         trainerName_txtBox.Text = "Trainer"
         trainerType_txtBox.Text = "Rival"
+        loseText_txt.Text = "You beat me?!"
         numPoké_cmb.SelectedIndex = 0
         trainerUsesItems_chkBox.Checked = True
         itemOne_txtBox.Text = "potion"

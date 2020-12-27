@@ -500,7 +500,7 @@ Partial Class Form1
         'loseText_lbl
         '
         Me.loseText_lbl.AutoSize = True
-        Me.loseText_lbl.Location = New System.Drawing.Point(8, 119)
+        Me.loseText_lbl.Location = New System.Drawing.Point(6, 118)
         Me.loseText_lbl.Name = "loseText_lbl"
         Me.loseText_lbl.Size = New System.Drawing.Size(54, 13)
         Me.loseText_lbl.TabIndex = 15
@@ -508,7 +508,7 @@ Partial Class Form1
         '
         'loseText_txt
         '
-        Me.loseText_txt.Location = New System.Drawing.Point(8, 135)
+        Me.loseText_txt.Location = New System.Drawing.Point(6, 134)
         Me.loseText_txt.MaxLength = 25
         Me.loseText_txt.Name = "loseText_txt"
         Me.loseText_txt.Size = New System.Drawing.Size(185, 20)
@@ -551,7 +551,7 @@ Partial Class Form1
         'numPoké_lbl
         '
         Me.numPoké_lbl.AutoSize = True
-        Me.numPoké_lbl.Location = New System.Drawing.Point(8, 158)
+        Me.numPoké_lbl.Location = New System.Drawing.Point(6, 157)
         Me.numPoké_lbl.Name = "numPoké_lbl"
         Me.numPoké_lbl.Size = New System.Drawing.Size(104, 13)
         Me.numPoké_lbl.TabIndex = 11
@@ -562,7 +562,7 @@ Partial Class Form1
         Me.numPoké_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.numPoké_cmb.FormattingEnabled = True
         Me.numPoké_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6"})
-        Me.numPoké_cmb.Location = New System.Drawing.Point(8, 174)
+        Me.numPoké_cmb.Location = New System.Drawing.Point(6, 173)
         Me.numPoké_cmb.Name = "numPoké_cmb"
         Me.numPoké_cmb.Size = New System.Drawing.Size(127, 21)
         Me.numPoké_cmb.TabIndex = 10
@@ -672,7 +672,7 @@ Partial Class Form1
         'battleTeamID_lbl
         '
         Me.battleTeamID_lbl.AutoSize = True
-        Me.battleTeamID_lbl.Location = New System.Drawing.Point(8, 198)
+        Me.battleTeamID_lbl.Location = New System.Drawing.Point(6, 197)
         Me.battleTeamID_lbl.Name = "battleTeamID_lbl"
         Me.battleTeamID_lbl.Size = New System.Drawing.Size(172, 13)
         Me.battleTeamID_lbl.TabIndex = 5
@@ -680,7 +680,7 @@ Partial Class Form1
         '
         'battleTeamID_txtBox
         '
-        Me.battleTeamID_txtBox.Location = New System.Drawing.Point(8, 214)
+        Me.battleTeamID_txtBox.Location = New System.Drawing.Point(6, 213)
         Me.battleTeamID_txtBox.MaxLength = 25
         Me.battleTeamID_txtBox.Name = "battleTeamID_txtBox"
         Me.battleTeamID_txtBox.Size = New System.Drawing.Size(127, 20)
