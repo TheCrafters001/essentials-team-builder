@@ -117,6 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PBallIDRef_RchTxt.Text" xml:space="preserve">
+    <value>This page allows you to see the Pokéball IDs for Pokémon Essentials.
+Do note, that this specifies the DEFAULT IDs, and does not state any custom IDs.
+
+  0  =&gt; :POKEBALL,
+  1  =&gt; :GREATBALL,
+  2  =&gt; :SAFARIBALL,
+  3  =&gt; :ULTRABALL,
+  4  =&gt; :MASTERBALL,
+  5  =&gt; :NETBALL,
+  6  =&gt; :DIVEBALL,
+  7  =&gt; :NESTBALL,
+  8  =&gt; :REPEATBALL,
+  9  =&gt; :TIMERBALL,
+  10 =&gt; :LUXURYBALL,
+  11 =&gt; :PREMIERBALL,
+  12 =&gt; :DUSKBALL,
+  13 =&gt; :HEALBALL,
+  14 =&gt; :QUICKBALL,
+  15 =&gt; :CHERISHBALL,
+  16 =&gt; :FASTBALL,
+  17 =&gt; :LEVELBALL,
+  18 =&gt; :LUREBALL,
+  19 =&gt; :HEAVYBALL,
+  20 =&gt; :LOVEBALL,
+  21 =&gt; :FRIENDBALL,
+  22 =&gt; :MOONBALL,
+  23 =&gt; :SPORTBALL,
+  24 =&gt; :DREAMBALL,
+  25 =&gt; :BEASTBALL</value>
+  </data>
   <data name="aboutText_lbl.Text" xml:space="preserve">
     <value>This was made per request by Frozentual. This tool makes it easier to convert Pokémon Showdown format into Pokémon Essentials format. 
 Note: this program isn't perfect. Far from it. There will be updates to this program from time to time to either fix bugs or add functionality.

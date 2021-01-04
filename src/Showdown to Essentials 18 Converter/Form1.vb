@@ -14,25 +14,7 @@
         End If
     End Sub
     Private Sub generate_btn_Click(sender As Object, e As EventArgs) Handles generate_btn.Click
-        If numPoké_cmb.Text = "1" Then
-            Generator.Trainer()
-            Generator.OnePokemon()
-        ElseIf numPoké_cmb.Text = "2" Then
-            Generator.Trainer()
-            Generator.TwoPokemon()
-        ElseIf numPoké_cmb.Text = "3" Then
-            Generator.Trainer()
-            Generator.ThreePokemon()
-        ElseIf numPoké_cmb.Text = "4" Then
-            Generator.Trainer()
-            Generator.FourPokemon()
-        ElseIf numPoké_cmb.Text = "5" Then
-            Generator.Trainer()
-            Generator.FivePokemon()
-        ElseIf numPoké_cmb.Text = "6" Then
-            Generator.Trainer()
-            Generator.SixPokemon()
-        End If
+        Generator.Generate()
     End Sub
 
     Private Sub example_btn_Click(sender As Object, e As EventArgs) Handles example_btn.Click
