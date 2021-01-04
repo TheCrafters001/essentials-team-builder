@@ -48,16 +48,7 @@ Public Class Form1
         pe18_pic.BackColor = SystemColors.Control
     End Sub
 
-    Private Sub updateCheck_lnk_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles updateCheck_lnk.LinkClicked
-        ' Check For Updates
-        AutoUpdater.ShowSkipButton = True
-        AutoUpdater.ShowRemindLaterButton = True
-        AutoUpdater.ReportErrors = True
-        AutoUpdater.RunUpdateAsAdmin = True
-        AutoUpdater.LetUserSelectRemindLater = True
-        AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Hours
-        AutoUpdater.RemindLaterAt = 1
-        AutoUpdater.UpdateFormSize = New System.Drawing.Size(800, 600)
-        AutoUpdater.Start("https://api.thecrafters001.ga/updates/showdown-to-essentials.xml")
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
