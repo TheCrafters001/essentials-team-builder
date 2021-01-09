@@ -118,8 +118,8 @@
                 ElseIf Not Form1.pokemonOneNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = "    Nature = " & Form1.pokemonOneNature_cmb.SelectedItem & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text & vbCrLf
+                pokemonIVs = "    IVs = " & Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsDEF_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text & vbCrLf
+                pokemonEVs = "    EVs = " & Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsDEF_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text & vbCrLf
                 If Form1.pokemonOneHappyness_txtBox.Text = "" Then
                     pokemonHappyness = "    Happiness = 70" & vbCrLf
                 ElseIf Not Form1.pokemonOneHappyness_txtBox.Text = "" Then
@@ -175,8 +175,8 @@
                 ElseIf Not Form1.pokemonTwoNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = "    Nature = " & Form1.pokemonTwoNature_cmb.SelectedItem & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonTwoIVsHP_txt.Text & "," & Form1.pokemonTwoIVsATK_txt.Text & "," & Form1.pokemonTwoIVsSPD_txt.Text & "," & Form1.pokemonTwoIVsSPATK_txt.Text & "," & Form1.pokemonTwoIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonTwoEVsHP_txt.Text & "," & Form1.pokemonTwoEVsATK_txt.Text & "," & Form1.pokemonTwoEVsSPD_txt.Text & "," & Form1.pokemonTwoEVsSPATK_txt.Text & "," & Form1.pokemonTwoEVsSPDEF_txt.Text & vbCrLf
+                pokemonIVs = "    IVs = " & Form1.pokemonTwoIVsHP_txt.Text & "," & Form1.pokemonTwoIVsATK_txt.Text & "," & Form1.pokemonTwoIVsDEF_txt.Text & "," & Form1.pokemonTwoIVsSPD_txt.Text & "," & Form1.pokemonTwoIVsSPATK_txt.Text & "," & Form1.pokemonTwoIVsSPDEF_txt.Text & vbCrLf
+                pokemonEVs = "    EVs = " & Form1.pokemonTwoEVsHP_txt.Text & "," & Form1.pokemonTwoEVsATK_txt.Text & "," & Form1.pokemonTwoEVsDEF_txt.Text & "," & Form1.pokemonTwoEVsSPD_txt.Text & "," & Form1.pokemonTwoEVsSPATK_txt.Text & "," & Form1.pokemonTwoEVsSPDEF_txt.Text & vbCrLf
                 If Form1.pokemonTwoHappyness_txtBox.Text = "" Then
                     pokemonHappyness = "    Happiness = 70" & vbCrLf
                 ElseIf Not Form1.pokemonTwoHappyness_txtBox.Text = "" Then
@@ -232,8 +232,8 @@
                 ElseIf Not Form1.pokemonThreeNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = "    Nature = " & Form1.pokemonThreeNature_cmb.SelectedItem & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonThreeIVsHP_txt.Text & "," & Form1.pokemonThreeIVsATK_txt.Text & "," & Form1.pokemonThreeIVsSPD_txt.Text & "," & Form1.pokemonThreeIVsSPATK_txt.Text & "," & Form1.pokemonThreeIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonThreeEVsHP_txt.Text & "," & Form1.pokemonThreeEVsATK_txt.Text & "," & Form1.pokemonThreeEVsSPD_txt.Text & "," & Form1.pokemonThreeEVsSPATK_txt.Text & "," & Form1.pokemonThreeEVsSPDEF_txt.Text & vbCrLf
+                pokemonIVs = "    IVs = " & Form1.pokemonThreeIVsHP_txt.Text & "," & Form1.pokemonThreeIVsATK_txt.Text & "," & Form1.pokemonThreeIVsDEF_txt.Text & "," & Form1.pokemonThreeIVsSPD_txt.Text & "," & Form1.pokemonThreeIVsSPATK_txt.Text & "," & Form1.pokemonThreeIVsSPDEF_txt.Text & vbCrLf
+                pokemonEVs = "    EVs = " & Form1.pokemonThreeEVsHP_txt.Text & "," & Form1.pokemonThreeEVsATK_txt.Text & "," & Form1.pokemonThreeEVsDEF_txt.Text & "," & Form1.pokemonThreeEVsSPD_txt.Text & "," & Form1.pokemonThreeEVsSPATK_txt.Text & "," & Form1.pokemonThreeEVsSPDEF_txt.Text & vbCrLf
                 If Form1.pokemonThreeHappyness_txtBox.Text = "" Then
                     pokemonHappyness = "    Happiness = 70" & vbCrLf
                 ElseIf Not Form1.pokemonThreeHappyness_txtBox.Text = "" Then
@@ -289,8 +289,8 @@
                 ElseIf Not Form1.pokemonFourNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = "    Nature = " & Form1.pokemonFourNature_cmb.SelectedItem & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonFourIVsHP_txt.Text & "," & Form1.pokemonFourIVsATK_txt.Text & "," & Form1.pokemonFourIVsSPD_txt.Text & "," & Form1.pokemonFourIVsSPATK_txt.Text & "," & Form1.pokemonFourIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonFourEVsHP_txt.Text & "," & Form1.pokemonFourEVsATK_txt.Text & "," & Form1.pokemonFourEVsSPD_txt.Text & "," & Form1.pokemonFourEVsSPATK_txt.Text & "," & Form1.pokemonFourEVsSPDEF_txt.Text & vbCrLf
+                pokemonIVs = "    IVs = " & Form1.pokemonFourIVsHP_txt.Text & "," & Form1.pokemonFourIVsATK_txt.Text & "," & Form1.pokemonFourIVsDEF_txt.Text & "," & Form1.pokemonFourIVsSPD_txt.Text & "," & Form1.pokemonFourIVsSPATK_txt.Text & "," & Form1.pokemonFourIVsSPDEF_txt.Text & vbCrLf
+                pokemonEVs = "    EVs = " & Form1.pokemonFourEVsHP_txt.Text & "," & Form1.pokemonFourEVsATK_txt.Text & "," & Form1.pokemonFourEVsDEF_txt.Text & "," & Form1.pokemonFourEVsSPD_txt.Text & "," & Form1.pokemonFourEVsSPATK_txt.Text & "," & Form1.pokemonFourEVsSPDEF_txt.Text & vbCrLf
                 If Form1.pokemonFourHappyness_txtBox.Text = "" Then
                     pokemonHappyness = "    Happiness = 70" & vbCrLf
                 ElseIf Not Form1.pokemonFourHappyness_txtBox.Text = "" Then
@@ -346,8 +346,8 @@
                 ElseIf Not Form1.pokemonFiveNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = "    Nature = " & Form1.pokemonFiveNature_cmb.SelectedItem & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonFiveIVsHP_txt.Text & "," & Form1.pokemonFiveIVsATK_txt.Text & "," & Form1.pokemonFiveIVsSPD_txt.Text & "," & Form1.pokemonFiveIVsSPATK_txt.Text & "," & Form1.pokemonFiveIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonFiveEVsHP_txt.Text & "," & Form1.pokemonFiveEVsATK_txt.Text & "," & Form1.pokemonFiveEVsSPD_txt.Text & "," & Form1.pokemonFiveEVsSPATK_txt.Text & "," & Form1.pokemonFiveEVsSPDEF_txt.Text & vbCrLf
+                pokemonIVs = "    IVs = " & Form1.pokemonFiveIVsHP_txt.Text & "," & Form1.pokemonFiveIVsATK_txt.Text & "," & Form1.pokemonFiveIVsDEF_txt.Text & "," & Form1.pokemonFiveIVsSPD_txt.Text & "," & Form1.pokemonFiveIVsSPATK_txt.Text & "," & Form1.pokemonFiveIVsSPDEF_txt.Text & vbCrLf
+                pokemonEVs = "    EVs = " & Form1.pokemonFiveEVsHP_txt.Text & "," & Form1.pokemonFiveEVsATK_txt.Text & "," & Form1.pokemonFiveEVsDEF_txt.Text & "," & Form1.pokemonFiveEVsSPD_txt.Text & "," & Form1.pokemonFiveEVsSPATK_txt.Text & "," & Form1.pokemonFiveEVsSPDEF_txt.Text & vbCrLf
                 If Form1.pokemonFiveHappyness_txtBox.Text = "" Then
                     pokemonHappyness = "    Happiness = 70" & vbCrLf
                 ElseIf Not Form1.pokemonFiveHappyness_txtBox.Text = "" Then
@@ -403,8 +403,8 @@
                 ElseIf Not Form1.pokemonSixNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = "    Nature = " & Form1.pokemonSixNature_cmb.SelectedItem & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonSixIVsHP_txt.Text & "," & Form1.pokemonSixIVsATK_txt.Text & "," & Form1.pokemonSixIVsSPD_txt.Text & "," & Form1.pokemonSixIVsSPATK_txt.Text & "," & Form1.pokemonSixIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonSixEVsHP_txt.Text & "," & Form1.pokemonSixEVsATK_txt.Text & "," & Form1.pokemonSixEVsSPD_txt.Text & "," & Form1.pokemonSixEVsSPATK_txt.Text & "," & Form1.pokemonSixEVsSPDEF_txt.Text & vbCrLf
+                pokemonIVs = "    IVs = " & Form1.pokemonSixIVsHP_txt.Text & "," & Form1.pokemonSixIVsATK_txt.Text & "," & Form1.pokemonSixIVsDEF_txt.Text & "," & Form1.pokemonSixIVsSPD_txt.Text & "," & Form1.pokemonSixIVsSPATK_txt.Text & "," & Form1.pokemonSixIVsSPDEF_txt.Text & vbCrLf
+                pokemonEVs = "    EVs = " & Form1.pokemonSixEVsHP_txt.Text & "," & Form1.pokemonSixEVsATK_txt.Text & "," & Form1.pokemonSixEVsDEF_txt.Text & "," & Form1.pokemonSixEVsSPD_txt.Text & "," & Form1.pokemonSixEVsSPATK_txt.Text & "," & Form1.pokemonSixEVsSPDEF_txt.Text & vbCrLf
                 If Form1.pokemonSixHappyness_txtBox.Text = "" Then
                     pokemonHappyness = "    Happiness = 70" & vbCrLf
                 ElseIf Not Form1.pokemonSixHappyness_txtBox.Text = "" Then
