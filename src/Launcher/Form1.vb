@@ -1,6 +1,4 @@
-﻿Imports AutoUpdaterDotNET
-
-Public Class Form1
+﻿Public Class Form1
     Private Sub exit_btn_Click(sender As Object, e As EventArgs) Handles exit_btn.Click
         Application.Exit()
     End Sub

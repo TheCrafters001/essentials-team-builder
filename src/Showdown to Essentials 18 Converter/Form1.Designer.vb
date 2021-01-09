@@ -426,6 +426,8 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
+        Me.miscInfo_grpBox = New System.Windows.Forms.GroupBox()
+        Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         CType(Me.pe18_pic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -477,6 +479,7 @@ Partial Class Form1
         Me.pg_About.SuspendLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.miscInfo_grpBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'pages_tabGrp
@@ -500,6 +503,7 @@ Partial Class Form1
         '
         'pg_Trainer
         '
+        Me.pg_Trainer.Controls.Add(Me.miscInfo_grpBox)
         Me.pg_Trainer.Controls.Add(Me.loseText_lbl)
         Me.pg_Trainer.Controls.Add(Me.loseText_txt)
         Me.pg_Trainer.Controls.Add(Me.pe18_pic)
@@ -513,7 +517,6 @@ Partial Class Form1
         Me.pg_Trainer.Controls.Add(Me.trainerType_txtBox)
         Me.pg_Trainer.Controls.Add(Me.battleTeamID_lbl)
         Me.pg_Trainer.Controls.Add(Me.battleTeamID_txtBox)
-        Me.pg_Trainer.Controls.Add(Me.existingBattle_chkBox)
         Me.pg_Trainer.Controls.Add(Me.trainerName_lbl)
         Me.pg_Trainer.Controls.Add(Me.trainerName_txtBox)
         Me.pg_Trainer.Controls.Add(Me.trainerInfoTitle_lbl)
@@ -717,7 +720,7 @@ Partial Class Form1
         'existingBattle_chkBox
         '
         Me.existingBattle_chkBox.AutoSize = True
-        Me.existingBattle_chkBox.Location = New System.Drawing.Point(139, 57)
+        Me.existingBattle_chkBox.Location = New System.Drawing.Point(6, 19)
         Me.existingBattle_chkBox.Name = "existingBattle_chkBox"
         Me.existingBattle_chkBox.Size = New System.Drawing.Size(247, 17)
         Me.existingBattle_chkBox.TabIndex = 3
@@ -4476,6 +4479,27 @@ Partial Class Form1
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
         '
+        'miscInfo_grpBox
+        '
+        Me.miscInfo_grpBox.Controls.Add(Me.customBallIDs_chkBox)
+        Me.miscInfo_grpBox.Controls.Add(Me.existingBattle_chkBox)
+        Me.miscInfo_grpBox.Location = New System.Drawing.Point(197, 29)
+        Me.miscInfo_grpBox.Name = "miscInfo_grpBox"
+        Me.miscInfo_grpBox.Size = New System.Drawing.Size(352, 252)
+        Me.miscInfo_grpBox.TabIndex = 16
+        Me.miscInfo_grpBox.TabStop = False
+        Me.miscInfo_grpBox.Text = "Misc Info"
+        '
+        'customBallIDs_chkBox
+        '
+        Me.customBallIDs_chkBox.AutoSize = True
+        Me.customBallIDs_chkBox.Location = New System.Drawing.Point(6, 42)
+        Me.customBallIDs_chkBox.Name = "customBallIDs_chkBox"
+        Me.customBallIDs_chkBox.Size = New System.Drawing.Size(184, 17)
+        Me.customBallIDs_chkBox.TabIndex = 4
+        Me.customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
+        Me.customBallIDs_chkBox.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -4579,6 +4603,8 @@ Partial Class Form1
         Me.pg_About.PerformLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.miscInfo_grpBox.ResumeLayout(False)
+        Me.miscInfo_grpBox.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -4985,4 +5011,6 @@ Partial Class Form1
     Friend WithEvents pokemonFiveEVsDEF_lbl As Label
     Friend WithEvents pokemonFiveIVsDEF_txt As TextBox
     Friend WithEvents pokemonFiveIVsDEF_lbl As Label
+    Friend WithEvents miscInfo_grpBox As GroupBox
+    Friend WithEvents customBallIDs_chkBox As CheckBox
 End Class

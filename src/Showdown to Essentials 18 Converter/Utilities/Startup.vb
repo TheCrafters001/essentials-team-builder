@@ -58,6 +58,7 @@
         Form1.Timer1.Start()
     End Sub
     Public Shared Sub TimerChecker()
+#Region "Exisitng Battles"
         If Form1.existingBattle_chkBox.Checked = True Then
             Form1.battleTeamID_lbl.Enabled = True
             Form1.battleTeamID_txtBox.Enabled = True
@@ -65,11 +66,31 @@
             Form1.battleTeamID_lbl.Enabled = False
             Form1.battleTeamID_txtBox.Enabled = False
         End If
+#End Region
+#Region "Uses Items"
         If Form1.trainerUsesItems_chkBox.Checked = True Then
             Form1.trainerItems_grp.Enabled = True
         ElseIf Form1.trainerUsesItems_chkBox.Checked = False Then
             Form1.trainerItems_grp.Enabled = False
         End If
+#End Region
+#Region "Allow Custom Ball IDs"
+        If Form1.customBallIDs_chkBox.Checked = False Then
+            Form1.pokemonOnePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonTwoPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonThreePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonFourPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonFivePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonSixPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+        ElseIf Form1.customBallIDs_chkBox.Checked = True Then
+            Form1.pokemonOnePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonTwoPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonThreePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonFourPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonFivePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonSixPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+        End If
+#End Region
 #Region "Page Enabler"
         If Form1.numPoké_cmb.Text = "1" Then
             Form1.pokemonOne_grp.Enabled = True
