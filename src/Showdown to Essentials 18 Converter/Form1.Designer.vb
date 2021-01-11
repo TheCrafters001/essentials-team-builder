@@ -26,6 +26,9 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.pages_tabGrp = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
+        Me.miscInfo_grpBox = New System.Windows.Forms.GroupBox()
+        Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
+        Me.existingBattle_chkBox = New System.Windows.Forms.CheckBox()
         Me.loseText_lbl = New System.Windows.Forms.Label()
         Me.loseText_txt = New System.Windows.Forms.TextBox()
         Me.pe18_pic = New System.Windows.Forms.PictureBox()
@@ -47,7 +50,6 @@ Partial Class Form1
         Me.trainerType_txtBox = New System.Windows.Forms.TextBox()
         Me.battleTeamID_lbl = New System.Windows.Forms.Label()
         Me.battleTeamID_txtBox = New System.Windows.Forms.TextBox()
-        Me.existingBattle_chkBox = New System.Windows.Forms.CheckBox()
         Me.trainerName_lbl = New System.Windows.Forms.Label()
         Me.trainerName_txtBox = New System.Windows.Forms.TextBox()
         Me.trainerInfoTitle_lbl = New System.Windows.Forms.Label()
@@ -426,10 +428,9 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
-        Me.miscInfo_grpBox = New System.Windows.Forms.GroupBox()
-        Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
+        Me.miscInfo_grpBox.SuspendLayout()
         CType(Me.pe18_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.trainerItems_grp.SuspendLayout()
         Me.pg_POne.SuspendLayout()
@@ -479,7 +480,6 @@ Partial Class Form1
         Me.pg_About.SuspendLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.miscInfo_grpBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'pages_tabGrp
@@ -528,6 +528,37 @@ Partial Class Form1
         Me.pg_Trainer.Text = "Trainer Info"
         Me.pg_Trainer.UseVisualStyleBackColor = True
         '
+        'miscInfo_grpBox
+        '
+        Me.miscInfo_grpBox.Controls.Add(Me.customBallIDs_chkBox)
+        Me.miscInfo_grpBox.Controls.Add(Me.existingBattle_chkBox)
+        Me.miscInfo_grpBox.Location = New System.Drawing.Point(197, 29)
+        Me.miscInfo_grpBox.Name = "miscInfo_grpBox"
+        Me.miscInfo_grpBox.Size = New System.Drawing.Size(352, 252)
+        Me.miscInfo_grpBox.TabIndex = 16
+        Me.miscInfo_grpBox.TabStop = False
+        Me.miscInfo_grpBox.Text = "Misc Info"
+        '
+        'customBallIDs_chkBox
+        '
+        Me.customBallIDs_chkBox.AutoSize = True
+        Me.customBallIDs_chkBox.Location = New System.Drawing.Point(6, 42)
+        Me.customBallIDs_chkBox.Name = "customBallIDs_chkBox"
+        Me.customBallIDs_chkBox.Size = New System.Drawing.Size(184, 17)
+        Me.customBallIDs_chkBox.TabIndex = 4
+        Me.customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
+        Me.customBallIDs_chkBox.UseVisualStyleBackColor = True
+        '
+        'existingBattle_chkBox
+        '
+        Me.existingBattle_chkBox.AutoSize = True
+        Me.existingBattle_chkBox.Location = New System.Drawing.Point(6, 19)
+        Me.existingBattle_chkBox.Name = "existingBattle_chkBox"
+        Me.existingBattle_chkBox.Size = New System.Drawing.Size(247, 17)
+        Me.existingBattle_chkBox.TabIndex = 3
+        Me.existingBattle_chkBox.Text = "This team is for a NPC that already has a team."
+        Me.existingBattle_chkBox.UseVisualStyleBackColor = True
+        '
         'loseText_lbl
         '
         Me.loseText_lbl.AutoSize = True
@@ -540,7 +571,7 @@ Partial Class Form1
         'loseText_txt
         '
         Me.loseText_txt.Location = New System.Drawing.Point(6, 134)
-        Me.loseText_txt.MaxLength = 25
+        Me.loseText_txt.MaxLength = 255
         Me.loseText_txt.Name = "loseText_txt"
         Me.loseText_txt.Size = New System.Drawing.Size(185, 20)
         Me.loseText_txt.TabIndex = 14
@@ -716,16 +747,6 @@ Partial Class Form1
         Me.battleTeamID_txtBox.Name = "battleTeamID_txtBox"
         Me.battleTeamID_txtBox.Size = New System.Drawing.Size(127, 20)
         Me.battleTeamID_txtBox.TabIndex = 4
-        '
-        'existingBattle_chkBox
-        '
-        Me.existingBattle_chkBox.AutoSize = True
-        Me.existingBattle_chkBox.Location = New System.Drawing.Point(6, 19)
-        Me.existingBattle_chkBox.Name = "existingBattle_chkBox"
-        Me.existingBattle_chkBox.Size = New System.Drawing.Size(247, 17)
-        Me.existingBattle_chkBox.TabIndex = 3
-        Me.existingBattle_chkBox.Text = "This team is for a NPC that already has a team."
-        Me.existingBattle_chkBox.UseVisualStyleBackColor = True
         '
         'trainerName_lbl
         '
@@ -4479,27 +4500,6 @@ Partial Class Form1
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
         '
-        'miscInfo_grpBox
-        '
-        Me.miscInfo_grpBox.Controls.Add(Me.customBallIDs_chkBox)
-        Me.miscInfo_grpBox.Controls.Add(Me.existingBattle_chkBox)
-        Me.miscInfo_grpBox.Location = New System.Drawing.Point(197, 29)
-        Me.miscInfo_grpBox.Name = "miscInfo_grpBox"
-        Me.miscInfo_grpBox.Size = New System.Drawing.Size(352, 252)
-        Me.miscInfo_grpBox.TabIndex = 16
-        Me.miscInfo_grpBox.TabStop = False
-        Me.miscInfo_grpBox.Text = "Misc Info"
-        '
-        'customBallIDs_chkBox
-        '
-        Me.customBallIDs_chkBox.AutoSize = True
-        Me.customBallIDs_chkBox.Location = New System.Drawing.Point(6, 42)
-        Me.customBallIDs_chkBox.Name = "customBallIDs_chkBox"
-        Me.customBallIDs_chkBox.Size = New System.Drawing.Size(184, 17)
-        Me.customBallIDs_chkBox.TabIndex = 4
-        Me.customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
-        Me.customBallIDs_chkBox.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -4515,6 +4515,8 @@ Partial Class Form1
         Me.pages_tabGrp.ResumeLayout(False)
         Me.pg_Trainer.ResumeLayout(False)
         Me.pg_Trainer.PerformLayout()
+        Me.miscInfo_grpBox.ResumeLayout(False)
+        Me.miscInfo_grpBox.PerformLayout()
         CType(Me.pe18_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.trainerItems_grp.ResumeLayout(False)
         Me.trainerItems_grp.PerformLayout()
@@ -4603,8 +4605,6 @@ Partial Class Form1
         Me.pg_About.PerformLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.miscInfo_grpBox.ResumeLayout(False)
-        Me.miscInfo_grpBox.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
