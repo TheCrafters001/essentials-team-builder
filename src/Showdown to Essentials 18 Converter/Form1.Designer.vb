@@ -428,6 +428,11 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
+        Me.trainers_txt_lbl = New System.Windows.Forms.Label()
+        Me.trainers_txt_txt = New System.Windows.Forms.TextBox()
+        Me.trainers_txt_browse_btn = New System.Windows.Forms.Button()
+        Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
+        Me.save_to_trainers_btn = New System.Windows.Forms.Button()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -503,6 +508,9 @@ Partial Class Form1
         '
         'pg_Trainer
         '
+        Me.pg_Trainer.Controls.Add(Me.trainers_txt_browse_btn)
+        Me.pg_Trainer.Controls.Add(Me.trainers_txt_txt)
+        Me.pg_Trainer.Controls.Add(Me.trainers_txt_lbl)
         Me.pg_Trainer.Controls.Add(Me.miscInfo_grpBox)
         Me.pg_Trainer.Controls.Add(Me.loseText_lbl)
         Me.pg_Trainer.Controls.Add(Me.loseText_txt)
@@ -626,7 +634,7 @@ Partial Class Form1
         Me.numPoké_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6"})
         Me.numPoké_cmb.Location = New System.Drawing.Point(6, 173)
         Me.numPoké_cmb.Name = "numPoké_cmb"
-        Me.numPoké_cmb.Size = New System.Drawing.Size(127, 21)
+        Me.numPoké_cmb.Size = New System.Drawing.Size(185, 21)
         Me.numPoké_cmb.TabIndex = 10
         '
         'trainerUsesItems_chkBox
@@ -728,7 +736,7 @@ Partial Class Form1
         Me.trainerType_txtBox.Location = New System.Drawing.Point(6, 96)
         Me.trainerType_txtBox.MaxLength = 25
         Me.trainerType_txtBox.Name = "trainerType_txtBox"
-        Me.trainerType_txtBox.Size = New System.Drawing.Size(127, 20)
+        Me.trainerType_txtBox.Size = New System.Drawing.Size(185, 20)
         Me.trainerType_txtBox.TabIndex = 6
         '
         'battleTeamID_lbl
@@ -745,7 +753,7 @@ Partial Class Form1
         Me.battleTeamID_txtBox.Location = New System.Drawing.Point(6, 213)
         Me.battleTeamID_txtBox.MaxLength = 25
         Me.battleTeamID_txtBox.Name = "battleTeamID_txtBox"
-        Me.battleTeamID_txtBox.Size = New System.Drawing.Size(127, 20)
+        Me.battleTeamID_txtBox.Size = New System.Drawing.Size(185, 20)
         Me.battleTeamID_txtBox.TabIndex = 4
         '
         'trainerName_lbl
@@ -762,7 +770,7 @@ Partial Class Form1
         Me.trainerName_txtBox.Location = New System.Drawing.Point(6, 55)
         Me.trainerName_txtBox.MaxLength = 25
         Me.trainerName_txtBox.Name = "trainerName_txtBox"
-        Me.trainerName_txtBox.Size = New System.Drawing.Size(127, 20)
+        Me.trainerName_txtBox.Size = New System.Drawing.Size(185, 20)
         Me.trainerName_txtBox.TabIndex = 1
         '
         'trainerInfoTitle_lbl
@@ -4374,6 +4382,7 @@ Partial Class Form1
         '
         'pg_Output
         '
+        Me.pg_Output.Controls.Add(Me.save_to_trainers_btn)
         Me.pg_Output.Controls.Add(Me.Label1)
         Me.pg_Output.Controls.Add(Me.save_btn)
         Me.pg_Output.Controls.Add(Me.generate_btn)
@@ -4399,7 +4408,7 @@ Partial Class Form1
         'save_btn
         '
         Me.save_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.save_btn.Location = New System.Drawing.Point(612, 504)
+        Me.save_btn.Location = New System.Drawing.Point(486, 509)
         Me.save_btn.Name = "save_btn"
         Me.save_btn.Size = New System.Drawing.Size(75, 23)
         Me.save_btn.TabIndex = 2
@@ -4409,7 +4418,7 @@ Partial Class Form1
         'generate_btn
         '
         Me.generate_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.generate_btn.Location = New System.Drawing.Point(693, 504)
+        Me.generate_btn.Location = New System.Drawing.Point(693, 509)
         Me.generate_btn.Name = "generate_btn"
         Me.generate_btn.Size = New System.Drawing.Size(75, 23)
         Me.generate_btn.TabIndex = 1
@@ -4499,6 +4508,46 @@ Partial Class Form1
         '
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
+        '
+        'trainers_txt_lbl
+        '
+        Me.trainers_txt_lbl.AutoSize = True
+        Me.trainers_txt_lbl.Location = New System.Drawing.Point(566, 386)
+        Me.trainers_txt_lbl.Name = "trainers_txt_lbl"
+        Me.trainers_txt_lbl.Size = New System.Drawing.Size(74, 13)
+        Me.trainers_txt_lbl.TabIndex = 17
+        Me.trainers_txt_lbl.Text = "trainers.txt File"
+        '
+        'trainers_txt_txt
+        '
+        Me.trainers_txt_txt.Location = New System.Drawing.Point(569, 402)
+        Me.trainers_txt_txt.Name = "trainers_txt_txt"
+        Me.trainers_txt_txt.Size = New System.Drawing.Size(168, 20)
+        Me.trainers_txt_txt.TabIndex = 18
+        '
+        'trainers_txt_browse_btn
+        '
+        Me.trainers_txt_browse_btn.Location = New System.Drawing.Point(743, 400)
+        Me.trainers_txt_browse_btn.Name = "trainers_txt_browse_btn"
+        Me.trainers_txt_browse_btn.Size = New System.Drawing.Size(27, 23)
+        Me.trainers_txt_browse_btn.TabIndex = 19
+        Me.trainers_txt_browse_btn.Text = "..."
+        Me.trainers_txt_browse_btn.UseVisualStyleBackColor = True
+        '
+        'trainer_txt_file_dialog
+        '
+        Me.trainer_txt_file_dialog.FileName = "trainers.txt"
+        Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
+        '
+        'save_to_trainers_btn
+        '
+        Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.save_to_trainers_btn.Location = New System.Drawing.Point(567, 509)
+        Me.save_to_trainers_btn.Name = "save_to_trainers_btn"
+        Me.save_to_trainers_btn.Size = New System.Drawing.Size(120, 23)
+        Me.save_to_trainers_btn.TabIndex = 4
+        Me.save_to_trainers_btn.Text = "Save to trainers.txt"
+        Me.save_to_trainers_btn.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -5013,4 +5062,9 @@ Partial Class Form1
     Friend WithEvents pokemonFiveIVsDEF_lbl As Label
     Friend WithEvents miscInfo_grpBox As GroupBox
     Friend WithEvents customBallIDs_chkBox As CheckBox
+    Friend WithEvents trainers_txt_browse_btn As Button
+    Friend WithEvents trainers_txt_txt As TextBox
+    Friend WithEvents trainers_txt_lbl As Label
+    Friend WithEvents trainer_txt_file_dialog As OpenFileDialog
+    Friend WithEvents save_to_trainers_btn As Button
 End Class
