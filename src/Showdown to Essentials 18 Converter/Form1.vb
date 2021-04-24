@@ -30,4 +30,25 @@
         pokemonOneNickName_txtBox.Text = "Gonzalos"
         pokemonOneLvl_txtBox.Text = "20"
     End Sub
+
+    Private Sub trainer_txt_browse_btn_Click(sender As Object, e As EventArgs) Handles trainers_txt_browse_btn.Click
+        If trainer_txt_file_dialog.ShowDialog() = DialogResult.OK Then
+            trainers_txt_txt.Text = trainer_txt_file_dialog.FileName
+        End If
+    End Sub
+
+    Private Sub save_to_trainers_btn_Click(sender As Object, e As EventArgs) Handles save_to_trainers_btn.Click
+        Try
+            If trainers_txt_txt.Text = "" Then
+                MessageBox.Show("No trainers.txt file has been selected. Please select one on the Trainer Info page.")
+            Else
+                My.Computer.FileSystem.WriteAllText(trainer_txt_file_dialog.FileName, vbCrLf & outputBox_rchBox.Text, True)
+                My.Settings.TrainersFile = trainer_txt_file_dialog.FileName
+                My.Settings.Save()
+                MessageBox.Show("Trainer has been added to Trainers file! I also saved the location of it, so you don't have to select it everytime!")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Something went wrong. The error details will now be displayed." & vbCrLf & vbCrLf & ex.ToString)
+        End Try
+    End Sub
 End Class
