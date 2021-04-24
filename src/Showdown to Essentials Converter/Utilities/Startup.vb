@@ -55,6 +55,10 @@
         Form1.pokemonSixShinyFalse_rad.Checked = True
         Form1.pokemonSixShadowFalse_rad.Checked = True
         Form1.pokemonSixPokeballID_cmb.SelectedIndex = 0
+        '
+        ' Load TrainersFile
+        '
+        Form1.trainers_txt_txt.Text = My.Settings.TrainersFile
         Form1.Timer1.Start()
     End Sub
     Public Shared Sub TimerChecker()

@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
@@ -275,8 +276,13 @@ Partial Class Form1
         Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
         Me.aboutTitle_lbl = New System.Windows.Forms.Label()
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
+        Me.trainers_txt_browse_btn = New System.Windows.Forms.Button()
+        Me.trainers_txt_txt = New System.Windows.Forms.TextBox()
+        Me.trainers_txt_lbl = New System.Windows.Forms.Label()
+        Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
+        Me.save_to_trainers_btn = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -336,6 +342,9 @@ Partial Class Form1
         '
         'pg_Trainer
         '
+        Me.pg_Trainer.Controls.Add(Me.trainers_txt_browse_btn)
+        Me.pg_Trainer.Controls.Add(Me.trainers_txt_txt)
+        Me.pg_Trainer.Controls.Add(Me.trainers_txt_lbl)
         Me.pg_Trainer.Controls.Add(Me.pe17_pic)
         Me.pg_Trainer.Controls.Add(Me.example_btn)
         Me.pg_Trainer.Controls.Add(Me.properSpellingNote_lbl)
@@ -2689,6 +2698,7 @@ Partial Class Form1
         '
         'pg_Output
         '
+        Me.pg_Output.Controls.Add(Me.save_to_trainers_btn)
         Me.pg_Output.Controls.Add(Me.Label1)
         Me.pg_Output.Controls.Add(Me.save_btn)
         Me.pg_Output.Controls.Add(Me.generate_btn)
@@ -2703,16 +2713,17 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 7.5!)
         Me.Label1.Location = New System.Drawing.Point(3, 490)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(519, 13)
+        Me.Label1.Size = New System.Drawing.Size(433, 12)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Warning: Be careful when replacing trainers.txt! Replacing it will remove all oth" &
     "er trainers in the list!"
         '
         'save_btn
         '
-        Me.save_btn.Location = New System.Drawing.Point(593, 485)
+        Me.save_btn.Location = New System.Drawing.Point(467, 485)
         Me.save_btn.Name = "save_btn"
         Me.save_btn.Size = New System.Drawing.Size(75, 23)
         Me.save_btn.TabIndex = 2
@@ -2808,6 +2819,46 @@ Partial Class Form1
         '
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
+        '
+        'trainers_txt_browse_btn
+        '
+        Me.trainers_txt_browse_btn.Location = New System.Drawing.Point(719, 370)
+        Me.trainers_txt_browse_btn.Name = "trainers_txt_browse_btn"
+        Me.trainers_txt_browse_btn.Size = New System.Drawing.Size(27, 23)
+        Me.trainers_txt_browse_btn.TabIndex = 22
+        Me.trainers_txt_browse_btn.Text = "..."
+        Me.trainers_txt_browse_btn.UseVisualStyleBackColor = True
+        '
+        'trainers_txt_txt
+        '
+        Me.trainers_txt_txt.Location = New System.Drawing.Point(533, 372)
+        Me.trainers_txt_txt.Name = "trainers_txt_txt"
+        Me.trainers_txt_txt.Size = New System.Drawing.Size(180, 22)
+        Me.trainers_txt_txt.TabIndex = 21
+        '
+        'trainers_txt_lbl
+        '
+        Me.trainers_txt_lbl.AutoSize = True
+        Me.trainers_txt_lbl.Location = New System.Drawing.Point(530, 356)
+        Me.trainers_txt_lbl.Name = "trainers_txt_lbl"
+        Me.trainers_txt_lbl.Size = New System.Drawing.Size(83, 13)
+        Me.trainers_txt_lbl.TabIndex = 20
+        Me.trainers_txt_lbl.Text = "trainers.txt File"
+        '
+        'trainer_txt_file_dialog
+        '
+        Me.trainer_txt_file_dialog.FileName = "trainers.txt"
+        Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
+        '
+        'save_to_trainers_btn
+        '
+        Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.save_to_trainers_btn.Location = New System.Drawing.Point(548, 485)
+        Me.save_to_trainers_btn.Name = "save_to_trainers_btn"
+        Me.save_to_trainers_btn.Size = New System.Drawing.Size(120, 23)
+        Me.save_to_trainers_btn.TabIndex = 5
+        Me.save_to_trainers_btn.Text = "Save to trainers.txt"
+        Me.save_to_trainers_btn.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -3145,4 +3196,9 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents example_btn As Button
     Friend WithEvents pe17_pic As PictureBox
+    Friend WithEvents trainers_txt_browse_btn As Button
+    Friend WithEvents trainers_txt_txt As TextBox
+    Friend WithEvents trainers_txt_lbl As Label
+    Friend WithEvents trainer_txt_file_dialog As OpenFileDialog
+    Friend WithEvents save_to_trainers_btn As Button
 End Class
