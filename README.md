@@ -8,3 +8,5 @@ Other note: This is a fan-made tool. Pokémon is not owned by TheCrafters001; Po
 
 This is a non-profit fan-made tool. No copyright infringements intended. Please support the official games!
 </p>
+<h3>Building</h3>
+<p>You will need Visual Studio 2017 or Higher to build this software.</p>
