@@ -22,9 +22,13 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.pages_tabGrp = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
+        Me.trainers_txt_browse_btn = New System.Windows.Forms.Button()
+        Me.trainers_txt_txt = New System.Windows.Forms.TextBox()
+        Me.trainers_txt_lbl = New System.Windows.Forms.Label()
         Me.miscInfo_grpBox = New System.Windows.Forms.GroupBox()
         Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
         Me.existingBattle_chkBox = New System.Windows.Forms.CheckBox()
@@ -415,6 +419,7 @@ Partial Class Form1
         Me.pg_PBallIDRef = New System.Windows.Forms.TabPage()
         Me.PBallIDRef_RchTxt = New System.Windows.Forms.RichTextBox()
         Me.pg_Output = New System.Windows.Forms.TabPage()
+        Me.save_to_trainers_btn = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.save_btn = New System.Windows.Forms.Button()
         Me.generate_btn = New System.Windows.Forms.Button()
@@ -425,13 +430,9 @@ Partial Class Form1
         Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
         Me.aboutTitle_lbl = New System.Windows.Forms.Label()
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
-        Me.trainers_txt_lbl = New System.Windows.Forms.Label()
-        Me.trainers_txt_txt = New System.Windows.Forms.TextBox()
-        Me.trainers_txt_browse_btn = New System.Windows.Forms.Button()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
-        Me.save_to_trainers_btn = New System.Windows.Forms.Button()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -535,6 +536,31 @@ Partial Class Form1
         Me.pg_Trainer.Text = "Trainer Info"
         Me.pg_Trainer.UseVisualStyleBackColor = True
         '
+        'trainers_txt_browse_btn
+        '
+        Me.trainers_txt_browse_btn.Location = New System.Drawing.Point(743, 400)
+        Me.trainers_txt_browse_btn.Name = "trainers_txt_browse_btn"
+        Me.trainers_txt_browse_btn.Size = New System.Drawing.Size(27, 23)
+        Me.trainers_txt_browse_btn.TabIndex = 19
+        Me.trainers_txt_browse_btn.Text = "..."
+        Me.trainers_txt_browse_btn.UseVisualStyleBackColor = True
+        '
+        'trainers_txt_txt
+        '
+        Me.trainers_txt_txt.Location = New System.Drawing.Point(569, 402)
+        Me.trainers_txt_txt.Name = "trainers_txt_txt"
+        Me.trainers_txt_txt.Size = New System.Drawing.Size(168, 20)
+        Me.trainers_txt_txt.TabIndex = 18
+        '
+        'trainers_txt_lbl
+        '
+        Me.trainers_txt_lbl.AutoSize = True
+        Me.trainers_txt_lbl.Location = New System.Drawing.Point(566, 386)
+        Me.trainers_txt_lbl.Name = "trainers_txt_lbl"
+        Me.trainers_txt_lbl.Size = New System.Drawing.Size(74, 13)
+        Me.trainers_txt_lbl.TabIndex = 17
+        Me.trainers_txt_lbl.Text = "trainers.txt File"
+        '
         'miscInfo_grpBox
         '
         Me.miscInfo_grpBox.Controls.Add(Me.customBallIDs_chkBox)
@@ -587,7 +613,7 @@ Partial Class Form1
         '
         Me.pe18_pic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pe18_pic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pe18_pic.Image = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Essentials18Only
+        Me.pe18_pic.Image = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Essentials18_19Only
         Me.pe18_pic.Location = New System.Drawing.Point(569, 429)
         Me.pe18_pic.Name = "pe18_pic"
         Me.pe18_pic.Size = New System.Drawing.Size(207, 106)
@@ -4393,6 +4419,16 @@ Partial Class Form1
         Me.pg_Output.Text = "Output"
         Me.pg_Output.UseVisualStyleBackColor = True
         '
+        'save_to_trainers_btn
+        '
+        Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.save_to_trainers_btn.Location = New System.Drawing.Point(567, 509)
+        Me.save_to_trainers_btn.Name = "save_to_trainers_btn"
+        Me.save_to_trainers_btn.Size = New System.Drawing.Size(120, 23)
+        Me.save_to_trainers_btn.TabIndex = 4
+        Me.save_to_trainers_btn.Text = "Save to trainers.txt"
+        Me.save_to_trainers_btn.UseVisualStyleBackColor = True
+        '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
@@ -4492,7 +4528,7 @@ Partial Class Form1
         'Logo_picBox
         '
         Me.Logo_picBox.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Logo_picBox.Image = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Showdown_to_Essentials_Logo
+        Me.Logo_picBox.Image = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Showdown_to_Essentials_Logo_19
         Me.Logo_picBox.Location = New System.Drawing.Point(0, 0)
         Me.Logo_picBox.Name = "Logo_picBox"
         Me.Logo_picBox.Size = New System.Drawing.Size(776, 101)
@@ -4508,45 +4544,10 @@ Partial Class Form1
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
         '
-        'trainers_txt_lbl
-        '
-        Me.trainers_txt_lbl.AutoSize = True
-        Me.trainers_txt_lbl.Location = New System.Drawing.Point(566, 386)
-        Me.trainers_txt_lbl.Name = "trainers_txt_lbl"
-        Me.trainers_txt_lbl.Size = New System.Drawing.Size(74, 13)
-        Me.trainers_txt_lbl.TabIndex = 17
-        Me.trainers_txt_lbl.Text = "trainers.txt File"
-        '
-        'trainers_txt_txt
-        '
-        Me.trainers_txt_txt.Location = New System.Drawing.Point(569, 402)
-        Me.trainers_txt_txt.Name = "trainers_txt_txt"
-        Me.trainers_txt_txt.Size = New System.Drawing.Size(168, 20)
-        Me.trainers_txt_txt.TabIndex = 18
-        '
-        'trainers_txt_browse_btn
-        '
-        Me.trainers_txt_browse_btn.Location = New System.Drawing.Point(743, 400)
-        Me.trainers_txt_browse_btn.Name = "trainers_txt_browse_btn"
-        Me.trainers_txt_browse_btn.Size = New System.Drawing.Size(27, 23)
-        Me.trainers_txt_browse_btn.TabIndex = 19
-        Me.trainers_txt_browse_btn.Text = "..."
-        Me.trainers_txt_browse_btn.UseVisualStyleBackColor = True
-        '
         'trainer_txt_file_dialog
         '
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
-        '
-        'save_to_trainers_btn
-        '
-        Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.save_to_trainers_btn.Location = New System.Drawing.Point(567, 509)
-        Me.save_to_trainers_btn.Name = "save_to_trainers_btn"
-        Me.save_to_trainers_btn.Size = New System.Drawing.Size(120, 23)
-        Me.save_to_trainers_btn.TabIndex = 4
-        Me.save_to_trainers_btn.Text = "Save to trainers.txt"
-        Me.save_to_trainers_btn.UseVisualStyleBackColor = True
         '
         'Form1
         '

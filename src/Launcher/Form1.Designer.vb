@@ -44,7 +44,7 @@ Partial Class Form1
         'pe18_pic
         '
         Me.pe18_pic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pe18_pic.Image = Global.Launcher.My.Resources.Resources.Essentials18Only
+        Me.pe18_pic.Image = Global.Launcher.My.Resources.Resources.Essentials18_19Only
         Me.pe18_pic.Location = New System.Drawing.Point(243, 12)
         Me.pe18_pic.Name = "pe18_pic"
         Me.pe18_pic.Size = New System.Drawing.Size(224, 110)

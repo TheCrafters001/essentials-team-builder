@@ -24,11 +24,13 @@
         numPoké_cmb.SelectedIndex = 0
         trainerUsesItems_chkBox.Checked = True
         itemOne_txtBox.Text = "potion"
-        pokemonOneName_txtBox.Text = "Weezing"
-        pokemonOneMove1_txtBox.Text = "FireBlast"
+        pokemonOneName_txtBox.Text = "Koffing"
+        pokemonOneMove1_txtBox.Text = "PoisonGas"
+        pokemonOneMove2_txtBox.Text = "Tackle"
+        pokemonOneMove3_txtBox.Text = "smoG"
         pokemonOneGender_cmb.SelectedIndex = 0
         pokemonOneNickName_txtBox.Text = "Gonzalos"
-        pokemonOneLvl_txtBox.Text = "20"
+        pokemonOneLvl_txtBox.Text = "5"
     End Sub
 
     Private Sub trainer_txt_browse_btn_Click(sender As Object, e As EventArgs) Handles trainers_txt_browse_btn.Click

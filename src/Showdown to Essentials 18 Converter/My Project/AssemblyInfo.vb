@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Showdown to Essentials 18 Converter")>
+<Assembly: AssemblyTitle("Showdown to Essentials 18/19 Converter")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Showdown to Essentials 18 Converter")>
+<Assembly: AssemblyProduct("Showdown to Essentials 18/19 Converter")>
 <Assembly: AssemblyCopyright("Copyright © TheCrafters001 2021")>
 <Assembly: AssemblyTrademark("")>
 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.3.0.0")>
-<Assembly: AssemblyFileVersion("1.3.0.0")>
+<Assembly: AssemblyVersion("1.3.1.0")>
+<Assembly: AssemblyFileVersion("1.3.1.0")>

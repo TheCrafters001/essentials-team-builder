@@ -20,7 +20,7 @@
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles pe18_pic.Click
         Try
             Dim pHelp As New ProcessStartInfo
-            pHelp.FileName = ".\Showdown to Essentials 18 Converter.exe"
+            pHelp.FileName = ".\Showdown to Essentials 18 & 19 Converter.exe"
             pHelp.Arguments = ""
             pHelp.UseShellExecute = True
             pHelp.WindowStyle = ProcessWindowStyle.Normal
