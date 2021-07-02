@@ -53,4 +53,8 @@
             MessageBox.Show("Something went wrong. The error details will now be displayed." & vbCrLf & vbCrLf & ex.ToString)
         End Try
     End Sub
+
+    Private Sub clearInputs_btn_Click(sender As Object, e As EventArgs) Handles clearInputs_btn.Click
+        clearFields.Clear()
+    End Sub
 End Class

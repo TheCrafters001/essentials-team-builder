@@ -108,6 +108,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Utilities\clearFields.vb" />
     <Compile Include="Utilities\Generator.vb" />
     <Compile Include="Utilities\Startup.vb" />
   </ItemGroup>

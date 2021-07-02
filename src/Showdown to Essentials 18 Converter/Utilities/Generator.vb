@@ -132,7 +132,7 @@
 #End Region
 #Region "Pokemon 2"
             If numPoke >= 2 Then
-                pokemonName = "Pokemon = " & Form1.pokemonTwoName_txtBox.Text.ToUpper & "," & Form1.pokemonTwoLevel_txtBox.Text & vbCrLf
+                pokemonName = "Pokemon = " & Form1.pokemonTwoName_txtBox.Text.ToUpper & "," & Form1.pokemonTwoLvl_txtBox.Text & vbCrLf
                 If Form1.pokemonTwoForm_txtBox.Text = "" Then
                     pokemonForm = ""
                 ElseIf Not Form1.pokemonTwoForm_txtBox.Text = "" Then
@@ -143,10 +143,10 @@
                 ElseIf Not Form1.pokemonTwoNickName_txtBox.Text = "" Then
                     pokemonNickname = "    Name = " & Form1.pokemonTwoNickName_txtBox.Text & vbCrLf
                 End If
-                If Form1.pokemonTwoHeldItem_txtBox.Text.ToUpper = "" Then
+                If Form1.pokemonTwoItem_txtBox.Text.ToUpper = "" Then
                     heldItem = ""
-                ElseIf Not Form1.pokemonTwoHeldItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonTwoHeldItem_txtBox.Text.ToUpper & vbCrLf
+                ElseIf Not Form1.pokemonTwoItem_txtBox.Text.ToUpper = "" Then
+                    heldItem = "    Item = " & Form1.pokemonTwoItem_txtBox.Text.ToUpper & vbCrLf
                 End If
                 If Form1.pokemonTwoGender_cmb.SelectedItem = "(random)" Then
                     gender = ""
@@ -166,8 +166,8 @@
 
                 move1 = Form1.pokemonTwoMove1_txtBox.Text.ToUpper
                 move2 = Form1.pokemonTwoMove2_txtBox.Text.ToUpper
-                move3 = Form1.pokemonTwoMove3_TextBox.Text.ToUpper
-                move4 = Form1.pokemonTwoMove4_TextBox.Text.ToUpper
+                move3 = Form1.pokemonTwoMove3_txtBox.Text.ToUpper
+                move4 = Form1.pokemonTwoMove4_txtBox.Text.ToUpper
                 AllMoves = "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf
                 pokemonAbility = "    Ability = " & Form1.pokemonTwoAbility_cmb.SelectedItem.ToString & vbCrLf
                 If Form1.pokemonTwoNature_cmb.SelectedItem = "(random)" Then
@@ -189,7 +189,7 @@
 #End Region
 #Region "Pokemon 3"
             If numPoke >= 3 Then
-                pokemonName = "Pokemon = " & Form1.pokemonThreeName_txtBox.Text.ToUpper & "," & Form1.pokemonThreeLvl_textBox.Text & vbCrLf
+                pokemonName = "Pokemon = " & Form1.pokemonThreeName_txtBox.Text.ToUpper & "," & Form1.pokemonThreeLvl_txtBox.Text & vbCrLf
                 If Form1.pokemonThreeForm_txtBox.Text = "" Then
                     pokemonForm = ""
                 ElseIf Not Form1.pokemonThreeForm_txtBox.Text = "" Then
@@ -200,10 +200,10 @@
                 ElseIf Not Form1.pokemonThreeNickname_txtBox.Text = "" Then
                     pokemonNickname = "    Name = " & Form1.pokemonThreeNickname_txtBox.Text & vbCrLf
                 End If
-                If Form1.pokemonThreeHeldItem_txtBox.Text.ToUpper = "" Then
+                If Form1.pokemonThreeItem_txtBox.Text.ToUpper = "" Then
                     heldItem = ""
-                ElseIf Not Form1.pokemonThreeHeldItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonThreeHeldItem_txtBox.Text.ToUpper & vbCrLf
+                ElseIf Not Form1.pokemonThreeItem_txtBox.Text.ToUpper = "" Then
+                    heldItem = "    Item = " & Form1.pokemonThreeItem_txtBox.Text.ToUpper & vbCrLf
                 End If
                 If Form1.pokemonThreeGender_cmb.SelectedItem = "(random)" Then
                     gender = ""
@@ -224,7 +224,7 @@
                 move1 = Form1.pokemonThreeMove1_txtBox.Text.ToUpper
                 move2 = Form1.pokemonThreeMove2_txtBox.Text.ToUpper
                 move3 = Form1.pokemonThreeMove3_txtBox.Text.ToUpper
-                move4 = Form1.pokemonThreeMove4_textBox.Text.ToUpper
+                move4 = Form1.pokemonThreeMove4_txtBox.Text.ToUpper
                 AllMoves = "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf
                 pokemonAbility = "    Ability = " & Form1.pokemonThreeAbility_cmb.SelectedItem.ToString & vbCrLf
                 If Form1.pokemonThreeNature_cmb.SelectedItem = "(random)" Then
@@ -257,10 +257,10 @@
                 ElseIf Not Form1.pokemonFourNickname_txtBox.Text = "" Then
                     pokemonNickname = "    Name = " & Form1.pokemonFourNickname_txtBox.Text & vbCrLf
                 End If
-                If Form1.pokemonFourHeldItem_txtBox.Text.ToUpper = "" Then
+                If Form1.pokemonFourItem_txtBox.Text.ToUpper = "" Then
                     heldItem = ""
-                ElseIf Not Form1.pokemonFourHeldItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonFourHeldItem_txtBox.Text.ToUpper & vbCrLf
+                ElseIf Not Form1.pokemonFourItem_txtBox.Text.ToUpper = "" Then
+                    heldItem = "    Item = " & Form1.pokemonFourItem_txtBox.Text.ToUpper & vbCrLf
                 End If
                 If Form1.pokemonFourGender_cmb.SelectedItem = "(random)" Then
                     gender = ""
@@ -269,7 +269,7 @@
                 End If
                 If Form1.pokemonFourShiny_rad.Checked = True And Form1.pokemonFourShinyFalse_rad.Checked = False Then
                     shinyString = "    Shiny = yes" & vbCrLf
-                ElseIf Form1.pokemonFourShiny_rad.Checked = False And Form1.pokemonFourShinyFalse_Rad.Checked = True Then
+                ElseIf Form1.pokemonFourShiny_rad.Checked = False And Form1.pokemonFourShinyFalse_rad.Checked = True Then
                     shinyString = "    Shiny = no" & vbCrLf
                 End If
                 If Form1.pokemonFourShadow_rad.Checked = True And Form1.pokemonFourShadowFalse_rad.Checked = False Then
@@ -314,10 +314,10 @@
                 ElseIf Not Form1.pokemonFiveNickname_txtBox.Text = "" Then
                     pokemonNickname = "    Name = " & Form1.pokemonFiveNickname_txtBox.Text & vbCrLf
                 End If
-                If Form1.pokemonFiveHeldItem_txtBox.Text.ToUpper = "" Then
+                If Form1.pokemonFiveItem_txtBox.Text.ToUpper = "" Then
                     heldItem = ""
-                ElseIf Not Form1.pokemonFiveHeldItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonFiveHeldItem_txtBox.Text.ToUpper & vbCrLf
+                ElseIf Not Form1.pokemonFiveItem_txtBox.Text.ToUpper = "" Then
+                    heldItem = "    Item = " & Form1.pokemonFiveItem_txtBox.Text.ToUpper & vbCrLf
                 End If
                 If Form1.pokemonFiveGender_cmb.SelectedItem = "(random)" Then
                     gender = ""
@@ -360,7 +360,7 @@
 #End Region
 #Region "Pokemon 6"
             If numPoke >= 6 Then
-                pokemonName = "Pokemon = " & Form1.pokemonSixName_txtBox.Text.ToUpper & "," & Form1.pokemonSixlvl_TextBox.Text & vbCrLf
+                pokemonName = "Pokemon = " & Form1.pokemonSixName_txtBox.Text.ToUpper & "," & Form1.pokemonSixLvl_txtBox.Text & vbCrLf
                 If Form1.pokemonSixForm_txtBox.Text = "" Then
                     pokemonForm = ""
                 ElseIf Not Form1.pokemonSixForm_txtBox.Text = "" Then
@@ -371,10 +371,10 @@
                 ElseIf Not Form1.pokemonSixNickname_txtBox.Text = "" Then
                     pokemonNickname = "    Name = " & Form1.pokemonSixNickname_txtBox.Text & vbCrLf
                 End If
-                If Form1.pokemonSixHeldItem_txtBox.Text.ToUpper = "" Then
+                If Form1.pokemonSixItem_txtBox.Text.ToUpper = "" Then
                     heldItem = ""
-                ElseIf Not Form1.pokemonSixHeldItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonSixHeldItem_txtBox.Text.ToUpper & vbCrLf
+                ElseIf Not Form1.pokemonSixItem_txtBox.Text.ToUpper = "" Then
+                    heldItem = "    Item = " & Form1.pokemonSixItem_txtBox.Text.ToUpper & vbCrLf
                 End If
                 If Form1.pokemonSixGender_cmb.SelectedItem = "(random)" Then
                     gender = ""
