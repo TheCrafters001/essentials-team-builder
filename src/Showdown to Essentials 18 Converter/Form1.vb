@@ -1,4 +1,7 @@
-﻿Public Class Form1
+﻿Imports System.ComponentModel
+Imports DiscordRPCHandler
+
+Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Startup.Init()
     End Sub
@@ -56,5 +59,13 @@
 
     Private Sub clearInputs_btn_Click(sender As Object, e As EventArgs) Handles clearInputs_btn.Click
         clearFields.Clear()
+    End Sub
+
+    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Disp.Dispose()
+    End Sub
+
+    Private Sub thirdPartyLicenses_lnk_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles thirdPartyLicenses_lnk.LinkClicked
+        ThirdPartyLicenses.Show()
     End Sub
 End Class

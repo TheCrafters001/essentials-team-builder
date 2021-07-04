@@ -426,6 +426,7 @@ Partial Class Form1
         Me.generate_btn = New System.Windows.Forms.Button()
         Me.outputBox_rchBox = New System.Windows.Forms.RichTextBox()
         Me.pg_About = New System.Windows.Forms.TabPage()
+        Me.thirdPartyLicenses_lnk = New System.Windows.Forms.LinkLabel()
         Me.aboutText_lbl = New System.Windows.Forms.Label()
         Me.gnuGPL3_picBox = New System.Windows.Forms.PictureBox()
         Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
@@ -4490,6 +4491,7 @@ Partial Class Form1
         '
         'pg_About
         '
+        Me.pg_About.Controls.Add(Me.thirdPartyLicenses_lnk)
         Me.pg_About.Controls.Add(Me.aboutText_lbl)
         Me.pg_About.Controls.Add(Me.gnuGPL3_picBox)
         Me.pg_About.Controls.Add(Me.aboutAuthor_lbl)
@@ -4501,6 +4503,16 @@ Partial Class Form1
         Me.pg_About.TabIndex = 7
         Me.pg_About.Text = "About"
         Me.pg_About.UseVisualStyleBackColor = True
+        '
+        'thirdPartyLicenses_lnk
+        '
+        Me.thirdPartyLicenses_lnk.AutoSize = True
+        Me.thirdPartyLicenses_lnk.Location = New System.Drawing.Point(8, 517)
+        Me.thirdPartyLicenses_lnk.Name = "thirdPartyLicenses_lnk"
+        Me.thirdPartyLicenses_lnk.Size = New System.Drawing.Size(98, 13)
+        Me.thirdPartyLicenses_lnk.TabIndex = 10
+        Me.thirdPartyLicenses_lnk.TabStop = True
+        Me.thirdPartyLicenses_lnk.Text = "3rd-Party Licenses"
         '
         'aboutText_lbl
         '
@@ -5084,4 +5096,5 @@ Partial Class Form1
     Friend WithEvents trainer_txt_file_dialog As OpenFileDialog
     Friend WithEvents save_to_trainers_btn As Button
     Friend WithEvents clearInputs_btn As Button
+    Friend WithEvents thirdPartyLicenses_lnk As LinkLabel
 End Class

@@ -1,5 +1,11 @@
-﻿Public Class Startup
+﻿Imports DiscordRPCHandler
+
+Public Class Startup
     Public Shared Sub Init()
+
+        ' Discord Rich Presence
+        InitRPC.Setup()
+
         Form1.numPoké_cmb.SelectedIndex = 0
         '
         ' pokemonOne
