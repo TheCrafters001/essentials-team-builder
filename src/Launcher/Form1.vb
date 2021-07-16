@@ -39,7 +39,7 @@
                 Dim proc As Process = Process.Start(pHelp)
                 Application.Exit()
             Catch ex As Exception
-                MessageBox.Show(ex.ToString, "Error")
+                MessageBox.Show("Couldn't launch. Is it installed?", "Error")
             End Try
         ElseIf convertersList.SelectedItem = "Showdown to Essentials 17 Converter" Then
             Try
@@ -51,7 +51,7 @@
                 Dim proc As Process = Process.Start(pHelp)
                 Application.Exit()
             Catch ex As Exception
-                MessageBox.Show(ex.ToString, "Error")
+                MessageBox.Show("Couldn't launch. Is it installed?", "Error")
             End Try
         Else
             MessageBox.Show("You have selected an invalid version. Please select a valid version from the list.", "Error")
