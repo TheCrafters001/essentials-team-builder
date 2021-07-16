@@ -74,6 +74,23 @@
         ElseIf Form1.trainerUsesItems_chkBox.Checked = False Then
             Form1.trainerItems_grp.Enabled = False
         End If
+#Region "Allow Custom Ball IDs"
+        If Form1.customBallIDs_chkBox.Checked = False Then
+            Form1.pokemonOnePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonTwoPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonThreePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonFourPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonFivePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            Form1.pokemonSixPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+        ElseIf Form1.customBallIDs_chkBox.Checked = True Then
+            Form1.pokemonOnePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonTwoPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonThreePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonFourPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonFivePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            Form1.pokemonSixPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+        End If
+#End Region
 #Region "Page Enabler"
         If Form1.numPoké_cmb.Text = "1" Then
             Form1.pokemonOne_grp.Enabled = True

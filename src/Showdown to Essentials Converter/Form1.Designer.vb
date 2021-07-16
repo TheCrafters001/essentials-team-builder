@@ -26,6 +26,9 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
+        Me.trainers_txt_browse_btn = New System.Windows.Forms.Button()
+        Me.trainers_txt_txt = New System.Windows.Forms.TextBox()
+        Me.trainers_txt_lbl = New System.Windows.Forms.Label()
         Me.pe17_pic = New System.Windows.Forms.PictureBox()
         Me.example_btn = New System.Windows.Forms.Button()
         Me.properSpellingNote_lbl = New System.Windows.Forms.Label()
@@ -266,6 +269,7 @@ Partial Class Form1
         Me.pokemonSixName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonSixName_lbl = New System.Windows.Forms.Label()
         Me.pg_Output = New System.Windows.Forms.TabPage()
+        Me.save_to_trainers_btn = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.save_btn = New System.Windows.Forms.Button()
         Me.generate_btn = New System.Windows.Forms.Button()
@@ -278,11 +282,8 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
-        Me.trainers_txt_browse_btn = New System.Windows.Forms.Button()
-        Me.trainers_txt_txt = New System.Windows.Forms.TextBox()
-        Me.trainers_txt_lbl = New System.Windows.Forms.Label()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
-        Me.save_to_trainers_btn = New System.Windows.Forms.Button()
+        Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -342,6 +343,7 @@ Partial Class Form1
         '
         'pg_Trainer
         '
+        Me.pg_Trainer.Controls.Add(Me.customBallIDs_chkBox)
         Me.pg_Trainer.Controls.Add(Me.trainers_txt_browse_btn)
         Me.pg_Trainer.Controls.Add(Me.trainers_txt_txt)
         Me.pg_Trainer.Controls.Add(Me.trainers_txt_lbl)
@@ -367,6 +369,31 @@ Partial Class Form1
         Me.pg_Trainer.TabIndex = 0
         Me.pg_Trainer.Text = "Trainer Info"
         Me.pg_Trainer.UseVisualStyleBackColor = True
+        '
+        'trainers_txt_browse_btn
+        '
+        Me.trainers_txt_browse_btn.Location = New System.Drawing.Point(719, 370)
+        Me.trainers_txt_browse_btn.Name = "trainers_txt_browse_btn"
+        Me.trainers_txt_browse_btn.Size = New System.Drawing.Size(27, 23)
+        Me.trainers_txt_browse_btn.TabIndex = 22
+        Me.trainers_txt_browse_btn.Text = "..."
+        Me.trainers_txt_browse_btn.UseVisualStyleBackColor = True
+        '
+        'trainers_txt_txt
+        '
+        Me.trainers_txt_txt.Location = New System.Drawing.Point(533, 372)
+        Me.trainers_txt_txt.Name = "trainers_txt_txt"
+        Me.trainers_txt_txt.Size = New System.Drawing.Size(180, 22)
+        Me.trainers_txt_txt.TabIndex = 21
+        '
+        'trainers_txt_lbl
+        '
+        Me.trainers_txt_lbl.AutoSize = True
+        Me.trainers_txt_lbl.Location = New System.Drawing.Point(530, 356)
+        Me.trainers_txt_lbl.Name = "trainers_txt_lbl"
+        Me.trainers_txt_lbl.Size = New System.Drawing.Size(83, 13)
+        Me.trainers_txt_lbl.TabIndex = 20
+        Me.trainers_txt_lbl.Text = "trainers.txt File"
         '
         'pe17_pic
         '
@@ -620,7 +647,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(327, 190)
+        Me.Label2.Location = New System.Drawing.Point(327, 231)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(272, 13)
         Me.Label2.TabIndex = 24
@@ -631,7 +658,7 @@ Partial Class Form1
         Me.pokemonOnePokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonOnePokeballID_cmb.FormattingEnabled = True
         Me.pokemonOnePokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
-        Me.pokemonOnePokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonOnePokeballID_cmb.Location = New System.Drawing.Point(330, 207)
         Me.pokemonOnePokeballID_cmb.Name = "pokemonOnePokeballID_cmb"
         Me.pokemonOnePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonOnePokeballID_cmb.TabIndex = 23
@@ -639,7 +666,7 @@ Partial Class Form1
         'pokemonOnePokeballID_lbl
         '
         Me.pokemonOnePokeballID_lbl.AutoSize = True
-        Me.pokemonOnePokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonOnePokeballID_lbl.Location = New System.Drawing.Point(327, 191)
         Me.pokemonOnePokeballID_lbl.Name = "pokemonOnePokeballID_lbl"
         Me.pokemonOnePokeballID_lbl.Size = New System.Drawing.Size(51, 13)
         Me.pokemonOnePokeballID_lbl.TabIndex = 22
@@ -649,7 +676,7 @@ Partial Class Form1
         '
         Me.pokemonOneShadow_grp.Controls.Add(Me.pokemonOneShadow_rad)
         Me.pokemonOneShadow_grp.Controls.Add(Me.pokemonOneShadowFalse_rad)
-        Me.pokemonOneShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonOneShadow_grp.Location = New System.Drawing.Point(330, 144)
         Me.pokemonOneShadow_grp.Name = "pokemonOneShadow_grp"
         Me.pokemonOneShadow_grp.Size = New System.Drawing.Size(312, 44)
         Me.pokemonOneShadow_grp.TabIndex = 18
@@ -680,7 +707,7 @@ Partial Class Form1
         '
         'pokemonOneNickName_txtBox
         '
-        Me.pokemonOneNickName_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonOneNickName_txtBox.Location = New System.Drawing.Point(330, 116)
         Me.pokemonOneNickName_txtBox.Name = "pokemonOneNickName_txtBox"
         Me.pokemonOneNickName_txtBox.Size = New System.Drawing.Size(312, 22)
         Me.pokemonOneNickName_txtBox.TabIndex = 21
@@ -688,7 +715,7 @@ Partial Class Form1
         'pokemonOneNickName_lbl
         '
         Me.pokemonOneNickName_lbl.AutoSize = True
-        Me.pokemonOneNickName_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonOneNickName_lbl.Location = New System.Drawing.Point(327, 100)
         Me.pokemonOneNickName_lbl.Name = "pokemonOneNickName_lbl"
         Me.pokemonOneNickName_lbl.Size = New System.Drawing.Size(108, 13)
         Me.pokemonOneNickName_lbl.TabIndex = 20
@@ -696,7 +723,7 @@ Partial Class Form1
         '
         'pokemonOneHappyness_txtBox
         '
-        Me.pokemonOneHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonOneHappyness_txtBox.Location = New System.Drawing.Point(330, 75)
         Me.pokemonOneHappyness_txtBox.MaxLength = 3
         Me.pokemonOneHappyness_txtBox.Name = "pokemonOneHappyness_txtBox"
         Me.pokemonOneHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -706,7 +733,7 @@ Partial Class Form1
         'pokemonOneHappyness_lbl
         '
         Me.pokemonOneHappyness_lbl.AutoSize = True
-        Me.pokemonOneHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonOneHappyness_lbl.Location = New System.Drawing.Point(327, 59)
         Me.pokemonOneHappyness_lbl.Name = "pokemonOneHappyness_lbl"
         Me.pokemonOneHappyness_lbl.Size = New System.Drawing.Size(114, 13)
         Me.pokemonOneHappyness_lbl.TabIndex = 18
@@ -799,7 +826,7 @@ Partial Class Form1
         '
         'pokemonOneIVs_txtBox
         '
-        Me.pokemonOneIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonOneIVs_txtBox.Location = New System.Drawing.Point(330, 34)
         Me.pokemonOneIVs_txtBox.MaxLength = 2
         Me.pokemonOneIVs_txtBox.Name = "pokemonOneIVs_txtBox"
         Me.pokemonOneIVs_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -809,7 +836,7 @@ Partial Class Form1
         'pokemonOneIVs_lbl
         '
         Me.pokemonOneIVs_lbl.AutoSize = True
-        Me.pokemonOneIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonOneIVs_lbl.Location = New System.Drawing.Point(327, 18)
         Me.pokemonOneIVs_lbl.Name = "pokemonOneIVs_lbl"
         Me.pokemonOneIVs_lbl.Size = New System.Drawing.Size(67, 13)
         Me.pokemonOneIVs_lbl.TabIndex = 9
@@ -974,7 +1001,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(327, 190)
+        Me.Label3.Location = New System.Drawing.Point(327, 231)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(272, 13)
         Me.Label3.TabIndex = 49
@@ -985,7 +1012,7 @@ Partial Class Form1
         Me.pokemonTwoPokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonTwoPokeballID_cmb.FormattingEnabled = True
         Me.pokemonTwoPokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
-        Me.pokemonTwoPokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonTwoPokeballID_cmb.Location = New System.Drawing.Point(330, 207)
         Me.pokemonTwoPokeballID_cmb.Name = "pokemonTwoPokeballID_cmb"
         Me.pokemonTwoPokeballID_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonTwoPokeballID_cmb.TabIndex = 48
@@ -993,7 +1020,7 @@ Partial Class Form1
         'pokemonTwoPokeballID_lbl
         '
         Me.pokemonTwoPokeballID_lbl.AutoSize = True
-        Me.pokemonTwoPokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonTwoPokeballID_lbl.Location = New System.Drawing.Point(327, 191)
         Me.pokemonTwoPokeballID_lbl.Name = "pokemonTwoPokeballID_lbl"
         Me.pokemonTwoPokeballID_lbl.Size = New System.Drawing.Size(51, 13)
         Me.pokemonTwoPokeballID_lbl.TabIndex = 47
@@ -1003,7 +1030,7 @@ Partial Class Form1
         '
         Me.pokemonTwoShadow_grp.Controls.Add(Me.pokemonTwoShadow_rad)
         Me.pokemonTwoShadow_grp.Controls.Add(Me.pokemonTwoShadowFalse_rad)
-        Me.pokemonTwoShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonTwoShadow_grp.Location = New System.Drawing.Point(330, 144)
         Me.pokemonTwoShadow_grp.Name = "pokemonTwoShadow_grp"
         Me.pokemonTwoShadow_grp.Size = New System.Drawing.Size(312, 44)
         Me.pokemonTwoShadow_grp.TabIndex = 43
@@ -1034,7 +1061,7 @@ Partial Class Form1
         '
         'pokemonTwoNickName_txtBox
         '
-        Me.pokemonTwoNickName_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonTwoNickName_txtBox.Location = New System.Drawing.Point(330, 116)
         Me.pokemonTwoNickName_txtBox.Name = "pokemonTwoNickName_txtBox"
         Me.pokemonTwoNickName_txtBox.Size = New System.Drawing.Size(312, 22)
         Me.pokemonTwoNickName_txtBox.TabIndex = 46
@@ -1042,7 +1069,7 @@ Partial Class Form1
         'pokemonTwoNickName_lbl
         '
         Me.pokemonTwoNickName_lbl.AutoSize = True
-        Me.pokemonTwoNickName_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonTwoNickName_lbl.Location = New System.Drawing.Point(327, 100)
         Me.pokemonTwoNickName_lbl.Name = "pokemonTwoNickName_lbl"
         Me.pokemonTwoNickName_lbl.Size = New System.Drawing.Size(108, 13)
         Me.pokemonTwoNickName_lbl.TabIndex = 45
@@ -1050,7 +1077,7 @@ Partial Class Form1
         '
         'pokemonTwoHappyness_txtBox
         '
-        Me.pokemonTwoHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonTwoHappyness_txtBox.Location = New System.Drawing.Point(330, 75)
         Me.pokemonTwoHappyness_txtBox.MaxLength = 3
         Me.pokemonTwoHappyness_txtBox.Name = "pokemonTwoHappyness_txtBox"
         Me.pokemonTwoHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -1060,7 +1087,7 @@ Partial Class Form1
         'pokemonTwoHappyness_lbl
         '
         Me.pokemonTwoHappyness_lbl.AutoSize = True
-        Me.pokemonTwoHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonTwoHappyness_lbl.Location = New System.Drawing.Point(327, 59)
         Me.pokemonTwoHappyness_lbl.Name = "pokemonTwoHappyness_lbl"
         Me.pokemonTwoHappyness_lbl.Size = New System.Drawing.Size(114, 13)
         Me.pokemonTwoHappyness_lbl.TabIndex = 42
@@ -1153,7 +1180,7 @@ Partial Class Form1
         '
         'pokemonTwoIVs_txtBox
         '
-        Me.pokemonTwoIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonTwoIVs_txtBox.Location = New System.Drawing.Point(330, 34)
         Me.pokemonTwoIVs_txtBox.MaxLength = 2
         Me.pokemonTwoIVs_txtBox.Name = "pokemonTwoIVs_txtBox"
         Me.pokemonTwoIVs_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -1163,7 +1190,7 @@ Partial Class Form1
         'pokemonTwoIVs_lbl
         '
         Me.pokemonTwoIVs_lbl.AutoSize = True
-        Me.pokemonTwoIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonTwoIVs_lbl.Location = New System.Drawing.Point(327, 18)
         Me.pokemonTwoIVs_lbl.Name = "pokemonTwoIVs_lbl"
         Me.pokemonTwoIVs_lbl.Size = New System.Drawing.Size(67, 13)
         Me.pokemonTwoIVs_lbl.TabIndex = 34
@@ -1328,7 +1355,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(327, 190)
+        Me.Label5.Location = New System.Drawing.Point(327, 231)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(272, 13)
         Me.Label5.TabIndex = 74
@@ -1339,7 +1366,7 @@ Partial Class Form1
         Me.pokemonThreePokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonThreePokeballID_cmb.FormattingEnabled = True
         Me.pokemonThreePokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
-        Me.pokemonThreePokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonThreePokeballID_cmb.Location = New System.Drawing.Point(330, 207)
         Me.pokemonThreePokeballID_cmb.Name = "pokemonThreePokeballID_cmb"
         Me.pokemonThreePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonThreePokeballID_cmb.TabIndex = 73
@@ -1347,7 +1374,7 @@ Partial Class Form1
         'pokemonThreePokeballID_lbl
         '
         Me.pokemonThreePokeballID_lbl.AutoSize = True
-        Me.pokemonThreePokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonThreePokeballID_lbl.Location = New System.Drawing.Point(327, 191)
         Me.pokemonThreePokeballID_lbl.Name = "pokemonThreePokeballID_lbl"
         Me.pokemonThreePokeballID_lbl.Size = New System.Drawing.Size(51, 13)
         Me.pokemonThreePokeballID_lbl.TabIndex = 72
@@ -1357,7 +1384,7 @@ Partial Class Form1
         '
         Me.pokemonThreeShadow_grp.Controls.Add(Me.pokemonThreeShadow_rad)
         Me.pokemonThreeShadow_grp.Controls.Add(Me.pokemonThreeShadowFalse_rad)
-        Me.pokemonThreeShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonThreeShadow_grp.Location = New System.Drawing.Point(330, 144)
         Me.pokemonThreeShadow_grp.Name = "pokemonThreeShadow_grp"
         Me.pokemonThreeShadow_grp.Size = New System.Drawing.Size(312, 44)
         Me.pokemonThreeShadow_grp.TabIndex = 68
@@ -1388,7 +1415,7 @@ Partial Class Form1
         '
         'pokemonThreeNickname_txtBox
         '
-        Me.pokemonThreeNickname_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonThreeNickname_txtBox.Location = New System.Drawing.Point(330, 116)
         Me.pokemonThreeNickname_txtBox.Name = "pokemonThreeNickname_txtBox"
         Me.pokemonThreeNickname_txtBox.Size = New System.Drawing.Size(312, 22)
         Me.pokemonThreeNickname_txtBox.TabIndex = 71
@@ -1396,7 +1423,7 @@ Partial Class Form1
         'pokemonThreeNickname_lbl
         '
         Me.pokemonThreeNickname_lbl.AutoSize = True
-        Me.pokemonThreeNickname_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonThreeNickname_lbl.Location = New System.Drawing.Point(327, 100)
         Me.pokemonThreeNickname_lbl.Name = "pokemonThreeNickname_lbl"
         Me.pokemonThreeNickname_lbl.Size = New System.Drawing.Size(108, 13)
         Me.pokemonThreeNickname_lbl.TabIndex = 70
@@ -1404,7 +1431,7 @@ Partial Class Form1
         '
         'pokemonThreeHappyness_txtBox
         '
-        Me.pokemonThreeHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonThreeHappyness_txtBox.Location = New System.Drawing.Point(330, 75)
         Me.pokemonThreeHappyness_txtBox.MaxLength = 3
         Me.pokemonThreeHappyness_txtBox.Name = "pokemonThreeHappyness_txtBox"
         Me.pokemonThreeHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -1414,7 +1441,7 @@ Partial Class Form1
         'pokemonThreeHappyness_lbl
         '
         Me.pokemonThreeHappyness_lbl.AutoSize = True
-        Me.pokemonThreeHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonThreeHappyness_lbl.Location = New System.Drawing.Point(327, 59)
         Me.pokemonThreeHappyness_lbl.Name = "pokemonThreeHappyness_lbl"
         Me.pokemonThreeHappyness_lbl.Size = New System.Drawing.Size(114, 13)
         Me.pokemonThreeHappyness_lbl.TabIndex = 67
@@ -1507,7 +1534,7 @@ Partial Class Form1
         '
         'pokemonThreeIVs_txtBox
         '
-        Me.pokemonThreeIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonThreeIVs_txtBox.Location = New System.Drawing.Point(330, 34)
         Me.pokemonThreeIVs_txtBox.MaxLength = 2
         Me.pokemonThreeIVs_txtBox.Name = "pokemonThreeIVs_txtBox"
         Me.pokemonThreeIVs_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -1517,7 +1544,7 @@ Partial Class Form1
         'pokemonThreeIVs_lbl
         '
         Me.pokemonThreeIVs_lbl.AutoSize = True
-        Me.pokemonThreeIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonThreeIVs_lbl.Location = New System.Drawing.Point(327, 18)
         Me.pokemonThreeIVs_lbl.Name = "pokemonThreeIVs_lbl"
         Me.pokemonThreeIVs_lbl.Size = New System.Drawing.Size(67, 13)
         Me.pokemonThreeIVs_lbl.TabIndex = 59
@@ -1682,7 +1709,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(327, 190)
+        Me.Label6.Location = New System.Drawing.Point(327, 231)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(272, 13)
         Me.Label6.TabIndex = 99
@@ -1693,7 +1720,7 @@ Partial Class Form1
         Me.pokemonFourPokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonFourPokeballID_cmb.FormattingEnabled = True
         Me.pokemonFourPokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
-        Me.pokemonFourPokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonFourPokeballID_cmb.Location = New System.Drawing.Point(330, 207)
         Me.pokemonFourPokeballID_cmb.Name = "pokemonFourPokeballID_cmb"
         Me.pokemonFourPokeballID_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonFourPokeballID_cmb.TabIndex = 98
@@ -1701,7 +1728,7 @@ Partial Class Form1
         'pokemonFourPokeballID_lbl
         '
         Me.pokemonFourPokeballID_lbl.AutoSize = True
-        Me.pokemonFourPokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonFourPokeballID_lbl.Location = New System.Drawing.Point(327, 191)
         Me.pokemonFourPokeballID_lbl.Name = "pokemonFourPokeballID_lbl"
         Me.pokemonFourPokeballID_lbl.Size = New System.Drawing.Size(51, 13)
         Me.pokemonFourPokeballID_lbl.TabIndex = 97
@@ -1711,7 +1738,7 @@ Partial Class Form1
         '
         Me.pokemonFourShadow_grp.Controls.Add(Me.pokemonFourShadow_rad)
         Me.pokemonFourShadow_grp.Controls.Add(Me.pokemonFourShadowFalse_rad)
-        Me.pokemonFourShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonFourShadow_grp.Location = New System.Drawing.Point(330, 144)
         Me.pokemonFourShadow_grp.Name = "pokemonFourShadow_grp"
         Me.pokemonFourShadow_grp.Size = New System.Drawing.Size(312, 44)
         Me.pokemonFourShadow_grp.TabIndex = 93
@@ -1742,7 +1769,7 @@ Partial Class Form1
         '
         'pokemonFourNickname_txtBox
         '
-        Me.pokemonFourNickname_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonFourNickname_txtBox.Location = New System.Drawing.Point(330, 116)
         Me.pokemonFourNickname_txtBox.Name = "pokemonFourNickname_txtBox"
         Me.pokemonFourNickname_txtBox.Size = New System.Drawing.Size(312, 22)
         Me.pokemonFourNickname_txtBox.TabIndex = 96
@@ -1750,7 +1777,7 @@ Partial Class Form1
         'pokemonFourNickname_lbl
         '
         Me.pokemonFourNickname_lbl.AutoSize = True
-        Me.pokemonFourNickname_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonFourNickname_lbl.Location = New System.Drawing.Point(327, 100)
         Me.pokemonFourNickname_lbl.Name = "pokemonFourNickname_lbl"
         Me.pokemonFourNickname_lbl.Size = New System.Drawing.Size(108, 13)
         Me.pokemonFourNickname_lbl.TabIndex = 95
@@ -1758,7 +1785,7 @@ Partial Class Form1
         '
         'pokemonFourHappyness_txtBox
         '
-        Me.pokemonFourHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonFourHappyness_txtBox.Location = New System.Drawing.Point(330, 75)
         Me.pokemonFourHappyness_txtBox.MaxLength = 3
         Me.pokemonFourHappyness_txtBox.Name = "pokemonFourHappyness_txtBox"
         Me.pokemonFourHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -1768,7 +1795,7 @@ Partial Class Form1
         'pokemonFourHappyness_lbl
         '
         Me.pokemonFourHappyness_lbl.AutoSize = True
-        Me.pokemonFourHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonFourHappyness_lbl.Location = New System.Drawing.Point(327, 59)
         Me.pokemonFourHappyness_lbl.Name = "pokemonFourHappyness_lbl"
         Me.pokemonFourHappyness_lbl.Size = New System.Drawing.Size(114, 13)
         Me.pokemonFourHappyness_lbl.TabIndex = 92
@@ -1861,7 +1888,7 @@ Partial Class Form1
         '
         'pokemonFourIVs_txtBox
         '
-        Me.pokemonFourIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonFourIVs_txtBox.Location = New System.Drawing.Point(330, 34)
         Me.pokemonFourIVs_txtBox.MaxLength = 2
         Me.pokemonFourIVs_txtBox.Name = "pokemonFourIVs_txtBox"
         Me.pokemonFourIVs_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -1871,7 +1898,7 @@ Partial Class Form1
         'pokemonFourIVs_lbl
         '
         Me.pokemonFourIVs_lbl.AutoSize = True
-        Me.pokemonFourIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonFourIVs_lbl.Location = New System.Drawing.Point(327, 18)
         Me.pokemonFourIVs_lbl.Name = "pokemonFourIVs_lbl"
         Me.pokemonFourIVs_lbl.Size = New System.Drawing.Size(67, 13)
         Me.pokemonFourIVs_lbl.TabIndex = 84
@@ -2036,7 +2063,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(327, 190)
+        Me.Label7.Location = New System.Drawing.Point(327, 231)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(272, 13)
         Me.Label7.TabIndex = 124
@@ -2047,7 +2074,7 @@ Partial Class Form1
         Me.pokemonFivePokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonFivePokeballID_cmb.FormattingEnabled = True
         Me.pokemonFivePokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
-        Me.pokemonFivePokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonFivePokeballID_cmb.Location = New System.Drawing.Point(330, 207)
         Me.pokemonFivePokeballID_cmb.Name = "pokemonFivePokeballID_cmb"
         Me.pokemonFivePokeballID_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonFivePokeballID_cmb.TabIndex = 123
@@ -2055,7 +2082,7 @@ Partial Class Form1
         'pokemonFivePokeballID_lbl
         '
         Me.pokemonFivePokeballID_lbl.AutoSize = True
-        Me.pokemonFivePokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonFivePokeballID_lbl.Location = New System.Drawing.Point(327, 191)
         Me.pokemonFivePokeballID_lbl.Name = "pokemonFivePokeballID_lbl"
         Me.pokemonFivePokeballID_lbl.Size = New System.Drawing.Size(51, 13)
         Me.pokemonFivePokeballID_lbl.TabIndex = 122
@@ -2065,7 +2092,7 @@ Partial Class Form1
         '
         Me.pokemonFiveShadow_grp.Controls.Add(Me.pokemonFiveShadow_rad)
         Me.pokemonFiveShadow_grp.Controls.Add(Me.pokemonFiveShadowFalse_rad)
-        Me.pokemonFiveShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonFiveShadow_grp.Location = New System.Drawing.Point(330, 144)
         Me.pokemonFiveShadow_grp.Name = "pokemonFiveShadow_grp"
         Me.pokemonFiveShadow_grp.Size = New System.Drawing.Size(312, 44)
         Me.pokemonFiveShadow_grp.TabIndex = 118
@@ -2096,7 +2123,7 @@ Partial Class Form1
         '
         'pokemonFiveNickname_txtBox
         '
-        Me.pokemonFiveNickname_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonFiveNickname_txtBox.Location = New System.Drawing.Point(330, 116)
         Me.pokemonFiveNickname_txtBox.Name = "pokemonFiveNickname_txtBox"
         Me.pokemonFiveNickname_txtBox.Size = New System.Drawing.Size(312, 22)
         Me.pokemonFiveNickname_txtBox.TabIndex = 121
@@ -2104,7 +2131,7 @@ Partial Class Form1
         'pokemonFiveNickname_lbl
         '
         Me.pokemonFiveNickname_lbl.AutoSize = True
-        Me.pokemonFiveNickname_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonFiveNickname_lbl.Location = New System.Drawing.Point(327, 100)
         Me.pokemonFiveNickname_lbl.Name = "pokemonFiveNickname_lbl"
         Me.pokemonFiveNickname_lbl.Size = New System.Drawing.Size(108, 13)
         Me.pokemonFiveNickname_lbl.TabIndex = 120
@@ -2112,7 +2139,7 @@ Partial Class Form1
         '
         'pokemonFiveHappyness_txtBox
         '
-        Me.pokemonFiveHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonFiveHappyness_txtBox.Location = New System.Drawing.Point(330, 75)
         Me.pokemonFiveHappyness_txtBox.MaxLength = 3
         Me.pokemonFiveHappyness_txtBox.Name = "pokemonFiveHappyness_txtBox"
         Me.pokemonFiveHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -2122,7 +2149,7 @@ Partial Class Form1
         'pokemonFiveHappyness_lbl
         '
         Me.pokemonFiveHappyness_lbl.AutoSize = True
-        Me.pokemonFiveHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonFiveHappyness_lbl.Location = New System.Drawing.Point(327, 59)
         Me.pokemonFiveHappyness_lbl.Name = "pokemonFiveHappyness_lbl"
         Me.pokemonFiveHappyness_lbl.Size = New System.Drawing.Size(114, 13)
         Me.pokemonFiveHappyness_lbl.TabIndex = 117
@@ -2215,7 +2242,7 @@ Partial Class Form1
         '
         'pokemonFiveIVs_txtBox
         '
-        Me.pokemonFiveIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonFiveIVs_txtBox.Location = New System.Drawing.Point(330, 34)
         Me.pokemonFiveIVs_txtBox.MaxLength = 2
         Me.pokemonFiveIVs_txtBox.Name = "pokemonFiveIVs_txtBox"
         Me.pokemonFiveIVs_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -2225,7 +2252,7 @@ Partial Class Form1
         'pokemonFiveIVs_lbl
         '
         Me.pokemonFiveIVs_lbl.AutoSize = True
-        Me.pokemonFiveIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonFiveIVs_lbl.Location = New System.Drawing.Point(327, 18)
         Me.pokemonFiveIVs_lbl.Name = "pokemonFiveIVs_lbl"
         Me.pokemonFiveIVs_lbl.Size = New System.Drawing.Size(67, 13)
         Me.pokemonFiveIVs_lbl.TabIndex = 109
@@ -2390,7 +2417,7 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(327, 190)
+        Me.Label8.Location = New System.Drawing.Point(327, 231)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(272, 13)
         Me.Label8.TabIndex = 149
@@ -2401,7 +2428,7 @@ Partial Class Form1
         Me.pokemonSixPokeballID_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.pokemonSixPokeballID_cmb.FormattingEnabled = True
         Me.pokemonSixPokeballID_cmb.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"})
-        Me.pokemonSixPokeballID_cmb.Location = New System.Drawing.Point(330, 166)
+        Me.pokemonSixPokeballID_cmb.Location = New System.Drawing.Point(330, 207)
         Me.pokemonSixPokeballID_cmb.Name = "pokemonSixPokeballID_cmb"
         Me.pokemonSixPokeballID_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonSixPokeballID_cmb.TabIndex = 148
@@ -2409,7 +2436,7 @@ Partial Class Form1
         'pokemonSixPokeballID_lbl
         '
         Me.pokemonSixPokeballID_lbl.AutoSize = True
-        Me.pokemonSixPokeballID_lbl.Location = New System.Drawing.Point(327, 150)
+        Me.pokemonSixPokeballID_lbl.Location = New System.Drawing.Point(327, 191)
         Me.pokemonSixPokeballID_lbl.Name = "pokemonSixPokeballID_lbl"
         Me.pokemonSixPokeballID_lbl.Size = New System.Drawing.Size(51, 13)
         Me.pokemonSixPokeballID_lbl.TabIndex = 147
@@ -2419,7 +2446,7 @@ Partial Class Form1
         '
         Me.pokemonSixShadow_grp.Controls.Add(Me.pokemonSixShadow_rad)
         Me.pokemonSixShadow_grp.Controls.Add(Me.pokemonSixShadowFalse_rad)
-        Me.pokemonSixShadow_grp.Location = New System.Drawing.Point(330, 103)
+        Me.pokemonSixShadow_grp.Location = New System.Drawing.Point(330, 144)
         Me.pokemonSixShadow_grp.Name = "pokemonSixShadow_grp"
         Me.pokemonSixShadow_grp.Size = New System.Drawing.Size(312, 44)
         Me.pokemonSixShadow_grp.TabIndex = 143
@@ -2450,7 +2477,7 @@ Partial Class Form1
         '
         'pokemonSixNickname_txtBox
         '
-        Me.pokemonSixNickname_txtBox.Location = New System.Drawing.Point(330, 75)
+        Me.pokemonSixNickname_txtBox.Location = New System.Drawing.Point(330, 116)
         Me.pokemonSixNickname_txtBox.Name = "pokemonSixNickname_txtBox"
         Me.pokemonSixNickname_txtBox.Size = New System.Drawing.Size(312, 22)
         Me.pokemonSixNickname_txtBox.TabIndex = 146
@@ -2458,7 +2485,7 @@ Partial Class Form1
         'pokemonSixNickname_lbl
         '
         Me.pokemonSixNickname_lbl.AutoSize = True
-        Me.pokemonSixNickname_lbl.Location = New System.Drawing.Point(327, 59)
+        Me.pokemonSixNickname_lbl.Location = New System.Drawing.Point(327, 100)
         Me.pokemonSixNickname_lbl.Name = "pokemonSixNickname_lbl"
         Me.pokemonSixNickname_lbl.Size = New System.Drawing.Size(108, 13)
         Me.pokemonSixNickname_lbl.TabIndex = 145
@@ -2466,7 +2493,7 @@ Partial Class Form1
         '
         'pokemonSixHappyness_txtBox
         '
-        Me.pokemonSixHappyness_txtBox.Location = New System.Drawing.Point(330, 34)
+        Me.pokemonSixHappyness_txtBox.Location = New System.Drawing.Point(330, 75)
         Me.pokemonSixHappyness_txtBox.MaxLength = 3
         Me.pokemonSixHappyness_txtBox.Name = "pokemonSixHappyness_txtBox"
         Me.pokemonSixHappyness_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -2476,7 +2503,7 @@ Partial Class Form1
         'pokemonSixHappyness_lbl
         '
         Me.pokemonSixHappyness_lbl.AutoSize = True
-        Me.pokemonSixHappyness_lbl.Location = New System.Drawing.Point(327, 18)
+        Me.pokemonSixHappyness_lbl.Location = New System.Drawing.Point(327, 59)
         Me.pokemonSixHappyness_lbl.Name = "pokemonSixHappyness_lbl"
         Me.pokemonSixHappyness_lbl.Size = New System.Drawing.Size(114, 13)
         Me.pokemonSixHappyness_lbl.TabIndex = 142
@@ -2569,7 +2596,7 @@ Partial Class Form1
         '
         'pokemonSixIVs_txtBox
         '
-        Me.pokemonSixIVs_txtBox.Location = New System.Drawing.Point(9, 477)
+        Me.pokemonSixIVs_txtBox.Location = New System.Drawing.Point(330, 34)
         Me.pokemonSixIVs_txtBox.MaxLength = 2
         Me.pokemonSixIVs_txtBox.Name = "pokemonSixIVs_txtBox"
         Me.pokemonSixIVs_txtBox.Size = New System.Drawing.Size(312, 22)
@@ -2579,7 +2606,7 @@ Partial Class Form1
         'pokemonSixIVs_lbl
         '
         Me.pokemonSixIVs_lbl.AutoSize = True
-        Me.pokemonSixIVs_lbl.Location = New System.Drawing.Point(6, 461)
+        Me.pokemonSixIVs_lbl.Location = New System.Drawing.Point(327, 18)
         Me.pokemonSixIVs_lbl.Name = "pokemonSixIVs_lbl"
         Me.pokemonSixIVs_lbl.Size = New System.Drawing.Size(67, 13)
         Me.pokemonSixIVs_lbl.TabIndex = 134
@@ -2710,6 +2737,16 @@ Partial Class Form1
         Me.pg_Output.Text = "Output"
         Me.pg_Output.UseVisualStyleBackColor = True
         '
+        'save_to_trainers_btn
+        '
+        Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.save_to_trainers_btn.Location = New System.Drawing.Point(548, 485)
+        Me.save_to_trainers_btn.Name = "save_to_trainers_btn"
+        Me.save_to_trainers_btn.Size = New System.Drawing.Size(120, 23)
+        Me.save_to_trainers_btn.TabIndex = 5
+        Me.save_to_trainers_btn.Text = "Save to trainers.txt"
+        Me.save_to_trainers_btn.UseVisualStyleBackColor = True
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -2820,45 +2857,20 @@ Partial Class Form1
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
         Me.codeExporter_dialog.Filter = "Text Document (*.txt)|*.txt"
         '
-        'trainers_txt_browse_btn
-        '
-        Me.trainers_txt_browse_btn.Location = New System.Drawing.Point(719, 370)
-        Me.trainers_txt_browse_btn.Name = "trainers_txt_browse_btn"
-        Me.trainers_txt_browse_btn.Size = New System.Drawing.Size(27, 23)
-        Me.trainers_txt_browse_btn.TabIndex = 22
-        Me.trainers_txt_browse_btn.Text = "..."
-        Me.trainers_txt_browse_btn.UseVisualStyleBackColor = True
-        '
-        'trainers_txt_txt
-        '
-        Me.trainers_txt_txt.Location = New System.Drawing.Point(533, 372)
-        Me.trainers_txt_txt.Name = "trainers_txt_txt"
-        Me.trainers_txt_txt.Size = New System.Drawing.Size(180, 22)
-        Me.trainers_txt_txt.TabIndex = 21
-        '
-        'trainers_txt_lbl
-        '
-        Me.trainers_txt_lbl.AutoSize = True
-        Me.trainers_txt_lbl.Location = New System.Drawing.Point(530, 356)
-        Me.trainers_txt_lbl.Name = "trainers_txt_lbl"
-        Me.trainers_txt_lbl.Size = New System.Drawing.Size(83, 13)
-        Me.trainers_txt_lbl.TabIndex = 20
-        Me.trainers_txt_lbl.Text = "trainers.txt File"
-        '
         'trainer_txt_file_dialog
         '
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
         '
-        'save_to_trainers_btn
+        'customBallIDs_chkBox
         '
-        Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.save_to_trainers_btn.Location = New System.Drawing.Point(548, 485)
-        Me.save_to_trainers_btn.Name = "save_to_trainers_btn"
-        Me.save_to_trainers_btn.Size = New System.Drawing.Size(120, 23)
-        Me.save_to_trainers_btn.TabIndex = 5
-        Me.save_to_trainers_btn.Text = "Save to trainers.txt"
-        Me.save_to_trainers_btn.UseVisualStyleBackColor = True
+        Me.customBallIDs_chkBox.AutoSize = True
+        Me.customBallIDs_chkBox.Location = New System.Drawing.Point(139, 139)
+        Me.customBallIDs_chkBox.Name = "customBallIDs_chkBox"
+        Me.customBallIDs_chkBox.Size = New System.Drawing.Size(198, 17)
+        Me.customBallIDs_chkBox.TabIndex = 23
+        Me.customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
+        Me.customBallIDs_chkBox.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -3201,4 +3213,5 @@ Partial Class Form1
     Friend WithEvents trainers_txt_lbl As Label
     Friend WithEvents trainer_txt_file_dialog As OpenFileDialog
     Friend WithEvents save_to_trainers_btn As Button
+    Friend WithEvents customBallIDs_chkBox As CheckBox
 End Class
