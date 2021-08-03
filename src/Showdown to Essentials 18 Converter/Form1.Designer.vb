@@ -31,6 +31,7 @@ Partial Class Form1
         Me.trainers_txt_txt = New System.Windows.Forms.TextBox()
         Me.trainers_txt_lbl = New System.Windows.Forms.Label()
         Me.miscInfo_grpBox = New System.Windows.Forms.GroupBox()
+        Me.internalBallNames_chk = New System.Windows.Forms.CheckBox()
         Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
         Me.existingBattle_chkBox = New System.Windows.Forms.CheckBox()
         Me.loseText_lbl = New System.Windows.Forms.Label()
@@ -432,9 +433,9 @@ Partial Class Form1
         Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
         Me.aboutTitle_lbl = New System.Windows.Forms.Label()
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -539,6 +540,7 @@ Partial Class Form1
         Me.pg_Trainer.Size = New System.Drawing.Size(752, 511)
         Me.pg_Trainer.TabIndex = 0
         Me.pg_Trainer.Text = "Trainer Info"
+        Me.pg_Trainer.ToolTipText = "Edit the information for the trainer here."
         Me.pg_Trainer.UseVisualStyleBackColor = True
         '
         'clearInputs_btn
@@ -582,6 +584,7 @@ Partial Class Form1
         '
         Me.miscInfo_grpBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.miscInfo_grpBox.Controls.Add(Me.internalBallNames_chk)
         Me.miscInfo_grpBox.Controls.Add(Me.customBallIDs_chkBox)
         Me.miscInfo_grpBox.Controls.Add(Me.existingBattle_chkBox)
         Me.miscInfo_grpBox.Location = New System.Drawing.Point(197, 29)
@@ -590,6 +593,16 @@ Partial Class Form1
         Me.miscInfo_grpBox.TabIndex = 16
         Me.miscInfo_grpBox.TabStop = False
         Me.miscInfo_grpBox.Text = "Misc Info"
+        '
+        'internalBallNames_chk
+        '
+        Me.internalBallNames_chk.AutoSize = True
+        Me.internalBallNames_chk.Location = New System.Drawing.Point(6, 78)
+        Me.internalBallNames_chk.Name = "internalBallNames_chk"
+        Me.internalBallNames_chk.Size = New System.Drawing.Size(154, 17)
+        Me.internalBallNames_chk.TabIndex = 5
+        Me.internalBallNames_chk.Text = "Use Pokéball Internal IDs"
+        Me.internalBallNames_chk.UseVisualStyleBackColor = True
         '
         'customBallIDs_chkBox
         '
@@ -837,6 +850,7 @@ Partial Class Form1
         Me.pg_POne.Size = New System.Drawing.Size(752, 511)
         Me.pg_POne.TabIndex = 1
         Me.pg_POne.Text = "Pokémon 1"
+        Me.pg_POne.ToolTipText = "Edit the trainer's pokemon data here."
         Me.pg_POne.UseVisualStyleBackColor = True
         '
         'pokemonOne_grp
@@ -1435,6 +1449,7 @@ Partial Class Form1
         Me.pg_PTwo.Size = New System.Drawing.Size(752, 511)
         Me.pg_PTwo.TabIndex = 2
         Me.pg_PTwo.Text = "Pokémon 2"
+        Me.pg_PTwo.ToolTipText = "Edit the trainer's pokemon data here."
         Me.pg_PTwo.UseVisualStyleBackColor = True
         '
         'pokemonTwo_grp
@@ -2033,6 +2048,7 @@ Partial Class Form1
         Me.pg_PThree.Size = New System.Drawing.Size(752, 511)
         Me.pg_PThree.TabIndex = 3
         Me.pg_PThree.Text = "Pokémon 3"
+        Me.pg_PThree.ToolTipText = "Edit the trainer's pokemon data here."
         Me.pg_PThree.UseVisualStyleBackColor = True
         '
         'pokemonThree_grp
@@ -2631,6 +2647,7 @@ Partial Class Form1
         Me.pg_PFour.Size = New System.Drawing.Size(752, 511)
         Me.pg_PFour.TabIndex = 4
         Me.pg_PFour.Text = "Pokémon 4"
+        Me.pg_PFour.ToolTipText = "Edit the trainer's pokemon data here."
         Me.pg_PFour.UseVisualStyleBackColor = True
         '
         'pokemonFour_grp
@@ -3229,6 +3246,7 @@ Partial Class Form1
         Me.pg_PFive.Size = New System.Drawing.Size(752, 511)
         Me.pg_PFive.TabIndex = 5
         Me.pg_PFive.Text = "Pokémon 5"
+        Me.pg_PFive.ToolTipText = "Edit the trainer's pokemon data here."
         Me.pg_PFive.UseVisualStyleBackColor = True
         '
         'pokemonFive_grp
@@ -3827,6 +3845,7 @@ Partial Class Form1
         Me.pg_PSix.Size = New System.Drawing.Size(752, 511)
         Me.pg_PSix.TabIndex = 6
         Me.pg_PSix.Text = "Pokémon 6"
+        Me.pg_PSix.ToolTipText = "Edit the trainer's pokemon data here."
         Me.pg_PSix.UseVisualStyleBackColor = True
         '
         'pokemonSix_grp
@@ -4425,6 +4444,7 @@ Partial Class Form1
         Me.pg_PBallIDRef.Size = New System.Drawing.Size(752, 511)
         Me.pg_PBallIDRef.TabIndex = 9
         Me.pg_PBallIDRef.Text = "Pokéball ID Reference"
+        Me.pg_PBallIDRef.ToolTipText = "Don't know what pokeball is what? Look here."
         Me.pg_PBallIDRef.UseVisualStyleBackColor = True
         '
         'PBallIDRef_RchTxt
@@ -4449,6 +4469,7 @@ Partial Class Form1
         Me.pg_Output.Size = New System.Drawing.Size(752, 511)
         Me.pg_Output.TabIndex = 8
         Me.pg_Output.Text = "Output"
+        Me.pg_Output.ToolTipText = "Generate the trainer data here."
         Me.pg_Output.UseVisualStyleBackColor = True
         '
         'save_to_trainers_btn
@@ -4519,6 +4540,7 @@ Partial Class Form1
         Me.pg_About.Size = New System.Drawing.Size(752, 511)
         Me.pg_About.TabIndex = 7
         Me.pg_About.Text = "About"
+        Me.pg_About.ToolTipText = "Information about this program."
         Me.pg_About.UseVisualStyleBackColor = True
         '
         'thirdPartyLicenses_lnk
@@ -4580,9 +4602,6 @@ Partial Class Form1
         Me.Logo_picBox.TabIndex = 5
         Me.Logo_picBox.TabStop = False
         '
-        'Timer1
-        '
-        '
         'codeExporter_dialog
         '
         Me.codeExporter_dialog.FileName = "GeneratedTrainers.txt"
@@ -4592,6 +4611,9 @@ Partial Class Form1
         '
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
+        '
+        'Timer1
+        '
         '
         'Form1
         '
@@ -4911,7 +4933,6 @@ Partial Class Form1
     Friend WithEvents aboutAuthor_lbl As Label
     Friend WithEvents aboutTitle_lbl As Label
     Friend WithEvents Logo_picBox As PictureBox
-    Friend WithEvents Timer1 As Timer
     Friend WithEvents codeExporter_dialog As SaveFileDialog
     Friend WithEvents loseText_lbl As Label
     Friend WithEvents loseText_txt As TextBox
@@ -5115,4 +5136,6 @@ Partial Class Form1
     Friend WithEvents save_to_trainers_btn As Button
     Friend WithEvents clearInputs_btn As Button
     Friend WithEvents thirdPartyLicenses_lnk As LinkLabel
+    Friend WithEvents internalBallNames_chk As CheckBox
+    Friend WithEvents Timer1 As Windows.Forms.Timer
 End Class

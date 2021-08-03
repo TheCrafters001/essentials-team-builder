@@ -117,6 +117,7 @@
     <Compile Include="Utilities\clearFields.vb" />
     <Compile Include="Utilities\Generator.vb" />
     <Compile Include="Utilities\Startup.vb" />
+    <Compile Include="Utilities\Timer.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Extra\New_Splash.resx">
