@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Showdown to Essentials 17 Converter", "Showdown to Essentials Converter\Showdown to Essentials 17 Converter.vbproj", "{15092154-3D1E-42E6-A151-D500596E5092}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Showdown to Essentials 18 Converter", "Showdown to Essentials 18 Converter\Showdown to Essentials 18 Converter.vbproj", "{5AD1FD6E-C37B-4DA7-A128-4C882F728366}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Showdown to Essentials 18 & 19 Converter", "Showdown to Essentials 18 Converter\Showdown to Essentials 18 & 19 Converter.vbproj", "{5AD1FD6E-C37B-4DA7-A128-4C882F728366}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Launcher", "Launcher\Launcher.vbproj", "{51E6F8F0-727B-494F-BBF0-486629F2171A}"
 EndProject

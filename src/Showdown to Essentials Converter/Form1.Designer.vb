@@ -26,6 +26,7 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
+        Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
         Me.trainers_txt_browse_btn = New System.Windows.Forms.Button()
         Me.trainers_txt_txt = New System.Windows.Forms.TextBox()
         Me.trainers_txt_lbl = New System.Windows.Forms.Label()
@@ -283,7 +284,8 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
-        Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
+        Me.miscInfo_grpBox = New System.Windows.Forms.GroupBox()
+        Me.internalBallNames_chk = New System.Windows.Forms.CheckBox()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -322,6 +324,7 @@ Partial Class Form1
         Me.pg_About.SuspendLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.miscInfo_grpBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -343,7 +346,7 @@ Partial Class Form1
         '
         'pg_Trainer
         '
-        Me.pg_Trainer.Controls.Add(Me.customBallIDs_chkBox)
+        Me.pg_Trainer.Controls.Add(Me.miscInfo_grpBox)
         Me.pg_Trainer.Controls.Add(Me.trainers_txt_browse_btn)
         Me.pg_Trainer.Controls.Add(Me.trainers_txt_txt)
         Me.pg_Trainer.Controls.Add(Me.trainers_txt_lbl)
@@ -358,7 +361,6 @@ Partial Class Form1
         Me.pg_Trainer.Controls.Add(Me.trainerType_txtBox)
         Me.pg_Trainer.Controls.Add(Me.battleTeamID_lbl)
         Me.pg_Trainer.Controls.Add(Me.battleTeamID_txtBox)
-        Me.pg_Trainer.Controls.Add(Me.existingBattle_chkBox)
         Me.pg_Trainer.Controls.Add(Me.trainerName_lbl)
         Me.pg_Trainer.Controls.Add(Me.trainerName_txtBox)
         Me.pg_Trainer.Controls.Add(Me.trainerInfoTitle_lbl)
@@ -369,6 +371,16 @@ Partial Class Form1
         Me.pg_Trainer.TabIndex = 0
         Me.pg_Trainer.Text = "Trainer Info"
         Me.pg_Trainer.UseVisualStyleBackColor = True
+        '
+        'customBallIDs_chkBox
+        '
+        Me.customBallIDs_chkBox.AutoSize = True
+        Me.customBallIDs_chkBox.Location = New System.Drawing.Point(6, 57)
+        Me.customBallIDs_chkBox.Name = "customBallIDs_chkBox"
+        Me.customBallIDs_chkBox.Size = New System.Drawing.Size(198, 17)
+        Me.customBallIDs_chkBox.TabIndex = 23
+        Me.customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
+        Me.customBallIDs_chkBox.UseVisualStyleBackColor = True
         '
         'trainers_txt_browse_btn
         '
@@ -441,7 +453,7 @@ Partial Class Form1
         Me.numPoké_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6"})
         Me.numPoké_cmb.Location = New System.Drawing.Point(6, 137)
         Me.numPoké_cmb.Name = "numPoké_cmb"
-        Me.numPoké_cmb.Size = New System.Drawing.Size(127, 21)
+        Me.numPoké_cmb.Size = New System.Drawing.Size(185, 21)
         Me.numPoké_cmb.TabIndex = 10
         '
         'trainerUsesItems_chkBox
@@ -541,7 +553,7 @@ Partial Class Form1
         Me.trainerType_txtBox.Location = New System.Drawing.Point(6, 96)
         Me.trainerType_txtBox.MaxLength = 25
         Me.trainerType_txtBox.Name = "trainerType_txtBox"
-        Me.trainerType_txtBox.Size = New System.Drawing.Size(127, 22)
+        Me.trainerType_txtBox.Size = New System.Drawing.Size(185, 22)
         Me.trainerType_txtBox.TabIndex = 6
         '
         'battleTeamID_lbl
@@ -558,17 +570,17 @@ Partial Class Form1
         Me.battleTeamID_txtBox.Location = New System.Drawing.Point(6, 177)
         Me.battleTeamID_txtBox.MaxLength = 25
         Me.battleTeamID_txtBox.Name = "battleTeamID_txtBox"
-        Me.battleTeamID_txtBox.Size = New System.Drawing.Size(127, 22)
+        Me.battleTeamID_txtBox.Size = New System.Drawing.Size(185, 22)
         Me.battleTeamID_txtBox.TabIndex = 4
         '
         'existingBattle_chkBox
         '
         Me.existingBattle_chkBox.AutoSize = True
-        Me.existingBattle_chkBox.Location = New System.Drawing.Point(139, 57)
+        Me.existingBattle_chkBox.Location = New System.Drawing.Point(6, 21)
         Me.existingBattle_chkBox.Name = "existingBattle_chkBox"
-        Me.existingBattle_chkBox.Size = New System.Drawing.Size(262, 17)
+        Me.existingBattle_chkBox.Size = New System.Drawing.Size(261, 30)
         Me.existingBattle_chkBox.TabIndex = 3
-        Me.existingBattle_chkBox.Text = "This team is for a NPC that already has a team."
+        Me.existingBattle_chkBox.Text = "Check this box if this NPC already has a team, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "then enter the Battle Team ID."
         Me.existingBattle_chkBox.UseVisualStyleBackColor = True
         '
         'trainerName_lbl
@@ -585,7 +597,7 @@ Partial Class Form1
         Me.trainerName_txtBox.Location = New System.Drawing.Point(6, 55)
         Me.trainerName_txtBox.MaxLength = 25
         Me.trainerName_txtBox.Name = "trainerName_txtBox"
-        Me.trainerName_txtBox.Size = New System.Drawing.Size(127, 22)
+        Me.trainerName_txtBox.Size = New System.Drawing.Size(185, 22)
         Me.trainerName_txtBox.TabIndex = 1
         '
         'trainerInfoTitle_lbl
@@ -2862,15 +2874,27 @@ Partial Class Form1
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
         '
-        'customBallIDs_chkBox
+        'miscInfo_grpBox
         '
-        Me.customBallIDs_chkBox.AutoSize = True
-        Me.customBallIDs_chkBox.Location = New System.Drawing.Point(139, 139)
-        Me.customBallIDs_chkBox.Name = "customBallIDs_chkBox"
-        Me.customBallIDs_chkBox.Size = New System.Drawing.Size(198, 17)
-        Me.customBallIDs_chkBox.TabIndex = 23
-        Me.customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
-        Me.customBallIDs_chkBox.UseVisualStyleBackColor = True
+        Me.miscInfo_grpBox.Controls.Add(Me.internalBallNames_chk)
+        Me.miscInfo_grpBox.Controls.Add(Me.existingBattle_chkBox)
+        Me.miscInfo_grpBox.Controls.Add(Me.customBallIDs_chkBox)
+        Me.miscInfo_grpBox.Location = New System.Drawing.Point(6, 205)
+        Me.miscInfo_grpBox.Name = "miscInfo_grpBox"
+        Me.miscInfo_grpBox.Size = New System.Drawing.Size(521, 115)
+        Me.miscInfo_grpBox.TabIndex = 24
+        Me.miscInfo_grpBox.TabStop = False
+        Me.miscInfo_grpBox.Text = "Misc Info"
+        '
+        'internalBallNames_chk
+        '
+        Me.internalBallNames_chk.AutoSize = True
+        Me.internalBallNames_chk.Location = New System.Drawing.Point(6, 80)
+        Me.internalBallNames_chk.Name = "internalBallNames_chk"
+        Me.internalBallNames_chk.Size = New System.Drawing.Size(154, 17)
+        Me.internalBallNames_chk.TabIndex = 24
+        Me.internalBallNames_chk.Text = "Use Pokéball Internal IDs"
+        Me.internalBallNames_chk.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -2951,6 +2975,8 @@ Partial Class Form1
         Me.pg_About.PerformLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.miscInfo_grpBox.ResumeLayout(False)
+        Me.miscInfo_grpBox.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3214,4 +3240,6 @@ Partial Class Form1
     Friend WithEvents trainer_txt_file_dialog As OpenFileDialog
     Friend WithEvents save_to_trainers_btn As Button
     Friend WithEvents customBallIDs_chkBox As CheckBox
+    Friend WithEvents miscInfo_grpBox As GroupBox
+    Friend WithEvents internalBallNames_chk As CheckBox
 End Class

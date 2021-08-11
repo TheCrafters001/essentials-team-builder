@@ -4459,11 +4459,11 @@ Partial Class Form1
         '
         'pg_Output
         '
+        Me.pg_Output.Controls.Add(Me.outputBox_rchBox)
         Me.pg_Output.Controls.Add(Me.save_to_trainers_btn)
         Me.pg_Output.Controls.Add(Me.Label1)
         Me.pg_Output.Controls.Add(Me.save_btn)
         Me.pg_Output.Controls.Add(Me.generate_btn)
-        Me.pg_Output.Controls.Add(Me.outputBox_rchBox)
         Me.pg_Output.Location = New System.Drawing.Point(4, 22)
         Me.pg_Output.Name = "pg_Output"
         Me.pg_Output.Size = New System.Drawing.Size(752, 511)
