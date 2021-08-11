@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30330.147
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Showdown to Essentials 17 Converter", "Showdown to Essentials Converter\Showdown to Essentials 17 Converter.vbproj", "{15092154-3D1E-42E6-A151-D500596E5092}"
 EndProject
