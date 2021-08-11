@@ -128,4 +128,8 @@ Public Class Form1
             pokemonSixPokeballID_cmb.SelectedIndex = 0
         End If
     End Sub
+
+    Private Sub wizard_btn_Click(sender As Object, e As EventArgs) Handles wizard_btn.Click
+
+    End Sub
 End Class

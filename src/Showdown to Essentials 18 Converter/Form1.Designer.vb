@@ -421,11 +421,11 @@ Partial Class Form1
         Me.pg_PBallIDRef = New System.Windows.Forms.TabPage()
         Me.PBallIDRef_RchTxt = New System.Windows.Forms.RichTextBox()
         Me.pg_Output = New System.Windows.Forms.TabPage()
+        Me.outputBox_rchBox = New System.Windows.Forms.RichTextBox()
         Me.save_to_trainers_btn = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.save_btn = New System.Windows.Forms.Button()
         Me.generate_btn = New System.Windows.Forms.Button()
-        Me.outputBox_rchBox = New System.Windows.Forms.RichTextBox()
         Me.pg_About = New System.Windows.Forms.TabPage()
         Me.thirdPartyLicenses_lnk = New System.Windows.Forms.LinkLabel()
         Me.aboutText_lbl = New System.Windows.Forms.Label()
@@ -436,6 +436,7 @@ Partial Class Form1
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.wizard_btn = New System.Windows.Forms.Button()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -513,6 +514,7 @@ Partial Class Form1
         '
         'pg_Trainer
         '
+        Me.pg_Trainer.Controls.Add(Me.wizard_btn)
         Me.pg_Trainer.Controls.Add(Me.clearInputs_btn)
         Me.pg_Trainer.Controls.Add(Me.trainers_txt_browse_btn)
         Me.pg_Trainer.Controls.Add(Me.trainers_txt_txt)
@@ -4472,6 +4474,19 @@ Partial Class Form1
         Me.pg_Output.ToolTipText = "Generate the trainer data here."
         Me.pg_Output.UseVisualStyleBackColor = True
         '
+        'outputBox_rchBox
+        '
+        Me.outputBox_rchBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.outputBox_rchBox.DetectUrls = False
+        Me.outputBox_rchBox.Location = New System.Drawing.Point(3, 3)
+        Me.outputBox_rchBox.Name = "outputBox_rchBox"
+        Me.outputBox_rchBox.ReadOnly = True
+        Me.outputBox_rchBox.Size = New System.Drawing.Size(746, 476)
+        Me.outputBox_rchBox.TabIndex = 0
+        Me.outputBox_rchBox.Text = ""
+        '
         'save_to_trainers_btn
         '
         Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -4513,19 +4528,6 @@ Partial Class Form1
         Me.generate_btn.TabIndex = 1
         Me.generate_btn.Text = "Generate"
         Me.generate_btn.UseVisualStyleBackColor = True
-        '
-        'outputBox_rchBox
-        '
-        Me.outputBox_rchBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.outputBox_rchBox.DetectUrls = False
-        Me.outputBox_rchBox.Location = New System.Drawing.Point(3, 3)
-        Me.outputBox_rchBox.Name = "outputBox_rchBox"
-        Me.outputBox_rchBox.ReadOnly = True
-        Me.outputBox_rchBox.Size = New System.Drawing.Size(746, 476)
-        Me.outputBox_rchBox.TabIndex = 0
-        Me.outputBox_rchBox.Text = ""
         '
         'pg_About
         '
@@ -4614,6 +4616,15 @@ Partial Class Form1
         '
         'Timer1
         '
+        '
+        'wizard_btn
+        '
+        Me.wizard_btn.Location = New System.Drawing.Point(6, 454)
+        Me.wizard_btn.Name = "wizard_btn"
+        Me.wizard_btn.Size = New System.Drawing.Size(533, 23)
+        Me.wizard_btn.TabIndex = 21
+        Me.wizard_btn.Text = "Use Wizard"
+        Me.wizard_btn.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -5138,4 +5149,5 @@ Partial Class Form1
     Friend WithEvents thirdPartyLicenses_lnk As LinkLabel
     Friend WithEvents internalBallNames_chk As CheckBox
     Friend WithEvents Timer1 As Windows.Forms.Timer
+    Friend WithEvents wizard_btn As Button
 End Class

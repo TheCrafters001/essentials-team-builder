@@ -97,6 +97,12 @@
     <Compile Include="Extra\ThirdPartyLicenses.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Extra\Wizard\wizard_startDialog.Designer.vb">
+      <DependentUpon>wizard_startDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra\Wizard\wizard_startDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Extra\ThirdPartyLicenses.resx">
       <DependentUpon>ThirdPartyLicenses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra\Wizard\wizard_startDialog.resx">
+      <DependentUpon>wizard_startDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -199,6 +208,9 @@
       <Project>{a250a64f-0ceb-47e6-83ea-15e352b3757b}</Project>
       <Name>DiscordRPCHandler</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\wizard_large_left.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
