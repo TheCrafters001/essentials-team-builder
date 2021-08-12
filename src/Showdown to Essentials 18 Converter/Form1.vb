@@ -130,6 +130,6 @@ Public Class Form1
     End Sub
 
     Private Sub wizard_btn_Click(sender As Object, e As EventArgs) Handles wizard_btn.Click
-
+        wizard_startDialog.Show()
     End Sub
 End Class

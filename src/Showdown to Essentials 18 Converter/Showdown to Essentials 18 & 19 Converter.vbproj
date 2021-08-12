@@ -97,10 +97,28 @@
     <Compile Include="Extra\ThirdPartyLicenses.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Extra\Wizard\wizard_startDialog.Designer.vb">
+    <Compile Include="Extra\Wizard\Pages\wizard_pageOne.Designer.vb">
+      <DependentUpon>wizard_pageOne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra\Wizard\Pages\wizard_pageOne.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra\Wizard\Pages\wizard_pageTwo.Designer.vb">
+      <DependentUpon>wizard_pageTwo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra\Wizard\Pages\wizard_pageTwo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra\Wizard\special pages\wizard_specialPage_TrainerTeams.Designer.vb">
+      <DependentUpon>wizard_specialPage_TrainerTeams.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra\Wizard\special pages\wizard_specialPage_TrainerTeams.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra\Wizard\special pages\wizard_startDialog.Designer.vb">
       <DependentUpon>wizard_startDialog.vb</DependentUpon>
     </Compile>
-    <Compile Include="Extra\Wizard\wizard_startDialog.vb">
+    <Compile Include="Extra\Wizard\special pages\wizard_startDialog.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -141,7 +159,16 @@
     <EmbeddedResource Include="Extra\ThirdPartyLicenses.resx">
       <DependentUpon>ThirdPartyLicenses.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Extra\Wizard\wizard_startDialog.resx">
+    <EmbeddedResource Include="Extra\Wizard\Pages\wizard_pageOne.resx">
+      <DependentUpon>wizard_pageOne.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra\Wizard\Pages\wizard_pageTwo.resx">
+      <DependentUpon>wizard_pageTwo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra\Wizard\special pages\wizard_specialPage_TrainerTeams.resx">
+      <DependentUpon>wizard_specialPage_TrainerTeams.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra\Wizard\special pages\wizard_startDialog.resx">
       <DependentUpon>wizard_startDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
