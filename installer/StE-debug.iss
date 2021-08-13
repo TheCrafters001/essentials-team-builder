@@ -29,13 +29,14 @@ Compression=lzma
 SolidCompression=yes
 DisableWelcomePage=False
 UninstallDisplayName=Showdown to Essentials Converter (Pre-release)
-UninstallDisplayIcon={app}\Showdown to Essentials Converter.exe
+UninstallDisplayIcon={app}\Showdown to Essentials 18 & 19 Converter.exe
 ArchitecturesInstallIn64BitMode=x64
 ArchitecturesAllowed=x86 x64
 MinVersion=0,6.1sp1
 WizardStyle=modern
 WizardImageFile=compiler:WizClassicImage.bmp
 WizardSmallImageFile=compiler:WizClassicSmallImage.bmp
+SetupIconFile=..\src\Showdown to Essentials 18 Converter\Resources\showdown_to_essentials_19_icon.ico
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -72,3 +73,8 @@ Name: "custom"; Description: "Custom Install"; Flags: iscustom
 Name: "launcher"; Description: "Launcher"; Types: custom eighteen full seventeen; Flags: fixed
 Name: "launcher\eighteen_component"; Description: "Showdown to Essentials 18 & 19 Converter"; Types: full eighteen
 Name: "launcher\seventeen_component"; Description: "Showdown to Essentials 17 Converter"; Types: full seventeen
+
+[Messages]
+english.StatusExtractFiles=Copying Files...
+english.InstallingLabel=Please wait while [name] installs...
+english.LicenseLabel=Please read the GNU General Public v3.0 License.
