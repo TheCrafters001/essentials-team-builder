@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.pages_tabGrp = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
@@ -41,6 +40,8 @@ Partial Class Form1
         Me.numPoké_cmb = New System.Windows.Forms.ComboBox()
         Me.trainerUsesItems_chkBox = New System.Windows.Forms.CheckBox()
         Me.trainerItems_grp = New System.Windows.Forms.GroupBox()
+        Me.trainerItemsList_btn = New System.Windows.Forms.Button()
+        Me.trainerItemsList_lstbox = New System.Windows.Forms.ListBox()
         Me.trainerType_lbl = New System.Windows.Forms.Label()
         Me.trainerType_txtBox = New System.Windows.Forms.TextBox()
         Me.battleTeamID_lbl = New System.Windows.Forms.Label()
@@ -425,9 +426,6 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.trainerItemsList_lstbox = New System.Windows.Forms.ListBox()
-        Me.trainerItemsList_btn = New System.Windows.Forms.Button()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -687,6 +685,23 @@ Partial Class Form1
         Me.trainerItems_grp.TabIndex = 8
         Me.trainerItems_grp.TabStop = False
         Me.trainerItems_grp.Text = "Items (Double Click to remove items)"
+        '
+        'trainerItemsList_btn
+        '
+        Me.trainerItemsList_btn.Location = New System.Drawing.Point(6, 223)
+        Me.trainerItemsList_btn.Name = "trainerItemsList_btn"
+        Me.trainerItemsList_btn.Size = New System.Drawing.Size(201, 23)
+        Me.trainerItemsList_btn.TabIndex = 1
+        Me.trainerItemsList_btn.Text = "Add Item"
+        Me.trainerItemsList_btn.UseVisualStyleBackColor = True
+        '
+        'trainerItemsList_lstbox
+        '
+        Me.trainerItemsList_lstbox.FormattingEnabled = True
+        Me.trainerItemsList_lstbox.Location = New System.Drawing.Point(6, 21)
+        Me.trainerItemsList_lstbox.Name = "trainerItemsList_lstbox"
+        Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 199)
+        Me.trainerItemsList_lstbox.TabIndex = 0
         '
         'trainerType_lbl
         '
@@ -4521,26 +4536,6 @@ Partial Class Form1
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
         '
-        'Timer1
-        '
-        '
-        'trainerItemsList_lstbox
-        '
-        Me.trainerItemsList_lstbox.FormattingEnabled = True
-        Me.trainerItemsList_lstbox.Location = New System.Drawing.Point(6, 21)
-        Me.trainerItemsList_lstbox.Name = "trainerItemsList_lstbox"
-        Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 199)
-        Me.trainerItemsList_lstbox.TabIndex = 0
-        '
-        'trainerItemsList_btn
-        '
-        Me.trainerItemsList_btn.Location = New System.Drawing.Point(6, 223)
-        Me.trainerItemsList_btn.Name = "trainerItemsList_btn"
-        Me.trainerItemsList_btn.Size = New System.Drawing.Size(201, 23)
-        Me.trainerItemsList_btn.TabIndex = 1
-        Me.trainerItemsList_btn.Text = "Add Item"
-        Me.trainerItemsList_btn.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -5051,7 +5046,6 @@ Partial Class Form1
     Friend WithEvents clearInputs_btn As Button
     Friend WithEvents thirdPartyLicenses_lnk As LinkLabel
     Friend WithEvents internalBallNames_chk As CheckBox
-    Friend WithEvents Timer1 As Windows.Forms.Timer
     Friend WithEvents wizard_btn As Button
     Friend WithEvents trainerItemsList_btn As Button
     Friend WithEvents trainerItemsList_lstbox As ListBox
