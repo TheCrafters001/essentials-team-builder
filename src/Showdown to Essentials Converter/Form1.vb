@@ -1,12 +1,16 @@
 ﻿Public Class Form1
+#Region "Initialization"
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Startup.Init()
+        trainerItems_grp.Enabled = False
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Startup.TimerChecker()
     End Sub
+#End Region
 
+#Region "Buttons"
     Private Sub save_btn_Click(sender As Object, e As EventArgs) Handles save_btn.Click
         If codeExporter_dialog.ShowDialog = DialogResult.OK Then
             My.Computer.FileSystem.WriteAllText(codeExporter_dialog.FileName, outputBox_rchBox.Text, False)
@@ -24,7 +28,8 @@
         trainerType_txtBox.Text = "Rival"
         numPoké_cmb.SelectedIndex = 0
         trainerUsesItems_chkBox.Checked = True
-        itemOne_txtBox.Text = "potion"
+        trainerItemsList_lstbox.Items.Clear()
+        trainerItemsList_lstbox.Items.Add("potion")
         pokemonOneName_txtBox.Text = "Weezing"
         pokemonOneMove1_txtBox.Text = "FireBlast"
         pokemonOneGender_cmb.SelectedIndex = 0
@@ -32,27 +37,34 @@
         pokemonOneLvl_txtBox.Text = "20"
     End Sub
 
-    Private Sub trainers_txt_browse_btn_Click(sender As Object, e As EventArgs) Handles trainers_txt_browse_btn.Click
-        If trainer_txt_file_dialog.ShowDialog() = DialogResult.OK Then
-            trainers_txt_txt.Text = trainer_txt_file_dialog.FileName
-        End If
-    End Sub
 
     Private Sub save_to_trainers_btn_Click(sender As Object, e As EventArgs) Handles save_to_trainers_btn.Click
         Try
-            If trainers_txt_txt.Text = "" Then
-                MessageBox.Show("No trainers.txt file has been selected. Please select one on the Trainer Info page.")
-            Else
+            If trainer_txt_file_dialog.ShowDialog() = DialogResult.OK Then
                 My.Computer.FileSystem.WriteAllText(trainer_txt_file_dialog.FileName, vbCrLf & outputBox_rchBox.Text, True)
-                My.Settings.TrainersFile = trainer_txt_file_dialog.FileName
-                My.Settings.Save()
-                MessageBox.Show("Trainer has been added to Trainers file! I also saved the location of it, so you don't have to select it everytime!")
             End If
         Catch ex As Exception
             MessageBox.Show("Something went wrong. The error details will now be displayed." & vbCrLf & vbCrLf & ex.ToString)
         End Try
     End Sub
 
+    Private Sub trainerItemsList_btn_Click(sender As Object, e As EventArgs) Handles trainerItemsList_btn.Click
+        ' Create Input Box
+        Dim input As String = InputBox("Please enter an item you want this trainer to use", "Add Item", "Potion")
+        ' Once they hit okay, then add item
+        If input = "" Then
+            MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            If trainerItemsList_lstbox.Items.Count = 8 Then
+                MessageBox.Show("You cannot add more than 8 items.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                trainerItemsList_lstbox.Items.Add(input)
+            End If
+        End If
+    End Sub
+#End Region
+
+#Region "Checkbox CheckedChanged"
     Private Sub internalBallNames_chk_CheckedChanged(sender As Object, e As EventArgs) Handles internalBallNames_chk.CheckedChanged
         If internalBallNames_chk.Checked = True Then
             ' Clear all Items first
@@ -112,4 +124,8 @@
             pokemonSixPokeballID_cmb.SelectedIndex = 0
         End If
     End Sub
+
+
+#End Region
+
 End Class

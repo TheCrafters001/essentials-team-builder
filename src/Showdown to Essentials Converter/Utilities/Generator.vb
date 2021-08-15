@@ -9,18 +9,30 @@
 
 #Region "Trainer"
     Public Shared Sub Trainer()
+
+        Dim item As Object
+        Dim TrainerItems As String
+
+        ' This took me longer than I would like to admit to make.
+        ' Thanks to Mary on Stack Overflow for the help
+        ' https://stackoverflow.com/a/68794434/7799766
+        For Each item In Form1.trainerItemsList_lstbox.Items
+            TrainerItems &= item.ToString.ToUpper & ","
+        Next
+        TrainerItems = TrainerItems.Substring(0, TrainerItems.Length - 1)
+
         Form1.outputBox_rchBox.Text = "#-------------------------------"
         If Form1.existingBattle_chkBox.Checked = True Then
             If Form1.trainerUsesItems_chkBox.Checked = False Then
                 Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & vbCrLf
             ElseIf Form1.trainerUsesItems_chkBox.Checked = True Then
-                Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & "," & Form1.itemOne_txtBox.Text.ToUpper & "," & Form1.itemTwo_txtBox.Text.ToUpper & "," & Form1.itemThree_txtBox.Text.ToUpper & "," & Form1.itemFour_txtBox.Text.ToUpper & "," & Form1.itemFive_txtBox.Text.ToUpper & "," & Form1.itemSix_txtBox.Text.ToUpper & "," & Form1.itemSeven_txtBox.Text.ToUpper & "," & Form1.itemEight_txtBox.Text.ToUpper & vbCrLf
+                Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & "," & TrainerItems & vbCrLf
             End If
         ElseIf Form1.existingBattle_chkBox.Checked = False Then
             If Form1.trainerUsesItems_chkBox.Checked = False Then
                 Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & vbCrLf
             ElseIf Form1.trainerUsesItems_chkBox.Checked = True Then
-                Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & "," & Form1.itemOne_txtBox.Text.ToUpper & "," & Form1.itemTwo_txtBox.Text.ToUpper & "," & Form1.itemThree_txtBox.Text.ToUpper & "," & Form1.itemFour_txtBox.Text.ToUpper & "," & Form1.itemFive_txtBox.Text.ToUpper & "," & Form1.itemSix_txtBox.Text.ToUpper & "," & Form1.itemSeven_txtBox.Text.ToUpper & "," & Form1.itemEight_txtBox.Text.ToUpper & vbCrLf
+                Form1.outputBox_rchBox.Text &= vbCrLf & Form1.trainerType_txtBox.Text.ToUpper & vbCrLf & Form1.trainerName_txtBox.Text & vbCrLf & Form1.numPoké_cmb.Text & "," & TrainerItems & vbCrLf
             End If
         End If
 

@@ -58,7 +58,7 @@
         '
         ' Load TrainersFile
         '
-        Form1.trainers_txt_txt.Text = My.Settings.TrainersFile
+
         Form1.Timer1.Start()
     End Sub
     Public Shared Sub TimerChecker()
