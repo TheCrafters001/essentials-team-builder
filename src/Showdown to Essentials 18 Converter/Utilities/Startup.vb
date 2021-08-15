@@ -6,6 +6,9 @@ Public Class Startup
         ' Discord Rich Presence
         InitRPC.Setup()
 
+        ' Clear all Items to remove the object text.
+        Form1.trainerItemsList_lstbox.Items.Clear()
+
         Form1.numPoké_cmb.SelectedIndex = 0
         '
         ' pokemonOne
@@ -61,10 +64,7 @@ Public Class Startup
         Form1.pokemonSixShinyFalse_rad.Checked = True
         Form1.pokemonSixShadowFalse_rad.Checked = True
         Form1.pokemonSixPokeballID_cmb.SelectedIndex = 0
-        '
-        ' Load TrainersFile
-        '
-        Form1.trainers_txt_txt.Text = My.Settings.TrainersFile
-        Form1.Timer1.Start()
+
+        'Form1.Timer1.Start()
     End Sub
 End Class

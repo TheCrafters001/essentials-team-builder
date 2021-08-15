@@ -2,14 +2,15 @@
 Imports DiscordRPCHandler
 
 Public Class Form1
+
+#Region "Initialization"
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Startup.Init()
+        trainerItems_grp.Enabled = False
     End Sub
+#End Region
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Timer.Ticker()
-    End Sub
-
+#Region "Buttons"
     Private Sub save_btn_Click(sender As Object, e As EventArgs) Handles save_btn.Click
         If codeExporter_dialog.ShowDialog = DialogResult.OK Then
             My.Computer.FileSystem.WriteAllText(codeExporter_dialog.FileName, outputBox_rchBox.Text, False)
@@ -26,7 +27,8 @@ Public Class Form1
         loseText_txt.Text = "You beat me?!"
         numPoké_cmb.SelectedIndex = 0
         trainerUsesItems_chkBox.Checked = True
-        itemOne_txtBox.Text = "potion"
+        trainerItemsList_lstbox.Items.Clear()
+        trainerItemsList_lstbox.Items.Add("potion")
         pokemonOneName_txtBox.Text = "Koffing"
         pokemonOneMove1_txtBox.Text = "PoisonGas"
         pokemonOneMove2_txtBox.Text = "Tackle"
@@ -36,21 +38,10 @@ Public Class Form1
         pokemonOneLvl_txtBox.Text = "5"
     End Sub
 
-    Private Sub trainer_txt_browse_btn_Click(sender As Object, e As EventArgs) Handles trainers_txt_browse_btn.Click
-        If trainer_txt_file_dialog.ShowDialog() = DialogResult.OK Then
-            trainers_txt_txt.Text = trainer_txt_file_dialog.FileName
-        End If
-    End Sub
-
     Private Sub save_to_trainers_btn_Click(sender As Object, e As EventArgs) Handles save_to_trainers_btn.Click
         Try
-            If trainers_txt_txt.Text = "" Then
-                MessageBox.Show("No trainers.txt file has been selected. Please select one on the Trainer Info page.")
-            Else
+            If trainer_txt_file_dialog.ShowDialog() = DialogResult.OK Then
                 My.Computer.FileSystem.WriteAllText(trainer_txt_file_dialog.FileName, vbCrLf & outputBox_rchBox.Text, True)
-                My.Settings.TrainersFile = trainer_txt_file_dialog.FileName
-                My.Settings.Save()
-                MessageBox.Show("Trainer has been added to Trainers file! I also saved the location of it, so you don't have to select it everytime!")
             End If
         Catch ex As Exception
             MessageBox.Show("Something went wrong. The error details will now be displayed." & vbCrLf & vbCrLf & ex.ToString)
@@ -61,12 +52,49 @@ Public Class Form1
         clearFields.Clear()
     End Sub
 
+    Private Sub trainerItemsList_btn_Click(sender As Object, e As EventArgs) Handles trainerItemsList_btn.Click
+        ' Create Input Box
+        Dim input As String = InputBox("Please enter an item you want this trainer to use", "Add Item", "Potion")
+        ' Once they hit okay, then add item
+        If input = "" Then
+            MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            If trainerItemsList_lstbox.Items.Count = 8 Then
+                MessageBox.Show("You cannot add more than 8 items.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                trainerItemsList_lstbox.Items.Add(input)
+            End If
+        End If
+    End Sub
+
+    Private Sub wizard_btn_Click(sender As Object, e As EventArgs) Handles wizard_btn.Click
+        wizard_startDialog.Show()
+    End Sub
+#End Region
+
+#Region "Deinitialization"
     Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Disp.Dispose()
     End Sub
+#End Region
 
-    Private Sub thirdPartyLicenses_lnk_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles thirdPartyLicenses_lnk.LinkClicked
-        ThirdPartyLicenses.Show()
+#Region "Checkbox CheckedChanged"
+    Private Sub customBallIDs_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles customBallIDs_chkBox.CheckedChanged
+        If customBallIDs_chkBox.Checked = False Then
+            pokemonOnePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            pokemonTwoPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            pokemonThreePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            pokemonFourPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            pokemonFivePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+            pokemonSixPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+        ElseIf customBallIDs_chkBox.Checked = True Then
+            pokemonOnePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            pokemonTwoPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            pokemonThreePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            pokemonFourPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            pokemonFivePokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+            pokemonSixPokeballID_cmb.DropDownStyle = ComboBoxStyle.DropDown
+        End If
     End Sub
 
     Private Sub internalBallNames_chk_CheckedChanged(sender As Object, e As EventArgs) Handles internalBallNames_chk.CheckedChanged
@@ -129,7 +157,30 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub wizard_btn_Click(sender As Object, e As EventArgs) Handles wizard_btn.Click
-        wizard_startDialog.Show()
+    Private Sub trainerUsesItems_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles trainerUsesItems_chkBox.CheckedChanged
+        If trainerUsesItems_chkBox.Checked = True Then
+            trainerItems_grp.Enabled = True
+        ElseIf trainerUsesItems_chkBox.Checked = False Then
+            trainerItems_grp.Enabled = False
+        End If
+    End Sub
+
+    Private Sub existingBattle_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles existingBattle_chkBox.CheckedChanged
+        If existingBattle_chkBox.Checked = True Then
+            battleTeamID_lbl.Enabled = True
+            battleTeamID_txtBox.Enabled = True
+        ElseIf existingBattle_chkBox.Checked = False Then
+            battleTeamID_lbl.Enabled = False
+            battleTeamID_txtBox.Enabled = False
+        End If
+    End Sub
+#End Region
+
+    Private Sub thirdPartyLicenses_lnk_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles thirdPartyLicenses_lnk.LinkClicked
+        ThirdPartyLicenses.Show()
+    End Sub
+
+    Private Sub numPoké_cmb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles numPoké_cmb.SelectedIndexChanged
+        pageEnabler.Enabler()
     End Sub
 End Class

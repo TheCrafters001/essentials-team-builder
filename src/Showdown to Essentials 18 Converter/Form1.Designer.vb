@@ -26,10 +26,8 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.pages_tabGrp = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
+        Me.wizard_btn = New System.Windows.Forms.Button()
         Me.clearInputs_btn = New System.Windows.Forms.Button()
-        Me.trainers_txt_browse_btn = New System.Windows.Forms.Button()
-        Me.trainers_txt_txt = New System.Windows.Forms.TextBox()
-        Me.trainers_txt_lbl = New System.Windows.Forms.Label()
         Me.miscInfo_grpBox = New System.Windows.Forms.GroupBox()
         Me.internalBallNames_chk = New System.Windows.Forms.CheckBox()
         Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
@@ -43,14 +41,6 @@ Partial Class Form1
         Me.numPoké_cmb = New System.Windows.Forms.ComboBox()
         Me.trainerUsesItems_chkBox = New System.Windows.Forms.CheckBox()
         Me.trainerItems_grp = New System.Windows.Forms.GroupBox()
-        Me.itemEight_txtBox = New System.Windows.Forms.TextBox()
-        Me.itemSeven_txtBox = New System.Windows.Forms.TextBox()
-        Me.itemSix_txtBox = New System.Windows.Forms.TextBox()
-        Me.itemFive_txtBox = New System.Windows.Forms.TextBox()
-        Me.itemFour_txtBox = New System.Windows.Forms.TextBox()
-        Me.itemThree_txtBox = New System.Windows.Forms.TextBox()
-        Me.itemTwo_txtBox = New System.Windows.Forms.TextBox()
-        Me.itemOne_txtBox = New System.Windows.Forms.TextBox()
         Me.trainerType_lbl = New System.Windows.Forms.Label()
         Me.trainerType_txtBox = New System.Windows.Forms.TextBox()
         Me.battleTeamID_lbl = New System.Windows.Forms.Label()
@@ -436,7 +426,8 @@ Partial Class Form1
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.wizard_btn = New System.Windows.Forms.Button()
+        Me.trainerItemsList_lstbox = New System.Windows.Forms.ListBox()
+        Me.trainerItemsList_btn = New System.Windows.Forms.Button()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -516,9 +507,6 @@ Partial Class Form1
         '
         Me.pg_Trainer.Controls.Add(Me.wizard_btn)
         Me.pg_Trainer.Controls.Add(Me.clearInputs_btn)
-        Me.pg_Trainer.Controls.Add(Me.trainers_txt_browse_btn)
-        Me.pg_Trainer.Controls.Add(Me.trainers_txt_txt)
-        Me.pg_Trainer.Controls.Add(Me.trainers_txt_lbl)
         Me.pg_Trainer.Controls.Add(Me.miscInfo_grpBox)
         Me.pg_Trainer.Controls.Add(Me.loseText_lbl)
         Me.pg_Trainer.Controls.Add(Me.loseText_txt)
@@ -545,6 +533,15 @@ Partial Class Form1
         Me.pg_Trainer.ToolTipText = "Edit the information for the trainer here."
         Me.pg_Trainer.UseVisualStyleBackColor = True
         '
+        'wizard_btn
+        '
+        Me.wizard_btn.Location = New System.Drawing.Point(6, 454)
+        Me.wizard_btn.Name = "wizard_btn"
+        Me.wizard_btn.Size = New System.Drawing.Size(533, 23)
+        Me.wizard_btn.TabIndex = 21
+        Me.wizard_btn.Text = "Use Wizard"
+        Me.wizard_btn.UseVisualStyleBackColor = True
+        '
         'clearInputs_btn
         '
         Me.clearInputs_btn.Location = New System.Drawing.Point(6, 258)
@@ -553,34 +550,6 @@ Partial Class Form1
         Me.clearInputs_btn.TabIndex = 20
         Me.clearInputs_btn.Text = "Clear all fields"
         Me.clearInputs_btn.UseVisualStyleBackColor = True
-        '
-        'trainers_txt_browse_btn
-        '
-        Me.trainers_txt_browse_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.trainers_txt_browse_btn.Location = New System.Drawing.Point(719, 383)
-        Me.trainers_txt_browse_btn.Name = "trainers_txt_browse_btn"
-        Me.trainers_txt_browse_btn.Size = New System.Drawing.Size(27, 22)
-        Me.trainers_txt_browse_btn.TabIndex = 19
-        Me.trainers_txt_browse_btn.Text = "..."
-        Me.trainers_txt_browse_btn.UseVisualStyleBackColor = True
-        '
-        'trainers_txt_txt
-        '
-        Me.trainers_txt_txt.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.trainers_txt_txt.Location = New System.Drawing.Point(545, 383)
-        Me.trainers_txt_txt.Name = "trainers_txt_txt"
-        Me.trainers_txt_txt.Size = New System.Drawing.Size(168, 22)
-        Me.trainers_txt_txt.TabIndex = 18
-        '
-        'trainers_txt_lbl
-        '
-        Me.trainers_txt_lbl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.trainers_txt_lbl.AutoSize = True
-        Me.trainers_txt_lbl.Location = New System.Drawing.Point(542, 367)
-        Me.trainers_txt_lbl.Name = "trainers_txt_lbl"
-        Me.trainers_txt_lbl.Size = New System.Drawing.Size(83, 13)
-        Me.trainers_txt_lbl.TabIndex = 17
-        Me.trainers_txt_lbl.Text = "trainers.txt File"
         '
         'miscInfo_grpBox
         '
@@ -710,76 +679,14 @@ Partial Class Form1
         'trainerItems_grp
         '
         Me.trainerItems_grp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.trainerItems_grp.Controls.Add(Me.itemEight_txtBox)
-        Me.trainerItems_grp.Controls.Add(Me.itemSeven_txtBox)
-        Me.trainerItems_grp.Controls.Add(Me.itemSix_txtBox)
-        Me.trainerItems_grp.Controls.Add(Me.itemFive_txtBox)
-        Me.trainerItems_grp.Controls.Add(Me.itemFour_txtBox)
-        Me.trainerItems_grp.Controls.Add(Me.itemThree_txtBox)
-        Me.trainerItems_grp.Controls.Add(Me.itemTwo_txtBox)
-        Me.trainerItems_grp.Controls.Add(Me.itemOne_txtBox)
+        Me.trainerItems_grp.Controls.Add(Me.trainerItemsList_btn)
+        Me.trainerItems_grp.Controls.Add(Me.trainerItemsList_lstbox)
         Me.trainerItems_grp.Location = New System.Drawing.Point(531, 29)
         Me.trainerItems_grp.Name = "trainerItems_grp"
         Me.trainerItems_grp.Size = New System.Drawing.Size(213, 252)
         Me.trainerItems_grp.TabIndex = 8
         Me.trainerItems_grp.TabStop = False
-        Me.trainerItems_grp.Text = "Items"
-        '
-        'itemEight_txtBox
-        '
-        Me.itemEight_txtBox.Location = New System.Drawing.Point(6, 222)
-        Me.itemEight_txtBox.Name = "itemEight_txtBox"
-        Me.itemEight_txtBox.Size = New System.Drawing.Size(201, 22)
-        Me.itemEight_txtBox.TabIndex = 7
-        '
-        'itemSeven_txtBox
-        '
-        Me.itemSeven_txtBox.Location = New System.Drawing.Point(6, 194)
-        Me.itemSeven_txtBox.Name = "itemSeven_txtBox"
-        Me.itemSeven_txtBox.Size = New System.Drawing.Size(201, 22)
-        Me.itemSeven_txtBox.TabIndex = 6
-        '
-        'itemSix_txtBox
-        '
-        Me.itemSix_txtBox.Location = New System.Drawing.Point(6, 166)
-        Me.itemSix_txtBox.Name = "itemSix_txtBox"
-        Me.itemSix_txtBox.Size = New System.Drawing.Size(201, 22)
-        Me.itemSix_txtBox.TabIndex = 5
-        '
-        'itemFive_txtBox
-        '
-        Me.itemFive_txtBox.Location = New System.Drawing.Point(6, 138)
-        Me.itemFive_txtBox.Name = "itemFive_txtBox"
-        Me.itemFive_txtBox.Size = New System.Drawing.Size(201, 22)
-        Me.itemFive_txtBox.TabIndex = 4
-        '
-        'itemFour_txtBox
-        '
-        Me.itemFour_txtBox.Location = New System.Drawing.Point(6, 110)
-        Me.itemFour_txtBox.Name = "itemFour_txtBox"
-        Me.itemFour_txtBox.Size = New System.Drawing.Size(201, 22)
-        Me.itemFour_txtBox.TabIndex = 3
-        '
-        'itemThree_txtBox
-        '
-        Me.itemThree_txtBox.Location = New System.Drawing.Point(6, 82)
-        Me.itemThree_txtBox.Name = "itemThree_txtBox"
-        Me.itemThree_txtBox.Size = New System.Drawing.Size(201, 22)
-        Me.itemThree_txtBox.TabIndex = 2
-        '
-        'itemTwo_txtBox
-        '
-        Me.itemTwo_txtBox.Location = New System.Drawing.Point(6, 54)
-        Me.itemTwo_txtBox.Name = "itemTwo_txtBox"
-        Me.itemTwo_txtBox.Size = New System.Drawing.Size(201, 22)
-        Me.itemTwo_txtBox.TabIndex = 1
-        '
-        'itemOne_txtBox
-        '
-        Me.itemOne_txtBox.Location = New System.Drawing.Point(6, 26)
-        Me.itemOne_txtBox.Name = "itemOne_txtBox"
-        Me.itemOne_txtBox.Size = New System.Drawing.Size(201, 22)
-        Me.itemOne_txtBox.TabIndex = 0
+        Me.trainerItems_grp.Text = "Items (Double Click to remove items)"
         '
         'trainerType_lbl
         '
@@ -4617,14 +4524,22 @@ Partial Class Form1
         'Timer1
         '
         '
-        'wizard_btn
+        'trainerItemsList_lstbox
         '
-        Me.wizard_btn.Location = New System.Drawing.Point(6, 454)
-        Me.wizard_btn.Name = "wizard_btn"
-        Me.wizard_btn.Size = New System.Drawing.Size(533, 23)
-        Me.wizard_btn.TabIndex = 21
-        Me.wizard_btn.Text = "Use Wizard"
-        Me.wizard_btn.UseVisualStyleBackColor = True
+        Me.trainerItemsList_lstbox.FormattingEnabled = True
+        Me.trainerItemsList_lstbox.Location = New System.Drawing.Point(6, 21)
+        Me.trainerItemsList_lstbox.Name = "trainerItemsList_lstbox"
+        Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 199)
+        Me.trainerItemsList_lstbox.TabIndex = 0
+        '
+        'trainerItemsList_btn
+        '
+        Me.trainerItemsList_btn.Location = New System.Drawing.Point(6, 223)
+        Me.trainerItemsList_btn.Name = "trainerItemsList_btn"
+        Me.trainerItemsList_btn.Size = New System.Drawing.Size(201, 23)
+        Me.trainerItemsList_btn.TabIndex = 1
+        Me.trainerItemsList_btn.Text = "Add Item"
+        Me.trainerItemsList_btn.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -4647,7 +4562,6 @@ Partial Class Form1
         Me.miscInfo_grpBox.PerformLayout()
         CType(Me.pe18_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.trainerItems_grp.ResumeLayout(False)
-        Me.trainerItems_grp.PerformLayout()
         Me.pg_POne.ResumeLayout(False)
         Me.pokemonOne_grp.ResumeLayout(False)
         Me.pokemonOne_grp.PerformLayout()
@@ -4746,14 +4660,6 @@ Partial Class Form1
     Friend WithEvents numPoké_cmb As ComboBox
     Friend WithEvents trainerUsesItems_chkBox As CheckBox
     Friend WithEvents trainerItems_grp As GroupBox
-    Friend WithEvents itemEight_txtBox As TextBox
-    Friend WithEvents itemSeven_txtBox As TextBox
-    Friend WithEvents itemSix_txtBox As TextBox
-    Friend WithEvents itemFive_txtBox As TextBox
-    Friend WithEvents itemFour_txtBox As TextBox
-    Friend WithEvents itemThree_txtBox As TextBox
-    Friend WithEvents itemTwo_txtBox As TextBox
-    Friend WithEvents itemOne_txtBox As TextBox
     Friend WithEvents trainerType_lbl As Label
     Friend WithEvents trainerType_txtBox As TextBox
     Friend WithEvents battleTeamID_lbl As Label
@@ -5140,9 +5046,6 @@ Partial Class Form1
     Friend WithEvents pokemonFiveIVsDEF_lbl As Label
     Friend WithEvents miscInfo_grpBox As GroupBox
     Friend WithEvents customBallIDs_chkBox As CheckBox
-    Friend WithEvents trainers_txt_browse_btn As Button
-    Friend WithEvents trainers_txt_txt As TextBox
-    Friend WithEvents trainers_txt_lbl As Label
     Friend WithEvents trainer_txt_file_dialog As OpenFileDialog
     Friend WithEvents save_to_trainers_btn As Button
     Friend WithEvents clearInputs_btn As Button
@@ -5150,4 +5053,6 @@ Partial Class Form1
     Friend WithEvents internalBallNames_chk As CheckBox
     Friend WithEvents Timer1 As Windows.Forms.Timer
     Friend WithEvents wizard_btn As Button
+    Friend WithEvents trainerItemsList_btn As Button
+    Friend WithEvents trainerItemsList_lstbox As ListBox
 End Class

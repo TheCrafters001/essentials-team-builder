@@ -16,14 +16,7 @@
             Form1.existingBattle_chkBox.Checked = False
             Form1.customBallIDs_chkBox.Checked = False
             Form1.trainerUsesItems_chkBox.Checked = False
-            Form1.itemOne_txtBox.Text = ""
-            Form1.itemTwo_txtBox.Text = ""
-            Form1.itemThree_txtBox.Text = ""
-            Form1.itemFour_txtBox.Text = ""
-            Form1.itemFive_txtBox.Text = ""
-            Form1.itemSix_txtBox.Text = ""
-            Form1.itemSeven_txtBox.Text = ""
-            Form1.itemEight_txtBox.Text = ""
+            Form1.trainerItemsList_lstbox.Items.Clear()
 
             ' Pokemon One
             Form1.pokemonOneName_txtBox.Text = ""
