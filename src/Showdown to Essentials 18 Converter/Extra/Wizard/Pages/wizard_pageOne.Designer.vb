@@ -91,7 +91,7 @@ Partial Class wizard_pageOne
         '
         Me.trainerType_lbl.AutoSize = True
         Me.trainerType_lbl.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.trainerType_lbl.Location = New System.Drawing.Point(12, 97)
+        Me.trainerType_lbl.Location = New System.Drawing.Point(12, 110)
         Me.trainerType_lbl.Name = "trainerType_lbl"
         Me.trainerType_lbl.Size = New System.Drawing.Size(68, 13)
         Me.trainerType_lbl.TabIndex = 11
@@ -99,10 +99,10 @@ Partial Class wizard_pageOne
         '
         'trainerType_txtBox
         '
-        Me.trainerType_txtBox.Location = New System.Drawing.Point(89, 94)
+        Me.trainerType_txtBox.Location = New System.Drawing.Point(12, 126)
         Me.trainerType_txtBox.MaxLength = 25
         Me.trainerType_txtBox.Name = "trainerType_txtBox"
-        Me.trainerType_txtBox.Size = New System.Drawing.Size(334, 20)
+        Me.trainerType_txtBox.Size = New System.Drawing.Size(411, 20)
         Me.trainerType_txtBox.TabIndex = 10
         '
         'trainerName_lbl
@@ -116,15 +116,15 @@ Partial Class wizard_pageOne
         '
         'trainerName_txtBox
         '
-        Me.trainerName_txtBox.Location = New System.Drawing.Point(89, 68)
+        Me.trainerName_txtBox.Location = New System.Drawing.Point(12, 87)
         Me.trainerName_txtBox.MaxLength = 25
         Me.trainerName_txtBox.Name = "trainerName_txtBox"
-        Me.trainerName_txtBox.Size = New System.Drawing.Size(334, 20)
+        Me.trainerName_txtBox.Size = New System.Drawing.Size(411, 20)
         Me.trainerName_txtBox.TabIndex = 8
         '
         'existingBattle_chkBox
         '
-        Me.existingBattle_chkBox.Location = New System.Drawing.Point(12, 120)
+        Me.existingBattle_chkBox.Location = New System.Drawing.Point(12, 152)
         Me.existingBattle_chkBox.Name = "existingBattle_chkBox"
         Me.existingBattle_chkBox.Size = New System.Drawing.Size(411, 30)
         Me.existingBattle_chkBox.TabIndex = 12
