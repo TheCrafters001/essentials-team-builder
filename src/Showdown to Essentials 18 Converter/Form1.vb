@@ -44,7 +44,10 @@ Public Class Form1
                 My.Computer.FileSystem.WriteAllText(trainer_txt_file_dialog.FileName, vbCrLf & outputBox_rchBox.Text, True)
             End If
         Catch ex As Exception
+            Darkness = True
             MessageBox.Show("Something went wrong. The error details will now be displayed." & vbCrLf & vbCrLf & ex.ToString)
+        Finally
+            Darkness = False
         End Try
     End Sub
 
@@ -53,18 +56,23 @@ Public Class Form1
     End Sub
 
     Private Sub trainerItemsList_btn_Click(sender As Object, e As EventArgs) Handles trainerItemsList_btn.Click
-        ' Create Input Box
-        Dim input As String = InputBox("Please enter an item you want this trainer to use", "Add Item", "Potion")
-        ' Once they hit okay, then add item
-        If input = "" Then
-            MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Else
-            If trainerItemsList_lstbox.Items.Count = 8 Then
-                MessageBox.Show("You cannot add more than 8 items.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Try
+            Darkness = True
+            ' Create Input Box
+            Dim input As String = InputBox("Please enter an item you want this trainer to use", "Add Item", "Potion")
+            ' Once they hit okay, then add item
+            If input = "" Then
+                MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
-                trainerItemsList_lstbox.Items.Add(input)
+                If trainerItemsList_lstbox.Items.Count = 8 Then
+                    MessageBox.Show("You cannot add more than 8 items.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    trainerItemsList_lstbox.Items.Add(input)
+                End If
             End If
-        End If
+        Finally
+            Darkness = False
+        End Try
     End Sub
 
     Private Sub wizard_btn_Click(sender As Object, e As EventArgs) Handles wizard_btn.Click
@@ -176,11 +184,47 @@ Public Class Form1
     End Sub
 #End Region
 
+#Region "Popup Window Handeler"
+
+    ' Credit: Kratz - Stack Overflow
+    ' https://stackoverflow.com/a/12865938/7799766
+
+    Private _PB As PictureBox
+
+    Public WriteOnly Property Darkness
+        Set(value)
+            If value Then
+                Dim Bmp = New Bitmap(Bounds.Size.Width, Bounds.Size.Height)
+                Me.DrawToBitmap(Bmp, New Rectangle(Point.Empty, Bounds.Size))
+                Using g = Graphics.FromImage(Bmp)
+                    Dim Brush As New SolidBrush(Color.FromArgb(125, Color.Black))
+                    g.FillRectangle(Brush, New Rectangle(Point.Empty, Bmp.Size))
+                End Using
+                _PB = New PictureBox
+                Me.Controls.Add(_PB)
+                _PB.Size = Bounds.Size
+                _PB.Location = Bounds.Location - PointToScreen(Point.Empty)
+                _PB.Image = Bmp
+                _PB.BringToFront()
+            Else
+                If _PB IsNot Nothing Then
+                    Me.Controls.Remove(_PB)
+                    _PB.Dispose()
+                End If
+            End If
+        End Set
+    End Property
+#End Region
+
     Private Sub thirdPartyLicenses_lnk_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles thirdPartyLicenses_lnk.LinkClicked
         ThirdPartyLicenses.Show()
     End Sub
 
     Private Sub numPoké_cmb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles numPoké_cmb.SelectedIndexChanged
         pageEnabler.Enabler()
+    End Sub
+
+    Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs) Handles trainerItemsList_lstbox.DoubleClick
+        trainerItemsList_lstbox.Items.Remove(trainerItemsList_lstbox.SelectedItem)
     End Sub
 End Class

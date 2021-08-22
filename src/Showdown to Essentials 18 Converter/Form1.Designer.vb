@@ -724,6 +724,7 @@ Partial Class Form1
         'battleTeamID_lbl
         '
         Me.battleTeamID_lbl.AutoSize = True
+        Me.battleTeamID_lbl.Enabled = False
         Me.battleTeamID_lbl.Location = New System.Drawing.Point(6, 197)
         Me.battleTeamID_lbl.Name = "battleTeamID_lbl"
         Me.battleTeamID_lbl.Size = New System.Drawing.Size(182, 13)
@@ -732,6 +733,7 @@ Partial Class Form1
         '
         'battleTeamID_txtBox
         '
+        Me.battleTeamID_txtBox.Enabled = False
         Me.battleTeamID_txtBox.Location = New System.Drawing.Point(6, 213)
         Me.battleTeamID_txtBox.MaxLength = 25
         Me.battleTeamID_txtBox.Name = "battleTeamID_txtBox"
