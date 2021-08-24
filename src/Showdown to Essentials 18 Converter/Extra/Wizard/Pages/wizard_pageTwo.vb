@@ -5,6 +5,7 @@ Public Class wizard_pageTwo
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
         Me.DialogResult = System.Windows.Forms.DialogResult.OK
         Form1.numPoké_cmb.SelectedIndex = Me.numPoké_cmb.SelectedIndex
+        wizard_pageThree.Show()
         Me.Close()
     End Sub
 

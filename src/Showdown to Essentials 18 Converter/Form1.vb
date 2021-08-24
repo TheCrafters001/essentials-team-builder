@@ -67,7 +67,7 @@ Public Class Form1
                 If trainerItemsList_lstbox.Items.Count = 8 Then
                     MessageBox.Show("You cannot add more than 8 items.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else
-                    trainerItemsList_lstbox.Items.Add(input)
+                    trainerItemsList_lstbox.Items.Add(input.ToUpper)
                 End If
             End If
         Finally
