@@ -22,20 +22,27 @@ Public Class Form1
     End Sub
 
     Private Sub example_btn_Click(sender As Object, e As EventArgs) Handles example_btn.Click
-        trainerName_txtBox.Text = "Trainer"
-        trainerType_txtBox.Text = "Rival"
-        loseText_txt.Text = "You beat me?!"
-        numPoké_cmb.SelectedIndex = 0
-        trainerUsesItems_chkBox.Checked = True
-        trainerItemsList_lstbox.Items.Clear()
-        trainerItemsList_lstbox.Items.Add("potion")
-        pokemonOneName_txtBox.Text = "Koffing"
-        pokemonOneMove1_txtBox.Text = "PoisonGas"
-        pokemonOneMove2_txtBox.Text = "Tackle"
-        pokemonOneMove3_txtBox.Text = "smoG"
-        pokemonOneGender_cmb.SelectedIndex = 0
-        pokemonOneNickName_txtBox.Text = "Gonzalos"
-        pokemonOneLvl_txtBox.Text = "5"
+        Darkness = True
+        Dim DiagRes As DialogResult = MessageBox.Show("Are you sure you want to use the example? It will override any changed you have already made.", "Are you sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2)
+        If DiagRes = DialogResult.Yes Then
+            trainerName_txtBox.Text = "Trainer"
+            trainerType_txtBox.Text = "Rival"
+            loseText_txt.Text = "You beat me?!"
+            numPoké_cmb.SelectedIndex = 0
+            trainerUsesItems_chkBox.Checked = True
+            trainerItemsList_lstbox.Items.Clear()
+            trainerItemsList_lstbox.Items.Add("potion")
+            pokemonOneName_txtBox.Text = "Koffing"
+            pokemonOneMove1_txtBox.Text = "PoisonGas"
+            pokemonOneMove2_txtBox.Text = "Tackle"
+            pokemonOneMove3_txtBox.Text = "smoG"
+            pokemonOneGender_cmb.SelectedIndex = 0
+            pokemonOneNickName_txtBox.Text = "Gonzalos"
+            pokemonOneLvl_txtBox.Text = "5"
+        ElseIf DiagRes = DialogResult.No Then
+            'Do Nothing
+        End If
+        Darkness = False
     End Sub
 
     Private Sub save_to_trainers_btn_Click(sender As Object, e As EventArgs) Handles save_to_trainers_btn.Click
