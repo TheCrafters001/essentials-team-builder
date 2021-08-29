@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Showdown to Essnetials Converter"
-#define MyAppVersion "2.6.0.0"
+#define MyAppVersion "2.6.3.0"
 #define MyAppPublisher "TheCrafters001"
 #define MyAppURL "http://thecrafters001.github.io/"
 #define MyAppExeName "Launcher.exe"
@@ -76,3 +76,6 @@ Name: "launcher\seventeen_component"; Description: "Showdown to Essentials 17 Co
 
 [Messages]
 english.StatusExtractFiles=Copying Files...
+english.WelcomeLabel1=Thank you for downloading [name]!
+english.WelcomeLabel2=Thank you for downloading [name/ver]! This wizard will guide you through the steps of getting [name] installed on your computer!%n%nIt is recommended that you close all other applications before continuing.
+english.FinishedLabel=Again, thank you for downloading [name]! You can now start [name] by using the installed shortcuts!
