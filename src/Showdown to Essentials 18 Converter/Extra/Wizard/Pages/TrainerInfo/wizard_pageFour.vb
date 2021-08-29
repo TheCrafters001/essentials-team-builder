@@ -5,6 +5,7 @@ Public Class wizard_pageFour
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
         Me.DialogResult = System.Windows.Forms.DialogResult.OK
         Form1.loseText_txt.Text = Me.loseText_txt.Text
+        wizard_specialPage_allTrainerInfo.Show()
         Me.Close()
     End Sub
 

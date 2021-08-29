@@ -97,28 +97,28 @@
     <Compile Include="Extra\ThirdPartyLicenses.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Extra\Wizard\Pages\wizard_pageFour.Designer.vb">
+    <Compile Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageFour.Designer.vb">
       <DependentUpon>wizard_pageFour.vb</DependentUpon>
     </Compile>
-    <Compile Include="Extra\Wizard\Pages\wizard_pageFour.vb">
+    <Compile Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageFour.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Extra\Wizard\Pages\wizard_pageOne.Designer.vb">
+    <Compile Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageOne.Designer.vb">
       <DependentUpon>wizard_pageOne.vb</DependentUpon>
     </Compile>
-    <Compile Include="Extra\Wizard\Pages\wizard_pageOne.vb">
+    <Compile Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageOne.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Extra\Wizard\Pages\wizard_pageThree.Designer.vb">
+    <Compile Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageThree.Designer.vb">
       <DependentUpon>wizard_pageThree.vb</DependentUpon>
     </Compile>
-    <Compile Include="Extra\Wizard\Pages\wizard_pageThree.vb">
+    <Compile Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageThree.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Extra\Wizard\Pages\wizard_pageTwo.Designer.vb">
+    <Compile Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageTwo.Designer.vb">
       <DependentUpon>wizard_pageTwo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Extra\Wizard\Pages\wizard_pageTwo.vb">
+    <Compile Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageTwo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Extra\Wizard\special pages\wizard_specialPage_allTrainerInfo.Designer.vb">
@@ -179,16 +179,16 @@
     <EmbeddedResource Include="Extra\ThirdPartyLicenses.resx">
       <DependentUpon>ThirdPartyLicenses.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Extra\Wizard\Pages\wizard_pageFour.resx">
+    <EmbeddedResource Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageFour.resx">
       <DependentUpon>wizard_pageFour.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Extra\Wizard\Pages\wizard_pageOne.resx">
+    <EmbeddedResource Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageOne.resx">
       <DependentUpon>wizard_pageOne.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Extra\Wizard\Pages\wizard_pageThree.resx">
+    <EmbeddedResource Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageThree.resx">
       <DependentUpon>wizard_pageThree.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Extra\Wizard\Pages\wizard_pageTwo.resx">
+    <EmbeddedResource Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageTwo.resx">
       <DependentUpon>wizard_pageTwo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Extra\Wizard\special pages\wizard_specialPage_allTrainerInfo.resx">

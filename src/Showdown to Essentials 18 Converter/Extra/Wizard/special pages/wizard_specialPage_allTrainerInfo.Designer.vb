@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class wizard_specialPage_allTrainerInfo
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class wizard_specialPage_allTrainerInfo
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.wizardDescription_lbl = New System.Windows.Forms.Label()
         Me.wizardTitle_txt = New System.Windows.Forms.Label()
@@ -30,7 +30,8 @@ Partial Class wizard_specialPage_allTrainerInfo
         Me.trainerName_lbl = New System.Windows.Forms.Label()
         Me.trainerClass_lbl = New System.Windows.Forms.Label()
         Me.trainerExisting_lbl = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.trainerUsesItems_lbl = New System.Windows.Forms.Label()
+        Me.numOfPoké_lbl = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -74,7 +75,7 @@ Partial Class wizard_specialPage_allTrainerInfo
         Me.OK_Button.Name = "OK_Button"
         Me.OK_Button.Size = New System.Drawing.Size(67, 23)
         Me.OK_Button.TabIndex = 0
-        Me.OK_Button.Text = "Next"
+        Me.OK_Button.Text = "Finish"
         '
         'Cancel_Button
         '
@@ -110,20 +111,29 @@ Partial Class wizard_specialPage_allTrainerInfo
         Me.trainerExisting_lbl.TabIndex = 25
         Me.trainerExisting_lbl.Text = "Trainer has Existing Battle: Y/N"
         '
-        'Label1
+        'trainerUsesItems_lbl
         '
-        Me.Label1.Location = New System.Drawing.Point(12, 105)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(195, 13)
-        Me.Label1.TabIndex = 26
-        Me.Label1.Text = "This trainer uses items: Y/N"
+        Me.trainerUsesItems_lbl.Location = New System.Drawing.Point(12, 105)
+        Me.trainerUsesItems_lbl.Name = "trainerUsesItems_lbl"
+        Me.trainerUsesItems_lbl.Size = New System.Drawing.Size(195, 13)
+        Me.trainerUsesItems_lbl.TabIndex = 26
+        Me.trainerUsesItems_lbl.Text = "This trainer uses items: Y/N"
+        '
+        'numOfPoké_lbl
+        '
+        Me.numOfPoké_lbl.Location = New System.Drawing.Point(12, 118)
+        Me.numOfPoké_lbl.Name = "numOfPoké_lbl"
+        Me.numOfPoké_lbl.Size = New System.Drawing.Size(195, 13)
+        Me.numOfPoké_lbl.TabIndex = 27
+        Me.numOfPoké_lbl.Text = "Number of Pokémon: {0}"
         '
         'wizard_specialPage_allTrainerInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(435, 315)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.numOfPoké_lbl)
+        Me.Controls.Add(Me.trainerUsesItems_lbl)
         Me.Controls.Add(Me.trainerExisting_lbl)
         Me.Controls.Add(Me.trainerClass_lbl)
         Me.Controls.Add(Me.trainerName_lbl)
@@ -135,7 +145,7 @@ Partial Class wizard_specialPage_allTrainerInfo
         Me.MinimizeBox = False
         Me.Name = "wizard_specialPage_allTrainerInfo"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Trainer Information"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -150,5 +160,6 @@ Partial Class wizard_specialPage_allTrainerInfo
     Friend WithEvents trainerName_lbl As Label
     Friend WithEvents trainerClass_lbl As Label
     Friend WithEvents trainerExisting_lbl As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents trainerUsesItems_lbl As Label
+    Friend WithEvents numOfPoké_lbl As Label
 End Class

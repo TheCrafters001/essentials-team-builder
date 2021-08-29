@@ -64,4 +64,8 @@ Public Class wizard_pageThree
             Form1.Darkness = False
         End Try
     End Sub
+
+    Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs) Handles trainerItemsList_lstbox.DoubleClick
+        trainerItemsList_lstbox.Items.Remove(trainerItemsList_lstbox.SelectedItem)
+    End Sub
 End Class

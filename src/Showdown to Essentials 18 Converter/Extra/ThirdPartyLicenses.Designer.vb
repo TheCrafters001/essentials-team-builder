@@ -46,6 +46,7 @@ Partial Class ThirdPartyLicenses
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ThirdPartyLicenses"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "3rd-Party Licenses"
         Me.ResumeLayout(False)
 

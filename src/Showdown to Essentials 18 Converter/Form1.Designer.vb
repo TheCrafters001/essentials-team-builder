@@ -426,6 +426,7 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
+        Me.third_partyLicenses_lnk = New System.Windows.Forms.LinkLabel()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -537,7 +538,7 @@ Partial Class Form1
         Me.wizard_btn.Name = "wizard_btn"
         Me.wizard_btn.Size = New System.Drawing.Size(533, 23)
         Me.wizard_btn.TabIndex = 21
-        Me.wizard_btn.Text = "Use Wizard"
+        Me.wizard_btn.Text = "Use Wizard (Experimental)"
         Me.wizard_btn.UseVisualStyleBackColor = True
         '
         'clearInputs_btn
@@ -4455,6 +4456,7 @@ Partial Class Form1
         '
         'pg_About
         '
+        Me.pg_About.Controls.Add(Me.third_partyLicenses_lnk)
         Me.pg_About.Controls.Add(Me.thirdPartyLicenses_lnk)
         Me.pg_About.Controls.Add(Me.aboutText_lbl)
         Me.pg_About.Controls.Add(Me.gnuGPL3_picBox)
@@ -4537,6 +4539,16 @@ Partial Class Form1
         '
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
+        '
+        'third_partyLicenses_lnk
+        '
+        Me.third_partyLicenses_lnk.AutoSize = True
+        Me.third_partyLicenses_lnk.Location = New System.Drawing.Point(3, 498)
+        Me.third_partyLicenses_lnk.Name = "third_partyLicenses_lnk"
+        Me.third_partyLicenses_lnk.Size = New System.Drawing.Size(108, 13)
+        Me.third_partyLicenses_lnk.TabIndex = 11
+        Me.third_partyLicenses_lnk.TabStop = True
+        Me.third_partyLicenses_lnk.Text = "Third-Party Licenses"
         '
         'Form1
         '
@@ -5051,4 +5063,5 @@ Partial Class Form1
     Friend WithEvents wizard_btn As Button
     Friend WithEvents trainerItemsList_btn As Button
     Friend WithEvents trainerItemsList_lstbox As ListBox
+    Friend WithEvents third_partyLicenses_lnk As LinkLabel
 End Class
