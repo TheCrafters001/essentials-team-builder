@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports AutoUpdaterDotNET
+
+Public Class Form1
     Private Sub exit_btn_Click(sender As Object, e As EventArgs) Handles exit_btn.Click
         Application.Exit()
     End Sub
@@ -11,10 +13,31 @@
             convertersList.Items.Add("Showdown to Essentials 17 Converter")
         End If
         launchSelected_btn.Enabled = False
+
+        ' Check for Updates
+#If DEBUG Then
+        AutoUpdater.ShowSkipButton = True
+        AutoUpdater.ShowRemindLaterButton = True
+        AutoUpdater.ReportErrors = False
+        AutoUpdater.RunUpdateAsAdmin = True
+        AutoUpdater.LetUserSelectRemindLater = True
+        AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "Temp\StEC-Update-Temp\"
+        AutoUpdater.UpdateFormSize = New System.Drawing.Size(800, 600)
+        AutoUpdater.Start(My.Settings.autoUpdate_preRelease)
+#Else
+        AutoUpdater.ShowSkipButton = True
+        AutoUpdater.ShowRemindLaterButton = True
+        AutoUpdater.ReportErrors = False
+        AutoUpdater.RunUpdateAsAdmin = True
+        AutoUpdater.LetUserSelectRemindLater = True
+        AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "Temp\StEC-Update-Temp\"
+        AutoUpdater.UpdateFormSize = New System.Drawing.Size(800, 600)
+        AutoUpdater.Start(My.Settings.autoUpdate_stable)
+#End If
     End Sub
 
     Private Sub convertersList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles convertersList.SelectedIndexChanged
-        If convertersList.SelectedItem = "Showdown to Essentials 18 && 19 Converter" Then
+        If convertersList.SelectedItem = "Showdown to Essentials 18 & 19 Converter" Then
             PictureBox1.Image = My.Resources.Essentials18_19Only
             convertersInfo_txt.Text = "Showdown to Essentials 18 && 19 Converter will let you convert Pokémon created in the Showdown format, and turn it into the Essentials format. This only works for Pokémon Essentials 18, 18.1, 19, and 19.1"
             launchSelected_btn.Enabled = True
