@@ -56,8 +56,8 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/TheCrafters001/showdown-to-essentials/src/autoU"& _ 
-            "pdate-Stable.xml")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/TheCrafters001/showdown-to-essentials/master/sr"& _ 
+            "c/autoUpdate-Stable.xml")>  _
         Public Property autoUpdate_stable() As String
             Get
                 Return CType(Me("autoUpdate_stable"),String)
@@ -69,8 +69,8 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/TheCrafters001/showdown-to-essentials/src/autoU"& _ 
-            "pdate-PreRelease.xml")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/TheCrafters001/showdown-to-essentials/master/sr"& _ 
+            "c/autoUpdate-PreRelease.xml")>  _
         Public Property autoUpdate_preRelease() As String
             Get
                 Return CType(Me("autoUpdate_preRelease"),String)
