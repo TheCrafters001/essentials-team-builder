@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Showdown to Essnetials Converter"
-#define MyAppVersion "2.6.3.0"
+#define MyAppVersion "2.6.4.0"
 #define MyAppPublisher "TheCrafters001"
 #define MyAppURL "http://thecrafters001.github.io/"
 #define MyAppExeName "Launcher.exe"
@@ -48,6 +48,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 Source: "..\src\Launcher\bin\Release\Launcher.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
 Source: "..\src\Launcher\bin\Release\Launcher.exe.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\AutoUpdater.NET.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
 Source: "..\src\Launcher\bin\Release\Showdown to Essentials 17 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
 Source: "..\src\Launcher\bin\Release\Showdown to Essentials 17 Converter.exe.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
 Source: "..\src\Launcher\bin\Release\Showdown to Essentials 18 & 19 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component

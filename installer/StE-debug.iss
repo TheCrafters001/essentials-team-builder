@@ -48,6 +48,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 Source: "..\src\Launcher\bin\Debug\Launcher.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
 Source: "..\src\Launcher\bin\Debug\Launcher.exe.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Debug\AutoUpdater.NET.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
 Source: "..\src\Launcher\bin\Debug\Showdown to Essentials 17 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
 Source: "..\src\Launcher\bin\Debug\Showdown to Essentials 17 Converter.exe.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
 Source: "..\src\Launcher\bin\Debug\Showdown to Essentials 18 & 19 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
