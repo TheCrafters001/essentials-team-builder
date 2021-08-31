@@ -1274,7 +1274,7 @@ Partial Class Form1
         Me.pokemonOneMoves_grp.Size = New System.Drawing.Size(312, 144)
         Me.pokemonOneMoves_grp.TabIndex = 6
         Me.pokemonOneMoves_grp.TabStop = False
-        Me.pokemonOneMoves_grp.Text = "Moves"
+        Me.pokemonOneMoves_grp.Text = "Moves (Double Click to Remove)"
         '
         'pokemonOneAddMove_btn
         '
@@ -1860,7 +1860,7 @@ Partial Class Form1
         Me.pokemonTwoMoves_grp.Size = New System.Drawing.Size(312, 144)
         Me.pokemonTwoMoves_grp.TabIndex = 31
         Me.pokemonTwoMoves_grp.TabStop = False
-        Me.pokemonTwoMoves_grp.Text = "Moves"
+        Me.pokemonTwoMoves_grp.Text = "Moves (Double Click to Remove)"
         '
         'pokemonTwoAddMove_btn
         '
@@ -2446,7 +2446,7 @@ Partial Class Form1
         Me.pokemonThreeMoves_grp.Size = New System.Drawing.Size(312, 144)
         Me.pokemonThreeMoves_grp.TabIndex = 56
         Me.pokemonThreeMoves_grp.TabStop = False
-        Me.pokemonThreeMoves_grp.Text = "Moves"
+        Me.pokemonThreeMoves_grp.Text = "Moves (Double Click to Remove)"
         '
         'pokemonThreeAddMove_btn
         '
@@ -3032,7 +3032,7 @@ Partial Class Form1
         Me.pokemonFourMoves_grp.Size = New System.Drawing.Size(312, 144)
         Me.pokemonFourMoves_grp.TabIndex = 81
         Me.pokemonFourMoves_grp.TabStop = False
-        Me.pokemonFourMoves_grp.Text = "Moves"
+        Me.pokemonFourMoves_grp.Text = "Moves (Double Click to Remove)"
         '
         'pokemonFourAddMove_btn
         '
@@ -3618,7 +3618,7 @@ Partial Class Form1
         Me.pokemonFiveMoves_grp.Size = New System.Drawing.Size(312, 144)
         Me.pokemonFiveMoves_grp.TabIndex = 106
         Me.pokemonFiveMoves_grp.TabStop = False
-        Me.pokemonFiveMoves_grp.Text = "Moves"
+        Me.pokemonFiveMoves_grp.Text = "Moves (Double Click to Remove)"
         '
         'pokemonFiveAddMove_btn
         '
@@ -4204,7 +4204,7 @@ Partial Class Form1
         Me.pokemonSixMoves_grp.Size = New System.Drawing.Size(312, 144)
         Me.pokemonSixMoves_grp.TabIndex = 131
         Me.pokemonSixMoves_grp.TabStop = False
-        Me.pokemonSixMoves_grp.Text = "Moves"
+        Me.pokemonSixMoves_grp.Text = "Moves (Double Click to Remove)"
         '
         'pokemonSixAddMove_btn
         '

@@ -31,10 +31,6 @@
     Public Shared Sub Generate()
         Dim pokemonName As String
         Dim heldItem As String
-        Dim move1 As String
-        Dim move2 As String
-        Dim move3 As String
-        Dim move4 As String
         Dim AllMoves As String
         Dim pokemonAbility As String
         Dim gender As String
@@ -48,11 +44,16 @@
         Dim shadowString As String
         Dim pokeballID As String
         Dim numPoke As Integer = Form1.numPoké_cmb.SelectedItem
+        'Trainer Items
         Dim item As Object
         Dim TrainerItems As String
+        'Pokemon Moves
+        Dim move As Object
         Dim output As String
 #Region "Trainer"
 
+        ' Item Handler
+        ' ========================
         ' This took me longer than I would like to admit to make.
         ' Thanks to Mary on Stack Overflow for the help
         ' https://stackoverflow.com/a/68794434/7799766
@@ -124,11 +125,20 @@
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
 
-                move1 = Form1.pokemonOneMove1_txtBox.Text.ToUpper
-                move2 = Form1.pokemonOneMove2_txtBox.Text.ToUpper
-                move3 = Form1.pokemonOneMove3_txtBox.Text.ToUpper
-                move4 = Form1.pokemonOneMove4_txtBox.Text.ToUpper
-                AllMoves = "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf
+                ' Move Handler
+                For Each move In Form1.pokemonOneMoves_lst.Items
+                    AllMoves &= move.ToString.ToUpper & ","
+                Next
+
+                If Form1.pokemonOneMoves_lst.Items.Count = 0 Then
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonOneName_txtBox.Text.ToUpper & " (Pokemon 1).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Else
+                    AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
+                End If
+
+                'Take all moves, and turn it into the move format
+                AllMoves = "    Moves = " & AllMoves & vbCrLf
+
                 pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
                 If Form1.pokemonOneNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
@@ -181,11 +191,20 @@
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
 
-                move1 = Form1.pokemonTwoMove1_txtBox.Text.ToUpper
-                move2 = Form1.pokemonTwoMove2_txtBox.Text.ToUpper
-                move3 = Form1.pokemonTwoMove3_txtBox.Text.ToUpper
-                move4 = Form1.pokemonTwoMove4_txtBox.Text.ToUpper
-                AllMoves = "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf
+                ' Move Handler
+                For Each move In Form1.pokemonTwoMoves_lst.Items
+                    AllMoves &= move.ToString.ToUpper & ","
+                Next
+
+                If Form1.pokemonTwoMoves_lst.Items.Count = 0 Then
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonTwoName_txtBox.Text.ToUpper & " (Pokemon 2).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Else
+                    AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
+                End If
+
+                'Take all moves, and turn it into the move format
+                AllMoves = "    Moves = " & AllMoves & vbCrLf
+
                 pokemonAbility = "    Ability = " & Form1.pokemonTwoAbility_cmb.SelectedItem.ToString & vbCrLf
                 If Form1.pokemonTwoNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
@@ -238,11 +257,20 @@
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
 
-                move1 = Form1.pokemonThreeMove1_txtBox.Text.ToUpper
-                move2 = Form1.pokemonThreeMove2_txtBox.Text.ToUpper
-                move3 = Form1.pokemonThreeMove3_txtBox.Text.ToUpper
-                move4 = Form1.pokemonThreeMove4_txtBox.Text.ToUpper
-                AllMoves = "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf
+                ' Move Handler
+                For Each move In Form1.pokemonThreeMoves_lst.Items
+                    AllMoves &= move.ToString.ToUpper & ","
+                Next
+
+                If Form1.pokemonThreeMoves_lst.Items.Count = 0 Then
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonThreeName_txtBox.Text.ToUpper & " (Pokemon 3).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Else
+                    AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
+                End If
+
+                'Take all moves, and turn it into the move format
+                AllMoves = "    Moves = " & AllMoves & vbCrLf
+
                 pokemonAbility = "    Ability = " & Form1.pokemonThreeAbility_cmb.SelectedItem.ToString & vbCrLf
                 If Form1.pokemonThreeNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
@@ -295,11 +323,20 @@
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
 
-                move1 = Form1.pokemonFourMove1_txtBox.Text.ToUpper
-                move2 = Form1.pokemonFourMove2_txtBox.Text.ToUpper
-                move3 = Form1.pokemonFourMove3_txtBox.Text.ToUpper
-                move4 = Form1.pokemonFourMove4_txtBox.Text.ToUpper
-                AllMoves = "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf
+                ' Move Handler
+                For Each move In Form1.pokemonFourMoves_lst.Items
+                    AllMoves &= move.ToString.ToUpper & ","
+                Next
+
+                If Form1.pokemonFourMoves_lst.Items.Count = 0 Then
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonFourName_txtBox.Text.ToUpper & " (Pokemon 4).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Else
+                    AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
+                End If
+
+                'Take all moves, and turn it into the move format
+                AllMoves = "    Moves = " & AllMoves & vbCrLf
+
                 pokemonAbility = "    Ability = " & Form1.pokemonFourAbility_cmb.SelectedItem.ToString & vbCrLf
                 If Form1.pokemonFourNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
@@ -352,11 +389,20 @@
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
 
-                move1 = Form1.pokemonFiveMove1_txtBox.Text.ToUpper
-                move2 = Form1.pokemonFiveMove2_txtBox.Text.ToUpper
-                move3 = Form1.pokemonFiveMove3_txtBox.Text.ToUpper
-                move4 = Form1.pokemonFiveMove4_txtBox.Text.ToUpper
-                AllMoves = "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf
+                ' Move Handler
+                For Each move In Form1.pokemonFiveMoves_lst.Items
+                    AllMoves &= move.ToString.ToUpper & ","
+                Next
+
+                If Form1.pokemonFiveMoves_lst.Items.Count = 0 Then
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonFiveName_txtBox.Text.ToUpper & " (Pokemon 5).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Else
+                    AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
+                End If
+
+                'Take all moves, and turn it into the move format
+                AllMoves = "    Moves = " & AllMoves & vbCrLf
+
                 pokemonAbility = "    Ability = " & Form1.pokemonFiveAbility_cmb.SelectedItem.ToString & vbCrLf
                 If Form1.pokemonFiveNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
@@ -409,11 +455,20 @@
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
 
-                move1 = Form1.pokemonSixMove1_txtBox.Text.ToUpper
-                move2 = Form1.pokemonSixMove2_txtBox.Text.ToUpper
-                move3 = Form1.pokemonSixMove3_txtBox.Text.ToUpper
-                move4 = Form1.pokemonSixMove4_txtBox.Text.ToUpper
-                AllMoves = "    Moves = " & move1 & "," & move2 & "," & move3 & "," & move4 & vbCrLf
+                ' Move Handler
+                For Each move In Form1.pokemonSixMoves_lst.Items
+                    AllMoves &= move.ToString.ToUpper & ","
+                Next
+
+                If Form1.pokemonSixMoves_lst.Items.Count = 0 Then
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonSixName_txtBox.Text.ToUpper & " (Pokemon 6).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Else
+                    AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
+                End If
+
+                'Take all moves, and turn it into the move format
+                AllMoves = "    Moves = " & AllMoves & vbCrLf
+
                 pokemonAbility = "    Ability = " & Form1.pokemonSixAbility_cmb.SelectedItem.ToString & vbCrLf
                 If Form1.pokemonSixNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""

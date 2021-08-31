@@ -104,10 +104,6 @@ Partial Class Form1
         Me.pokemonTwoNature_lbl = New System.Windows.Forms.Label()
         Me.pokemonTwoNature_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonTwoMoves_grp = New System.Windows.Forms.GroupBox()
-        Me.pokemonTwoMove4_TextBox = New System.Windows.Forms.TextBox()
-        Me.pokemonTwoMove3_TextBox = New System.Windows.Forms.TextBox()
-        Me.pokemonTwoMove2_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonTwoMove1_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonTwoGender_lbl = New System.Windows.Forms.Label()
         Me.pokemonTwoGender_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonTwoHeldItem_txtBox = New System.Windows.Forms.TextBox()
@@ -139,11 +135,6 @@ Partial Class Form1
         Me.pokemonThreeIVs_lbl = New System.Windows.Forms.Label()
         Me.pokemonThreeNature = New System.Windows.Forms.Label()
         Me.pokemonThreeNature_cmb = New System.Windows.Forms.ComboBox()
-        Me.pokemonThreeMoves_grp = New System.Windows.Forms.GroupBox()
-        Me.pokemonThreeMove4_textBox = New System.Windows.Forms.TextBox()
-        Me.pokemonThreeMove3_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonThreeMove2_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonThreeMove1_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonThreeGender_lbl = New System.Windows.Forms.Label()
         Me.pokemonThreeGender_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonThreeHeldItem_txtBox = New System.Windows.Forms.TextBox()
@@ -175,11 +166,6 @@ Partial Class Form1
         Me.pokemonFourIVs_lbl = New System.Windows.Forms.Label()
         Me.pokemonFourNature_lbl = New System.Windows.Forms.Label()
         Me.pokemonFourNature_cmb = New System.Windows.Forms.ComboBox()
-        Me.pokemonFourMoves_grp = New System.Windows.Forms.GroupBox()
-        Me.pokemonFourMove4_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonFourMove3_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonFourMove2_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonFourMove1_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonFourGender_lbl = New System.Windows.Forms.Label()
         Me.pokemonFourGender_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonFourHeldItem_txtBox = New System.Windows.Forms.TextBox()
@@ -211,11 +197,6 @@ Partial Class Form1
         Me.pokemonFiveIVs_lbl = New System.Windows.Forms.Label()
         Me.pokemonFiveNature_lbl = New System.Windows.Forms.Label()
         Me.pokemonFiveNature_cmb = New System.Windows.Forms.ComboBox()
-        Me.pokemonFiveMoves_grp = New System.Windows.Forms.GroupBox()
-        Me.pokemonFiveMove4_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonFiveMove3_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonFiveMove2_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonFiveMove1_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonFiveGender_lbl = New System.Windows.Forms.Label()
         Me.pokemonFiveGender_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonFiveHeldItem_txtBox = New System.Windows.Forms.TextBox()
@@ -247,11 +228,6 @@ Partial Class Form1
         Me.pokemonSixIVs_lbl = New System.Windows.Forms.Label()
         Me.pokemonSixNature_lbl = New System.Windows.Forms.Label()
         Me.pokemonSixNature_cmb = New System.Windows.Forms.ComboBox()
-        Me.pokemonSixMoves_grp = New System.Windows.Forms.GroupBox()
-        Me.pokemonSixMove4_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonSixMove3_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonSixMove2_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonSixMove1_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonSixGender_lbl = New System.Windows.Forms.Label()
         Me.pokemonSixGender_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonSixHeldItem_txtBox = New System.Windows.Forms.TextBox()
@@ -273,6 +249,22 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
+        Me.pokemonOneAddMove_btn = New System.Windows.Forms.Button()
+        Me.pokemonOneMoves_lst = New System.Windows.Forms.ListBox()
+        Me.pokemonTwoAddMove_btn = New System.Windows.Forms.Button()
+        Me.pokemonTwoMoves_lst = New System.Windows.Forms.ListBox()
+        Me.pokemonThreeMoves_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonThreeAddMove_btn = New System.Windows.Forms.Button()
+        Me.pokemonThreeMoves_lst = New System.Windows.Forms.ListBox()
+        Me.pokemonFourMoves_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonFourAddMove_btn = New System.Windows.Forms.Button()
+        Me.pokemonFourMoves_lst = New System.Windows.Forms.ListBox()
+        Me.pokemonFiveMoves_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonFiveAddMove_btn = New System.Windows.Forms.Button()
+        Me.pokemonFiveMoves_lst = New System.Windows.Forms.ListBox()
+        Me.pokemonSixMoves_grp = New System.Windows.Forms.GroupBox()
+        Me.pokemonSixAddMove_btn = New System.Windows.Forms.Button()
+        Me.pokemonSixMoves_lst = New System.Windows.Forms.ListBox()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -282,6 +274,7 @@ Partial Class Form1
         Me.pokemonOne_grp.SuspendLayout()
         Me.pokemonOneShadow_grp.SuspendLayout()
         Me.pokemonOneShiny_grp.SuspendLayout()
+        Me.pokemonOneMoves_grp.SuspendLayout()
         Me.pg_PTwo.SuspendLayout()
         Me.pokemonTwo_grp.SuspendLayout()
         Me.pokemonTwoShadow_grp.SuspendLayout()
@@ -291,26 +284,26 @@ Partial Class Form1
         Me.pokemonThree_grp.SuspendLayout()
         Me.pokemonThreeShadow_grp.SuspendLayout()
         Me.pokemonThreeShiny_grp.SuspendLayout()
-        Me.pokemonThreeMoves_grp.SuspendLayout()
         Me.pg_PFour.SuspendLayout()
         Me.pokemonFour_grp.SuspendLayout()
         Me.pokemonFourShadow_grp.SuspendLayout()
         Me.pokemonFourShiny_grp.SuspendLayout()
-        Me.pokemonFourMoves_grp.SuspendLayout()
         Me.pg_PFive.SuspendLayout()
         Me.pokemonFive_grp.SuspendLayout()
         Me.pokemonFiveShadow_grp.SuspendLayout()
         Me.pokemonFiveShiny_grp.SuspendLayout()
-        Me.pokemonFiveMoves_grp.SuspendLayout()
         Me.pg_PSix.SuspendLayout()
         Me.pokemonSix_grp.SuspendLayout()
         Me.pokemonSixShadow_grp.SuspendLayout()
         Me.pokemonSixShiny_grp.SuspendLayout()
-        Me.pokemonSixMoves_grp.SuspendLayout()
         Me.pg_Output.SuspendLayout()
         Me.pg_About.SuspendLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pokemonThreeMoves_grp.SuspendLayout()
+        Me.pokemonFourMoves_grp.SuspendLayout()
+        Me.pokemonFiveMoves_grp.SuspendLayout()
+        Me.pokemonSixMoves_grp.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -810,12 +803,14 @@ Partial Class Form1
         '
         'pokemonOneMoves_grp
         '
+        Me.pokemonOneMoves_grp.Controls.Add(Me.pokemonOneAddMove_btn)
+        Me.pokemonOneMoves_grp.Controls.Add(Me.pokemonOneMoves_lst)
         Me.pokemonOneMoves_grp.Location = New System.Drawing.Point(9, 103)
         Me.pokemonOneMoves_grp.Name = "pokemonOneMoves_grp"
         Me.pokemonOneMoves_grp.Size = New System.Drawing.Size(312, 144)
         Me.pokemonOneMoves_grp.TabIndex = 6
         Me.pokemonOneMoves_grp.TabStop = False
-        Me.pokemonOneMoves_grp.Text = "Moves"
+        Me.pokemonOneMoves_grp.Text = "Moves (Double Click to Remove)"
         '
         'pokemonOneGender_lbl
         '
@@ -1132,44 +1127,14 @@ Partial Class Form1
         '
         'pokemonTwoMoves_grp
         '
-        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoMove4_TextBox)
-        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoMove3_TextBox)
-        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoMove2_txtBox)
-        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoMove1_txtBox)
+        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoAddMove_btn)
+        Me.pokemonTwoMoves_grp.Controls.Add(Me.pokemonTwoMoves_lst)
         Me.pokemonTwoMoves_grp.Location = New System.Drawing.Point(9, 103)
         Me.pokemonTwoMoves_grp.Name = "pokemonTwoMoves_grp"
         Me.pokemonTwoMoves_grp.Size = New System.Drawing.Size(312, 144)
         Me.pokemonTwoMoves_grp.TabIndex = 31
         Me.pokemonTwoMoves_grp.TabStop = False
-        Me.pokemonTwoMoves_grp.Text = "Moves"
-        '
-        'pokemonTwoMove4_TextBox
-        '
-        Me.pokemonTwoMove4_TextBox.Location = New System.Drawing.Point(6, 105)
-        Me.pokemonTwoMove4_TextBox.Name = "pokemonTwoMove4_TextBox"
-        Me.pokemonTwoMove4_TextBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonTwoMove4_TextBox.TabIndex = 3
-        '
-        'pokemonTwoMove3_TextBox
-        '
-        Me.pokemonTwoMove3_TextBox.Location = New System.Drawing.Point(6, 77)
-        Me.pokemonTwoMove3_TextBox.Name = "pokemonTwoMove3_TextBox"
-        Me.pokemonTwoMove3_TextBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonTwoMove3_TextBox.TabIndex = 2
-        '
-        'pokemonTwoMove2_txtBox
-        '
-        Me.pokemonTwoMove2_txtBox.Location = New System.Drawing.Point(6, 49)
-        Me.pokemonTwoMove2_txtBox.Name = "pokemonTwoMove2_txtBox"
-        Me.pokemonTwoMove2_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonTwoMove2_txtBox.TabIndex = 1
-        '
-        'pokemonTwoMove1_txtBox
-        '
-        Me.pokemonTwoMove1_txtBox.Location = New System.Drawing.Point(6, 21)
-        Me.pokemonTwoMove1_txtBox.Name = "pokemonTwoMove1_txtBox"
-        Me.pokemonTwoMove1_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonTwoMove1_txtBox.TabIndex = 0
+        Me.pokemonTwoMoves_grp.Text = "Moves (Double Click to Remove)"
         '
         'pokemonTwoGender_lbl
         '
@@ -1234,6 +1199,7 @@ Partial Class Form1
         '
         'pokemonThree_grp
         '
+        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeMoves_grp)
         Me.pokemonThree_grp.Controls.Add(Me.Label5)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_cmb)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_lbl)
@@ -1253,7 +1219,6 @@ Partial Class Form1
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeIVs_lbl)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeNature)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeNature_cmb)
-        Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeMoves_grp)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeGender_lbl)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeGender_cmb)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeHeldItem_txtBox)
@@ -1484,47 +1449,6 @@ Partial Class Form1
         Me.pokemonThreeNature_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonThreeNature_cmb.TabIndex = 57
         '
-        'pokemonThreeMoves_grp
-        '
-        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeMove4_textBox)
-        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeMove3_txtBox)
-        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeMove2_txtBox)
-        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeMove1_txtBox)
-        Me.pokemonThreeMoves_grp.Location = New System.Drawing.Point(9, 103)
-        Me.pokemonThreeMoves_grp.Name = "pokemonThreeMoves_grp"
-        Me.pokemonThreeMoves_grp.Size = New System.Drawing.Size(312, 144)
-        Me.pokemonThreeMoves_grp.TabIndex = 56
-        Me.pokemonThreeMoves_grp.TabStop = False
-        Me.pokemonThreeMoves_grp.Text = "Moves"
-        '
-        'pokemonThreeMove4_textBox
-        '
-        Me.pokemonThreeMove4_textBox.Location = New System.Drawing.Point(6, 105)
-        Me.pokemonThreeMove4_textBox.Name = "pokemonThreeMove4_textBox"
-        Me.pokemonThreeMove4_textBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonThreeMove4_textBox.TabIndex = 3
-        '
-        'pokemonThreeMove3_txtBox
-        '
-        Me.pokemonThreeMove3_txtBox.Location = New System.Drawing.Point(6, 77)
-        Me.pokemonThreeMove3_txtBox.Name = "pokemonThreeMove3_txtBox"
-        Me.pokemonThreeMove3_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonThreeMove3_txtBox.TabIndex = 2
-        '
-        'pokemonThreeMove2_txtBox
-        '
-        Me.pokemonThreeMove2_txtBox.Location = New System.Drawing.Point(6, 49)
-        Me.pokemonThreeMove2_txtBox.Name = "pokemonThreeMove2_txtBox"
-        Me.pokemonThreeMove2_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonThreeMove2_txtBox.TabIndex = 1
-        '
-        'pokemonThreeMove1_txtBox
-        '
-        Me.pokemonThreeMove1_txtBox.Location = New System.Drawing.Point(6, 21)
-        Me.pokemonThreeMove1_txtBox.Name = "pokemonThreeMove1_txtBox"
-        Me.pokemonThreeMove1_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonThreeMove1_txtBox.TabIndex = 0
-        '
         'pokemonThreeGender_lbl
         '
         Me.pokemonThreeGender_lbl.AutoSize = True
@@ -1588,6 +1512,7 @@ Partial Class Form1
         '
         'pokemonFour_grp
         '
+        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourMoves_grp)
         Me.pokemonFour_grp.Controls.Add(Me.Label6)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_cmb)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_lbl)
@@ -1607,7 +1532,6 @@ Partial Class Form1
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourIVs_lbl)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourNature_lbl)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourNature_cmb)
-        Me.pokemonFour_grp.Controls.Add(Me.pokemonFourMoves_grp)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourGender_lbl)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourGender_cmb)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourHeldItem_txtBox)
@@ -1838,47 +1762,6 @@ Partial Class Form1
         Me.pokemonFourNature_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonFourNature_cmb.TabIndex = 82
         '
-        'pokemonFourMoves_grp
-        '
-        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourMove4_txtBox)
-        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourMove3_txtBox)
-        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourMove2_txtBox)
-        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourMove1_txtBox)
-        Me.pokemonFourMoves_grp.Location = New System.Drawing.Point(9, 103)
-        Me.pokemonFourMoves_grp.Name = "pokemonFourMoves_grp"
-        Me.pokemonFourMoves_grp.Size = New System.Drawing.Size(312, 144)
-        Me.pokemonFourMoves_grp.TabIndex = 81
-        Me.pokemonFourMoves_grp.TabStop = False
-        Me.pokemonFourMoves_grp.Text = "Moves"
-        '
-        'pokemonFourMove4_txtBox
-        '
-        Me.pokemonFourMove4_txtBox.Location = New System.Drawing.Point(6, 105)
-        Me.pokemonFourMove4_txtBox.Name = "pokemonFourMove4_txtBox"
-        Me.pokemonFourMove4_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonFourMove4_txtBox.TabIndex = 3
-        '
-        'pokemonFourMove3_txtBox
-        '
-        Me.pokemonFourMove3_txtBox.Location = New System.Drawing.Point(6, 77)
-        Me.pokemonFourMove3_txtBox.Name = "pokemonFourMove3_txtBox"
-        Me.pokemonFourMove3_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonFourMove3_txtBox.TabIndex = 2
-        '
-        'pokemonFourMove2_txtBox
-        '
-        Me.pokemonFourMove2_txtBox.Location = New System.Drawing.Point(6, 49)
-        Me.pokemonFourMove2_txtBox.Name = "pokemonFourMove2_txtBox"
-        Me.pokemonFourMove2_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonFourMove2_txtBox.TabIndex = 1
-        '
-        'pokemonFourMove1_txtBox
-        '
-        Me.pokemonFourMove1_txtBox.Location = New System.Drawing.Point(6, 21)
-        Me.pokemonFourMove1_txtBox.Name = "pokemonFourMove1_txtBox"
-        Me.pokemonFourMove1_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonFourMove1_txtBox.TabIndex = 0
-        '
         'pokemonFourGender_lbl
         '
         Me.pokemonFourGender_lbl.AutoSize = True
@@ -1942,6 +1825,7 @@ Partial Class Form1
         '
         'pokemonFive_grp
         '
+        Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveMoves_grp)
         Me.pokemonFive_grp.Controls.Add(Me.Label7)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFivePokeballID_cmb)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFivePokeballID_lbl)
@@ -1961,7 +1845,6 @@ Partial Class Form1
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveIVs_lbl)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveNature_lbl)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveNature_cmb)
-        Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveMoves_grp)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveGender_lbl)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveGender_cmb)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveHeldItem_txtBox)
@@ -2192,47 +2075,6 @@ Partial Class Form1
         Me.pokemonFiveNature_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonFiveNature_cmb.TabIndex = 107
         '
-        'pokemonFiveMoves_grp
-        '
-        Me.pokemonFiveMoves_grp.Controls.Add(Me.pokemonFiveMove4_txtBox)
-        Me.pokemonFiveMoves_grp.Controls.Add(Me.pokemonFiveMove3_txtBox)
-        Me.pokemonFiveMoves_grp.Controls.Add(Me.pokemonFiveMove2_txtBox)
-        Me.pokemonFiveMoves_grp.Controls.Add(Me.pokemonFiveMove1_txtBox)
-        Me.pokemonFiveMoves_grp.Location = New System.Drawing.Point(9, 103)
-        Me.pokemonFiveMoves_grp.Name = "pokemonFiveMoves_grp"
-        Me.pokemonFiveMoves_grp.Size = New System.Drawing.Size(312, 144)
-        Me.pokemonFiveMoves_grp.TabIndex = 106
-        Me.pokemonFiveMoves_grp.TabStop = False
-        Me.pokemonFiveMoves_grp.Text = "Moves"
-        '
-        'pokemonFiveMove4_txtBox
-        '
-        Me.pokemonFiveMove4_txtBox.Location = New System.Drawing.Point(6, 105)
-        Me.pokemonFiveMove4_txtBox.Name = "pokemonFiveMove4_txtBox"
-        Me.pokemonFiveMove4_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonFiveMove4_txtBox.TabIndex = 3
-        '
-        'pokemonFiveMove3_txtBox
-        '
-        Me.pokemonFiveMove3_txtBox.Location = New System.Drawing.Point(6, 77)
-        Me.pokemonFiveMove3_txtBox.Name = "pokemonFiveMove3_txtBox"
-        Me.pokemonFiveMove3_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonFiveMove3_txtBox.TabIndex = 2
-        '
-        'pokemonFiveMove2_txtBox
-        '
-        Me.pokemonFiveMove2_txtBox.Location = New System.Drawing.Point(6, 49)
-        Me.pokemonFiveMove2_txtBox.Name = "pokemonFiveMove2_txtBox"
-        Me.pokemonFiveMove2_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonFiveMove2_txtBox.TabIndex = 1
-        '
-        'pokemonFiveMove1_txtBox
-        '
-        Me.pokemonFiveMove1_txtBox.Location = New System.Drawing.Point(6, 21)
-        Me.pokemonFiveMove1_txtBox.Name = "pokemonFiveMove1_txtBox"
-        Me.pokemonFiveMove1_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonFiveMove1_txtBox.TabIndex = 0
-        '
         'pokemonFiveGender_lbl
         '
         Me.pokemonFiveGender_lbl.AutoSize = True
@@ -2296,6 +2138,7 @@ Partial Class Form1
         '
         'pokemonSix_grp
         '
+        Me.pokemonSix_grp.Controls.Add(Me.pokemonSixMoves_grp)
         Me.pokemonSix_grp.Controls.Add(Me.Label8)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixPokeballID_cmb)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixPokeballID_lbl)
@@ -2315,7 +2158,6 @@ Partial Class Form1
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixIVs_lbl)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixNature_lbl)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixNature_cmb)
-        Me.pokemonSix_grp.Controls.Add(Me.pokemonSixMoves_grp)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixGender_lbl)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixGender_cmb)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixHeldItem_txtBox)
@@ -2546,47 +2388,6 @@ Partial Class Form1
         Me.pokemonSixNature_cmb.Size = New System.Drawing.Size(312, 21)
         Me.pokemonSixNature_cmb.TabIndex = 132
         '
-        'pokemonSixMoves_grp
-        '
-        Me.pokemonSixMoves_grp.Controls.Add(Me.pokemonSixMove4_txtBox)
-        Me.pokemonSixMoves_grp.Controls.Add(Me.pokemonSixMove3_txtBox)
-        Me.pokemonSixMoves_grp.Controls.Add(Me.pokemonSixMove2_txtBox)
-        Me.pokemonSixMoves_grp.Controls.Add(Me.pokemonSixMove1_txtBox)
-        Me.pokemonSixMoves_grp.Location = New System.Drawing.Point(9, 103)
-        Me.pokemonSixMoves_grp.Name = "pokemonSixMoves_grp"
-        Me.pokemonSixMoves_grp.Size = New System.Drawing.Size(312, 144)
-        Me.pokemonSixMoves_grp.TabIndex = 131
-        Me.pokemonSixMoves_grp.TabStop = False
-        Me.pokemonSixMoves_grp.Text = "Moves"
-        '
-        'pokemonSixMove4_txtBox
-        '
-        Me.pokemonSixMove4_txtBox.Location = New System.Drawing.Point(6, 105)
-        Me.pokemonSixMove4_txtBox.Name = "pokemonSixMove4_txtBox"
-        Me.pokemonSixMove4_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonSixMove4_txtBox.TabIndex = 3
-        '
-        'pokemonSixMove3_txtBox
-        '
-        Me.pokemonSixMove3_txtBox.Location = New System.Drawing.Point(6, 77)
-        Me.pokemonSixMove3_txtBox.Name = "pokemonSixMove3_txtBox"
-        Me.pokemonSixMove3_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonSixMove3_txtBox.TabIndex = 2
-        '
-        'pokemonSixMove2_txtBox
-        '
-        Me.pokemonSixMove2_txtBox.Location = New System.Drawing.Point(6, 49)
-        Me.pokemonSixMove2_txtBox.Name = "pokemonSixMove2_txtBox"
-        Me.pokemonSixMove2_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonSixMove2_txtBox.TabIndex = 1
-        '
-        'pokemonSixMove1_txtBox
-        '
-        Me.pokemonSixMove1_txtBox.Location = New System.Drawing.Point(6, 21)
-        Me.pokemonSixMove1_txtBox.Name = "pokemonSixMove1_txtBox"
-        Me.pokemonSixMove1_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonSixMove1_txtBox.TabIndex = 0
-        '
         'pokemonSixGender_lbl
         '
         Me.pokemonSixGender_lbl.AutoSize = True
@@ -2777,6 +2578,152 @@ Partial Class Form1
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
         '
+        'pokemonOneAddMove_btn
+        '
+        Me.pokemonOneAddMove_btn.Location = New System.Drawing.Point(6, 115)
+        Me.pokemonOneAddMove_btn.Name = "pokemonOneAddMove_btn"
+        Me.pokemonOneAddMove_btn.Size = New System.Drawing.Size(300, 23)
+        Me.pokemonOneAddMove_btn.TabIndex = 4
+        Me.pokemonOneAddMove_btn.Text = "Add Item"
+        Me.pokemonOneAddMove_btn.UseVisualStyleBackColor = True
+        '
+        'pokemonOneMoves_lst
+        '
+        Me.pokemonOneMoves_lst.FormattingEnabled = True
+        Me.pokemonOneMoves_lst.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonOneMoves_lst.Name = "pokemonOneMoves_lst"
+        Me.pokemonOneMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonOneMoves_lst.TabIndex = 3
+        '
+        'pokemonTwoAddMove_btn
+        '
+        Me.pokemonTwoAddMove_btn.Location = New System.Drawing.Point(6, 115)
+        Me.pokemonTwoAddMove_btn.Name = "pokemonTwoAddMove_btn"
+        Me.pokemonTwoAddMove_btn.Size = New System.Drawing.Size(300, 23)
+        Me.pokemonTwoAddMove_btn.TabIndex = 6
+        Me.pokemonTwoAddMove_btn.Text = "Add Item"
+        Me.pokemonTwoAddMove_btn.UseVisualStyleBackColor = True
+        '
+        'pokemonTwoMoves_lst
+        '
+        Me.pokemonTwoMoves_lst.FormattingEnabled = True
+        Me.pokemonTwoMoves_lst.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonTwoMoves_lst.Name = "pokemonTwoMoves_lst"
+        Me.pokemonTwoMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonTwoMoves_lst.TabIndex = 5
+        '
+        'pokemonThreeMoves_grp
+        '
+        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeAddMove_btn)
+        Me.pokemonThreeMoves_grp.Controls.Add(Me.pokemonThreeMoves_lst)
+        Me.pokemonThreeMoves_grp.Location = New System.Drawing.Point(9, 103)
+        Me.pokemonThreeMoves_grp.Name = "pokemonThreeMoves_grp"
+        Me.pokemonThreeMoves_grp.Size = New System.Drawing.Size(312, 144)
+        Me.pokemonThreeMoves_grp.TabIndex = 75
+        Me.pokemonThreeMoves_grp.TabStop = False
+        Me.pokemonThreeMoves_grp.Text = "Moves (Double Click to Remove)"
+        '
+        'pokemonThreeAddMove_btn
+        '
+        Me.pokemonThreeAddMove_btn.Location = New System.Drawing.Point(6, 115)
+        Me.pokemonThreeAddMove_btn.Name = "pokemonThreeAddMove_btn"
+        Me.pokemonThreeAddMove_btn.Size = New System.Drawing.Size(300, 23)
+        Me.pokemonThreeAddMove_btn.TabIndex = 6
+        Me.pokemonThreeAddMove_btn.Text = "Add Item"
+        Me.pokemonThreeAddMove_btn.UseVisualStyleBackColor = True
+        '
+        'pokemonThreeMoves_lst
+        '
+        Me.pokemonThreeMoves_lst.FormattingEnabled = True
+        Me.pokemonThreeMoves_lst.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonThreeMoves_lst.Name = "pokemonThreeMoves_lst"
+        Me.pokemonThreeMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonThreeMoves_lst.TabIndex = 5
+        '
+        'pokemonFourMoves_grp
+        '
+        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourAddMove_btn)
+        Me.pokemonFourMoves_grp.Controls.Add(Me.pokemonFourMoves_lst)
+        Me.pokemonFourMoves_grp.Location = New System.Drawing.Point(9, 103)
+        Me.pokemonFourMoves_grp.Name = "pokemonFourMoves_grp"
+        Me.pokemonFourMoves_grp.Size = New System.Drawing.Size(312, 144)
+        Me.pokemonFourMoves_grp.TabIndex = 100
+        Me.pokemonFourMoves_grp.TabStop = False
+        Me.pokemonFourMoves_grp.Text = "Moves (Double Click to Remove)"
+        '
+        'pokemonFourAddMove_btn
+        '
+        Me.pokemonFourAddMove_btn.Location = New System.Drawing.Point(6, 115)
+        Me.pokemonFourAddMove_btn.Name = "pokemonFourAddMove_btn"
+        Me.pokemonFourAddMove_btn.Size = New System.Drawing.Size(300, 23)
+        Me.pokemonFourAddMove_btn.TabIndex = 8
+        Me.pokemonFourAddMove_btn.Text = "Add Item"
+        Me.pokemonFourAddMove_btn.UseVisualStyleBackColor = True
+        '
+        'pokemonFourMoves_lst
+        '
+        Me.pokemonFourMoves_lst.FormattingEnabled = True
+        Me.pokemonFourMoves_lst.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonFourMoves_lst.Name = "pokemonFourMoves_lst"
+        Me.pokemonFourMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonFourMoves_lst.TabIndex = 7
+        '
+        'pokemonFiveMoves_grp
+        '
+        Me.pokemonFiveMoves_grp.Controls.Add(Me.pokemonFiveAddMove_btn)
+        Me.pokemonFiveMoves_grp.Controls.Add(Me.pokemonFiveMoves_lst)
+        Me.pokemonFiveMoves_grp.Location = New System.Drawing.Point(9, 103)
+        Me.pokemonFiveMoves_grp.Name = "pokemonFiveMoves_grp"
+        Me.pokemonFiveMoves_grp.Size = New System.Drawing.Size(312, 144)
+        Me.pokemonFiveMoves_grp.TabIndex = 125
+        Me.pokemonFiveMoves_grp.TabStop = False
+        Me.pokemonFiveMoves_grp.Text = "Moves (Double Click to Remove)"
+        '
+        'pokemonFiveAddMove_btn
+        '
+        Me.pokemonFiveAddMove_btn.Location = New System.Drawing.Point(6, 115)
+        Me.pokemonFiveAddMove_btn.Name = "pokemonFiveAddMove_btn"
+        Me.pokemonFiveAddMove_btn.Size = New System.Drawing.Size(300, 23)
+        Me.pokemonFiveAddMove_btn.TabIndex = 10
+        Me.pokemonFiveAddMove_btn.Text = "Add Item"
+        Me.pokemonFiveAddMove_btn.UseVisualStyleBackColor = True
+        '
+        'pokemonFiveMoves_lst
+        '
+        Me.pokemonFiveMoves_lst.FormattingEnabled = True
+        Me.pokemonFiveMoves_lst.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonFiveMoves_lst.Name = "pokemonFiveMoves_lst"
+        Me.pokemonFiveMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonFiveMoves_lst.TabIndex = 9
+        '
+        'pokemonSixMoves_grp
+        '
+        Me.pokemonSixMoves_grp.Controls.Add(Me.pokemonSixAddMove_btn)
+        Me.pokemonSixMoves_grp.Controls.Add(Me.pokemonSixMoves_lst)
+        Me.pokemonSixMoves_grp.Location = New System.Drawing.Point(9, 103)
+        Me.pokemonSixMoves_grp.Name = "pokemonSixMoves_grp"
+        Me.pokemonSixMoves_grp.Size = New System.Drawing.Size(312, 144)
+        Me.pokemonSixMoves_grp.TabIndex = 150
+        Me.pokemonSixMoves_grp.TabStop = False
+        Me.pokemonSixMoves_grp.Text = "Moves (Double Click to Remove)"
+        '
+        'pokemonSixAddMove_btn
+        '
+        Me.pokemonSixAddMove_btn.Location = New System.Drawing.Point(6, 115)
+        Me.pokemonSixAddMove_btn.Name = "pokemonSixAddMove_btn"
+        Me.pokemonSixAddMove_btn.Size = New System.Drawing.Size(300, 23)
+        Me.pokemonSixAddMove_btn.TabIndex = 12
+        Me.pokemonSixAddMove_btn.Text = "Add Item"
+        Me.pokemonSixAddMove_btn.UseVisualStyleBackColor = True
+        '
+        'pokemonSixMoves_lst
+        '
+        Me.pokemonSixMoves_lst.FormattingEnabled = True
+        Me.pokemonSixMoves_lst.Location = New System.Drawing.Point(6, 21)
+        Me.pokemonSixMoves_lst.Name = "pokemonSixMoves_lst"
+        Me.pokemonSixMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonSixMoves_lst.TabIndex = 11
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2804,6 +2751,7 @@ Partial Class Form1
         Me.pokemonOneShadow_grp.PerformLayout()
         Me.pokemonOneShiny_grp.ResumeLayout(False)
         Me.pokemonOneShiny_grp.PerformLayout()
+        Me.pokemonOneMoves_grp.ResumeLayout(False)
         Me.pg_PTwo.ResumeLayout(False)
         Me.pokemonTwo_grp.ResumeLayout(False)
         Me.pokemonTwo_grp.PerformLayout()
@@ -2812,7 +2760,6 @@ Partial Class Form1
         Me.pokemonTwoShiny_grp.ResumeLayout(False)
         Me.pokemonTwoShiny_grp.PerformLayout()
         Me.pokemonTwoMoves_grp.ResumeLayout(False)
-        Me.pokemonTwoMoves_grp.PerformLayout()
         Me.pg_PThree.ResumeLayout(False)
         Me.pokemonThree_grp.ResumeLayout(False)
         Me.pokemonThree_grp.PerformLayout()
@@ -2820,8 +2767,6 @@ Partial Class Form1
         Me.pokemonThreeShadow_grp.PerformLayout()
         Me.pokemonThreeShiny_grp.ResumeLayout(False)
         Me.pokemonThreeShiny_grp.PerformLayout()
-        Me.pokemonThreeMoves_grp.ResumeLayout(False)
-        Me.pokemonThreeMoves_grp.PerformLayout()
         Me.pg_PFour.ResumeLayout(False)
         Me.pokemonFour_grp.ResumeLayout(False)
         Me.pokemonFour_grp.PerformLayout()
@@ -2829,8 +2774,6 @@ Partial Class Form1
         Me.pokemonFourShadow_grp.PerformLayout()
         Me.pokemonFourShiny_grp.ResumeLayout(False)
         Me.pokemonFourShiny_grp.PerformLayout()
-        Me.pokemonFourMoves_grp.ResumeLayout(False)
-        Me.pokemonFourMoves_grp.PerformLayout()
         Me.pg_PFive.ResumeLayout(False)
         Me.pokemonFive_grp.ResumeLayout(False)
         Me.pokemonFive_grp.PerformLayout()
@@ -2838,8 +2781,6 @@ Partial Class Form1
         Me.pokemonFiveShadow_grp.PerformLayout()
         Me.pokemonFiveShiny_grp.ResumeLayout(False)
         Me.pokemonFiveShiny_grp.PerformLayout()
-        Me.pokemonFiveMoves_grp.ResumeLayout(False)
-        Me.pokemonFiveMoves_grp.PerformLayout()
         Me.pg_PSix.ResumeLayout(False)
         Me.pokemonSix_grp.ResumeLayout(False)
         Me.pokemonSix_grp.PerformLayout()
@@ -2847,14 +2788,16 @@ Partial Class Form1
         Me.pokemonSixShadow_grp.PerformLayout()
         Me.pokemonSixShiny_grp.ResumeLayout(False)
         Me.pokemonSixShiny_grp.PerformLayout()
-        Me.pokemonSixMoves_grp.ResumeLayout(False)
-        Me.pokemonSixMoves_grp.PerformLayout()
         Me.pg_Output.ResumeLayout(False)
         Me.pg_Output.PerformLayout()
         Me.pg_About.ResumeLayout(False)
         Me.pg_About.PerformLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pokemonThreeMoves_grp.ResumeLayout(False)
+        Me.pokemonFourMoves_grp.ResumeLayout(False)
+        Me.pokemonFiveMoves_grp.ResumeLayout(False)
+        Me.pokemonSixMoves_grp.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -2949,10 +2892,6 @@ Partial Class Form1
     Friend WithEvents pokemonTwoNature_lbl As Label
     Friend WithEvents pokemonTwoNature_cmb As ComboBox
     Friend WithEvents pokemonTwoMoves_grp As GroupBox
-    Friend WithEvents pokemonTwoMove4_TextBox As TextBox
-    Friend WithEvents pokemonTwoMove3_TextBox As TextBox
-    Friend WithEvents pokemonTwoMove2_txtBox As TextBox
-    Friend WithEvents pokemonTwoMove1_txtBox As TextBox
     Friend WithEvents pokemonTwoGender_lbl As Label
     Friend WithEvents pokemonTwoGender_cmb As ComboBox
     Friend WithEvents pokemonTwoHeldItem_txtBox As TextBox
@@ -2981,11 +2920,6 @@ Partial Class Form1
     Friend WithEvents pokemonThreeIVs_lbl As Label
     Friend WithEvents pokemonThreeNature As Label
     Friend WithEvents pokemonThreeNature_cmb As ComboBox
-    Friend WithEvents pokemonThreeMoves_grp As GroupBox
-    Friend WithEvents pokemonThreeMove4_textBox As TextBox
-    Friend WithEvents pokemonThreeMove3_txtBox As TextBox
-    Friend WithEvents pokemonThreeMove2_txtBox As TextBox
-    Friend WithEvents pokemonThreeMove1_txtBox As TextBox
     Friend WithEvents pokemonThreeGender_lbl As Label
     Friend WithEvents pokemonThreeGender_cmb As ComboBox
     Friend WithEvents pokemonThreeHeldItem_txtBox As TextBox
@@ -3014,11 +2948,6 @@ Partial Class Form1
     Friend WithEvents pokemonFourIVs_lbl As Label
     Friend WithEvents pokemonFourNature_lbl As Label
     Friend WithEvents pokemonFourNature_cmb As ComboBox
-    Friend WithEvents pokemonFourMoves_grp As GroupBox
-    Friend WithEvents pokemonFourMove4_txtBox As TextBox
-    Friend WithEvents pokemonFourMove3_txtBox As TextBox
-    Friend WithEvents pokemonFourMove2_txtBox As TextBox
-    Friend WithEvents pokemonFourMove1_txtBox As TextBox
     Friend WithEvents pokemonFourGender_lbl As Label
     Friend WithEvents pokemonFourGender_cmb As ComboBox
     Friend WithEvents pokemonFourHeldItem_txtBox As TextBox
@@ -3047,11 +2976,6 @@ Partial Class Form1
     Friend WithEvents pokemonFiveIVs_lbl As Label
     Friend WithEvents pokemonFiveNature_lbl As Label
     Friend WithEvents pokemonFiveNature_cmb As ComboBox
-    Friend WithEvents pokemonFiveMoves_grp As GroupBox
-    Friend WithEvents pokemonFiveMove4_txtBox As TextBox
-    Friend WithEvents pokemonFiveMove3_txtBox As TextBox
-    Friend WithEvents pokemonFiveMove2_txtBox As TextBox
-    Friend WithEvents pokemonFiveMove1_txtBox As TextBox
     Friend WithEvents pokemonFiveGender_lbl As Label
     Friend WithEvents pokemonFiveGender_cmb As ComboBox
     Friend WithEvents pokemonFiveHeldItem_txtBox As TextBox
@@ -3080,11 +3004,6 @@ Partial Class Form1
     Friend WithEvents pokemonSixIVs_lbl As Label
     Friend WithEvents pokemonSixNature_lbl As Label
     Friend WithEvents pokemonSixNature_cmb As ComboBox
-    Friend WithEvents pokemonSixMoves_grp As GroupBox
-    Friend WithEvents pokemonSixMove4_txtBox As TextBox
-    Friend WithEvents pokemonSixMove3_txtBox As TextBox
-    Friend WithEvents pokemonSixMove2_txtBox As TextBox
-    Friend WithEvents pokemonSixMove1_txtBox As TextBox
     Friend WithEvents pokemonSixGender_lbl As Label
     Friend WithEvents pokemonSixGender_cmb As ComboBox
     Friend WithEvents pokemonSixHeldItem_txtBox As TextBox
@@ -3107,4 +3026,20 @@ Partial Class Form1
     Friend WithEvents internalBallNames_chk As CheckBox
     Friend WithEvents trainerItemsList_btn As Button
     Friend WithEvents trainerItemsList_lstbox As ListBox
+    Friend WithEvents pokemonOneAddMove_btn As Button
+    Friend WithEvents pokemonOneMoves_lst As ListBox
+    Friend WithEvents pokemonTwoAddMove_btn As Button
+    Friend WithEvents pokemonTwoMoves_lst As ListBox
+    Friend WithEvents pokemonThreeMoves_grp As GroupBox
+    Friend WithEvents pokemonThreeAddMove_btn As Button
+    Friend WithEvents pokemonThreeMoves_lst As ListBox
+    Friend WithEvents pokemonFourMoves_grp As GroupBox
+    Friend WithEvents pokemonFourAddMove_btn As Button
+    Friend WithEvents pokemonFourMoves_lst As ListBox
+    Friend WithEvents pokemonFiveMoves_grp As GroupBox
+    Friend WithEvents pokemonFiveAddMove_btn As Button
+    Friend WithEvents pokemonFiveMoves_lst As ListBox
+    Friend WithEvents pokemonSixMoves_grp As GroupBox
+    Friend WithEvents pokemonSixAddMove_btn As Button
+    Friend WithEvents pokemonSixMoves_lst As ListBox
 End Class
