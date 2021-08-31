@@ -235,7 +235,7 @@ Public Class Form1
         trainerItemsList_lstbox.Items.Remove(trainerItemsList_lstbox.SelectedItem)
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles third_partyLicenses_lnk.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles thirdPartyLicenses_lnk.LinkClicked
         ThirdPartyLicenses.Show()
     End Sub
 

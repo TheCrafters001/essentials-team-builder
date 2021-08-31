@@ -37,6 +37,8 @@ Partial Class Form1
         Me.numPoké_cmb = New System.Windows.Forms.ComboBox()
         Me.trainerUsesItems_chkBox = New System.Windows.Forms.CheckBox()
         Me.trainerItems_grp = New System.Windows.Forms.GroupBox()
+        Me.trainerItemsList_btn = New System.Windows.Forms.Button()
+        Me.trainerItemsList_lstbox = New System.Windows.Forms.ListBox()
         Me.trainerType_lbl = New System.Windows.Forms.Label()
         Me.trainerType_txtBox = New System.Windows.Forms.TextBox()
         Me.battleTeamID_lbl = New System.Windows.Forms.Label()
@@ -70,10 +72,6 @@ Partial Class Form1
         Me.pokemonOneNature_lbl = New System.Windows.Forms.Label()
         Me.pokemonOneNature_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonOneMoves_grp = New System.Windows.Forms.GroupBox()
-        Me.pokemonOneMove4_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonOneMove3_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonOneMove2_txtBox = New System.Windows.Forms.TextBox()
-        Me.pokemonOneMove1_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonOneGender_lbl = New System.Windows.Forms.Label()
         Me.pokemonOneGender_cmb = New System.Windows.Forms.ComboBox()
         Me.pokemonOneItem_txtBox = New System.Windows.Forms.TextBox()
@@ -275,8 +273,6 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
-        Me.trainerItemsList_btn = New System.Windows.Forms.Button()
-        Me.trainerItemsList_lstbox = New System.Windows.Forms.ListBox()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -286,7 +282,6 @@ Partial Class Form1
         Me.pokemonOne_grp.SuspendLayout()
         Me.pokemonOneShadow_grp.SuspendLayout()
         Me.pokemonOneShiny_grp.SuspendLayout()
-        Me.pokemonOneMoves_grp.SuspendLayout()
         Me.pg_PTwo.SuspendLayout()
         Me.pokemonTwo_grp.SuspendLayout()
         Me.pokemonTwoShadow_grp.SuspendLayout()
@@ -471,6 +466,23 @@ Partial Class Form1
         Me.trainerItems_grp.TabIndex = 8
         Me.trainerItems_grp.TabStop = False
         Me.trainerItems_grp.Text = "Items"
+        '
+        'trainerItemsList_btn
+        '
+        Me.trainerItemsList_btn.Location = New System.Drawing.Point(6, 223)
+        Me.trainerItemsList_btn.Name = "trainerItemsList_btn"
+        Me.trainerItemsList_btn.Size = New System.Drawing.Size(201, 23)
+        Me.trainerItemsList_btn.TabIndex = 3
+        Me.trainerItemsList_btn.Text = "Add Item"
+        Me.trainerItemsList_btn.UseVisualStyleBackColor = True
+        '
+        'trainerItemsList_lstbox
+        '
+        Me.trainerItemsList_lstbox.FormattingEnabled = True
+        Me.trainerItemsList_lstbox.Location = New System.Drawing.Point(6, 21)
+        Me.trainerItemsList_lstbox.Name = "trainerItemsList_lstbox"
+        Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 199)
+        Me.trainerItemsList_lstbox.TabIndex = 2
         '
         'trainerType_lbl
         '
@@ -798,44 +810,12 @@ Partial Class Form1
         '
         'pokemonOneMoves_grp
         '
-        Me.pokemonOneMoves_grp.Controls.Add(Me.pokemonOneMove4_txtBox)
-        Me.pokemonOneMoves_grp.Controls.Add(Me.pokemonOneMove3_txtBox)
-        Me.pokemonOneMoves_grp.Controls.Add(Me.pokemonOneMove2_txtBox)
-        Me.pokemonOneMoves_grp.Controls.Add(Me.pokemonOneMove1_txtBox)
         Me.pokemonOneMoves_grp.Location = New System.Drawing.Point(9, 103)
         Me.pokemonOneMoves_grp.Name = "pokemonOneMoves_grp"
         Me.pokemonOneMoves_grp.Size = New System.Drawing.Size(312, 144)
         Me.pokemonOneMoves_grp.TabIndex = 6
         Me.pokemonOneMoves_grp.TabStop = False
         Me.pokemonOneMoves_grp.Text = "Moves"
-        '
-        'pokemonOneMove4_txtBox
-        '
-        Me.pokemonOneMove4_txtBox.Location = New System.Drawing.Point(6, 105)
-        Me.pokemonOneMove4_txtBox.Name = "pokemonOneMove4_txtBox"
-        Me.pokemonOneMove4_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonOneMove4_txtBox.TabIndex = 3
-        '
-        'pokemonOneMove3_txtBox
-        '
-        Me.pokemonOneMove3_txtBox.Location = New System.Drawing.Point(6, 77)
-        Me.pokemonOneMove3_txtBox.Name = "pokemonOneMove3_txtBox"
-        Me.pokemonOneMove3_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonOneMove3_txtBox.TabIndex = 2
-        '
-        'pokemonOneMove2_txtBox
-        '
-        Me.pokemonOneMove2_txtBox.Location = New System.Drawing.Point(6, 49)
-        Me.pokemonOneMove2_txtBox.Name = "pokemonOneMove2_txtBox"
-        Me.pokemonOneMove2_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonOneMove2_txtBox.TabIndex = 1
-        '
-        'pokemonOneMove1_txtBox
-        '
-        Me.pokemonOneMove1_txtBox.Location = New System.Drawing.Point(6, 21)
-        Me.pokemonOneMove1_txtBox.Name = "pokemonOneMove1_txtBox"
-        Me.pokemonOneMove1_txtBox.Size = New System.Drawing.Size(300, 22)
-        Me.pokemonOneMove1_txtBox.TabIndex = 0
         '
         'pokemonOneGender_lbl
         '
@@ -2797,23 +2777,6 @@ Partial Class Form1
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
         '
-        'trainerItemsList_btn
-        '
-        Me.trainerItemsList_btn.Location = New System.Drawing.Point(6, 223)
-        Me.trainerItemsList_btn.Name = "trainerItemsList_btn"
-        Me.trainerItemsList_btn.Size = New System.Drawing.Size(201, 23)
-        Me.trainerItemsList_btn.TabIndex = 3
-        Me.trainerItemsList_btn.Text = "Add Item"
-        Me.trainerItemsList_btn.UseVisualStyleBackColor = True
-        '
-        'trainerItemsList_lstbox
-        '
-        Me.trainerItemsList_lstbox.FormattingEnabled = True
-        Me.trainerItemsList_lstbox.Location = New System.Drawing.Point(6, 21)
-        Me.trainerItemsList_lstbox.Name = "trainerItemsList_lstbox"
-        Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 199)
-        Me.trainerItemsList_lstbox.TabIndex = 2
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2841,8 +2804,6 @@ Partial Class Form1
         Me.pokemonOneShadow_grp.PerformLayout()
         Me.pokemonOneShiny_grp.ResumeLayout(False)
         Me.pokemonOneShiny_grp.PerformLayout()
-        Me.pokemonOneMoves_grp.ResumeLayout(False)
-        Me.pokemonOneMoves_grp.PerformLayout()
         Me.pg_PTwo.ResumeLayout(False)
         Me.pokemonTwo_grp.ResumeLayout(False)
         Me.pokemonTwo_grp.PerformLayout()
@@ -2943,10 +2904,6 @@ Partial Class Form1
     Friend WithEvents item_lbl As Label
     Friend WithEvents pokemonOneName_txtBox As TextBox
     Friend WithEvents pokemonOneMoves_grp As GroupBox
-    Friend WithEvents pokemonOneMove4_txtBox As TextBox
-    Friend WithEvents pokemonOneMove3_txtBox As TextBox
-    Friend WithEvents pokemonOneMove2_txtBox As TextBox
-    Friend WithEvents pokemonOneMove1_txtBox As TextBox
     Friend WithEvents pokemonOneNature_lbl As Label
     Friend WithEvents pokemonOneNature_cmb As ComboBox
     Friend WithEvents pokemonOneIVs_txtBox As TextBox
