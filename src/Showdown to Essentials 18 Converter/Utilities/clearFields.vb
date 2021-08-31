@@ -22,10 +22,7 @@
             Form1.pokemonOneName_txtBox.Text = ""
             Form1.pokemonOneItem_txtBox.Text = ""
             Form1.pokemonOneLvl_txtBox.Text = ""
-            Form1.pokemonOneMove1_txtBox.Text = ""
-            Form1.pokemonOneMove2_txtBox.Text = ""
-            Form1.pokemonOneMove3_txtBox.Text = ""
-            Form1.pokemonOneMove4_txtBox.Text = ""
+
             Form1.pokemonOneGender_cmb.SelectedIndex = 2
             Form1.pokemonOneNature_cmb.SelectedIndex = 0
             Form1.pokemonOneAbility_cmb.SelectedIndex = 0
@@ -52,10 +49,7 @@
             Form1.pokemonTwoName_txtBox.Text = ""
             Form1.pokemonTwoItem_txtBox.Text = ""
             Form1.pokemonTwoLvl_txtBox.Text = ""
-            Form1.pokemonTwoMove1_txtBox.Text = ""
-            Form1.pokemonTwoMove2_txtBox.Text = ""
-            Form1.pokemonTwoMove3_txtBox.Text = ""
-            Form1.pokemonTwoMove4_txtBox.Text = ""
+
             Form1.pokemonTwoGender_cmb.SelectedIndex = 2
             Form1.pokemonTwoNature_cmb.SelectedIndex = 0
             Form1.pokemonTwoAbility_cmb.SelectedIndex = 0
@@ -82,10 +76,7 @@
             Form1.pokemonThreeName_txtBox.Text = ""
             Form1.pokemonThreeItem_txtBox.Text = ""
             Form1.pokemonThreeLvl_txtBox.Text = ""
-            Form1.pokemonThreeMove1_txtBox.Text = ""
-            Form1.pokemonThreeMove2_txtBox.Text = ""
-            Form1.pokemonThreeMove3_txtBox.Text = ""
-            Form1.pokemonThreeMove4_txtBox.Text = ""
+
             Form1.pokemonThreeGender_cmb.SelectedIndex = 2
             Form1.pokemonThreeNature_cmb.SelectedIndex = 0
             Form1.pokemonThreeAbility_cmb.SelectedIndex = 0
@@ -112,10 +103,7 @@
             Form1.pokemonFourName_txtBox.Text = ""
             Form1.pokemonFourItem_txtBox.Text = ""
             Form1.pokemonFourlvl_txtBox.Text = ""
-            Form1.pokemonFourMove1_txtBox.Text = ""
-            Form1.pokemonFourMove2_txtBox.Text = ""
-            Form1.pokemonFourMove3_txtBox.Text = ""
-            Form1.pokemonFourMove4_txtBox.Text = ""
+
             Form1.pokemonFourGender_cmb.SelectedIndex = 2
             Form1.pokemonFourNature_cmb.SelectedIndex = 0
             Form1.pokemonFourAbility_cmb.SelectedIndex = 0
@@ -142,10 +130,7 @@
             Form1.pokemonFiveName_txtBox.Text = ""
             Form1.pokemonFiveItem_txtBox.Text = ""
             Form1.pokemonFivelvl_txtBox.Text = ""
-            Form1.pokemonFiveMove1_txtBox.Text = ""
-            Form1.pokemonFiveMove2_txtBox.Text = ""
-            Form1.pokemonFiveMove3_txtBox.Text = ""
-            Form1.pokemonFiveMove4_txtBox.Text = ""
+
             Form1.pokemonFiveGender_cmb.SelectedIndex = 2
             Form1.pokemonFiveNature_cmb.SelectedIndex = 0
             Form1.pokemonFiveAbility_cmb.SelectedIndex = 0
@@ -172,10 +157,7 @@
             Form1.pokemonSixName_txtBox.Text = ""
             Form1.pokemonSixItem_txtBox.Text = ""
             Form1.pokemonSixLvl_txtBox.Text = ""
-            Form1.pokemonSixMove1_txtBox.Text = ""
-            Form1.pokemonSixMove2_txtBox.Text = ""
-            Form1.pokemonSixMove3_txtBox.Text = ""
-            Form1.pokemonSixMove4_txtBox.Text = ""
+
             Form1.pokemonSixGender_cmb.SelectedIndex = 2
             Form1.pokemonSixNature_cmb.SelectedIndex = 0
             Form1.pokemonSixAbility_cmb.SelectedIndex = 0
