@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Showdown to Essnetials Converter"
-#define MyAppVersion "2.6.5.0"
+#define MyAppVersion "2.6.6.0"
 #define MyAppPublisher "TheCrafters001"
 #define MyAppURL "http://thecrafters001.github.io/"
 #define MyAppExeName "Launcher.exe"
