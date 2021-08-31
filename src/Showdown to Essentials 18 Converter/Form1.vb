@@ -191,6 +191,130 @@ Public Class Form1
     End Sub
 #End Region
 
+#Region "Add Move Handlers"
+    Private Sub pokemonOneAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonOneAddMove_btn.Click
+        Try
+            Darkness = True
+            ' Create Input Box
+            Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
+            ' Once they hit okay, then add item
+            If input = "" Then
+                MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                If pokemonOneMoves_lst.Items.Count = 4 Then
+                    MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    pokemonOneMoves_lst.Items.Add(input.ToUpper)
+                End If
+            End If
+        Finally
+            Darkness = False
+        End Try
+    End Sub
+    Private Sub pokemonTwoAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonTwoAddMove_btn.Click
+        Try
+            Darkness = True
+            ' Create Input Box
+            Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
+            ' Once they hit okay, then add item
+            If input = "" Then
+                MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                If pokemonTwoMoves_lst.Items.Count = 4 Then
+                    MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    pokemonTwoMoves_lst.Items.Add(input.ToUpper)
+                End If
+            End If
+        Finally
+            Darkness = False
+        End Try
+    End Sub
+    Private Sub pokemonThreeAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonThreeAddMove_btn.Click
+        Try
+            Darkness = True
+            ' Create Input Box
+            Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
+            ' Once they hit okay, then add item
+            If input = "" Then
+                MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                If pokemonThreeMoves_lst.Items.Count = 4 Then
+                    MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    pokemonThreeMoves_lst.Items.Add(input.ToUpper)
+                End If
+            End If
+        Finally
+            Darkness = False
+        End Try
+    End Sub
+    Private Sub pokemonFourAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonFourAddMove_btn.Click
+        Try
+            Darkness = True
+            ' Create Input Box
+            Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
+            ' Once they hit okay, then add item
+            If input = "" Then
+                MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                If pokemonFourMoves_lst.Items.Count = 4 Then
+                    MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    pokemonFourMoves_lst.Items.Add(input.ToUpper)
+                End If
+            End If
+        Finally
+            Darkness = False
+        End Try
+    End Sub
+    Private Sub pokemonFiveAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonFiveAddMove_btn.Click
+        Try
+            Darkness = True
+            ' Create Input Box
+            Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
+            ' Once they hit okay, then add item
+            If input = "" Then
+                MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                If pokemonFiveMoves_lst.Items.Count = 4 Then
+                    MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    pokemonFiveMoves_lst.Items.Add(input.ToUpper)
+                End If
+            End If
+        Finally
+            Darkness = False
+        End Try
+    End Sub
+    Private Sub pokemonSixAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonSixAddMove_btn.Click
+        Try
+            Darkness = True
+            ' Create Input Box
+            Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
+            ' Once they hit okay, then add item
+            If input = "" Then
+                MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                If pokemonSixMoves_lst.Items.Count = 4 Then
+                    MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    pokemonSixMoves_lst.Items.Add(input.ToUpper)
+                End If
+            End If
+        Finally
+            Darkness = False
+        End Try
+    End Sub
+
+#End Region
+
+#Region "Listbox DoubleClick Remover"
+    Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs) Handles trainerItemsList_lstbox.DoubleClick
+        trainerItemsList_lstbox.Items.Remove(trainerItemsList_lstbox.SelectedItem)
+    End Sub
+#End Region
+
 #Region "Popup Window Handeler"
 
     ' Credit: Kratz - Stack Overflow
@@ -231,10 +355,6 @@ Public Class Form1
         pageEnabler.Enabler()
     End Sub
 
-    Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs) Handles trainerItemsList_lstbox.DoubleClick
-        trainerItemsList_lstbox.Items.Remove(trainerItemsList_lstbox.SelectedItem)
-    End Sub
-
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles thirdPartyLicenses_lnk.LinkClicked
         ThirdPartyLicenses.Show()
     End Sub
@@ -242,4 +362,5 @@ Public Class Form1
     Private Sub gnuGPL3_picBox_Click(sender As Object, e As EventArgs) Handles gnuGPL3_picBox.Click
         Process.Start("https://www.gnu.org/licenses/gpl-3.0.html")
     End Sub
+
 End Class
