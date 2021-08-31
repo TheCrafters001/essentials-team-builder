@@ -33,9 +33,8 @@ Public Class Form1
             trainerItemsList_lstbox.Items.Clear()
             trainerItemsList_lstbox.Items.Add("potion")
             pokemonOneName_txtBox.Text = "Koffing"
-            pokemonOneMove1_txtBox.Text = "PoisonGas"
-            pokemonOneMove2_txtBox.Text = "Tackle"
-            pokemonOneMove3_txtBox.Text = "smoG"
+            pokemonOneMoves_lst.Items.Clear()
+            pokemonOneMoves_lst.Items.AddRange({"PoisonGas", "Tackle", "smoG"})
             pokemonOneGender_cmb.SelectedIndex = 0
             pokemonOneNickName_txtBox.Text = "Gonzalos"
             pokemonOneLvl_txtBox.Text = "5"

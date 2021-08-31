@@ -22,7 +22,7 @@
             Form1.pokemonOneName_txtBox.Text = ""
             Form1.pokemonOneItem_txtBox.Text = ""
             Form1.pokemonOneLvl_txtBox.Text = ""
-
+            Form1.pokemonOneMoves_lst.Items.Clear()
             Form1.pokemonOneGender_cmb.SelectedIndex = 2
             Form1.pokemonOneNature_cmb.SelectedIndex = 0
             Form1.pokemonOneAbility_cmb.SelectedIndex = 0
@@ -49,7 +49,7 @@
             Form1.pokemonTwoName_txtBox.Text = ""
             Form1.pokemonTwoItem_txtBox.Text = ""
             Form1.pokemonTwoLvl_txtBox.Text = ""
-
+            Form1.pokemonTwoMoves_lst.Items.Clear()
             Form1.pokemonTwoGender_cmb.SelectedIndex = 2
             Form1.pokemonTwoNature_cmb.SelectedIndex = 0
             Form1.pokemonTwoAbility_cmb.SelectedIndex = 0
@@ -76,7 +76,7 @@
             Form1.pokemonThreeName_txtBox.Text = ""
             Form1.pokemonThreeItem_txtBox.Text = ""
             Form1.pokemonThreeLvl_txtBox.Text = ""
-
+            Form1.pokemonThreeMoves_lst.Items.Clear()
             Form1.pokemonThreeGender_cmb.SelectedIndex = 2
             Form1.pokemonThreeNature_cmb.SelectedIndex = 0
             Form1.pokemonThreeAbility_cmb.SelectedIndex = 0
@@ -103,7 +103,7 @@
             Form1.pokemonFourName_txtBox.Text = ""
             Form1.pokemonFourItem_txtBox.Text = ""
             Form1.pokemonFourlvl_txtBox.Text = ""
-
+            Form1.pokemonFourMoves_lst.Items.Clear()
             Form1.pokemonFourGender_cmb.SelectedIndex = 2
             Form1.pokemonFourNature_cmb.SelectedIndex = 0
             Form1.pokemonFourAbility_cmb.SelectedIndex = 0
@@ -130,7 +130,7 @@
             Form1.pokemonFiveName_txtBox.Text = ""
             Form1.pokemonFiveItem_txtBox.Text = ""
             Form1.pokemonFivelvl_txtBox.Text = ""
-
+            Form1.pokemonFiveMoves_lst.Items.Clear()
             Form1.pokemonFiveGender_cmb.SelectedIndex = 2
             Form1.pokemonFiveNature_cmb.SelectedIndex = 0
             Form1.pokemonFiveAbility_cmb.SelectedIndex = 0
@@ -157,7 +157,7 @@
             Form1.pokemonSixName_txtBox.Text = ""
             Form1.pokemonSixItem_txtBox.Text = ""
             Form1.pokemonSixLvl_txtBox.Text = ""
-
+            Form1.pokemonSixMoves_lst.Items.Clear()
             Form1.pokemonSixGender_cmb.SelectedIndex = 2
             Form1.pokemonSixNature_cmb.SelectedIndex = 0
             Form1.pokemonSixAbility_cmb.SelectedIndex = 0
