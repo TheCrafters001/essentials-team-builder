@@ -312,6 +312,25 @@ Public Class Form1
     Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs) Handles trainerItemsList_lstbox.DoubleClick
         trainerItemsList_lstbox.Items.Remove(trainerItemsList_lstbox.SelectedItem)
     End Sub
+
+    Private Sub pokemonOneMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonOneMoves_lst.DoubleClick
+        pokemonOneMoves_lst.Items.Remove(pokemonOneMoves_lst.SelectedItem)
+    End Sub
+    Private Sub pokemonTwoMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonTwoMoves_lst.DoubleClick
+        pokemonTwoMoves_lst.Items.Remove(pokemonTwoMoves_lst.SelectedItem)
+    End Sub
+    Private Sub pokemonThreeMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonThreeMoves_lst.DoubleClick
+        pokemonThreeMoves_lst.Items.Remove(pokemonThreeMoves_lst.SelectedItem)
+    End Sub
+    Private Sub pokemonFourMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonFourMoves_lst.DoubleClick
+        pokemonFourMoves_lst.Items.Remove(pokemonFourMoves_lst.SelectedItem)
+    End Sub
+    Private Sub pokemonFiveMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonFiveMoves_lst.DoubleClick
+        pokemonFiveMoves_lst.Items.Remove(pokemonFiveMoves_lst.SelectedItem)
+    End Sub
+    Private Sub pokemonSixMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonSixMoves_lst.DoubleClick
+        pokemonSixMoves_lst.Items.Remove(pokemonSixMoves_lst.SelectedItem)
+    End Sub
 #End Region
 
 #Region "Popup Window Handeler"
@@ -361,5 +380,4 @@ Public Class Form1
     Private Sub gnuGPL3_picBox_Click(sender As Object, e As EventArgs) Handles gnuGPL3_picBox.Click
         Process.Start("https://www.gnu.org/licenses/gpl-3.0.html")
     End Sub
-
 End Class
