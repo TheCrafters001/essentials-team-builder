@@ -191,6 +191,11 @@
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
 
+                ' Clears everything from pokemon 1,
+                ' Then re adds it using move handler
+                move = Nothing
+                AllMoves = ""
+
                 ' Move Handler
                 For Each move In Form1.pokemonTwoMoves_lst.Items
                     AllMoves &= move.ToString.ToUpper & ","
@@ -256,6 +261,11 @@
                 ElseIf Form1.pokemonThreeShadow_rad.Checked = False And Form1.pokemonThreeShadowFalse_rad.Checked = True Then
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
+
+                ' Clears everything from pokemon 1,
+                ' Then re adds it using move handler
+                move = Nothing
+                AllMoves = ""
 
                 ' Move Handler
                 For Each move In Form1.pokemonThreeMoves_lst.Items
@@ -323,6 +333,11 @@
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
 
+                ' Clears everything from pokemon 1,
+                ' Then re adds it using move handler
+                move = Nothing
+                AllMoves = ""
+
                 ' Move Handler
                 For Each move In Form1.pokemonFourMoves_lst.Items
                     AllMoves &= move.ToString.ToUpper & ","
@@ -389,6 +404,11 @@
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
 
+                ' Clears everything from pokemon 1,
+                ' Then re adds it using move handler
+                move = Nothing
+                AllMoves = ""
+
                 ' Move Handler
                 For Each move In Form1.pokemonFiveMoves_lst.Items
                     AllMoves &= move.ToString.ToUpper & ","
@@ -454,6 +474,11 @@
                 ElseIf Form1.pokemonSixShadow_rad.Checked = False And Form1.pokemonSixShadowFalse_rad.Checked = True Then
                     shadowString = "    Shadow = no" & vbCrLf
                 End If
+
+                ' Clears everything from pokemon 1,
+                ' Then re adds it using move handler
+                move = Nothing
+                AllMoves = ""
 
                 ' Move Handler
                 For Each move In Form1.pokemonSixMoves_lst.Items
