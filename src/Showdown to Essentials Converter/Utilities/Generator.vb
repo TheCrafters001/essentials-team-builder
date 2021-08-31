@@ -19,7 +19,12 @@
         For Each item In Form1.trainerItemsList_lstbox.Items
             TrainerItems &= item.ToString.ToUpper & ","
         Next
-        TrainerItems = TrainerItems.Substring(0, TrainerItems.Length - 1)
+
+        ' If Trainer Uses Items = True
+        ' Remove comma at end, otherwise, ignore.
+        If Form1.trainerUsesItems_chkBox.Checked = True Then
+            TrainerItems = TrainerItems.Substring(0, TrainerItems.Length - 1)
+        End If
 
         Form1.outputBox_rchBox.Text = "#-------------------------------"
         If Form1.existingBattle_chkBox.Checked = True Then

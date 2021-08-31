@@ -47,8 +47,7 @@
         Dim pokemonNickname As String
         Dim shadowString As String
         Dim pokeballID As String
-        Dim numPoke As Integer
-        numPoke = Form1.numPoké_cmb.SelectedItem
+        Dim numPoke As Integer = Form1.numPoké_cmb.SelectedItem
         Dim item As Object
         Dim TrainerItems As String
         Dim output As String
@@ -60,7 +59,13 @@
         For Each item In Form1.trainerItemsList_lstbox.Items
             TrainerItems &= item.ToString.ToUpper & ","
         Next
-        TrainerItems = TrainerItems.Substring(0, TrainerItems.Length - 1)
+
+        ' If Trainer Uses Items = True
+        ' Remove comma at end, otherwise, ignore.
+        If Form1.trainerUsesItems_chkBox.Checked = True Then
+            TrainerItems = TrainerItems.Substring(0, TrainerItems.Length - 1)
+        End If
+
 
 
         Form1.outputBox_rchBox.Text = "#-------------------------------"
