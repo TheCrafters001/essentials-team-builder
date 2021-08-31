@@ -153,7 +153,7 @@
                     pokemonHappyness = "    Happiness = " & Form1.pokemonOneHappyness_txtBox.Text & vbCrLf
                 End If
                 pokeballID = "    Ball = " & Form1.pokemonOnePokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
                 Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
@@ -219,7 +219,7 @@
                     pokemonHappyness = "    Happiness = " & Form1.pokemonTwoHappyness_txtBox.Text & vbCrLf
                 End If
                 pokeballID = "    Ball = " & Form1.pokemonTwoPokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
                 Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
@@ -285,7 +285,7 @@
                     pokemonHappyness = "    Happiness = " & Form1.pokemonThreeHappyness_txtBox.Text & vbCrLf
                 End If
                 pokeballID = "    Ball = " & Form1.pokemonThreePokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
                 Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
@@ -351,7 +351,7 @@
                     pokemonHappyness = "    Happiness = " & Form1.pokemonFourHappyness_txtBox.Text & vbCrLf
                 End If
                 pokeballID = "    Ball = " & Form1.pokemonFourPokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
                 Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
@@ -417,7 +417,7 @@
                     pokemonHappyness = "    Happiness = " & Form1.pokemonFiveHappyness_txtBox.Text & vbCrLf
                 End If
                 pokeballID = "    Ball = " & Form1.pokemonFivePokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
                 Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
@@ -483,7 +483,7 @@
                     pokemonHappyness = "    Happiness = " & Form1.pokemonSixHappyness_txtBox.Text & vbCrLf
                 End If
                 pokeballID = "    Ball = " & Form1.pokemonSixPokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
                 Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
