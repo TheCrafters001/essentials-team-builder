@@ -3,6 +3,14 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Startup.Init()
         trainerItems_grp.Enabled = False
+
+        ' This program is now unsupported, some changes
+        ' were reverted, and this notice was added
+        If My.Settings.unsupportedNotice = False Then
+            MessageBox.Show("This version of Showdown to Essentials converter is no-longer supported. This message only appears one time.", "Unsupported Version", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            My.Settings.unsupportedNotice = True
+            My.Settings.Save()
+        End If
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -19,11 +27,15 @@
     End Sub
 
     Private Sub generate_btn_Click(sender As Object, e As EventArgs) Handles generate_btn.Click
+
+        ' Check Utilities\Generator.vb for more info
         Generator.Trainer()
         Generator.NewGen()
     End Sub
 
     Private Sub example_btn_Click(sender As Object, e As EventArgs) Handles example_btn.Click
+        ' Set example by setting values.
+        ' This will overwrite any current changes.
         trainerName_txtBox.Text = "Trainer"
         trainerType_txtBox.Text = "Rival"
         numPoké_cmb.SelectedIndex = 0
@@ -31,8 +43,7 @@
         trainerItemsList_lstbox.Items.Clear()
         trainerItemsList_lstbox.Items.Add("potion")
         pokemonOneName_txtBox.Text = "Weezing"
-        pokemonOneMoves_lst.Items.Clear()
-        pokemonOneMoves_lst.Items.Add("FireBlast")
+        pokemonOneMove1_txtBox.Text = "fireBlase"
         pokemonOneGender_cmb.SelectedIndex = 0
         pokemonOneNickName_txtBox.Text = "Gonzalos"
         pokemonOneLvl_txtBox.Text = "20"
@@ -65,116 +76,9 @@
     End Sub
 #End Region
 
-#Region "Add Move Handlers"
-    Private Sub pokemonOneAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonOneAddMove_btn.Click
-        ' Create Input Box
-        Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
-        ' Once they hit okay, then add item
-        If input = "" Then
-            MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Else
-            If pokemonOneMoves_lst.Items.Count = 4 Then
-                MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
-                pokemonOneMoves_lst.Items.Add(input.ToUpper)
-            End If
-        End If
-    End Sub
-    Private Sub pokemonTwoAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonTwoAddMove_btn.Click
-        ' Create Input Box
-        Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
-        ' Once they hit okay, then add item
-        If input = "" Then
-            MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Else
-            If pokemonTwoMoves_lst.Items.Count = 4 Then
-                MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
-                pokemonTwoMoves_lst.Items.Add(input.ToUpper)
-            End If
-        End If
-    End Sub
-    Private Sub pokemonThreeAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonThreeAddMove_btn.Click
-        ' Create Input Box
-        Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
-        ' Once they hit okay, then add item
-        If input = "" Then
-            MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Else
-            If pokemonThreeMoves_lst.Items.Count = 4 Then
-                MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
-                pokemonThreeMoves_lst.Items.Add(input.ToUpper)
-            End If
-        End If
-    End Sub
-    Private Sub pokemonFourAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonFourAddMove_btn.Click
-        ' Create Input Box
-        Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
-        ' Once they hit okay, then add item
-        If input = "" Then
-            MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Else
-            If pokemonFourMoves_lst.Items.Count = 4 Then
-                MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
-                pokemonFourMoves_lst.Items.Add(input.ToUpper)
-            End If
-        End If
-    End Sub
-    Private Sub pokemonFiveAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonFiveAddMove_btn.Click
-        ' Create Input Box
-        Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
-        ' Once they hit okay, then add item
-        If input = "" Then
-            MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Else
-            If pokemonFiveMoves_lst.Items.Count = 4 Then
-                MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
-                pokemonFiveMoves_lst.Items.Add(input.ToUpper)
-            End If
-        End If
-    End Sub
-    Private Sub pokemonSixAddMove_btn_Click(sender As Object, e As EventArgs) Handles pokemonSixAddMove_btn.Click
-        ' Create Input Box
-        Dim input As String = InputBox("Please enter a move to add", "Add Item", "Tackle")
-        ' Once they hit okay, then add item
-        If input = "" Then
-            MessageBox.Show("You cannot leave the box blank.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Else
-            If pokemonSixMoves_lst.Items.Count = 4 Then
-                MessageBox.Show("You cannot add more than 4 moves.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
-                pokemonSixMoves_lst.Items.Add(input.ToUpper)
-            End If
-        End If
-    End Sub
-
-#End Region
-
 #Region "Listbox DoubleClick Remover"
     Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs) Handles trainerItemsList_lstbox.DoubleClick
         trainerItemsList_lstbox.Items.Remove(trainerItemsList_lstbox.SelectedItem)
-    End Sub
-
-    Private Sub pokemonOneMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonOneMoves_lst.DoubleClick
-        pokemonOneMoves_lst.Items.Remove(pokemonOneMoves_lst.SelectedItem)
-    End Sub
-    Private Sub pokemonTwoMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonTwoMoves_lst.DoubleClick
-        pokemonTwoMoves_lst.Items.Remove(pokemonTwoMoves_lst.SelectedItem)
-    End Sub
-    Private Sub pokemonThreeMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonThreeMoves_lst.DoubleClick
-        pokemonThreeMoves_lst.Items.Remove(pokemonThreeMoves_lst.SelectedItem)
-    End Sub
-    Private Sub pokemonFourMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonFourMoves_lst.DoubleClick
-        pokemonFourMoves_lst.Items.Remove(pokemonFourMoves_lst.SelectedItem)
-    End Sub
-    Private Sub pokemonFiveMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonFiveMoves_lst.DoubleClick
-        pokemonFiveMoves_lst.Items.Remove(pokemonFiveMoves_lst.SelectedItem)
-    End Sub
-    Private Sub pokemonSixMoves_lst_DoubleClick(sender As Object, e As EventArgs) Handles pokemonSixMoves_lst.DoubleClick
-        pokemonSixMoves_lst.Items.Remove(pokemonSixMoves_lst.SelectedItem)
     End Sub
 #End Region
 
