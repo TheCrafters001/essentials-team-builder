@@ -23,6 +23,7 @@
     <FileVersion>3.0.0.0</FileVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Copyright>Copyright © TheCrafters001 2021</Copyright>
+    <ApplicationIcon>Resources\showdown_to_essentials_19_icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -67,6 +68,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DiscordRichPresence" Version="1.0.175" />
   </ItemGroup>
 
   <ItemGroup>
