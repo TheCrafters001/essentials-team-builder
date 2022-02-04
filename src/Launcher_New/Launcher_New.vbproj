@@ -3,27 +3,27 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <RootNamespace>Showdown_to_Essentials_18_and_19_Converter</RootNamespace>
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <AssemblyName>Launcher_new</AssemblyName>
+    <RootNamespace>Launcher</RootNamespace>
+    <ApplicationIcon>Resources\showdown_to_essentials_19_icon.ico</ApplicationIcon>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Product>Showdown to Essentials 18 and 19 Converter</Product>
-    <Company></Company>
-    <Authors>TheCrafters001</Authors>
-    <PackageId>Showdown.to.Essentials.18.and.19.Converter</PackageId>
     <PackageLicenseFile>gpl-3.0.md</PackageLicenseFile>
+    <PackageId>Showdown to Essentials Converter Launcher</PackageId>
+    <Authors>TheCrafters001</Authors>
+    <Company />
+    <Product>Showdown to Essentials Converter Launcher</Product>
+    <Copyright>Copyright © TheCrafters001 2021</Copyright>
     <PackageProjectUrl>https://github.com/TheCrafters001/showdown-to-essentials</PackageProjectUrl>
     <RepositoryUrl>https://github.com/TheCrafters001/showdown-to-essentials</RepositoryUrl>
-    <PackageIcon>Showdown to Essentials_19.png</PackageIcon>
+    <PackageIcon>Showdown to Essentials.png</PackageIcon>
     <PackageIconUrl />
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>1.0.0</Version>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <FileVersion>3.0.0.0</FileVersion>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Copyright>Copyright © TheCrafters001 2021</Copyright>
-    <ApplicationIcon>Resources\showdown_to_essentials_19_icon.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,6 +33,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Extra\Themes\Bonfire Theme.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -64,14 +67,21 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="..\Showdown to Essentials 18 Converter\Resources\Showdown to Essentials_19.png">
+    <None Include="Resources\Showdown to Essentials.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DiscordRichPresence" Version="1.0.175" />
+    <PackageReference Include="Autoupdater.NET.Official" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Launcher\Launcher.vbproj" />
+    <ProjectReference Include="..\Showdown to Essentials 18 and 19 Converter\Showdown to Essentials 18 and 19 Converter.vbproj" />
+    <ProjectReference Include="..\Showdown to Essentials 18 Converter\Showdown to Essentials 18 &amp; 19 Converter.vbproj" />
+    <ProjectReference Include="..\Showdown to Essentials Converter\Showdown to Essentials 17 Converter.vbproj" />
   </ItemGroup>
 
   <ItemGroup>

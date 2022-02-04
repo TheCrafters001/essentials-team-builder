@@ -57,6 +57,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="itemsQuickInfo_lbl.Text" xml:space="preserve">
+    <value>Welcome to the new items screen!
+Here you can still add items, but I have added quick picks for more popular items to add to a trainer. Don't worry, it won't mess with any itmes you have already added! Just click the button of the item, and it will add it for you!</value>
+  </data>
+  <data name="aboutText_lbl.Text" xml:space="preserve">
+    <value>This was made per request by Frozentual. This tool makes it easier to convert Pokémon Showdown format into Pokémon Essentials format. 
+Note: this program isn't perfect. Far from it. There will be updates to this program from time to time to either fix bugs or add functionality.
+Other note: This is a fan-made tool. Pokémon is not owned by TheCrafters001; Pokémon is owned by Nintendo/GameFreak/Creatures/The Pokémon Company International
+
+This is a non-profit fan-made tool. No copyright infringements intended. Please support the official games!
+
+Pokemon Showdown Logo by Pokemon Showdown
+RPG Maker XP logo by Enterbrain
+MKXP-Z Logo by Roza</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
