@@ -3,14 +3,6 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Startup.Init()
         trainerItems_grp.Enabled = False
-
-        ' This program is now unsupported, some changes
-        ' were reverted, and this notice was added
-        If My.Settings.unsupportedNotice = False Then
-            MessageBox.Show("This version of Showdown to Essentials converter is no-longer supported. This message only appears one time.", "Unsupported Version", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            My.Settings.unsupportedNotice = True
-            My.Settings.Save()
-        End If
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

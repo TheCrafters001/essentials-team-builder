@@ -55,6 +55,7 @@ Partial Class New_Splash
         Me.VersionLBL.AutoSize = True
         Me.VersionLBL.BackColor = System.Drawing.Color.Transparent
         Me.VersionLBL.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VersionLBL.ForeColor = System.Drawing.Color.Black
         Me.VersionLBL.Location = New System.Drawing.Point(16, 46)
         Me.VersionLBL.Name = "VersionLBL"
         Me.VersionLBL.Size = New System.Drawing.Size(111, 21)
@@ -66,17 +67,18 @@ Partial Class New_Splash
         Me.EasyHTML_lbl.AutoSize = True
         Me.EasyHTML_lbl.BackColor = System.Drawing.Color.Transparent
         Me.EasyHTML_lbl.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EasyHTML_lbl.ForeColor = System.Drawing.Color.Black
         Me.EasyHTML_lbl.Location = New System.Drawing.Point(12, 9)
         Me.EasyHTML_lbl.Name = "EasyHTML_lbl"
         Me.EasyHTML_lbl.Size = New System.Drawing.Size(502, 37)
         Me.EasyHTML_lbl.TabIndex = 4
-        Me.EasyHTML_lbl.Text = "Showdown to Essentials 18/19 Converter"
+        Me.EasyHTML_lbl.Text = "Showdown to Essentials 18-20 Converter"
         '
         'New_Splash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Thumbnail_19
+        Me.BackgroundImage = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Thumbnail_19_New
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(710, 392)
         Me.ControlBox = False

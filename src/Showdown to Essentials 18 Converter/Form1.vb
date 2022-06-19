@@ -61,7 +61,8 @@ Public Class Form1
         clearFields.Clear()
     End Sub
 
-    Private Sub trainerItemsList_btn_Click(sender As Object, e As EventArgs) Handles trainerItemsList_btn.Click
+#Region "Items"
+    Private Sub trainerItemsList_btn_Click(sender As Object, e As EventArgs)
         Try
             Darkness = True
             ' Create Input Box
@@ -80,6 +81,41 @@ Public Class Form1
             Darkness = False
         End Try
     End Sub
+
+
+    Private Sub itemPotion_btn_Click(sender As Object, e As EventArgs) Handles itemPotion_btn.Click
+        If trainerItemsList_lstbox.Items.Count = 8 Then
+            MessageBox.Show("You cannot add more than 8 items.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            trainerItemsList_lstbox.Items.Add("POTION")
+        End If
+    End Sub
+
+    Private Sub itemSuperPotion_btn_Click(sender As Object, e As EventArgs) Handles itemSuperPotion_btn.Click
+        If trainerItemsList_lstbox.Items.Count = 8 Then
+            MessageBox.Show("You cannot add more than 8 items.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            trainerItemsList_lstbox.Items.Add("SUPERPOTION")
+        End If
+    End Sub
+
+    Private Sub itemHyperPotion_btn_Click(sender As Object, e As EventArgs) Handles itemHyperPotion_btn.Click
+        If trainerItemsList_lstbox.Items.Count = 8 Then
+            MessageBox.Show("You cannot add more than 8 items.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            trainerItemsList_lstbox.Items.Add("HYPERPOTION")
+        End If
+    End Sub
+
+    Private Sub itemFullRestore_btn_Click(sender As Object, e As EventArgs) Handles itemFullRestore_btn.Click
+        If trainerItemsList_lstbox.Items.Count = 8 Then
+            MessageBox.Show("You cannot add more than 8 items.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            trainerItemsList_lstbox.Items.Add("FULLRESTORE")
+        End If
+    End Sub
+
+#End Region
 
     Private Sub wizard_btn_Click(sender As Object, e As EventArgs) Handles wizard_btn.Click
         wizard_startDialog.Show()
@@ -171,7 +207,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub trainerUsesItems_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles trainerUsesItems_chkBox.CheckedChanged
+    Private Sub trainerUsesItems_chkBox_CheckedChanged(sender As Object, e As EventArgs)
         If trainerUsesItems_chkBox.Checked = True Then
             trainerItems_grp.Enabled = True
         ElseIf trainerUsesItems_chkBox.Checked = False Then
@@ -309,7 +345,7 @@ Public Class Form1
 #End Region
 
 #Region "Listbox DoubleClick Remover"
-    Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs) Handles trainerItemsList_lstbox.DoubleClick
+    Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs)
         trainerItemsList_lstbox.Items.Remove(trainerItemsList_lstbox.SelectedItem)
     End Sub
 
@@ -376,4 +412,5 @@ Public Class Form1
     Private Sub gnuGPL3_picBox_Click(sender As Object, e As EventArgs) Handles gnuGPL3_picBox.Click
         Process.Start("https://www.gnu.org/licenses/gpl-3.0.html")
     End Sub
+
 End Class

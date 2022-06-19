@@ -93,6 +93,7 @@
         Try
 #Region "Pokemon 1"
             If numPoke >= 1 Then
+                ' Comment the code bellow
                 pokemonName = "Pokemon = " & Form1.pokemonOneName_txtBox.Text.ToUpper & "," & Form1.pokemonOneLvl_txtBox.Text & vbCrLf
                 If Form1.pokemonOneForm_txtBox.Text = "" Then
                     pokemonForm = ""
@@ -139,7 +140,14 @@
                 'Take all moves, and turn it into the move format
                 AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                ' Check if useAbilityIndex_chkBox is checked.
+                ' If it is, use ability index instead of ability
+                If Form1.useAbilityIndex_chkBox.Checked = True Then
+                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                End If
+
                 If Form1.pokemonOneNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
                 ElseIf Not Form1.pokemonOneNature_cmb.SelectedItem = "(random)" Then

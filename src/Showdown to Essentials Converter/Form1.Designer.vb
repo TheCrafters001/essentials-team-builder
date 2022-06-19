@@ -37,6 +37,8 @@ Partial Class Form1
         Me.numPoké_cmb = New System.Windows.Forms.ComboBox()
         Me.trainerUsesItems_chkBox = New System.Windows.Forms.CheckBox()
         Me.trainerItems_grp = New System.Windows.Forms.GroupBox()
+        Me.trainerItemsList_btn = New System.Windows.Forms.Button()
+        Me.trainerItemsList_lstbox = New System.Windows.Forms.ListBox()
         Me.trainerType_lbl = New System.Windows.Forms.Label()
         Me.trainerType_txtBox = New System.Windows.Forms.TextBox()
         Me.battleTeamID_lbl = New System.Windows.Forms.Label()
@@ -275,8 +277,7 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
-        Me.trainerItemsList_btn = New System.Windows.Forms.Button()
-        Me.trainerItemsList_lstbox = New System.Windows.Forms.ListBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
@@ -337,6 +338,7 @@ Partial Class Form1
         '
         'pg_Trainer
         '
+        Me.pg_Trainer.Controls.Add(Me.Label9)
         Me.pg_Trainer.Controls.Add(Me.miscInfo_grpBox)
         Me.pg_Trainer.Controls.Add(Me.pe17_pic)
         Me.pg_Trainer.Controls.Add(Me.example_btn)
@@ -471,6 +473,23 @@ Partial Class Form1
         Me.trainerItems_grp.TabIndex = 8
         Me.trainerItems_grp.TabStop = False
         Me.trainerItems_grp.Text = "Items"
+        '
+        'trainerItemsList_btn
+        '
+        Me.trainerItemsList_btn.Location = New System.Drawing.Point(6, 223)
+        Me.trainerItemsList_btn.Name = "trainerItemsList_btn"
+        Me.trainerItemsList_btn.Size = New System.Drawing.Size(201, 23)
+        Me.trainerItemsList_btn.TabIndex = 3
+        Me.trainerItemsList_btn.Text = "Add Item"
+        Me.trainerItemsList_btn.UseVisualStyleBackColor = True
+        '
+        'trainerItemsList_lstbox
+        '
+        Me.trainerItemsList_lstbox.FormattingEnabled = True
+        Me.trainerItemsList_lstbox.Location = New System.Drawing.Point(6, 21)
+        Me.trainerItemsList_lstbox.Name = "trainerItemsList_lstbox"
+        Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 199)
+        Me.trainerItemsList_lstbox.TabIndex = 2
         '
         'trainerType_lbl
         '
@@ -2797,22 +2816,14 @@ Partial Class Form1
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
         '
-        'trainerItemsList_btn
+        'Label9
         '
-        Me.trainerItemsList_btn.Location = New System.Drawing.Point(6, 223)
-        Me.trainerItemsList_btn.Name = "trainerItemsList_btn"
-        Me.trainerItemsList_btn.Size = New System.Drawing.Size(201, 23)
-        Me.trainerItemsList_btn.TabIndex = 3
-        Me.trainerItemsList_btn.Text = "Add Item"
-        Me.trainerItemsList_btn.UseVisualStyleBackColor = True
-        '
-        'trainerItemsList_lstbox
-        '
-        Me.trainerItemsList_lstbox.FormattingEnabled = True
-        Me.trainerItemsList_lstbox.Location = New System.Drawing.Point(6, 21)
-        Me.trainerItemsList_lstbox.Name = "trainerItemsList_lstbox"
-        Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 199)
-        Me.trainerItemsList_lstbox.TabIndex = 2
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(536, 383)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(198, 13)
+        Me.Label9.TabIndex = 25
+        Me.Label9.Text = "Legacy version, no longer supported."
         '
         'Form1
         '
@@ -3150,4 +3161,5 @@ Partial Class Form1
     Friend WithEvents internalBallNames_chk As CheckBox
     Friend WithEvents trainerItemsList_btn As Button
     Friend WithEvents trainerItemsList_lstbox As ListBox
+    Friend WithEvents Label9 As Label
 End Class

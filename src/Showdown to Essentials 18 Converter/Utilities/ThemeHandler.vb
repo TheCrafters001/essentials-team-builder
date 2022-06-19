@@ -88,7 +88,6 @@
 #End Region
 
 #Region "Group Boxes"
-        Form1.miscInfo_grpBox.ForeColor = Color.FromArgb(255, 190, 190, 190)
         Form1.trainerItems_grp.ForeColor = Color.FromArgb(255, 190, 190, 190)
         Form1.pokemonOne_grp.ForeColor = Color.FromArgb(255, 190, 190, 190)
         Form1.pokemonTwo_grp.ForeColor = Color.FromArgb(255, 190, 190, 190)

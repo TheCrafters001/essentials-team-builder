@@ -117,6 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="trainerItemInfo_lbl.Text" xml:space="preserve">
+    <value>Welcome to the new items screen!
+Here you can still add items, but I have added quick picks for more popular items to add to a trainer. Don't worry, it won't mess with any itmes you have already added! Just click the button of the item, and it will add it for you!
+</value>
+  </data>
   <data name="PBallIDRef_RchTxt.Text" xml:space="preserve">
     <value>This page allows you to see the Pokéball IDs for Pokémon Essentials.
 Do note, that this specifies the DEFAULT IDs, and does not state any custom IDs.

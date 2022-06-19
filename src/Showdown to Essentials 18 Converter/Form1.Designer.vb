@@ -25,30 +25,39 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.pages_tabGrp = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
+        Me.trainerInfo_tabPgs = New System.Windows.Forms.TabControl()
+        Me.pg_TrainerInfo = New System.Windows.Forms.TabPage()
+        Me.trainerInfoTitle_lbl = New System.Windows.Forms.Label()
         Me.wizard_btn = New System.Windows.Forms.Button()
+        Me.example_btn = New System.Windows.Forms.Button()
+        Me.trainerName_txtBox = New System.Windows.Forms.TextBox()
+        Me.properSpellingNote_lbl = New System.Windows.Forms.Label()
+        Me.pe18_pic = New System.Windows.Forms.PictureBox()
         Me.clearInputs_btn = New System.Windows.Forms.Button()
-        Me.miscInfo_grpBox = New System.Windows.Forms.GroupBox()
-        Me.internalBallNames_chk = New System.Windows.Forms.CheckBox()
-        Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
-        Me.existingBattle_chkBox = New System.Windows.Forms.CheckBox()
+        Me.trainerName_lbl = New System.Windows.Forms.Label()
         Me.loseText_lbl = New System.Windows.Forms.Label()
         Me.loseText_txt = New System.Windows.Forms.TextBox()
-        Me.pe18_pic = New System.Windows.Forms.PictureBox()
-        Me.example_btn = New System.Windows.Forms.Button()
-        Me.properSpellingNote_lbl = New System.Windows.Forms.Label()
+        Me.trainerType_txtBox = New System.Windows.Forms.TextBox()
+        Me.trainerType_lbl = New System.Windows.Forms.Label()
+        Me.battleTeamID_txtBox = New System.Windows.Forms.TextBox()
+        Me.battleTeamID_lbl = New System.Windows.Forms.Label()
         Me.numPoké_lbl = New System.Windows.Forms.Label()
         Me.numPoké_cmb = New System.Windows.Forms.ComboBox()
+        Me.pg_MiscInfo = New System.Windows.Forms.TabPage()
+        Me.useAbilityIndex_chkBox = New System.Windows.Forms.CheckBox()
+        Me.internalBallNames_chk = New System.Windows.Forms.CheckBox()
+        Me.existingBattle_chkBox = New System.Windows.Forms.CheckBox()
+        Me.customBallIDs_chkBox = New System.Windows.Forms.CheckBox()
+        Me.pg_TrainerItems = New System.Windows.Forms.TabPage()
+        Me.itemFullRestore_btn = New System.Windows.Forms.Button()
+        Me.itemHyperPotion_btn = New System.Windows.Forms.Button()
+        Me.itemSuperPotion_btn = New System.Windows.Forms.Button()
+        Me.itemPotion_btn = New System.Windows.Forms.Button()
+        Me.trainerItemInfo_lbl = New System.Windows.Forms.Label()
         Me.trainerUsesItems_chkBox = New System.Windows.Forms.CheckBox()
         Me.trainerItems_grp = New System.Windows.Forms.GroupBox()
         Me.trainerItemsList_btn = New System.Windows.Forms.Button()
         Me.trainerItemsList_lstbox = New System.Windows.Forms.ListBox()
-        Me.trainerType_lbl = New System.Windows.Forms.Label()
-        Me.trainerType_txtBox = New System.Windows.Forms.TextBox()
-        Me.battleTeamID_lbl = New System.Windows.Forms.Label()
-        Me.battleTeamID_txtBox = New System.Windows.Forms.TextBox()
-        Me.trainerName_lbl = New System.Windows.Forms.Label()
-        Me.trainerName_txtBox = New System.Windows.Forms.TextBox()
-        Me.trainerInfoTitle_lbl = New System.Windows.Forms.Label()
         Me.pg_POne = New System.Windows.Forms.TabPage()
         Me.pokemonOne_grp = New System.Windows.Forms.GroupBox()
         Me.pokemonOneEVs_grp = New System.Windows.Forms.GroupBox()
@@ -416,8 +425,11 @@ Partial Class Form1
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
-        Me.miscInfo_grpBox.SuspendLayout()
+        Me.trainerInfo_tabPgs.SuspendLayout()
+        Me.pg_TrainerInfo.SuspendLayout()
         CType(Me.pe18_pic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pg_MiscInfo.SuspendLayout()
+        Me.pg_TrainerItems.SuspendLayout()
         Me.trainerItems_grp.SuspendLayout()
         Me.pg_POne.SuspendLayout()
         Me.pokemonOne_grp.SuspendLayout()
@@ -491,25 +503,7 @@ Partial Class Form1
         '
         'pg_Trainer
         '
-        Me.pg_Trainer.Controls.Add(Me.wizard_btn)
-        Me.pg_Trainer.Controls.Add(Me.clearInputs_btn)
-        Me.pg_Trainer.Controls.Add(Me.miscInfo_grpBox)
-        Me.pg_Trainer.Controls.Add(Me.loseText_lbl)
-        Me.pg_Trainer.Controls.Add(Me.loseText_txt)
-        Me.pg_Trainer.Controls.Add(Me.pe18_pic)
-        Me.pg_Trainer.Controls.Add(Me.example_btn)
-        Me.pg_Trainer.Controls.Add(Me.properSpellingNote_lbl)
-        Me.pg_Trainer.Controls.Add(Me.numPoké_lbl)
-        Me.pg_Trainer.Controls.Add(Me.numPoké_cmb)
-        Me.pg_Trainer.Controls.Add(Me.trainerUsesItems_chkBox)
-        Me.pg_Trainer.Controls.Add(Me.trainerItems_grp)
-        Me.pg_Trainer.Controls.Add(Me.trainerType_lbl)
-        Me.pg_Trainer.Controls.Add(Me.trainerType_txtBox)
-        Me.pg_Trainer.Controls.Add(Me.battleTeamID_lbl)
-        Me.pg_Trainer.Controls.Add(Me.battleTeamID_txtBox)
-        Me.pg_Trainer.Controls.Add(Me.trainerName_lbl)
-        Me.pg_Trainer.Controls.Add(Me.trainerName_txtBox)
-        Me.pg_Trainer.Controls.Add(Me.trainerInfoTitle_lbl)
+        Me.pg_Trainer.Controls.Add(Me.trainerInfo_tabPgs)
         Me.pg_Trainer.Location = New System.Drawing.Point(4, 22)
         Me.pg_Trainer.Name = "pg_Trainer"
         Me.pg_Trainer.Padding = New System.Windows.Forms.Padding(3)
@@ -519,74 +513,128 @@ Partial Class Form1
         Me.pg_Trainer.ToolTipText = "Edit the information for the trainer here."
         Me.pg_Trainer.UseVisualStyleBackColor = True
         '
+        'trainerInfo_tabPgs
+        '
+        Me.trainerInfo_tabPgs.Controls.Add(Me.pg_TrainerInfo)
+        Me.trainerInfo_tabPgs.Controls.Add(Me.pg_MiscInfo)
+        Me.trainerInfo_tabPgs.Controls.Add(Me.pg_TrainerItems)
+        Me.trainerInfo_tabPgs.Location = New System.Drawing.Point(6, 6)
+        Me.trainerInfo_tabPgs.Name = "trainerInfo_tabPgs"
+        Me.trainerInfo_tabPgs.SelectedIndex = 0
+        Me.trainerInfo_tabPgs.Size = New System.Drawing.Size(740, 499)
+        Me.trainerInfo_tabPgs.TabIndex = 17
+        '
+        'pg_TrainerInfo
+        '
+        Me.pg_TrainerInfo.Controls.Add(Me.trainerInfoTitle_lbl)
+        Me.pg_TrainerInfo.Controls.Add(Me.wizard_btn)
+        Me.pg_TrainerInfo.Controls.Add(Me.example_btn)
+        Me.pg_TrainerInfo.Controls.Add(Me.trainerName_txtBox)
+        Me.pg_TrainerInfo.Controls.Add(Me.properSpellingNote_lbl)
+        Me.pg_TrainerInfo.Controls.Add(Me.pe18_pic)
+        Me.pg_TrainerInfo.Controls.Add(Me.clearInputs_btn)
+        Me.pg_TrainerInfo.Controls.Add(Me.trainerName_lbl)
+        Me.pg_TrainerInfo.Controls.Add(Me.loseText_lbl)
+        Me.pg_TrainerInfo.Controls.Add(Me.loseText_txt)
+        Me.pg_TrainerInfo.Controls.Add(Me.trainerType_txtBox)
+        Me.pg_TrainerInfo.Controls.Add(Me.trainerType_lbl)
+        Me.pg_TrainerInfo.Controls.Add(Me.battleTeamID_txtBox)
+        Me.pg_TrainerInfo.Controls.Add(Me.battleTeamID_lbl)
+        Me.pg_TrainerInfo.Controls.Add(Me.numPoké_lbl)
+        Me.pg_TrainerInfo.Controls.Add(Me.numPoké_cmb)
+        Me.pg_TrainerInfo.Location = New System.Drawing.Point(4, 22)
+        Me.pg_TrainerInfo.Name = "pg_TrainerInfo"
+        Me.pg_TrainerInfo.Padding = New System.Windows.Forms.Padding(3)
+        Me.pg_TrainerInfo.Size = New System.Drawing.Size(732, 473)
+        Me.pg_TrainerInfo.TabIndex = 0
+        Me.pg_TrainerInfo.Text = "Trainer Information"
+        Me.pg_TrainerInfo.UseVisualStyleBackColor = True
+        '
+        'trainerInfoTitle_lbl
+        '
+        Me.trainerInfoTitle_lbl.AutoSize = True
+        Me.trainerInfoTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.trainerInfoTitle_lbl.Location = New System.Drawing.Point(6, 3)
+        Me.trainerInfoTitle_lbl.Name = "trainerInfoTitle_lbl"
+        Me.trainerInfoTitle_lbl.Size = New System.Drawing.Size(127, 30)
+        Me.trainerInfoTitle_lbl.TabIndex = 0
+        Me.trainerInfoTitle_lbl.Text = "Trainer Info"
+        '
         'wizard_btn
         '
         Me.wizard_btn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.wizard_btn.Location = New System.Drawing.Point(6, 454)
+        Me.wizard_btn.Location = New System.Drawing.Point(4, 415)
         Me.wizard_btn.Name = "wizard_btn"
-        Me.wizard_btn.Size = New System.Drawing.Size(533, 23)
+        Me.wizard_btn.Size = New System.Drawing.Size(507, 23)
         Me.wizard_btn.TabIndex = 9
         Me.wizard_btn.Text = "Use Wizard (Experimental)"
         Me.wizard_btn.UseVisualStyleBackColor = True
         '
+        'example_btn
+        '
+        Me.example_btn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.example_btn.Location = New System.Drawing.Point(253, 444)
+        Me.example_btn.Name = "example_btn"
+        Me.example_btn.Size = New System.Drawing.Size(260, 23)
+        Me.example_btn.TabIndex = 8
+        Me.example_btn.Text = "Use Example"
+        Me.example_btn.UseVisualStyleBackColor = True
+        '
+        'trainerName_txtBox
+        '
+        Me.trainerName_txtBox.Location = New System.Drawing.Point(6, 55)
+        Me.trainerName_txtBox.MaxLength = 25
+        Me.trainerName_txtBox.Name = "trainerName_txtBox"
+        Me.trainerName_txtBox.Size = New System.Drawing.Size(185, 22)
+        Me.trainerName_txtBox.TabIndex = 1
+        '
+        'properSpellingNote_lbl
+        '
+        Me.properSpellingNote_lbl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.properSpellingNote_lbl.AutoSize = True
+        Me.properSpellingNote_lbl.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(6, 447)
+        Me.properSpellingNote_lbl.Name = "properSpellingNote_lbl"
+        Me.properSpellingNote_lbl.Size = New System.Drawing.Size(241, 20)
+        Me.properSpellingNote_lbl.TabIndex = 12
+        Me.properSpellingNote_lbl.Text = "Note: Proper spelling IS required."
+        '
+        'pe18_pic
+        '
+        Me.pe18_pic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pe18_pic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pe18_pic.Image = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Essentials18_19Only
+        Me.pe18_pic.Location = New System.Drawing.Point(519, 361)
+        Me.pe18_pic.Name = "pe18_pic"
+        Me.pe18_pic.Size = New System.Drawing.Size(207, 106)
+        Me.pe18_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pe18_pic.TabIndex = 13
+        Me.pe18_pic.TabStop = False
+        '
         'clearInputs_btn
         '
-        Me.clearInputs_btn.Location = New System.Drawing.Point(6, 258)
+        Me.clearInputs_btn.Location = New System.Drawing.Point(519, 332)
         Me.clearInputs_btn.Name = "clearInputs_btn"
-        Me.clearInputs_btn.Size = New System.Drawing.Size(185, 23)
+        Me.clearInputs_btn.Size = New System.Drawing.Size(207, 23)
         Me.clearInputs_btn.TabIndex = 7
         Me.clearInputs_btn.Text = "Clear all fields"
         Me.clearInputs_btn.UseVisualStyleBackColor = True
         '
-        'miscInfo_grpBox
+        'trainerName_lbl
         '
-        Me.miscInfo_grpBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.miscInfo_grpBox.Controls.Add(Me.internalBallNames_chk)
-        Me.miscInfo_grpBox.Controls.Add(Me.customBallIDs_chkBox)
-        Me.miscInfo_grpBox.Controls.Add(Me.existingBattle_chkBox)
-        Me.miscInfo_grpBox.Location = New System.Drawing.Point(197, 29)
-        Me.miscInfo_grpBox.Name = "miscInfo_grpBox"
-        Me.miscInfo_grpBox.Size = New System.Drawing.Size(328, 252)
-        Me.miscInfo_grpBox.TabIndex = 16
-        Me.miscInfo_grpBox.TabStop = False
-        Me.miscInfo_grpBox.Text = "Misc Info"
-        '
-        'internalBallNames_chk
-        '
-        Me.internalBallNames_chk.AutoSize = True
-        Me.internalBallNames_chk.Location = New System.Drawing.Point(6, 78)
-        Me.internalBallNames_chk.Name = "internalBallNames_chk"
-        Me.internalBallNames_chk.Size = New System.Drawing.Size(154, 17)
-        Me.internalBallNames_chk.TabIndex = 5
-        Me.internalBallNames_chk.Text = "Use Pokéball Internal IDs"
-        Me.internalBallNames_chk.UseVisualStyleBackColor = True
-        '
-        'customBallIDs_chkBox
-        '
-        Me.customBallIDs_chkBox.AutoSize = True
-        Me.customBallIDs_chkBox.Location = New System.Drawing.Point(6, 55)
-        Me.customBallIDs_chkBox.Name = "customBallIDs_chkBox"
-        Me.customBallIDs_chkBox.Size = New System.Drawing.Size(198, 17)
-        Me.customBallIDs_chkBox.TabIndex = 4
-        Me.customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
-        Me.customBallIDs_chkBox.UseVisualStyleBackColor = True
-        '
-        'existingBattle_chkBox
-        '
-        Me.existingBattle_chkBox.AutoSize = True
-        Me.existingBattle_chkBox.Location = New System.Drawing.Point(6, 19)
-        Me.existingBattle_chkBox.Name = "existingBattle_chkBox"
-        Me.existingBattle_chkBox.Size = New System.Drawing.Size(261, 30)
-        Me.existingBattle_chkBox.TabIndex = 3
-        Me.existingBattle_chkBox.Text = "Check this box if this NPC already has a team, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "then enter the Battle Team ID."
-        Me.existingBattle_chkBox.UseVisualStyleBackColor = True
+        Me.trainerName_lbl.AutoSize = True
+        Me.trainerName_lbl.Location = New System.Drawing.Point(6, 39)
+        Me.trainerName_lbl.Name = "trainerName_lbl"
+        Me.trainerName_lbl.Size = New System.Drawing.Size(74, 13)
+        Me.trainerName_lbl.TabIndex = 2
+        Me.trainerName_lbl.Text = "Trainer Name"
         '
         'loseText_lbl
         '
         Me.loseText_lbl.AutoSize = True
-        Me.loseText_lbl.Location = New System.Drawing.Point(6, 118)
+        Me.loseText_lbl.Location = New System.Drawing.Point(401, 39)
         Me.loseText_lbl.Name = "loseText_lbl"
         Me.loseText_lbl.Size = New System.Drawing.Size(53, 13)
         Me.loseText_lbl.TabIndex = 15
@@ -594,50 +642,53 @@ Partial Class Form1
         '
         'loseText_txt
         '
-        Me.loseText_txt.Location = New System.Drawing.Point(6, 134)
+        Me.loseText_txt.Location = New System.Drawing.Point(401, 55)
         Me.loseText_txt.MaxLength = 255
         Me.loseText_txt.Name = "loseText_txt"
         Me.loseText_txt.Size = New System.Drawing.Size(185, 22)
         Me.loseText_txt.TabIndex = 3
         '
-        'pe18_pic
+        'trainerType_txtBox
         '
-        Me.pe18_pic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pe18_pic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pe18_pic.Image = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Essentials18_19Only
-        Me.pe18_pic.Location = New System.Drawing.Point(545, 405)
-        Me.pe18_pic.Name = "pe18_pic"
-        Me.pe18_pic.Size = New System.Drawing.Size(207, 106)
-        Me.pe18_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pe18_pic.TabIndex = 13
-        Me.pe18_pic.TabStop = False
+        Me.trainerType_txtBox.Location = New System.Drawing.Point(197, 55)
+        Me.trainerType_txtBox.MaxLength = 25
+        Me.trainerType_txtBox.Name = "trainerType_txtBox"
+        Me.trainerType_txtBox.Size = New System.Drawing.Size(185, 22)
+        Me.trainerType_txtBox.TabIndex = 2
         '
-        'example_btn
+        'trainerType_lbl
         '
-        Me.example_btn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.example_btn.Location = New System.Drawing.Point(255, 483)
-        Me.example_btn.Name = "example_btn"
-        Me.example_btn.Size = New System.Drawing.Size(284, 23)
-        Me.example_btn.TabIndex = 8
-        Me.example_btn.Text = "Use Example"
-        Me.example_btn.UseVisualStyleBackColor = True
+        Me.trainerType_lbl.AutoSize = True
+        Me.trainerType_lbl.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.trainerType_lbl.Location = New System.Drawing.Point(197, 39)
+        Me.trainerType_lbl.Name = "trainerType_lbl"
+        Me.trainerType_lbl.Size = New System.Drawing.Size(198, 13)
+        Me.trainerType_lbl.TabIndex = 7
+        Me.trainerType_lbl.Text = "Trainer Type (Refer to trainertypes.txt)"
         '
-        'properSpellingNote_lbl
+        'battleTeamID_txtBox
         '
-        Me.properSpellingNote_lbl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.properSpellingNote_lbl.AutoSize = True
-        Me.properSpellingNote_lbl.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(8, 486)
-        Me.properSpellingNote_lbl.Name = "properSpellingNote_lbl"
-        Me.properSpellingNote_lbl.Size = New System.Drawing.Size(241, 20)
-        Me.properSpellingNote_lbl.TabIndex = 12
-        Me.properSpellingNote_lbl.Text = "Note: Proper spelling IS required."
+        Me.battleTeamID_txtBox.Enabled = False
+        Me.battleTeamID_txtBox.Location = New System.Drawing.Point(197, 96)
+        Me.battleTeamID_txtBox.MaxLength = 25
+        Me.battleTeamID_txtBox.Name = "battleTeamID_txtBox"
+        Me.battleTeamID_txtBox.Size = New System.Drawing.Size(185, 22)
+        Me.battleTeamID_txtBox.TabIndex = 5
+        '
+        'battleTeamID_lbl
+        '
+        Me.battleTeamID_lbl.AutoSize = True
+        Me.battleTeamID_lbl.Enabled = False
+        Me.battleTeamID_lbl.Location = New System.Drawing.Point(197, 80)
+        Me.battleTeamID_lbl.Name = "battleTeamID_lbl"
+        Me.battleTeamID_lbl.Size = New System.Drawing.Size(182, 13)
+        Me.battleTeamID_lbl.TabIndex = 5
+        Me.battleTeamID_lbl.Text = "Battle Team ID (Must be a number)"
         '
         'numPoké_lbl
         '
         Me.numPoké_lbl.AutoSize = True
-        Me.numPoké_lbl.Location = New System.Drawing.Point(6, 157)
+        Me.numPoké_lbl.Location = New System.Drawing.Point(6, 80)
         Me.numPoké_lbl.Name = "numPoké_lbl"
         Me.numPoké_lbl.Size = New System.Drawing.Size(113, 13)
         Me.numPoké_lbl.TabIndex = 11
@@ -648,19 +699,134 @@ Partial Class Form1
         Me.numPoké_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.numPoké_cmb.FormattingEnabled = True
         Me.numPoké_cmb.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6"})
-        Me.numPoké_cmb.Location = New System.Drawing.Point(6, 173)
+        Me.numPoké_cmb.Location = New System.Drawing.Point(6, 96)
         Me.numPoké_cmb.Name = "numPoké_cmb"
         Me.numPoké_cmb.Size = New System.Drawing.Size(185, 21)
         Me.numPoké_cmb.TabIndex = 4
+        '
+        'pg_MiscInfo
+        '
+        Me.pg_MiscInfo.Controls.Add(Me.useAbilityIndex_chkBox)
+        Me.pg_MiscInfo.Controls.Add(Me.internalBallNames_chk)
+        Me.pg_MiscInfo.Controls.Add(Me.existingBattle_chkBox)
+        Me.pg_MiscInfo.Controls.Add(Me.customBallIDs_chkBox)
+        Me.pg_MiscInfo.Location = New System.Drawing.Point(4, 22)
+        Me.pg_MiscInfo.Name = "pg_MiscInfo"
+        Me.pg_MiscInfo.Padding = New System.Windows.Forms.Padding(3)
+        Me.pg_MiscInfo.Size = New System.Drawing.Size(732, 473)
+        Me.pg_MiscInfo.TabIndex = 1
+        Me.pg_MiscInfo.Text = "Misc. Info"
+        Me.pg_MiscInfo.UseVisualStyleBackColor = True
+        '
+        'useAbilityIndex_chkBox
+        '
+        Me.useAbilityIndex_chkBox.AutoSize = True
+        Me.useAbilityIndex_chkBox.Location = New System.Drawing.Point(6, 42)
+        Me.useAbilityIndex_chkBox.Name = "useAbilityIndex_chkBox"
+        Me.useAbilityIndex_chkBox.Size = New System.Drawing.Size(198, 17)
+        Me.useAbilityIndex_chkBox.TabIndex = 6
+        Me.useAbilityIndex_chkBox.Text = "Use AbilityIndex instead of Ability"
+        Me.useAbilityIndex_chkBox.UseVisualStyleBackColor = True
+        '
+        'internalBallNames_chk
+        '
+        Me.internalBallNames_chk.AutoSize = True
+        Me.internalBallNames_chk.Location = New System.Drawing.Point(513, 6)
+        Me.internalBallNames_chk.Name = "internalBallNames_chk"
+        Me.internalBallNames_chk.Size = New System.Drawing.Size(154, 17)
+        Me.internalBallNames_chk.TabIndex = 5
+        Me.internalBallNames_chk.Text = "Use Pokéball Internal IDs"
+        Me.internalBallNames_chk.UseVisualStyleBackColor = True
+        '
+        'existingBattle_chkBox
+        '
+        Me.existingBattle_chkBox.AutoSize = True
+        Me.existingBattle_chkBox.Location = New System.Drawing.Point(6, 6)
+        Me.existingBattle_chkBox.Name = "existingBattle_chkBox"
+        Me.existingBattle_chkBox.Size = New System.Drawing.Size(297, 30)
+        Me.existingBattle_chkBox.TabIndex = 3
+        Me.existingBattle_chkBox.Text = "Check this box if this NPC already has a team, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "then enter the Battle Team ID on" &
+    " the Trainer Info tab."
+        Me.existingBattle_chkBox.UseVisualStyleBackColor = True
+        '
+        'customBallIDs_chkBox
+        '
+        Me.customBallIDs_chkBox.AutoSize = True
+        Me.customBallIDs_chkBox.Location = New System.Drawing.Point(309, 6)
+        Me.customBallIDs_chkBox.Name = "customBallIDs_chkBox"
+        Me.customBallIDs_chkBox.Size = New System.Drawing.Size(198, 17)
+        Me.customBallIDs_chkBox.TabIndex = 4
+        Me.customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
+        Me.customBallIDs_chkBox.UseVisualStyleBackColor = True
+        '
+        'pg_TrainerItems
+        '
+        Me.pg_TrainerItems.Controls.Add(Me.itemFullRestore_btn)
+        Me.pg_TrainerItems.Controls.Add(Me.itemHyperPotion_btn)
+        Me.pg_TrainerItems.Controls.Add(Me.itemSuperPotion_btn)
+        Me.pg_TrainerItems.Controls.Add(Me.itemPotion_btn)
+        Me.pg_TrainerItems.Controls.Add(Me.trainerItemInfo_lbl)
+        Me.pg_TrainerItems.Controls.Add(Me.trainerUsesItems_chkBox)
+        Me.pg_TrainerItems.Controls.Add(Me.trainerItems_grp)
+        Me.pg_TrainerItems.Location = New System.Drawing.Point(4, 22)
+        Me.pg_TrainerItems.Name = "pg_TrainerItems"
+        Me.pg_TrainerItems.Size = New System.Drawing.Size(732, 473)
+        Me.pg_TrainerItems.TabIndex = 2
+        Me.pg_TrainerItems.Text = "Trainer Items"
+        Me.pg_TrainerItems.UseVisualStyleBackColor = True
+        '
+        'itemFullRestore_btn
+        '
+        Me.itemFullRestore_btn.Location = New System.Drawing.Point(450, 3)
+        Me.itemFullRestore_btn.Name = "itemFullRestore_btn"
+        Me.itemFullRestore_btn.Size = New System.Drawing.Size(70, 50)
+        Me.itemFullRestore_btn.TabIndex = 15
+        Me.itemFullRestore_btn.Text = "Full Restore"
+        Me.itemFullRestore_btn.UseVisualStyleBackColor = True
+        '
+        'itemHyperPotion_btn
+        '
+        Me.itemHyperPotion_btn.Location = New System.Drawing.Point(374, 3)
+        Me.itemHyperPotion_btn.Name = "itemHyperPotion_btn"
+        Me.itemHyperPotion_btn.Size = New System.Drawing.Size(70, 50)
+        Me.itemHyperPotion_btn.TabIndex = 14
+        Me.itemHyperPotion_btn.Text = "Hyper Potion"
+        Me.itemHyperPotion_btn.UseVisualStyleBackColor = True
+        '
+        'itemSuperPotion_btn
+        '
+        Me.itemSuperPotion_btn.Location = New System.Drawing.Point(298, 3)
+        Me.itemSuperPotion_btn.Name = "itemSuperPotion_btn"
+        Me.itemSuperPotion_btn.Size = New System.Drawing.Size(70, 50)
+        Me.itemSuperPotion_btn.TabIndex = 13
+        Me.itemSuperPotion_btn.Text = "Super Potion"
+        Me.itemSuperPotion_btn.UseVisualStyleBackColor = True
+        '
+        'itemPotion_btn
+        '
+        Me.itemPotion_btn.Location = New System.Drawing.Point(222, 3)
+        Me.itemPotion_btn.Name = "itemPotion_btn"
+        Me.itemPotion_btn.Size = New System.Drawing.Size(70, 50)
+        Me.itemPotion_btn.TabIndex = 12
+        Me.itemPotion_btn.Text = "Potion"
+        Me.itemPotion_btn.UseVisualStyleBackColor = True
+        '
+        'trainerItemInfo_lbl
+        '
+        Me.trainerItemInfo_lbl.Location = New System.Drawing.Point(6, 281)
+        Me.trainerItemInfo_lbl.Name = "trainerItemInfo_lbl"
+        Me.trainerItemInfo_lbl.Size = New System.Drawing.Size(210, 95)
+        Me.trainerItemInfo_lbl.TabIndex = 11
+        Me.trainerItemInfo_lbl.Text = resources.GetString("trainerItemInfo_lbl.Text")
         '
         'trainerUsesItems_chkBox
         '
         Me.trainerUsesItems_chkBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.trainerUsesItems_chkBox.AutoSize = True
-        Me.trainerUsesItems_chkBox.Location = New System.Drawing.Point(531, 6)
+        Me.trainerUsesItems_chkBox.Location = New System.Drawing.Point(3, 261)
         Me.trainerUsesItems_chkBox.Name = "trainerUsesItems_chkBox"
         Me.trainerUsesItems_chkBox.Size = New System.Drawing.Size(140, 17)
-        Me.trainerUsesItems_chkBox.TabIndex = 6
+        Me.trainerUsesItems_chkBox.TabIndex = 9
         Me.trainerUsesItems_chkBox.Text = "This trainer uses items"
         Me.trainerUsesItems_chkBox.UseVisualStyleBackColor = True
         '
@@ -669,10 +835,10 @@ Partial Class Form1
         Me.trainerItems_grp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.trainerItems_grp.Controls.Add(Me.trainerItemsList_btn)
         Me.trainerItems_grp.Controls.Add(Me.trainerItemsList_lstbox)
-        Me.trainerItems_grp.Location = New System.Drawing.Point(531, 29)
+        Me.trainerItems_grp.Location = New System.Drawing.Point(3, 3)
         Me.trainerItems_grp.Name = "trainerItems_grp"
         Me.trainerItems_grp.Size = New System.Drawing.Size(213, 252)
-        Me.trainerItems_grp.TabIndex = 8
+        Me.trainerItems_grp.TabIndex = 10
         Me.trainerItems_grp.TabStop = False
         Me.trainerItems_grp.Text = "Items (Double Click to remove items)"
         '
@@ -692,70 +858,6 @@ Partial Class Form1
         Me.trainerItemsList_lstbox.Name = "trainerItemsList_lstbox"
         Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 199)
         Me.trainerItemsList_lstbox.TabIndex = 0
-        '
-        'trainerType_lbl
-        '
-        Me.trainerType_lbl.AutoSize = True
-        Me.trainerType_lbl.Font = New System.Drawing.Font("Segoe UI", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.trainerType_lbl.Location = New System.Drawing.Point(6, 80)
-        Me.trainerType_lbl.Name = "trainerType_lbl"
-        Me.trainerType_lbl.Size = New System.Drawing.Size(153, 12)
-        Me.trainerType_lbl.TabIndex = 7
-        Me.trainerType_lbl.Text = "Trainer Type (Refer to trainertypes.txt)"
-        '
-        'trainerType_txtBox
-        '
-        Me.trainerType_txtBox.Location = New System.Drawing.Point(6, 96)
-        Me.trainerType_txtBox.MaxLength = 25
-        Me.trainerType_txtBox.Name = "trainerType_txtBox"
-        Me.trainerType_txtBox.Size = New System.Drawing.Size(185, 22)
-        Me.trainerType_txtBox.TabIndex = 2
-        '
-        'battleTeamID_lbl
-        '
-        Me.battleTeamID_lbl.AutoSize = True
-        Me.battleTeamID_lbl.Enabled = False
-        Me.battleTeamID_lbl.Location = New System.Drawing.Point(6, 197)
-        Me.battleTeamID_lbl.Name = "battleTeamID_lbl"
-        Me.battleTeamID_lbl.Size = New System.Drawing.Size(182, 13)
-        Me.battleTeamID_lbl.TabIndex = 5
-        Me.battleTeamID_lbl.Text = "Battle Team ID (Must be a number)"
-        '
-        'battleTeamID_txtBox
-        '
-        Me.battleTeamID_txtBox.Enabled = False
-        Me.battleTeamID_txtBox.Location = New System.Drawing.Point(6, 213)
-        Me.battleTeamID_txtBox.MaxLength = 25
-        Me.battleTeamID_txtBox.Name = "battleTeamID_txtBox"
-        Me.battleTeamID_txtBox.Size = New System.Drawing.Size(185, 22)
-        Me.battleTeamID_txtBox.TabIndex = 5
-        '
-        'trainerName_lbl
-        '
-        Me.trainerName_lbl.AutoSize = True
-        Me.trainerName_lbl.Location = New System.Drawing.Point(6, 39)
-        Me.trainerName_lbl.Name = "trainerName_lbl"
-        Me.trainerName_lbl.Size = New System.Drawing.Size(74, 13)
-        Me.trainerName_lbl.TabIndex = 2
-        Me.trainerName_lbl.Text = "Trainer Name"
-        '
-        'trainerName_txtBox
-        '
-        Me.trainerName_txtBox.Location = New System.Drawing.Point(6, 55)
-        Me.trainerName_txtBox.MaxLength = 25
-        Me.trainerName_txtBox.Name = "trainerName_txtBox"
-        Me.trainerName_txtBox.Size = New System.Drawing.Size(185, 22)
-        Me.trainerName_txtBox.TabIndex = 1
-        '
-        'trainerInfoTitle_lbl
-        '
-        Me.trainerInfoTitle_lbl.AutoSize = True
-        Me.trainerInfoTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.trainerInfoTitle_lbl.Location = New System.Drawing.Point(6, 3)
-        Me.trainerInfoTitle_lbl.Name = "trainerInfoTitle_lbl"
-        Me.trainerInfoTitle_lbl.Size = New System.Drawing.Size(127, 30)
-        Me.trainerInfoTitle_lbl.TabIndex = 0
-        Me.trainerInfoTitle_lbl.Text = "Trainer Info"
         '
         'pg_POne
         '
@@ -4466,10 +4568,14 @@ Partial Class Form1
         Me.Text = "Showdown to Essentials Converter"
         Me.pages_tabGrp.ResumeLayout(False)
         Me.pg_Trainer.ResumeLayout(False)
-        Me.pg_Trainer.PerformLayout()
-        Me.miscInfo_grpBox.ResumeLayout(False)
-        Me.miscInfo_grpBox.PerformLayout()
+        Me.trainerInfo_tabPgs.ResumeLayout(False)
+        Me.pg_TrainerInfo.ResumeLayout(False)
+        Me.pg_TrainerInfo.PerformLayout()
         CType(Me.pe18_pic, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pg_MiscInfo.ResumeLayout(False)
+        Me.pg_MiscInfo.PerformLayout()
+        Me.pg_TrainerItems.ResumeLayout(False)
+        Me.pg_TrainerItems.PerformLayout()
         Me.trainerItems_grp.ResumeLayout(False)
         Me.pg_POne.ResumeLayout(False)
         Me.pokemonOne_grp.ResumeLayout(False)
@@ -4561,8 +4667,6 @@ Partial Class Form1
     Friend WithEvents properSpellingNote_lbl As Label
     Friend WithEvents numPoké_lbl As Label
     Friend WithEvents numPoké_cmb As ComboBox
-    Friend WithEvents trainerUsesItems_chkBox As CheckBox
-    Friend WithEvents trainerItems_grp As GroupBox
     Friend WithEvents trainerType_lbl As Label
     Friend WithEvents trainerType_txtBox As TextBox
     Friend WithEvents battleTeamID_lbl As Label
@@ -4923,15 +5027,12 @@ Partial Class Form1
     Friend WithEvents pokemonFiveEVsDEF_lbl As Label
     Friend WithEvents pokemonFiveIVsDEF_txt As TextBox
     Friend WithEvents pokemonFiveIVsDEF_lbl As Label
-    Friend WithEvents miscInfo_grpBox As GroupBox
     Friend WithEvents customBallIDs_chkBox As CheckBox
     Friend WithEvents trainer_txt_file_dialog As OpenFileDialog
     Friend WithEvents save_to_trainers_btn As Button
     Friend WithEvents clearInputs_btn As Button
     Friend WithEvents internalBallNames_chk As CheckBox
     Friend WithEvents wizard_btn As Button
-    Friend WithEvents trainerItemsList_btn As Button
-    Friend WithEvents trainerItemsList_lstbox As ListBox
     Friend WithEvents thirdPartyLicenses_lnk As LinkLabel
     Friend WithEvents pokemonOneAddMove_btn As Button
     Friend WithEvents pokemonOneMoves_lst As ListBox
@@ -4945,4 +5046,18 @@ Partial Class Form1
     Friend WithEvents pokemonFiveMoves_lst As ListBox
     Friend WithEvents pokemonSixAddMove_btn As Button
     Friend WithEvents pokemonSixMoves_lst As ListBox
+    Friend WithEvents trainerInfo_tabPgs As TabControl
+    Friend WithEvents pg_TrainerInfo As TabPage
+    Friend WithEvents pg_MiscInfo As TabPage
+    Friend WithEvents pg_TrainerItems As TabPage
+    Friend WithEvents trainerUsesItems_chkBox As CheckBox
+    Friend WithEvents trainerItems_grp As GroupBox
+    Friend WithEvents trainerItemsList_btn As Button
+    Friend WithEvents trainerItemsList_lstbox As ListBox
+    Friend WithEvents trainerItemInfo_lbl As Label
+    Friend WithEvents useAbilityIndex_chkBox As CheckBox
+    Friend WithEvents itemPotion_btn As Button
+    Friend WithEvents itemSuperPotion_btn As Button
+    Friend WithEvents itemHyperPotion_btn As Button
+    Friend WithEvents itemFullRestore_btn As Button
 End Class

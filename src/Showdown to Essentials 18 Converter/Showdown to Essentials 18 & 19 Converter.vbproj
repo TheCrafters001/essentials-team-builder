@@ -170,6 +170,7 @@
     <Compile Include="Utilities\Startup.vb" />
     <Compile Include="Utilities\ThemeHandler.vb" />
     <Compile Include="Utilities\Timer.vb" />
+    <Compile Include="Utilities\trainerItemHandler.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Extra\New_Splash.resx">

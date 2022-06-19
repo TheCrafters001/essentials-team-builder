@@ -93,6 +93,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Essentials18to20() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Essentials18to20", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property gplv3_with_text_136x68() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("gplv3_with_text_136x68", resourceCulture)
@@ -176,6 +186,16 @@ Namespace My.Resources
         Friend ReadOnly Property Thumbnail_19() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Thumbnail_19", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Thumbnail_19_New() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Thumbnail_19_New", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
