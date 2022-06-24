@@ -1,5 +1,97 @@
 ﻿Public Class Generator
-    Public Shared Sub Generate()
+    Public Shared Sub createTeam()
+        '
+        ' WARNING: THIS GENERATOR MAY BE COMPLETELY REWRITTEN AT SOME POINT.
+        ' PLEASE KEEP THIS IN MIND.
+        '
+        ' Generator Code Sample
+        ' 
+        ' [TYPE,Name,ID]
+        ' Items = ITEM,ITEM2,ITEM3,ITEM4,ITEM5,ITEM6,ITEM7,ITEM8
+        ' LoseText = "Lose Text"
+        ' # If Essentials 20, don't use quotes for lose text.
+        ' Pokemon = PKMN1,LVL
+        '     Name = NickName
+        '     Form = FormID
+        '     Gender = GENDER
+        '     Shiny = YESNO
+        '     Shadow = YESNO
+        '     Moves = MOVE,MOVE2,MOVE3,MOVE4
+        '     Ability = NUMBER (Between 0-5)
+        '     Item = HELDITEM
+        '     Nature = NATURE
+        '     IV = HP,ATK,DEF,SPD,SPATK,SPDEF
+        '     EV = HP,ATK,DEF,SPD,SPATK,SPDEF
+        '     Happiness = NUMBER (1-255)
+        '     Ball = ID (0-25)
+
+
+        'Reset the output box
+        Form1.outputBox_rchBox.Text = ""
+
+        If Form1.trainerName_txtBox.Text = "" Then ' Check if the user has entered a Trainer Name
+            MessageBox.Show("You need to enter a trainer name.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        ElseIf Form1.trainerType_txtBox.Text = "" Then ' Check if user has entered Trainer Type
+            MessageBox.Show("You need to enter a trainer type.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        ElseIf Form1.existingBattle_chkBox.Checked = True Then 'Check if existingBattle_chkBox is checked
+            If Form1.battleTeamID_txtBox.Text = "" Then 'check if the user has entered a battle team id
+                MessageBox.Show("You need to enter a battle team id.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Else
+            ' Move past this if statement.
+        End If
+
+#Region "Trainer Code"
+        Form1.outputBox_rchBox.Text &= "#-------------------------------" & vbCrLf
+
+        Dim trainerPrefix As String = "[]"
+        Dim items As String = ""
+        Dim TrainerItems As String = ""
+        Dim loseText As String = ""
+
+        ' Item Handler
+        ' ========================
+        ' This took me longer than I would like to admit to make.
+        ' Thanks to Mary on Stack Overflow for the help
+        ' https://stackoverflow.com/a/68794434/7799766
+        For Each item In Form1.trainerItemsList_lstbox.Items
+            TrainerItems &= item.ToString.ToUpper & ","
+        Next
+
+        ' If Trainer Uses Items = True
+        ' Remove comma at end, otherwise, ignore.
+        If Form1.trainerUsesItems_chkBox.Checked = True Then
+            TrainerItems = TrainerItems.Substring(0, TrainerItems.Length - 1)
+            items = "Items = " & TrainerItems & vbCrLf
+        ElseIf Form1.trainerUsesItems_chkBox.Checked = False Then
+            items = ""
+        Else
+            items = "Items = POTION"
+        End If
+
+        ' Check if Battle Team ID is isn't checked
+        If Form1.existingBattle_chkBox.Checked = False Then
+            ' Create Trainer Prefix
+            trainerPrefix = "[" & Form1.trainerType_txtBox.Text.ToUpper & "," & Form1.trainerName_txtBox.Text & "]"
+            'check if it is checked
+        ElseIf Form1.trainerUsesItems_chkBox.Checked = True Then
+            trainerPrefix = "[" & Form1.trainerType_txtBox.Text.ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & "]"
+        End If
+
+        ' Check if Lose Text has quotes or not.
+        If Form1.loseTextQuotes_chkBox.Checked = False Then
+            loseText = "LoseText = " & Form1.loseText_txt.Text
+        ElseIf Form1.loseTextQuotes_chkBox.Checked = True Then
+            loseText = "LoseText = """ & Form1.loseText_txt.Text & """"
+        Else
+            loseText = "LoseText = ""..."""
+        End If
+
+        ' Send code to Output Box
+        Form1.outputBox_rchBox.Text &= trainerPrefix & vbCrLf & items & loseText
+
+#End Region
+
         Dim pokemonName As String
         Dim heldItem As String
         Dim AllMoves As String
@@ -15,10 +107,6 @@
         Dim shadowString As String
         Dim pokeballID As String
         Dim numPoke As Integer = Form1.numPoké_cmb.SelectedItem
-        'Trainer Items
-        Dim loseText As String
-        Dim item As Object
-        Dim TrainerItems As String
         'Pokemon Moves
         Dim move As Object
         Dim output As String
@@ -455,94 +543,6 @@
         Catch ex As Exception
             MessageBox.Show("Oh no!" & vbCrLf & ex.ToString, "Error")
         End Try
-    End Sub
-
-    Public Shared Sub createTeam()
-        '
-        ' WARNING: THIS GENERATOR MAY BE COMPLETELY REWRITTEN AT SOME POINT.
-        ' PLEASE KEEP THIS IN MIND.
-        '
-        ' Generator Code Sample
-        ' 
-        ' [TYPE,Name,ID]
-        ' Items = ITEM,ITEM2,ITEM3,ITEM4,ITEM5,ITEM6,ITEM7,ITEM8
-        ' LoseText = "Lose Text"
-        ' # If Essentials 20, don't use quotes for lose text.
-        ' Pokemon = PKMN1,LVL
-        '     Name = NickName
-        '     Form = FormID
-        '     Gender = GENDER
-        '     Shiny = YESNO
-        '     Shadow = YESNO
-        '     Moves = MOVE,MOVE2,MOVE3,MOVE4
-        '     Ability = NUMBER (Between 0-5)
-        '     Item = HELDITEM
-        '     Nature = NATURE
-        '     IV = HP,ATK,DEF,SPD,SPATK,SPDEF
-        '     EV = HP,ATK,DEF,SPD,SPATK,SPDEF
-        '     Happiness = NUMBER (1-255)
-        '     Ball = ID (0-25)
-
-
-        'Reset the output box
-        Form1.outputBox_rchBox.Text = ""
-
-        If Form1.trainerName_txtBox.Text = "" Then ' Check if the user has entered a Trainer Name
-            MessageBox.Show("You need to enter a trainer name.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        ElseIf Form1.trainerType_txtBox.Text = "" Then ' Check if user has entered Trainer Type
-            MessageBox.Show("You need to enter a trainer id.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        ElseIf Form1.existingBattle_chkBox.Checked = True Then 'Check if existingBattle_chkBox is checked
-            If Form1.battleTeamID_txtBox.Text = "" Then 'check if the user has entered a battle team id
-                MessageBox.Show("You need to enter a battle team id.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End If
-        Else
-            ' Move past this if statement.
-        End If
-
-#Region "Trainer Code"
-        Form1.outputBox_rchBox.Text &= "#-------------------------------" & vbCrLf
-
-        Dim trainerPrefix As String = "[]"
-        Dim TrainerItems As String = ""
-        Dim loseText As String = ""
-
-        ' Item Handler
-        ' ========================
-        ' This took me longer than I would like to admit to make.
-        ' Thanks to Mary on Stack Overflow for the help
-        ' https://stackoverflow.com/a/68794434/7799766
-        For Each item In Form1.trainerItemsList_lstbox.Items
-            TrainerItems &= item.ToString.ToUpper & ","
-        Next
-
-        ' If Trainer Uses Items = True
-        ' Remove comma at end, otherwise, ignore.
-        If Form1.trainerUsesItems_chkBox.Checked = True Then
-            TrainerItems = TrainerItems.Substring(0, TrainerItems.Length - 1)
-        End If
-
-        ' Check if Battle Team ID is isn't checked
-        If Form1.existingBattle_chkBox.Checked = False Then
-            ' Create Trainer Prefix
-            trainerPrefix = "[" & Form1.trainerType_txtBox.Text & "," & Form1.trainerName_txtBox.Text & "]"
-            'check if it is checked
-        ElseIf Form1.trainerUsesItems_chkBox.Checked = True Then
-            trainerPrefix = "[" & Form1.trainerType_txtBox.Text & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & "]"
-        End If
-
-        ' Check if Lose Text has quotes or not.
-        If Form1.loseTextQuotes_chkBox.Checked = False Then
-            loseText = "LoseText = " & Form1.loseText_txt.Text
-        ElseIf Form1.loseTextQuotes_chkBox.Checked = True Then
-            loseText = "LoseText = """ & Form1.loseText_txt.Text & """"
-        Else
-            loseText = "LoseText = ""..."""
-        End If
-
-        ' Send code to Output Box
-        Form1.outputBox_rchBox.Text &= trainerPrefix & vbCrLf & "Items = " & TrainerItems & vbCrLf & loseText
-
-#End Region
 
 
     End Sub
