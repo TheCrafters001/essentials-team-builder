@@ -44,6 +44,7 @@ Partial Class Form1
         Me.numPoké_lbl = New System.Windows.Forms.Label()
         Me.numPoké_cmb = New System.Windows.Forms.ComboBox()
         Me.pg_MiscInfo = New System.Windows.Forms.TabPage()
+        Me.loseTextQuotes_chkBox = New System.Windows.Forms.CheckBox()
         Me.useAbilityIndex_chkBox = New System.Windows.Forms.CheckBox()
         Me.internalBallNames_chk = New System.Windows.Forms.CheckBox()
         Me.existingBattle_chkBox = New System.Windows.Forms.CheckBox()
@@ -423,6 +424,10 @@ Partial Class Form1
         Me.Logo_picBox = New System.Windows.Forms.PictureBox()
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
+        Me.recommendedSettings_grp = New System.Windows.Forms.GroupBox()
+        Me.ess20Settings_btn = New System.Windows.Forms.Button()
+        Me.ess19Settings_btn = New System.Windows.Forms.Button()
+        Me.ess18Settings_btn = New System.Windows.Forms.Button()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.trainerInfo_tabPgs.SuspendLayout()
@@ -478,6 +483,7 @@ Partial Class Form1
         Me.pg_About.SuspendLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.recommendedSettings_grp.SuspendLayout()
         Me.SuspendLayout()
         '
         'pages_tabGrp
@@ -526,6 +532,7 @@ Partial Class Form1
         '
         'pg_TrainerInfo
         '
+        Me.pg_TrainerInfo.Controls.Add(Me.recommendedSettings_grp)
         Me.pg_TrainerInfo.Controls.Add(Me.trainerInfoTitle_lbl)
         Me.pg_TrainerInfo.Controls.Add(Me.wizard_btn)
         Me.pg_TrainerInfo.Controls.Add(Me.example_btn)
@@ -605,7 +612,7 @@ Partial Class Form1
         '
         Me.pe18_pic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pe18_pic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pe18_pic.Image = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Essentials18_19Only
+        Me.pe18_pic.Image = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Essentials18to20
         Me.pe18_pic.Location = New System.Drawing.Point(519, 361)
         Me.pe18_pic.Name = "pe18_pic"
         Me.pe18_pic.Size = New System.Drawing.Size(207, 106)
@@ -706,6 +713,7 @@ Partial Class Form1
         '
         'pg_MiscInfo
         '
+        Me.pg_MiscInfo.Controls.Add(Me.loseTextQuotes_chkBox)
         Me.pg_MiscInfo.Controls.Add(Me.useAbilityIndex_chkBox)
         Me.pg_MiscInfo.Controls.Add(Me.internalBallNames_chk)
         Me.pg_MiscInfo.Controls.Add(Me.existingBattle_chkBox)
@@ -718,14 +726,27 @@ Partial Class Form1
         Me.pg_MiscInfo.Text = "Misc. Info"
         Me.pg_MiscInfo.UseVisualStyleBackColor = True
         '
+        'loseTextQuotes_chkBox
+        '
+        Me.loseTextQuotes_chkBox.AutoSize = True
+        Me.loseTextQuotes_chkBox.Location = New System.Drawing.Point(210, 42)
+        Me.loseTextQuotes_chkBox.Name = "loseTextQuotes_chkBox"
+        Me.loseTextQuotes_chkBox.Size = New System.Drawing.Size(150, 30)
+        Me.loseTextQuotes_chkBox.TabIndex = 7
+        Me.loseTextQuotes_chkBox.Text = "Add Quotes to Lose Text" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Essentials 19)"
+        Me.loseTextQuotes_chkBox.UseVisualStyleBackColor = True
+        '
         'useAbilityIndex_chkBox
         '
         Me.useAbilityIndex_chkBox.AutoSize = True
+        Me.useAbilityIndex_chkBox.Checked = True
+        Me.useAbilityIndex_chkBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.useAbilityIndex_chkBox.Enabled = False
         Me.useAbilityIndex_chkBox.Location = New System.Drawing.Point(6, 42)
         Me.useAbilityIndex_chkBox.Name = "useAbilityIndex_chkBox"
-        Me.useAbilityIndex_chkBox.Size = New System.Drawing.Size(198, 17)
+        Me.useAbilityIndex_chkBox.Size = New System.Drawing.Size(198, 30)
         Me.useAbilityIndex_chkBox.TabIndex = 6
-        Me.useAbilityIndex_chkBox.Text = "Use AbilityIndex instead of Ability"
+        Me.useAbilityIndex_chkBox.Text = "Use AbilityIndex instead of Ability" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Essentials 19, 20)"
         Me.useAbilityIndex_chkBox.UseVisualStyleBackColor = True
         '
         'internalBallNames_chk
@@ -4552,6 +4573,45 @@ Partial Class Form1
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
         '
+        'recommendedSettings_grp
+        '
+        Me.recommendedSettings_grp.Controls.Add(Me.ess20Settings_btn)
+        Me.recommendedSettings_grp.Controls.Add(Me.ess19Settings_btn)
+        Me.recommendedSettings_grp.Controls.Add(Me.ess18Settings_btn)
+        Me.recommendedSettings_grp.Location = New System.Drawing.Point(265, 332)
+        Me.recommendedSettings_grp.Name = "recommendedSettings_grp"
+        Me.recommendedSettings_grp.Size = New System.Drawing.Size(248, 77)
+        Me.recommendedSettings_grp.TabIndex = 16
+        Me.recommendedSettings_grp.TabStop = False
+        Me.recommendedSettings_grp.Text = "Recommended Settings"
+        '
+        'ess20Settings_btn
+        '
+        Me.ess20Settings_btn.Location = New System.Drawing.Point(168, 21)
+        Me.ess20Settings_btn.Name = "ess20Settings_btn"
+        Me.ess20Settings_btn.Size = New System.Drawing.Size(75, 45)
+        Me.ess20Settings_btn.TabIndex = 2
+        Me.ess20Settings_btn.Text = "Essentials 20"
+        Me.ess20Settings_btn.UseVisualStyleBackColor = True
+        '
+        'ess19Settings_btn
+        '
+        Me.ess19Settings_btn.Location = New System.Drawing.Point(87, 21)
+        Me.ess19Settings_btn.Name = "ess19Settings_btn"
+        Me.ess19Settings_btn.Size = New System.Drawing.Size(75, 45)
+        Me.ess19Settings_btn.TabIndex = 1
+        Me.ess19Settings_btn.Text = "Essentials 19"
+        Me.ess19Settings_btn.UseVisualStyleBackColor = True
+        '
+        'ess18Settings_btn
+        '
+        Me.ess18Settings_btn.Location = New System.Drawing.Point(6, 21)
+        Me.ess18Settings_btn.Name = "ess18Settings_btn"
+        Me.ess18Settings_btn.Size = New System.Drawing.Size(75, 45)
+        Me.ess18Settings_btn.TabIndex = 0
+        Me.ess18Settings_btn.Text = "Essentials 18"
+        Me.ess18Settings_btn.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -4656,6 +4716,7 @@ Partial Class Form1
         Me.pg_About.PerformLayout()
         CType(Me.gnuGPL3_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Logo_picBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.recommendedSettings_grp.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -5060,4 +5121,9 @@ Partial Class Form1
     Friend WithEvents itemSuperPotion_btn As Button
     Friend WithEvents itemHyperPotion_btn As Button
     Friend WithEvents itemFullRestore_btn As Button
+    Friend WithEvents loseTextQuotes_chkBox As CheckBox
+    Friend WithEvents recommendedSettings_grp As GroupBox
+    Friend WithEvents ess20Settings_btn As Button
+    Friend WithEvents ess19Settings_btn As Button
+    Friend WithEvents ess18Settings_btn As Button
 End Class
