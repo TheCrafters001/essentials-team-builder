@@ -18,7 +18,24 @@ Public Class Form1
         End If
     End Sub
     Private Sub generate_btn_Click(sender As Object, e As EventArgs) Handles generate_btn.Click
-        Generator.Generate()
+        Generator.createTeam()
+    End Sub
+
+    Private Sub ess18Settings_btn_Click(sender As Object, e As EventArgs) Handles ess18Settings_btn.Click
+        useAbilityIndex_chkBox.Checked = False
+        internalBallNames_chk.Checked = False
+    End Sub
+
+    Private Sub ess19Settings_btn_Click(sender As Object, e As EventArgs) Handles ess19Settings_btn.Click
+        useAbilityIndex_chkBox.Checked = True
+        internalBallNames_chk.Checked = True
+        loseTextQuotes_chkBox.Checked = True
+    End Sub
+
+    Private Sub ess20Settings_btn_Click(sender As Object, e As EventArgs) Handles ess20Settings_btn.Click
+        useAbilityIndex_chkBox.Checked = True
+        internalBallNames_chk.Checked = True
+        loseTextQuotes_chkBox.Checked = False
     End Sub
 
     Private Sub example_btn_Click(sender As Object, e As EventArgs) Handles example_btn.Click
@@ -412,5 +429,4 @@ Public Class Form1
     Private Sub gnuGPL3_picBox_Click(sender As Object, e As EventArgs) Handles gnuGPL3_picBox.Click
         Process.Start("https://www.gnu.org/licenses/gpl-3.0.html")
     End Sub
-
 End Class
