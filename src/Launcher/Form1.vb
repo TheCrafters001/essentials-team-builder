@@ -16,4 +16,18 @@
             MessageBox.Show("Couldn't launch. Is it installed?", "Error")
         End Try
     End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Try
+            Dim pHelp As New ProcessStartInfo
+            pHelp.FileName = ".\Showdown to Essentials 18 & 19 Converter.exe"
+            pHelp.Arguments = ""
+            pHelp.UseShellExecute = True
+            pHelp.WindowStyle = ProcessWindowStyle.Normal
+            Dim proc As Process = Process.Start(pHelp)
+            Application.Exit()
+        Catch ex As Exception
+            MessageBox.Show("Couldn't launch. Is it installed?", "Error")
+        End Try
+    End Sub
 End Class
