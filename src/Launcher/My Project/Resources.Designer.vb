@@ -105,7 +105,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property gplv3_with_text_136x68() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gplv3_with_text_136x68", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("gplv3-with-text-136x68", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -115,7 +115,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Showdown_to_Essentials() As System.Drawing.Icon
             Get
-                Dim obj As Object = ResourceManager.GetObject("Showdown_to_Essentials", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Showdown to Essentials", resourceCulture)
                 Return CType(obj,System.Drawing.Icon)
             End Get
         End Property
@@ -125,7 +125,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Showdown_to_Essentials_Logo() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Showdown_to_Essentials_Logo", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Showdown to Essentials Logo", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -135,7 +135,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Showdown_to_Essentials1() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Showdown_to_Essentials1", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Showdown to Essentials1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -146,16 +146,6 @@ Namespace My.Resources
         Friend ReadOnly Property Thumbnail() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Thumbnail", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property Thumbnail_19_New() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Thumbnail_19_New", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

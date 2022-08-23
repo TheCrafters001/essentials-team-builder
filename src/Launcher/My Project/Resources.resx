@@ -125,27 +125,24 @@
     <value>..\Resources\Essentials18Only.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Essentials18to20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>H:\Images\ShowdownToEssentials\Essentials18to20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Essentials18to20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Essentials18_19Only" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Essentials18_19Only.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gplv3_with_text_136x68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="gplv3-with-text-136x68" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gplv3-with-text-136x68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Showdown_to_Essentials" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Showdown to Essentials" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Showdown to Essentials.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Showdown_to_Essentials1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Showdown to Essentials.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Showdown_to_Essentials_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Showdown to Essentials Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Showdown to Essentials Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Showdown to Essentials1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Showdown to Essentials.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thumbnail_19_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>H:\Images\ShowdownToEssentials\Thumbnail_19_New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

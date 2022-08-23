@@ -611,7 +611,7 @@ Partial Class Form1
         'trainerInfoTitle_lbl
         '
         Me.trainerInfoTitle_lbl.AutoSize = True
-        Me.trainerInfoTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.trainerInfoTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.trainerInfoTitle_lbl.Location = New System.Drawing.Point(6, 3)
         Me.trainerInfoTitle_lbl.Name = "trainerInfoTitle_lbl"
         Me.trainerInfoTitle_lbl.Size = New System.Drawing.Size(127, 30)
@@ -622,7 +622,7 @@ Partial Class Form1
         '
         Me.wizard_btn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.wizard_btn.Location = New System.Drawing.Point(4, 415)
+        Me.wizard_btn.Location = New System.Drawing.Point(4, 413)
         Me.wizard_btn.Name = "wizard_btn"
         Me.wizard_btn.Size = New System.Drawing.Size(507, 23)
         Me.wizard_btn.TabIndex = 9
@@ -633,7 +633,7 @@ Partial Class Form1
         '
         Me.example_btn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.example_btn.Location = New System.Drawing.Point(253, 444)
+        Me.example_btn.Location = New System.Drawing.Point(253, 442)
         Me.example_btn.Name = "example_btn"
         Me.example_btn.Size = New System.Drawing.Size(260, 23)
         Me.example_btn.TabIndex = 8
@@ -652,8 +652,8 @@ Partial Class Form1
         '
         Me.properSpellingNote_lbl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.properSpellingNote_lbl.AutoSize = True
-        Me.properSpellingNote_lbl.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(6, 447)
+        Me.properSpellingNote_lbl.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(6, 445)
         Me.properSpellingNote_lbl.Name = "properSpellingNote_lbl"
         Me.properSpellingNote_lbl.Size = New System.Drawing.Size(241, 20)
         Me.properSpellingNote_lbl.TabIndex = 12
@@ -663,8 +663,8 @@ Partial Class Form1
         '
         Me.pe18_pic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pe18_pic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pe18_pic.Image = Global.Showdown_to_Essentials_18_Converter.My.Resources.Resources.Essentials18to20
-        Me.pe18_pic.Location = New System.Drawing.Point(519, 361)
+        Me.pe18_pic.Image = CType(resources.GetObject("pe18_pic.Image"), System.Drawing.Image)
+        Me.pe18_pic.Location = New System.Drawing.Point(519, 359)
         Me.pe18_pic.Name = "pe18_pic"
         Me.pe18_pic.Size = New System.Drawing.Size(207, 106)
         Me.pe18_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -717,7 +717,7 @@ Partial Class Form1
         'trainerType_lbl
         '
         Me.trainerType_lbl.AutoSize = True
-        Me.trainerType_lbl.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.trainerType_lbl.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.trainerType_lbl.Location = New System.Drawing.Point(197, 39)
         Me.trainerType_lbl.Name = "trainerType_lbl"
         Me.trainerType_lbl.Size = New System.Drawing.Size(198, 13)
@@ -976,7 +976,7 @@ Partial Class Form1
         Me.pokemonOne_grp.Controls.Add(Me.pokemonOneName_lbl)
         Me.pokemonOne_grp.Location = New System.Drawing.Point(6, 6)
         Me.pokemonOne_grp.Name = "pokemonOne_grp"
-        Me.pokemonOne_grp.Size = New System.Drawing.Size(740, 499)
+        Me.pokemonOne_grp.Size = New System.Drawing.Size(740, 501)
         Me.pokemonOne_grp.TabIndex = 0
         Me.pokemonOne_grp.TabStop = False
         Me.pokemonOne_grp.Text = "Pokémon 1"
@@ -1541,9 +1541,9 @@ Partial Class Form1
         'pg_PTwo
         '
         Me.pg_PTwo.Controls.Add(Me.pokemonTwo_grp)
-        Me.pg_PTwo.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PTwo.Location = New System.Drawing.Point(4, 24)
         Me.pg_PTwo.Name = "pg_PTwo"
-        Me.pg_PTwo.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PTwo.Size = New System.Drawing.Size(752, 509)
         Me.pg_PTwo.TabIndex = 2
         Me.pg_PTwo.Text = "Pokémon 2"
         Me.pg_PTwo.ToolTipText = "Edit the trainer's pokemon data here."
@@ -2147,9 +2147,9 @@ Partial Class Form1
         'pg_PThree
         '
         Me.pg_PThree.Controls.Add(Me.pokemonThree_grp)
-        Me.pg_PThree.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PThree.Location = New System.Drawing.Point(4, 24)
         Me.pg_PThree.Name = "pg_PThree"
-        Me.pg_PThree.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PThree.Size = New System.Drawing.Size(752, 509)
         Me.pg_PThree.TabIndex = 3
         Me.pg_PThree.Text = "Pokémon 3"
         Me.pg_PThree.ToolTipText = "Edit the trainer's pokemon data here."
@@ -2753,9 +2753,9 @@ Partial Class Form1
         'pg_PFour
         '
         Me.pg_PFour.Controls.Add(Me.pokemonFour_grp)
-        Me.pg_PFour.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PFour.Location = New System.Drawing.Point(4, 24)
         Me.pg_PFour.Name = "pg_PFour"
-        Me.pg_PFour.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PFour.Size = New System.Drawing.Size(752, 509)
         Me.pg_PFour.TabIndex = 4
         Me.pg_PFour.Text = "Pokémon 4"
         Me.pg_PFour.ToolTipText = "Edit the trainer's pokemon data here."
@@ -3359,9 +3359,9 @@ Partial Class Form1
         'pg_PFive
         '
         Me.pg_PFive.Controls.Add(Me.pokemonFive_grp)
-        Me.pg_PFive.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PFive.Location = New System.Drawing.Point(4, 24)
         Me.pg_PFive.Name = "pg_PFive"
-        Me.pg_PFive.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PFive.Size = New System.Drawing.Size(752, 509)
         Me.pg_PFive.TabIndex = 5
         Me.pg_PFive.Text = "Pokémon 5"
         Me.pg_PFive.ToolTipText = "Edit the trainer's pokemon data here."
@@ -3965,9 +3965,9 @@ Partial Class Form1
         'pg_PSix
         '
         Me.pg_PSix.Controls.Add(Me.pokemonSix_grp)
-        Me.pg_PSix.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PSix.Location = New System.Drawing.Point(4, 24)
         Me.pg_PSix.Name = "pg_PSix"
-        Me.pg_PSix.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PSix.Size = New System.Drawing.Size(752, 509)
         Me.pg_PSix.TabIndex = 6
         Me.pg_PSix.Text = "Pokémon 6"
         Me.pg_PSix.ToolTipText = "Edit the trainer's pokemon data here."
@@ -4571,9 +4571,9 @@ Partial Class Form1
         'pg_PBallIDRef
         '
         Me.pg_PBallIDRef.Controls.Add(Me.PBallIDRef_RchTxt)
-        Me.pg_PBallIDRef.Location = New System.Drawing.Point(4, 22)
+        Me.pg_PBallIDRef.Location = New System.Drawing.Point(4, 24)
         Me.pg_PBallIDRef.Name = "pg_PBallIDRef"
-        Me.pg_PBallIDRef.Size = New System.Drawing.Size(752, 511)
+        Me.pg_PBallIDRef.Size = New System.Drawing.Size(752, 509)
         Me.pg_PBallIDRef.TabIndex = 9
         Me.pg_PBallIDRef.Text = "Pokéball ID Reference"
         Me.pg_PBallIDRef.ToolTipText = "Don't know what pokeball is what? Look here."
@@ -4585,7 +4585,7 @@ Partial Class Form1
         Me.PBallIDRef_RchTxt.Location = New System.Drawing.Point(0, 0)
         Me.PBallIDRef_RchTxt.Name = "PBallIDRef_RchTxt"
         Me.PBallIDRef_RchTxt.ReadOnly = True
-        Me.PBallIDRef_RchTxt.Size = New System.Drawing.Size(752, 511)
+        Me.PBallIDRef_RchTxt.Size = New System.Drawing.Size(752, 509)
         Me.PBallIDRef_RchTxt.TabIndex = 0
         Me.PBallIDRef_RchTxt.Text = resources.GetString("PBallIDRef_RchTxt.Text")
         '
@@ -4596,9 +4596,9 @@ Partial Class Form1
         Me.pg_Output.Controls.Add(Me.Label1)
         Me.pg_Output.Controls.Add(Me.save_btn)
         Me.pg_Output.Controls.Add(Me.generate_btn)
-        Me.pg_Output.Location = New System.Drawing.Point(4, 22)
+        Me.pg_Output.Location = New System.Drawing.Point(4, 24)
         Me.pg_Output.Name = "pg_Output"
-        Me.pg_Output.Size = New System.Drawing.Size(752, 511)
+        Me.pg_Output.Size = New System.Drawing.Size(752, 509)
         Me.pg_Output.TabIndex = 8
         Me.pg_Output.Text = "Output"
         Me.pg_Output.ToolTipText = "Generate the trainer data here."
@@ -4631,7 +4631,7 @@ Partial Class Form1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(3, 491)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(390, 12)
@@ -4667,9 +4667,9 @@ Partial Class Form1
         Me.pg_About.Controls.Add(Me.aboutAuthor_lbl)
         Me.pg_About.Controls.Add(Me.aboutTitle_lbl)
         Me.pg_About.Controls.Add(Me.Logo_picBox)
-        Me.pg_About.Location = New System.Drawing.Point(4, 22)
+        Me.pg_About.Location = New System.Drawing.Point(4, 24)
         Me.pg_About.Name = "pg_About"
-        Me.pg_About.Size = New System.Drawing.Size(752, 511)
+        Me.pg_About.Size = New System.Drawing.Size(752, 509)
         Me.pg_About.TabIndex = 7
         Me.pg_About.Text = "About"
         Me.pg_About.ToolTipText = "Information about this program."
@@ -4705,7 +4705,7 @@ Partial Class Form1
         '
         'aboutAuthor_lbl
         '
-        Me.aboutAuthor_lbl.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.aboutAuthor_lbl.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.aboutAuthor_lbl.Location = New System.Drawing.Point(6, 142)
         Me.aboutAuthor_lbl.Name = "aboutAuthor_lbl"
         Me.aboutAuthor_lbl.Size = New System.Drawing.Size(740, 32)
@@ -4715,7 +4715,7 @@ Partial Class Form1
         '
         'aboutTitle_lbl
         '
-        Me.aboutTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.aboutTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.aboutTitle_lbl.Location = New System.Drawing.Point(6, 110)
         Me.aboutTitle_lbl.Name = "aboutTitle_lbl"
         Me.aboutTitle_lbl.Size = New System.Drawing.Size(740, 32)
@@ -4750,7 +4750,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.pages_tabGrp)
-        Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(1280, 720)

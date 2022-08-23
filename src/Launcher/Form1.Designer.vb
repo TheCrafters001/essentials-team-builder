@@ -22,23 +22,13 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.exit_btn = New System.Windows.Forms.Button()
         Me.v17_picBox = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.v18up_picBox = New System.Windows.Forms.PictureBox()
+        Me.close_btn = New System.Windows.Forms.Button()
+        Me.fantool_lbl = New System.Windows.Forms.Label()
         CType(Me.v17_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.v18up_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'exit_btn
-        '
-        Me.exit_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.exit_btn.Location = New System.Drawing.Point(339, 144)
-        Me.exit_btn.Name = "exit_btn"
-        Me.exit_btn.Size = New System.Drawing.Size(75, 23)
-        Me.exit_btn.TabIndex = 2
-        Me.exit_btn.Text = "Cancel"
-        Me.exit_btn.UseVisualStyleBackColor = True
         '
         'v17_picBox
         '
@@ -47,50 +37,59 @@ Partial Class Form1
         Me.v17_picBox.Name = "v17_picBox"
         Me.v17_picBox.Size = New System.Drawing.Size(198, 126)
         Me.v17_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.v17_picBox.TabIndex = 3
+        Me.v17_picBox.TabIndex = 0
         Me.v17_picBox.TabStop = False
         '
-        'PictureBox2
+        'v18up_picBox
         '
-        Me.PictureBox2.Image = Global.Launcher.My.Resources.Resources.Essentials18to20
-        Me.PictureBox2.Location = New System.Drawing.Point(216, 12)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(198, 126)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
+        Me.v18up_picBox.Image = Global.Launcher.My.Resources.Resources.Essentials18to20
+        Me.v18up_picBox.Location = New System.Drawing.Point(216, 12)
+        Me.v18up_picBox.Name = "v18up_picBox"
+        Me.v18up_picBox.Size = New System.Drawing.Size(198, 126)
+        Me.v18up_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.v18up_picBox.TabIndex = 1
+        Me.v18up_picBox.TabStop = False
         '
-        'Label1
+        'close_btn
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 144)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(173, 26)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "This is a fan-made tool." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "No Copyright Infringment indended."
+        Me.close_btn.Location = New System.Drawing.Point(339, 144)
+        Me.close_btn.Name = "close_btn"
+        Me.close_btn.Size = New System.Drawing.Size(75, 23)
+        Me.close_btn.TabIndex = 2
+        Me.close_btn.Text = "Close"
+        Me.close_btn.UseVisualStyleBackColor = True
+        '
+        'fantool_lbl
+        '
+        Me.fantool_lbl.AutoSize = True
+        Me.fantool_lbl.Location = New System.Drawing.Point(12, 141)
+        Me.fantool_lbl.Name = "fantool_lbl"
+        Me.fantool_lbl.Size = New System.Drawing.Size(201, 30)
+        Me.fantool_lbl.TabIndex = 3
+        Me.fantool_lbl.Text = "This is a fan-made tool." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "No Copyright Infringment indended."
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(426, 179)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.fantool_lbl)
+        Me.Controls.Add(Me.close_btn)
+        Me.Controls.Add(Me.v18up_picBox)
         Me.Controls.Add(Me.v17_picBox)
-        Me.Controls.Add(Me.exit_btn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Click on a version to start the tool."
+        Me.Text = "Click on a verson to sthart the tool."
         CType(Me.v17_picBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.v18up_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents exit_btn As Button
+
     Friend WithEvents v17_picBox As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents v18up_picBox As PictureBox
+    Friend WithEvents close_btn As Button
+    Friend WithEvents fantool_lbl As Label
 End Class

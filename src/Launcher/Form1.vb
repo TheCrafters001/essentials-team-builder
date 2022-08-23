@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Private Sub exit_btn_Click(sender As Object, e As EventArgs) Handles exit_btn.Click
+    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Application.Exit()
     End Sub
 
@@ -17,7 +17,7 @@
         End Try
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub v18up_picBox_Click(sender As Object, e As EventArgs) Handles v18up_picBox.Click
         Try
             Dim pHelp As New ProcessStartInfo
             pHelp.FileName = ".\Showdown to Essentials 18 & 19 Converter.exe"

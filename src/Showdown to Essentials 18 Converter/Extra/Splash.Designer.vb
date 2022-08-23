@@ -34,8 +34,9 @@ Partial Class Splash
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(14, 10)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(375, 30)
         Me.Label1.TabIndex = 0
@@ -44,9 +45,10 @@ Partial Class Splash
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 64)
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 74)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(610, 345)
+        Me.PictureBox1.Size = New System.Drawing.Size(590, 333)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -55,8 +57,9 @@ Partial Class Splash
         '
         Me.PleaseWait_LBL.AutoSize = True
         Me.PleaseWait_LBL.BackColor = System.Drawing.Color.Transparent
-        Me.PleaseWait_LBL.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PleaseWait_LBL.Location = New System.Drawing.Point(11, 412)
+        Me.PleaseWait_LBL.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.PleaseWait_LBL.Location = New System.Drawing.Point(14, 410)
+        Me.PleaseWait_LBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.PleaseWait_LBL.Name = "PleaseWait_LBL"
         Me.PleaseWait_LBL.Size = New System.Drawing.Size(230, 30)
         Me.PleaseWait_LBL.TabIndex = 11
@@ -66,30 +69,33 @@ Partial Class Splash
         '
         Me.CopyrightLBL.AutoSize = True
         Me.CopyrightLBL.BackColor = System.Drawing.Color.Transparent
-        Me.CopyrightLBL.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CopyrightLBL.Location = New System.Drawing.Point(444, 429)
+        Me.CopyrightLBL.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CopyrightLBL.Location = New System.Drawing.Point(426, 410)
+        Me.CopyrightLBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CopyrightLBL.Name = "CopyrightLBL"
         Me.CopyrightLBL.Size = New System.Drawing.Size(178, 13)
         Me.CopyrightLBL.TabIndex = 10
-        Me.CopyrightLBL.Text = "Copyright © TheCrafters001 20XX"
+        Me.CopyrightLBL.Text = "Copyright © TheCrafters001 2022"
         '
         'VersionLBL
         '
         Me.VersionLBL.AutoSize = True
         Me.VersionLBL.BackColor = System.Drawing.Color.Transparent
-        Me.VersionLBL.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VersionLBL.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.VersionLBL.ForeColor = System.Drawing.Color.Black
-        Me.VersionLBL.Location = New System.Drawing.Point(12, 40)
+        Me.VersionLBL.Location = New System.Drawing.Point(14, 46)
+        Me.VersionLBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.VersionLBL.Name = "VersionLBL"
         Me.VersionLBL.Size = New System.Drawing.Size(111, 21)
         Me.VersionLBL.TabIndex = 9
         Me.VersionLBL.Text = "Version X.X.X.X"
+        Me.VersionLBL.Visible = False
         '
         'Splash
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(634, 451)
+        Me.ClientSize = New System.Drawing.Size(622, 454)
         Me.ControlBox = False
         Me.Controls.Add(Me.PleaseWait_LBL)
         Me.Controls.Add(Me.CopyrightLBL)
@@ -97,6 +103,7 @@ Partial Class Splash
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Splash"
