@@ -6,12 +6,23 @@
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <Version>3.0.0</Version>
+    <Authors>TheCrafters001</Authors>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <PackageIcon>Showdown to Essentials_19.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Showdown to Essentials 18 Converter\Resources\Showdown to Essentials_19.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

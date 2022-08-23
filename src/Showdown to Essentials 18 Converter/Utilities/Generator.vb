@@ -88,7 +88,7 @@
         End If
 
         ' Send code to Output Box
-        Form1.outputBox_rchBox.Text &= trainerPrefix & vbCrLf & items & loseText
+        Form1.outputBox_rchBox.Text &= trainerPrefix & vbCrLf & items & loseText & vbCrLf
 
 #End Region
 

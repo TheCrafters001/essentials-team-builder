@@ -12,10 +12,10 @@ Option Strict On
 Option Explicit On
 
 
-Namespace My
+Namespace Showdown_to_Essentials_18_Converter.My_Project
     
     <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.2.0"),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.3.0.0"),  _
      Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
     Partial Friend NotInheritable Class MySettings
         Inherits Global.System.Configuration.ApplicationSettingsBase
@@ -88,9 +88,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Showdown_to_Essentials_18_Converter.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Showdown_to_Essentials_18_Converter.Showdown_to_Essentials_18_Converter.My_Project.MySettings
             Get
-                Return Global.Showdown_to_Essentials_18_Converter.My.MySettings.Default
+                Return Global.Showdown_to_Essentials_18_Converter.Showdown_to_Essentials_18_Converter.My_Project.MySettings.Default
             End Get
         End Property
     End Module
