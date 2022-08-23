@@ -99,6 +99,12 @@
     <Compile Include="Extra\ThirdPartyLicenses.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Extra\Wizard\Pages\Pokemon1\wizard_p1_pageOne.Designer.vb">
+      <DependentUpon>wizard_p1_pageOne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra\Wizard\Pages\Pokemon1\wizard_p1_pageOne.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageFour.Designer.vb">
       <DependentUpon>wizard_pageFour.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
     <EmbeddedResource Include="Extra\ThirdPartyLicenses.resx">
       <DependentUpon>ThirdPartyLicenses.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Extra\Wizard\Pages\Pokemon1\wizard_p1_pageOne.resx">
+      <DependentUpon>wizard_p1_pageOne.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Extra\Wizard\Pages\TrainerInfo\wizard_pageFour.resx">
       <DependentUpon>wizard_pageFour.vb</DependentUpon>
     </EmbeddedResource>
@@ -208,9 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -227,48 +236,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\gplv3-with-text-136x68.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Showdown to Essentials Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Showdown to Essentials.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Showdown to Essentials.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Thumbnail.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Essentials17Only.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Essentials18Only.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Essentials18_19Only.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\showdown_to_essentials_19_icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Thumbnail_19.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Showdown to Essentials Logo_19.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Showdown to Essentials_19.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DiscordRPCHandler\DiscordRPCHandler.csproj">
       <Project>{a250a64f-0ceb-47e6-83ea-15e352b3757b}</Project>
       <Name>DiscordRPCHandler</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
+    <Content Include="Resources\Essentials17Only.png" />
+    <Content Include="Resources\Essentials18Only.png" />
+    <Content Include="Resources\Essentials18to20.png" />
+    <Content Include="Resources\Essentials18_19Only.png" />
+    <None Include="Resources\gplv3-with-text-136x68.png" />
+    <Content Include="Resources\Showdown to Essentials Logo.png" />
+    <Content Include="Resources\Showdown to Essentials Logo_19.png" />
+    <Content Include="Resources\Showdown to Essentials.ico" />
+    <Content Include="Resources\Showdown to Essentials.png" />
+    <Content Include="Resources\Showdown to Essentials_19.png" />
+    <Content Include="Resources\Showdown to Essentials_19_DIscord.png" />
+    <Content Include="Resources\showdown_to_essentials_19_icon.ico" />
+    <Content Include="Resources\Thumbnail.png" />
+    <Content Include="Resources\Thumbnail_19.png" />
+    <Content Include="Resources\Thumbnail_19_New.png" />
     <Content Include="Resources\wizard_large_left.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

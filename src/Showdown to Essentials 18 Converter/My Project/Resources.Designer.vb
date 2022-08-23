@@ -131,6 +131,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Showdown_to_Essentials_19_DIscord() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Showdown_to_Essentials_19_DIscord", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         '''</summary>
         Friend ReadOnly Property showdown_to_essentials_19_icon() As System.Drawing.Icon
@@ -163,9 +173,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property Showdown_to_Essentials1() As System.Drawing.Bitmap
+        Friend ReadOnly Property Showdown_to_Essentials6() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Showdown_to_Essentials1", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Showdown_to_Essentials6", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

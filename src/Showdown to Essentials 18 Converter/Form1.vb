@@ -134,6 +134,31 @@ Public Class Form1
 
 #End Region
 
+
+#Region "IVs Buttons"
+    Private Sub pokemon1MaxIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon1MaxIVs_btn.Click
+        pokemonOneIVsATK_txt.Text = "31"
+        pokemonOneIVsSPD_txt.Text = "31"
+        pokemonOneIVsSPATK_txt.Text = "31"
+        pokemonOneIVsDEF_txt.Text = "31"
+        pokemonOneIVsSPDEF_txt.Text = "31"
+        pokemonOneIVsHP_txt.Text = "31"
+    End Sub
+
+    Private Sub pokemon1RandomIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon1RandomIVs_btn.Click
+
+        Dim rand As New Random()
+
+        pokemonOneIVsATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonOneIVsSPD_txt.Text = rand.Next(0, 32).ToString
+        pokemonOneIVsSPATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonOneIVsDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonOneIVsSPDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonOneIVsHP_txt.Text = rand.Next(0, 32).ToString
+    End Sub
+
+#End Region
+
     Private Sub wizard_btn_Click(sender As Object, e As EventArgs) Handles wizard_btn.Click
         wizard_startDialog.Show()
     End Sub
@@ -429,4 +454,5 @@ Public Class Form1
     Private Sub gnuGPL3_picBox_Click(sender As Object, e As EventArgs) Handles gnuGPL3_picBox.Click
         Process.Start("https://www.gnu.org/licenses/gpl-3.0.html")
     End Sub
+
 End Class
