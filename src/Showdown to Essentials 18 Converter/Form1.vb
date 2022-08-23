@@ -79,7 +79,7 @@ Public Class Form1
     End Sub
 
 #Region "Items"
-    Private Sub trainerItemsList_btn_Click(sender As Object, e As EventArgs)
+    Private Sub trainerItemsList_btn_Click(sender As Object, e As EventArgs) Handles trainerItemsList_btn.Click
         Try
             Darkness = True
             ' Create Input Box
@@ -249,7 +249,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub trainerUsesItems_chkBox_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub trainerUsesItems_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles trainerUsesItems_chkBox.CheckedChanged
         If trainerUsesItems_chkBox.Checked = True Then
             trainerItems_grp.Enabled = True
         ElseIf trainerUsesItems_chkBox.Checked = False Then
@@ -387,7 +387,7 @@ Public Class Form1
 #End Region
 
 #Region "Listbox DoubleClick Remover"
-    Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs)
+    Private Sub trainerItemsList_lstbox_DoubleClick(sender As Object, e As EventArgs) Handles trainerItemsList_lstbox.DoubleClick
         trainerItemsList_lstbox.Items.Remove(trainerItemsList_lstbox.SelectedItem)
     End Sub
 
@@ -454,5 +454,4 @@ Public Class Form1
     Private Sub gnuGPL3_picBox_Click(sender As Object, e As EventArgs) Handles gnuGPL3_picBox.Click
         Process.Start("https://www.gnu.org/licenses/gpl-3.0.html")
     End Sub
-
 End Class

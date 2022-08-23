@@ -46,49 +46,49 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\DiscordRPC.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\DiscordRPCHandler.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\DiscordRPCHandler.dll.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Launcher.deps.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Launcher.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Launcher.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Launcher.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 17 Converter.deps.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 17 Converter.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 17 Converter.dll.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 17 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 17 Converter.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 17 Converter.xml"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 18 & 19 Converter.deps.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 18 & 19 Converter.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 18 & 19 Converter.dll.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 18 & 19 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 18 & 19 Converter.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\Showdown to Essentials 18 & 19 Converter.xml"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ComponentModel.Composition.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ComponentModel.Composition.Registration.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.Data.Odbc.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.Data.OleDb.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.Data.SqlClient.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.DirectoryServices.AccountManagement.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.DirectoryServices.Protocols.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.IO.Ports.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.Management.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.Private.ServiceModel.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.Reflection.Context.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.Runtime.Caching.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ServiceModel.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ServiceModel.Duplex.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ServiceModel.Http.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ServiceModel.NetTcp.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ServiceModel.Primitives.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ServiceModel.Security.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ServiceModel.Syndication.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.ServiceProcess.ServiceController.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.Speech.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
-Source: "..\src\Launcher\bin\Debug\net6.0-windows\System.Web.Services.Description.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\DiscordRPC.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\DiscordRPCHandler.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\DiscordRPCHandler.dll.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Launcher.deps.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Launcher.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Launcher.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Launcher.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ComponentModel.Composition.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ComponentModel.Composition.Registration.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.Data.Odbc.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.Data.OleDb.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.Data.SqlClient.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.DirectoryServices.AccountManagement.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.DirectoryServices.Protocols.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.IO.Ports.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.Management.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.Private.ServiceModel.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.Reflection.Context.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.Runtime.Caching.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ServiceModel.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ServiceModel.Duplex.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ServiceModel.Http.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ServiceModel.NetTcp.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ServiceModel.Primitives.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ServiceModel.Security.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ServiceModel.Syndication.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.ServiceProcess.ServiceController.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.Speech.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\System.Web.Services.Description.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 17 Converter.deps.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 17 Converter.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 17 Converter.dll.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 17 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 17 Converter.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 17 Converter.xml"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\seventeen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 19 Converter.deps.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 19 Converter.dll"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 19 Converter.dll.config"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 19 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 19 Converter.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
+Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 19 Converter.xml"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"

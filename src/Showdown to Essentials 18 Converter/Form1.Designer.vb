@@ -622,7 +622,7 @@ Partial Class Form1
         '
         Me.wizard_btn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.wizard_btn.Location = New System.Drawing.Point(4, 413)
+        Me.wizard_btn.Location = New System.Drawing.Point(4, 409)
         Me.wizard_btn.Name = "wizard_btn"
         Me.wizard_btn.Size = New System.Drawing.Size(507, 23)
         Me.wizard_btn.TabIndex = 9
@@ -633,7 +633,7 @@ Partial Class Form1
         '
         Me.example_btn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.example_btn.Location = New System.Drawing.Point(253, 442)
+        Me.example_btn.Location = New System.Drawing.Point(253, 438)
         Me.example_btn.Name = "example_btn"
         Me.example_btn.Size = New System.Drawing.Size(260, 23)
         Me.example_btn.TabIndex = 8
@@ -653,7 +653,7 @@ Partial Class Form1
         Me.properSpellingNote_lbl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.properSpellingNote_lbl.AutoSize = True
         Me.properSpellingNote_lbl.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(6, 445)
+        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(6, 441)
         Me.properSpellingNote_lbl.Name = "properSpellingNote_lbl"
         Me.properSpellingNote_lbl.Size = New System.Drawing.Size(241, 20)
         Me.properSpellingNote_lbl.TabIndex = 12
@@ -664,7 +664,7 @@ Partial Class Form1
         Me.pe18_pic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pe18_pic.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pe18_pic.Image = CType(resources.GetObject("pe18_pic.Image"), System.Drawing.Image)
-        Me.pe18_pic.Location = New System.Drawing.Point(519, 359)
+        Me.pe18_pic.Location = New System.Drawing.Point(519, 355)
         Me.pe18_pic.Name = "pe18_pic"
         Me.pe18_pic.Size = New System.Drawing.Size(207, 106)
         Me.pe18_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -769,10 +769,10 @@ Partial Class Form1
         Me.pg_MiscInfo.Controls.Add(Me.internalBallNames_chk)
         Me.pg_MiscInfo.Controls.Add(Me.existingBattle_chkBox)
         Me.pg_MiscInfo.Controls.Add(Me.customBallIDs_chkBox)
-        Me.pg_MiscInfo.Location = New System.Drawing.Point(4, 22)
+        Me.pg_MiscInfo.Location = New System.Drawing.Point(4, 24)
         Me.pg_MiscInfo.Name = "pg_MiscInfo"
         Me.pg_MiscInfo.Padding = New System.Windows.Forms.Padding(3)
-        Me.pg_MiscInfo.Size = New System.Drawing.Size(732, 473)
+        Me.pg_MiscInfo.Size = New System.Drawing.Size(732, 471)
         Me.pg_MiscInfo.TabIndex = 1
         Me.pg_MiscInfo.Text = "Misc. Info"
         Me.pg_MiscInfo.UseVisualStyleBackColor = True
@@ -934,10 +934,10 @@ Partial Class Form1
         'pg_POne
         '
         Me.pg_POne.Controls.Add(Me.pokemonOne_grp)
-        Me.pg_POne.Location = New System.Drawing.Point(4, 22)
+        Me.pg_POne.Location = New System.Drawing.Point(4, 24)
         Me.pg_POne.Name = "pg_POne"
         Me.pg_POne.Padding = New System.Windows.Forms.Padding(3)
-        Me.pg_POne.Size = New System.Drawing.Size(752, 511)
+        Me.pg_POne.Size = New System.Drawing.Size(752, 509)
         Me.pg_POne.TabIndex = 1
         Me.pg_POne.Text = "Pokémon 1"
         Me.pg_POne.ToolTipText = "Edit the trainer's pokemon data here."
