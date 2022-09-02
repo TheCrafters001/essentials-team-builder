@@ -238,7 +238,14 @@
                 'Take all moves, and turn it into the move format
                 AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                pokemonAbility = "    Ability = " & Form1.pokemonTwoAbility_cmb.SelectedItem.ToString & vbCrLf
+                ' Check if useAbilityIndex_chkBox is checked.
+                ' If it is, use ability index instead of ability
+                If Form1.useAbilityIndex_chkBox.Checked = True Then
+                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                End If
+
                 If Form1.pokemonTwoNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
                 ElseIf Not Form1.pokemonTwoNature_cmb.SelectedItem = "(random)" Then
@@ -309,7 +316,14 @@
                 'Take all moves, and turn it into the move format
                 AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                pokemonAbility = "    Ability = " & Form1.pokemonThreeAbility_cmb.SelectedItem.ToString & vbCrLf
+                ' Check if useAbilityIndex_chkBox is checked.
+                ' If it is, use ability index instead of ability
+                If Form1.useAbilityIndex_chkBox.Checked = True Then
+                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                End If
+
                 If Form1.pokemonThreeNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
                 ElseIf Not Form1.pokemonThreeNature_cmb.SelectedItem = "(random)" Then
@@ -380,7 +394,14 @@
                 'Take all moves, and turn it into the move format
                 AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                pokemonAbility = "    Ability = " & Form1.pokemonFourAbility_cmb.SelectedItem.ToString & vbCrLf
+                ' Check if useAbilityIndex_chkBox is checked.
+                ' If it is, use ability index instead of ability
+                If Form1.useAbilityIndex_chkBox.Checked = True Then
+                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                End If
+
                 If Form1.pokemonFourNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
                 ElseIf Not Form1.pokemonFourNature_cmb.SelectedItem = "(random)" Then
@@ -451,7 +472,14 @@
                 'Take all moves, and turn it into the move format
                 AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                pokemonAbility = "    Ability = " & Form1.pokemonFiveAbility_cmb.SelectedItem.ToString & vbCrLf
+                ' Check if useAbilityIndex_chkBox is checked.
+                ' If it is, use ability index instead of ability
+                If Form1.useAbilityIndex_chkBox.Checked = True Then
+                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                End If
+
                 If Form1.pokemonFiveNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
                 ElseIf Not Form1.pokemonFiveNature_cmb.SelectedItem = "(random)" Then
@@ -522,7 +550,14 @@
                 'Take all moves, and turn it into the move format
                 AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                pokemonAbility = "    Ability = " & Form1.pokemonSixAbility_cmb.SelectedItem.ToString & vbCrLf
+                ' Check if useAbilityIndex_chkBox is checked.
+                ' If it is, use ability index instead of ability
+                If Form1.useAbilityIndex_chkBox.Checked = True Then
+                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                End If
+
                 If Form1.pokemonSixNature_cmb.SelectedItem = "(random)" Then
                     pokemonNature = ""
                 ElseIf Not Form1.pokemonSixNature_cmb.SelectedItem = "(random)" Then

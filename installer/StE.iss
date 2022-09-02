@@ -89,13 +89,27 @@ Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 
 Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 19 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
 Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 19 Converter.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
 Source: "..\src\Launcher\bin\Release\net6.0-windows\Showdown to Essentials 18 & 19 Converter.xml"; DestDir: "{app}"; Flags: ignoreversion; Components: launcher\eighteen_component
+Source: "{tmp}\dotnet-hosting-6.0.8-win.exe"; \
+    DestDir: "{tmp}"; \
+    Flags: external; \
+    ExternalSize: 72549200; \
+    Components: dotnetdepends; \
+    Check: DwinsHs_Check(ExpandConstant('{tmp}\dotnet-hosting-6.0.8-win.exe'),  'https://download.visualstudio.microsoft.com/download/pr/c5e0609f-1db5-4741-add0-a37e8371a714/1ad9c59b8a92aeb5d09782e686264537/dotnet-hosting-6.0.8-win.exe', 'Showdown_to_Essentials_Converter', 'get', 0, 0)
+Source: "{tmp}\windowsdesktop-runtime-6.0.8-win-x64.exe"; \
+    DestDir: "{tmp}"; \
+    Flags: external; \
+    ExternalSize: 57909296; \
+    Components: dotnetdepends; \
+    Check: DwinsHs_Check(ExpandConstant('{tmp}\windowsdesktop-runtime-6.0.8-win-x64.exe'),  'https://download.visualstudio.microsoft.com/download/pr/b4a17a47-2fe8-498d-b817-30ad2e23f413/00020402af25ba40990c6cc3db5cb270/windowsdesktop-runtime-6.0.8-win-x64.exe', 'Showdown_to_Essentials_Converter', 'get', 0, 0)
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\{#MyAppExeName}"; Flags: nowait postinstall skipifsilent; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"
+Filename: "{tmp}\windowsdesktop-runtime-6.0.8-win-x64.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{app}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing .NET Runtime 6.0"; Components: dotnetdepends
+Filename: "{tmp}\dotnet-hosting-6.0.8-win.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{app}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing .NET ASP Runtime 6.0"; Components: dotnetdepends
 
 [Types]
 Name: "full"; Description: "Full Install"
@@ -107,9 +121,48 @@ Name: "custom"; Description: "Custom Install"; Flags: iscustom
 Name: "launcher"; Description: "Launcher"; Types: custom eighteen full seventeen; Flags: fixed
 Name: "launcher\eighteen_component"; Description: "Showdown to Essentials 18 & 19 Converter"; Types: full eighteen
 Name: "launcher\seventeen_component"; Description: "Showdown to Essentials 17 Converter"; Types: full seventeen
+Name: "dotnetdepends"; Description: ".NET Dependancies"; ExtraDiskSpaceRequired: 130458496; Types: custom eighteen full seventeen
 
 [Messages]
 english.StatusExtractFiles=Copying Files...
 english.WelcomeLabel1=Thank you for downloading [name]!
 english.WelcomeLabel2=Thank you for downloading [name/ver]! This wizard will guide you through the steps of getting [name] installed on your computer!%n%nIt is recommended that you close all other applications before continuing.
 english.FinishedLabel=Again, thank you for downloading [name]! You can now start [name] by using the installed shortcuts!
+
+[Code]
+#define DwinsHs_Use_Predefined_Downloading_WizardPage
+#define DwinsHs_Auto_Continue
+#include "./dwinshs.iss"
+
+procedure InitializeWizard();
+begin
+  DwinsHs_InitializeWizard(wpPreparing);
+end;
+
+procedure CurPageChanged(CurPageID: Integer);
+begin
+  DwinsHs_CurPageChanged(CurPageID, nil, nil);
+end;
+
+function ShouldSkipPage(CurPageId: Integer): Boolean;
+begin
+  Result := False;
+  DwinsHs_ShouldSkipPage(CurPageId, Result);
+end;
+
+function BackButtonClick(CurPageID: Integer): Boolean;
+begin
+  Result := True;
+  DwinsHs_BackButtonClick(CurPageID);
+end;
+
+function NextButtonClick(CurPageID: Integer): Boolean;
+begin
+  Result := True;
+  DwinsHs_NextButtonClick(CurPageID, Result);
+end;
+
+procedure CancelButtonClick(CurPageID: Integer; var Cancel, Confirm: Boolean);
+begin
+  DwinsHs_CancelButtonClick(CurPageID, Cancel, Confirm);
+end;
