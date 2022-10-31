@@ -38,38 +38,11 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Extra\New_Splash.Designer.vb">
-      <DependentUpon>New_Splash.vb</DependentUpon>
-    </Compile>
     <Compile Update="Extra\Splash.Designer.vb">
       <DependentUpon>Splash.vb</DependentUpon>
     </Compile>
     <Compile Update="Extra\ThirdPartyLicenses.Designer.vb">
       <DependentUpon>ThirdPartyLicenses.vb</DependentUpon>
-    </Compile>
-    <Compile Update="Extra\Wizard\Pages\Pokemon1\wizard_p1_pageOne.Designer.vb">
-      <DependentUpon>wizard_p1_pageOne.vb</DependentUpon>
-    </Compile>
-    <Compile Update="Extra\Wizard\Pages\TrainerInfo\wizard_pageFour.Designer.vb">
-      <DependentUpon>wizard_pageFour.vb</DependentUpon>
-    </Compile>
-    <Compile Update="Extra\Wizard\Pages\TrainerInfo\wizard_pageOne.Designer.vb">
-      <DependentUpon>wizard_pageOne.vb</DependentUpon>
-    </Compile>
-    <Compile Update="Extra\Wizard\Pages\TrainerInfo\wizard_pageThree.Designer.vb">
-      <DependentUpon>wizard_pageThree.vb</DependentUpon>
-    </Compile>
-    <Compile Update="Extra\Wizard\Pages\TrainerInfo\wizard_pageTwo.Designer.vb">
-      <DependentUpon>wizard_pageTwo.vb</DependentUpon>
-    </Compile>
-    <Compile Update="Extra\Wizard\special pages\wizard_specialPage_allTrainerInfo.Designer.vb">
-      <DependentUpon>wizard_specialPage_allTrainerInfo.vb</DependentUpon>
-    </Compile>
-    <Compile Update="Extra\Wizard\special pages\wizard_specialPage_TrainerTeams.Designer.vb">
-      <DependentUpon>wizard_specialPage_TrainerTeams.vb</DependentUpon>
-    </Compile>
-    <Compile Update="Extra\Wizard\special pages\wizard_startDialog.Designer.vb">
-      <DependentUpon>wizard_startDialog.vb</DependentUpon>
     </Compile>
     <Compile Update="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

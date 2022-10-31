@@ -159,9 +159,6 @@ Public Class Form1
 
 #End Region
 
-    Private Sub wizard_btn_Click(sender As Object, e As EventArgs) Handles wizard_btn.Click
-        wizard_startDialog.Show()
-    End Sub
 #End Region
 
 #Region "Deinitialization"
@@ -451,7 +448,7 @@ Public Class Form1
         pageEnabler.Enabler()
     End Sub
 
-    Private Sub gnuGPL3_picBox_Click(sender As Object, e As EventArgs) Handles gnuGPL3_picBox.Click
-        Process.Start("https://www.gnu.org/licenses/gpl-3.0.html")
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles pokemon2MaxIVs_btn.Click
+
     End Sub
 End Class

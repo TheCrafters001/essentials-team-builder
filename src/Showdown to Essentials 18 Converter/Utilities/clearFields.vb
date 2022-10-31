@@ -186,7 +186,7 @@
             ' Return Trainer Info Text Back To Normal
             Form1.trainerInfoTitle_lbl.Text = "Trainer Info"
         ElseIf DiagResult = DialogResult.No Then
-            MessageBox.Show("Fields have not been clearned.", "Not Cleared", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Fields have not been cleared.", "Not Cleared", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 End Class
