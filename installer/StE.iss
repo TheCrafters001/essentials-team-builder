@@ -121,7 +121,7 @@ Name: "custom"; Description: "Custom Install"; Flags: iscustom
 Name: "launcher"; Description: "Launcher"; Types: custom eighteen full seventeen; Flags: fixed
 Name: "launcher\eighteen_component"; Description: "Showdown to Essentials 18 & 19 Converter"; Types: full eighteen
 Name: "launcher\seventeen_component"; Description: "Showdown to Essentials 17 Converter"; Types: full seventeen
-Name: "dotnetdepends"; Description: ".NET Dependancies"; ExtraDiskSpaceRequired: 130458496; Types: custom eighteen full seventeen
+Name: "dotnetdepends"; Description: ".NET Dependancies (Required for first time install)"; ExtraDiskSpaceRequired: 130458496
 
 [Messages]
 english.StatusExtractFiles=Copying Files...
