@@ -80,7 +80,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Click on a verson to sthart the tool."
+        Me.Text = "Click on a verson to start the tool."
         CType(Me.v17_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.v18up_picBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
