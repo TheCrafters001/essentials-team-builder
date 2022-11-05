@@ -157,6 +157,111 @@ Public Class Form1
         pokemonOneIVsHP_txt.Text = rand.Next(0, 32).ToString
     End Sub
 
+    Private Sub pokemon2MaxIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon2MaxIVs_btn.Click
+        pokemonTwoIVsATK_txt.Text = "31"
+        pokemonTwoIVsSPD_txt.Text = "31"
+        pokemonTwoIVsSPATK_txt.Text = "31"
+        pokemonTwoIVsDEF_txt.Text = "31"
+        pokemonTwoIVsSPDEF_txt.Text = "31"
+        pokemonTwoIVsHP_txt.Text = "31"
+    End Sub
+
+    Private Sub pokemon2RandomIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon2RandomIVs_btn.Click
+
+        Dim rand As New Random()
+
+        pokemonTwoIVsATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonTwoIVsSPD_txt.Text = rand.Next(0, 32).ToString
+        pokemonTwoIVsSPATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonTwoIVsDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonTwoIVsSPDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonTwoIVsHP_txt.Text = rand.Next(0, 32).ToString
+    End Sub
+
+    Private Sub pokemon3MaxIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon3MaxIVs_btn.Click
+        pokemonThreeIVsATK_txt.Text = "31"
+        pokemonThreeIVsSPD_txt.Text = "31"
+        pokemonThreeIVsSPATK_txt.Text = "31"
+        pokemonThreeIVsDEF_txt.Text = "31"
+        pokemonThreeIVsSPDEF_txt.Text = "31"
+        pokemonThreeIVsHP_txt.Text = "31"
+    End Sub
+
+    Private Sub pokemon3RandomIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon3RandomIVs_btn.Click
+
+        Dim rand As New Random()
+
+        pokemonThreeIVsATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonThreeIVsSPD_txt.Text = rand.Next(0, 32).ToString
+        pokemonThreeIVsSPATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonThreeIVsDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonThreeIVsSPDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonThreeIVsHP_txt.Text = rand.Next(0, 32).ToString
+    End Sub
+
+    Private Sub pokemon4MaxIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon4MaxIVs_btn.Click
+        pokemonFourIVsATK_txt.Text = "31"
+        pokemonFourIVsSPD_txt.Text = "31"
+        pokemonFourIVsSPATK_txt.Text = "31"
+        pokemonFourIVsDEF_txt.Text = "31"
+        pokemonFourIVsSPDEF_txt.Text = "31"
+        pokemonFourIVsHP_txt.Text = "31"
+    End Sub
+
+    Private Sub pokemon4RandomIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon4RandomIVs_btn.Click
+
+        Dim rand As New Random()
+
+        pokemonFourIVsATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonFourIVsSPD_txt.Text = rand.Next(0, 32).ToString
+        pokemonFourIVsSPATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonFourIVsDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonFourIVsSPDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonFourIVsHP_txt.Text = rand.Next(0, 32).ToString
+    End Sub
+
+    Private Sub pokemon5MaxIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon5MaxIVs_btn.Click
+        pokemonFiveIVsATK_txt.Text = "31"
+        pokemonFiveIVsSPD_txt.Text = "31"
+        pokemonFiveIVsSPATK_txt.Text = "31"
+        pokemonFiveIVsDEF_txt.Text = "31"
+        pokemonFiveIVsSPDEF_txt.Text = "31"
+        pokemonFiveIVsHP_txt.Text = "31"
+    End Sub
+
+    Private Sub pokemon5RandomIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon5RandomIVs_btn.Click
+
+        Dim rand As New Random()
+
+        pokemonFiveIVsATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonFiveIVsSPD_txt.Text = rand.Next(0, 32).ToString
+        pokemonFiveIVsSPATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonFiveIVsDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonFiveIVsSPDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonFiveIVsHP_txt.Text = rand.Next(0, 32).ToString
+    End Sub
+
+    Private Sub pokemon6MaxIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon6MaxIVs_btn.Click
+        pokemonSixIVsATK_txt.Text = "31"
+        pokemonSixIVsSPD_txt.Text = "31"
+        pokemonSixIVsSPATK_txt.Text = "31"
+        pokemonSixIVsDEF_txt.Text = "31"
+        pokemonSixIVsSPDEF_txt.Text = "31"
+        pokemonSixIVsHP_txt.Text = "31"
+    End Sub
+
+    Private Sub pokemon6RandomIVs_btn_Click(sender As Object, e As EventArgs) Handles pokemon6RandomIVs_btn.Click
+
+        Dim rand As New Random()
+
+        pokemonSixIVsATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonSixIVsSPD_txt.Text = rand.Next(0, 32).ToString
+        pokemonSixIVsSPATK_txt.Text = rand.Next(0, 32).ToString
+        pokemonSixIVsDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonSixIVsSPDEF_txt.Text = rand.Next(0, 32).ToString
+        pokemonSixIVsHP_txt.Text = rand.Next(0, 32).ToString
+    End Sub
+
 #End Region
 
 #End Region
@@ -446,9 +551,5 @@ Public Class Form1
 
     Private Sub numPoké_cmb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles numPoké_cmb.SelectedIndexChanged
         pageEnabler.Enabler()
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles pokemon2MaxIVs_btn.Click
-
     End Sub
 End Class
