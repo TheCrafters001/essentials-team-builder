@@ -10,8 +10,8 @@
 #Region "Trainer"
     Public Shared Sub Trainer()
 
-        Dim item As Object
-        Dim TrainerItems As String
+        Dim item As Object = ""
+        Dim TrainerItems As String = ""
 
         ' This took me longer than I would like to admit to make.
         ' Thanks to Mary on Stack Overflow for the help
@@ -42,26 +42,26 @@
 #Region "New Generator"
     Public Shared Sub NewGen()
 #Region "Dims"
-        Dim pokemonName As String
-        Dim heldItem As String
-        Dim lvl As String
-        Dim move1 As String
-        Dim move2 As String
-        Dim move3 As String
-        Dim move4 As String
-        Dim pokemonAbility As String
-        Dim gender As String
-        Dim pokemonForm As String
-        Dim shiny As Boolean
-        Dim shinyString As String
-        Dim pokemonNature As String
-        Dim pokemonIVs As String
-        Dim pokemonHappyness As String
-        Dim pokemonNickname As String
-        Dim shadow As Boolean
-        Dim shadowString As String
-        Dim pokeballID As String
-        Dim output As String
+        Dim pokemonName As String = ""
+        Dim heldItem As String = ""
+        Dim lvl As String = ""
+        Dim move1 As String = ""
+        Dim move2 As String = ""
+        Dim move3 As String = ""
+        Dim move4 As String = ""
+        Dim pokemonAbility As String = ""
+        Dim gender As String = ""
+        Dim pokemonForm As String = ""
+        Dim shiny As Boolean = ""
+        Dim shinyString As String = ""
+        Dim pokemonNature As String = ""
+        Dim pokemonIVs As String = ""
+        Dim pokemonHappyness As String = ""
+        Dim pokemonNickname As String = ""
+        Dim shadow As Boolean = ""
+        Dim shadowString As String = ""
+        Dim pokeballID As String = ""
+        Dim output As String = ""
 #End Region
         If Form1.numPoké_cmb.SelectedItem >= "1" Then
             Try

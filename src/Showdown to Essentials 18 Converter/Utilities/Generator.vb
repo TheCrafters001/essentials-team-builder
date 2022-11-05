@@ -92,24 +92,24 @@
 
 #End Region
 
-        Dim pokemonName As String
-        Dim heldItem As String
-        Dim AllMoves As String
-        Dim pokemonAbility As String
-        Dim gender As String
-        Dim pokemonForm As String
-        Dim shinyString As String
-        Dim pokemonNature As String
-        Dim pokemonIVs As String
-        Dim pokemonEVs As String
-        Dim pokemonHappyness As String
-        Dim pokemonNickname As String
-        Dim shadowString As String
-        Dim pokeballID As String
+        Dim pokemonName As String = ""
+        Dim heldItem As String = ""
+        Dim AllMoves As String = ""
+        Dim pokemonAbility As String = ""
+        Dim gender As String = ""
+        Dim pokemonForm As String = ""
+        Dim shinyString As String = ""
+        Dim pokemonNature As String = ""
+        Dim pokemonIVs As String = ""
+        Dim pokemonEVs As String = ""
+        Dim pokemonHappyness As String = ""
+        Dim pokemonNickname As String = ""
+        Dim shadowString As String = ""
+        Dim pokeballID As String = ""
         Dim numPoke As Integer = Form1.numPoké_cmb.SelectedItem
         'Pokemon Moves
-        Dim move As Object
-        Dim output As String
+        Dim move As Object = ""
+        Dim output As String = ""
 
         Try
 #Region "Pokemon 1"
