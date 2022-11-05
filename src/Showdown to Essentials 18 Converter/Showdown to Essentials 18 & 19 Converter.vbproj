@@ -38,9 +38,6 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Extra\Splash.Designer.vb">
-      <DependentUpon>Splash.vb</DependentUpon>
-    </Compile>
     <Compile Update="Extra\ThirdPartyLicenses.Designer.vb">
       <DependentUpon>ThirdPartyLicenses.vb</DependentUpon>
     </Compile>
