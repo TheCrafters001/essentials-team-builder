@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		autoUpdate-Stable.xml = autoUpdate-Stable.xml
 	EndProjectSection
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Launcher", "Launcher\Launcher.vbproj", "{16F3D06D-BB92-47B2-A4B8-75A8DB2A587C}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Launcher", "Launcher\Launcher.vbproj", "{16F3D06D-BB92-47B2-A4B8-75A8DB2A587C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
