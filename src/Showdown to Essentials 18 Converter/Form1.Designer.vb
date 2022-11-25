@@ -433,7 +433,6 @@ Partial Class Form1
         Me.save_btn = New System.Windows.Forms.Button()
         Me.generate_btn = New System.Windows.Forms.Button()
         Me.pg_About = New System.Windows.Forms.TabPage()
-        Me.aboutText_lbl = New System.Windows.Forms.Label()
         Me.gnuGPL3_picBox = New System.Windows.Forms.PictureBox()
         Me.aboutAuthor_lbl = New System.Windows.Forms.Label()
         Me.aboutTitle_lbl = New System.Windows.Forms.Label()
@@ -441,6 +440,7 @@ Partial Class Form1
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
         Me.thirdPartyLicenses_lnk = New System.Windows.Forms.LinkLabel()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.pages_tabGrp.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.trainerInfo_tabPgs.SuspendLayout()
@@ -571,7 +571,7 @@ Partial Class Form1
         Me.recommendedSettings_grp.Controls.Add(Me.ess20Settings_btn)
         Me.recommendedSettings_grp.Controls.Add(Me.ess19Settings_btn)
         Me.recommendedSettings_grp.Controls.Add(Me.ess18Settings_btn)
-        Me.recommendedSettings_grp.Location = New System.Drawing.Point(265, 357)
+        Me.recommendedSettings_grp.Location = New System.Drawing.Point(265, 364)
         Me.recommendedSettings_grp.Name = "recommendedSettings_grp"
         Me.recommendedSettings_grp.Size = New System.Drawing.Size(248, 77)
         Me.recommendedSettings_grp.TabIndex = 16
@@ -619,7 +619,7 @@ Partial Class Form1
         '
         Me.example_btn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.example_btn.Location = New System.Drawing.Point(265, 436)
+        Me.example_btn.Location = New System.Drawing.Point(265, 444)
         Me.example_btn.Name = "example_btn"
         Me.example_btn.Size = New System.Drawing.Size(248, 23)
         Me.example_btn.TabIndex = 8
@@ -639,7 +639,7 @@ Partial Class Form1
         Me.properSpellingNote_lbl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.properSpellingNote_lbl.AutoSize = True
         Me.properSpellingNote_lbl.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(6, 439)
+        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(6, 447)
         Me.properSpellingNote_lbl.Name = "properSpellingNote_lbl"
         Me.properSpellingNote_lbl.Size = New System.Drawing.Size(241, 20)
         Me.properSpellingNote_lbl.TabIndex = 12
@@ -650,7 +650,7 @@ Partial Class Form1
         Me.pe18_pic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pe18_pic.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pe18_pic.Image = CType(resources.GetObject("pe18_pic.Image"), System.Drawing.Image)
-        Me.pe18_pic.Location = New System.Drawing.Point(519, 353)
+        Me.pe18_pic.Location = New System.Drawing.Point(519, 364)
         Me.pe18_pic.Name = "pe18_pic"
         Me.pe18_pic.Size = New System.Drawing.Size(207, 106)
         Me.pe18_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -659,7 +659,7 @@ Partial Class Form1
         '
         'clearInputs_btn
         '
-        Me.clearInputs_btn.Location = New System.Drawing.Point(519, 328)
+        Me.clearInputs_btn.Location = New System.Drawing.Point(519, 335)
         Me.clearInputs_btn.Name = "clearInputs_btn"
         Me.clearInputs_btn.Size = New System.Drawing.Size(207, 23)
         Me.clearInputs_btn.TabIndex = 7
@@ -755,10 +755,10 @@ Partial Class Form1
         Me.pg_MiscInfo.Controls.Add(Me.internalBallNames_chk)
         Me.pg_MiscInfo.Controls.Add(Me.existingBattle_chkBox)
         Me.pg_MiscInfo.Controls.Add(Me.customBallIDs_chkBox)
-        Me.pg_MiscInfo.Location = New System.Drawing.Point(4, 24)
+        Me.pg_MiscInfo.Location = New System.Drawing.Point(4, 22)
         Me.pg_MiscInfo.Name = "pg_MiscInfo"
         Me.pg_MiscInfo.Padding = New System.Windows.Forms.Padding(3)
-        Me.pg_MiscInfo.Size = New System.Drawing.Size(732, 471)
+        Me.pg_MiscInfo.Size = New System.Drawing.Size(732, 473)
         Me.pg_MiscInfo.TabIndex = 1
         Me.pg_MiscInfo.Text = "Misc. Info"
         Me.pg_MiscInfo.UseVisualStyleBackColor = True
@@ -914,7 +914,7 @@ Partial Class Form1
         Me.trainerItemsList_lstbox.FormattingEnabled = True
         Me.trainerItemsList_lstbox.Location = New System.Drawing.Point(6, 21)
         Me.trainerItemsList_lstbox.Name = "trainerItemsList_lstbox"
-        Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 199)
+        Me.trainerItemsList_lstbox.Size = New System.Drawing.Size(201, 186)
         Me.trainerItemsList_lstbox.TabIndex = 0
         '
         'pg_Pokemon
@@ -986,7 +986,7 @@ Partial Class Form1
         Me.pokemonOne_grp.Controls.Add(Me.pokemonOneName_lbl)
         Me.pokemonOne_grp.Location = New System.Drawing.Point(6, 3)
         Me.pokemonOne_grp.Name = "pokemonOne_grp"
-        Me.pokemonOne_grp.Size = New System.Drawing.Size(735, 479)
+        Me.pokemonOne_grp.Size = New System.Drawing.Size(735, 474)
         Me.pokemonOne_grp.TabIndex = 1
         Me.pokemonOne_grp.TabStop = False
         Me.pokemonOne_grp.Text = "Pokémon 1"
@@ -1494,7 +1494,7 @@ Partial Class Form1
         Me.pokemonOneMoves_lst.FormattingEnabled = True
         Me.pokemonOneMoves_lst.Location = New System.Drawing.Point(6, 21)
         Me.pokemonOneMoves_lst.Name = "pokemonOneMoves_lst"
-        Me.pokemonOneMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonOneMoves_lst.Size = New System.Drawing.Size(300, 69)
         Me.pokemonOneMoves_lst.TabIndex = 1
         '
         'pokemonOneGender_lbl
@@ -2116,7 +2116,7 @@ Partial Class Form1
         Me.pokemonTwoMoves_lst.FormattingEnabled = True
         Me.pokemonTwoMoves_lst.Location = New System.Drawing.Point(6, 21)
         Me.pokemonTwoMoves_lst.Name = "pokemonTwoMoves_lst"
-        Me.pokemonTwoMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonTwoMoves_lst.Size = New System.Drawing.Size(300, 69)
         Me.pokemonTwoMoves_lst.TabIndex = 3
         '
         'pokemonTwoGender_lbl
@@ -2726,7 +2726,7 @@ Partial Class Form1
         Me.pokemonThreeMoves_lst.FormattingEnabled = True
         Me.pokemonThreeMoves_lst.Location = New System.Drawing.Point(6, 21)
         Me.pokemonThreeMoves_lst.Name = "pokemonThreeMoves_lst"
-        Me.pokemonThreeMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonThreeMoves_lst.Size = New System.Drawing.Size(300, 69)
         Me.pokemonThreeMoves_lst.TabIndex = 5
         '
         'pokemonThreeGender_lbl
@@ -3336,7 +3336,7 @@ Partial Class Form1
         Me.pokemonFourMoves_lst.FormattingEnabled = True
         Me.pokemonFourMoves_lst.Location = New System.Drawing.Point(6, 21)
         Me.pokemonFourMoves_lst.Name = "pokemonFourMoves_lst"
-        Me.pokemonFourMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonFourMoves_lst.Size = New System.Drawing.Size(300, 69)
         Me.pokemonFourMoves_lst.TabIndex = 7
         '
         'pokemonFourGender_lbl
@@ -3946,7 +3946,7 @@ Partial Class Form1
         Me.pokemonFiveMoves_lst.FormattingEnabled = True
         Me.pokemonFiveMoves_lst.Location = New System.Drawing.Point(6, 21)
         Me.pokemonFiveMoves_lst.Name = "pokemonFiveMoves_lst"
-        Me.pokemonFiveMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonFiveMoves_lst.Size = New System.Drawing.Size(300, 69)
         Me.pokemonFiveMoves_lst.TabIndex = 9
         '
         'pokemonFiveGender_lbl
@@ -4556,7 +4556,7 @@ Partial Class Form1
         Me.pokemonSixMoves_lst.FormattingEnabled = True
         Me.pokemonSixMoves_lst.Location = New System.Drawing.Point(6, 21)
         Me.pokemonSixMoves_lst.Name = "pokemonSixMoves_lst"
-        Me.pokemonSixMoves_lst.Size = New System.Drawing.Size(300, 82)
+        Me.pokemonSixMoves_lst.Size = New System.Drawing.Size(300, 69)
         Me.pokemonSixMoves_lst.TabIndex = 11
         '
         'pokemonSixGender_lbl
@@ -4649,14 +4649,14 @@ Partial Class Form1
         Me.outputBox_rchBox.Location = New System.Drawing.Point(3, 3)
         Me.outputBox_rchBox.Name = "outputBox_rchBox"
         Me.outputBox_rchBox.ReadOnly = True
-        Me.outputBox_rchBox.Size = New System.Drawing.Size(746, 475)
+        Me.outputBox_rchBox.Size = New System.Drawing.Size(746, 477)
         Me.outputBox_rchBox.TabIndex = 0
         Me.outputBox_rchBox.Text = ""
         '
         'save_to_trainers_btn
         '
         Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.save_to_trainers_btn.Location = New System.Drawing.Point(548, 484)
+        Me.save_to_trainers_btn.Location = New System.Drawing.Point(548, 481)
         Me.save_to_trainers_btn.Name = "save_to_trainers_btn"
         Me.save_to_trainers_btn.Size = New System.Drawing.Size(120, 23)
         Me.save_to_trainers_btn.TabIndex = 4
@@ -4668,7 +4668,7 @@ Partial Class Form1
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(3, 495)
+        Me.Label1.Location = New System.Drawing.Point(3, 497)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(390, 12)
         Me.Label1.TabIndex = 3
@@ -4678,7 +4678,7 @@ Partial Class Form1
         'save_btn
         '
         Me.save_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.save_btn.Location = New System.Drawing.Point(467, 484)
+        Me.save_btn.Location = New System.Drawing.Point(467, 481)
         Me.save_btn.Name = "save_btn"
         Me.save_btn.Size = New System.Drawing.Size(75, 23)
         Me.save_btn.TabIndex = 2
@@ -4688,7 +4688,7 @@ Partial Class Form1
         'generate_btn
         '
         Me.generate_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.generate_btn.Location = New System.Drawing.Point(674, 484)
+        Me.generate_btn.Location = New System.Drawing.Point(674, 481)
         Me.generate_btn.Name = "generate_btn"
         Me.generate_btn.Size = New System.Drawing.Size(75, 23)
         Me.generate_btn.TabIndex = 1
@@ -4697,8 +4697,8 @@ Partial Class Form1
         '
         'pg_About
         '
-        Me.pg_About.Controls.Add(Me.aboutText_lbl)
         Me.pg_About.Controls.Add(Me.gnuGPL3_picBox)
+        Me.pg_About.Controls.Add(Me.RichTextBox1)
         Me.pg_About.Controls.Add(Me.aboutAuthor_lbl)
         Me.pg_About.Controls.Add(Me.aboutTitle_lbl)
         Me.pg_About.Controls.Add(Me.Logo_picBox)
@@ -4710,18 +4710,11 @@ Partial Class Form1
         Me.pg_About.ToolTipText = "Information about this program."
         Me.pg_About.UseVisualStyleBackColor = True
         '
-        'aboutText_lbl
-        '
-        Me.aboutText_lbl.Location = New System.Drawing.Point(9, 174)
-        Me.aboutText_lbl.Name = "aboutText_lbl"
-        Me.aboutText_lbl.Size = New System.Drawing.Size(737, 263)
-        Me.aboutText_lbl.TabIndex = 9
-        Me.aboutText_lbl.Text = resources.GetString("aboutText_lbl.Text")
-        '
         'gnuGPL3_picBox
         '
+        Me.gnuGPL3_picBox.BackColor = System.Drawing.Color.Transparent
         Me.gnuGPL3_picBox.Image = CType(resources.GetObject("gnuGPL3_picBox.Image"), System.Drawing.Image)
-        Me.gnuGPL3_picBox.Location = New System.Drawing.Point(610, 440)
+        Me.gnuGPL3_picBox.Location = New System.Drawing.Point(613, 440)
         Me.gnuGPL3_picBox.Name = "gnuGPL3_picBox"
         Me.gnuGPL3_picBox.Size = New System.Drawing.Size(136, 68)
         Me.gnuGPL3_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -4778,6 +4771,15 @@ Partial Class Form1
         Me.thirdPartyLicenses_lnk.TabIndex = 12
         Me.thirdPartyLicenses_lnk.TabStop = True
         Me.thirdPartyLicenses_lnk.Text = "Third-Party Licenses"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(6, 177)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ReadOnly = True
+        Me.RichTextBox1.Size = New System.Drawing.Size(740, 331)
+        Me.RichTextBox1.TabIndex = 9
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'Form1
         '
@@ -4941,7 +4943,6 @@ Partial Class Form1
     Friend WithEvents generate_btn As Button
     Friend WithEvents outputBox_rchBox As RichTextBox
     Friend WithEvents pg_About As TabPage
-    Friend WithEvents aboutText_lbl As Label
     Friend WithEvents gnuGPL3_picBox As PictureBox
     Friend WithEvents aboutAuthor_lbl As Label
     Friend WithEvents aboutTitle_lbl As Label
@@ -5310,4 +5311,5 @@ Partial Class Form1
     Friend WithEvents Label13 As Label
     Friend WithEvents pokemonFiveName_lbl As Label
     Friend WithEvents thirdPartyLicenses_lnk As LinkLabel
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class

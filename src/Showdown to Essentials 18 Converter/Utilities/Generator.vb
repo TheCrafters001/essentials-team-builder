@@ -74,7 +74,7 @@
             ' Create Trainer Prefix
             trainerPrefix = "[" & Form1.trainerType_txtBox.Text.ToUpper & "," & Form1.trainerName_txtBox.Text & "]"
             'check if it is checked
-        ElseIf Form1.trainerUsesItems_chkBox.Checked = True Then
+        ElseIf Form1.existingBattle_chkBox.Checked = True Then
             trainerPrefix = "[" & Form1.trainerType_txtBox.Text.ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & "]"
         End If
 

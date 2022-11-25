@@ -23,14 +23,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <FileVersion>3.1.0.0</FileVersion>
+    <AssemblyVersion></AssemblyVersion>
+    <FileVersion></FileVersion>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Authors>TheCrafters001</Authors>
     <Copyright>Copyright © TheCrafters001 2022</Copyright>
     <PackageIcon>Showdown to Essentials_19.png</PackageIcon>
     <RepositoryUrl>https://github.com/TheCrafters001/showdown-to-essentials</RepositoryUrl>
-    <Version>3.1.0</Version>
+    <Version>3.1.1</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
@@ -51,20 +51,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="My Project\Settings.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
-    </None>
-    <None Update="My Project\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Update="Resources\Showdown to Essentials_19.png">
       <Pack>True</Pack>

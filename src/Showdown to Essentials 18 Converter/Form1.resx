@@ -524,17 +524,6 @@ Do note, that this specifies the DEFAULT IDs, and does not state any custom IDs.
   24 =&gt; :DREAMBALL,
   25 =&gt; :BEASTBALL</value>
   </data>
-  <data name="aboutText_lbl.Text" xml:space="preserve">
-    <value>This was made per request by FrozeniumZ. This tool makes it easier to convert Pokémon Showdown format into Pokémon Essentials format. 
-Note: this program isn't perfect. Far from it. There will be updates to this program from time to time to either fix bugs or add functionality.
-Other note: This is a fan-made tool. Pokémon is not owned by TheCrafters001; Pokémon is owned by Nintendo/GAME FREAK Inc./Creatures Inc./The Pokémon Company International
-
-This is a non-profit fan-made tool. No copyright infringements intended. Please support the official games!
-
-Pokemon Showdown Logo by Pokemon Showdown
-RPG Maker XP logo by Enterbrain
-MKXP-Z Logo by Roza</value>
-  </data>
   <data name="gnuGPL3_picBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIgAAABECAYAAABakH2dAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
@@ -649,6 +638,17 @@ MKXP-Z Logo by Roza</value>
         kSFH2B/XWEJ6ZtoqGwb1zylDNzTLUT+MBCI9e/XkY6zUvUfc3v1sPVJgj4b8dVhNhA/FqRVCs2gor3nK
         BbXKNk8erfCx6QlbJP+aiDOh8Syo9R78Vm2YWt9hLd22bf8PycbAxMskLkkAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>This was made per request by FrozeniumZ. This tool makes it easier to convert Pokémon Showdown format into Pokémon Essentials format. 
+Note: this program isn't perfect. Far from it. There will be updates to this program from time to time to either fix bugs or add functionality.
+Other note: This is a fan-made tool. Pokémon is not owned by TheCrafters001; Pokémon is owned by Nintendo/GAME FREAK Inc./Creatures Inc./The Pokémon Company International
+
+This is a non-profit fan-made tool. No copyright infringements intended. Please support the official games!
+
+Pokemon Showdown Logo by Pokemon Showdown
+RPG Maker XP logo by Enterbrain
+MKXP-Z Logo by Roza</value>
   </data>
   <data name="Logo_picBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
