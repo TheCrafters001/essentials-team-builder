@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Launcher", "Launcher\Launcher.vbproj", "{16F3D06D-BB92-47B2-A4B8-75A8DB2A587C}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UITest", "UITest\UITest.vbproj", "{3F0B20FC-5B1D-4342-9CE8-969ED3B004AB}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "UITest", "UITest\UITest.vbproj", "{3F0B20FC-5B1D-4342-9CE8-969ED3B004AB}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TeamGenerator", "TeamGenerator\TeamGenerator.vbproj", "{F6346424-F4CA-4CDF-9940-7B04AF386488}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{3F0B20FC-5B1D-4342-9CE8-969ED3B004AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F0B20FC-5B1D-4342-9CE8-969ED3B004AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F0B20FC-5B1D-4342-9CE8-969ED3B004AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6346424-F4CA-4CDF-9940-7B04AF386488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6346424-F4CA-4CDF-9940-7B04AF386488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6346424-F4CA-4CDF-9940-7B04AF386488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6346424-F4CA-4CDF-9940-7B04AF386488}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
