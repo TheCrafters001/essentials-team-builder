@@ -20,11 +20,11 @@ Public Class Form1
     Private Sub generate_btn_Click(sender As Object, e As EventArgs) Handles generate_btn.Click
         Generator.createTeam()
 
-        outputBox_rchBox = TeamGenerator.Generator.create18Team(pokemonOneName_txtBox.Text, pokemonOneLvl_txtBox.Text, pokemonOneMoves_lst.Items, pokemonOneAbility_cmb.Text, pokemonOneGender_cmb.Text,
-                                                                pokemonOneForm_txtBox.Text, pokemonOneShiny_rad.Checked, pokemonOneNature_cmb.Text, pokemonOneIVsHP_txt.Text, pokemonOneIVsATK_lbl.Text,
-                                                                pokemonOneIVsDEF_txt.Text, pokemonOneIVsSPATK_txt.Text, pokemonOneIVsSPDEF_txt.Text, pokemonOneIVsSPD_txt.Text, pokemonOneEVsHP_txt.Text,
-                                                                pokemonOneEVsATK_lbl.Text, pokemonOneEVsDEF_txt.Text, pokemonOneEVsSPATK_txt.Text, pokemonOneEVsSPDEF_txt.Text, pokemonOneEVsSPD_txt.Text,
-                                                                pokemonOneHappyness_txtBox.Text, pokemonOneNickName_txtBox.Text, pokemonOneShadow_rad.Checked, pokemonOnePokeballID_cmb.Text)
+        'outputBox_rchBox = TeamGenerator.Generator.create18Team(pokemonOneName_txtBox.Text, pokemonOneLvl_txtBox.Text, pokemonOneMoves_lst.Items, pokemonOneAbility_cmb.Text, pokemonOneGender_cmb.Text,
+        '                                                        pokemonOneForm_txtBox.Text, pokemonOneShiny_rad.Checked, pokemonOneNature_cmb.Text, pokemonOneIVsHP_txt.Text, pokemonOneIVsATK_lbl.Text,
+        '                                                        pokemonOneIVsDEF_txt.Text, pokemonOneIVsSPATK_txt.Text, pokemonOneIVsSPDEF_txt.Text, pokemonOneIVsSPD_txt.Text, pokemonOneEVsHP_txt.Text,
+        '                                                        pokemonOneEVsATK_lbl.Text, pokemonOneEVsDEF_txt.Text, pokemonOneEVsSPATK_txt.Text, pokemonOneEVsSPDEF_txt.Text, pokemonOneEVsSPD_txt.Text,
+        '                                                        pokemonOneHappyness_txtBox.Text, pokemonOneNickName_txtBox.Text, pokemonOneShadow_rad.Checked, pokemonOnePokeballID_cmb.Text)
 
     End Sub
 
