@@ -575,7 +575,7 @@ Partial Class Form1
         Me.recommendedSettings_grp.Controls.Add(Me.ess20Settings_btn)
         Me.recommendedSettings_grp.Controls.Add(Me.ess19Settings_btn)
         Me.recommendedSettings_grp.Controls.Add(Me.ess18Settings_btn)
-        Me.recommendedSettings_grp.Location = New System.Drawing.Point(323, 379)
+        Me.recommendedSettings_grp.Location = New System.Drawing.Point(323, 377)
         Me.recommendedSettings_grp.Name = "recommendedSettings_grp"
         Me.recommendedSettings_grp.Size = New System.Drawing.Size(248, 77)
         Me.recommendedSettings_grp.TabIndex = 16
@@ -623,7 +623,7 @@ Partial Class Form1
         '
         Me.example_btn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.example_btn.Location = New System.Drawing.Point(265, 462)
+        Me.example_btn.Location = New System.Drawing.Point(265, 460)
         Me.example_btn.Name = "example_btn"
         Me.example_btn.Size = New System.Drawing.Size(306, 23)
         Me.example_btn.TabIndex = 8
@@ -644,7 +644,7 @@ Partial Class Form1
         Me.properSpellingNote_lbl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.properSpellingNote_lbl.AutoSize = True
         Me.properSpellingNote_lbl.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(6, 462)
+        Me.properSpellingNote_lbl.Location = New System.Drawing.Point(6, 460)
         Me.properSpellingNote_lbl.Name = "properSpellingNote_lbl"
         Me.properSpellingNote_lbl.Size = New System.Drawing.Size(241, 20)
         Me.properSpellingNote_lbl.TabIndex = 12
@@ -655,7 +655,7 @@ Partial Class Form1
         Me.pe18_pic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pe18_pic.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pe18_pic.Image = CType(resources.GetObject("pe18_pic.Image"), System.Drawing.Image)
-        Me.pe18_pic.Location = New System.Drawing.Point(577, 379)
+        Me.pe18_pic.Location = New System.Drawing.Point(577, 377)
         Me.pe18_pic.Name = "pe18_pic"
         Me.pe18_pic.Size = New System.Drawing.Size(207, 106)
         Me.pe18_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -665,7 +665,7 @@ Partial Class Form1
         'clearInputs_btn
         '
         Me.clearInputs_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.clearInputs_btn.Location = New System.Drawing.Point(577, 350)
+        Me.clearInputs_btn.Location = New System.Drawing.Point(577, 348)
         Me.clearInputs_btn.Name = "clearInputs_btn"
         Me.clearInputs_btn.Size = New System.Drawing.Size(207, 23)
         Me.clearInputs_btn.TabIndex = 7
@@ -993,7 +993,7 @@ Partial Class Form1
         Me.pokemonOne_grp.Controls.Add(Me.pokemonOneName_lbl)
         Me.pokemonOne_grp.Location = New System.Drawing.Point(6, 3)
         Me.pokemonOne_grp.Name = "pokemonOne_grp"
-        Me.pokemonOne_grp.Size = New System.Drawing.Size(793, 492)
+        Me.pokemonOne_grp.Size = New System.Drawing.Size(793, 490)
         Me.pokemonOne_grp.TabIndex = 1
         Me.pokemonOne_grp.TabStop = False
         Me.pokemonOne_grp.Text = "Pokémon 1"
@@ -4646,9 +4646,9 @@ Partial Class Form1
         Me.pg_Output.Controls.Add(Me.Label1)
         Me.pg_Output.Controls.Add(Me.save_btn)
         Me.pg_Output.Controls.Add(Me.generate_btn)
-        Me.pg_Output.Location = New System.Drawing.Point(4, 24)
+        Me.pg_Output.Location = New System.Drawing.Point(4, 22)
         Me.pg_Output.Name = "pg_Output"
-        Me.pg_Output.Size = New System.Drawing.Size(810, 531)
+        Me.pg_Output.Size = New System.Drawing.Size(810, 533)
         Me.pg_Output.TabIndex = 8
         Me.pg_Output.Text = "Output"
         Me.pg_Output.ToolTipText = "Generate the trainer data here."
@@ -4663,14 +4663,14 @@ Partial Class Form1
         Me.outputBox_rchBox.Location = New System.Drawing.Point(3, 3)
         Me.outputBox_rchBox.Name = "outputBox_rchBox"
         Me.outputBox_rchBox.ReadOnly = True
-        Me.outputBox_rchBox.Size = New System.Drawing.Size(804, 498)
+        Me.outputBox_rchBox.Size = New System.Drawing.Size(804, 500)
         Me.outputBox_rchBox.TabIndex = 0
         Me.outputBox_rchBox.Text = ""
         '
         'save_to_trainers_btn
         '
         Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.save_to_trainers_btn.Location = New System.Drawing.Point(606, 507)
+        Me.save_to_trainers_btn.Location = New System.Drawing.Point(606, 509)
         Me.save_to_trainers_btn.Name = "save_to_trainers_btn"
         Me.save_to_trainers_btn.Size = New System.Drawing.Size(120, 23)
         Me.save_to_trainers_btn.TabIndex = 4
@@ -4682,7 +4682,7 @@ Partial Class Form1
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(3, 513)
+        Me.Label1.Location = New System.Drawing.Point(3, 515)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(390, 12)
         Me.Label1.TabIndex = 3
@@ -4692,7 +4692,7 @@ Partial Class Form1
         'save_btn
         '
         Me.save_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.save_btn.Location = New System.Drawing.Point(525, 507)
+        Me.save_btn.Location = New System.Drawing.Point(525, 509)
         Me.save_btn.Name = "save_btn"
         Me.save_btn.Size = New System.Drawing.Size(75, 23)
         Me.save_btn.TabIndex = 2
@@ -4702,7 +4702,7 @@ Partial Class Form1
         'generate_btn
         '
         Me.generate_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.generate_btn.Location = New System.Drawing.Point(732, 507)
+        Me.generate_btn.Location = New System.Drawing.Point(732, 509)
         Me.generate_btn.Name = "generate_btn"
         Me.generate_btn.Size = New System.Drawing.Size(75, 23)
         Me.generate_btn.TabIndex = 1
@@ -4716,9 +4716,9 @@ Partial Class Form1
         Me.pg_About.Controls.Add(Me.aboutAuthor_lbl)
         Me.pg_About.Controls.Add(Me.aboutTitle_lbl)
         Me.pg_About.Controls.Add(Me.Logo_picBox)
-        Me.pg_About.Location = New System.Drawing.Point(4, 24)
+        Me.pg_About.Location = New System.Drawing.Point(4, 22)
         Me.pg_About.Name = "pg_About"
-        Me.pg_About.Size = New System.Drawing.Size(810, 531)
+        Me.pg_About.Size = New System.Drawing.Size(810, 533)
         Me.pg_About.TabIndex = 7
         Me.pg_About.Text = "About"
         Me.pg_About.ToolTipText = "Information about this program."
@@ -4729,7 +4729,7 @@ Partial Class Form1
         Me.gnuGPL3_picBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gnuGPL3_picBox.BackColor = System.Drawing.Color.Transparent
         Me.gnuGPL3_picBox.Image = CType(resources.GetObject("gnuGPL3_picBox.Image"), System.Drawing.Image)
-        Me.gnuGPL3_picBox.Location = New System.Drawing.Point(671, 464)
+        Me.gnuGPL3_picBox.Location = New System.Drawing.Point(671, 466)
         Me.gnuGPL3_picBox.Name = "gnuGPL3_picBox"
         Me.gnuGPL3_picBox.Size = New System.Drawing.Size(136, 68)
         Me.gnuGPL3_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -4744,7 +4744,7 @@ Partial Class Form1
         Me.RichTextBox1.Location = New System.Drawing.Point(6, 179)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(801, 353)
+        Me.RichTextBox1.Size = New System.Drawing.Size(801, 355)
         Me.RichTextBox1.TabIndex = 9
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '

@@ -52,13 +52,13 @@
         Dim pokemonAbility As String = ""
         Dim gender As String = ""
         Dim pokemonForm As String = ""
-        Dim shiny As Boolean = ""
+        Dim shiny As Boolean
         Dim shinyString As String = ""
         Dim pokemonNature As String = ""
         Dim pokemonIVs As String = ""
         Dim pokemonHappyness As String = ""
         Dim pokemonNickname As String = ""
-        Dim shadow As Boolean = ""
+        Dim shadow As Boolean
         Dim shadowString As String = ""
         Dim pokeballID As String = ""
         Dim output As String = ""

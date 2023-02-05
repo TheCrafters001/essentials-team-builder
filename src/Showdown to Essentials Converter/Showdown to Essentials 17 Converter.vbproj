@@ -23,6 +23,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+	<Version>1.7.2</Version>
   </PropertyGroup>
   <ItemGroup>
     <Import Include="System.Drawing" />

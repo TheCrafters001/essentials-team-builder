@@ -26,6 +26,7 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.pg_Trainer = New System.Windows.Forms.TabPage()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.miscInfo_grpBox = New System.Windows.Forms.GroupBox()
         Me.internalBallNames_chk = New System.Windows.Forms.CheckBox()
         Me.existingBattle_chkBox = New System.Windows.Forms.CheckBox()
@@ -46,7 +47,9 @@ Partial Class Form1
         Me.trainerName_lbl = New System.Windows.Forms.Label()
         Me.trainerName_txtBox = New System.Windows.Forms.TextBox()
         Me.trainerInfoTitle_lbl = New System.Windows.Forms.Label()
-        Me.pg_POne = New System.Windows.Forms.TabPage()
+        Me.pg_Pokemon = New System.Windows.Forms.TabPage()
+        Me.TabControl2 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.pokemonOne_grp = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.pokemonOnePokeballID_cmb = New System.Windows.Forms.ComboBox()
@@ -82,7 +85,7 @@ Partial Class Form1
         Me.item_lbl = New System.Windows.Forms.Label()
         Me.pokemonOneName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonOneName_lbl = New System.Windows.Forms.Label()
-        Me.pg_PTwo = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.pokemonTwo_grp = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.pokemonTwoPokeballID_cmb = New System.Windows.Forms.ComboBox()
@@ -118,7 +121,7 @@ Partial Class Form1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.pokemonTwoName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonTwoName_lbl = New System.Windows.Forms.Label()
-        Me.pg_PThree = New System.Windows.Forms.TabPage()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.pokemonThree_grp = New System.Windows.Forms.GroupBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pokemonThreePokeballID_cmb = New System.Windows.Forms.ComboBox()
@@ -154,7 +157,7 @@ Partial Class Form1
         Me.Label11 = New System.Windows.Forms.Label()
         Me.pokemonThreeName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonThreeName_lbl = New System.Windows.Forms.Label()
-        Me.pg_PFour = New System.Windows.Forms.TabPage()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.pokemonFour_grp = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.pokemonFourPokeballID_cmb = New System.Windows.Forms.ComboBox()
@@ -190,7 +193,7 @@ Partial Class Form1
         Me.Label12 = New System.Windows.Forms.Label()
         Me.pokemonFourName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonFourName_lbl = New System.Windows.Forms.Label()
-        Me.pg_PFive = New System.Windows.Forms.TabPage()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.pokemonFive_grp = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.pokemonFivePokeballID_cmb = New System.Windows.Forms.ComboBox()
@@ -226,7 +229,7 @@ Partial Class Form1
         Me.Label13 = New System.Windows.Forms.Label()
         Me.pokemonFiveName_txtBox = New System.Windows.Forms.TextBox()
         Me.pokemonFiveName_lbl = New System.Windows.Forms.Label()
-        Me.pg_PSix = New System.Windows.Forms.TabPage()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.pokemonSix_grp = New System.Windows.Forms.GroupBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.pokemonSixPokeballID_cmb = New System.Windows.Forms.ComboBox()
@@ -277,38 +280,39 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.codeExporter_dialog = New System.Windows.Forms.SaveFileDialog()
         Me.trainer_txt_file_dialog = New System.Windows.Forms.OpenFileDialog()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.pg_Trainer.SuspendLayout()
         Me.miscInfo_grpBox.SuspendLayout()
         CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.trainerItems_grp.SuspendLayout()
-        Me.pg_POne.SuspendLayout()
+        Me.pg_Pokemon.SuspendLayout()
+        Me.TabControl2.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         Me.pokemonOne_grp.SuspendLayout()
         Me.pokemonOneShadow_grp.SuspendLayout()
         Me.pokemonOneShiny_grp.SuspendLayout()
         Me.pokemonOneMoves_grp.SuspendLayout()
-        Me.pg_PTwo.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         Me.pokemonTwo_grp.SuspendLayout()
         Me.pokemonTwoShadow_grp.SuspendLayout()
         Me.pokemonTwoShiny_grp.SuspendLayout()
         Me.pokemonTwoMoves_grp.SuspendLayout()
-        Me.pg_PThree.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
         Me.pokemonThree_grp.SuspendLayout()
         Me.pokemonThreeShadow_grp.SuspendLayout()
         Me.pokemonThreeShiny_grp.SuspendLayout()
         Me.pokemonThreeMoves_grp.SuspendLayout()
-        Me.pg_PFour.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.pokemonFour_grp.SuspendLayout()
         Me.pokemonFourShadow_grp.SuspendLayout()
         Me.pokemonFourShiny_grp.SuspendLayout()
         Me.pokemonFourMoves_grp.SuspendLayout()
-        Me.pg_PFive.SuspendLayout()
+        Me.TabPage5.SuspendLayout()
         Me.pokemonFive_grp.SuspendLayout()
         Me.pokemonFiveShadow_grp.SuspendLayout()
         Me.pokemonFiveShiny_grp.SuspendLayout()
         Me.pokemonFiveMoves_grp.SuspendLayout()
-        Me.pg_PSix.SuspendLayout()
+        Me.TabPage6.SuspendLayout()
         Me.pokemonSix_grp.SuspendLayout()
         Me.pokemonSixShadow_grp.SuspendLayout()
         Me.pokemonSixShiny_grp.SuspendLayout()
@@ -322,12 +326,7 @@ Partial Class Form1
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.pg_Trainer)
-        Me.TabControl1.Controls.Add(Me.pg_POne)
-        Me.TabControl1.Controls.Add(Me.pg_PTwo)
-        Me.TabControl1.Controls.Add(Me.pg_PThree)
-        Me.TabControl1.Controls.Add(Me.pg_PFour)
-        Me.TabControl1.Controls.Add(Me.pg_PFive)
-        Me.TabControl1.Controls.Add(Me.pg_PSix)
+        Me.TabControl1.Controls.Add(Me.pg_Pokemon)
         Me.TabControl1.Controls.Add(Me.pg_Output)
         Me.TabControl1.Controls.Add(Me.pg_About)
         Me.TabControl1.Location = New System.Drawing.Point(12, 12)
@@ -361,6 +360,15 @@ Partial Class Form1
         Me.pg_Trainer.TabIndex = 0
         Me.pg_Trainer.Text = "Trainer Info"
         Me.pg_Trainer.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(536, 383)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(198, 13)
+        Me.Label9.TabIndex = 25
+        Me.Label9.Text = "Legacy version, no longer supported."
         '
         'miscInfo_grpBox
         '
@@ -407,7 +415,7 @@ Partial Class Form1
         'pe17_pic
         '
         Me.pe17_pic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pe17_pic.Image = Global.Showdown_to_Essentials_17_Converter.My.Resources.Resources.Essentials17Only
+        Me.pe17_pic.Image = CType(resources.GetObject("pe17_pic.Image"), System.Drawing.Image)
         Me.pe17_pic.Location = New System.Drawing.Point(533, 399)
         Me.pe17_pic.Name = "pe17_pic"
         Me.pe17_pic.Size = New System.Drawing.Size(207, 106)
@@ -427,7 +435,7 @@ Partial Class Form1
         'properSpellingNote_lbl
         '
         Me.properSpellingNote_lbl.AutoSize = True
-        Me.properSpellingNote_lbl.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.properSpellingNote_lbl.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.properSpellingNote_lbl.Location = New System.Drawing.Point(7, 485)
         Me.properSpellingNote_lbl.Name = "properSpellingNote_lbl"
         Me.properSpellingNote_lbl.Size = New System.Drawing.Size(241, 20)
@@ -545,26 +553,56 @@ Partial Class Form1
         'trainerInfoTitle_lbl
         '
         Me.trainerInfoTitle_lbl.AutoSize = True
-        Me.trainerInfoTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.trainerInfoTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.trainerInfoTitle_lbl.Location = New System.Drawing.Point(6, 3)
         Me.trainerInfoTitle_lbl.Name = "trainerInfoTitle_lbl"
         Me.trainerInfoTitle_lbl.Size = New System.Drawing.Size(127, 30)
         Me.trainerInfoTitle_lbl.TabIndex = 0
         Me.trainerInfoTitle_lbl.Text = "Trainer Info"
         '
-        'pg_POne
+        'pg_Pokemon
         '
-        Me.pg_POne.Controls.Add(Me.pokemonOne_grp)
-        Me.pg_POne.Location = New System.Drawing.Point(4, 22)
-        Me.pg_POne.Name = "pg_POne"
-        Me.pg_POne.Padding = New System.Windows.Forms.Padding(3)
-        Me.pg_POne.Size = New System.Drawing.Size(752, 511)
-        Me.pg_POne.TabIndex = 1
-        Me.pg_POne.Text = "Pokémon 1"
-        Me.pg_POne.UseVisualStyleBackColor = True
+        Me.pg_Pokemon.Controls.Add(Me.TabControl2)
+        Me.pg_Pokemon.Location = New System.Drawing.Point(4, 22)
+        Me.pg_Pokemon.Name = "pg_Pokemon"
+        Me.pg_Pokemon.Size = New System.Drawing.Size(752, 511)
+        Me.pg_Pokemon.TabIndex = 9
+        Me.pg_Pokemon.Text = "Pokémon"
+        Me.pg_Pokemon.UseVisualStyleBackColor = True
+        '
+        'TabControl2
+        '
+        Me.TabControl2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TabControl2.Controls.Add(Me.TabPage1)
+        Me.TabControl2.Controls.Add(Me.TabPage2)
+        Me.TabControl2.Controls.Add(Me.TabPage3)
+        Me.TabControl2.Controls.Add(Me.TabPage4)
+        Me.TabControl2.Controls.Add(Me.TabPage5)
+        Me.TabControl2.Controls.Add(Me.TabPage6)
+        Me.TabControl2.Location = New System.Drawing.Point(3, 3)
+        Me.TabControl2.Name = "TabControl2"
+        Me.TabControl2.SelectedIndex = 0
+        Me.TabControl2.Size = New System.Drawing.Size(746, 507)
+        Me.TabControl2.TabIndex = 0
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.pokemonOne_grp)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(738, 481)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Pokémon 1"
+        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'pokemonOne_grp
         '
+        Me.pokemonOne_grp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pokemonOne_grp.Controls.Add(Me.Label2)
         Me.pokemonOne_grp.Controls.Add(Me.pokemonOnePokeballID_cmb)
         Me.pokemonOne_grp.Controls.Add(Me.pokemonOnePokeballID_lbl)
@@ -593,8 +631,8 @@ Partial Class Form1
         Me.pokemonOne_grp.Controls.Add(Me.pokemonOneName_lbl)
         Me.pokemonOne_grp.Location = New System.Drawing.Point(6, 6)
         Me.pokemonOne_grp.Name = "pokemonOne_grp"
-        Me.pokemonOne_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonOne_grp.TabIndex = 0
+        Me.pokemonOne_grp.Size = New System.Drawing.Size(726, 467)
+        Me.pokemonOne_grp.TabIndex = 1
         Me.pokemonOne_grp.TabStop = False
         Me.pokemonOne_grp.Text = "Pokémon 1"
         '
@@ -907,18 +945,22 @@ Partial Class Form1
         Me.pokemonOneName_lbl.TabIndex = 0
         Me.pokemonOneName_lbl.Text = "Pokémon Name"
         '
-        'pg_PTwo
+        'TabPage2
         '
-        Me.pg_PTwo.Controls.Add(Me.pokemonTwo_grp)
-        Me.pg_PTwo.Location = New System.Drawing.Point(4, 22)
-        Me.pg_PTwo.Name = "pg_PTwo"
-        Me.pg_PTwo.Size = New System.Drawing.Size(752, 511)
-        Me.pg_PTwo.TabIndex = 2
-        Me.pg_PTwo.Text = "Pokémon 2"
-        Me.pg_PTwo.UseVisualStyleBackColor = True
+        Me.TabPage2.Controls.Add(Me.pokemonTwo_grp)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(738, 477)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Pokémon 2"
+        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'pokemonTwo_grp
         '
+        Me.pokemonTwo_grp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pokemonTwo_grp.Controls.Add(Me.Label3)
         Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoPokeballID_cmb)
         Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoPokeballID_lbl)
@@ -947,8 +989,8 @@ Partial Class Form1
         Me.pokemonTwo_grp.Controls.Add(Me.pokemonTwoName_lbl)
         Me.pokemonTwo_grp.Location = New System.Drawing.Point(6, 6)
         Me.pokemonTwo_grp.Name = "pokemonTwo_grp"
-        Me.pokemonTwo_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonTwo_grp.TabIndex = 1
+        Me.pokemonTwo_grp.Size = New System.Drawing.Size(726, 465)
+        Me.pokemonTwo_grp.TabIndex = 2
         Me.pokemonTwo_grp.TabStop = False
         Me.pokemonTwo_grp.Text = "Pokémon 2"
         '
@@ -1261,18 +1303,21 @@ Partial Class Form1
         Me.pokemonTwoName_lbl.TabIndex = 24
         Me.pokemonTwoName_lbl.Text = "Pokémon Name"
         '
-        'pg_PThree
+        'TabPage3
         '
-        Me.pg_PThree.Controls.Add(Me.pokemonThree_grp)
-        Me.pg_PThree.Location = New System.Drawing.Point(4, 22)
-        Me.pg_PThree.Name = "pg_PThree"
-        Me.pg_PThree.Size = New System.Drawing.Size(752, 511)
-        Me.pg_PThree.TabIndex = 3
-        Me.pg_PThree.Text = "Pokémon 3"
-        Me.pg_PThree.UseVisualStyleBackColor = True
+        Me.TabPage3.Controls.Add(Me.pokemonThree_grp)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(738, 477)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Pokémon 3"
+        Me.TabPage3.UseVisualStyleBackColor = True
         '
         'pokemonThree_grp
         '
+        Me.pokemonThree_grp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pokemonThree_grp.Controls.Add(Me.Label5)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_cmb)
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreePokeballID_lbl)
@@ -1301,8 +1346,8 @@ Partial Class Form1
         Me.pokemonThree_grp.Controls.Add(Me.pokemonThreeName_lbl)
         Me.pokemonThree_grp.Location = New System.Drawing.Point(6, 6)
         Me.pokemonThree_grp.Name = "pokemonThree_grp"
-        Me.pokemonThree_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonThree_grp.TabIndex = 1
+        Me.pokemonThree_grp.Size = New System.Drawing.Size(726, 465)
+        Me.pokemonThree_grp.TabIndex = 2
         Me.pokemonThree_grp.TabStop = False
         Me.pokemonThree_grp.Text = "Pokémon 3"
         '
@@ -1615,18 +1660,21 @@ Partial Class Form1
         Me.pokemonThreeName_lbl.TabIndex = 49
         Me.pokemonThreeName_lbl.Text = "Pokémon Name"
         '
-        'pg_PFour
+        'TabPage4
         '
-        Me.pg_PFour.Controls.Add(Me.pokemonFour_grp)
-        Me.pg_PFour.Location = New System.Drawing.Point(4, 22)
-        Me.pg_PFour.Name = "pg_PFour"
-        Me.pg_PFour.Size = New System.Drawing.Size(752, 511)
-        Me.pg_PFour.TabIndex = 4
-        Me.pg_PFour.Text = "Pokémon 4"
-        Me.pg_PFour.UseVisualStyleBackColor = True
+        Me.TabPage4.Controls.Add(Me.pokemonFour_grp)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(738, 477)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Pokémon 4"
+        Me.TabPage4.UseVisualStyleBackColor = True
         '
         'pokemonFour_grp
         '
+        Me.pokemonFour_grp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pokemonFour_grp.Controls.Add(Me.Label6)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_cmb)
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourPokeballID_lbl)
@@ -1655,8 +1703,8 @@ Partial Class Form1
         Me.pokemonFour_grp.Controls.Add(Me.pokemonFourName_lbl)
         Me.pokemonFour_grp.Location = New System.Drawing.Point(6, 6)
         Me.pokemonFour_grp.Name = "pokemonFour_grp"
-        Me.pokemonFour_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonFour_grp.TabIndex = 1
+        Me.pokemonFour_grp.Size = New System.Drawing.Size(726, 465)
+        Me.pokemonFour_grp.TabIndex = 2
         Me.pokemonFour_grp.TabStop = False
         Me.pokemonFour_grp.Text = "Pokémon 4"
         '
@@ -1969,18 +2017,21 @@ Partial Class Form1
         Me.pokemonFourName_lbl.TabIndex = 74
         Me.pokemonFourName_lbl.Text = "Pokémon Name"
         '
-        'pg_PFive
+        'TabPage5
         '
-        Me.pg_PFive.Controls.Add(Me.pokemonFive_grp)
-        Me.pg_PFive.Location = New System.Drawing.Point(4, 22)
-        Me.pg_PFive.Name = "pg_PFive"
-        Me.pg_PFive.Size = New System.Drawing.Size(752, 511)
-        Me.pg_PFive.TabIndex = 5
-        Me.pg_PFive.Text = "Pokémon 5"
-        Me.pg_PFive.UseVisualStyleBackColor = True
+        Me.TabPage5.Controls.Add(Me.pokemonFive_grp)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Size = New System.Drawing.Size(738, 477)
+        Me.TabPage5.TabIndex = 4
+        Me.TabPage5.Text = "Pokémon 5"
+        Me.TabPage5.UseVisualStyleBackColor = True
         '
         'pokemonFive_grp
         '
+        Me.pokemonFive_grp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pokemonFive_grp.Controls.Add(Me.Label7)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFivePokeballID_cmb)
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFivePokeballID_lbl)
@@ -2009,8 +2060,8 @@ Partial Class Form1
         Me.pokemonFive_grp.Controls.Add(Me.pokemonFiveName_lbl)
         Me.pokemonFive_grp.Location = New System.Drawing.Point(6, 6)
         Me.pokemonFive_grp.Name = "pokemonFive_grp"
-        Me.pokemonFive_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonFive_grp.TabIndex = 1
+        Me.pokemonFive_grp.Size = New System.Drawing.Size(726, 465)
+        Me.pokemonFive_grp.TabIndex = 2
         Me.pokemonFive_grp.TabStop = False
         Me.pokemonFive_grp.Text = "Pokémon 5"
         '
@@ -2323,18 +2374,21 @@ Partial Class Form1
         Me.pokemonFiveName_lbl.TabIndex = 99
         Me.pokemonFiveName_lbl.Text = "Pokémon Name"
         '
-        'pg_PSix
+        'TabPage6
         '
-        Me.pg_PSix.Controls.Add(Me.pokemonSix_grp)
-        Me.pg_PSix.Location = New System.Drawing.Point(4, 22)
-        Me.pg_PSix.Name = "pg_PSix"
-        Me.pg_PSix.Size = New System.Drawing.Size(752, 511)
-        Me.pg_PSix.TabIndex = 6
-        Me.pg_PSix.Text = "Pokémon 6"
-        Me.pg_PSix.UseVisualStyleBackColor = True
+        Me.TabPage6.Controls.Add(Me.pokemonSix_grp)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Size = New System.Drawing.Size(738, 477)
+        Me.TabPage6.TabIndex = 5
+        Me.TabPage6.Text = "Pokémon 6"
+        Me.TabPage6.UseVisualStyleBackColor = True
         '
         'pokemonSix_grp
         '
+        Me.pokemonSix_grp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pokemonSix_grp.Controls.Add(Me.Label8)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixPokeballID_cmb)
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixPokeballID_lbl)
@@ -2363,8 +2417,8 @@ Partial Class Form1
         Me.pokemonSix_grp.Controls.Add(Me.pokemonSixName_lbl)
         Me.pokemonSix_grp.Location = New System.Drawing.Point(6, 6)
         Me.pokemonSix_grp.Name = "pokemonSix_grp"
-        Me.pokemonSix_grp.Size = New System.Drawing.Size(740, 499)
-        Me.pokemonSix_grp.TabIndex = 1
+        Me.pokemonSix_grp.Size = New System.Drawing.Size(726, 465)
+        Me.pokemonSix_grp.TabIndex = 2
         Me.pokemonSix_grp.TabStop = False
         Me.pokemonSix_grp.Text = "Pokémon 6"
         '
@@ -2684,9 +2738,9 @@ Partial Class Form1
         Me.pg_Output.Controls.Add(Me.save_btn)
         Me.pg_Output.Controls.Add(Me.generate_btn)
         Me.pg_Output.Controls.Add(Me.outputBox_rchBox)
-        Me.pg_Output.Location = New System.Drawing.Point(4, 22)
+        Me.pg_Output.Location = New System.Drawing.Point(4, 24)
         Me.pg_Output.Name = "pg_Output"
-        Me.pg_Output.Size = New System.Drawing.Size(752, 511)
+        Me.pg_Output.Size = New System.Drawing.Size(752, 509)
         Me.pg_Output.TabIndex = 8
         Me.pg_Output.Text = "Output"
         Me.pg_Output.UseVisualStyleBackColor = True
@@ -2694,7 +2748,7 @@ Partial Class Form1
         'save_to_trainers_btn
         '
         Me.save_to_trainers_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.save_to_trainers_btn.Location = New System.Drawing.Point(548, 485)
+        Me.save_to_trainers_btn.Location = New System.Drawing.Point(548, 487)
         Me.save_to_trainers_btn.Name = "save_to_trainers_btn"
         Me.save_to_trainers_btn.Size = New System.Drawing.Size(120, 23)
         Me.save_to_trainers_btn.TabIndex = 5
@@ -2704,7 +2758,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 7.5!)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(3, 490)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(433, 12)
@@ -2764,7 +2818,7 @@ Partial Class Form1
         '
         'gnuGPL3_picBox
         '
-        Me.gnuGPL3_picBox.Image = Global.Showdown_to_Essentials_17_Converter.My.Resources.Resources.gplv3_with_text_136x68
+        Me.gnuGPL3_picBox.Image = CType(resources.GetObject("gnuGPL3_picBox.Image"), System.Drawing.Image)
         Me.gnuGPL3_picBox.Location = New System.Drawing.Point(610, 440)
         Me.gnuGPL3_picBox.Name = "gnuGPL3_picBox"
         Me.gnuGPL3_picBox.Size = New System.Drawing.Size(136, 68)
@@ -2774,7 +2828,7 @@ Partial Class Form1
         '
         'aboutAuthor_lbl
         '
-        Me.aboutAuthor_lbl.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.aboutAuthor_lbl.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.aboutAuthor_lbl.Location = New System.Drawing.Point(6, 142)
         Me.aboutAuthor_lbl.Name = "aboutAuthor_lbl"
         Me.aboutAuthor_lbl.Size = New System.Drawing.Size(740, 32)
@@ -2784,7 +2838,7 @@ Partial Class Form1
         '
         'aboutTitle_lbl
         '
-        Me.aboutTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.aboutTitle_lbl.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.aboutTitle_lbl.Location = New System.Drawing.Point(6, 110)
         Me.aboutTitle_lbl.Name = "aboutTitle_lbl"
         Me.aboutTitle_lbl.Size = New System.Drawing.Size(740, 32)
@@ -2795,7 +2849,7 @@ Partial Class Form1
         'Logo_picBox
         '
         Me.Logo_picBox.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Logo_picBox.Image = Global.Showdown_to_Essentials_17_Converter.My.Resources.Resources.Showdown_to_Essentials_Logo
+        Me.Logo_picBox.Image = CType(resources.GetObject("Logo_picBox.Image"), System.Drawing.Image)
         Me.Logo_picBox.Location = New System.Drawing.Point(0, 0)
         Me.Logo_picBox.Name = "Logo_picBox"
         Me.Logo_picBox.Size = New System.Drawing.Size(752, 101)
@@ -2816,22 +2870,13 @@ Partial Class Form1
         Me.trainer_txt_file_dialog.FileName = "trainers.txt"
         Me.trainer_txt_file_dialog.Filter = "Trainers File|trainers.txt"
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(536, 383)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(198, 13)
-        Me.Label9.TabIndex = 25
-        Me.Label9.Text = "Legacy version, no longer supported."
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.TabControl1)
-        Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -2845,7 +2890,9 @@ Partial Class Form1
         Me.miscInfo_grpBox.PerformLayout()
         CType(Me.pe17_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.trainerItems_grp.ResumeLayout(False)
-        Me.pg_POne.ResumeLayout(False)
+        Me.pg_Pokemon.ResumeLayout(False)
+        Me.TabControl2.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
         Me.pokemonOne_grp.ResumeLayout(False)
         Me.pokemonOne_grp.PerformLayout()
         Me.pokemonOneShadow_grp.ResumeLayout(False)
@@ -2854,7 +2901,7 @@ Partial Class Form1
         Me.pokemonOneShiny_grp.PerformLayout()
         Me.pokemonOneMoves_grp.ResumeLayout(False)
         Me.pokemonOneMoves_grp.PerformLayout()
-        Me.pg_PTwo.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
         Me.pokemonTwo_grp.ResumeLayout(False)
         Me.pokemonTwo_grp.PerformLayout()
         Me.pokemonTwoShadow_grp.ResumeLayout(False)
@@ -2863,7 +2910,7 @@ Partial Class Form1
         Me.pokemonTwoShiny_grp.PerformLayout()
         Me.pokemonTwoMoves_grp.ResumeLayout(False)
         Me.pokemonTwoMoves_grp.PerformLayout()
-        Me.pg_PThree.ResumeLayout(False)
+        Me.TabPage3.ResumeLayout(False)
         Me.pokemonThree_grp.ResumeLayout(False)
         Me.pokemonThree_grp.PerformLayout()
         Me.pokemonThreeShadow_grp.ResumeLayout(False)
@@ -2872,7 +2919,7 @@ Partial Class Form1
         Me.pokemonThreeShiny_grp.PerformLayout()
         Me.pokemonThreeMoves_grp.ResumeLayout(False)
         Me.pokemonThreeMoves_grp.PerformLayout()
-        Me.pg_PFour.ResumeLayout(False)
+        Me.TabPage4.ResumeLayout(False)
         Me.pokemonFour_grp.ResumeLayout(False)
         Me.pokemonFour_grp.PerformLayout()
         Me.pokemonFourShadow_grp.ResumeLayout(False)
@@ -2881,7 +2928,7 @@ Partial Class Form1
         Me.pokemonFourShiny_grp.PerformLayout()
         Me.pokemonFourMoves_grp.ResumeLayout(False)
         Me.pokemonFourMoves_grp.PerformLayout()
-        Me.pg_PFive.ResumeLayout(False)
+        Me.TabPage5.ResumeLayout(False)
         Me.pokemonFive_grp.ResumeLayout(False)
         Me.pokemonFive_grp.PerformLayout()
         Me.pokemonFiveShadow_grp.ResumeLayout(False)
@@ -2890,7 +2937,7 @@ Partial Class Form1
         Me.pokemonFiveShiny_grp.PerformLayout()
         Me.pokemonFiveMoves_grp.ResumeLayout(False)
         Me.pokemonFiveMoves_grp.PerformLayout()
-        Me.pg_PSix.ResumeLayout(False)
+        Me.TabPage6.ResumeLayout(False)
         Me.pokemonSix_grp.ResumeLayout(False)
         Me.pokemonSix_grp.PerformLayout()
         Me.pokemonSixShadow_grp.ResumeLayout(False)
@@ -2910,12 +2957,6 @@ Partial Class Form1
     End Sub
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents pg_Trainer As TabPage
-    Friend WithEvents pg_POne As TabPage
-    Friend WithEvents pg_PTwo As TabPage
-    Friend WithEvents pg_PThree As TabPage
-    Friend WithEvents pg_PFour As TabPage
-    Friend WithEvents pg_PFive As TabPage
-    Friend WithEvents pg_PSix As TabPage
     Friend WithEvents pg_About As TabPage
     Friend WithEvents trainerName_lbl As Label
     Friend WithEvents trainerName_txtBox As TextBox
@@ -2941,45 +2982,58 @@ Partial Class Form1
     Friend WithEvents generate_btn As Button
     Friend WithEvents outputBox_rchBox As RichTextBox
     Friend WithEvents codeExporter_dialog As SaveFileDialog
+    Friend WithEvents Label1 As Label
+    Friend WithEvents example_btn As Button
+    Friend WithEvents pe17_pic As PictureBox
+    Friend WithEvents trainer_txt_file_dialog As OpenFileDialog
+    Friend WithEvents save_to_trainers_btn As Button
+    Friend WithEvents customBallIDs_chkBox As CheckBox
+    Friend WithEvents miscInfo_grpBox As GroupBox
+    Friend WithEvents internalBallNames_chk As CheckBox
+    Friend WithEvents trainerItemsList_btn As Button
+    Friend WithEvents trainerItemsList_lstbox As ListBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents pg_Pokemon As TabPage
+    Friend WithEvents TabControl2 As TabControl
+    Friend WithEvents TabPage1 As TabPage
     Friend WithEvents pokemonOne_grp As GroupBox
-    Friend WithEvents pokemonTwo_grp As GroupBox
-    Friend WithEvents pokemonThree_grp As GroupBox
-    Friend WithEvents pokemonFour_grp As GroupBox
-    Friend WithEvents pokemonFive_grp As GroupBox
-    Friend WithEvents pokemonSix_grp As GroupBox
-    Friend WithEvents pokemonOneName_lbl As Label
-    Friend WithEvents pokemonOneGender_lbl As Label
-    Friend WithEvents pokemonOneGender_cmb As ComboBox
-    Friend WithEvents pokemonOneItem_txtBox As TextBox
-    Friend WithEvents item_lbl As Label
-    Friend WithEvents pokemonOneName_txtBox As TextBox
-    Friend WithEvents pokemonOneMoves_grp As GroupBox
-    Friend WithEvents pokemonOneMove4_txtBox As TextBox
-    Friend WithEvents pokemonOneMove3_txtBox As TextBox
-    Friend WithEvents pokemonOneMove2_txtBox As TextBox
-    Friend WithEvents pokemonOneMove1_txtBox As TextBox
-    Friend WithEvents pokemonOneNature_lbl As Label
-    Friend WithEvents pokemonOneNature_cmb As ComboBox
-    Friend WithEvents pokemonOneIVs_txtBox As TextBox
-    Friend WithEvents pokemonOneIVs_lbl As Label
-    Friend WithEvents pokemonOneLvl_txtBox As TextBox
-    Friend WithEvents pokemonOneLvl_lbl As Label
-    Friend WithEvents pokemonOneAbility_lbl As Label
-    Friend WithEvents pokemonOneAbility_cmb As ComboBox
-    Friend WithEvents pokemonOneShiny_grp As GroupBox
-    Friend WithEvents pokemonOneShiny_rad As RadioButton
-    Friend WithEvents pokemonOneShinyFalse_rad As RadioButton
-    Friend WithEvents pokemonOneForm_txtBox As TextBox
-    Friend WithEvents pokemonOneForm_lbl As Label
-    Friend WithEvents pokemonOneHappyness_txtBox As TextBox
-    Friend WithEvents pokemonOneHappyness_lbl As Label
-    Friend WithEvents pokemonOneNickName_txtBox As TextBox
-    Friend WithEvents pokemonOneNickName_lbl As Label
+    Friend WithEvents Label2 As Label
     Friend WithEvents pokemonOnePokeballID_cmb As ComboBox
     Friend WithEvents pokemonOnePokeballID_lbl As Label
     Friend WithEvents pokemonOneShadow_grp As GroupBox
     Friend WithEvents pokemonOneShadow_rad As RadioButton
     Friend WithEvents pokemonOneShadowFalse_rad As RadioButton
+    Friend WithEvents pokemonOneNickName_txtBox As TextBox
+    Friend WithEvents pokemonOneNickName_lbl As Label
+    Friend WithEvents pokemonOneHappyness_txtBox As TextBox
+    Friend WithEvents pokemonOneHappyness_lbl As Label
+    Friend WithEvents pokemonOneShiny_grp As GroupBox
+    Friend WithEvents pokemonOneShiny_rad As RadioButton
+    Friend WithEvents pokemonOneShinyFalse_rad As RadioButton
+    Friend WithEvents pokemonOneForm_txtBox As TextBox
+    Friend WithEvents pokemonOneForm_lbl As Label
+    Friend WithEvents pokemonOneAbility_lbl As Label
+    Friend WithEvents pokemonOneAbility_cmb As ComboBox
+    Friend WithEvents pokemonOneLvl_txtBox As TextBox
+    Friend WithEvents pokemonOneLvl_lbl As Label
+    Friend WithEvents pokemonOneIVs_txtBox As TextBox
+    Friend WithEvents pokemonOneIVs_lbl As Label
+    Friend WithEvents pokemonOneNature_lbl As Label
+    Friend WithEvents pokemonOneNature_cmb As ComboBox
+    Friend WithEvents pokemonOneMoves_grp As GroupBox
+    Friend WithEvents pokemonOneMove4_txtBox As TextBox
+    Friend WithEvents pokemonOneMove3_txtBox As TextBox
+    Friend WithEvents pokemonOneMove2_txtBox As TextBox
+    Friend WithEvents pokemonOneMove1_txtBox As TextBox
+    Friend WithEvents pokemonOneGender_lbl As Label
+    Friend WithEvents pokemonOneGender_cmb As ComboBox
+    Friend WithEvents pokemonOneItem_txtBox As TextBox
+    Friend WithEvents item_lbl As Label
+    Friend WithEvents pokemonOneName_txtBox As TextBox
+    Friend WithEvents pokemonOneName_lbl As Label
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents pokemonTwo_grp As GroupBox
+    Friend WithEvents Label3 As Label
     Friend WithEvents pokemonTwoPokeballID_cmb As ComboBox
     Friend WithEvents pokemonTwoPokeballID_lbl As Label
     Friend WithEvents pokemonTwoShadow_grp As GroupBox
@@ -3013,6 +3067,9 @@ Partial Class Form1
     Friend WithEvents Label10 As Label
     Friend WithEvents pokemonTwoName_txtBox As TextBox
     Friend WithEvents pokemonTwoName_lbl As Label
+    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents pokemonThree_grp As GroupBox
+    Friend WithEvents Label5 As Label
     Friend WithEvents pokemonThreePokeballID_cmb As ComboBox
     Friend WithEvents pokemonThreePokeballID_lbl As Label
     Friend WithEvents pokemonThreeShadow_grp As GroupBox
@@ -3046,6 +3103,9 @@ Partial Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents pokemonThreeName_txtBox As TextBox
     Friend WithEvents pokemonThreeName_lbl As Label
+    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents pokemonFour_grp As GroupBox
+    Friend WithEvents Label6 As Label
     Friend WithEvents pokemonFourPokeballID_cmb As ComboBox
     Friend WithEvents pokemonFourPokeballID_lbl As Label
     Friend WithEvents pokemonFourShadow_grp As GroupBox
@@ -3079,6 +3139,9 @@ Partial Class Form1
     Friend WithEvents Label12 As Label
     Friend WithEvents pokemonFourName_txtBox As TextBox
     Friend WithEvents pokemonFourName_lbl As Label
+    Friend WithEvents TabPage5 As TabPage
+    Friend WithEvents pokemonFive_grp As GroupBox
+    Friend WithEvents Label7 As Label
     Friend WithEvents pokemonFivePokeballID_cmb As ComboBox
     Friend WithEvents pokemonFivePokeballID_lbl As Label
     Friend WithEvents pokemonFiveShadow_grp As GroupBox
@@ -3112,6 +3175,9 @@ Partial Class Form1
     Friend WithEvents Label13 As Label
     Friend WithEvents pokemonFiveName_txtBox As TextBox
     Friend WithEvents pokemonFiveName_lbl As Label
+    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents pokemonSix_grp As GroupBox
+    Friend WithEvents Label8 As Label
     Friend WithEvents pokemonSixPokeballID_cmb As ComboBox
     Friend WithEvents pokemonSixPokeballID_lbl As Label
     Friend WithEvents pokemonSixShadow_grp As GroupBox
@@ -3145,21 +3211,4 @@ Partial Class Form1
     Friend WithEvents Label14 As Label
     Friend WithEvents pokemonSixName_txtBox As TextBox
     Friend WithEvents pokemonSixName_lbl As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents example_btn As Button
-    Friend WithEvents pe17_pic As PictureBox
-    Friend WithEvents trainer_txt_file_dialog As OpenFileDialog
-    Friend WithEvents save_to_trainers_btn As Button
-    Friend WithEvents customBallIDs_chkBox As CheckBox
-    Friend WithEvents miscInfo_grpBox As GroupBox
-    Friend WithEvents internalBallNames_chk As CheckBox
-    Friend WithEvents trainerItemsList_btn As Button
-    Friend WithEvents trainerItemsList_lstbox As ListBox
-    Friend WithEvents Label9 As Label
 End Class
