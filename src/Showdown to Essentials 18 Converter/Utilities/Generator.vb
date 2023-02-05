@@ -246,7 +246,7 @@
                 If Form1.pokemonTwoName_txtBox.Text.ToUpper = "" Then
 
                     'If Pokemon Fails
-                    MessageBox.Show("You need to enter a Pokémon (Pokémon 1).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show("You need to enter a Pokémon (Pokémon 2).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 ElseIf Form1.pokemonTwoMoves_lst.Items.Count = 0 Then
 
                     'If Moves Fail
@@ -369,314 +369,506 @@
 #End Region
 #Region "Pokemon 3"
             If numPoke >= 3 Then
-                pokemonName = "Pokemon = " & Form1.pokemonThreeName_txtBox.Text.ToUpper & "," & Form1.pokemonThreeLvl_txtBox.Text & vbCrLf
-                If Form1.pokemonThreeForm_txtBox.Text = "" Then
-                    pokemonForm = ""
-                ElseIf Not Form1.pokemonThreeForm_txtBox.Text = "" Then
-                    pokemonForm = "    Form = " & Form1.pokemonThreeForm_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonThreeNickname_txtBox.Text = "" Then
-                    pokemonNickname = ""
-                ElseIf Not Form1.pokemonThreeNickname_txtBox.Text = "" Then
-                    pokemonNickname = "    Name = " & Form1.pokemonThreeNickname_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonThreeItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = ""
-                ElseIf Not Form1.pokemonThreeItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonThreeItem_txtBox.Text.ToUpper & vbCrLf
-                End If
-                If Form1.pokemonThreeGender_cmb.SelectedItem = "(random)" Then
-                    gender = ""
-                ElseIf Not Form1.pokemonThreeGender_cmb.SelectedItem = "(random)" Then
-                    gender = "    Gender = " & Form1.pokemonThreeGender_cmb.SelectedItem & vbCrLf
-                End If
-                If Form1.pokemonThreeShiny_rad.Checked = True And Form1.pokemonThreeShinyFalse_Rad.Checked = False Then
-                    shinyString = "    Shiny = yes" & vbCrLf
-                ElseIf Form1.pokemonThreeShiny_rad.Checked = False And Form1.pokemonThreeShinyFalse_Rad.Checked = True Then
-                    shinyString = "    Shiny = no" & vbCrLf
-                End If
-                If Form1.pokemonThreeShadow_rad.Checked = True And Form1.pokemonThreeShadowFalse_rad.Checked = False Then
-                    shadowString = "    Shadow = yes" & vbCrLf
-                ElseIf Form1.pokemonThreeShadow_rad.Checked = False And Form1.pokemonThreeShadowFalse_rad.Checked = True Then
-                    shadowString = "    Shadow = no" & vbCrLf
-                End If
+                If Form1.pokemonThreeName_txtBox.Text.ToUpper = "" Then
 
-                ' Clears everything from pokemon 1,
-                ' Then re adds it using move handler
-                move = Nothing
-                AllMoves = ""
+                    'If Pokemon Fails
+                    MessageBox.Show("You need to enter a Pokémon (Pokémon 3).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonThreeMoves_lst.Items.Count = 0 Then
 
-                ' Move Handler
-                For Each move In Form1.pokemonThreeMoves_lst.Items
-                    AllMoves &= move.ToString.ToUpper & ","
-                Next
+                    'If Moves Fail
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonThreeName_txtBox.Text.ToUpper & " (Pokémon 3).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-                If Form1.pokemonThreeMoves_lst.Items.Count = 0 Then
-                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonThreeName_txtBox.Text.ToUpper & " (Pokemon 3).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonThreeLvl_txtBox.Text.ToUpper = "" Then
+
+                    'If Level Fail
+                    MessageBox.Show(Form1.pokemonThreeName_txtBox.Text.ToUpper & " (Pokémon 3) needs to have a level set.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
+                    ' Set pokemon name & level in the following format:
+                    ' Pokemon = {0},{1}
+                    pokemonName = String.Format("Pokemon = {0},{1}" & vbCrLf, Form1.pokemonThreeName_txtBox.Text.ToUpper, Form1.pokemonThreeLvl_txtBox.Text)
+
+                    ' Check to see if form = nothing
+                    ' If it doesn't = nothing,
+                    ' Set form using the following format:
+                    ' Form = {0}
+                    If Not Form1.pokemonThreeForm_txtBox.Text = "" Then
+                        pokemonForm = String.Format("    Form = {0}" & vbCrLf, Form1.pokemonThreeForm_txtBox.Text)
+                    End If
+
+                    ' Check to see if name = nothing
+                    ' If it doesn't = nothing,
+                    ' Set name using the following format:
+                    ' Name = {0}
+                    If Not Form1.pokemonThreeNickname_txtBox.Text = "" Then
+                        pokemonNickname = String.Format("    Name = {0}" & vbCrLf, Form1.pokemonThreeNickname_txtBox.Text)
+                    End If
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonThreeItem_txtBox.Text.ToUpper = "" Then
+                        heldItem = String.Format("    Item = {0}" & vbCrLf, Form1.pokemonThreeItem_txtBox.Text.ToUpper)
+                    End If
+
+                    ' Check to see if Gender = (random)
+                    ' If it doesn't = (random),
+                    ' Set Gender using the following format:
+                    ' Gender = {0}
+                    If Not Form1.pokemonThreeGender_cmb.SelectedItem = "(random)" Then
+                        gender = String.Format("    Gender = " & vbCrLf, Form1.pokemonThreeGender_cmb.SelectedItem)
+                    End If
+
+                    ' Check to see if shiny = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shiny using the following format:
+                    ' Shiny = {0}
+                    If Form1.pokemonThreeShiny_rad.Checked = True And Form1.pokemonThreeShinyFalse_Rad.Checked = False Then
+                        shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    End If
+
+                    ' Check to see if shadow = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shadow using the following format:
+                    ' Shadow = {0}
+                    If Form1.pokemonThreeShadow_rad.Checked = True And Form1.pokemonThreeShadowFalse_rad.Checked = False Then
+                        shadowString = String.Format("    Shadow = {0}" & vbCrLf, "Yes")
+                    End If
+
+
+                    ' The new String.Format method doesn't work on the move handler.
+                    ' Leave that as is.
+
+                    ' Move Handler
+                    For Each move In Form1.pokemonThreeMoves_lst.Items
+                        AllMoves &= move.ToString.ToUpper & ","
+                    Next
+
                     AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
-                End If
 
-                'Take all moves, and turn it into the move format
-                AllMoves = "    Moves = " & AllMoves & vbCrLf
+                    'Take all moves, and turn it into the move format
+                    AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                ' Check if useAbilityIndex_chkBox is checked.
-                ' If it is, use ability index instead of ability
-                If Form1.useAbilityIndex_chkBox.Checked = True Then
-                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonTwoAbility_cmb.SelectedItem.ToString & vbCrLf
-                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
-                    pokemonAbility = "    Ability = " & Form1.pokemonTwoAbility_cmb.SelectedItem.ToString & vbCrLf
-                End If
 
-                If Form1.pokemonThreeNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = ""
-                ElseIf Not Form1.pokemonThreeNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = "    Nature = " & Form1.pokemonThreeNature_cmb.SelectedItem & vbCrLf
+                    ' Check if useAbilityIndex_chkBox is checked.
+                    ' If it is, use ability index instead of ability
+                    If Form1.useAbilityIndex_chkBox.Checked = True Then
+                        pokemonAbility = "AbilityIndex"
+                    ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                        pokemonAbility = "Ability"
+                    End If
+
+                    ' Use the string set from above to set the format here
+                    pokemonAbility = String.Format("    {0} = {1}" & vbCrLf, pokemonAbility, Form1.pokemonThreeAbility_cmb.SelectedItem.ToString)
+
+                    ' Check to see if Nature = (random)
+                    ' If it doesn't = (random),
+                    ' Set Nature using the following format:
+                    ' Nature = {0}
+                    If Not Form1.pokemonThreeNature_cmb.SelectedItem = "(random)" Then
+                        pokemonNature = String.Format("    Nature = {0}" & vbCrLf, Form1.pokemonThreeNature_cmb.SelectedItem)
+                    End If
+
+                    ' IVs = {0},{1},{2},{3},{4},{5}
+                    ' EVs use the same format as IVs
+                    pokemonIVs = String.Format("    IVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonThreeIVsHP_txt.Text, Form1.pokemonThreeIVsATK_txt.Text, Form1.pokemonThreeIVsDEF_txt.Text, Form1.pokemonThreeIVsSPD_txt.Text, Form1.pokemonThreeIVsSPATK_txt.Text, Form1.pokemonThreeIVsSPDEF_txt.Text)
+                    pokemonEVs = String.Format("    EVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonThreeEVsHP_txt.Text, Form1.pokemonThreeEVsATK_txt.Text, Form1.pokemonThreeEVsDEF_txt.Text, Form1.pokemonThreeEVsSPD_txt.Text, Form1.pokemonThreeEVsSPATK_txt.Text, Form1.pokemonThreeEVsSPDEF_txt.Text)
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonThreeHappyness_txtBox.Text = "" Then
+                        pokemonHappyness = String.Format("    Happiness = {0}" & vbCrLf, Form1.pokemonThreeHappyness_txtBox.Text)
+                    End If
+
+                    'Get Ball ID
+                    pokeballID = String.Format("    Ball = {0}" & vbCrLf, Form1.pokemonThreePokeballID_cmb.SelectedItem)
+
+                    ' Use dims from above to generate output
+                    output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+
+                    ' put the output in the thing
+                    Form1.outputBox_rchBox.Text &= output & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonThreeIVsHP_txt.Text & "," & Form1.pokemonThreeIVsATK_txt.Text & "," & Form1.pokemonThreeIVsDEF_txt.Text & "," & Form1.pokemonThreeIVsSPD_txt.Text & "," & Form1.pokemonThreeIVsSPATK_txt.Text & "," & Form1.pokemonThreeIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonThreeEVsHP_txt.Text & "," & Form1.pokemonThreeEVsATK_txt.Text & "," & Form1.pokemonThreeEVsDEF_txt.Text & "," & Form1.pokemonThreeEVsSPD_txt.Text & "," & Form1.pokemonThreeEVsSPATK_txt.Text & "," & Form1.pokemonThreeEVsSPDEF_txt.Text & vbCrLf
-                If Form1.pokemonThreeHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = 70" & vbCrLf
-                ElseIf Not Form1.pokemonThreeHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = " & Form1.pokemonThreeHappyness_txtBox.Text & vbCrLf
-                End If
-                pokeballID = "    Ball = " & Form1.pokemonThreePokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
-                Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
 #Region "Pokemon 4"
             If numPoke >= 4 Then
-                pokemonName = "Pokemon = " & Form1.pokemonFourName_txtBox.Text.ToUpper & "," & Form1.pokemonFourlvl_txtBox.Text & vbCrLf
-                If Form1.pokemonFourForm_txtBox.Text = "" Then
-                    pokemonForm = ""
-                ElseIf Not Form1.pokemonFourForm_txtBox.Text = "" Then
-                    pokemonForm = "    Form = " & Form1.pokemonFourForm_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonFourNickname_txtBox.Text = "" Then
-                    pokemonNickname = ""
-                ElseIf Not Form1.pokemonFourNickname_txtBox.Text = "" Then
-                    pokemonNickname = "    Name = " & Form1.pokemonFourNickname_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonFourItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = ""
-                ElseIf Not Form1.pokemonFourItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonFourItem_txtBox.Text.ToUpper & vbCrLf
-                End If
-                If Form1.pokemonFourGender_cmb.SelectedItem = "(random)" Then
-                    gender = ""
-                ElseIf Not Form1.pokemonFourGender_cmb.SelectedItem = "(random)" Then
-                    gender = "    Gender = " & Form1.pokemonFourGender_cmb.SelectedItem & vbCrLf
-                End If
-                If Form1.pokemonFourShiny_rad.Checked = True And Form1.pokemonFourShinyFalse_rad.Checked = False Then
-                    shinyString = "    Shiny = yes" & vbCrLf
-                ElseIf Form1.pokemonFourShiny_rad.Checked = False And Form1.pokemonFourShinyFalse_rad.Checked = True Then
-                    shinyString = "    Shiny = no" & vbCrLf
-                End If
-                If Form1.pokemonFourShadow_rad.Checked = True And Form1.pokemonFourShadowFalse_rad.Checked = False Then
-                    shadowString = "    Shadow = yes" & vbCrLf
-                ElseIf Form1.pokemonFourShadow_rad.Checked = False And Form1.pokemonFourShadowFalse_rad.Checked = True Then
-                    shadowString = "    Shadow = no" & vbCrLf
-                End If
+                If Form1.pokemonFourName_txtBox.Text.ToUpper = "" Then
 
-                ' Clears everything from pokemon 1,
-                ' Then re adds it using move handler
-                move = Nothing
-                AllMoves = ""
+                    'If Pokemon Fails
+                    MessageBox.Show("You need to enter a Pokémon (Pokémon 4).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonFourMoves_lst.Items.Count = 0 Then
 
-                ' Move Handler
-                For Each move In Form1.pokemonFourMoves_lst.Items
-                    AllMoves &= move.ToString.ToUpper & ","
-                Next
+                    'If Moves Fail
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonFourName_txtBox.Text.ToUpper & " (Pokémon 4).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-                If Form1.pokemonFourMoves_lst.Items.Count = 0 Then
-                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonFourName_txtBox.Text.ToUpper & " (Pokemon 4).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonFourLvl_txtBox.Text.ToUpper = "" Then
+
+                    'If Level Fail
+                    MessageBox.Show(Form1.pokemonFourName_txtBox.Text.ToUpper & " (Pokémon 4) needs to have a level set.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
+                    ' Set pokemon name & level in the following format:
+                    ' Pokemon = {0},{1}
+                    pokemonName = String.Format("Pokemon = {0},{1}" & vbCrLf, Form1.pokemonFourName_txtBox.Text.ToUpper, Form1.pokemonFourlvl_txtBox.Text)
+
+                    ' Check to see if form = nothing
+                    ' If it doesn't = nothing,
+                    ' Set form using the following format:
+                    ' Form = {0}
+                    If Not Form1.pokemonFourForm_txtBox.Text = "" Then
+                        pokemonForm = String.Format("    Form = {0}" & vbCrLf, Form1.pokemonFourForm_txtBox.Text)
+                    End If
+
+                    ' Check to see if name = nothing
+                    ' If it doesn't = nothing,
+                    ' Set name using the following format:
+                    ' Name = {0}
+                    If Not Form1.pokemonFourNickname_txtBox.Text = "" Then
+                        pokemonNickname = String.Format("    Name = {0}" & vbCrLf, Form1.pokemonFourNickname_txtBox.Text)
+                    End If
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonFourItem_txtBox.Text.ToUpper = "" Then
+                        heldItem = String.Format("    Item = {0}" & vbCrLf, Form1.pokemonFourItem_txtBox.Text.ToUpper)
+                    End If
+
+                    ' Check to see if Gender = (random)
+                    ' If it doesn't = (random),
+                    ' Set Gender using the following format:
+                    ' Gender = {0}
+                    If Not Form1.pokemonFourGender_cmb.SelectedItem = "(random)" Then
+                        gender = String.Format("    Gender = " & vbCrLf, Form1.pokemonFourGender_cmb.SelectedItem)
+                    End If
+
+                    ' Check to see if shiny = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shiny using the following format:
+                    ' Shiny = {0}
+                    If Form1.pokemonFourShiny_rad.Checked = True And Form1.pokemonFourShinyFalse_rad.Checked = False Then
+                        shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    End If
+
+                    ' Check to see if shadow = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shadow using the following format:
+                    ' Shadow = {0}
+                    If Form1.pokemonFourShadow_rad.Checked = True And Form1.pokemonFourShadowFalse_rad.Checked = False Then
+                        shadowString = String.Format("    Shadow = {0}" & vbCrLf, "Yes")
+                    End If
+
+
+                    ' The new String.Format method doesn't work on the move handler.
+                    ' Leave that as is.
+
+                    ' Move Handler
+                    For Each move In Form1.pokemonFourMoves_lst.Items
+                        AllMoves &= move.ToString.ToUpper & ","
+                    Next
+
                     AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
-                End If
 
-                'Take all moves, and turn it into the move format
-                AllMoves = "    Moves = " & AllMoves & vbCrLf
+                    'Take all moves, and turn it into the move format
+                    AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                ' Check if useAbilityIndex_chkBox is checked.
-                ' If it is, use ability index instead of ability
-                If Form1.useAbilityIndex_chkBox.Checked = True Then
-                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
-                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                End If
 
-                If Form1.pokemonFourNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = ""
-                ElseIf Not Form1.pokemonFourNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = "    Nature = " & Form1.pokemonFourNature_cmb.SelectedItem & vbCrLf
+                    ' Check if useAbilityIndex_chkBox is checked.
+                    ' If it is, use ability index instead of ability
+                    If Form1.useAbilityIndex_chkBox.Checked = True Then
+                        pokemonAbility = "AbilityIndex"
+                    ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                        pokemonAbility = "Ability"
+                    End If
+
+                    ' Use the string set from above to set the format here
+                    pokemonAbility = String.Format("    {0} = {1}" & vbCrLf, pokemonAbility, Form1.pokemonFourAbility_cmb.SelectedItem.ToString)
+
+                    ' Check to see if Nature = (random)
+                    ' If it doesn't = (random),
+                    ' Set Nature using the following format:
+                    ' Nature = {0}
+                    If Not Form1.pokemonFourNature_cmb.SelectedItem = "(random)" Then
+                        pokemonNature = String.Format("    Nature = {0}" & vbCrLf, Form1.pokemonFourNature_cmb.SelectedItem)
+                    End If
+
+                    ' IVs = {0},{1},{2},{3},{4},{5}
+                    ' EVs use the same format as IVs
+                    pokemonIVs = String.Format("    IVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonFourIVsHP_txt.Text, Form1.pokemonFourIVsATK_txt.Text, Form1.pokemonFourIVsDEF_txt.Text, Form1.pokemonFourIVsSPD_txt.Text, Form1.pokemonFourIVsSPATK_txt.Text, Form1.pokemonFourIVsSPDEF_txt.Text)
+                    pokemonEVs = String.Format("    EVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonFourEVsHP_txt.Text, Form1.pokemonFourEVsATK_txt.Text, Form1.pokemonFourEVsDEF_txt.Text, Form1.pokemonFourEVsSPD_txt.Text, Form1.pokemonFourEVsSPATK_txt.Text, Form1.pokemonFourEVsSPDEF_txt.Text)
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonFourHappyness_txtBox.Text = "" Then
+                        pokemonHappyness = String.Format("    Happiness = {0}" & vbCrLf, Form1.pokemonFourHappyness_txtBox.Text)
+                    End If
+
+                    'Get Ball ID
+                    pokeballID = String.Format("    Ball = {0}" & vbCrLf, Form1.pokemonFourPokeballID_cmb.SelectedItem)
+
+                    ' Use dims from above to generate output
+                    output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+
+                    ' put the output in the thing
+                    Form1.outputBox_rchBox.Text &= output & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonFourIVsHP_txt.Text & "," & Form1.pokemonFourIVsATK_txt.Text & "," & Form1.pokemonFourIVsDEF_txt.Text & "," & Form1.pokemonFourIVsSPD_txt.Text & "," & Form1.pokemonFourIVsSPATK_txt.Text & "," & Form1.pokemonFourIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonFourEVsHP_txt.Text & "," & Form1.pokemonFourEVsATK_txt.Text & "," & Form1.pokemonFourEVsDEF_txt.Text & "," & Form1.pokemonFourEVsSPD_txt.Text & "," & Form1.pokemonFourEVsSPATK_txt.Text & "," & Form1.pokemonFourEVsSPDEF_txt.Text & vbCrLf
-                If Form1.pokemonFourHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = 70" & vbCrLf
-                ElseIf Not Form1.pokemonFourHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = " & Form1.pokemonFourHappyness_txtBox.Text & vbCrLf
-                End If
-                pokeballID = "    Ball = " & Form1.pokemonFourPokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
-                Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
 #Region "Pokemon 5"
             If numPoke >= 5 Then
-                pokemonName = "Pokemon = " & Form1.pokemonFiveName_txtBox.Text.ToUpper & "," & Form1.pokemonFivelvl_txtBox.Text & vbCrLf
-                If Form1.pokemonFiveForm_txtBox.Text = "" Then
-                    pokemonForm = ""
-                ElseIf Not Form1.pokemonFiveForm_txtBox.Text = "" Then
-                    pokemonForm = "    Form = " & Form1.pokemonFiveForm_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonFiveNickname_txtBox.Text = "" Then
-                    pokemonNickname = ""
-                ElseIf Not Form1.pokemonFiveNickname_txtBox.Text = "" Then
-                    pokemonNickname = "    Name = " & Form1.pokemonFiveNickname_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonFiveItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = ""
-                ElseIf Not Form1.pokemonFiveItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonFiveItem_txtBox.Text.ToUpper & vbCrLf
-                End If
-                If Form1.pokemonFiveGender_cmb.SelectedItem = "(random)" Then
-                    gender = ""
-                ElseIf Not Form1.pokemonFiveGender_cmb.SelectedItem = "(random)" Then
-                    gender = "    Gender = " & Form1.pokemonFiveGender_cmb.SelectedItem & vbCrLf
-                End If
-                If Form1.pokemonFiveShiny_rad.Checked = True And Form1.pokemonFiveShinyFalse_rad.Checked = False Then
-                    shinyString = "    Shiny = yes" & vbCrLf
-                ElseIf Form1.pokemonFiveShiny_rad.Checked = False And Form1.pokemonFiveShinyFalse_rad.Checked = True Then
-                    shinyString = "    Shiny = no" & vbCrLf
-                End If
-                If Form1.pokemonFiveShadow_rad.Checked = True And Form1.pokemonFiveShadowFalse_rad.Checked = False Then
-                    shadowString = "    Shadow = yes" & vbCrLf
-                ElseIf Form1.pokemonFiveShadow_rad.Checked = False And Form1.pokemonFiveShadowFalse_rad.Checked = True Then
-                    shadowString = "    Shadow = no" & vbCrLf
-                End If
+                If Form1.pokemonFiveName_txtBox.Text.ToUpper = "" Then
 
-                ' Clears everything from pokemon 1,
-                ' Then re adds it using move handler
-                move = Nothing
-                AllMoves = ""
+                    'If Pokemon Fails
+                    MessageBox.Show("You need to enter a Pokémon (Pokémon 5).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonFiveMoves_lst.Items.Count = 0 Then
 
-                ' Move Handler
-                For Each move In Form1.pokemonFiveMoves_lst.Items
-                    AllMoves &= move.ToString.ToUpper & ","
-                Next
+                    'If Moves Fail
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonFiveName_txtBox.Text.ToUpper & " (Pokémon 5).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-                If Form1.pokemonFiveMoves_lst.Items.Count = 0 Then
-                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonFiveName_txtBox.Text.ToUpper & " (Pokemon 5).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonFivelvl_txtBox.Text.ToUpper = "" Then
+
+                    'If Level Fail
+                    MessageBox.Show(Form1.pokemonFiveName_txtBox.Text.ToUpper & " (Pokémon 5) needs to have a level set.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
+                    ' Set pokemon name & level in the following format:
+                    ' Pokemon = {0},{1}
+                    pokemonName = String.Format("Pokemon = {0},{1}" & vbCrLf, Form1.pokemonFiveName_txtBox.Text.ToUpper, Form1.pokemonFivelvl_txtBox.Text)
+
+                    ' Check to see if form = nothing
+                    ' If it doesn't = nothing,
+                    ' Set form using the following format:
+                    ' Form = {0}
+                    If Not Form1.pokemonFiveForm_txtBox.Text = "" Then
+                        pokemonForm = String.Format("    Form = {0}" & vbCrLf, Form1.pokemonFiveForm_txtBox.Text)
+                    End If
+
+                    ' Check to see if name = nothing
+                    ' If it doesn't = nothing,
+                    ' Set name using the following format:
+                    ' Name = {0}
+                    If Not Form1.pokemonFiveNickname_txtBox.Text = "" Then
+                        pokemonNickname = String.Format("    Name = {0}" & vbCrLf, Form1.pokemonFiveNickname_txtBox.Text)
+                    End If
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonFiveItem_txtBox.Text.ToUpper = "" Then
+                        heldItem = String.Format("    Item = {0}" & vbCrLf, Form1.pokemonFiveItem_txtBox.Text.ToUpper)
+                    End If
+
+                    ' Check to see if Gender = (random)
+                    ' If it doesn't = (random),
+                    ' Set Gender using the following format:
+                    ' Gender = {0}
+                    If Not Form1.pokemonFiveGender_cmb.SelectedItem = "(random)" Then
+                        gender = String.Format("    Gender = " & vbCrLf, Form1.pokemonFiveGender_cmb.SelectedItem)
+                    End If
+
+                    ' Check to see if shiny = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shiny using the following format:
+                    ' Shiny = {0}
+                    If Form1.pokemonFiveShiny_rad.Checked = True And Form1.pokemonFiveShinyFalse_rad.Checked = False Then
+                        shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    End If
+
+                    ' Check to see if shadow = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shadow using the following format:
+                    ' Shadow = {0}
+                    If Form1.pokemonFiveShadow_rad.Checked = True And Form1.pokemonFiveShadowFalse_rad.Checked = False Then
+                        shadowString = String.Format("    Shadow = {0}" & vbCrLf, "Yes")
+                    End If
+
+
+                    ' The new String.Format method doesn't work on the move handler.
+                    ' Leave that as is.
+
+                    ' Move Handler
+                    For Each move In Form1.pokemonFiveMoves_lst.Items
+                        AllMoves &= move.ToString.ToUpper & ","
+                    Next
+
                     AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
-                End If
 
-                'Take all moves, and turn it into the move format
-                AllMoves = "    Moves = " & AllMoves & vbCrLf
+                    'Take all moves, and turn it into the move format
+                    AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                ' Check if useAbilityIndex_chkBox is checked.
-                ' If it is, use ability index instead of ability
-                If Form1.useAbilityIndex_chkBox.Checked = True Then
-                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
-                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                End If
 
-                If Form1.pokemonFiveNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = ""
-                ElseIf Not Form1.pokemonFiveNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = "    Nature = " & Form1.pokemonFiveNature_cmb.SelectedItem & vbCrLf
+                    ' Check if useAbilityIndex_chkBox is checked.
+                    ' If it is, use ability index instead of ability
+                    If Form1.useAbilityIndex_chkBox.Checked = True Then
+                        pokemonAbility = "AbilityIndex"
+                    ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                        pokemonAbility = "Ability"
+                    End If
+
+                    ' Use the string set from above to set the format here
+                    pokemonAbility = String.Format("    {0} = {1}" & vbCrLf, pokemonAbility, Form1.pokemonFiveAbility_cmb.SelectedItem.ToString)
+
+                    ' Check to see if Nature = (random)
+                    ' If it doesn't = (random),
+                    ' Set Nature using the following format:
+                    ' Nature = {0}
+                    If Not Form1.pokemonFiveNature_cmb.SelectedItem = "(random)" Then
+                        pokemonNature = String.Format("    Nature = {0}" & vbCrLf, Form1.pokemonFiveNature_cmb.SelectedItem)
+                    End If
+
+                    ' IVs = {0},{1},{2},{3},{4},{5}
+                    ' EVs use the same format as IVs
+                    pokemonIVs = String.Format("    IVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonFiveIVsHP_txt.Text, Form1.pokemonFiveIVsATK_txt.Text, Form1.pokemonFiveIVsDEF_txt.Text, Form1.pokemonFiveIVsSPD_txt.Text, Form1.pokemonFiveIVsSPATK_txt.Text, Form1.pokemonFiveIVsSPDEF_txt.Text)
+                    pokemonEVs = String.Format("    EVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonFiveEVsHP_txt.Text, Form1.pokemonFiveEVsATK_txt.Text, Form1.pokemonFiveEVsDEF_txt.Text, Form1.pokemonFiveEVsSPD_txt.Text, Form1.pokemonFiveEVsSPATK_txt.Text, Form1.pokemonFiveEVsSPDEF_txt.Text)
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonFiveHappyness_txtBox.Text = "" Then
+                        pokemonHappyness = String.Format("    Happiness = {0}" & vbCrLf, Form1.pokemonFiveHappyness_txtBox.Text)
+                    End If
+
+                    'Get Ball ID
+                    pokeballID = String.Format("    Ball = {0}" & vbCrLf, Form1.pokemonFivePokeballID_cmb.SelectedItem)
+
+                    ' Use dims from above to generate output
+                    output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+
+                    ' put the output in the thing
+                    Form1.outputBox_rchBox.Text &= output & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonFiveIVsHP_txt.Text & "," & Form1.pokemonFiveIVsATK_txt.Text & "," & Form1.pokemonFiveIVsDEF_txt.Text & "," & Form1.pokemonFiveIVsSPD_txt.Text & "," & Form1.pokemonFiveIVsSPATK_txt.Text & "," & Form1.pokemonFiveIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonFiveEVsHP_txt.Text & "," & Form1.pokemonFiveEVsATK_txt.Text & "," & Form1.pokemonFiveEVsDEF_txt.Text & "," & Form1.pokemonFiveEVsSPD_txt.Text & "," & Form1.pokemonFiveEVsSPATK_txt.Text & "," & Form1.pokemonFiveEVsSPDEF_txt.Text & vbCrLf
-                If Form1.pokemonFiveHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = 70" & vbCrLf
-                ElseIf Not Form1.pokemonFiveHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = " & Form1.pokemonFiveHappyness_txtBox.Text & vbCrLf
-                End If
-                pokeballID = "    Ball = " & Form1.pokemonFivePokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
-                Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
 #Region "Pokemon 6"
             If numPoke >= 6 Then
-                pokemonName = "Pokemon = " & Form1.pokemonSixName_txtBox.Text.ToUpper & "," & Form1.pokemonSixLvl_txtBox.Text & vbCrLf
-                If Form1.pokemonSixForm_txtBox.Text = "" Then
-                    pokemonForm = ""
-                ElseIf Not Form1.pokemonSixForm_txtBox.Text = "" Then
-                    pokemonForm = "    Form = " & Form1.pokemonSixForm_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonSixNickname_txtBox.Text = "" Then
-                    pokemonNickname = ""
-                ElseIf Not Form1.pokemonSixNickname_txtBox.Text = "" Then
-                    pokemonNickname = "    Name = " & Form1.pokemonSixNickname_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonSixItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = ""
-                ElseIf Not Form1.pokemonSixItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonSixItem_txtBox.Text.ToUpper & vbCrLf
-                End If
-                If Form1.pokemonSixGender_cmb.SelectedItem = "(random)" Then
-                    gender = ""
-                ElseIf Not Form1.pokemonSixGender_cmb.SelectedItem = "(random)" Then
-                    gender = "    Gender = " & Form1.pokemonSixGender_cmb.SelectedItem & vbCrLf
-                End If
-                If Form1.pokemonSixShiny_rad.Checked = True And Form1.pokemonSixShinyFalse_rad.Checked = False Then
-                    shinyString = "    Shiny = yes" & vbCrLf
-                ElseIf Form1.pokemonSixShiny_rad.Checked = False And Form1.pokemonSixShinyFalse_rad.Checked = True Then
-                    shinyString = "    Shiny = no" & vbCrLf
-                End If
-                If Form1.pokemonSixShadow_rad.Checked = True And Form1.pokemonSixShadowFalse_rad.Checked = False Then
-                    shadowString = "    Shadow = yes" & vbCrLf
-                ElseIf Form1.pokemonSixShadow_rad.Checked = False And Form1.pokemonSixShadowFalse_rad.Checked = True Then
-                    shadowString = "    Shadow = no" & vbCrLf
-                End If
+                If Form1.pokemonSixName_txtBox.Text.ToUpper = "" Then
 
-                ' Clears everything from pokemon 1,
-                ' Then re adds it using move handler
-                move = Nothing
-                AllMoves = ""
+                    'If Pokemon Fails
+                    MessageBox.Show("You need to enter a Pokémon (Pokémon 6).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonSixMoves_lst.Items.Count = 0 Then
 
-                ' Move Handler
-                For Each move In Form1.pokemonSixMoves_lst.Items
-                    AllMoves &= move.ToString.ToUpper & ","
-                Next
+                    'If Moves Fail
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonSixName_txtBox.Text.ToUpper & " (Pokémon 6).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-                If Form1.pokemonSixMoves_lst.Items.Count = 0 Then
-                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonSixName_txtBox.Text.ToUpper & " (Pokemon 6).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonSixlvl_txtBox.Text.ToUpper = "" Then
+
+                    'If Level Fail
+                    MessageBox.Show(Form1.pokemonSixName_txtBox.Text.ToUpper & " (Pokémon 6) needs to have a level set.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
+                    ' Set pokemon name & level in the following format:
+                    ' Pokemon = {0},{1}
+                    pokemonName = String.Format("Pokemon = {0},{1}" & vbCrLf, Form1.pokemonSixName_txtBox.Text.ToUpper, Form1.pokemonSixLvl_txtBox.Text)
+
+                    ' Check to see if form = nothing
+                    ' If it doesn't = nothing,
+                    ' Set form using the following format:
+                    ' Form = {0}
+                    If Not Form1.pokemonSixForm_txtBox.Text = "" Then
+                        pokemonForm = String.Format("    Form = {0}" & vbCrLf, Form1.pokemonSixForm_txtBox.Text)
+                    End If
+
+                    ' Check to see if name = nothing
+                    ' If it doesn't = nothing,
+                    ' Set name using the following format:
+                    ' Name = {0}
+                    If Not Form1.pokemonSixNickname_txtBox.Text = "" Then
+                        pokemonNickname = String.Format("    Name = {0}" & vbCrLf, Form1.pokemonSixNickname_txtBox.Text)
+                    End If
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonSixItem_txtBox.Text.ToUpper = "" Then
+                        heldItem = String.Format("    Item = {0}" & vbCrLf, Form1.pokemonSixItem_txtBox.Text.ToUpper)
+                    End If
+
+                    ' Check to see if Gender = (random)
+                    ' If it doesn't = (random),
+                    ' Set Gender using the following format:
+                    ' Gender = {0}
+                    If Not Form1.pokemonSixGender_cmb.SelectedItem = "(random)" Then
+                        gender = String.Format("    Gender = " & vbCrLf, Form1.pokemonSixGender_cmb.SelectedItem)
+                    End If
+
+                    ' Check to see if shiny = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shiny using the following format:
+                    ' Shiny = {0}
+                    If Form1.pokemonSixShiny_rad.Checked = True And Form1.pokemonSixShinyFalse_rad.Checked = False Then
+                        shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    End If
+
+                    ' Check to see if shadow = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shadow using the following format:
+                    ' Shadow = {0}
+                    If Form1.pokemonSixShadow_rad.Checked = True And Form1.pokemonSixShadowFalse_rad.Checked = False Then
+                        shadowString = String.Format("    Shadow = {0}" & vbCrLf, "Yes")
+                    End If
+
+
+                    ' The new String.Format method doesn't work on the move handler.
+                    ' Leave that as is.
+
+                    ' Move Handler
+                    For Each move In Form1.pokemonSixMoves_lst.Items
+                        AllMoves &= move.ToString.ToUpper & ","
+                    Next
+
                     AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
-                End If
 
-                'Take all moves, and turn it into the move format
-                AllMoves = "    Moves = " & AllMoves & vbCrLf
+                    'Take all moves, and turn it into the move format
+                    AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                ' Check if useAbilityIndex_chkBox is checked.
-                ' If it is, use ability index instead of ability
-                If Form1.useAbilityIndex_chkBox.Checked = True Then
-                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
-                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                End If
 
-                If Form1.pokemonSixNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = ""
-                ElseIf Not Form1.pokemonSixNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = "    Nature = " & Form1.pokemonSixNature_cmb.SelectedItem & vbCrLf
+                    ' Check if useAbilityIndex_chkBox is checked.
+                    ' If it is, use ability index instead of ability
+                    If Form1.useAbilityIndex_chkBox.Checked = True Then
+                        pokemonAbility = "AbilityIndex"
+                    ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                        pokemonAbility = "Ability"
+                    End If
+
+                    ' Use the string set from above to set the format here
+                    pokemonAbility = String.Format("    {0} = {1}" & vbCrLf, pokemonAbility, Form1.pokemonSixAbility_cmb.SelectedItem.ToString)
+
+                    ' Check to see if Nature = (random)
+                    ' If it doesn't = (random),
+                    ' Set Nature using the following format:
+                    ' Nature = {0}
+                    If Not Form1.pokemonSixNature_cmb.SelectedItem = "(random)" Then
+                        pokemonNature = String.Format("    Nature = {0}" & vbCrLf, Form1.pokemonSixNature_cmb.SelectedItem)
+                    End If
+
+                    ' IVs = {0},{1},{2},{3},{4},{5}
+                    ' EVs use the same format as IVs
+                    pokemonIVs = String.Format("    IVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonSixIVsHP_txt.Text, Form1.pokemonSixIVsATK_txt.Text, Form1.pokemonSixIVsDEF_txt.Text, Form1.pokemonSixIVsSPD_txt.Text, Form1.pokemonSixIVsSPATK_txt.Text, Form1.pokemonSixIVsSPDEF_txt.Text)
+                    pokemonEVs = String.Format("    EVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonSixEVsHP_txt.Text, Form1.pokemonSixEVsATK_txt.Text, Form1.pokemonSixEVsDEF_txt.Text, Form1.pokemonSixEVsSPD_txt.Text, Form1.pokemonSixEVsSPATK_txt.Text, Form1.pokemonSixEVsSPDEF_txt.Text)
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonSixHappyness_txtBox.Text = "" Then
+                        pokemonHappyness = String.Format("    Happiness = {0}" & vbCrLf, Form1.pokemonSixHappyness_txtBox.Text)
+                    End If
+
+                    'Get Ball ID
+                    pokeballID = String.Format("    Ball = {0}" & vbCrLf, Form1.pokemonSixPokeballID_cmb.SelectedItem)
+
+                    ' Use dims from above to generate output
+                    output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+
+                    ' put the output in the thing
+                    Form1.outputBox_rchBox.Text &= output & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonSixIVsHP_txt.Text & "," & Form1.pokemonSixIVsATK_txt.Text & "," & Form1.pokemonSixIVsDEF_txt.Text & "," & Form1.pokemonSixIVsSPD_txt.Text & "," & Form1.pokemonSixIVsSPATK_txt.Text & "," & Form1.pokemonSixIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonSixEVsHP_txt.Text & "," & Form1.pokemonSixEVsATK_txt.Text & "," & Form1.pokemonSixEVsDEF_txt.Text & "," & Form1.pokemonSixEVsSPD_txt.Text & "," & Form1.pokemonSixEVsSPATK_txt.Text & "," & Form1.pokemonSixEVsSPDEF_txt.Text & vbCrLf
-                If Form1.pokemonSixHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = 70" & vbCrLf
-                ElseIf Not Form1.pokemonSixHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = " & Form1.pokemonSixHappyness_txtBox.Text & vbCrLf
-                End If
-                pokeballID = "    Ball = " & Form1.pokemonSixPokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
-                Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
         Catch ex As Exception
