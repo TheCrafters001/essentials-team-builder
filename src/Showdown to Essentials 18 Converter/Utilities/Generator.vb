@@ -113,75 +113,93 @@
         Try
 #Region "Pokemon 1"
             If numPoke >= 1 Then
-                pokemonName = "Pokemon = " & Form1.pokemonOneName_txtBox.Text.ToUpper & "," & Form1.pokemonOneLvl_txtBox.Text & vbCrLf
-                If Form1.pokemonOneForm_txtBox.Text = "" Then
-                    pokemonForm = ""
-                ElseIf Not Form1.pokemonOneForm_txtBox.Text = "" Then
-                    pokemonForm = "    Form = " & Form1.pokemonOneForm_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonOneNickName_txtBox.Text = "" Then
-                    pokemonNickname = ""
-                ElseIf Not Form1.pokemonOneNickName_txtBox.Text = "" Then
-                    pokemonNickname = "    Name = " & Form1.pokemonOneNickName_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonOneItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = ""
-                ElseIf Not Form1.pokemonOneItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonOneItem_txtBox.Text.ToUpper & vbCrLf
-                End If
-                If Form1.pokemonOneGender_cmb.SelectedItem = "(random)" Then
-                    gender = ""
-                ElseIf Not Form1.pokemonOneGender_cmb.SelectedItem = "(random)" Then
-                    gender = "    Gender = " & Form1.pokemonOneGender_cmb.SelectedItem & vbCrLf
-                End If
-                If Form1.pokemonOneShiny_rad.Checked = True And Form1.pokemonOneShinyFalse_rad.Checked = False Then
-                    shinyString = "    Shiny = yes" & vbCrLf
-                ElseIf Form1.pokemonOneShiny_rad.Checked = False And Form1.pokemonOneShinyFalse_rad.Checked = True Then
-                    shinyString = "    Shiny = no" & vbCrLf
-                End If
-                If Form1.pokemonOneShadow_rad.Checked = True And Form1.pokemonOneShadowFalse_rad.Checked = False Then
-                    shadowString = "    Shadow = yes" & vbCrLf
-                ElseIf Form1.pokemonOneShadow_rad.Checked = False And Form1.pokemonOneShadowFalse_rad.Checked = True Then
-                    shadowString = "    Shadow = no" & vbCrLf
-                End If
+                If Form1.pokemonOneName_txtBox.Text.ToUpper = "" Then
 
-                ' Move Handler
-                For Each move In Form1.pokemonOneMoves_lst.Items
-                    AllMoves &= move.ToString.ToUpper & ","
-                Next
+                    'If Pokemon Fails
+                    MessageBox.Show("You need to enter a Pokémon (Pokémon 1).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonOneMoves_lst.Items.Count = 0 Then
 
-                If Form1.pokemonOneMoves_lst.Items.Count = 0 Then
-                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonOneName_txtBox.Text.ToUpper & " (Pokemon 1).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    'If Moves Fail
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonOneName_txtBox.Text.ToUpper & " (Pokémon 1).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+                ElseIf Form1.pokemonOneLvl_txtBox.Text.ToUpper = "" Then
+
+                    'If Level Fail
+                    MessageBox.Show(Form1.pokemonOneName_txtBox.Text.ToUpper & " (Pokémon 1) needs to have a level set.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
+                    ' Set pokemon name & level in the following format:
+                    ' Pokemon = {0},{1}
+                    pokemonName = String.Format("Pokemon = {0},{1}" & vbCrLf, Form1.pokemonOneName_txtBox.Text.ToUpper, Form1.pokemonOneLvl_txtBox.Text)
+
+                    ' Check to see if form = nothing
+                    ' If it doesn't = nothing,
+                    ' Set form using the following format:
+                    ' Form = {0}
+                    If Form1.pokemonOneForm_txtBox.Text = "" Then
+                        pokemonForm = ""
+                    ElseIf Not Form1.pokemonOneForm_txtBox.Text = "" Then
+                        pokemonForm = String.Format("    Form = {0}" & vbCrLf, Form1.pokemonOneForm_txtBox.Text)
+                    End If
+                    If Form1.pokemonOneNickName_txtBox.Text = "" Then
+                        pokemonNickname = ""
+                    ElseIf Not Form1.pokemonOneNickName_txtBox.Text = "" Then
+                        pokemonNickname = "    Name = " & Form1.pokemonOneNickName_txtBox.Text & vbCrLf
+                    End If
+                    If Form1.pokemonOneItem_txtBox.Text.ToUpper = "" Then
+                        heldItem = ""
+                    ElseIf Not Form1.pokemonOneItem_txtBox.Text.ToUpper = "" Then
+                        heldItem = "    Item = " & Form1.pokemonOneItem_txtBox.Text.ToUpper & vbCrLf
+                    End If
+                    If Form1.pokemonOneGender_cmb.SelectedItem = "(random)" Then
+                        gender = ""
+                    ElseIf Not Form1.pokemonOneGender_cmb.SelectedItem = "(random)" Then
+                        gender = "    Gender = " & Form1.pokemonOneGender_cmb.SelectedItem & vbCrLf
+                    End If
+                    If Form1.pokemonOneShiny_rad.Checked = True And Form1.pokemonOneShinyFalse_rad.Checked = False Then
+                        shinyString = "    Shiny = yes" & vbCrLf
+                    ElseIf Form1.pokemonOneShiny_rad.Checked = False And Form1.pokemonOneShinyFalse_rad.Checked = True Then
+                        shinyString = "    Shiny = no" & vbCrLf
+                    End If
+                    If Form1.pokemonOneShadow_rad.Checked = True And Form1.pokemonOneShadowFalse_rad.Checked = False Then
+                        shadowString = "    Shadow = yes" & vbCrLf
+                    ElseIf Form1.pokemonOneShadow_rad.Checked = False And Form1.pokemonOneShadowFalse_rad.Checked = True Then
+                        shadowString = "    Shadow = no" & vbCrLf
+                    End If
+
+                    ' Move Handler
+                    For Each move In Form1.pokemonOneMoves_lst.Items
+                        AllMoves &= move.ToString.ToUpper & ","
+                    Next
+
                     AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
-                End If
 
-                'Take all moves, and turn it into the move format
-                AllMoves = "    Moves = " & AllMoves & vbCrLf
+                    'Take all moves, and turn it into the move format
+                    AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                ' Check if useAbilityIndex_chkBox is checked.
-                ' If it is, use ability index instead of ability
-                If Form1.useAbilityIndex_chkBox.Checked = True Then
-                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
-                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                End If
+                    ' Check if useAbilityIndex_chkBox is checked.
+                    ' If it is, use ability index instead of ability
+                    If Form1.useAbilityIndex_chkBox.Checked = True Then
+                        pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                    ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                        pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                    End If
 
-                If Form1.pokemonOneNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = ""
-                ElseIf Not Form1.pokemonOneNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = "    Nature = " & Form1.pokemonOneNature_cmb.SelectedItem & vbCrLf
+                    If Form1.pokemonOneNature_cmb.SelectedItem = "(random)" Then
+                        pokemonNature = ""
+                    ElseIf Not Form1.pokemonOneNature_cmb.SelectedItem = "(random)" Then
+                        pokemonNature = "    Nature = " & Form1.pokemonOneNature_cmb.SelectedItem & vbCrLf
+                    End If
+                    pokemonIVs = "    IVs = " & Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsDEF_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text & vbCrLf
+                    pokemonEVs = "    EVs = " & Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsDEF_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text & vbCrLf
+                    If Form1.pokemonOneHappyness_txtBox.Text = "" Then
+                        pokemonHappyness = "    Happiness = 70" & vbCrLf
+                    ElseIf Not Form1.pokemonOneHappyness_txtBox.Text = "" Then
+                        pokemonHappyness = "    Happiness = " & Form1.pokemonOneHappyness_txtBox.Text & vbCrLf
+                    End If
+                    pokeballID = "    Ball = " & Form1.pokemonOnePokeballID_cmb.SelectedItem & vbCrLf
+                    output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+                    Form1.outputBox_rchBox.Text &= output & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonOneIVsHP_txt.Text & "," & Form1.pokemonOneIVsATK_txt.Text & "," & Form1.pokemonOneIVsDEF_txt.Text & "," & Form1.pokemonOneIVsSPD_txt.Text & "," & Form1.pokemonOneIVsSPATK_txt.Text & "," & Form1.pokemonOneIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonOneEVsHP_txt.Text & "," & Form1.pokemonOneEVsATK_txt.Text & "," & Form1.pokemonOneEVsDEF_txt.Text & "," & Form1.pokemonOneEVsSPD_txt.Text & "," & Form1.pokemonOneEVsSPATK_txt.Text & "," & Form1.pokemonOneEVsSPDEF_txt.Text & vbCrLf
-                If Form1.pokemonOneHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = 70" & vbCrLf
-                ElseIf Not Form1.pokemonOneHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = " & Form1.pokemonOneHappyness_txtBox.Text & vbCrLf
-                End If
-                pokeballID = "    Ball = " & Form1.pokemonOnePokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
-                Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
 #Region "Pokemon 2"
