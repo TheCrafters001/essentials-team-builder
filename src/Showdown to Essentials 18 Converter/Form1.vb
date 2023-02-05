@@ -561,22 +561,6 @@ Public Class Form1
     End Sub
 
     Private Sub sd_Parse_btn_Click(sender As Object, e As EventArgs) Handles sd_Parse_btn.Click
-        ' Create a new array with the data from sd_Team_rchTxtBox
-        Dim tempData As Array = sd_Team_rchTxtBox.Text.Split()
-
-        Try
-            ' Check Part Position
-            If sd_PokePos_cmb.SelectedIndex = 0 Then
-                If tempData(2).ToString.Trim("""") = "@" Then
-                    pokemonOneName_txtBox.Text = tempData(0).ToString
-                Else
-                    pokemonOneNickName_txtBox.Text = tempData(0).ToString
-                End If
-            End If
-
-            MessageBox.Show("Your team has been converted!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Catch ex As Exception
-            MessageBox.Show("Something went wrong. Maybe your team is not correctly formatted?", "Cannot Convert Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+        showdownConverter.parse()
     End Sub
 End Class
