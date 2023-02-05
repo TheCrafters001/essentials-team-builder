@@ -243,80 +243,128 @@
 #End Region
 #Region "Pokemon 2"
             If numPoke >= 2 Then
-                pokemonName = "Pokemon = " & Form1.pokemonTwoName_txtBox.Text.ToUpper & "," & Form1.pokemonTwoLvl_txtBox.Text & vbCrLf
-                If Form1.pokemonTwoForm_txtBox.Text = "" Then
-                    pokemonForm = ""
-                ElseIf Not Form1.pokemonTwoForm_txtBox.Text = "" Then
-                    pokemonForm = "    Form = " & Form1.pokemonTwoForm_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonTwoNickName_txtBox.Text = "" Then
-                    pokemonNickname = ""
-                ElseIf Not Form1.pokemonTwoNickName_txtBox.Text = "" Then
-                    pokemonNickname = "    Name = " & Form1.pokemonTwoNickName_txtBox.Text & vbCrLf
-                End If
-                If Form1.pokemonTwoItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = ""
-                ElseIf Not Form1.pokemonTwoItem_txtBox.Text.ToUpper = "" Then
-                    heldItem = "    Item = " & Form1.pokemonTwoItem_txtBox.Text.ToUpper & vbCrLf
-                End If
-                If Form1.pokemonTwoGender_cmb.SelectedItem = "(random)" Then
-                    gender = ""
-                ElseIf Not Form1.pokemonTwoGender_cmb.SelectedItem = "(random)" Then
-                    gender = "    Gender = " & Form1.pokemonTwoGender_cmb.SelectedItem & vbCrLf
-                End If
-                If Form1.pokemonTwoShiny_rad.Checked = True And Form1.pokemonTwoShinyFalse_rad.Checked = False Then
-                    shinyString = "    Shiny = yes" & vbCrLf
-                ElseIf Form1.pokemonTwoShiny_rad.Checked = False And Form1.pokemonTwoShinyFalse_rad.Checked = True Then
-                    shinyString = "    Shiny = no" & vbCrLf
-                End If
-                If Form1.pokemonTwoShadow_rad.Checked = True And Form1.pokemonTwoShadowFalse_rad.Checked = False Then
-                    shadowString = "    Shadow = yes" & vbCrLf
-                ElseIf Form1.pokemonTwoShadow_rad.Checked = False And Form1.pokemonTwoShadowFalse_rad.Checked = True Then
-                    shadowString = "    Shadow = no" & vbCrLf
-                End If
+                If Form1.pokemonTwoName_txtBox.Text.ToUpper = "" Then
 
-                ' Clears everything from pokemon 1,
-                ' Then re adds it using move handler
-                move = Nothing
-                AllMoves = ""
+                    'If Pokemon Fails
+                    MessageBox.Show("You need to enter a Pokémon (Pokémon 1).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonTwoMoves_lst.Items.Count = 0 Then
 
-                ' Move Handler
-                For Each move In Form1.pokemonTwoMoves_lst.Items
-                    AllMoves &= move.ToString.ToUpper & ","
-                Next
+                    'If Moves Fail
+                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonTwoName_txtBox.Text.ToUpper & " (Pokémon 2).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-                If Form1.pokemonTwoMoves_lst.Items.Count = 0 Then
-                    MessageBox.Show("You need to add at least one move to " & Form1.pokemonTwoName_txtBox.Text.ToUpper & " (Pokemon 2).", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Form1.pokemonTwoLvl_txtBox.Text.ToUpper = "" Then
+
+                    'If Level Fail
+                    MessageBox.Show(Form1.pokemonTwoName_txtBox.Text.ToUpper & " (Pokémon 2) needs to have a level set.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
+                    ' Set pokemon name & level in the following format:
+                    ' Pokemon = {0},{1}
+                    pokemonName = String.Format("Pokemon = {0},{1}" & vbCrLf, Form1.pokemonTwoName_txtBox.Text.ToUpper, Form1.pokemonTwoLvl_txtBox.Text)
+
+                    ' Check to see if form = nothing
+                    ' If it doesn't = nothing,
+                    ' Set form using the following format:
+                    ' Form = {0}
+                    If Not Form1.pokemonTwoForm_txtBox.Text = "" Then
+                        pokemonForm = String.Format("    Form = {0}" & vbCrLf, Form1.pokemonTwoForm_txtBox.Text)
+                    End If
+
+                    ' Check to see if name = nothing
+                    ' If it doesn't = nothing,
+                    ' Set name using the following format:
+                    ' Name = {0}
+                    If Not Form1.pokemonTwoNickName_txtBox.Text = "" Then
+                        pokemonNickname = String.Format("    Name = {0}" & vbCrLf, Form1.pokemonTwoNickName_txtBox.Text)
+                    End If
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonTwoItem_txtBox.Text.ToUpper = "" Then
+                        heldItem = String.Format("    Item = {0}" & vbCrLf, Form1.pokemonTwoItem_txtBox.Text.ToUpper)
+                    End If
+
+                    ' Check to see if Gender = (random)
+                    ' If it doesn't = (random),
+                    ' Set Gender using the following format:
+                    ' Gender = {0}
+                    If Not Form1.pokemonTwoGender_cmb.SelectedItem = "(random)" Then
+                        gender = String.Format("    Gender = " & vbCrLf, Form1.pokemonTwoGender_cmb.SelectedItem)
+                    End If
+
+                    ' Check to see if shiny = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shiny using the following format:
+                    ' Shiny = {0}
+                    If Form1.pokemonTwoShiny_rad.Checked = True And Form1.pokemonTwoShinyFalse_rad.Checked = False Then
+                        shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    End If
+
+                    ' Check to see if shadow = disabled
+                    ' If it doesn't = disabled,
+                    ' Set shadow using the following format:
+                    ' Shadow = {0}
+                    If Form1.pokemonTwoShadow_rad.Checked = True And Form1.pokemonTwoShadowFalse_rad.Checked = False Then
+                        shadowString = String.Format("    Shadow = {0}" & vbCrLf, "Yes")
+                    End If
+
+
+                    ' The new String.Format method doesn't work on the move handler.
+                    ' Leave that as is.
+
+                    ' Move Handler
+                    For Each move In Form1.pokemonTwoMoves_lst.Items
+                        AllMoves &= move.ToString.ToUpper & ","
+                    Next
+
                     AllMoves = AllMoves.Substring(0, AllMoves.Length - 1)
-                End If
 
-                'Take all moves, and turn it into the move format
-                AllMoves = "    Moves = " & AllMoves & vbCrLf
+                    'Take all moves, and turn it into the move format
+                    AllMoves = "    Moves = " & AllMoves & vbCrLf
 
-                ' Check if useAbilityIndex_chkBox is checked.
-                ' If it is, use ability index instead of ability
-                If Form1.useAbilityIndex_chkBox.Checked = True Then
-                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
-                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
-                End If
 
-                If Form1.pokemonTwoNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = ""
-                ElseIf Not Form1.pokemonTwoNature_cmb.SelectedItem = "(random)" Then
-                    pokemonNature = "    Nature = " & Form1.pokemonTwoNature_cmb.SelectedItem & vbCrLf
+                    ' Check if useAbilityIndex_chkBox is checked.
+                    ' If it is, use ability index instead of ability
+                    If Form1.useAbilityIndex_chkBox.Checked = True Then
+                        pokemonAbility = "AbilityIndex"
+                    ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
+                        pokemonAbility = "Ability"
+                    End If
+
+                    ' Use the string set from above to set the format here
+                    pokemonAbility = String.Format("    {0} = {1}" & vbCrLf, pokemonAbility, Form1.pokemonTwoAbility_cmb.SelectedItem.ToString)
+
+                    ' Check to see if Nature = (random)
+                    ' If it doesn't = (random),
+                    ' Set Nature using the following format:
+                    ' Nature = {0}
+                    If Not Form1.pokemonTwoNature_cmb.SelectedItem = "(random)" Then
+                        pokemonNature = String.Format("    Nature = {0}" & vbCrLf, Form1.pokemonTwoNature_cmb.SelectedItem)
+                    End If
+
+                    ' IVs = {0},{1},{2},{3},{4},{5}
+                    ' EVs use the same format as IVs
+                    pokemonIVs = String.Format("    IVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonTwoIVsHP_txt.Text, Form1.pokemonTwoIVsATK_txt.Text, Form1.pokemonTwoIVsDEF_txt.Text, Form1.pokemonTwoIVsSPD_txt.Text, Form1.pokemonTwoIVsSPATK_txt.Text, Form1.pokemonTwoIVsSPDEF_txt.Text)
+                    pokemonEVs = String.Format("    EVs = {0},{1},{2},{3},{4},{5}" & vbCrLf, Form1.pokemonTwoEVsHP_txt.Text, Form1.pokemonTwoEVsATK_txt.Text, Form1.pokemonTwoEVsDEF_txt.Text, Form1.pokemonTwoEVsSPD_txt.Text, Form1.pokemonTwoEVsSPATK_txt.Text, Form1.pokemonTwoEVsSPDEF_txt.Text)
+
+                    ' Check to see if heldItem = nothing
+                    ' If it doesn't = nothing,
+                    ' Set heldItem using the following format:
+                    ' Item = {0}
+                    If Not Form1.pokemonTwoHappyness_txtBox.Text = "" Then
+                        pokemonHappyness = String.Format("    Happiness = {0}" & vbCrLf, Form1.pokemonTwoHappyness_txtBox.Text)
+                    End If
+
+                    'Get Ball ID
+                    pokeballID = String.Format("    Ball = {0}" & vbCrLf, Form1.pokemonTwoPokeballID_cmb.SelectedItem)
+
+                    ' Use dims from above to generate output
+                    output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
+
+                    ' put the output in the thing
+                    Form1.outputBox_rchBox.Text &= output & vbCrLf
                 End If
-                pokemonIVs = "    IVs = " & Form1.pokemonTwoIVsHP_txt.Text & "," & Form1.pokemonTwoIVsATK_txt.Text & "," & Form1.pokemonTwoIVsDEF_txt.Text & "," & Form1.pokemonTwoIVsSPD_txt.Text & "," & Form1.pokemonTwoIVsSPATK_txt.Text & "," & Form1.pokemonTwoIVsSPDEF_txt.Text & vbCrLf
-                pokemonEVs = "    EVs = " & Form1.pokemonTwoEVsHP_txt.Text & "," & Form1.pokemonTwoEVsATK_txt.Text & "," & Form1.pokemonTwoEVsDEF_txt.Text & "," & Form1.pokemonTwoEVsSPD_txt.Text & "," & Form1.pokemonTwoEVsSPATK_txt.Text & "," & Form1.pokemonTwoEVsSPDEF_txt.Text & vbCrLf
-                If Form1.pokemonTwoHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = 70" & vbCrLf
-                ElseIf Not Form1.pokemonTwoHappyness_txtBox.Text = "" Then
-                    pokemonHappyness = "    Happiness = " & Form1.pokemonTwoHappyness_txtBox.Text & vbCrLf
-                End If
-                pokeballID = "    Ball = " & Form1.pokemonTwoPokeballID_cmb.SelectedItem & vbCrLf
-                output = pokemonName & pokemonForm & pokemonNickname & heldItem & gender & pokemonAbility & shinyString & shadowString & AllMoves & pokemonNature & pokemonIVs & pokemonEVs & pokemonHappyness & pokeballID
-                Form1.outputBox_rchBox.Text &= output & vbCrLf
             End If
 #End Region
 #Region "Pokemon 3"
@@ -375,9 +423,9 @@
                 ' Check if useAbilityIndex_chkBox is checked.
                 ' If it is, use ability index instead of ability
                 If Form1.useAbilityIndex_chkBox.Checked = True Then
-                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                    pokemonAbility = "    AbilityIndex = " & Form1.pokemonTwoAbility_cmb.SelectedItem.ToString & vbCrLf
                 ElseIf Form1.useAbilityIndex_chkBox.Checked = False Then
-                    pokemonAbility = "    Ability = " & Form1.pokemonOneAbility_cmb.SelectedItem.ToString & vbCrLf
+                    pokemonAbility = "    Ability = " & Form1.pokemonTwoAbility_cmb.SelectedItem.ToString & vbCrLf
                 End If
 
                 If Form1.pokemonThreeNature_cmb.SelectedItem = "(random)" Then
