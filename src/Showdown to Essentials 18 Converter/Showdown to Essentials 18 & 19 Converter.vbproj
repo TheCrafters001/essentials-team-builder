@@ -27,7 +27,7 @@
     <FileVersion></FileVersion>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Authors>TheCrafters001</Authors>
-    <Copyright>Copyright © TheCrafters001 2022</Copyright>
+    <Copyright>Copyright © TheCrafters001 2022-2023</Copyright>
     <PackageIcon>Showdown to Essentials_19.png</PackageIcon>
     <RepositoryUrl>https://github.com/TheCrafters001/showdown-to-essentials</RepositoryUrl>
     <Version>3.1.1</Version>
@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DiscordRPCHandler\DiscordRPCHandler.csproj" />
+    <ProjectReference Include="..\TeamGenerator\TeamGenerator.vbproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
