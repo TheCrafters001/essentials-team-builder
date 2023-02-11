@@ -7,8 +7,6 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Showdown to Essentials 17 C
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Showdown to Essentials 18 & 19 Converter", "Showdown to Essentials 18 Converter\Showdown to Essentials 18 & 19 Converter.vbproj", "{5AD1FD6E-C37B-4DA7-A128-4C882F728366}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscordRPCHandler", "DiscordRPCHandler\DiscordRPCHandler.csproj", "{A250A64F-0CEB-47E6-83EA-15E352B3757B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{839396A2-1CAE-4CA7-8CD5-FB84AC211CCE}"
 	ProjectSection(SolutionItems) = preProject
 		autoUpdate-PreRelease.xml = autoUpdate-PreRelease.xml
@@ -19,7 +17,7 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Launcher", "Launcher\Launch
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "UITest", "UITest\UITest.vbproj", "{3F0B20FC-5B1D-4342-9CE8-969ED3B004AB}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TeamGenerator", "TeamGenerator\TeamGenerator.vbproj", "{F6346424-F4CA-4CDF-9940-7B04AF386488}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "TeamGenerator", "TeamGenerator\TeamGenerator.vbproj", "{F6346424-F4CA-4CDF-9940-7B04AF386488}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{5AD1FD6E-C37B-4DA7-A128-4C882F728366}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD1FD6E-C37B-4DA7-A128-4C882F728366}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD1FD6E-C37B-4DA7-A128-4C882F728366}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A250A64F-0CEB-47E6-83EA-15E352B3757B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A250A64F-0CEB-47E6-83EA-15E352B3757B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A250A64F-0CEB-47E6-83EA-15E352B3757B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A250A64F-0CEB-47E6-83EA-15E352B3757B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{16F3D06D-BB92-47B2-A4B8-75A8DB2A587C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16F3D06D-BB92-47B2-A4B8-75A8DB2A587C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16F3D06D-BB92-47B2-A4B8-75A8DB2A587C}.Release|Any CPU.ActiveCfg = Release|Any CPU

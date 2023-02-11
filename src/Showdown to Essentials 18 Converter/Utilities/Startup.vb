@@ -1,10 +1,5 @@
-﻿Imports DiscordRPCHandler
-
-Public Class Startup
+﻿Public Class Startup
     Public Shared Sub Init()
-
-        ' Discord Rich Presence
-        InitRPC.Setup()
 
         ' Set internalBallNames_chk to checked by default.
         Form1.internalBallNames_chk.Checked = True

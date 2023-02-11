@@ -1,7 +1,4 @@
-﻿Imports System.ComponentModel
-Imports DiscordRPCHandler
-
-Public Class Form1
+﻿Public Class Form1
 
 #Region "Initialization"
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -271,12 +268,6 @@ Public Class Form1
 
 #End Region
 
-#End Region
-
-#Region "Deinitialization"
-    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Disp.Dispose()
-    End Sub
 #End Region
 
 #Region "Checkbox CheckedChanged"
