@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports WinBlur.UI
+
+Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim newPanel As New TrainerInfo With {.TopMost = False, .AutoSize = False, .TopLevel = False, .WindowState = FormWindowState.Maximized, .FormBorderStyle = FormBorderStyle.None, .Dock = DockStyle.Fill}
         Me.TrainerInfoPanel.Controls.Add(newPanel)
@@ -10,6 +12,8 @@
 
         TrainerInfoPanel.Visible = True
         Pokemon.Visible = False
+
+        SetBlurStyle(Me, BlurType.Mica, Mode.DarkMode)
 
     End Sub
 

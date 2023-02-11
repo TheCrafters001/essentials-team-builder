@@ -114,9 +114,6 @@ Partial Class Form1
         '
         'TrainerInfoPanel
         '
-        Me.TrainerInfoPanel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-    Or System.Windows.Forms.AnchorStyles.Left) _
-    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TrainerInfoPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TrainerInfoPanel.Location = New System.Drawing.Point(217, 0)
         Me.TrainerInfoPanel.Name = "TrainerInfoPanel"
@@ -125,9 +122,7 @@ Partial Class Form1
         '
         'Pokemon
         '
-        Me.Pokemon.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Pokemon.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Pokemon.Location = New System.Drawing.Point(217, 0)
         Me.Pokemon.Name = "Pokemon"
         Me.Pokemon.Size = New System.Drawing.Size(583, 534)
@@ -148,17 +143,16 @@ Partial Class Form1
         Me.trainerBtnPanel.ResumeLayout(False)
         Me.logoPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents sidebar As Panel
     Friend WithEvents logoPanel As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents TrainerInfoPanel As Panel
     Friend WithEvents trainerBtnPanel As Panel
     Friend WithEvents Label2 As Label
-    Friend WithEvents Pokemon As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label3 As Label
+    Friend WithEvents TrainerInfoPanel As Panel
+    Friend WithEvents Pokemon As Panel
 End Class
