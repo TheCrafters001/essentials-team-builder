@@ -22,74 +22,68 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.v17_picBox = New System.Windows.Forms.PictureBox()
-        Me.v18up_picBox = New System.Windows.Forms.PictureBox()
-        Me.close_btn = New System.Windows.Forms.Button()
-        Me.fantool_lbl = New System.Windows.Forms.Label()
-        CType(Me.v17_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.v18up_picBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        '
-        'v17_picBox
-        '
-        Me.v17_picBox.Image = Global.Launcher.My.Resources.Resources.Essentials17Only
-        Me.v17_picBox.Location = New System.Drawing.Point(12, 12)
-        Me.v17_picBox.Name = "v17_picBox"
-        Me.v17_picBox.Size = New System.Drawing.Size(198, 126)
-        Me.v17_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.v17_picBox.TabIndex = 0
-        Me.v17_picBox.TabStop = False
-        '
-        'v18up_picBox
-        '
-        Me.v18up_picBox.Image = Global.Launcher.My.Resources.Resources.Essentials18to20
-        Me.v18up_picBox.Location = New System.Drawing.Point(216, 12)
-        Me.v18up_picBox.Name = "v18up_picBox"
-        Me.v18up_picBox.Size = New System.Drawing.Size(198, 126)
-        Me.v18up_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.v18up_picBox.TabIndex = 1
-        Me.v18up_picBox.TabStop = False
-        '
-        'close_btn
-        '
-        Me.close_btn.Location = New System.Drawing.Point(339, 144)
-        Me.close_btn.Name = "close_btn"
-        Me.close_btn.Size = New System.Drawing.Size(75, 23)
-        Me.close_btn.TabIndex = 2
-        Me.close_btn.Text = "Close"
-        Me.close_btn.UseVisualStyleBackColor = True
-        '
-        'fantool_lbl
-        '
-        Me.fantool_lbl.AutoSize = True
-        Me.fantool_lbl.Location = New System.Drawing.Point(12, 141)
-        Me.fantool_lbl.Name = "fantool_lbl"
-        Me.fantool_lbl.Size = New System.Drawing.Size(201, 30)
-        Me.fantool_lbl.TabIndex = 3
-        Me.fantool_lbl.Text = "This is a fan-made tool." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "No Copyright Infringment indended."
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(426, 179)
-        Me.Controls.Add(Me.fantool_lbl)
-        Me.Controls.Add(Me.close_btn)
-        Me.Controls.Add(Me.v18up_picBox)
-        Me.Controls.Add(Me.v17_picBox)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "Form1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Click on a verson to start the tool."
-        CType(Me.v17_picBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.v18up_picBox, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        close_btn = New Button()
+        fantool_lbl = New Label()
+        ste18_btn = New Button()
+        ste17_btn = New Button()
+        SuspendLayout()
+        ' 
+        ' close_btn
+        ' 
+        close_btn.Location = New Point(339, 144)
+        close_btn.Name = "close_btn"
+        close_btn.Size = New Size(75, 23)
+        close_btn.TabIndex = 2
+        close_btn.Text = "Close"
+        close_btn.UseVisualStyleBackColor = True
+        ' 
+        ' fantool_lbl
+        ' 
+        fantool_lbl.AutoSize = True
+        fantool_lbl.Location = New Point(12, 141)
+        fantool_lbl.Name = "fantool_lbl"
+        fantool_lbl.Size = New Size(201, 30)
+        fantool_lbl.TabIndex = 3
+        fantool_lbl.Text = "This is a fan-made tool." & vbCrLf & "No Copyright Infringment indended."
+        ' 
+        ' ste18_btn
+        ' 
+        ste18_btn.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point)
+        ste18_btn.Location = New Point(216, 12)
+        ste18_btn.Name = "ste18_btn"
+        ste18_btn.Size = New Size(198, 126)
+        ste18_btn.TabIndex = 4
+        ste18_btn.Text = "Showdown to Essentials 18-21"
+        ste18_btn.UseVisualStyleBackColor = True
+        ' 
+        ' ste17_btn
+        ' 
+        ste17_btn.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point)
+        ste17_btn.Location = New Point(12, 12)
+        ste17_btn.Name = "ste17_btn"
+        ste17_btn.Size = New Size(198, 126)
+        ste17_btn.TabIndex = 5
+        ste17_btn.Text = "Showdown to Essentials 17" & vbCrLf & "(Unsupported)"
+        ste17_btn.UseVisualStyleBackColor = True
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(426, 179)
+        Controls.Add(ste17_btn)
+        Controls.Add(ste18_btn)
+        Controls.Add(fantool_lbl)
+        Controls.Add(close_btn)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Select a Version"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
-
-    Friend WithEvents v17_picBox As PictureBox
-    Friend WithEvents v18up_picBox As PictureBox
     Friend WithEvents close_btn As Button
     Friend WithEvents fantool_lbl As Label
+    Friend WithEvents ste18_btn As Button
+    Friend WithEvents ste17_btn As Button
 End Class

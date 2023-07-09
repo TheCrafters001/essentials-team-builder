@@ -102,6 +102,7 @@
         Dim gender As String = ""
         Dim pokemonForm As String = ""
         Dim shinyString As String = ""
+        ' Dim superShiny As Boolean = False
         Dim pokemonNature As String = ""
         Dim pokemonIVs As String = ""
         Dim pokemonEVs As String = ""
@@ -171,8 +172,10 @@
                     ' If it doesn't = disabled,
                     ' Set shiny using the following format:
                     ' Shiny = {0}
-                    If Form1.pokemonOneShiny_rad.Checked = True And Form1.pokemonOneShinyFalse_rad.Checked = False Then
+                    If Form1.pokemonOneShiny_rad.Checked = True Then
                         shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    ElseIf Form1.pokemonOneSuperShiny_chk.Checked = True Then
+                        shinyString = String.Format("    SuperShiny = {0}" & vbCrLf, "true")
                     End If
 
                     ' Check to see if shadow = disabled
@@ -297,8 +300,10 @@
                     ' If it doesn't = disabled,
                     ' Set shiny using the following format:
                     ' Shiny = {0}
-                    If Form1.pokemonTwoShiny_rad.Checked = True And Form1.pokemonTwoShinyFalse_rad.Checked = False Then
+                    If Form1.pokemonTwoShiny_rad.Checked = True Then
                         shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    ElseIf Form1.pokemonTwoSuperShiny_chk.Checked = True Then
+                        shinyString = String.Format("    SuperShiny = {0}" & vbCrLf, "true")
                     End If
 
                     ' Check to see if shadow = disabled
@@ -423,8 +428,10 @@
                     ' If it doesn't = disabled,
                     ' Set shiny using the following format:
                     ' Shiny = {0}
-                    If Form1.pokemonThreeShiny_rad.Checked = True And Form1.pokemonThreeShinyFalse_Rad.Checked = False Then
+                    If Form1.pokemonThreeShiny_rad.Checked = True Then
                         shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    ElseIf Form1.pokemonThreeSuperShiny_chk.Checked = True Then
+                        shinyString = String.Format("    SuperShiny = {0}" & vbCrLf, "true")
                     End If
 
                     ' Check to see if shadow = disabled
@@ -549,8 +556,10 @@
                     ' If it doesn't = disabled,
                     ' Set shiny using the following format:
                     ' Shiny = {0}
-                    If Form1.pokemonFourShiny_rad.Checked = True And Form1.pokemonFourShinyFalse_rad.Checked = False Then
+                    If Form1.pokemonFourShiny_rad.Checked = True Then
                         shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    ElseIf Form1.pokemonFourSuperShiny_chk.Checked = True Then
+                        shinyString = String.Format("    SuperShiny = {0}" & vbCrLf, "true")
                     End If
 
                     ' Check to see if shadow = disabled
@@ -675,8 +684,10 @@
                     ' If it doesn't = disabled,
                     ' Set shiny using the following format:
                     ' Shiny = {0}
-                    If Form1.pokemonFiveShiny_rad.Checked = True And Form1.pokemonFiveShinyFalse_rad.Checked = False Then
+                    If Form1.pokemonFiveShiny_rad.Checked = True Then
                         shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    ElseIf Form1.pokemonFiveSuperShiny_chk.Checked = True Then
+                        shinyString = String.Format("    SuperShiny = {0}" & vbCrLf, "true")
                     End If
 
                     ' Check to see if shadow = disabled
@@ -801,8 +812,10 @@
                     ' If it doesn't = disabled,
                     ' Set shiny using the following format:
                     ' Shiny = {0}
-                    If Form1.pokemonSixShiny_rad.Checked = True And Form1.pokemonSixShinyFalse_rad.Checked = False Then
+                    If Form1.pokemonSixShiny_rad.Checked = True Then
                         shinyString = String.Format("    Shiny = {0}" & vbCrLf, "Yes")
+                    ElseIf Form1.pokemonSixSuperShiny_chk.Checked = True Then
+                        shinyString = String.Format("    SuperShiny = {0}" & vbCrLf, "true")
                     End If
 
                     ' Check to see if shadow = disabled

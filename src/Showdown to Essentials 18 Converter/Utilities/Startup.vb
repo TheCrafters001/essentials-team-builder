@@ -1,9 +1,6 @@
 ﻿Public Class Startup
     Public Shared Sub Init()
 
-        ' Set internalBallNames_chk to checked by default.
-        Form1.internalBallNames_chk.Checked = True
-
         ' Clear all Items to remove the object text.
         Form1.trainerItemsList_lstbox.Items.Clear()
 
