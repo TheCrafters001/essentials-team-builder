@@ -27,6 +27,12 @@ Partial Class Form1
         pg_trainer = New TabPage()
         trainer_tab = New TabControl()
         pg_basic = New TabPage()
+        essData_lbl = New Label()
+        allowSuperShiny_chk = New CheckBox()
+        loseTextQuotes_chkBox = New CheckBox()
+        useAbilityIndex_chkBox = New CheckBox()
+        existingBattle_chkBox = New CheckBox()
+        customBallIDs_chkBox = New CheckBox()
         essVersion_cmb = New ComboBox()
         essVersion_lbl = New Label()
         battleTeamID_txtBox = New TextBox()
@@ -50,15 +56,9 @@ Partial Class Form1
         TabPage5 = New TabPage()
         TabPage6 = New TabPage()
         preview_grp = New GroupBox()
-        RichTextBox1 = New RichTextBox()
+        preview_rtb = New RichTextBox()
         updatePreview_btn = New Button()
         properSpellingNote_lbl = New Label()
-        allowSuperShiny_chk = New CheckBox()
-        loseTextQuotes_chkBox = New CheckBox()
-        useAbilityIndex_chkBox = New CheckBox()
-        existingBattle_chkBox = New CheckBox()
-        customBallIDs_chkBox = New CheckBox()
-        Label1 = New Label()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -114,7 +114,7 @@ Partial Class Form1
         ' 
         ' pg_basic
         ' 
-        pg_basic.Controls.Add(Label1)
+        pg_basic.Controls.Add(essData_lbl)
         pg_basic.Controls.Add(allowSuperShiny_chk)
         pg_basic.Controls.Add(loseTextQuotes_chkBox)
         pg_basic.Controls.Add(useAbilityIndex_chkBox)
@@ -139,6 +139,69 @@ Partial Class Form1
         pg_basic.TabIndex = 2
         pg_basic.Text = "Basic Info"
         pg_basic.UseVisualStyleBackColor = True
+        ' 
+        ' essData_lbl
+        ' 
+        essData_lbl.AutoSize = True
+        essData_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        essData_lbl.Location = New Point(3, 132)
+        essData_lbl.Name = "essData_lbl"
+        essData_lbl.Size = New Size(184, 32)
+        essData_lbl.TabIndex = 29
+        essData_lbl.Text = "Essentials Data"
+        ' 
+        ' allowSuperShiny_chk
+        ' 
+        allowSuperShiny_chk.AutoSize = True
+        allowSuperShiny_chk.Location = New Point(164, 249)
+        allowSuperShiny_chk.Name = "allowSuperShiny_chk"
+        allowSuperShiny_chk.Size = New Size(129, 34)
+        allowSuperShiny_chk.TabIndex = 28
+        allowSuperShiny_chk.Text = "Allow Super Shinies" & vbCrLf & "(Essentials 21)"
+        allowSuperShiny_chk.UseVisualStyleBackColor = True
+        ' 
+        ' loseTextQuotes_chkBox
+        ' 
+        loseTextQuotes_chkBox.AutoSize = True
+        loseTextQuotes_chkBox.Location = New Point(8, 249)
+        loseTextQuotes_chkBox.Name = "loseTextQuotes_chkBox"
+        loseTextQuotes_chkBox.Size = New Size(154, 34)
+        loseTextQuotes_chkBox.TabIndex = 27
+        loseTextQuotes_chkBox.Text = "Add Quotes to Lose Text" & vbCrLf & "(Essentials 19)"
+        loseTextQuotes_chkBox.UseVisualStyleBackColor = True
+        ' 
+        ' useAbilityIndex_chkBox
+        ' 
+        useAbilityIndex_chkBox.AutoSize = True
+        useAbilityIndex_chkBox.Enabled = False
+        useAbilityIndex_chkBox.Location = New Point(493, 213)
+        useAbilityIndex_chkBox.Name = "useAbilityIndex_chkBox"
+        useAbilityIndex_chkBox.Size = New Size(203, 34)
+        useAbilityIndex_chkBox.TabIndex = 26
+        useAbilityIndex_chkBox.Text = "Use AbilityIndex instead of Ability" & vbCrLf & "(Essentials 19+)"
+        useAbilityIndex_chkBox.UseVisualStyleBackColor = True
+        ' 
+        ' existingBattle_chkBox
+        ' 
+        existingBattle_chkBox.AutoSize = True
+        existingBattle_chkBox.Location = New Point(8, 213)
+        existingBattle_chkBox.Name = "existingBattle_chkBox"
+        existingBattle_chkBox.Size = New Size(270, 34)
+        existingBattle_chkBox.TabIndex = 24
+        existingBattle_chkBox.Text = "Check this box if this NPC already has a team, " & vbCrLf & "then enter the Battle Team ID above."
+        existingBattle_chkBox.UseVisualStyleBackColor = True
+        ' 
+        ' customBallIDs_chkBox
+        ' 
+        customBallIDs_chkBox.AutoSize = True
+        customBallIDs_chkBox.Checked = True
+        customBallIDs_chkBox.CheckState = CheckState.Checked
+        customBallIDs_chkBox.Location = New Point(284, 213)
+        customBallIDs_chkBox.Name = "customBallIDs_chkBox"
+        customBallIDs_chkBox.Size = New Size(203, 19)
+        customBallIDs_chkBox.TabIndex = 25
+        customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
+        customBallIDs_chkBox.UseVisualStyleBackColor = True
         ' 
         ' essVersion_cmb
         ' 
@@ -357,7 +420,7 @@ Partial Class Form1
         ' 
         ' preview_grp
         ' 
-        preview_grp.Controls.Add(RichTextBox1)
+        preview_grp.Controls.Add(preview_rtb)
         preview_grp.Location = New Point(775, 12)
         preview_grp.Name = "preview_grp"
         preview_grp.Size = New Size(461, 559)
@@ -365,15 +428,15 @@ Partial Class Form1
         preview_grp.TabStop = False
         preview_grp.Text = "Preview"
         ' 
-        ' RichTextBox1
+        ' preview_rtb
         ' 
-        RichTextBox1.Dock = DockStyle.Fill
-        RichTextBox1.Location = New Point(3, 19)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.ReadOnly = True
-        RichTextBox1.Size = New Size(455, 537)
-        RichTextBox1.TabIndex = 0
-        RichTextBox1.Text = ""
+        preview_rtb.Dock = DockStyle.Fill
+        preview_rtb.Location = New Point(3, 19)
+        preview_rtb.Name = "preview_rtb"
+        preview_rtb.ReadOnly = True
+        preview_rtb.Size = New Size(455, 537)
+        preview_rtb.TabIndex = 0
+        preview_rtb.Text = ""
         ' 
         ' updatePreview_btn
         ' 
@@ -395,71 +458,6 @@ Partial Class Form1
         properSpellingNote_lbl.Size = New Size(192, 15)
         properSpellingNote_lbl.TabIndex = 24
         properSpellingNote_lbl.Text = "Note: Proper spelling IS required."
-        ' 
-        ' allowSuperShiny_chk
-        ' 
-        allowSuperShiny_chk.AutoSize = True
-        allowSuperShiny_chk.Location = New Point(164, 249)
-        allowSuperShiny_chk.Name = "allowSuperShiny_chk"
-        allowSuperShiny_chk.Size = New Size(129, 34)
-        allowSuperShiny_chk.TabIndex = 28
-        allowSuperShiny_chk.Text = "Allow Super Shinies" & vbCrLf & "(Essentials 21)"
-        allowSuperShiny_chk.UseVisualStyleBackColor = True
-        ' 
-        ' loseTextQuotes_chkBox
-        ' 
-        loseTextQuotes_chkBox.AutoSize = True
-        loseTextQuotes_chkBox.Location = New Point(8, 249)
-        loseTextQuotes_chkBox.Name = "loseTextQuotes_chkBox"
-        loseTextQuotes_chkBox.Size = New Size(154, 34)
-        loseTextQuotes_chkBox.TabIndex = 27
-        loseTextQuotes_chkBox.Text = "Add Quotes to Lose Text" & vbCrLf & "(Essentials 19)"
-        loseTextQuotes_chkBox.UseVisualStyleBackColor = True
-        ' 
-        ' useAbilityIndex_chkBox
-        ' 
-        useAbilityIndex_chkBox.AutoSize = True
-        useAbilityIndex_chkBox.Checked = True
-        useAbilityIndex_chkBox.CheckState = CheckState.Checked
-        useAbilityIndex_chkBox.Enabled = False
-        useAbilityIndex_chkBox.Location = New Point(493, 213)
-        useAbilityIndex_chkBox.Name = "useAbilityIndex_chkBox"
-        useAbilityIndex_chkBox.Size = New Size(203, 34)
-        useAbilityIndex_chkBox.TabIndex = 26
-        useAbilityIndex_chkBox.Text = "Use AbilityIndex instead of Ability" & vbCrLf & "(Essentials 19, 20)"
-        useAbilityIndex_chkBox.UseVisualStyleBackColor = True
-        ' 
-        ' existingBattle_chkBox
-        ' 
-        existingBattle_chkBox.AutoSize = True
-        existingBattle_chkBox.Location = New Point(8, 213)
-        existingBattle_chkBox.Name = "existingBattle_chkBox"
-        existingBattle_chkBox.Size = New Size(270, 34)
-        existingBattle_chkBox.TabIndex = 24
-        existingBattle_chkBox.Text = "Check this box if this NPC already has a team, " & vbCrLf & "then enter the Battle Team ID above."
-        existingBattle_chkBox.UseVisualStyleBackColor = True
-        ' 
-        ' customBallIDs_chkBox
-        ' 
-        customBallIDs_chkBox.AutoSize = True
-        customBallIDs_chkBox.Checked = True
-        customBallIDs_chkBox.CheckState = CheckState.Checked
-        customBallIDs_chkBox.Location = New Point(284, 213)
-        customBallIDs_chkBox.Name = "customBallIDs_chkBox"
-        customBallIDs_chkBox.Size = New Size(203, 19)
-        customBallIDs_chkBox.TabIndex = 25
-        customBallIDs_chkBox.Text = "Allow use of Custom Pokéball IDs"
-        customBallIDs_chkBox.UseVisualStyleBackColor = True
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(3, 132)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(184, 32)
-        Label1.TabIndex = 29
-        Label1.Text = "Essentials Data"
         ' 
         ' Form1
         ' 
@@ -502,7 +500,7 @@ Partial Class Form1
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents preview_rtb As RichTextBox
     Friend WithEvents trainerInfoHeader_lbl As Label
     Friend WithEvents updatePreview_btn As Button
     Friend WithEvents trainerName_lbl As Label
@@ -518,7 +516,7 @@ Partial Class Form1
     Friend WithEvents essVersion_cmb As ComboBox
     Friend WithEvents essVersion_lbl As Label
     Friend WithEvents properSpellingNote_lbl As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents essData_lbl As Label
     Friend WithEvents allowSuperShiny_chk As CheckBox
     Friend WithEvents loseTextQuotes_chkBox As CheckBox
     Friend WithEvents useAbilityIndex_chkBox As CheckBox
