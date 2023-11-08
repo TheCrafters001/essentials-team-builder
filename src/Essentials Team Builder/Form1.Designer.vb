@@ -49,16 +49,22 @@ Partial Class Form1
         pg_items = New TabPage()
         pg_pokemon = New TabPage()
         TabControl3 = New TabControl()
-        TabPage1 = New TabPage()
-        TabPage2 = New TabPage()
-        TabPage3 = New TabPage()
-        TabPage4 = New TabPage()
-        TabPage5 = New TabPage()
-        TabPage6 = New TabPage()
+        pg_pkmn1 = New TabPage()
+        pg_pkmn2 = New TabPage()
+        pokemon2_grp = New GroupBox()
+        pg_pkmn3 = New TabPage()
+        pokemon3_grp = New GroupBox()
+        pg_pkmn4 = New TabPage()
+        pokemon4_grp = New GroupBox()
+        pg_pkmn5 = New TabPage()
+        pokemon5_grp = New GroupBox()
+        pg_pkmn6 = New TabPage()
         preview_grp = New GroupBox()
         preview_rtb = New RichTextBox()
         updatePreview_btn = New Button()
         properSpellingNote_lbl = New Label()
+        pokemon1_grp = New GroupBox()
+        pokemon6_grp = New GroupBox()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -66,6 +72,12 @@ Partial Class Form1
         pg_basic.SuspendLayout()
         pg_pokemon.SuspendLayout()
         TabControl3.SuspendLayout()
+        pg_pkmn1.SuspendLayout()
+        pg_pkmn2.SuspendLayout()
+        pg_pkmn3.SuspendLayout()
+        pg_pkmn4.SuspendLayout()
+        pg_pkmn5.SuspendLayout()
+        pg_pkmn6.SuspendLayout()
         preview_grp.SuspendLayout()
         SuspendLayout()
         ' 
@@ -349,74 +361,125 @@ Partial Class Form1
         ' 
         ' TabControl3
         ' 
-        TabControl3.Controls.Add(TabPage1)
-        TabControl3.Controls.Add(TabPage2)
-        TabControl3.Controls.Add(TabPage3)
-        TabControl3.Controls.Add(TabPage4)
-        TabControl3.Controls.Add(TabPage5)
-        TabControl3.Controls.Add(TabPage6)
+        TabControl3.Controls.Add(pg_pkmn1)
+        TabControl3.Controls.Add(pg_pkmn2)
+        TabControl3.Controls.Add(pg_pkmn3)
+        TabControl3.Controls.Add(pg_pkmn4)
+        TabControl3.Controls.Add(pg_pkmn5)
+        TabControl3.Controls.Add(pg_pkmn6)
         TabControl3.Dock = DockStyle.Fill
         TabControl3.Location = New Point(3, 3)
+        TabControl3.Multiline = True
         TabControl3.Name = "TabControl3"
         TabControl3.SelectedIndex = 0
         TabControl3.Size = New Size(737, 503)
         TabControl3.TabIndex = 0
         ' 
-        ' TabPage1
+        ' pg_pkmn1
         ' 
-        TabPage1.Location = New Point(4, 24)
-        TabPage1.Name = "TabPage1"
-        TabPage1.Size = New Size(729, 475)
-        TabPage1.TabIndex = 2
-        TabPage1.Text = "Pokémon 1"
-        TabPage1.UseVisualStyleBackColor = True
+        pg_pkmn1.Controls.Add(pokemon1_grp)
+        pg_pkmn1.Location = New Point(4, 24)
+        pg_pkmn1.Name = "pg_pkmn1"
+        pg_pkmn1.Padding = New Padding(3)
+        pg_pkmn1.Size = New Size(729, 475)
+        pg_pkmn1.TabIndex = 2
+        pg_pkmn1.Text = "Pokémon 1"
+        pg_pkmn1.UseVisualStyleBackColor = True
         ' 
-        ' TabPage2
+        ' pg_pkmn2
         ' 
-        TabPage2.Location = New Point(4, 24)
-        TabPage2.Name = "TabPage2"
-        TabPage2.Size = New Size(729, 475)
-        TabPage2.TabIndex = 3
-        TabPage2.Text = "Pokémon 2"
-        TabPage2.UseVisualStyleBackColor = True
+        pg_pkmn2.Controls.Add(pokemon2_grp)
+        pg_pkmn2.Location = New Point(4, 24)
+        pg_pkmn2.Name = "pg_pkmn2"
+        pg_pkmn2.Padding = New Padding(3)
+        pg_pkmn2.Size = New Size(729, 475)
+        pg_pkmn2.TabIndex = 3
+        pg_pkmn2.Text = "Pokémon 2"
+        pg_pkmn2.UseVisualStyleBackColor = True
         ' 
-        ' TabPage3
+        ' pokemon2_grp
         ' 
-        TabPage3.Location = New Point(4, 24)
-        TabPage3.Name = "TabPage3"
-        TabPage3.Size = New Size(729, 475)
-        TabPage3.TabIndex = 4
-        TabPage3.Text = "Pokémon 3"
-        TabPage3.UseVisualStyleBackColor = True
+        pokemon2_grp.Dock = DockStyle.Fill
+        pokemon2_grp.Location = New Point(3, 3)
+        pokemon2_grp.Name = "pokemon2_grp"
+        pokemon2_grp.Size = New Size(723, 469)
+        pokemon2_grp.TabIndex = 0
+        pokemon2_grp.TabStop = False
+        pokemon2_grp.Text = "Pokémon 2"
         ' 
-        ' TabPage4
+        ' pg_pkmn3
         ' 
-        TabPage4.Location = New Point(4, 24)
-        TabPage4.Name = "TabPage4"
-        TabPage4.Size = New Size(729, 475)
-        TabPage4.TabIndex = 5
-        TabPage4.Text = "Pokémon 4"
-        TabPage4.UseVisualStyleBackColor = True
+        pg_pkmn3.Controls.Add(pokemon3_grp)
+        pg_pkmn3.Location = New Point(4, 24)
+        pg_pkmn3.Name = "pg_pkmn3"
+        pg_pkmn3.Padding = New Padding(3)
+        pg_pkmn3.Size = New Size(729, 475)
+        pg_pkmn3.TabIndex = 4
+        pg_pkmn3.Text = "Pokémon 3"
+        pg_pkmn3.UseVisualStyleBackColor = True
         ' 
-        ' TabPage5
+        ' pokemon3_grp
         ' 
-        TabPage5.Location = New Point(4, 24)
-        TabPage5.Name = "TabPage5"
-        TabPage5.Padding = New Padding(3)
-        TabPage5.Size = New Size(729, 475)
-        TabPage5.TabIndex = 0
-        TabPage5.Text = "Pokémon 5"
-        TabPage5.UseVisualStyleBackColor = True
+        pokemon3_grp.Dock = DockStyle.Fill
+        pokemon3_grp.Location = New Point(3, 3)
+        pokemon3_grp.Name = "pokemon3_grp"
+        pokemon3_grp.Size = New Size(723, 469)
+        pokemon3_grp.TabIndex = 0
+        pokemon3_grp.TabStop = False
+        pokemon3_grp.Text = "Pokémon 3"
         ' 
-        ' TabPage6
+        ' pg_pkmn4
         ' 
-        TabPage6.Location = New Point(4, 24)
-        TabPage6.Name = "TabPage6"
-        TabPage6.Padding = New Padding(3)
-        TabPage6.Size = New Size(729, 475)
-        TabPage6.TabIndex = 1
-        TabPage6.Text = "Pokémon 6"
-        TabPage6.UseVisualStyleBackColor = True
+        pg_pkmn4.Controls.Add(pokemon4_grp)
+        pg_pkmn4.Location = New Point(4, 24)
+        pg_pkmn4.Name = "pg_pkmn4"
+        pg_pkmn4.Padding = New Padding(3)
+        pg_pkmn4.Size = New Size(729, 475)
+        pg_pkmn4.TabIndex = 5
+        pg_pkmn4.Text = "Pokémon 4"
+        pg_pkmn4.UseVisualStyleBackColor = True
+        ' 
+        ' pokemon4_grp
+        ' 
+        pokemon4_grp.Dock = DockStyle.Fill
+        pokemon4_grp.Location = New Point(3, 3)
+        pokemon4_grp.Name = "pokemon4_grp"
+        pokemon4_grp.Size = New Size(723, 469)
+        pokemon4_grp.TabIndex = 0
+        pokemon4_grp.TabStop = False
+        pokemon4_grp.Text = "Pokémon 4"
+        ' 
+        ' pg_pkmn5
+        ' 
+        pg_pkmn5.Controls.Add(pokemon5_grp)
+        pg_pkmn5.Location = New Point(4, 24)
+        pg_pkmn5.Name = "pg_pkmn5"
+        pg_pkmn5.Padding = New Padding(3)
+        pg_pkmn5.Size = New Size(729, 475)
+        pg_pkmn5.TabIndex = 0
+        pg_pkmn5.Text = "Pokémon 5"
+        pg_pkmn5.UseVisualStyleBackColor = True
+        ' 
+        ' pokemon5_grp
+        ' 
+        pokemon5_grp.Dock = DockStyle.Fill
+        pokemon5_grp.Location = New Point(3, 3)
+        pokemon5_grp.Name = "pokemon5_grp"
+        pokemon5_grp.Size = New Size(723, 469)
+        pokemon5_grp.TabIndex = 0
+        pokemon5_grp.TabStop = False
+        pokemon5_grp.Text = "Pokémon 5"
+        ' 
+        ' pg_pkmn6
+        ' 
+        pg_pkmn6.Controls.Add(pokemon6_grp)
+        pg_pkmn6.Location = New Point(4, 24)
+        pg_pkmn6.Name = "pg_pkmn6"
+        pg_pkmn6.Padding = New Padding(3)
+        pg_pkmn6.Size = New Size(729, 475)
+        pg_pkmn6.TabIndex = 1
+        pg_pkmn6.Text = "Pokémon 6"
+        pg_pkmn6.UseVisualStyleBackColor = True
         ' 
         ' preview_grp
         ' 
@@ -459,6 +522,26 @@ Partial Class Form1
         properSpellingNote_lbl.TabIndex = 24
         properSpellingNote_lbl.Text = "Note: Proper spelling IS required."
         ' 
+        ' pokemon1_grp
+        ' 
+        pokemon1_grp.Dock = DockStyle.Fill
+        pokemon1_grp.Location = New Point(3, 3)
+        pokemon1_grp.Name = "pokemon1_grp"
+        pokemon1_grp.Size = New Size(723, 469)
+        pokemon1_grp.TabIndex = 0
+        pokemon1_grp.TabStop = False
+        pokemon1_grp.Text = "Pokémon 1"
+        ' 
+        ' pokemon6_grp
+        ' 
+        pokemon6_grp.Dock = DockStyle.Fill
+        pokemon6_grp.Location = New Point(3, 3)
+        pokemon6_grp.Name = "pokemon6_grp"
+        pokemon6_grp.Size = New Size(723, 469)
+        pokemon6_grp.TabIndex = 0
+        pokemon6_grp.TabStop = False
+        pokemon6_grp.Text = "Pokémon 6"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -480,6 +563,12 @@ Partial Class Form1
         pg_basic.PerformLayout()
         pg_pokemon.ResumeLayout(False)
         TabControl3.ResumeLayout(False)
+        pg_pkmn1.ResumeLayout(False)
+        pg_pkmn2.ResumeLayout(False)
+        pg_pkmn3.ResumeLayout(False)
+        pg_pkmn4.ResumeLayout(False)
+        pg_pkmn5.ResumeLayout(False)
+        pg_pkmn6.ResumeLayout(False)
         preview_grp.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
@@ -492,14 +581,14 @@ Partial Class Form1
     Friend WithEvents pg_items As TabPage
     Friend WithEvents pg_pokemon As TabPage
     Friend WithEvents TabControl3 As TabControl
-    Friend WithEvents TabPage5 As TabPage
-    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents pg_pkmn5 As TabPage
+    Friend WithEvents pg_pkmn6 As TabPage
     Friend WithEvents preview_grp As GroupBox
     Friend WithEvents pg_basic As TabPage
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents pg_pkmn1 As TabPage
+    Friend WithEvents pg_pkmn2 As TabPage
+    Friend WithEvents pg_pkmn3 As TabPage
+    Friend WithEvents pg_pkmn4 As TabPage
     Friend WithEvents preview_rtb As RichTextBox
     Friend WithEvents trainerInfoHeader_lbl As Label
     Friend WithEvents updatePreview_btn As Button
@@ -522,4 +611,10 @@ Partial Class Form1
     Friend WithEvents useAbilityIndex_chkBox As CheckBox
     Friend WithEvents existingBattle_chkBox As CheckBox
     Friend WithEvents customBallIDs_chkBox As CheckBox
+    Friend WithEvents pokemon2_grp As GroupBox
+    Friend WithEvents pokemon3_grp As GroupBox
+    Friend WithEvents pokemon4_grp As GroupBox
+    Friend WithEvents pokemon5_grp As GroupBox
+    Friend WithEvents pokemon1_grp As GroupBox
+    Friend WithEvents pokemon6_grp As GroupBox
 End Class
