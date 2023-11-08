@@ -572,7 +572,7 @@ Partial Class Form1
         recommendedSettings_grp.Controls.Add(ess20Settings_btn)
         recommendedSettings_grp.Controls.Add(ess19Settings_btn)
         recommendedSettings_grp.Controls.Add(ess18Settings_btn)
-        recommendedSettings_grp.Location = New Point(6, 375)
+        recommendedSettings_grp.Location = New Point(6, 373)
         recommendedSettings_grp.Name = "recommendedSettings_grp"
         recommendedSettings_grp.Size = New Size(778, 77)
         recommendedSettings_grp.TabIndex = 16
@@ -628,7 +628,7 @@ Partial Class Form1
         ' example_btn
         ' 
         example_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        example_btn.Location = New Point(265, 458)
+        example_btn.Location = New Point(265, 456)
         example_btn.Name = "example_btn"
         example_btn.Size = New Size(306, 23)
         example_btn.TabIndex = 8
@@ -649,7 +649,7 @@ Partial Class Form1
         properSpellingNote_lbl.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         properSpellingNote_lbl.AutoSize = True
         properSpellingNote_lbl.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
-        properSpellingNote_lbl.Location = New Point(3, 464)
+        properSpellingNote_lbl.Location = New Point(3, 462)
         properSpellingNote_lbl.Name = "properSpellingNote_lbl"
         properSpellingNote_lbl.Size = New Size(241, 20)
         properSpellingNote_lbl.TabIndex = 12
@@ -658,7 +658,7 @@ Partial Class Form1
         ' clearInputs_btn
         ' 
         clearInputs_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
-        clearInputs_btn.Location = New Point(577, 458)
+        clearInputs_btn.Location = New Point(577, 456)
         clearInputs_btn.Name = "clearInputs_btn"
         clearInputs_btn.Size = New Size(207, 23)
         clearInputs_btn.TabIndex = 7
@@ -757,10 +757,10 @@ Partial Class Form1
         pg_MiscInfo.Controls.Add(useAbilityIndex_chkBox)
         pg_MiscInfo.Controls.Add(existingBattle_chkBox)
         pg_MiscInfo.Controls.Add(customBallIDs_chkBox)
-        pg_MiscInfo.Location = New Point(4, 22)
+        pg_MiscInfo.Location = New Point(4, 24)
         pg_MiscInfo.Name = "pg_MiscInfo"
         pg_MiscInfo.Padding = New Padding(3)
-        pg_MiscInfo.Size = New Size(790, 495)
+        pg_MiscInfo.Size = New Size(790, 493)
         pg_MiscInfo.TabIndex = 1
         pg_MiscInfo.Text = "Misc. Info"
         pg_MiscInfo.UseVisualStyleBackColor = True
@@ -827,9 +827,9 @@ Partial Class Form1
         pg_TrainerItems.Controls.Add(trainerItemInfo_lbl)
         pg_TrainerItems.Controls.Add(trainerUsesItems_chkBox)
         pg_TrainerItems.Controls.Add(trainerItems_grp)
-        pg_TrainerItems.Location = New Point(4, 22)
+        pg_TrainerItems.Location = New Point(4, 24)
         pg_TrainerItems.Name = "pg_TrainerItems"
-        pg_TrainerItems.Size = New Size(790, 495)
+        pg_TrainerItems.Size = New Size(790, 493)
         pg_TrainerItems.TabIndex = 2
         pg_TrainerItems.Text = "Trainer Items"
         pg_TrainerItems.UseVisualStyleBackColor = True
@@ -983,7 +983,7 @@ Partial Class Form1
         pokemonOne_grp.Controls.Add(pokemonOneName_lbl)
         pokemonOne_grp.Location = New Point(6, 3)
         pokemonOne_grp.Name = "pokemonOne_grp"
-        pokemonOne_grp.Size = New Size(793, 490)
+        pokemonOne_grp.Size = New Size(793, 488)
         pokemonOne_grp.TabIndex = 1
         pokemonOne_grp.TabStop = False
         pokemonOne_grp.Text = "Pokémon 1"
@@ -1564,10 +1564,10 @@ Partial Class Form1
         ' pg_PTwo
         ' 
         pg_PTwo.Controls.Add(pokemonTwo_grp)
-        pg_PTwo.Location = New Point(4, 22)
+        pg_PTwo.Location = New Point(4, 24)
         pg_PTwo.Name = "pg_PTwo"
         pg_PTwo.Padding = New Padding(3)
-        pg_PTwo.Size = New Size(802, 507)
+        pg_PTwo.Size = New Size(802, 505)
         pg_PTwo.TabIndex = 1
         pg_PTwo.Text = "Pokémon 2"
         pg_PTwo.UseVisualStyleBackColor = True
@@ -1603,7 +1603,7 @@ Partial Class Form1
         pokemonTwo_grp.Controls.Add(pokemonTwoName_lbl)
         pokemonTwo_grp.Location = New Point(6, 3)
         pokemonTwo_grp.Name = "pokemonTwo_grp"
-        pokemonTwo_grp.Size = New Size(793, 498)
+        pokemonTwo_grp.Size = New Size(793, 496)
         pokemonTwo_grp.TabIndex = 2
         pokemonTwo_grp.TabStop = False
         pokemonTwo_grp.Text = "Pokémon 2"
@@ -2184,9 +2184,9 @@ Partial Class Form1
         ' pg_PThree
         ' 
         pg_PThree.Controls.Add(pokemonThree_grp)
-        pg_PThree.Location = New Point(4, 22)
+        pg_PThree.Location = New Point(4, 24)
         pg_PThree.Name = "pg_PThree"
-        pg_PThree.Size = New Size(802, 507)
+        pg_PThree.Size = New Size(802, 505)
         pg_PThree.TabIndex = 2
         pg_PThree.Text = "Pokémon 3"
         pg_PThree.UseVisualStyleBackColor = True
@@ -2222,7 +2222,7 @@ Partial Class Form1
         pokemonThree_grp.Controls.Add(pokemonThreeName_lbl)
         pokemonThree_grp.Location = New Point(6, 3)
         pokemonThree_grp.Name = "pokemonThree_grp"
-        pokemonThree_grp.Size = New Size(793, 498)
+        pokemonThree_grp.Size = New Size(793, 496)
         pokemonThree_grp.TabIndex = 2
         pokemonThree_grp.TabStop = False
         pokemonThree_grp.Text = "Pokémon 3"
@@ -2803,9 +2803,9 @@ Partial Class Form1
         ' pg_PFour
         ' 
         pg_PFour.Controls.Add(pokemonFour_grp)
-        pg_PFour.Location = New Point(4, 22)
+        pg_PFour.Location = New Point(4, 24)
         pg_PFour.Name = "pg_PFour"
-        pg_PFour.Size = New Size(802, 507)
+        pg_PFour.Size = New Size(802, 505)
         pg_PFour.TabIndex = 3
         pg_PFour.Text = "Pokémon 4"
         pg_PFour.UseVisualStyleBackColor = True
@@ -2841,7 +2841,7 @@ Partial Class Form1
         pokemonFour_grp.Controls.Add(pokemonFourName_lbl)
         pokemonFour_grp.Location = New Point(6, 3)
         pokemonFour_grp.Name = "pokemonFour_grp"
-        pokemonFour_grp.Size = New Size(793, 498)
+        pokemonFour_grp.Size = New Size(793, 496)
         pokemonFour_grp.TabIndex = 2
         pokemonFour_grp.TabStop = False
         pokemonFour_grp.Text = "Pokémon 4"
@@ -3350,7 +3350,7 @@ Partial Class Form1
         pokemonFourMoves_grp.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         pokemonFourMoves_grp.Controls.Add(pokemonFourAddMove_btn)
         pokemonFourMoves_grp.Controls.Add(pokemonFourMoves_lst)
-        pokemonFourMoves_grp.Location = New Point(9, 103)
+        pokemonFourMoves_grp.Location = New Point(9, 101)
         pokemonFourMoves_grp.Name = "pokemonFourMoves_grp"
         pokemonFourMoves_grp.Size = New Size(312, 121)
         pokemonFourMoves_grp.TabIndex = 81
@@ -3423,9 +3423,9 @@ Partial Class Form1
         ' pg_PFive
         ' 
         pg_PFive.Controls.Add(pokemonFive_grp)
-        pg_PFive.Location = New Point(4, 22)
+        pg_PFive.Location = New Point(4, 24)
         pg_PFive.Name = "pg_PFive"
-        pg_PFive.Size = New Size(802, 507)
+        pg_PFive.Size = New Size(802, 505)
         pg_PFive.TabIndex = 4
         pg_PFive.Text = "Pokémon 5"
         pg_PFive.UseVisualStyleBackColor = True
@@ -3461,7 +3461,7 @@ Partial Class Form1
         pokemonFive_grp.Controls.Add(pokemonFiveName_lbl)
         pokemonFive_grp.Location = New Point(6, 3)
         pokemonFive_grp.Name = "pokemonFive_grp"
-        pokemonFive_grp.Size = New Size(793, 498)
+        pokemonFive_grp.Size = New Size(793, 496)
         pokemonFive_grp.TabIndex = 2
         pokemonFive_grp.TabStop = False
         pokemonFive_grp.Text = "Pokémon 5"
@@ -4042,9 +4042,9 @@ Partial Class Form1
         ' pg_PSix
         ' 
         pg_PSix.Controls.Add(pokemonSix_grp)
-        pg_PSix.Location = New Point(4, 22)
+        pg_PSix.Location = New Point(4, 24)
         pg_PSix.Name = "pg_PSix"
-        pg_PSix.Size = New Size(802, 507)
+        pg_PSix.Size = New Size(802, 505)
         pg_PSix.TabIndex = 5
         pg_PSix.Text = "Pokémon 6"
         pg_PSix.UseVisualStyleBackColor = True
@@ -4080,7 +4080,7 @@ Partial Class Form1
         pokemonSix_grp.Controls.Add(pokemonSixName_lbl)
         pokemonSix_grp.Location = New Point(6, 3)
         pokemonSix_grp.Name = "pokemonSix_grp"
-        pokemonSix_grp.Size = New Size(793, 498)
+        pokemonSix_grp.Size = New Size(793, 496)
         pokemonSix_grp.TabIndex = 2
         pokemonSix_grp.TabStop = False
         pokemonSix_grp.Text = "Pokémon 6"
