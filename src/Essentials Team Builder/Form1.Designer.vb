@@ -72,6 +72,11 @@ Partial Class Form1
         Label2 = New Label()
         pokemon1Level_lbl = New Label()
         pokemon1Level_txtBox = New TextBox()
+        pokemon1Moves_grp = New GroupBox()
+        pokemon1Move1_txtBox = New TextBox()
+        pokemon1Move2_txtBox = New TextBox()
+        pokemon1Move4_txtBox = New TextBox()
+        pokemon1Move3_txtBox = New TextBox()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -87,6 +92,7 @@ Partial Class Form1
         pg_pkmn5.SuspendLayout()
         pg_pkmn6.SuspendLayout()
         preview_grp.SuspendLayout()
+        pokemon1Moves_grp.SuspendLayout()
         SuspendLayout()
         ' 
         ' editor_grp
@@ -396,6 +402,7 @@ Partial Class Form1
         ' 
         ' pokemon1_grp
         ' 
+        pokemon1_grp.Controls.Add(pokemon1Moves_grp)
         pokemon1_grp.Controls.Add(pokemon1Level_txtBox)
         pokemon1_grp.Controls.Add(pokemon1Level_lbl)
         pokemon1_grp.Controls.Add(pokemon1HeldItem_lbl)
@@ -620,6 +627,51 @@ Partial Class Form1
         pokemon1Level_txtBox.Size = New Size(140, 23)
         pokemon1Level_txtBox.TabIndex = 5
         ' 
+        ' pokemon1Moves_grp
+        ' 
+        pokemon1Moves_grp.Controls.Add(pokemon1Move4_txtBox)
+        pokemon1Moves_grp.Controls.Add(pokemon1Move3_txtBox)
+        pokemon1Moves_grp.Controls.Add(pokemon1Move2_txtBox)
+        pokemon1Moves_grp.Controls.Add(pokemon1Move1_txtBox)
+        pokemon1Moves_grp.Location = New Point(444, 22)
+        pokemon1Moves_grp.Name = "pokemon1Moves_grp"
+        pokemon1Moves_grp.Size = New Size(273, 82)
+        pokemon1Moves_grp.TabIndex = 6
+        pokemon1Moves_grp.TabStop = False
+        pokemon1Moves_grp.Text = "Moves"
+        ' 
+        ' pokemon1Move1_txtBox
+        ' 
+        pokemon1Move1_txtBox.Location = New Point(6, 22)
+        pokemon1Move1_txtBox.Name = "pokemon1Move1_txtBox"
+        pokemon1Move1_txtBox.PlaceholderText = "Move 1"
+        pokemon1Move1_txtBox.Size = New Size(120, 23)
+        pokemon1Move1_txtBox.TabIndex = 0
+        ' 
+        ' pokemon1Move2_txtBox
+        ' 
+        pokemon1Move2_txtBox.Location = New Point(132, 22)
+        pokemon1Move2_txtBox.Name = "pokemon1Move2_txtBox"
+        pokemon1Move2_txtBox.PlaceholderText = "Move 2"
+        pokemon1Move2_txtBox.Size = New Size(120, 23)
+        pokemon1Move2_txtBox.TabIndex = 1
+        ' 
+        ' pokemon1Move4_txtBox
+        ' 
+        pokemon1Move4_txtBox.Location = New Point(132, 51)
+        pokemon1Move4_txtBox.Name = "pokemon1Move4_txtBox"
+        pokemon1Move4_txtBox.PlaceholderText = "Move 4"
+        pokemon1Move4_txtBox.Size = New Size(120, 23)
+        pokemon1Move4_txtBox.TabIndex = 3
+        ' 
+        ' pokemon1Move3_txtBox
+        ' 
+        pokemon1Move3_txtBox.Location = New Point(6, 51)
+        pokemon1Move3_txtBox.Name = "pokemon1Move3_txtBox"
+        pokemon1Move3_txtBox.PlaceholderText = "Move 3"
+        pokemon1Move3_txtBox.Size = New Size(120, 23)
+        pokemon1Move3_txtBox.TabIndex = 2
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -651,6 +703,8 @@ Partial Class Form1
         pg_pkmn5.ResumeLayout(False)
         pg_pkmn6.ResumeLayout(False)
         preview_grp.ResumeLayout(False)
+        pokemon1Moves_grp.ResumeLayout(False)
+        pokemon1Moves_grp.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -705,4 +759,9 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents pokemon1Level_txtBox As TextBox
     Friend WithEvents pokemon1Level_lbl As Label
+    Friend WithEvents pokemon1Moves_grp As GroupBox
+    Friend WithEvents pokemon1Move4_txtBox As TextBox
+    Friend WithEvents pokemon1Move3_txtBox As TextBox
+    Friend WithEvents pokemon1Move2_txtBox As TextBox
+    Friend WithEvents pokemon1Move1_txtBox As TextBox
 End Class
