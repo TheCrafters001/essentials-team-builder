@@ -50,6 +50,7 @@ Partial Class Form1
         pg_pokemon = New TabPage()
         TabControl3 = New TabControl()
         pg_pkmn1 = New TabPage()
+        pokemon1_grp = New GroupBox()
         pg_pkmn2 = New TabPage()
         pokemon2_grp = New GroupBox()
         pg_pkmn3 = New TabPage()
@@ -59,12 +60,11 @@ Partial Class Form1
         pg_pkmn5 = New TabPage()
         pokemon5_grp = New GroupBox()
         pg_pkmn6 = New TabPage()
+        pokemon6_grp = New GroupBox()
         preview_grp = New GroupBox()
         preview_rtb = New RichTextBox()
         updatePreview_btn = New Button()
         properSpellingNote_lbl = New Label()
-        pokemon1_grp = New GroupBox()
-        pokemon6_grp = New GroupBox()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -386,6 +386,16 @@ Partial Class Form1
         pg_pkmn1.Text = "Pokémon 1"
         pg_pkmn1.UseVisualStyleBackColor = True
         ' 
+        ' pokemon1_grp
+        ' 
+        pokemon1_grp.Dock = DockStyle.Fill
+        pokemon1_grp.Location = New Point(3, 3)
+        pokemon1_grp.Name = "pokemon1_grp"
+        pokemon1_grp.Size = New Size(723, 469)
+        pokemon1_grp.TabIndex = 0
+        pokemon1_grp.TabStop = False
+        pokemon1_grp.Text = "Pokémon 1"
+        ' 
         ' pg_pkmn2
         ' 
         pg_pkmn2.Controls.Add(pokemon2_grp)
@@ -481,6 +491,16 @@ Partial Class Form1
         pg_pkmn6.Text = "Pokémon 6"
         pg_pkmn6.UseVisualStyleBackColor = True
         ' 
+        ' pokemon6_grp
+        ' 
+        pokemon6_grp.Dock = DockStyle.Fill
+        pokemon6_grp.Location = New Point(3, 3)
+        pokemon6_grp.Name = "pokemon6_grp"
+        pokemon6_grp.Size = New Size(723, 469)
+        pokemon6_grp.TabIndex = 0
+        pokemon6_grp.TabStop = False
+        pokemon6_grp.Text = "Pokémon 6"
+        ' 
         ' preview_grp
         ' 
         preview_grp.Controls.Add(preview_rtb)
@@ -521,26 +541,6 @@ Partial Class Form1
         properSpellingNote_lbl.Size = New Size(192, 15)
         properSpellingNote_lbl.TabIndex = 24
         properSpellingNote_lbl.Text = "Note: Proper spelling IS required."
-        ' 
-        ' pokemon1_grp
-        ' 
-        pokemon1_grp.Dock = DockStyle.Fill
-        pokemon1_grp.Location = New Point(3, 3)
-        pokemon1_grp.Name = "pokemon1_grp"
-        pokemon1_grp.Size = New Size(723, 469)
-        pokemon1_grp.TabIndex = 0
-        pokemon1_grp.TabStop = False
-        pokemon1_grp.Text = "Pokémon 1"
-        ' 
-        ' pokemon6_grp
-        ' 
-        pokemon6_grp.Dock = DockStyle.Fill
-        pokemon6_grp.Location = New Point(3, 3)
-        pokemon6_grp.Name = "pokemon6_grp"
-        pokemon6_grp.Size = New Size(723, 469)
-        pokemon6_grp.TabIndex = 0
-        pokemon6_grp.TabStop = False
-        pokemon6_grp.Text = "Pokémon 6"
         ' 
         ' Form1
         ' 

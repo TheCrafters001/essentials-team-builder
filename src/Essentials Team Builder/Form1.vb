@@ -2,6 +2,19 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Essentials Version
         essVersion_cmb.SelectedIndex = 4 ' Essentials 21
+
+        ' Amount of Pokemon
+        numPoké_cmb.SelectedIndex = 0
+    End Sub
+
+    Private Sub existingBattle_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles existingBattle_chkBox.CheckedChanged
+        If existingBattle_chkBox.Checked = True Then
+            battleTeamID_lbl.Enabled = True
+            battleTeamID_txtBox.Enabled = True
+        Else
+            battleTeamID_lbl.Enabled = False
+            battleTeamID_txtBox.Enabled = False
+        End If
     End Sub
 
     Private Sub essVersion_cmb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles essVersion_cmb.SelectedIndexChanged
@@ -96,13 +109,54 @@
         End If
     End Sub
 
-    Private Sub existingBattle_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles existingBattle_chkBox.CheckedChanged
-        If existingBattle_chkBox.Checked = True Then
-            battleTeamID_lbl.Enabled = True
-            battleTeamID_txtBox.Enabled = True
-        Else
-            battleTeamID_lbl.Enabled = False
-            battleTeamID_txtBox.Enabled = False
+    Private Sub numPoké_cmb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles numPoké_cmb.SelectedIndexChanged
+        If numPoké_cmb.SelectedIndex = 0 Then
+            pokemon1_grp.Enabled = True
+            pokemon2_grp.Enabled = False
+            pokemon3_grp.Enabled = False
+            pokemon4_grp.Enabled = False
+            pokemon5_grp.Enabled = False
+            pokemon6_grp.Enabled = False
+
+        ElseIf numPoké_cmb.SelectedIndex = 1 Then
+            pokemon1_grp.Enabled = True
+            pokemon2_grp.Enabled = True
+            pokemon3_grp.Enabled = False
+            pokemon4_grp.Enabled = False
+            pokemon5_grp.Enabled = False
+            pokemon6_grp.Enabled = False
+
+        ElseIf numPoké_cmb.SelectedIndex = 2 Then
+            pokemon1_grp.Enabled = True
+            pokemon2_grp.Enabled = True
+            pokemon3_grp.Enabled = True
+            pokemon4_grp.Enabled = False
+            pokemon5_grp.Enabled = False
+            pokemon6_grp.Enabled = False
+
+        ElseIf numPoké_cmb.SelectedIndex = 3 Then
+            pokemon1_grp.Enabled = True
+            pokemon2_grp.Enabled = True
+            pokemon3_grp.Enabled = True
+            pokemon4_grp.Enabled = True
+            pokemon5_grp.Enabled = False
+            pokemon6_grp.Enabled = False
+
+        ElseIf numPoké_cmb.SelectedIndex = 4 Then
+            pokemon1_grp.Enabled = True
+            pokemon2_grp.Enabled = True
+            pokemon3_grp.Enabled = True
+            pokemon4_grp.Enabled = True
+            pokemon5_grp.Enabled = True
+            pokemon6_grp.Enabled = False
+
+        ElseIf numPoké_cmb.SelectedIndex = 5 Then
+            pokemon1_grp.Enabled = True
+            pokemon2_grp.Enabled = True
+            pokemon3_grp.Enabled = True
+            pokemon4_grp.Enabled = True
+            pokemon5_grp.Enabled = True
+            pokemon6_grp.Enabled = True
         End If
     End Sub
 End Class
