@@ -117,11 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="trainerItemInfo_lbl.Text" xml:space="preserve">
-    <value>Welcome to the new items screen!
-Here you can still add items, but I have added quick picks for more popular items to add to a trainer. Don't worry, it won't mess with any itmes you have already added! Just click the button of the item, and it will add it for you!
-</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="gnuGPL3_picBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2554,6 +2549,11 @@ MKXP-Z Logo by Roza</value>
         cRw9Ho6L48t5cD6cF+dHOw7bI+0jhBBCCHkiKGNuE8xOtWrNTkZimEaiubmRUTFFo81mXGk0RuX1xGij
         cRKv6ecYv2M7bJ8/hh5Xji/viziffkEIIYQQ8rSQN0fWYA1CL4NFCCGEEEIIIYQQQgghhBBCCCGEEEII
         IYQ8HYyM/D8kGyWtP8oGCAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="trainerItemInfo_lbl.Text" xml:space="preserve">
+    <value>Welcome to the new items screen!
+Here you can still add items, but I have added quick picks for more popular items to add to a trainer. Don't worry, it won't mess with any itmes you have already added! Just click the button of the item, and it will add it for you!
 </value>
   </data>
   <metadata name="codeExporter_dialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
