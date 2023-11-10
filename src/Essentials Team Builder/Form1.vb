@@ -5,6 +5,9 @@
 
         ' Amount of Pokemon
         numPoké_cmb.SelectedIndex = 0
+
+        ' Copyright
+        copyright_lbl.Text = My.Application.Info.Copyright
     End Sub
 
     Private Sub existingBattle_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles existingBattle_chkBox.CheckedChanged
@@ -157,6 +160,14 @@
             pokemon4_grp.Enabled = True
             pokemon5_grp.Enabled = True
             pokemon6_grp.Enabled = True
+        End If
+    End Sub
+
+    Private Sub useAbilityIndex_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles useAbilityIndex_chkBox.CheckedChanged
+        If useAbilityIndex_chkBox.Checked = True Then
+            'pokemon1Ability_cmb.Items.Remove
+        Else
+
         End If
     End Sub
 End Class
