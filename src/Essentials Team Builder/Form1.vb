@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports teamGen
+
+Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Essentials Version
         essVersion_cmb.SelectedIndex = 4 ' Essentials 21
@@ -89,5 +91,25 @@
 
     Private Sub customBallIDs_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles customBallIDs_chkBox.CheckedChanged
 
+    End Sub
+
+    Private Sub updatePreview_btn_Click(sender As Object, e As EventArgs) Handles updatePreview_btn.Click
+        If essVersion_cmb.SelectedIndex <= 0 Then
+            ' Generator.essentials17()
+        ElseIf essVersion_cmb.SelectedIndex >= 1 Then
+            Try
+                ' Pokemon1
+                Generator.essentials18(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text,
+                                       Integer.Parse(pokemon1Level_txtBox.Text), pokemon1Ability_cmb.Text, pokemon1Gender_cmb.Text, Integer.Parse(pokemon1Form_txtBox.Text),
+                                       pokemon1Nature_cmb.Text, pokemon1Happiness_txtBox.Text, pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked,
+                                       pokemon1SuperShiny_chkBox.Checked,
+                                       pokemon1IVsHP_txt.Text, pokemon1IVsATK_txt.Text, pokemon1IVsDEF_txt.Text, pokemon1IVsSPD_txt.Text, pokemon1IVsSPATK_txt.Text, pokemon1IVsSPDEF_txt.Text,
+                                       pokemon1EVsHP_txt.Text, pokemon1EVsATK_txt.Text, pokemon1EVsDEF_txt.Text, pokemon1EVsSPD_txt.Text, pokemon1EVsSPATK_txt.Text, pokemon1EVsSPDEF_txt.Text)
+            Catch ex As Exception
+                MessageBox.Show("There was an error when generating the team. Please make sure there are only numbers in the Level, Happiness, Form, IVs and EVs boxes.", "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+
+        End If
     End Sub
 End Class
