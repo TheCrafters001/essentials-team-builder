@@ -150,7 +150,7 @@
                     ' Set Gender using the following format:
                     ' Gender = {0}
                     If Not Form1.pokemonOneGender_cmb.SelectedItem = "(random)" Then
-                        gender = String.Format("    Gender = " & vbCrLf, Form1.pokemonOneGender_cmb.SelectedItem)
+                        gender = String.Format("    Gender = {0}" & vbCrLf, Form1.pokemonOneGender_cmb.Text)
                     End If
 
                     ' Check to see if shiny = disabled
