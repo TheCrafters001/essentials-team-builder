@@ -1,5 +1,6 @@
 ﻿Public Class clearFields
     Public Shared Sub Clear()
+        Form1.Darkness = True
         Dim DiagResult As DialogResult = MessageBox.Show("Are you sure you want to clear all the fields? This will even clear out Pokémon Data.", "Are you sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
         If DiagResult = DialogResult.Yes Then
             ' Set the title of the Trainer Info box, just in case it takes a while.
@@ -185,6 +186,8 @@
 
             ' Return Trainer Info Text Back To Normal
             Form1.trainerInfoTitle_lbl.Text = "Trainer Info"
+
+            Form1.Darkness = False
         ElseIf DiagResult = DialogResult.No Then
             MessageBox.Show("Fields have not been cleared.", "Not Cleared", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
