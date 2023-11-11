@@ -130,11 +130,36 @@ Public Class Generator
 
     Public Shared Function trainer18(ByVal trainerName As String, ByVal trainerType As String, ByVal loseText As String,
                                      ByVal loseTextQuotes As Boolean, Optional ByVal battleTeamID As Integer = 0)
+        Dim Output As String = ""
 
+        ' [trainerType,trainerName,battleID]
+        Dim name As String = ""
+        Dim type As String = ""
+        Dim id As String = ""
+
+        ' Battle Team ID
+        If battleTeamID = 0 Then
+            id = ""
+        Else
+            id = "," & battleTeamID
+        End If
+
+        ' Trainer Type and name
+        type = "[" & trainerType.ToUpper & ","
+        name = trainerName & id & "]"
+
+        Output = type & name
+
+        Return Output
     End Function
 
-    Public Shared Function trainer17()
+    Public Shared Function trainer17(ByVal trainerName As String, ByVal trainerType As String, ByVal loseText As String,
+                                     ByVal pokeNumber As Integer, Optional ByVal battleTeamID As Integer = 0)
+        Dim output As String = ""
 
+        output = trainerType.ToUpper & vbCrLf & trainerName & vbCrLf & pokeNumber.ToString
+
+        Return output
     End Function
 
 End Class
