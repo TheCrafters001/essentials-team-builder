@@ -61,37 +61,22 @@
             items = "Items = POTION"
         End If
 
-        'Check if trainer can be generated without errors
-        If Form1.trainerType_txtBox.Text.ToUpper = "" Then
-
-            ' If fails
-            MessageBox.Show("You need to enter a trainer name.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        ElseIf Form1.existingBattle_chkBox.Checked = True Then 'Check if existingBattle_chkBox is checked
-            If Form1.battleTeamID_txtBox.Text = "" Then 'check if the user has entered a battle team id
-                MessageBox.Show("You need to enter a battle team id.", "Cannot Create Team", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End If
-        Else ' If no errors, proceed with trainer generation
-            ' Check if Battle Team ID is isn't checked
-            If Form1.existingBattle_chkBox.Checked = False Then
-                ' Create Trainer Prefix
-                trainerPrefix = "[" & Form1.trainerType_txtBox.Text.ToUpper & "," & Form1.trainerName_txtBox.Text & "]"
-                'check if it is checked
-            ElseIf Form1.existingBattle_chkBox.Checked = True Then
-                trainerPrefix = "[" & Form1.trainerType_txtBox.Text.ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & "]"
-            End If
-
-            ' Check if Lose Text has quotes or not.
-            If Form1.loseTextQuotes_chkBox.Checked = False Then
-                loseText = "LoseText = " & Form1.loseText_txt.Text
-            ElseIf Form1.loseTextQuotes_chkBox.Checked = True Then
-                loseText = "LoseText = """ & Form1.loseText_txt.Text & """"
-            Else
-                loseText = "LoseText = ""..."""
-            End If
-
-            ' Send code to Output Box
-            Form1.outputBox_rchBox.Text &= trainerPrefix & vbCrLf & items & loseText & vbCrLf
+        If Form1.existingBattle_chkBox.Checked = True Then
+            trainerPrefix = "[" & Form1.trainerType_txtBox.Text.ToUpper & "," & Form1.trainerName_txtBox.Text & "," & Form1.battleTeamID_txtBox.Text & "]"
+        Else
+            trainerPrefix = "[" & Form1.trainerType_txtBox.Text.ToUpper & "," & Form1.trainerName_txtBox.Text & "]"
         End If
+
+
+        If Form1.loseTextQuotes_chkBox.Checked = False Then
+            loseText = "LoseText = " & Form1.loseText_txt.Text
+        ElseIf Form1.loseTextQuotes_chkBox.Checked = True Then
+            loseText = "LoseText = """ & Form1.loseText_txt.Text & """"
+        Else
+            loseText = "LoseText = ""..."""
+        End If
+
+        Form1.outputBox_rchBox.Text &= trainerPrefix & vbCrLf & items & loseText & vbCrLf
 
 #End Region
 
