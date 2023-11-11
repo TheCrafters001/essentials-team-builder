@@ -51,6 +51,12 @@ Public Class Generator
             ' Pokemon = POKEMON,lvl
             Dim pkmn As String = "Pokemon = " & pkmnName.ToUpper & "," & lvl & vbCrLf
 
+            ' Form = form
+            Dim pkmnForm As String = ""
+            If Not form = 0 Or Not form = "" Then
+                pkmnForm = Indent & "Form = " & form & vbCrLf
+            End If
+
             ' Name = nickname
             Dim name As String = ""
             If Not nickname = "" Then
@@ -58,8 +64,20 @@ Public Class Generator
             End If
 
             ' Item = heldItem
+            Dim item As String = ""
+            If Not heldItem = "" Then
+                item = Indent & "Item = " & heldItem.ToUpper & vbCrLf
+            End If
 
-            output = pkmn & name
+            ' Gender = pkmnGender
+            Dim gender As String = ""
+            If pkmnGender = "Random" Then
+                gender = ""
+            Else
+                gender = Indent & "Gender = " & pkmnGender & vbCrLf
+            End If
+
+            output = pkmn & pkmnForm & name & gender & item
         Catch ex As Exception
             Console.WriteLine("There was an error when generating the team. Please make sure there are only numbers in the Level, Happiness, Form, IVs and EVs boxes." & vbCrLf & ex.Message)
         End Try
@@ -108,4 +126,15 @@ Public Class Generator
                                    ByVal evSPD As Integer, ByVal evSPATK As Integer, ByVal evSPDEF As Integer)
 
     End Function
+
+
+    Public Shared Function trainer18(ByVal trainerName As String, ByVal trainerType As String, ByVal loseText As String,
+                                     ByVal loseTextQuotes As Boolean, Optional ByVal battleTeamID As Integer = 0)
+
+    End Function
+
+    Public Shared Function trainer17()
+
+    End Function
+
 End Class

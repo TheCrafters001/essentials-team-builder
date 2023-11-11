@@ -8,6 +8,9 @@ Public Class Form1
         ' Amount of Pokemon
         numPoké_cmb.SelectedIndex = 0
 
+        ' Gender
+        pokemon1Gender_cmb.SelectedIndex = 2
+
         ' Copyright
         copyright_lbl.Text = My.Application.Info.Copyright
     End Sub
@@ -97,14 +100,45 @@ Public Class Form1
         If essVersion_cmb.SelectedIndex <= 0 Then
             ' Generator.essentials17()
         ElseIf essVersion_cmb.SelectedIndex >= 1 Then
+
+            ' Clear the preview box
+            preview_rtb.Text = ""
+
             Try
                 ' Pokemon1
-                Generator.essentials18(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text,
-                                       Integer.Parse(pokemon1Level_txtBox.Text), pokemon1Ability_cmb.Text, pokemon1Gender_cmb.Text, Integer.Parse(pokemon1Form_txtBox.Text),
-                                       pokemon1Nature_cmb.Text, pokemon1Happiness_txtBox.Text, pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked,
-                                       pokemon1SuperShiny_chkBox.Checked, pokemon1Shadow_rad.checked,
-                                       pokemon1IVsHP_txt.Text, pokemon1IVsATK_txt.Text, pokemon1IVsDEF_txt.Text, pokemon1IVsSPD_txt.Text, pokemon1IVsSPATK_txt.Text, pokemon1IVsSPDEF_txt.Text,
-                                       pokemon1EVsHP_txt.Text, pokemon1EVsATK_txt.Text, pokemon1EVsDEF_txt.Text, pokemon1EVsSPD_txt.Text, pokemon1EVsSPATK_txt.Text, pokemon1EVsSPDEF_txt.Text)
+                If numPoké_cmb.SelectedIndex >= 0 Then
+                    preview_rtb.Text &= Generator.essentials18(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text,
+                                           Integer.Parse(pokemon1Level_txtBox.Text), pokemon1Ability_cmb.Text, pokemon1Gender_cmb.Text, Integer.Parse(pokemon1Form_txtBox.Text),
+                                           pokemon1Nature_cmb.Text, pokemon1Happiness_txtBox.Text, pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked,
+                                           pokemon1SuperShiny_chkBox.Checked, pokemon1Shadow_rad.Checked,
+                                           pokemon1IVsHP_txt.Text, pokemon1IVsATK_txt.Text, pokemon1IVsDEF_txt.Text, pokemon1IVsSPD_txt.Text, pokemon1IVsSPATK_txt.Text, pokemon1IVsSPDEF_txt.Text,
+                                           pokemon1EVsHP_txt.Text, pokemon1EVsATK_txt.Text, pokemon1EVsDEF_txt.Text, pokemon1EVsSPD_txt.Text, pokemon1EVsSPATK_txt.Text, pokemon1EVsSPDEF_txt.Text)
+                End If
+
+                ' Pokemon2
+                If numPoké_cmb.SelectedIndex >= 1 Then
+                    preview_rtb.Text &= ""
+                End If
+
+                ' Pokemon3
+                If numPoké_cmb.SelectedIndex >= 2 Then
+                    preview_rtb.Text &= ""
+                End If
+
+                ' Pokemon4
+                If numPoké_cmb.SelectedIndex >= 3 Then
+                    preview_rtb.Text &= ""
+                End If
+
+                ' Pokemon5
+                If numPoké_cmb.SelectedIndex >= 4 Then
+                    preview_rtb.Text &= ""
+                End If
+
+                ' Pokemon6
+                If numPoké_cmb.SelectedIndex = 5 Then
+                    preview_rtb.Text &= ""
+                End If
             Catch ex As Exception
                 MessageBox.Show("There was an error when generating the team. Please make sure there are only numbers in the Level, Happiness, Form, IVs and EVs boxes.", "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error)
