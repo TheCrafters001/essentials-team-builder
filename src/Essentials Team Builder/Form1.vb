@@ -102,7 +102,7 @@ Public Class Form1
                 Generator.essentials18(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text,
                                        Integer.Parse(pokemon1Level_txtBox.Text), pokemon1Ability_cmb.Text, pokemon1Gender_cmb.Text, Integer.Parse(pokemon1Form_txtBox.Text),
                                        pokemon1Nature_cmb.Text, pokemon1Happiness_txtBox.Text, pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked,
-                                       pokemon1SuperShiny_chkBox.Checked,
+                                       pokemon1SuperShiny_chkBox.Checked, pokemon1Shadow_rad.checked,
                                        pokemon1IVsHP_txt.Text, pokemon1IVsATK_txt.Text, pokemon1IVsDEF_txt.Text, pokemon1IVsSPD_txt.Text, pokemon1IVsSPATK_txt.Text, pokemon1IVsSPDEF_txt.Text,
                                        pokemon1EVsHP_txt.Text, pokemon1EVsATK_txt.Text, pokemon1EVsDEF_txt.Text, pokemon1EVsSPD_txt.Text, pokemon1EVsSPATK_txt.Text, pokemon1EVsSPDEF_txt.Text)
             Catch ex As Exception

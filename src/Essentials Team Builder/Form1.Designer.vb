@@ -88,7 +88,7 @@ Partial Class Form1
         pokemon1Happiness_lbl = New Label()
         pokemon1Nature_cmb = New ComboBox()
         pokemon1Nature_lbl = New Label()
-        GroupBox1 = New GroupBox()
+        pokemon1Shiny_grp = New GroupBox()
         pokemon1SuperShiny_chkBox = New CheckBox()
         pokemon1Shiny_rad = New RadioButton()
         pokemon1NotShiny_rad = New RadioButton()
@@ -129,6 +129,9 @@ Partial Class Form1
         updatePreview_btn = New Button()
         properSpellingNote_lbl = New Label()
         Label2 = New Label()
+        pokemon1Shadow_grp = New GroupBox()
+        pokemon1Shadow_rad = New RadioButton()
+        pokemon1NotShadow_rad = New RadioButton()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -140,7 +143,7 @@ Partial Class Form1
         pokemon1_grp.SuspendLayout()
         pokemon1EVs_grp.SuspendLayout()
         pokemon1IVs_grp.SuspendLayout()
-        GroupBox1.SuspendLayout()
+        pokemon1Shiny_grp.SuspendLayout()
         pokemon1Moves_grp.SuspendLayout()
         pg_pkmn2.SuspendLayout()
         pg_pkmn3.SuspendLayout()
@@ -149,6 +152,7 @@ Partial Class Form1
         pg_pkmn6.SuspendLayout()
         pg_about.SuspendLayout()
         preview_grp.SuspendLayout()
+        pokemon1Shadow_grp.SuspendLayout()
         SuspendLayout()
         ' 
         ' editor_grp
@@ -459,6 +463,7 @@ Partial Class Form1
         ' 
         ' pokemon1_grp
         ' 
+        pokemon1_grp.Controls.Add(pokemon1Shadow_grp)
         pokemon1_grp.Controls.Add(pokemon1EVs_grp)
         pokemon1_grp.Controls.Add(pokemon1IVs_grp)
         pokemon1_grp.Controls.Add(pokemon1PokeballID_cmb)
@@ -469,7 +474,7 @@ Partial Class Form1
         pokemon1_grp.Controls.Add(pokemon1Happiness_lbl)
         pokemon1_grp.Controls.Add(pokemon1Nature_cmb)
         pokemon1_grp.Controls.Add(pokemon1Nature_lbl)
-        pokemon1_grp.Controls.Add(GroupBox1)
+        pokemon1_grp.Controls.Add(pokemon1Shiny_grp)
         pokemon1_grp.Controls.Add(pokemon1Form_txtBox)
         pokemon1_grp.Controls.Add(pokemon1Form_lbl)
         pokemon1_grp.Controls.Add(pokemon1Gender_cmb)
@@ -505,7 +510,7 @@ Partial Class Form1
         pokemon1EVs_grp.Controls.Add(pokemon1EVsATK_lbl)
         pokemon1EVs_grp.Controls.Add(pokemon1EVsHP_txt)
         pokemon1EVs_grp.Controls.Add(pokemon1EVsHP_lbl)
-        pokemon1EVs_grp.Location = New Point(564, 198)
+        pokemon1EVs_grp.Location = New Point(324, 154)
         pokemon1EVs_grp.Name = "pokemon1EVs_grp"
         pokemon1EVs_grp.Size = New Size(114, 156)
         pokemon1EVs_grp.TabIndex = 29
@@ -636,7 +641,7 @@ Partial Class Form1
         pokemon1IVs_grp.Controls.Add(pokemon1IVsATK_lbl)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsHP_txt)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsHP_lbl)
-        pokemon1IVs_grp.Location = New Point(444, 198)
+        pokemon1IVs_grp.Location = New Point(204, 154)
         pokemon1IVs_grp.Name = "pokemon1IVs_grp"
         pokemon1IVs_grp.Size = New Size(114, 188)
         pokemon1IVs_grp.TabIndex = 28
@@ -839,17 +844,17 @@ Partial Class Form1
         pokemon1Nature_lbl.TabIndex = 14
         pokemon1Nature_lbl.Text = "Nature"
         ' 
-        ' GroupBox1
+        ' pokemon1Shiny_grp
         ' 
-        GroupBox1.Controls.Add(pokemon1SuperShiny_chkBox)
-        GroupBox1.Controls.Add(pokemon1Shiny_rad)
-        GroupBox1.Controls.Add(pokemon1NotShiny_rad)
-        GroupBox1.Location = New Point(444, 110)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(273, 82)
-        GroupBox1.TabIndex = 13
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "Shiny"
+        pokemon1Shiny_grp.Controls.Add(pokemon1SuperShiny_chkBox)
+        pokemon1Shiny_grp.Controls.Add(pokemon1Shiny_rad)
+        pokemon1Shiny_grp.Controls.Add(pokemon1NotShiny_rad)
+        pokemon1Shiny_grp.Location = New Point(444, 110)
+        pokemon1Shiny_grp.Name = "pokemon1Shiny_grp"
+        pokemon1Shiny_grp.Size = New Size(273, 82)
+        pokemon1Shiny_grp.TabIndex = 13
+        pokemon1Shiny_grp.TabStop = False
+        pokemon1Shiny_grp.Text = "Shiny"
         ' 
         ' pokemon1SuperShiny_chkBox
         ' 
@@ -1246,6 +1251,39 @@ Partial Class Form1
         Label2.TabIndex = 25
         Label2.Text = "Moves and Items MUST be one word. (ie: Fire Blast = FireBlast). Leave IVs and EVs 0 if you don't want to set them, or don't know how to use them."
         ' 
+        ' pokemon1Shadow_grp
+        ' 
+        pokemon1Shadow_grp.Controls.Add(pokemon1Shadow_rad)
+        pokemon1Shadow_grp.Controls.Add(pokemon1NotShadow_rad)
+        pokemon1Shadow_grp.Location = New Point(444, 198)
+        pokemon1Shadow_grp.Name = "pokemon1Shadow_grp"
+        pokemon1Shadow_grp.Size = New Size(273, 82)
+        pokemon1Shadow_grp.TabIndex = 30
+        pokemon1Shadow_grp.TabStop = False
+        pokemon1Shadow_grp.Text = "Shadow"
+        ' 
+        ' pokemon1Shadow_rad
+        ' 
+        pokemon1Shadow_rad.AutoSize = True
+        pokemon1Shadow_rad.Location = New Point(6, 47)
+        pokemon1Shadow_rad.Name = "pokemon1Shadow_rad"
+        pokemon1Shadow_rad.Size = New Size(67, 19)
+        pokemon1Shadow_rad.TabIndex = 1
+        pokemon1Shadow_rad.Text = "Shadow"
+        pokemon1Shadow_rad.UseVisualStyleBackColor = True
+        ' 
+        ' pokemon1NotShadow_rad
+        ' 
+        pokemon1NotShadow_rad.AutoSize = True
+        pokemon1NotShadow_rad.Checked = True
+        pokemon1NotShadow_rad.Location = New Point(6, 22)
+        pokemon1NotShadow_rad.Name = "pokemon1NotShadow_rad"
+        pokemon1NotShadow_rad.Size = New Size(90, 19)
+        pokemon1NotShadow_rad.TabIndex = 0
+        pokemon1NotShadow_rad.TabStop = True
+        pokemon1NotShadow_rad.Text = "Not Shadow"
+        pokemon1NotShadow_rad.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1275,8 +1313,8 @@ Partial Class Form1
         pokemon1EVs_grp.PerformLayout()
         pokemon1IVs_grp.ResumeLayout(False)
         pokemon1IVs_grp.PerformLayout()
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
+        pokemon1Shiny_grp.ResumeLayout(False)
+        pokemon1Shiny_grp.PerformLayout()
         pokemon1Moves_grp.ResumeLayout(False)
         pokemon1Moves_grp.PerformLayout()
         pg_pkmn2.ResumeLayout(False)
@@ -1287,6 +1325,8 @@ Partial Class Form1
         pg_about.ResumeLayout(False)
         pg_about.PerformLayout()
         preview_grp.ResumeLayout(False)
+        pokemon1Shadow_grp.ResumeLayout(False)
+        pokemon1Shadow_grp.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -1352,7 +1392,7 @@ Partial Class Form1
     Friend WithEvents pokemon1Gender_lbl As Label
     Friend WithEvents pokemon1Form_txtBox As TextBox
     Friend WithEvents pokemon1Form_lbl As Label
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents pokemon1Shiny_grp As GroupBox
     Friend WithEvents pokemon1SuperShiny_chkBox As CheckBox
     Friend WithEvents pokemon1Shiny_rad As RadioButton
     Friend WithEvents pokemon1NotShiny_rad As RadioButton
@@ -1397,4 +1437,7 @@ Partial Class Form1
     Friend WithEvents copyright_lbl As Label
     Friend WithEvents aboutHeaderAuthor_lbl As Label
     Friend WithEvents aboutInfo_lbl As Label
+    Friend WithEvents pokemon1Shadow_grp As GroupBox
+    Friend WithEvents pokemon1Shadow_rad As RadioButton
+    Friend WithEvents pokemon1NotShadow_rad As RadioButton
 End Class

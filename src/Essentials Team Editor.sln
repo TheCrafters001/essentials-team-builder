@@ -25,6 +25,8 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Essentials Team Builder", "
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "teamGen", "teamGen\teamGen.vbproj", "{16515FC2-7420-4D5E-96AE-DDBFA2B8C5E5}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "teamBuilderConsole", "teamBuilderConsole\teamBuilderConsole.vbproj", "{4983DDC8-CFEB-4F00-885C-977841121CA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{16515FC2-7420-4D5E-96AE-DDBFA2B8C5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16515FC2-7420-4D5E-96AE-DDBFA2B8C5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16515FC2-7420-4D5E-96AE-DDBFA2B8C5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4983DDC8-CFEB-4F00-885C-977841121CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4983DDC8-CFEB-4F00-885C-977841121CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4983DDC8-CFEB-4F00-885C-977841121CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4983DDC8-CFEB-4F00-885C-977841121CA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +72,7 @@ Global
 		{F6346424-F4CA-4CDF-9940-7B04AF386488} = {7A44A758-E3DB-4474-85E7-BD8B4B74D294}
 		{DB7F2F33-36CE-41EE-9354-CEE488FE59E2} = {6C7219F1-E0FC-42A9-8BF7-FF8D4043ED94}
 		{16515FC2-7420-4D5E-96AE-DDBFA2B8C5E5} = {6C7219F1-E0FC-42A9-8BF7-FF8D4043ED94}
+		{4983DDC8-CFEB-4F00-885C-977841121CA0} = {6C7219F1-E0FC-42A9-8BF7-FF8D4043ED94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF717D5B-A974-4F07-923E-20DB7171AF07}

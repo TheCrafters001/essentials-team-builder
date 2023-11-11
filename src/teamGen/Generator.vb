@@ -4,7 +4,7 @@ Public Class Generator
     ''' Used for generating the Pokemon. This generates in the format of Essentials 18, or higher.
     ''' </summary>
     ''' <param name="pkmnName">Get the name of the Pokemon</param>
-    ''' <param name="heldItems">Get the Held Item of the Pokemon</param>
+    ''' <param name="heldItem">Get the Held Item of the Pokemon</param>
     ''' <param name="lvl">Get the Level of the Pokemon</param>
     ''' <param name="ability">Get the Ability of the Pokemon</param>
     ''' <param name="pkmnGender">Get the gender of the Pokemon</param>
@@ -15,6 +15,7 @@ Public Class Generator
     ''' <param name="pokeBall">Get the PokeBall of the Pokemon</param>
     ''' <param name="shiny">Get the Shiny of the Pokemon. Pass only a Boolean.</param>
     ''' <param name="superShiny">Get the Super Shiny of the Pokemon. Pass only a Boolean.</param>
+    ''' <param name="shadow">Get the shadow of the Pokemon. Pass only a Boolean.</param>
     ''' 
     ''' <param name="ivHP">Get the HP IV for the Pokemon. Pass only an integer.</param>
     ''' <param name="ivATK">Get the ATK IV for the Pokemon. Pass only an integer.</param>
@@ -30,10 +31,11 @@ Public Class Generator
     ''' <param name="evSPATK">Get the SPATK EV for the Pokemon. Pass only an integer.</param>
     ''' <param name="evSPDEF">Get the SPDEF EV for the Pokemon. Pass only an integer.</param>
     ''' <returns>A formatted string that should be added to the output.</returns>
-    Public Shared Function essentials18(ByVal pkmnName As String, ByVal heldItems As String, ByVal lvl As Integer,
+    Public Shared Function essentials18(ByVal pkmnName As String, ByVal heldItem As String, ByVal lvl As Integer,
                                    ByVal ability As String, ByVal pkmnGender As String, ByVal form As String,
                                    ByVal nature As String, ByVal happiness As Integer, ByVal nickname As String,
                                    ByVal pokeBall As String, ByVal shiny As Boolean, ByVal superShiny As Boolean,
+                                   ByVal shadow As Boolean,
                                    ByVal ivHP As Integer, ByVal ivATK As Integer, ByVal ivDEF As Integer,
                                    ByVal ivSPD As Integer, ByVal ivSPATK As Integer, ByVal ivSPDEF As Integer,
                                    ByVal evHP As Integer, ByVal evATK As Integer, ByVal evDEF As Integer,
@@ -42,6 +44,22 @@ Public Class Generator
 
         Try
 
+            ' Used for indenting stuff.
+            ' Honestly makes soring easier for me.
+            Dim Indent As String = "    "
+
+            ' Pokemon = POKEMON,lvl
+            Dim pkmn As String = "Pokemon = " & pkmnName.ToUpper & "," & lvl & vbCrLf
+
+            ' Name = nickname
+            Dim name As String = ""
+            If Not nickname = "" Then
+                name = Indent & "Name = " & nickname & vbCrLf
+            End If
+
+            ' Item = heldItem
+
+            output = pkmn & name
         Catch ex As Exception
             Console.WriteLine("There was an error when generating the team. Please make sure there are only numbers in the Level, Happiness, Form, IVs and EVs boxes." & vbCrLf & ex.Message)
         End Try
@@ -54,7 +72,7 @@ Public Class Generator
     ''' Used for generating the Pokemon. This generates in the format of Essentials 17, or higher.
     ''' </summary>
     ''' <param name="pkmnName">Get the name of the Pokemon</param>
-    ''' <param name="heldItems">Get the Held Item of the Pokemon</param>
+    ''' <param name="heldItem">Get the Held Item of the Pokemon</param>
     ''' <param name="lvl">Get the Level of the Pokemon</param>
     ''' <param name="ability">Get the Ability of the Pokemon</param>
     ''' <param name="pkmnGender">Get the gender of the Pokemon</param>
@@ -64,6 +82,7 @@ Public Class Generator
     ''' <param name="nickname">Get the nickname of the Pokemon</param>
     ''' <param name="pokeBall">Get the PokeBall of the Pokemon</param>
     ''' <param name="shiny">Get the Shiny of the Pokemon. Pass only a Boolean.</param>
+    ''' <param name="shadow">Get the shadow of the Pokemon. Pass only a Boolean.</param>
     ''' 
     ''' <param name="ivHP">Get the HP IV for the Pokemon. Pass only an integer.</param>
     ''' <param name="ivATK">Get the ATK IV for the Pokemon. Pass only an integer.</param>
@@ -79,10 +98,10 @@ Public Class Generator
     ''' <param name="evSPATK">Get the SPATK EV for the Pokemon. Pass only an integer.</param>
     ''' <param name="evSPDEF">Get the SPDEF EV for the Pokemon. Pass only an integer.</param>
     ''' <returns>A formatted string that should be added to the output.</returns>
-    Public Shared Function essentials17(ByVal pkmnName As String, ByVal heldItems As String, ByVal lvl As Integer,
+    Public Shared Function essentials17(ByVal pkmnName As String, ByVal heldItem As String, ByVal lvl As Integer,
                                    ByVal ability As String, ByVal pkmnGender As String, ByVal form As String,
                                    ByVal nature As String, ByVal happiness As Integer, ByVal nickname As String,
-                                   ByVal pokeBall As String, ByVal shiny As Boolean,
+                                   ByVal pokeBall As String, ByVal shiny As Boolean, ByVal shadow As Boolean,
                                    ByVal ivHP As Integer, ByVal ivATK As Integer, ByVal ivDEF As Integer,
                                    ByVal ivSPD As Integer, ByVal ivSPATK As Integer, ByVal ivSPDEF As Integer,
                                    ByVal evHP As Integer, ByVal evATK As Integer, ByVal evDEF As Integer,
