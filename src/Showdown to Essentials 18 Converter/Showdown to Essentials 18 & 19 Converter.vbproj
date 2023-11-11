@@ -30,7 +30,7 @@
     <Copyright>Copyright © TheCrafters001 2022-2023</Copyright>
     <PackageIcon>Showdown to Essentials_19.png</PackageIcon>
     <RepositoryUrl>https://github.com/TheCrafters001/showdown-to-essentials</RepositoryUrl>
-    <Version>3.2.1</Version>
+    <Version>3.2.2</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
