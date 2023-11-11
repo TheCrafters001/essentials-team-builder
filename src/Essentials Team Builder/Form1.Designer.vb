@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         editor_grp = New GroupBox()
         editor_tab = New TabControl()
         pg_trainer = New TabPage()
@@ -52,34 +53,34 @@ Partial Class Form1
         pg_pkmn1 = New TabPage()
         pokemon1_grp = New GroupBox()
         pokemon1EVs_grp = New GroupBox()
-        pokemonOneEVsDEF_txt = New TextBox()
-        pokemonOneEVsDEF_lbl = New Label()
-        pokemonOneEVsSPDEF_txt = New TextBox()
-        pokemonOneEVsSPDEF_lbl = New Label()
-        pokemonOneEVsSPATK_txt = New TextBox()
-        pokemonOneEVsSPATK_lbl = New Label()
-        pokemonOneEVsSPD_txt = New TextBox()
-        pokemonOneEVsSPD_lbl = New Label()
-        pokemonOneEVsATK_txt = New TextBox()
-        pokemonOneEVsATK_lbl = New Label()
-        pokemonOneEVsHP_txt = New TextBox()
-        pokemonOneEVsHP_lbl = New Label()
+        pokemon1EVsDEF_txt = New TextBox()
+        pokemon1EVsDEF_lbl = New Label()
+        pokemon1EVsSPDEF_txt = New TextBox()
+        pokemon1EVsSPDEF_lbl = New Label()
+        pokemon1EVsSPATK_txt = New TextBox()
+        pokemon1EVsSPATK_lbl = New Label()
+        pokemon1EVsSPD_txt = New TextBox()
+        pokemon1EVsSPD_lbl = New Label()
+        pokemon1EVsATK_txt = New TextBox()
+        pokemon1EVsATK_lbl = New Label()
+        pokemon1EVsHP_txt = New TextBox()
+        pokemon1EVsHP_lbl = New Label()
         pokemon1IVs_grp = New GroupBox()
         pokemon1RandomIVs_btn = New Button()
         pokemon1MaxIVs_btn = New Button()
         pokemon1IVsDEF_txt = New TextBox()
         pokemon1IVsDEF_lbl = New Label()
-        pokemonOneIVsSPDEF_txt = New TextBox()
-        pokemonOneIVsSPDEF_lbl = New Label()
-        pokemonOneIVsSPATK_txt = New TextBox()
-        pokemonOneIVsSPATK_lbl = New Label()
-        pokemonOneIVsSPD_txt = New TextBox()
-        pokemonOneIVsSPD_lbl = New Label()
+        pokemon1IVsSPDEF_txt = New TextBox()
+        pokemon1IVsSPDEF_lbl = New Label()
+        pokemon1IVsSPATK_txt = New TextBox()
+        pokemon1IVsSPATK_lbl = New Label()
+        pokemon1IVsSPD_txt = New TextBox()
+        pokemon1IVsSPD_lbl = New Label()
         pokemon1IVsATK_txt = New TextBox()
         pokemon1IVsATK_lbl = New Label()
         pokemon1IVsHP_txt = New TextBox()
         pokemon1IVsHP_lbl = New Label()
-        pokemonOnePokeballID_cmb = New ComboBox()
+        pokemon1PokeballID_cmb = New ComboBox()
         pokemon1Ball_lbl = New Label()
         pokemon1Nickname_txtBox = New TextBox()
         pokemon1Nickname_lbl = New Label()
@@ -118,15 +119,16 @@ Partial Class Form1
         pokemon5_grp = New GroupBox()
         pg_pkmn6 = New TabPage()
         pokemon6_grp = New GroupBox()
+        pg_about = New TabPage()
+        aboutInfo_lbl = New Label()
+        copyright_lbl = New Label()
+        aboutHeaderAuthor_lbl = New Label()
+        aboutHeader_lbl = New Label()
         preview_grp = New GroupBox()
         preview_rtb = New RichTextBox()
         updatePreview_btn = New Button()
         properSpellingNote_lbl = New Label()
         Label2 = New Label()
-        pg_about = New TabPage()
-        aboutHeader_lbl = New Label()
-        aboutHeaderAuthor_lbl = New Label()
-        copyright_lbl = New Label()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -145,8 +147,8 @@ Partial Class Form1
         pg_pkmn4.SuspendLayout()
         pg_pkmn5.SuspendLayout()
         pg_pkmn6.SuspendLayout()
-        preview_grp.SuspendLayout()
         pg_about.SuspendLayout()
+        preview_grp.SuspendLayout()
         SuspendLayout()
         ' 
         ' editor_grp
@@ -459,7 +461,7 @@ Partial Class Form1
         ' 
         pokemon1_grp.Controls.Add(pokemon1EVs_grp)
         pokemon1_grp.Controls.Add(pokemon1IVs_grp)
-        pokemon1_grp.Controls.Add(pokemonOnePokeballID_cmb)
+        pokemon1_grp.Controls.Add(pokemon1PokeballID_cmb)
         pokemon1_grp.Controls.Add(pokemon1Ball_lbl)
         pokemon1_grp.Controls.Add(pokemon1Nickname_txtBox)
         pokemon1_grp.Controls.Add(pokemon1Nickname_lbl)
@@ -491,132 +493,132 @@ Partial Class Form1
         ' 
         ' pokemon1EVs_grp
         ' 
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsDEF_txt)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsDEF_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsSPDEF_txt)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsSPDEF_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsSPATK_txt)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsSPATK_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsSPD_txt)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsSPD_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsATK_txt)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsATK_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsHP_txt)
-        pokemon1EVs_grp.Controls.Add(pokemonOneEVsHP_lbl)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsDEF_txt)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsDEF_lbl)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsSPDEF_txt)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsSPDEF_lbl)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsSPATK_txt)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsSPATK_lbl)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsSPD_txt)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsSPD_lbl)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsATK_txt)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsATK_lbl)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsHP_txt)
+        pokemon1EVs_grp.Controls.Add(pokemon1EVsHP_lbl)
         pokemon1EVs_grp.Location = New Point(564, 198)
         pokemon1EVs_grp.Name = "pokemon1EVs_grp"
-        pokemon1EVs_grp.Size = New Size(122, 188)
+        pokemon1EVs_grp.Size = New Size(114, 156)
         pokemon1EVs_grp.TabIndex = 29
         pokemon1EVs_grp.TabStop = False
-        pokemon1EVs_grp.Text = "EVs (Max 252 Each)"
+        pokemon1EVs_grp.Text = "EVs"
         ' 
-        ' pokemonOneEVsDEF_txt
+        ' pokemon1EVsDEF_txt
         ' 
-        pokemonOneEVsDEF_txt.Location = New Point(6, 125)
-        pokemonOneEVsDEF_txt.MaxLength = 3
-        pokemonOneEVsDEF_txt.Name = "pokemonOneEVsDEF_txt"
-        pokemonOneEVsDEF_txt.Size = New Size(44, 23)
-        pokemonOneEVsDEF_txt.TabIndex = 11
-        pokemonOneEVsDEF_txt.Text = "0"
+        pokemon1EVsDEF_txt.Location = New Point(6, 125)
+        pokemon1EVsDEF_txt.MaxLength = 3
+        pokemon1EVsDEF_txt.Name = "pokemon1EVsDEF_txt"
+        pokemon1EVsDEF_txt.Size = New Size(44, 23)
+        pokemon1EVsDEF_txt.TabIndex = 11
+        pokemon1EVsDEF_txt.Text = "0"
         ' 
-        ' pokemonOneEVsDEF_lbl
+        ' pokemon1EVsDEF_lbl
         ' 
-        pokemonOneEVsDEF_lbl.AutoSize = True
-        pokemonOneEVsDEF_lbl.Location = New Point(14, 107)
-        pokemonOneEVsDEF_lbl.Name = "pokemonOneEVsDEF_lbl"
-        pokemonOneEVsDEF_lbl.Size = New Size(27, 15)
-        pokemonOneEVsDEF_lbl.TabIndex = 10
-        pokemonOneEVsDEF_lbl.Text = "DEF"
+        pokemon1EVsDEF_lbl.AutoSize = True
+        pokemon1EVsDEF_lbl.Location = New Point(14, 107)
+        pokemon1EVsDEF_lbl.Name = "pokemon1EVsDEF_lbl"
+        pokemon1EVsDEF_lbl.Size = New Size(27, 15)
+        pokemon1EVsDEF_lbl.TabIndex = 10
+        pokemon1EVsDEF_lbl.Text = "DEF"
         ' 
-        ' pokemonOneEVsSPDEF_txt
+        ' pokemon1EVsSPDEF_txt
         ' 
-        pokemonOneEVsSPDEF_txt.Location = New Point(55, 125)
-        pokemonOneEVsSPDEF_txt.MaxLength = 3
-        pokemonOneEVsSPDEF_txt.Name = "pokemonOneEVsSPDEF_txt"
-        pokemonOneEVsSPDEF_txt.Size = New Size(44, 23)
-        pokemonOneEVsSPDEF_txt.TabIndex = 9
-        pokemonOneEVsSPDEF_txt.Text = "0"
+        pokemon1EVsSPDEF_txt.Location = New Point(55, 125)
+        pokemon1EVsSPDEF_txt.MaxLength = 3
+        pokemon1EVsSPDEF_txt.Name = "pokemon1EVsSPDEF_txt"
+        pokemon1EVsSPDEF_txt.Size = New Size(44, 23)
+        pokemon1EVsSPDEF_txt.TabIndex = 9
+        pokemon1EVsSPDEF_txt.Text = "0"
         ' 
-        ' pokemonOneEVsSPDEF_lbl
+        ' pokemon1EVsSPDEF_lbl
         ' 
-        pokemonOneEVsSPDEF_lbl.AutoSize = True
-        pokemonOneEVsSPDEF_lbl.Location = New Point(55, 109)
-        pokemonOneEVsSPDEF_lbl.Name = "pokemonOneEVsSPDEF_lbl"
-        pokemonOneEVsSPDEF_lbl.Size = New Size(40, 15)
-        pokemonOneEVsSPDEF_lbl.TabIndex = 8
-        pokemonOneEVsSPDEF_lbl.Text = "SPDEF"
+        pokemon1EVsSPDEF_lbl.AutoSize = True
+        pokemon1EVsSPDEF_lbl.Location = New Point(55, 109)
+        pokemon1EVsSPDEF_lbl.Name = "pokemon1EVsSPDEF_lbl"
+        pokemon1EVsSPDEF_lbl.Size = New Size(40, 15)
+        pokemon1EVsSPDEF_lbl.TabIndex = 8
+        pokemon1EVsSPDEF_lbl.Text = "SPDEF"
         ' 
-        ' pokemonOneEVsSPATK_txt
+        ' pokemon1EVsSPATK_txt
         ' 
-        pokemonOneEVsSPATK_txt.Location = New Point(55, 81)
-        pokemonOneEVsSPATK_txt.MaxLength = 3
-        pokemonOneEVsSPATK_txt.Name = "pokemonOneEVsSPATK_txt"
-        pokemonOneEVsSPATK_txt.Size = New Size(44, 23)
-        pokemonOneEVsSPATK_txt.TabIndex = 7
-        pokemonOneEVsSPATK_txt.Text = "0"
+        pokemon1EVsSPATK_txt.Location = New Point(55, 81)
+        pokemon1EVsSPATK_txt.MaxLength = 3
+        pokemon1EVsSPATK_txt.Name = "pokemon1EVsSPATK_txt"
+        pokemon1EVsSPATK_txt.Size = New Size(44, 23)
+        pokemon1EVsSPATK_txt.TabIndex = 7
+        pokemon1EVsSPATK_txt.Text = "0"
         ' 
-        ' pokemonOneEVsSPATK_lbl
+        ' pokemon1EVsSPATK_lbl
         ' 
-        pokemonOneEVsSPATK_lbl.AutoSize = True
-        pokemonOneEVsSPATK_lbl.Location = New Point(56, 65)
-        pokemonOneEVsSPATK_lbl.Name = "pokemonOneEVsSPATK_lbl"
-        pokemonOneEVsSPATK_lbl.Size = New Size(39, 15)
-        pokemonOneEVsSPATK_lbl.TabIndex = 6
-        pokemonOneEVsSPATK_lbl.Text = "SPATK"
+        pokemon1EVsSPATK_lbl.AutoSize = True
+        pokemon1EVsSPATK_lbl.Location = New Point(56, 65)
+        pokemon1EVsSPATK_lbl.Name = "pokemon1EVsSPATK_lbl"
+        pokemon1EVsSPATK_lbl.Size = New Size(39, 15)
+        pokemon1EVsSPATK_lbl.TabIndex = 6
+        pokemon1EVsSPATK_lbl.Text = "SPATK"
         ' 
-        ' pokemonOneEVsSPD_txt
+        ' pokemon1EVsSPD_txt
         ' 
-        pokemonOneEVsSPD_txt.Location = New Point(55, 37)
-        pokemonOneEVsSPD_txt.MaxLength = 3
-        pokemonOneEVsSPD_txt.Name = "pokemonOneEVsSPD_txt"
-        pokemonOneEVsSPD_txt.Size = New Size(44, 23)
-        pokemonOneEVsSPD_txt.TabIndex = 5
-        pokemonOneEVsSPD_txt.Text = "0"
+        pokemon1EVsSPD_txt.Location = New Point(55, 37)
+        pokemon1EVsSPD_txt.MaxLength = 3
+        pokemon1EVsSPD_txt.Name = "pokemon1EVsSPD_txt"
+        pokemon1EVsSPD_txt.Size = New Size(44, 23)
+        pokemon1EVsSPD_txt.TabIndex = 5
+        pokemon1EVsSPD_txt.Text = "0"
         ' 
-        ' pokemonOneEVsSPD_lbl
+        ' pokemon1EVsSPD_lbl
         ' 
-        pokemonOneEVsSPD_lbl.AutoSize = True
-        pokemonOneEVsSPD_lbl.Location = New Point(63, 21)
-        pokemonOneEVsSPD_lbl.Name = "pokemonOneEVsSPD_lbl"
-        pokemonOneEVsSPD_lbl.Size = New Size(28, 15)
-        pokemonOneEVsSPD_lbl.TabIndex = 4
-        pokemonOneEVsSPD_lbl.Text = "SPD"
+        pokemon1EVsSPD_lbl.AutoSize = True
+        pokemon1EVsSPD_lbl.Location = New Point(63, 21)
+        pokemon1EVsSPD_lbl.Name = "pokemon1EVsSPD_lbl"
+        pokemon1EVsSPD_lbl.Size = New Size(28, 15)
+        pokemon1EVsSPD_lbl.TabIndex = 4
+        pokemon1EVsSPD_lbl.Text = "SPD"
         ' 
-        ' pokemonOneEVsATK_txt
+        ' pokemon1EVsATK_txt
         ' 
-        pokemonOneEVsATK_txt.Location = New Point(6, 81)
-        pokemonOneEVsATK_txt.MaxLength = 3
-        pokemonOneEVsATK_txt.Name = "pokemonOneEVsATK_txt"
-        pokemonOneEVsATK_txt.Size = New Size(44, 23)
-        pokemonOneEVsATK_txt.TabIndex = 3
-        pokemonOneEVsATK_txt.Text = "0"
+        pokemon1EVsATK_txt.Location = New Point(6, 81)
+        pokemon1EVsATK_txt.MaxLength = 3
+        pokemon1EVsATK_txt.Name = "pokemon1EVsATK_txt"
+        pokemon1EVsATK_txt.Size = New Size(44, 23)
+        pokemon1EVsATK_txt.TabIndex = 3
+        pokemon1EVsATK_txt.Text = "0"
         ' 
-        ' pokemonOneEVsATK_lbl
+        ' pokemon1EVsATK_lbl
         ' 
-        pokemonOneEVsATK_lbl.AutoSize = True
-        pokemonOneEVsATK_lbl.Location = New Point(14, 63)
-        pokemonOneEVsATK_lbl.Name = "pokemonOneEVsATK_lbl"
-        pokemonOneEVsATK_lbl.Size = New Size(27, 15)
-        pokemonOneEVsATK_lbl.TabIndex = 2
-        pokemonOneEVsATK_lbl.Text = "ATK"
+        pokemon1EVsATK_lbl.AutoSize = True
+        pokemon1EVsATK_lbl.Location = New Point(14, 63)
+        pokemon1EVsATK_lbl.Name = "pokemon1EVsATK_lbl"
+        pokemon1EVsATK_lbl.Size = New Size(27, 15)
+        pokemon1EVsATK_lbl.TabIndex = 2
+        pokemon1EVsATK_lbl.Text = "ATK"
         ' 
-        ' pokemonOneEVsHP_txt
+        ' pokemon1EVsHP_txt
         ' 
-        pokemonOneEVsHP_txt.Location = New Point(6, 37)
-        pokemonOneEVsHP_txt.MaxLength = 3
-        pokemonOneEVsHP_txt.Name = "pokemonOneEVsHP_txt"
-        pokemonOneEVsHP_txt.Size = New Size(44, 23)
-        pokemonOneEVsHP_txt.TabIndex = 1
-        pokemonOneEVsHP_txt.Text = "0"
+        pokemon1EVsHP_txt.Location = New Point(6, 37)
+        pokemon1EVsHP_txt.MaxLength = 3
+        pokemon1EVsHP_txt.Name = "pokemon1EVsHP_txt"
+        pokemon1EVsHP_txt.Size = New Size(44, 23)
+        pokemon1EVsHP_txt.TabIndex = 1
+        pokemon1EVsHP_txt.Text = "0"
         ' 
-        ' pokemonOneEVsHP_lbl
+        ' pokemon1EVsHP_lbl
         ' 
-        pokemonOneEVsHP_lbl.AutoSize = True
-        pokemonOneEVsHP_lbl.Location = New Point(16, 19)
-        pokemonOneEVsHP_lbl.Name = "pokemonOneEVsHP_lbl"
-        pokemonOneEVsHP_lbl.Size = New Size(23, 15)
-        pokemonOneEVsHP_lbl.TabIndex = 0
-        pokemonOneEVsHP_lbl.Text = "HP"
+        pokemon1EVsHP_lbl.AutoSize = True
+        pokemon1EVsHP_lbl.Location = New Point(16, 19)
+        pokemon1EVsHP_lbl.Name = "pokemon1EVsHP_lbl"
+        pokemon1EVsHP_lbl.Size = New Size(23, 15)
+        pokemon1EVsHP_lbl.TabIndex = 0
+        pokemon1EVsHP_lbl.Text = "HP"
         ' 
         ' pokemon1IVs_grp
         ' 
@@ -624,12 +626,12 @@ Partial Class Form1
         pokemon1IVs_grp.Controls.Add(pokemon1MaxIVs_btn)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsDEF_txt)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsDEF_lbl)
-        pokemon1IVs_grp.Controls.Add(pokemonOneIVsSPDEF_txt)
-        pokemon1IVs_grp.Controls.Add(pokemonOneIVsSPDEF_lbl)
-        pokemon1IVs_grp.Controls.Add(pokemonOneIVsSPATK_txt)
-        pokemon1IVs_grp.Controls.Add(pokemonOneIVsSPATK_lbl)
-        pokemon1IVs_grp.Controls.Add(pokemonOneIVsSPD_txt)
-        pokemon1IVs_grp.Controls.Add(pokemonOneIVsSPD_lbl)
+        pokemon1IVs_grp.Controls.Add(pokemon1IVsSPDEF_txt)
+        pokemon1IVs_grp.Controls.Add(pokemon1IVsSPDEF_lbl)
+        pokemon1IVs_grp.Controls.Add(pokemon1IVsSPATK_txt)
+        pokemon1IVs_grp.Controls.Add(pokemon1IVsSPATK_lbl)
+        pokemon1IVs_grp.Controls.Add(pokemon1IVsSPD_txt)
+        pokemon1IVs_grp.Controls.Add(pokemon1IVsSPD_lbl)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsATK_txt)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsATK_lbl)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsHP_txt)
@@ -677,59 +679,59 @@ Partial Class Form1
         pokemon1IVsDEF_lbl.TabIndex = 12
         pokemon1IVsDEF_lbl.Text = "DEF"
         ' 
-        ' pokemonOneIVsSPDEF_txt
+        ' pokemon1IVsSPDEF_txt
         ' 
-        pokemonOneIVsSPDEF_txt.Location = New Point(57, 123)
-        pokemonOneIVsSPDEF_txt.MaxLength = 3
-        pokemonOneIVsSPDEF_txt.Name = "pokemonOneIVsSPDEF_txt"
-        pokemonOneIVsSPDEF_txt.Size = New Size(44, 23)
-        pokemonOneIVsSPDEF_txt.TabIndex = 9
-        pokemonOneIVsSPDEF_txt.Text = "0"
+        pokemon1IVsSPDEF_txt.Location = New Point(57, 123)
+        pokemon1IVsSPDEF_txt.MaxLength = 3
+        pokemon1IVsSPDEF_txt.Name = "pokemon1IVsSPDEF_txt"
+        pokemon1IVsSPDEF_txt.Size = New Size(44, 23)
+        pokemon1IVsSPDEF_txt.TabIndex = 9
+        pokemon1IVsSPDEF_txt.Text = "0"
         ' 
-        ' pokemonOneIVsSPDEF_lbl
+        ' pokemon1IVsSPDEF_lbl
         ' 
-        pokemonOneIVsSPDEF_lbl.AutoSize = True
-        pokemonOneIVsSPDEF_lbl.Location = New Point(59, 105)
-        pokemonOneIVsSPDEF_lbl.Name = "pokemonOneIVsSPDEF_lbl"
-        pokemonOneIVsSPDEF_lbl.Size = New Size(40, 15)
-        pokemonOneIVsSPDEF_lbl.TabIndex = 8
-        pokemonOneIVsSPDEF_lbl.Text = "SPDEF"
+        pokemon1IVsSPDEF_lbl.AutoSize = True
+        pokemon1IVsSPDEF_lbl.Location = New Point(59, 105)
+        pokemon1IVsSPDEF_lbl.Name = "pokemon1IVsSPDEF_lbl"
+        pokemon1IVsSPDEF_lbl.Size = New Size(40, 15)
+        pokemon1IVsSPDEF_lbl.TabIndex = 8
+        pokemon1IVsSPDEF_lbl.Text = "SPDEF"
         ' 
-        ' pokemonOneIVsSPATK_txt
+        ' pokemon1IVsSPATK_txt
         ' 
-        pokemonOneIVsSPATK_txt.Location = New Point(57, 79)
-        pokemonOneIVsSPATK_txt.MaxLength = 3
-        pokemonOneIVsSPATK_txt.Name = "pokemonOneIVsSPATK_txt"
-        pokemonOneIVsSPATK_txt.Size = New Size(44, 23)
-        pokemonOneIVsSPATK_txt.TabIndex = 7
-        pokemonOneIVsSPATK_txt.Text = "0"
+        pokemon1IVsSPATK_txt.Location = New Point(57, 79)
+        pokemon1IVsSPATK_txt.MaxLength = 3
+        pokemon1IVsSPATK_txt.Name = "pokemon1IVsSPATK_txt"
+        pokemon1IVsSPATK_txt.Size = New Size(44, 23)
+        pokemon1IVsSPATK_txt.TabIndex = 7
+        pokemon1IVsSPATK_txt.Text = "0"
         ' 
-        ' pokemonOneIVsSPATK_lbl
+        ' pokemon1IVsSPATK_lbl
         ' 
-        pokemonOneIVsSPATK_lbl.AutoSize = True
-        pokemonOneIVsSPATK_lbl.Location = New Point(59, 61)
-        pokemonOneIVsSPATK_lbl.Name = "pokemonOneIVsSPATK_lbl"
-        pokemonOneIVsSPATK_lbl.Size = New Size(39, 15)
-        pokemonOneIVsSPATK_lbl.TabIndex = 6
-        pokemonOneIVsSPATK_lbl.Text = "SPATK"
+        pokemon1IVsSPATK_lbl.AutoSize = True
+        pokemon1IVsSPATK_lbl.Location = New Point(59, 61)
+        pokemon1IVsSPATK_lbl.Name = "pokemon1IVsSPATK_lbl"
+        pokemon1IVsSPATK_lbl.Size = New Size(39, 15)
+        pokemon1IVsSPATK_lbl.TabIndex = 6
+        pokemon1IVsSPATK_lbl.Text = "SPATK"
         ' 
-        ' pokemonOneIVsSPD_txt
+        ' pokemon1IVsSPD_txt
         ' 
-        pokemonOneIVsSPD_txt.Location = New Point(57, 35)
-        pokemonOneIVsSPD_txt.MaxLength = 3
-        pokemonOneIVsSPD_txt.Name = "pokemonOneIVsSPD_txt"
-        pokemonOneIVsSPD_txt.Size = New Size(44, 23)
-        pokemonOneIVsSPD_txt.TabIndex = 5
-        pokemonOneIVsSPD_txt.Text = "0"
+        pokemon1IVsSPD_txt.Location = New Point(57, 35)
+        pokemon1IVsSPD_txt.MaxLength = 3
+        pokemon1IVsSPD_txt.Name = "pokemon1IVsSPD_txt"
+        pokemon1IVsSPD_txt.Size = New Size(44, 23)
+        pokemon1IVsSPD_txt.TabIndex = 5
+        pokemon1IVsSPD_txt.Text = "0"
         ' 
-        ' pokemonOneIVsSPD_lbl
+        ' pokemon1IVsSPD_lbl
         ' 
-        pokemonOneIVsSPD_lbl.AutoSize = True
-        pokemonOneIVsSPD_lbl.Location = New Point(65, 17)
-        pokemonOneIVsSPD_lbl.Name = "pokemonOneIVsSPD_lbl"
-        pokemonOneIVsSPD_lbl.Size = New Size(28, 15)
-        pokemonOneIVsSPD_lbl.TabIndex = 4
-        pokemonOneIVsSPD_lbl.Text = "SPD"
+        pokemon1IVsSPD_lbl.AutoSize = True
+        pokemon1IVsSPD_lbl.Location = New Point(65, 17)
+        pokemon1IVsSPD_lbl.Name = "pokemon1IVsSPD_lbl"
+        pokemon1IVsSPD_lbl.Size = New Size(28, 15)
+        pokemon1IVsSPD_lbl.TabIndex = 4
+        pokemon1IVsSPD_lbl.Text = "SPD"
         ' 
         ' pokemon1IVsATK_txt
         ' 
@@ -767,14 +769,14 @@ Partial Class Form1
         pokemon1IVsHP_lbl.TabIndex = 0
         pokemon1IVsHP_lbl.Text = "HP"
         ' 
-        ' pokemonOnePokeballID_cmb
+        ' pokemon1PokeballID_cmb
         ' 
-        pokemonOnePokeballID_cmb.FormattingEnabled = True
-        pokemonOnePokeballID_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
-        pokemonOnePokeballID_cmb.Location = New Point(6, 169)
-        pokemonOnePokeballID_cmb.Name = "pokemonOnePokeballID_cmb"
-        pokemonOnePokeballID_cmb.Size = New Size(140, 23)
-        pokemonOnePokeballID_cmb.TabIndex = 21
+        pokemon1PokeballID_cmb.FormattingEnabled = True
+        pokemon1PokeballID_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
+        pokemon1PokeballID_cmb.Location = New Point(6, 169)
+        pokemon1PokeballID_cmb.Name = "pokemon1PokeballID_cmb"
+        pokemon1PokeballID_cmb.Size = New Size(140, 23)
+        pokemon1PokeballID_cmb.TabIndex = 21
         ' 
         ' pokemon1Ball_lbl
         ' 
@@ -852,6 +854,7 @@ Partial Class Form1
         ' pokemon1SuperShiny_chkBox
         ' 
         pokemon1SuperShiny_chkBox.AutoSize = True
+        pokemon1SuperShiny_chkBox.Enabled = False
         pokemon1SuperShiny_chkBox.Location = New Point(66, 47)
         pokemon1SuperShiny_chkBox.Name = "pokemon1SuperShiny_chkBox"
         pokemon1SuperShiny_chkBox.Size = New Size(88, 19)
@@ -866,13 +869,13 @@ Partial Class Form1
         pokemon1Shiny_rad.Name = "pokemon1Shiny_rad"
         pokemon1Shiny_rad.Size = New Size(54, 19)
         pokemon1Shiny_rad.TabIndex = 1
-        pokemon1Shiny_rad.TabStop = True
         pokemon1Shiny_rad.Text = "Shiny"
         pokemon1Shiny_rad.UseVisualStyleBackColor = True
         ' 
         ' pokemon1NotShiny_rad
         ' 
         pokemon1NotShiny_rad.AutoSize = True
+        pokemon1NotShiny_rad.Checked = True
         pokemon1NotShiny_rad.Location = New Point(6, 22)
         pokemon1NotShiny_rad.Name = "pokemon1NotShiny_rad"
         pokemon1NotShiny_rad.Size = New Size(77, 19)
@@ -1143,6 +1146,56 @@ Partial Class Form1
         pokemon6_grp.TabStop = False
         pokemon6_grp.Text = "Pokémon 6"
         ' 
+        ' pg_about
+        ' 
+        pg_about.Controls.Add(aboutInfo_lbl)
+        pg_about.Controls.Add(copyright_lbl)
+        pg_about.Controls.Add(aboutHeaderAuthor_lbl)
+        pg_about.Controls.Add(aboutHeader_lbl)
+        pg_about.Location = New Point(4, 24)
+        pg_about.Name = "pg_about"
+        pg_about.Size = New Size(743, 509)
+        pg_about.TabIndex = 2
+        pg_about.Text = "About"
+        pg_about.UseVisualStyleBackColor = True
+        ' 
+        ' aboutInfo_lbl
+        ' 
+        aboutInfo_lbl.Location = New Point(3, 62)
+        aboutInfo_lbl.Name = "aboutInfo_lbl"
+        aboutInfo_lbl.Size = New Size(737, 115)
+        aboutInfo_lbl.TabIndex = 3
+        aboutInfo_lbl.Text = resources.GetString("aboutInfo_lbl.Text")
+        ' 
+        ' copyright_lbl
+        ' 
+        copyright_lbl.AutoSize = True
+        copyright_lbl.Location = New Point(3, 494)
+        copyright_lbl.Name = "copyright_lbl"
+        copyright_lbl.Size = New Size(60, 15)
+        copyright_lbl.TabIndex = 2
+        copyright_lbl.Text = "Copyright"
+        ' 
+        ' aboutHeaderAuthor_lbl
+        ' 
+        aboutHeaderAuthor_lbl.AutoSize = True
+        aboutHeaderAuthor_lbl.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        aboutHeaderAuthor_lbl.Location = New Point(3, 32)
+        aboutHeaderAuthor_lbl.Name = "aboutHeaderAuthor_lbl"
+        aboutHeaderAuthor_lbl.Size = New Size(180, 30)
+        aboutHeaderAuthor_lbl.TabIndex = 1
+        aboutHeaderAuthor_lbl.Text = "By TheCrafters001"
+        ' 
+        ' aboutHeader_lbl
+        ' 
+        aboutHeader_lbl.AutoSize = True
+        aboutHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        aboutHeader_lbl.Location = New Point(3, 0)
+        aboutHeader_lbl.Name = "aboutHeader_lbl"
+        aboutHeader_lbl.Size = New Size(280, 32)
+        aboutHeader_lbl.TabIndex = 0
+        aboutHeader_lbl.Text = "Essentials Team Builder"
+        ' 
         ' preview_grp
         ' 
         preview_grp.Controls.Add(preview_rtb)
@@ -1193,47 +1246,6 @@ Partial Class Form1
         Label2.TabIndex = 25
         Label2.Text = "Moves and Items MUST be one word. (ie: Fire Blast = FireBlast). Leave IVs and EVs 0 if you don't want to set them, or don't know how to use them."
         ' 
-        ' pg_about
-        ' 
-        pg_about.Controls.Add(copyright_lbl)
-        pg_about.Controls.Add(aboutHeaderAuthor_lbl)
-        pg_about.Controls.Add(aboutHeader_lbl)
-        pg_about.Location = New Point(4, 24)
-        pg_about.Name = "pg_about"
-        pg_about.Size = New Size(743, 509)
-        pg_about.TabIndex = 2
-        pg_about.Text = "About"
-        pg_about.UseVisualStyleBackColor = True
-        ' 
-        ' aboutHeader_lbl
-        ' 
-        aboutHeader_lbl.AutoSize = True
-        aboutHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
-        aboutHeader_lbl.Location = New Point(3, 0)
-        aboutHeader_lbl.Name = "aboutHeader_lbl"
-        aboutHeader_lbl.Size = New Size(280, 32)
-        aboutHeader_lbl.TabIndex = 0
-        aboutHeader_lbl.Text = "Essentials Team Builder"
-        ' 
-        ' aboutHeaderAuthor_lbl
-        ' 
-        aboutHeaderAuthor_lbl.AutoSize = True
-        aboutHeaderAuthor_lbl.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
-        aboutHeaderAuthor_lbl.Location = New Point(3, 32)
-        aboutHeaderAuthor_lbl.Name = "aboutHeaderAuthor_lbl"
-        aboutHeaderAuthor_lbl.Size = New Size(180, 30)
-        aboutHeaderAuthor_lbl.TabIndex = 1
-        aboutHeaderAuthor_lbl.Text = "By TheCrafters001"
-        ' 
-        ' copyright_lbl
-        ' 
-        copyright_lbl.AutoSize = True
-        copyright_lbl.Location = New Point(3, 494)
-        copyright_lbl.Name = "copyright_lbl"
-        copyright_lbl.Size = New Size(60, 15)
-        copyright_lbl.TabIndex = 2
-        copyright_lbl.Text = "Copyright"
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1272,9 +1284,9 @@ Partial Class Form1
         pg_pkmn4.ResumeLayout(False)
         pg_pkmn5.ResumeLayout(False)
         pg_pkmn6.ResumeLayout(False)
-        preview_grp.ResumeLayout(False)
         pg_about.ResumeLayout(False)
         pg_about.PerformLayout()
+        preview_grp.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -1351,37 +1363,38 @@ Partial Class Form1
     Friend WithEvents pokemon1Nickname_txtBox As TextBox
     Friend WithEvents pokemon1Nickname_lbl As Label
     Friend WithEvents pokemon1Ball_lbl As Label
-    Friend WithEvents pokemonOnePokeballID_cmb As ComboBox
+    Friend WithEvents pokemon1PokeballID_cmb As ComboBox
     Friend WithEvents pokemon1IVs_grp As GroupBox
     Friend WithEvents pokemon1RandomIVs_btn As Button
     Friend WithEvents pokemon1MaxIVs_btn As Button
     Friend WithEvents pokemon1IVsDEF_txt As TextBox
     Friend WithEvents pokemon1IVsDEF_lbl As Label
-    Friend WithEvents pokemonOneIVsSPDEF_txt As TextBox
-    Friend WithEvents pokemonOneIVsSPDEF_lbl As Label
-    Friend WithEvents pokemonOneIVsSPATK_txt As TextBox
-    Friend WithEvents pokemonOneIVsSPATK_lbl As Label
-    Friend WithEvents pokemonOneIVsSPD_txt As TextBox
-    Friend WithEvents pokemonOneIVsSPD_lbl As Label
+    Friend WithEvents pokemon1IVsSPDEF_txt As TextBox
+    Friend WithEvents pokemon1IVsSPDEF_lbl As Label
+    Friend WithEvents pokemon1IVsSPATK_txt As TextBox
+    Friend WithEvents pokemon1IVsSPATK_lbl As Label
+    Friend WithEvents pokemon1IVsSPD_txt As TextBox
+    Friend WithEvents pokemon1IVsSPD_lbl As Label
     Friend WithEvents pokemon1IVsATK_txt As TextBox
     Friend WithEvents pokemon1IVsATK_lbl As Label
     Friend WithEvents pokemon1IVsHP_txt As TextBox
     Friend WithEvents pokemon1IVsHP_lbl As Label
     Friend WithEvents pokemon1EVs_grp As GroupBox
-    Friend WithEvents pokemonOneEVsDEF_txt As TextBox
-    Friend WithEvents pokemonOneEVsDEF_lbl As Label
-    Friend WithEvents pokemonOneEVsSPDEF_txt As TextBox
-    Friend WithEvents pokemonOneEVsSPDEF_lbl As Label
-    Friend WithEvents pokemonOneEVsSPATK_txt As TextBox
-    Friend WithEvents pokemonOneEVsSPATK_lbl As Label
-    Friend WithEvents pokemonOneEVsSPD_txt As TextBox
-    Friend WithEvents pokemonOneEVsSPD_lbl As Label
-    Friend WithEvents pokemonOneEVsATK_txt As TextBox
-    Friend WithEvents pokemonOneEVsATK_lbl As Label
-    Friend WithEvents pokemonOneEVsHP_txt As TextBox
-    Friend WithEvents pokemonOneEVsHP_lbl As Label
+    Friend WithEvents pokemon1EVsDEF_txt As TextBox
+    Friend WithEvents pokemon1EVsDEF_lbl As Label
+    Friend WithEvents pokemon1EVsSPDEF_txt As TextBox
+    Friend WithEvents pokemon1EVsSPDEF_lbl As Label
+    Friend WithEvents pokemon1EVsSPATK_txt As TextBox
+    Friend WithEvents pokemon1EVsSPATK_lbl As Label
+    Friend WithEvents pokemon1EVsSPD_txt As TextBox
+    Friend WithEvents pokemon1EVsSPD_lbl As Label
+    Friend WithEvents pokemon1EVsATK_txt As TextBox
+    Friend WithEvents pokemon1EVsATK_lbl As Label
+    Friend WithEvents pokemon1EVsHP_txt As TextBox
+    Friend WithEvents pokemon1EVsHP_lbl As Label
     Friend WithEvents pg_about As TabPage
     Friend WithEvents aboutHeader_lbl As Label
     Friend WithEvents copyright_lbl As Label
     Friend WithEvents aboutHeaderAuthor_lbl As Label
+    Friend WithEvents aboutInfo_lbl As Label
 End Class
