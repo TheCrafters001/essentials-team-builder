@@ -17,6 +17,11 @@ Public Class Generator
     ''' <param name="superShiny">Get the Super Shiny of the Pokemon. Pass only a Boolean.</param>
     ''' <param name="shadow">Get the shadow of the Pokemon. Pass only a Boolean.</param>
     ''' 
+    ''' <param name="move1">Get the First Move of the Pokemon</param>
+    ''' <param name="move2">Get the Second Move of the Pokemon</param>
+    ''' <param name="move3">Get the Third Move of the Pokemon</param>
+    ''' <param name="move4">Get the Forth Move of the Pokemon</param>
+    ''' 
     ''' <param name="ivHP">Get the HP IV for the Pokemon. Pass only an integer.</param>
     ''' <param name="ivATK">Get the ATK IV for the Pokemon. Pass only an integer.</param>
     ''' <param name="ivDEF">Get the DEF IV for the Pokemon. Pass only an integer.</param>
@@ -36,6 +41,8 @@ Public Class Generator
                                    ByVal nature As String, ByVal happiness As Integer, ByVal nickname As String,
                                    ByVal pokeBall As String, ByVal shiny As Boolean, ByVal superShiny As Boolean,
                                    ByVal shadow As Boolean,
+                                   ByVal move1 As String, ByVal move2 As String, ByVal move3 As String,
+                                   ByVal move4 As String,
                                    ByVal ivHP As Integer, ByVal ivATK As Integer, ByVal ivDEF As Integer,
                                    ByVal ivSPD As Integer, ByVal ivSPATK As Integer, ByVal ivSPDEF As Integer,
                                    ByVal evHP As Integer, ByVal evATK As Integer, ByVal evDEF As Integer,
