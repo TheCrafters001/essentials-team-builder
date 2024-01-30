@@ -117,12 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="aboutInfo_lbl.Text" xml:space="preserve">
-    <value>The EASY Way to Build a Team.
-This tool is free and open-source. It is built so you can build your own teams in the Pokemon Essentials game engine!
-I always have found the tools that come with essentials to be pretty bad, so I am building my own custom tools to make it easier!</value>
-  </data>
-  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>
