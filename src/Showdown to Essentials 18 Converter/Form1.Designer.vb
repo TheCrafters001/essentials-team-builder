@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         pages_tabGrp = New TabControl()
         pg_Trainer = New TabPage()
         trainerInfo_tabPgs = New TabControl()
@@ -572,7 +572,7 @@ Partial Class Form1
         recommendedSettings_grp.Controls.Add(ess20Settings_btn)
         recommendedSettings_grp.Controls.Add(ess19Settings_btn)
         recommendedSettings_grp.Controls.Add(ess18Settings_btn)
-        recommendedSettings_grp.Location = New Point(6, 377)
+        recommendedSettings_grp.Location = New Point(6, 375)
         recommendedSettings_grp.Name = "recommendedSettings_grp"
         recommendedSettings_grp.Size = New Size(778, 77)
         recommendedSettings_grp.TabIndex = 16
@@ -628,7 +628,7 @@ Partial Class Form1
         ' example_btn
         ' 
         example_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        example_btn.Location = New Point(265, 460)
+        example_btn.Location = New Point(265, 458)
         example_btn.Name = "example_btn"
         example_btn.Size = New Size(306, 23)
         example_btn.TabIndex = 8
@@ -649,7 +649,7 @@ Partial Class Form1
         properSpellingNote_lbl.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         properSpellingNote_lbl.AutoSize = True
         properSpellingNote_lbl.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
-        properSpellingNote_lbl.Location = New Point(3, 466)
+        properSpellingNote_lbl.Location = New Point(3, 464)
         properSpellingNote_lbl.Name = "properSpellingNote_lbl"
         properSpellingNote_lbl.Size = New Size(241, 20)
         properSpellingNote_lbl.TabIndex = 12
@@ -658,7 +658,7 @@ Partial Class Form1
         ' clearInputs_btn
         ' 
         clearInputs_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
-        clearInputs_btn.Location = New Point(577, 460)
+        clearInputs_btn.Location = New Point(577, 458)
         clearInputs_btn.Name = "clearInputs_btn"
         clearInputs_btn.Size = New Size(207, 23)
         clearInputs_btn.TabIndex = 7
@@ -983,7 +983,7 @@ Partial Class Form1
         pokemonOne_grp.Controls.Add(pokemonOneName_lbl)
         pokemonOne_grp.Location = New Point(6, 3)
         pokemonOne_grp.Name = "pokemonOne_grp"
-        pokemonOne_grp.Size = New Size(793, 492)
+        pokemonOne_grp.Size = New Size(793, 490)
         pokemonOne_grp.TabIndex = 1
         pokemonOne_grp.TabStop = False
         pokemonOne_grp.Text = "Pokémon 1"
@@ -4776,7 +4776,7 @@ Partial Class Form1
         ' aboutTitle_lbl
         ' 
         aboutTitle_lbl.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        aboutTitle_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
+        aboutTitle_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         aboutTitle_lbl.Location = New Point(6, 110)
         aboutTitle_lbl.Name = "aboutTitle_lbl"
         aboutTitle_lbl.Size = New Size(801, 32)
@@ -4818,7 +4818,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(6.0F, 13.0F)
+        AutoScaleDimensions = New SizeF(6F, 13F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(842, 583)
         Controls.Add(thirdPartyLicenses_lnk)
