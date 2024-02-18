@@ -184,9 +184,9 @@ Name: "{commondesktop}\Showdown to Essentials 18-21"; Filename: "{app}\Showdown 
 
 [Run]
 Filename: "{app}\Showdown to Essentials 18 & 19 Converter.exe"; Flags: nowait postinstall skipifsilent; Description: "Launch Showdown to Essentials 18-21"; Components: eighteen_component
-Filename: "\dotnet-runtime-8.0.2-win-x64.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{tmp}"; Description: ".NET Runtime"; StatusMsg: "Installing .NET Runtime 8.0.2"; Components: dotnetdepends
-Filename: "\windowsdesktop-runtime-8.0.2-win-x64.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{tmp}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing .NET Desktop Runtime 8.0.2"; Components: dotnetdepends
-Filename: "\dotnet-hosting-8.0.2-win.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{tmp}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing ASP.NET Hosting Bundle 8.0.2"; Components: dotnetdepends
+Filename: "{tmp}\dotnet-runtime-8.0.2-win-x64.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{tmp}"; Description: ".NET Runtime"; StatusMsg: "Installing .NET Runtime 8.0.2"; Components: dotnetdepends
+Filename: "{tmp}\windowsdesktop-runtime-8.0.2-win-x64.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{tmp}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing .NET Desktop Runtime 8.0.2"; Components: dotnetdepends
+Filename: "{tmp}\dotnet-hosting-8.0.2-win.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{tmp}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing ASP.NET Hosting Bundle 8.0.2"; Components: dotnetdepends
 
 [Types]
 Name: "full"; Description: "Full Install"
