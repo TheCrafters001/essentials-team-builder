@@ -211,9 +211,9 @@ Partial Class Form1
         Label19 = New Label()
         TextBox19 = New TextBox()
         Label20 = New Label()
-        TextBox20 = New TextBox()
+        pokemon3HeldItem_txt = New TextBox()
         pokemon3PokeBall_cmb = New ComboBox()
-        Label21 = New Label()
+        pokemon3HeldItem_lbl = New Label()
         pokemon3PokeBall_lbl = New Label()
         Label23 = New Label()
         TextBox21 = New TextBox()
@@ -224,14 +224,14 @@ Partial Class Form1
         TextBox24 = New TextBox()
         TextBox25 = New TextBox()
         TextBox26 = New TextBox()
-        TextBox27 = New TextBox()
+        pokemon3Happiness_txt = New TextBox()
         pokemon3Ability_lbl = New Label()
-        Label26 = New Label()
+        pokemon3Happiness_lbl = New Label()
         pokemon3Ability_cmb = New ComboBox()
         pokemon3Nature_cmb = New ComboBox()
-        Label27 = New Label()
+        pokemon3Gender_lbl = New Label()
         pokemon3Nature_lbl = New Label()
-        ComboBox4 = New ComboBox()
+        pokemon3Gender_cmb = New ComboBox()
         GroupBox5 = New GroupBox()
         CheckBox2 = New CheckBox()
         RadioButton3 = New RadioButton()
@@ -2077,23 +2077,23 @@ Partial Class Form1
         pokemon3_grp.Controls.Add(GroupBox2)
         pokemon3_grp.Controls.Add(pokemon3Name_txt)
         pokemon3_grp.Controls.Add(GroupBox3)
-        pokemon3_grp.Controls.Add(TextBox20)
+        pokemon3_grp.Controls.Add(pokemon3HeldItem_txt)
         pokemon3_grp.Controls.Add(pokemon3PokeBall_cmb)
-        pokemon3_grp.Controls.Add(Label21)
+        pokemon3_grp.Controls.Add(pokemon3HeldItem_lbl)
         pokemon3_grp.Controls.Add(pokemon3PokeBall_lbl)
         pokemon3_grp.Controls.Add(Label23)
         pokemon3_grp.Controls.Add(TextBox21)
         pokemon3_grp.Controls.Add(TextBox22)
         pokemon3_grp.Controls.Add(Label24)
         pokemon3_grp.Controls.Add(GroupBox4)
-        pokemon3_grp.Controls.Add(TextBox27)
+        pokemon3_grp.Controls.Add(pokemon3Happiness_txt)
         pokemon3_grp.Controls.Add(pokemon3Ability_lbl)
-        pokemon3_grp.Controls.Add(Label26)
+        pokemon3_grp.Controls.Add(pokemon3Happiness_lbl)
         pokemon3_grp.Controls.Add(pokemon3Ability_cmb)
         pokemon3_grp.Controls.Add(pokemon3Nature_cmb)
-        pokemon3_grp.Controls.Add(Label27)
+        pokemon3_grp.Controls.Add(pokemon3Gender_lbl)
         pokemon3_grp.Controls.Add(pokemon3Nature_lbl)
-        pokemon3_grp.Controls.Add(ComboBox4)
+        pokemon3_grp.Controls.Add(pokemon3Gender_cmb)
         pokemon3_grp.Controls.Add(GroupBox5)
         pokemon3_grp.Controls.Add(Label29)
         pokemon3_grp.Controls.Add(TextBox28)
@@ -2436,13 +2436,13 @@ Partial Class Form1
         Label20.TabIndex = 0
         Label20.Text = "HP"
         ' 
-        ' TextBox20
+        ' pokemon3HeldItem_txt
         ' 
-        TextBox20.Location = New Point(152, 37)
-        TextBox20.Name = "TextBox20"
-        TextBox20.PlaceholderText = "FocusSash"
-        TextBox20.Size = New Size(140, 23)
-        TextBox20.TabIndex = 58
+        pokemon3HeldItem_txt.Location = New Point(152, 37)
+        pokemon3HeldItem_txt.Name = "pokemon3HeldItem_txt"
+        pokemon3HeldItem_txt.PlaceholderText = "FocusSash"
+        pokemon3HeldItem_txt.Size = New Size(140, 23)
+        pokemon3HeldItem_txt.TabIndex = 58
         ' 
         ' pokemon3PokeBall_cmb
         ' 
@@ -2453,14 +2453,14 @@ Partial Class Form1
         pokemon3PokeBall_cmb.Size = New Size(140, 23)
         pokemon3PokeBall_cmb.TabIndex = 77
         ' 
-        ' Label21
+        ' pokemon3HeldItem_lbl
         ' 
-        Label21.AutoSize = True
-        Label21.Location = New Point(152, 19)
-        Label21.Name = "Label21"
-        Label21.Size = New Size(59, 15)
-        Label21.TabIndex = 59
-        Label21.Text = "Held Item"
+        pokemon3HeldItem_lbl.AutoSize = True
+        pokemon3HeldItem_lbl.Location = New Point(152, 19)
+        pokemon3HeldItem_lbl.Name = "pokemon3HeldItem_lbl"
+        pokemon3HeldItem_lbl.Size = New Size(59, 15)
+        pokemon3HeldItem_lbl.TabIndex = 59
+        pokemon3HeldItem_lbl.Text = "Held Item"
         ' 
         ' pokemon3PokeBall_lbl
         ' 
@@ -2551,13 +2551,13 @@ Partial Class Form1
         TextBox26.Size = New Size(120, 23)
         TextBox26.TabIndex = 0
         ' 
-        ' TextBox27
+        ' pokemon3Happiness_txt
         ' 
-        TextBox27.Location = New Point(152, 125)
-        TextBox27.Name = "TextBox27"
-        TextBox27.PlaceholderText = "70"
-        TextBox27.Size = New Size(140, 23)
-        TextBox27.TabIndex = 73
+        pokemon3Happiness_txt.Location = New Point(152, 125)
+        pokemon3Happiness_txt.Name = "pokemon3Happiness_txt"
+        pokemon3Happiness_txt.PlaceholderText = "70"
+        pokemon3Happiness_txt.Size = New Size(140, 23)
+        pokemon3Happiness_txt.TabIndex = 73
         ' 
         ' pokemon3Ability_lbl
         ' 
@@ -2568,14 +2568,14 @@ Partial Class Form1
         pokemon3Ability_lbl.TabIndex = 63
         pokemon3Ability_lbl.Text = "Ability"
         ' 
-        ' Label26
+        ' pokemon3Happiness_lbl
         ' 
-        Label26.AutoSize = True
-        Label26.Location = New Point(152, 107)
-        Label26.Name = "Label26"
-        Label26.Size = New Size(62, 15)
-        Label26.TabIndex = 72
-        Label26.Text = "Happiness"
+        pokemon3Happiness_lbl.AutoSize = True
+        pokemon3Happiness_lbl.Location = New Point(152, 107)
+        pokemon3Happiness_lbl.Name = "pokemon3Happiness_lbl"
+        pokemon3Happiness_lbl.Size = New Size(62, 15)
+        pokemon3Happiness_lbl.TabIndex = 72
+        pokemon3Happiness_lbl.Text = "Happiness"
         ' 
         ' pokemon3Ability_cmb
         ' 
@@ -2598,14 +2598,14 @@ Partial Class Form1
         pokemon3Nature_cmb.Size = New Size(140, 23)
         pokemon3Nature_cmb.TabIndex = 71
         ' 
-        ' Label27
+        ' pokemon3Gender_lbl
         ' 
-        Label27.AutoSize = True
-        Label27.Location = New Point(152, 63)
-        Label27.Name = "Label27"
-        Label27.Size = New Size(45, 15)
-        Label27.TabIndex = 65
-        Label27.Text = "Gender"
+        pokemon3Gender_lbl.AutoSize = True
+        pokemon3Gender_lbl.Location = New Point(152, 63)
+        pokemon3Gender_lbl.Name = "pokemon3Gender_lbl"
+        pokemon3Gender_lbl.Size = New Size(45, 15)
+        pokemon3Gender_lbl.TabIndex = 65
+        pokemon3Gender_lbl.Text = "Gender"
         ' 
         ' pokemon3Nature_lbl
         ' 
@@ -2616,15 +2616,15 @@ Partial Class Form1
         pokemon3Nature_lbl.TabIndex = 70
         pokemon3Nature_lbl.Text = "Nature"
         ' 
-        ' ComboBox4
+        ' pokemon3Gender_cmb
         ' 
-        ComboBox4.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox4.FormattingEnabled = True
-        ComboBox4.Items.AddRange(New Object() {"Male", "Female", "Random"})
-        ComboBox4.Location = New Point(152, 81)
-        ComboBox4.Name = "ComboBox4"
-        ComboBox4.Size = New Size(140, 23)
-        ComboBox4.TabIndex = 66
+        pokemon3Gender_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+        pokemon3Gender_cmb.FormattingEnabled = True
+        pokemon3Gender_cmb.Items.AddRange(New Object() {"Male", "Female", "Random"})
+        pokemon3Gender_cmb.Location = New Point(152, 81)
+        pokemon3Gender_cmb.Name = "pokemon3Gender_cmb"
+        pokemon3Gender_cmb.Size = New Size(140, 23)
+        pokemon3Gender_cmb.TabIndex = 66
         ' 
         ' GroupBox5
         ' 
@@ -4947,9 +4947,9 @@ Partial Class Form1
     Friend WithEvents Label19 As Label
     Friend WithEvents TextBox19 As TextBox
     Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox20 As TextBox
+    Friend WithEvents pokemon3HeldItem_txt As TextBox
     Friend WithEvents pokemon3PokeBall_cmb As ComboBox
-    Friend WithEvents Label21 As Label
+    Friend WithEvents pokemon3HeldItem_lbl As Label
     Friend WithEvents pokemon3PokeBall_lbl As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents TextBox21 As TextBox
@@ -4960,14 +4960,14 @@ Partial Class Form1
     Friend WithEvents TextBox24 As TextBox
     Friend WithEvents TextBox25 As TextBox
     Friend WithEvents TextBox26 As TextBox
-    Friend WithEvents TextBox27 As TextBox
+    Friend WithEvents pokemon3Happiness_txt As TextBox
     Friend WithEvents pokemon3Ability_lbl As Label
-    Friend WithEvents Label26 As Label
+    Friend WithEvents pokemon3Happiness_lbl As Label
     Friend WithEvents pokemon3Ability_cmb As ComboBox
     Friend WithEvents pokemon3Nature_cmb As ComboBox
-    Friend WithEvents Label27 As Label
+    Friend WithEvents pokemon3Gender_lbl As Label
     Friend WithEvents pokemon3Nature_lbl As Label
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents pokemon3Gender_cmb As ComboBox
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents RadioButton3 As RadioButton
