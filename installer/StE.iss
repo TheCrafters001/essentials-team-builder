@@ -46,18 +46,29 @@ Name: "desktopicon"; Description: "Create Desktop"; GroupDescription: "{cm:Addit
 
 [Files]
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
-Source: "{tmp}\dotnet-hosting-6.0.8-win.exe"; \
+Source: "{tmp}\dotnet-hosting-8.0.2-win.exe"; \
     DestDir: "{tmp}"; \
     Flags: external; \
-    ExternalSize: 72549200; \
+    ExternalSize: 10416064; \
     Components: dotnetdepends; \
-    Check: DwinsHs_Check(ExpandConstant('{tmp}\dotnet-hosting-6.0.8-win.exe'),  'https://download.visualstudio.microsoft.com/download/pr/c5e0609f-1db5-4741-add0-a37e8371a714/1ad9c59b8a92aeb5d09782e686264537/dotnet-hosting-6.0.8-win.exe', 'Showdown_to_Essentials_Converter', 'get', 0, 0)
-Source: "{tmp}\windowsdesktop-runtime-6.0.8-win-x64.exe"; \
+    Check: DwinsHs_Check(ExpandConstant('{tmp}\dotnet-hosting-8.0.2-win.exe'),  'https://download.visualstudio.microsoft.com/download/pr/98ff0a08-a283-428f-8e54-19841d97154c/8c7d5f9600eadf264f04c82c813b7aab/dotnet-hosting-8.0.2-win.exe', 'Showdown_to_Essentials_Converter', 'get', 0, 0)
+
+    
+Source: "{tmp}\dotnet-runtime-8.0.2-win-x64.exe"; \
     DestDir: "{tmp}"; \
     Flags: external; \
-    ExternalSize: 57909296; \
+    ExternalSize: 28409632; \
     Components: dotnetdepends; \
-    Check: DwinsHs_Check(ExpandConstant('{tmp}\windowsdesktop-runtime-6.0.8-win-x64.exe'),  'https://download.visualstudio.microsoft.com/download/pr/b4a17a47-2fe8-498d-b817-30ad2e23f413/00020402af25ba40990c6cc3db5cb270/windowsdesktop-runtime-6.0.8-win-x64.exe', 'Showdown_to_Essentials_Converter', 'get', 0, 0)
+    Check: DwinsHs_Check(ExpandConstant('{tmp}\dotnet-runtime-8.0.2-win-x64.exe'),  'https://download.visualstudio.microsoft.com/download/pr/a4bc7333-6e30-4e2d-b300-0b4f23537e5b/4b81af6d46a02fba5d9ce030af438c67/dotnet-runtime-8.0.2-win-x64.exe', 'Showdown_to_Essentials_Converter', 'get', 0, 0)
+
+    
+Source: "{tmp}\windowsdesktop-runtime-8.0.2-win-x64.exe"; \
+    DestDir: "{tmp}"; \
+    Flags: external; \
+    ExternalSize: 58192136; \
+    Components: dotnetdepends; \
+    Check: DwinsHs_Check(ExpandConstant('{tmp}\windowsdesktop-runtime-8.0.2-win-x64.exe'),  'https://download.visualstudio.microsoft.com/download/pr/84ba33d4-4407-4572-9bfa-414d26e7c67c/bb81f8c9e6c9ee1ca547396f6e71b65f/windowsdesktop-runtime-8.0.2-win-x64.exe', 'Showdown_to_Essentials_Converter', 'get', 0, 0)
+    
 Source: "..\src\Showdown to Essentials 18 Converter\bin\Release\net8.0-windows7.0\Showdown to Essentials 18 & 19 Converter.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\Showdown to Essentials 18 Converter\bin\Release\net8.0-windows7.0\Showdown to Essentials 18 & 19 Converter.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\Showdown to Essentials 18 Converter\bin\Release\net8.0-windows7.0\Showdown to Essentials 18 & 19 Converter.xml"; DestDir: "{app}"; Flags: ignoreversion
@@ -173,15 +184,16 @@ Name: "{commondesktop}\Showdown to Essentials 18-21"; Filename: "{app}\Showdown 
 
 [Run]
 Filename: "{app}\Showdown to Essentials 18 & 19 Converter.exe"; Flags: nowait postinstall skipifsilent; Description: "Launch Showdown to Essentials 18-21"; Components: eighteen_component
-Filename: "{tmp}\windowsdesktop-runtime-6.0.8-win-x64.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{app}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing .NET Runtime 6.0"; Components: dotnetdepends
-Filename: "{tmp}\dotnet-hosting-6.0.8-win.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{app}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing .NET ASP Runtime 6.0"; Components: dotnetdepends
+Filename: "\dotnet-runtime-8.0.2-win-x64.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{tmp}"; Description: ".NET Runtime"; StatusMsg: "Installing .NET Runtime 8.0.2"; Components: dotnetdepends
+Filename: "\windowsdesktop-runtime-8.0.2-win-x64.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{tmp}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing .NET Desktop Runtime 8.0.2"; Components: dotnetdepends
+Filename: "\dotnet-hosting-8.0.2-win.exe"; Parameters: "/install /passive /norestart"; WorkingDir: "{tmp}"; Description: ".NET ASP Runtime"; StatusMsg: "Installing ASP.NET Hosting Bundle 8.0.2"; Components: dotnetdepends
 
 [Types]
 Name: "full"; Description: "Full Install"
 Name: "custom"; Description: "Custom Install"; Flags: iscustom
 
 [Components]
-Name: "eighteen_component"; Description: "Showdown to Essentials 18 & 19 Converter"; Types: full eighteen seventeen custom; Flags: fixed
+Name: "eighteen_component"; Description: "Showdown to Essentials 18 & 19 Converter"; Types: full custom; Flags: fixed
 Name: "dotnetdepends"; Description: ".NET Dependancies (Required for first time install)"; ExtraDiskSpaceRequired: 130458496
 
 [Messages]
