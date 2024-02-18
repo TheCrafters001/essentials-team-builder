@@ -6,11 +6,11 @@ Module Program
             Console.WriteLine(Generator.essentials18("Bulbasaur", "", 5, "0", "Male", 0, "Bold", 70, "Bloom", "Pokeball", False,
             False, False, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
             Console.WriteLine("Test Success!")
-        ElseIf args.count < 24 Then
+        ElseIf args.Count < 24 Then
             Help()
             Environment.ExitCode = -1
 
-        ElseIf args.count > 30 Then
+        ElseIf args.Count > 30 Then
             Help()
             Environment.ExitCode = -2
         ElseIf args(0) = "17" Then
