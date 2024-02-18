@@ -182,7 +182,7 @@ Partial Class Form1
         RadioButton1 = New RadioButton()
         RadioButton2 = New RadioButton()
         pokemon3Name_lbl = New Label()
-        GroupBox2 = New GroupBox()
+        pokemon3EVs_grp = New GroupBox()
         TextBox7 = New TextBox()
         Label9 = New Label()
         TextBox8 = New TextBox()
@@ -196,7 +196,7 @@ Partial Class Form1
         TextBox12 = New TextBox()
         Label14 = New Label()
         pokemon3Name_txt = New TextBox()
-        GroupBox3 = New GroupBox()
+        pokemon3IVs_grp = New GroupBox()
         Button3 = New Button()
         Button4 = New Button()
         TextBox14 = New TextBox()
@@ -215,15 +215,15 @@ Partial Class Form1
         pokemon3PokeBall_cmb = New ComboBox()
         pokemon3HeldItem_lbl = New Label()
         pokemon3PokeBall_lbl = New Label()
-        Label23 = New Label()
-        TextBox21 = New TextBox()
-        TextBox22 = New TextBox()
-        Label24 = New Label()
-        GroupBox4 = New GroupBox()
-        TextBox23 = New TextBox()
-        TextBox24 = New TextBox()
-        TextBox25 = New TextBox()
-        TextBox26 = New TextBox()
+        pokemon3Level_lbl = New Label()
+        pokemon3Nickname_txt = New TextBox()
+        pokemon3Level_txt = New TextBox()
+        pokemon3Nickname_lbl = New Label()
+        pokemon3Moves_grp = New GroupBox()
+        pokemon3Move4_txtBox = New TextBox()
+        pokemon3Move3_txtBox = New TextBox()
+        pokemon3Move2_txtBox = New TextBox()
+        pokemon3Move1_txtBox = New TextBox()
         pokemon3Happiness_txt = New TextBox()
         pokemon3Ability_lbl = New Label()
         pokemon3Happiness_lbl = New Label()
@@ -236,15 +236,15 @@ Partial Class Form1
         CheckBox2 = New CheckBox()
         RadioButton3 = New RadioButton()
         RadioButton4 = New RadioButton()
-        Label29 = New Label()
-        TextBox28 = New TextBox()
+        pokemon3Form_lbl = New Label()
+        pokemon3Form_txt = New TextBox()
         pg_pkmn4 = New TabPage()
         pokemon4_grp = New GroupBox()
         GroupBox6 = New GroupBox()
         RadioButton5 = New RadioButton()
         RadioButton6 = New RadioButton()
         Label30 = New Label()
-        GroupBox7 = New GroupBox()
+        pokemon4EVs_grp = New GroupBox()
         TextBox29 = New TextBox()
         Label31 = New Label()
         TextBox30 = New TextBox()
@@ -258,7 +258,7 @@ Partial Class Form1
         TextBox34 = New TextBox()
         Label36 = New Label()
         TextBox35 = New TextBox()
-        GroupBox8 = New GroupBox()
+        pokemon4IVs_grp = New GroupBox()
         Button5 = New Button()
         Button6 = New Button()
         TextBox36 = New TextBox()
@@ -306,7 +306,7 @@ Partial Class Form1
         RadioButton9 = New RadioButton()
         RadioButton10 = New RadioButton()
         Label52 = New Label()
-        GroupBox12 = New GroupBox()
+        pokemon5EVs_grp = New GroupBox()
         TextBox51 = New TextBox()
         Label53 = New Label()
         TextBox52 = New TextBox()
@@ -320,7 +320,7 @@ Partial Class Form1
         TextBox56 = New TextBox()
         Label58 = New Label()
         TextBox57 = New TextBox()
-        GroupBox13 = New GroupBox()
+        pokemon5IVs_grp = New GroupBox()
         Button7 = New Button()
         Button8 = New Button()
         TextBox58 = New TextBox()
@@ -368,7 +368,7 @@ Partial Class Form1
         RadioButton13 = New RadioButton()
         RadioButton14 = New RadioButton()
         Label74 = New Label()
-        GroupBox17 = New GroupBox()
+        pokemon6EVs_grp = New GroupBox()
         TextBox73 = New TextBox()
         Label75 = New Label()
         TextBox74 = New TextBox()
@@ -382,7 +382,7 @@ Partial Class Form1
         TextBox78 = New TextBox()
         Label80 = New Label()
         TextBox79 = New TextBox()
-        GroupBox18 = New GroupBox()
+        pokemon6IVs_grp = New GroupBox()
         Button9 = New Button()
         Button10 = New Button()
         TextBox80 = New TextBox()
@@ -455,29 +455,29 @@ Partial Class Form1
         pg_pkmn3.SuspendLayout()
         pokemon3_grp.SuspendLayout()
         GroupBox1.SuspendLayout()
-        GroupBox2.SuspendLayout()
-        GroupBox3.SuspendLayout()
-        GroupBox4.SuspendLayout()
+        pokemon3EVs_grp.SuspendLayout()
+        pokemon3IVs_grp.SuspendLayout()
+        pokemon3Moves_grp.SuspendLayout()
         GroupBox5.SuspendLayout()
         pg_pkmn4.SuspendLayout()
         pokemon4_grp.SuspendLayout()
         GroupBox6.SuspendLayout()
-        GroupBox7.SuspendLayout()
-        GroupBox8.SuspendLayout()
+        pokemon4EVs_grp.SuspendLayout()
+        pokemon4IVs_grp.SuspendLayout()
         GroupBox9.SuspendLayout()
         GroupBox10.SuspendLayout()
         pg_pkmn5.SuspendLayout()
         pokemon5_grp.SuspendLayout()
         GroupBox11.SuspendLayout()
-        GroupBox12.SuspendLayout()
-        GroupBox13.SuspendLayout()
+        pokemon5EVs_grp.SuspendLayout()
+        pokemon5IVs_grp.SuspendLayout()
         GroupBox14.SuspendLayout()
         GroupBox15.SuspendLayout()
         pg_pkmn6.SuspendLayout()
         pokemon6_grp.SuspendLayout()
         GroupBox16.SuspendLayout()
-        GroupBox17.SuspendLayout()
-        GroupBox18.SuspendLayout()
+        pokemon6EVs_grp.SuspendLayout()
+        pokemon6IVs_grp.SuspendLayout()
         GroupBox19.SuspendLayout()
         GroupBox20.SuspendLayout()
         pg_about.SuspendLayout()
@@ -570,7 +570,7 @@ Partial Class Form1
         ' 
         properSpellingNote_lbl.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         properSpellingNote_lbl.AutoSize = True
-        properSpellingNote_lbl.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        properSpellingNote_lbl.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         properSpellingNote_lbl.ForeColor = Color.Red
         properSpellingNote_lbl.Location = New Point(3, 428)
         properSpellingNote_lbl.Name = "properSpellingNote_lbl"
@@ -581,7 +581,7 @@ Partial Class Form1
         ' essData_lbl
         ' 
         essData_lbl.AutoSize = True
-        essData_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        essData_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         essData_lbl.Location = New Point(3, 132)
         essData_lbl.Name = "essData_lbl"
         essData_lbl.Size = New Size(184, 32)
@@ -654,7 +654,7 @@ Partial Class Form1
         ' essVersion_lbl
         ' 
         essVersion_lbl.AutoSize = True
-        essVersion_lbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        essVersion_lbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         essVersion_lbl.Location = New Point(8, 164)
         essVersion_lbl.Name = "essVersion_lbl"
         essVersion_lbl.Size = New Size(118, 17)
@@ -730,7 +730,7 @@ Partial Class Form1
         ' trainerType_lbl
         ' 
         trainerType_lbl.AutoSize = True
-        trainerType_lbl.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        trainerType_lbl.Font = New Font("Segoe UI", 8.25F)
         trainerType_lbl.Location = New Point(182, 34)
         trainerType_lbl.Name = "trainerType_lbl"
         trainerType_lbl.Size = New Size(175, 13)
@@ -757,7 +757,7 @@ Partial Class Form1
         ' trainerInfoHeader_lbl
         ' 
         trainerInfoHeader_lbl.AutoSize = True
-        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         trainerInfoHeader_lbl.Location = New Point(3, 0)
         trainerInfoHeader_lbl.Name = "trainerInfoHeader_lbl"
         trainerInfoHeader_lbl.Size = New Size(239, 32)
@@ -2074,18 +2074,18 @@ Partial Class Form1
         ' 
         pokemon3_grp.Controls.Add(GroupBox1)
         pokemon3_grp.Controls.Add(pokemon3Name_lbl)
-        pokemon3_grp.Controls.Add(GroupBox2)
+        pokemon3_grp.Controls.Add(pokemon3EVs_grp)
         pokemon3_grp.Controls.Add(pokemon3Name_txt)
-        pokemon3_grp.Controls.Add(GroupBox3)
+        pokemon3_grp.Controls.Add(pokemon3IVs_grp)
         pokemon3_grp.Controls.Add(pokemon3HeldItem_txt)
         pokemon3_grp.Controls.Add(pokemon3PokeBall_cmb)
         pokemon3_grp.Controls.Add(pokemon3HeldItem_lbl)
         pokemon3_grp.Controls.Add(pokemon3PokeBall_lbl)
-        pokemon3_grp.Controls.Add(Label23)
-        pokemon3_grp.Controls.Add(TextBox21)
-        pokemon3_grp.Controls.Add(TextBox22)
-        pokemon3_grp.Controls.Add(Label24)
-        pokemon3_grp.Controls.Add(GroupBox4)
+        pokemon3_grp.Controls.Add(pokemon3Level_lbl)
+        pokemon3_grp.Controls.Add(pokemon3Nickname_txt)
+        pokemon3_grp.Controls.Add(pokemon3Level_txt)
+        pokemon3_grp.Controls.Add(pokemon3Nickname_lbl)
+        pokemon3_grp.Controls.Add(pokemon3Moves_grp)
         pokemon3_grp.Controls.Add(pokemon3Happiness_txt)
         pokemon3_grp.Controls.Add(pokemon3Ability_lbl)
         pokemon3_grp.Controls.Add(pokemon3Happiness_lbl)
@@ -2095,8 +2095,8 @@ Partial Class Form1
         pokemon3_grp.Controls.Add(pokemon3Nature_lbl)
         pokemon3_grp.Controls.Add(pokemon3Gender_cmb)
         pokemon3_grp.Controls.Add(GroupBox5)
-        pokemon3_grp.Controls.Add(Label29)
-        pokemon3_grp.Controls.Add(TextBox28)
+        pokemon3_grp.Controls.Add(pokemon3Form_lbl)
+        pokemon3_grp.Controls.Add(pokemon3Form_txt)
         pokemon3_grp.Dock = DockStyle.Fill
         pokemon3_grp.Location = New Point(3, 3)
         pokemon3_grp.Name = "pokemon3_grp"
@@ -2147,26 +2147,26 @@ Partial Class Form1
         pokemon3Name_lbl.TabIndex = 56
         pokemon3Name_lbl.Text = "Pokémon Name"
         ' 
-        ' GroupBox2
+        ' pokemon3EVs_grp
         ' 
-        GroupBox2.Controls.Add(TextBox7)
-        GroupBox2.Controls.Add(Label9)
-        GroupBox2.Controls.Add(TextBox8)
-        GroupBox2.Controls.Add(Label10)
-        GroupBox2.Controls.Add(TextBox9)
-        GroupBox2.Controls.Add(Label11)
-        GroupBox2.Controls.Add(TextBox10)
-        GroupBox2.Controls.Add(Label12)
-        GroupBox2.Controls.Add(TextBox11)
-        GroupBox2.Controls.Add(Label13)
-        GroupBox2.Controls.Add(TextBox12)
-        GroupBox2.Controls.Add(Label14)
-        GroupBox2.Location = New Point(324, 154)
-        GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(114, 156)
-        GroupBox2.TabIndex = 79
-        GroupBox2.TabStop = False
-        GroupBox2.Text = "EVs"
+        pokemon3EVs_grp.Controls.Add(TextBox7)
+        pokemon3EVs_grp.Controls.Add(Label9)
+        pokemon3EVs_grp.Controls.Add(TextBox8)
+        pokemon3EVs_grp.Controls.Add(Label10)
+        pokemon3EVs_grp.Controls.Add(TextBox9)
+        pokemon3EVs_grp.Controls.Add(Label11)
+        pokemon3EVs_grp.Controls.Add(TextBox10)
+        pokemon3EVs_grp.Controls.Add(Label12)
+        pokemon3EVs_grp.Controls.Add(TextBox11)
+        pokemon3EVs_grp.Controls.Add(Label13)
+        pokemon3EVs_grp.Controls.Add(TextBox12)
+        pokemon3EVs_grp.Controls.Add(Label14)
+        pokemon3EVs_grp.Location = New Point(324, 154)
+        pokemon3EVs_grp.Name = "pokemon3EVs_grp"
+        pokemon3EVs_grp.Size = New Size(114, 156)
+        pokemon3EVs_grp.TabIndex = 79
+        pokemon3EVs_grp.TabStop = False
+        pokemon3EVs_grp.Text = "EVs"
         ' 
         ' TextBox7
         ' 
@@ -2287,28 +2287,28 @@ Partial Class Form1
         pokemon3Name_txt.Size = New Size(140, 23)
         pokemon3Name_txt.TabIndex = 57
         ' 
-        ' GroupBox3
+        ' pokemon3IVs_grp
         ' 
-        GroupBox3.Controls.Add(Button3)
-        GroupBox3.Controls.Add(Button4)
-        GroupBox3.Controls.Add(TextBox14)
-        GroupBox3.Controls.Add(Label15)
-        GroupBox3.Controls.Add(TextBox15)
-        GroupBox3.Controls.Add(Label16)
-        GroupBox3.Controls.Add(TextBox16)
-        GroupBox3.Controls.Add(Label17)
-        GroupBox3.Controls.Add(TextBox17)
-        GroupBox3.Controls.Add(Label18)
-        GroupBox3.Controls.Add(TextBox18)
-        GroupBox3.Controls.Add(Label19)
-        GroupBox3.Controls.Add(TextBox19)
-        GroupBox3.Controls.Add(Label20)
-        GroupBox3.Location = New Point(204, 154)
-        GroupBox3.Name = "GroupBox3"
-        GroupBox3.Size = New Size(114, 188)
-        GroupBox3.TabIndex = 78
-        GroupBox3.TabStop = False
-        GroupBox3.Text = "IVs (Max 31 Each)"
+        pokemon3IVs_grp.Controls.Add(Button3)
+        pokemon3IVs_grp.Controls.Add(Button4)
+        pokemon3IVs_grp.Controls.Add(TextBox14)
+        pokemon3IVs_grp.Controls.Add(Label15)
+        pokemon3IVs_grp.Controls.Add(TextBox15)
+        pokemon3IVs_grp.Controls.Add(Label16)
+        pokemon3IVs_grp.Controls.Add(TextBox16)
+        pokemon3IVs_grp.Controls.Add(Label17)
+        pokemon3IVs_grp.Controls.Add(TextBox17)
+        pokemon3IVs_grp.Controls.Add(Label18)
+        pokemon3IVs_grp.Controls.Add(TextBox18)
+        pokemon3IVs_grp.Controls.Add(Label19)
+        pokemon3IVs_grp.Controls.Add(TextBox19)
+        pokemon3IVs_grp.Controls.Add(Label20)
+        pokemon3IVs_grp.Location = New Point(204, 154)
+        pokemon3IVs_grp.Name = "pokemon3IVs_grp"
+        pokemon3IVs_grp.Size = New Size(114, 188)
+        pokemon3IVs_grp.TabIndex = 78
+        pokemon3IVs_grp.TabStop = False
+        pokemon3IVs_grp.Text = "IVs (Max 31 Each)"
         ' 
         ' Button3
         ' 
@@ -2471,85 +2471,85 @@ Partial Class Form1
         pokemon3PokeBall_lbl.TabIndex = 76
         pokemon3PokeBall_lbl.Text = "PokéBall"
         ' 
-        ' Label23
+        ' pokemon3Level_lbl
         ' 
-        Label23.AutoSize = True
-        Label23.Location = New Point(298, 19)
-        Label23.Name = "Label23"
-        Label23.Size = New Size(34, 15)
-        Label23.TabIndex = 60
-        Label23.Text = "Level"
+        pokemon3Level_lbl.AutoSize = True
+        pokemon3Level_lbl.Location = New Point(298, 19)
+        pokemon3Level_lbl.Name = "pokemon3Level_lbl"
+        pokemon3Level_lbl.Size = New Size(34, 15)
+        pokemon3Level_lbl.TabIndex = 60
+        pokemon3Level_lbl.Text = "Level"
         ' 
-        ' TextBox21
+        ' pokemon3Nickname_txt
         ' 
-        TextBox21.Location = New Point(298, 125)
-        TextBox21.Name = "TextBox21"
-        TextBox21.PlaceholderText = "Bloom"
-        TextBox21.Size = New Size(140, 23)
-        TextBox21.TabIndex = 75
+        pokemon3Nickname_txt.Location = New Point(298, 125)
+        pokemon3Nickname_txt.Name = "pokemon3Nickname_txt"
+        pokemon3Nickname_txt.PlaceholderText = "Bloom"
+        pokemon3Nickname_txt.Size = New Size(140, 23)
+        pokemon3Nickname_txt.TabIndex = 75
         ' 
-        ' TextBox22
+        ' pokemon3Level_txt
         ' 
-        TextBox22.Location = New Point(298, 37)
-        TextBox22.MaxLength = 3
-        TextBox22.Name = "TextBox22"
-        TextBox22.PlaceholderText = "100"
-        TextBox22.Size = New Size(140, 23)
-        TextBox22.TabIndex = 61
+        pokemon3Level_txt.Location = New Point(298, 37)
+        pokemon3Level_txt.MaxLength = 3
+        pokemon3Level_txt.Name = "pokemon3Level_txt"
+        pokemon3Level_txt.PlaceholderText = "100"
+        pokemon3Level_txt.Size = New Size(140, 23)
+        pokemon3Level_txt.TabIndex = 61
         ' 
-        ' Label24
+        ' pokemon3Nickname_lbl
         ' 
-        Label24.AutoSize = True
-        Label24.Location = New Point(298, 107)
-        Label24.Name = "Label24"
-        Label24.Size = New Size(61, 15)
-        Label24.TabIndex = 74
-        Label24.Text = "Nickname"
+        pokemon3Nickname_lbl.AutoSize = True
+        pokemon3Nickname_lbl.Location = New Point(298, 107)
+        pokemon3Nickname_lbl.Name = "pokemon3Nickname_lbl"
+        pokemon3Nickname_lbl.Size = New Size(61, 15)
+        pokemon3Nickname_lbl.TabIndex = 74
+        pokemon3Nickname_lbl.Text = "Nickname"
         ' 
-        ' GroupBox4
+        ' pokemon3Moves_grp
         ' 
-        GroupBox4.Controls.Add(TextBox23)
-        GroupBox4.Controls.Add(TextBox24)
-        GroupBox4.Controls.Add(TextBox25)
-        GroupBox4.Controls.Add(TextBox26)
-        GroupBox4.Location = New Point(444, 22)
-        GroupBox4.Name = "GroupBox4"
-        GroupBox4.Size = New Size(273, 82)
-        GroupBox4.TabIndex = 62
-        GroupBox4.TabStop = False
-        GroupBox4.Text = "Moves"
+        pokemon3Moves_grp.Controls.Add(pokemon3Move4_txtBox)
+        pokemon3Moves_grp.Controls.Add(pokemon3Move3_txtBox)
+        pokemon3Moves_grp.Controls.Add(pokemon3Move2_txtBox)
+        pokemon3Moves_grp.Controls.Add(pokemon3Move1_txtBox)
+        pokemon3Moves_grp.Location = New Point(444, 22)
+        pokemon3Moves_grp.Name = "pokemon3Moves_grp"
+        pokemon3Moves_grp.Size = New Size(273, 82)
+        pokemon3Moves_grp.TabIndex = 62
+        pokemon3Moves_grp.TabStop = False
+        pokemon3Moves_grp.Text = "Moves"
         ' 
-        ' TextBox23
+        ' pokemon3Move4_txtBox
         ' 
-        TextBox23.Location = New Point(132, 51)
-        TextBox23.Name = "TextBox23"
-        TextBox23.PlaceholderText = "Move 4"
-        TextBox23.Size = New Size(120, 23)
-        TextBox23.TabIndex = 3
+        pokemon3Move4_txtBox.Location = New Point(132, 51)
+        pokemon3Move4_txtBox.Name = "pokemon3Move4_txtBox"
+        pokemon3Move4_txtBox.PlaceholderText = "Move 4"
+        pokemon3Move4_txtBox.Size = New Size(120, 23)
+        pokemon3Move4_txtBox.TabIndex = 3
         ' 
-        ' TextBox24
+        ' pokemon3Move3_txtBox
         ' 
-        TextBox24.Location = New Point(6, 51)
-        TextBox24.Name = "TextBox24"
-        TextBox24.PlaceholderText = "Move 3"
-        TextBox24.Size = New Size(120, 23)
-        TextBox24.TabIndex = 2
+        pokemon3Move3_txtBox.Location = New Point(6, 51)
+        pokemon3Move3_txtBox.Name = "pokemon3Move3_txtBox"
+        pokemon3Move3_txtBox.PlaceholderText = "Move 3"
+        pokemon3Move3_txtBox.Size = New Size(120, 23)
+        pokemon3Move3_txtBox.TabIndex = 2
         ' 
-        ' TextBox25
+        ' pokemon3Move2_txtBox
         ' 
-        TextBox25.Location = New Point(132, 22)
-        TextBox25.Name = "TextBox25"
-        TextBox25.PlaceholderText = "Move 2"
-        TextBox25.Size = New Size(120, 23)
-        TextBox25.TabIndex = 1
+        pokemon3Move2_txtBox.Location = New Point(132, 22)
+        pokemon3Move2_txtBox.Name = "pokemon3Move2_txtBox"
+        pokemon3Move2_txtBox.PlaceholderText = "Move 2"
+        pokemon3Move2_txtBox.Size = New Size(120, 23)
+        pokemon3Move2_txtBox.TabIndex = 1
         ' 
-        ' TextBox26
+        ' pokemon3Move1_txtBox
         ' 
-        TextBox26.Location = New Point(6, 22)
-        TextBox26.Name = "TextBox26"
-        TextBox26.PlaceholderText = "Move 1"
-        TextBox26.Size = New Size(120, 23)
-        TextBox26.TabIndex = 0
+        pokemon3Move1_txtBox.Location = New Point(6, 22)
+        pokemon3Move1_txtBox.Name = "pokemon3Move1_txtBox"
+        pokemon3Move1_txtBox.PlaceholderText = "Move 1"
+        pokemon3Move1_txtBox.Size = New Size(120, 23)
+        pokemon3Move1_txtBox.TabIndex = 0
         ' 
         ' pokemon3Happiness_txt
         ' 
@@ -2671,22 +2671,22 @@ Partial Class Form1
         RadioButton4.Text = "Not Shiny"
         RadioButton4.UseVisualStyleBackColor = True
         ' 
-        ' Label29
+        ' pokemon3Form_lbl
         ' 
-        Label29.AutoSize = True
-        Label29.Location = New Point(298, 63)
-        Label29.Name = "Label29"
-        Label29.Size = New Size(123, 15)
-        Label29.TabIndex = 67
-        Label29.Text = "Form (Numbers Only)"
+        pokemon3Form_lbl.AutoSize = True
+        pokemon3Form_lbl.Location = New Point(298, 63)
+        pokemon3Form_lbl.Name = "pokemon3Form_lbl"
+        pokemon3Form_lbl.Size = New Size(123, 15)
+        pokemon3Form_lbl.TabIndex = 67
+        pokemon3Form_lbl.Text = "Form (Numbers Only)"
         ' 
-        ' TextBox28
+        ' pokemon3Form_txt
         ' 
-        TextBox28.Location = New Point(298, 81)
-        TextBox28.Name = "TextBox28"
-        TextBox28.PlaceholderText = "1"
-        TextBox28.Size = New Size(140, 23)
-        TextBox28.TabIndex = 68
+        pokemon3Form_txt.Location = New Point(298, 81)
+        pokemon3Form_txt.Name = "pokemon3Form_txt"
+        pokemon3Form_txt.PlaceholderText = "1"
+        pokemon3Form_txt.Size = New Size(140, 23)
+        pokemon3Form_txt.TabIndex = 68
         ' 
         ' pg_pkmn4
         ' 
@@ -2703,9 +2703,9 @@ Partial Class Form1
         ' 
         pokemon4_grp.Controls.Add(GroupBox6)
         pokemon4_grp.Controls.Add(Label30)
-        pokemon4_grp.Controls.Add(GroupBox7)
+        pokemon4_grp.Controls.Add(pokemon4EVs_grp)
         pokemon4_grp.Controls.Add(TextBox35)
-        pokemon4_grp.Controls.Add(GroupBox8)
+        pokemon4_grp.Controls.Add(pokemon4IVs_grp)
         pokemon4_grp.Controls.Add(TextBox42)
         pokemon4_grp.Controls.Add(ComboBox5)
         pokemon4_grp.Controls.Add(Label43)
@@ -2776,26 +2776,26 @@ Partial Class Form1
         Label30.TabIndex = 56
         Label30.Text = "Pokémon Name"
         ' 
-        ' GroupBox7
+        ' pokemon4EVs_grp
         ' 
-        GroupBox7.Controls.Add(TextBox29)
-        GroupBox7.Controls.Add(Label31)
-        GroupBox7.Controls.Add(TextBox30)
-        GroupBox7.Controls.Add(Label32)
-        GroupBox7.Controls.Add(TextBox31)
-        GroupBox7.Controls.Add(Label33)
-        GroupBox7.Controls.Add(TextBox32)
-        GroupBox7.Controls.Add(Label34)
-        GroupBox7.Controls.Add(TextBox33)
-        GroupBox7.Controls.Add(Label35)
-        GroupBox7.Controls.Add(TextBox34)
-        GroupBox7.Controls.Add(Label36)
-        GroupBox7.Location = New Point(324, 154)
-        GroupBox7.Name = "GroupBox7"
-        GroupBox7.Size = New Size(114, 156)
-        GroupBox7.TabIndex = 79
-        GroupBox7.TabStop = False
-        GroupBox7.Text = "EVs"
+        pokemon4EVs_grp.Controls.Add(TextBox29)
+        pokemon4EVs_grp.Controls.Add(Label31)
+        pokemon4EVs_grp.Controls.Add(TextBox30)
+        pokemon4EVs_grp.Controls.Add(Label32)
+        pokemon4EVs_grp.Controls.Add(TextBox31)
+        pokemon4EVs_grp.Controls.Add(Label33)
+        pokemon4EVs_grp.Controls.Add(TextBox32)
+        pokemon4EVs_grp.Controls.Add(Label34)
+        pokemon4EVs_grp.Controls.Add(TextBox33)
+        pokemon4EVs_grp.Controls.Add(Label35)
+        pokemon4EVs_grp.Controls.Add(TextBox34)
+        pokemon4EVs_grp.Controls.Add(Label36)
+        pokemon4EVs_grp.Location = New Point(324, 154)
+        pokemon4EVs_grp.Name = "pokemon4EVs_grp"
+        pokemon4EVs_grp.Size = New Size(114, 156)
+        pokemon4EVs_grp.TabIndex = 79
+        pokemon4EVs_grp.TabStop = False
+        pokemon4EVs_grp.Text = "EVs"
         ' 
         ' TextBox29
         ' 
@@ -2916,28 +2916,28 @@ Partial Class Form1
         TextBox35.Size = New Size(140, 23)
         TextBox35.TabIndex = 57
         ' 
-        ' GroupBox8
+        ' pokemon4IVs_grp
         ' 
-        GroupBox8.Controls.Add(Button5)
-        GroupBox8.Controls.Add(Button6)
-        GroupBox8.Controls.Add(TextBox36)
-        GroupBox8.Controls.Add(Label37)
-        GroupBox8.Controls.Add(TextBox37)
-        GroupBox8.Controls.Add(Label38)
-        GroupBox8.Controls.Add(TextBox38)
-        GroupBox8.Controls.Add(Label39)
-        GroupBox8.Controls.Add(TextBox39)
-        GroupBox8.Controls.Add(Label40)
-        GroupBox8.Controls.Add(TextBox40)
-        GroupBox8.Controls.Add(Label41)
-        GroupBox8.Controls.Add(TextBox41)
-        GroupBox8.Controls.Add(Label42)
-        GroupBox8.Location = New Point(204, 154)
-        GroupBox8.Name = "GroupBox8"
-        GroupBox8.Size = New Size(114, 188)
-        GroupBox8.TabIndex = 78
-        GroupBox8.TabStop = False
-        GroupBox8.Text = "IVs (Max 31 Each)"
+        pokemon4IVs_grp.Controls.Add(Button5)
+        pokemon4IVs_grp.Controls.Add(Button6)
+        pokemon4IVs_grp.Controls.Add(TextBox36)
+        pokemon4IVs_grp.Controls.Add(Label37)
+        pokemon4IVs_grp.Controls.Add(TextBox37)
+        pokemon4IVs_grp.Controls.Add(Label38)
+        pokemon4IVs_grp.Controls.Add(TextBox38)
+        pokemon4IVs_grp.Controls.Add(Label39)
+        pokemon4IVs_grp.Controls.Add(TextBox39)
+        pokemon4IVs_grp.Controls.Add(Label40)
+        pokemon4IVs_grp.Controls.Add(TextBox40)
+        pokemon4IVs_grp.Controls.Add(Label41)
+        pokemon4IVs_grp.Controls.Add(TextBox41)
+        pokemon4IVs_grp.Controls.Add(Label42)
+        pokemon4IVs_grp.Location = New Point(204, 154)
+        pokemon4IVs_grp.Name = "pokemon4IVs_grp"
+        pokemon4IVs_grp.Size = New Size(114, 188)
+        pokemon4IVs_grp.TabIndex = 78
+        pokemon4IVs_grp.TabStop = False
+        pokemon4IVs_grp.Text = "IVs (Max 31 Each)"
         ' 
         ' Button5
         ' 
@@ -3332,9 +3332,9 @@ Partial Class Form1
         ' 
         pokemon5_grp.Controls.Add(GroupBox11)
         pokemon5_grp.Controls.Add(Label52)
-        pokemon5_grp.Controls.Add(GroupBox12)
+        pokemon5_grp.Controls.Add(pokemon5EVs_grp)
         pokemon5_grp.Controls.Add(TextBox57)
-        pokemon5_grp.Controls.Add(GroupBox13)
+        pokemon5_grp.Controls.Add(pokemon5IVs_grp)
         pokemon5_grp.Controls.Add(TextBox64)
         pokemon5_grp.Controls.Add(ComboBox9)
         pokemon5_grp.Controls.Add(Label65)
@@ -3405,26 +3405,26 @@ Partial Class Form1
         Label52.TabIndex = 56
         Label52.Text = "Pokémon Name"
         ' 
-        ' GroupBox12
+        ' pokemon5EVs_grp
         ' 
-        GroupBox12.Controls.Add(TextBox51)
-        GroupBox12.Controls.Add(Label53)
-        GroupBox12.Controls.Add(TextBox52)
-        GroupBox12.Controls.Add(Label54)
-        GroupBox12.Controls.Add(TextBox53)
-        GroupBox12.Controls.Add(Label55)
-        GroupBox12.Controls.Add(TextBox54)
-        GroupBox12.Controls.Add(Label56)
-        GroupBox12.Controls.Add(TextBox55)
-        GroupBox12.Controls.Add(Label57)
-        GroupBox12.Controls.Add(TextBox56)
-        GroupBox12.Controls.Add(Label58)
-        GroupBox12.Location = New Point(324, 154)
-        GroupBox12.Name = "GroupBox12"
-        GroupBox12.Size = New Size(114, 156)
-        GroupBox12.TabIndex = 79
-        GroupBox12.TabStop = False
-        GroupBox12.Text = "EVs"
+        pokemon5EVs_grp.Controls.Add(TextBox51)
+        pokemon5EVs_grp.Controls.Add(Label53)
+        pokemon5EVs_grp.Controls.Add(TextBox52)
+        pokemon5EVs_grp.Controls.Add(Label54)
+        pokemon5EVs_grp.Controls.Add(TextBox53)
+        pokemon5EVs_grp.Controls.Add(Label55)
+        pokemon5EVs_grp.Controls.Add(TextBox54)
+        pokemon5EVs_grp.Controls.Add(Label56)
+        pokemon5EVs_grp.Controls.Add(TextBox55)
+        pokemon5EVs_grp.Controls.Add(Label57)
+        pokemon5EVs_grp.Controls.Add(TextBox56)
+        pokemon5EVs_grp.Controls.Add(Label58)
+        pokemon5EVs_grp.Location = New Point(324, 154)
+        pokemon5EVs_grp.Name = "pokemon5EVs_grp"
+        pokemon5EVs_grp.Size = New Size(114, 156)
+        pokemon5EVs_grp.TabIndex = 79
+        pokemon5EVs_grp.TabStop = False
+        pokemon5EVs_grp.Text = "EVs"
         ' 
         ' TextBox51
         ' 
@@ -3545,28 +3545,28 @@ Partial Class Form1
         TextBox57.Size = New Size(140, 23)
         TextBox57.TabIndex = 57
         ' 
-        ' GroupBox13
+        ' pokemon5IVs_grp
         ' 
-        GroupBox13.Controls.Add(Button7)
-        GroupBox13.Controls.Add(Button8)
-        GroupBox13.Controls.Add(TextBox58)
-        GroupBox13.Controls.Add(Label59)
-        GroupBox13.Controls.Add(TextBox59)
-        GroupBox13.Controls.Add(Label60)
-        GroupBox13.Controls.Add(TextBox60)
-        GroupBox13.Controls.Add(Label61)
-        GroupBox13.Controls.Add(TextBox61)
-        GroupBox13.Controls.Add(Label62)
-        GroupBox13.Controls.Add(TextBox62)
-        GroupBox13.Controls.Add(Label63)
-        GroupBox13.Controls.Add(TextBox63)
-        GroupBox13.Controls.Add(Label64)
-        GroupBox13.Location = New Point(204, 154)
-        GroupBox13.Name = "GroupBox13"
-        GroupBox13.Size = New Size(114, 188)
-        GroupBox13.TabIndex = 78
-        GroupBox13.TabStop = False
-        GroupBox13.Text = "IVs (Max 31 Each)"
+        pokemon5IVs_grp.Controls.Add(Button7)
+        pokemon5IVs_grp.Controls.Add(Button8)
+        pokemon5IVs_grp.Controls.Add(TextBox58)
+        pokemon5IVs_grp.Controls.Add(Label59)
+        pokemon5IVs_grp.Controls.Add(TextBox59)
+        pokemon5IVs_grp.Controls.Add(Label60)
+        pokemon5IVs_grp.Controls.Add(TextBox60)
+        pokemon5IVs_grp.Controls.Add(Label61)
+        pokemon5IVs_grp.Controls.Add(TextBox61)
+        pokemon5IVs_grp.Controls.Add(Label62)
+        pokemon5IVs_grp.Controls.Add(TextBox62)
+        pokemon5IVs_grp.Controls.Add(Label63)
+        pokemon5IVs_grp.Controls.Add(TextBox63)
+        pokemon5IVs_grp.Controls.Add(Label64)
+        pokemon5IVs_grp.Location = New Point(204, 154)
+        pokemon5IVs_grp.Name = "pokemon5IVs_grp"
+        pokemon5IVs_grp.Size = New Size(114, 188)
+        pokemon5IVs_grp.TabIndex = 78
+        pokemon5IVs_grp.TabStop = False
+        pokemon5IVs_grp.Text = "IVs (Max 31 Each)"
         ' 
         ' Button7
         ' 
@@ -3961,9 +3961,9 @@ Partial Class Form1
         ' 
         pokemon6_grp.Controls.Add(GroupBox16)
         pokemon6_grp.Controls.Add(Label74)
-        pokemon6_grp.Controls.Add(GroupBox17)
+        pokemon6_grp.Controls.Add(pokemon6EVs_grp)
         pokemon6_grp.Controls.Add(TextBox79)
-        pokemon6_grp.Controls.Add(GroupBox18)
+        pokemon6_grp.Controls.Add(pokemon6IVs_grp)
         pokemon6_grp.Controls.Add(TextBox86)
         pokemon6_grp.Controls.Add(ComboBox13)
         pokemon6_grp.Controls.Add(Label87)
@@ -4034,26 +4034,26 @@ Partial Class Form1
         Label74.TabIndex = 56
         Label74.Text = "Pokémon Name"
         ' 
-        ' GroupBox17
+        ' pokemon6EVs_grp
         ' 
-        GroupBox17.Controls.Add(TextBox73)
-        GroupBox17.Controls.Add(Label75)
-        GroupBox17.Controls.Add(TextBox74)
-        GroupBox17.Controls.Add(Label76)
-        GroupBox17.Controls.Add(TextBox75)
-        GroupBox17.Controls.Add(Label77)
-        GroupBox17.Controls.Add(TextBox76)
-        GroupBox17.Controls.Add(Label78)
-        GroupBox17.Controls.Add(TextBox77)
-        GroupBox17.Controls.Add(Label79)
-        GroupBox17.Controls.Add(TextBox78)
-        GroupBox17.Controls.Add(Label80)
-        GroupBox17.Location = New Point(324, 154)
-        GroupBox17.Name = "GroupBox17"
-        GroupBox17.Size = New Size(114, 156)
-        GroupBox17.TabIndex = 79
-        GroupBox17.TabStop = False
-        GroupBox17.Text = "EVs"
+        pokemon6EVs_grp.Controls.Add(TextBox73)
+        pokemon6EVs_grp.Controls.Add(Label75)
+        pokemon6EVs_grp.Controls.Add(TextBox74)
+        pokemon6EVs_grp.Controls.Add(Label76)
+        pokemon6EVs_grp.Controls.Add(TextBox75)
+        pokemon6EVs_grp.Controls.Add(Label77)
+        pokemon6EVs_grp.Controls.Add(TextBox76)
+        pokemon6EVs_grp.Controls.Add(Label78)
+        pokemon6EVs_grp.Controls.Add(TextBox77)
+        pokemon6EVs_grp.Controls.Add(Label79)
+        pokemon6EVs_grp.Controls.Add(TextBox78)
+        pokemon6EVs_grp.Controls.Add(Label80)
+        pokemon6EVs_grp.Location = New Point(324, 154)
+        pokemon6EVs_grp.Name = "pokemon6EVs_grp"
+        pokemon6EVs_grp.Size = New Size(114, 156)
+        pokemon6EVs_grp.TabIndex = 79
+        pokemon6EVs_grp.TabStop = False
+        pokemon6EVs_grp.Text = "EVs"
         ' 
         ' TextBox73
         ' 
@@ -4174,28 +4174,28 @@ Partial Class Form1
         TextBox79.Size = New Size(140, 23)
         TextBox79.TabIndex = 57
         ' 
-        ' GroupBox18
+        ' pokemon6IVs_grp
         ' 
-        GroupBox18.Controls.Add(Button9)
-        GroupBox18.Controls.Add(Button10)
-        GroupBox18.Controls.Add(TextBox80)
-        GroupBox18.Controls.Add(Label81)
-        GroupBox18.Controls.Add(TextBox81)
-        GroupBox18.Controls.Add(Label82)
-        GroupBox18.Controls.Add(TextBox82)
-        GroupBox18.Controls.Add(Label83)
-        GroupBox18.Controls.Add(TextBox83)
-        GroupBox18.Controls.Add(Label84)
-        GroupBox18.Controls.Add(TextBox84)
-        GroupBox18.Controls.Add(Label85)
-        GroupBox18.Controls.Add(TextBox85)
-        GroupBox18.Controls.Add(Label86)
-        GroupBox18.Location = New Point(204, 154)
-        GroupBox18.Name = "GroupBox18"
-        GroupBox18.Size = New Size(114, 188)
-        GroupBox18.TabIndex = 78
-        GroupBox18.TabStop = False
-        GroupBox18.Text = "IVs (Max 31 Each)"
+        pokemon6IVs_grp.Controls.Add(Button9)
+        pokemon6IVs_grp.Controls.Add(Button10)
+        pokemon6IVs_grp.Controls.Add(TextBox80)
+        pokemon6IVs_grp.Controls.Add(Label81)
+        pokemon6IVs_grp.Controls.Add(TextBox81)
+        pokemon6IVs_grp.Controls.Add(Label82)
+        pokemon6IVs_grp.Controls.Add(TextBox82)
+        pokemon6IVs_grp.Controls.Add(Label83)
+        pokemon6IVs_grp.Controls.Add(TextBox83)
+        pokemon6IVs_grp.Controls.Add(Label84)
+        pokemon6IVs_grp.Controls.Add(TextBox84)
+        pokemon6IVs_grp.Controls.Add(Label85)
+        pokemon6IVs_grp.Controls.Add(TextBox85)
+        pokemon6IVs_grp.Controls.Add(Label86)
+        pokemon6IVs_grp.Location = New Point(204, 154)
+        pokemon6IVs_grp.Name = "pokemon6IVs_grp"
+        pokemon6IVs_grp.Size = New Size(114, 188)
+        pokemon6IVs_grp.TabIndex = 78
+        pokemon6IVs_grp.TabStop = False
+        pokemon6IVs_grp.Text = "IVs (Max 31 Each)"
         ' 
         ' Button9
         ' 
@@ -4608,7 +4608,7 @@ Partial Class Form1
         ' aboutHeaderAuthor_lbl
         ' 
         aboutHeaderAuthor_lbl.AutoSize = True
-        aboutHeaderAuthor_lbl.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        aboutHeaderAuthor_lbl.Font = New Font("Segoe UI", 15.75F)
         aboutHeaderAuthor_lbl.Location = New Point(3, 32)
         aboutHeaderAuthor_lbl.Name = "aboutHeaderAuthor_lbl"
         aboutHeaderAuthor_lbl.Size = New Size(180, 30)
@@ -4618,7 +4618,7 @@ Partial Class Form1
         ' aboutHeader_lbl
         ' 
         aboutHeader_lbl.AutoSize = True
-        aboutHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        aboutHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         aboutHeader_lbl.Location = New Point(3, 0)
         aboutHeader_lbl.Name = "aboutHeader_lbl"
         aboutHeader_lbl.Size = New Size(280, 32)
@@ -4691,12 +4691,12 @@ Partial Class Form1
         pokemon3_grp.PerformLayout()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
-        GroupBox2.ResumeLayout(False)
-        GroupBox2.PerformLayout()
-        GroupBox3.ResumeLayout(False)
-        GroupBox3.PerformLayout()
-        GroupBox4.ResumeLayout(False)
-        GroupBox4.PerformLayout()
+        pokemon3EVs_grp.ResumeLayout(False)
+        pokemon3EVs_grp.PerformLayout()
+        pokemon3IVs_grp.ResumeLayout(False)
+        pokemon3IVs_grp.PerformLayout()
+        pokemon3Moves_grp.ResumeLayout(False)
+        pokemon3Moves_grp.PerformLayout()
         GroupBox5.ResumeLayout(False)
         GroupBox5.PerformLayout()
         pg_pkmn4.ResumeLayout(False)
@@ -4704,10 +4704,10 @@ Partial Class Form1
         pokemon4_grp.PerformLayout()
         GroupBox6.ResumeLayout(False)
         GroupBox6.PerformLayout()
-        GroupBox7.ResumeLayout(False)
-        GroupBox7.PerformLayout()
-        GroupBox8.ResumeLayout(False)
-        GroupBox8.PerformLayout()
+        pokemon4EVs_grp.ResumeLayout(False)
+        pokemon4EVs_grp.PerformLayout()
+        pokemon4IVs_grp.ResumeLayout(False)
+        pokemon4IVs_grp.PerformLayout()
         GroupBox9.ResumeLayout(False)
         GroupBox9.PerformLayout()
         GroupBox10.ResumeLayout(False)
@@ -4717,10 +4717,10 @@ Partial Class Form1
         pokemon5_grp.PerformLayout()
         GroupBox11.ResumeLayout(False)
         GroupBox11.PerformLayout()
-        GroupBox12.ResumeLayout(False)
-        GroupBox12.PerformLayout()
-        GroupBox13.ResumeLayout(False)
-        GroupBox13.PerformLayout()
+        pokemon5EVs_grp.ResumeLayout(False)
+        pokemon5EVs_grp.PerformLayout()
+        pokemon5IVs_grp.ResumeLayout(False)
+        pokemon5IVs_grp.PerformLayout()
         GroupBox14.ResumeLayout(False)
         GroupBox14.PerformLayout()
         GroupBox15.ResumeLayout(False)
@@ -4730,10 +4730,10 @@ Partial Class Form1
         pokemon6_grp.PerformLayout()
         GroupBox16.ResumeLayout(False)
         GroupBox16.PerformLayout()
-        GroupBox17.ResumeLayout(False)
-        GroupBox17.PerformLayout()
-        GroupBox18.ResumeLayout(False)
-        GroupBox18.PerformLayout()
+        pokemon6EVs_grp.ResumeLayout(False)
+        pokemon6EVs_grp.PerformLayout()
+        pokemon6IVs_grp.ResumeLayout(False)
+        pokemon6IVs_grp.PerformLayout()
         GroupBox19.ResumeLayout(False)
         GroupBox19.PerformLayout()
         GroupBox20.ResumeLayout(False)
@@ -4918,7 +4918,7 @@ Partial Class Form1
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents pokemon3Name_lbl As Label
-    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents pokemon3EVs_grp As GroupBox
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents TextBox8 As TextBox
@@ -4932,7 +4932,7 @@ Partial Class Form1
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents pokemon3Name_txt As TextBox
-    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents pokemon3IVs_grp As GroupBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents TextBox14 As TextBox
@@ -4951,15 +4951,15 @@ Partial Class Form1
     Friend WithEvents pokemon3PokeBall_cmb As ComboBox
     Friend WithEvents pokemon3HeldItem_lbl As Label
     Friend WithEvents pokemon3PokeBall_lbl As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents TextBox22 As TextBox
-    Friend WithEvents Label24 As Label
-    Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents TextBox23 As TextBox
-    Friend WithEvents TextBox24 As TextBox
-    Friend WithEvents TextBox25 As TextBox
-    Friend WithEvents TextBox26 As TextBox
+    Friend WithEvents pokemon3Level_lbl As Label
+    Friend WithEvents pokemon3Nickname_txt As TextBox
+    Friend WithEvents pokemon3Level_txt As TextBox
+    Friend WithEvents pokemon3Nickname_lbl As Label
+    Friend WithEvents pokemon3Moves_grp As GroupBox
+    Friend WithEvents pokemon3Move4_txtBox As TextBox
+    Friend WithEvents pokemon3Move3_txtBox As TextBox
+    Friend WithEvents pokemon3Move2_txtBox As TextBox
+    Friend WithEvents pokemon3Move1_txtBox As TextBox
     Friend WithEvents pokemon3Happiness_txt As TextBox
     Friend WithEvents pokemon3Ability_lbl As Label
     Friend WithEvents pokemon3Happiness_lbl As Label
@@ -4972,13 +4972,13 @@ Partial Class Form1
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents Label29 As Label
-    Friend WithEvents TextBox28 As TextBox
+    Friend WithEvents pokemon3Form_lbl As Label
+    Friend WithEvents pokemon3Form_txt As TextBox
     Friend WithEvents GroupBox6 As GroupBox
     Friend WithEvents RadioButton5 As RadioButton
     Friend WithEvents RadioButton6 As RadioButton
     Friend WithEvents Label30 As Label
-    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents pokemon4EVs_grp As GroupBox
     Friend WithEvents TextBox29 As TextBox
     Friend WithEvents Label31 As Label
     Friend WithEvents TextBox30 As TextBox
@@ -4992,7 +4992,7 @@ Partial Class Form1
     Friend WithEvents TextBox34 As TextBox
     Friend WithEvents Label36 As Label
     Friend WithEvents TextBox35 As TextBox
-    Friend WithEvents GroupBox8 As GroupBox
+    Friend WithEvents pokemon4IVs_grp As GroupBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents TextBox36 As TextBox
@@ -5038,7 +5038,7 @@ Partial Class Form1
     Friend WithEvents RadioButton9 As RadioButton
     Friend WithEvents RadioButton10 As RadioButton
     Friend WithEvents Label52 As Label
-    Friend WithEvents GroupBox12 As GroupBox
+    Friend WithEvents pokemon5EVs_grp As GroupBox
     Friend WithEvents TextBox51 As TextBox
     Friend WithEvents Label53 As Label
     Friend WithEvents TextBox52 As TextBox
@@ -5052,7 +5052,7 @@ Partial Class Form1
     Friend WithEvents TextBox56 As TextBox
     Friend WithEvents Label58 As Label
     Friend WithEvents TextBox57 As TextBox
-    Friend WithEvents GroupBox13 As GroupBox
+    Friend WithEvents pokemon5IVs_grp As GroupBox
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents TextBox58 As TextBox
@@ -5098,7 +5098,7 @@ Partial Class Form1
     Friend WithEvents RadioButton13 As RadioButton
     Friend WithEvents RadioButton14 As RadioButton
     Friend WithEvents Label74 As Label
-    Friend WithEvents GroupBox17 As GroupBox
+    Friend WithEvents pokemon6EVs_grp As GroupBox
     Friend WithEvents TextBox73 As TextBox
     Friend WithEvents Label75 As Label
     Friend WithEvents TextBox74 As TextBox
@@ -5112,7 +5112,7 @@ Partial Class Form1
     Friend WithEvents TextBox78 As TextBox
     Friend WithEvents Label80 As Label
     Friend WithEvents TextBox79 As TextBox
-    Friend WithEvents GroupBox18 As GroupBox
+    Friend WithEvents pokemon6IVs_grp As GroupBox
     Friend WithEvents Button9 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents TextBox80 As TextBox
