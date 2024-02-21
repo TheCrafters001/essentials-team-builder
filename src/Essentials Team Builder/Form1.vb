@@ -9,7 +9,22 @@ Public Class Form1
         numPoké_cmb.SelectedIndex = 0
 
         ' Gender
-        pokemon1Gender_cmb.SelectedIndex = 2
+        ' This works like numPoké_cmb_SelectedIndexChanged, but because of it
+        ' being a little less complex, it requires a different way to write it,
+        ' so here is the new way to do this.
+        For Index As Integer = 0 To 5
+            ' Get the name via the Index + 1
+            Dim pokemonName As String = "pokemon" & (Index + 1) & "Gender_cmb"
+            'Create a ComboBox that acts as a DirectCast that is FirstOrDefault
+            Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonName, True).FirstOrDefault(), ComboBox)
+
+            ' Make sure the comboBox isn't nothing. If it is nothing, it doesn't exist.
+            If Combo IsNot Nothing Then
+                Combo.SelectedIndex = 2
+            Else
+                Debug.WriteLine("Could not find ComboBox: " & pokemonName)
+            End If
+        Next
 
         ' Copyright
         copyright_lbl.Text = My.Application.Info.Copyright
@@ -132,5 +147,37 @@ Public Class Form1
 
     Private Sub GeneratePreviewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneratePreviewToolStripMenuItem.Click
 
+    End Sub
+
+    Private Sub customBallIDs_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles customBallIDs_chkBox.CheckedChanged
+        If customBallIDs_chkBox.Checked = True Then
+            For Index As Integer = 0 To 5
+                ' Get the name via the Index + 1
+                Dim pokemonName As String = "pokemon" & (Index + 1) & "PokeballID_cmb"
+                'Create a ComboBox that acts as a DirectCast that is FirstOrDefault
+                Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonName, True).FirstOrDefault(), ComboBox)
+
+                ' Make sure the comboBox isn't nothing. If it is nothing, it doesn't exist.
+                If Combo IsNot Nothing Then
+                    Combo.DropDownStyle = ComboBoxStyle.DropDown
+                Else
+                    Debug.WriteLine("Could not find ComboBox: " & pokemonName)
+                End If
+            Next
+        Else
+            For Index As Integer = 0 To 5
+                ' Get the name via the Index + 1
+                Dim pokemonName As String = "pokemon" & (Index + 1) & "PokeballID_cmb"
+                'Create a ComboBox that acts as a DirectCast that is FirstOrDefault
+                Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonName, True).FirstOrDefault(), ComboBox)
+
+                ' Make sure the comboBox isn't nothing. If it is nothing, it doesn't exist.
+                If Combo IsNot Nothing Then
+                    Combo.DropDownStyle = ComboBoxStyle.DropDownList
+                Else
+                    Debug.WriteLine("Could not find ComboBox: " & pokemonName)
+                End If
+            Next
+        End If
     End Sub
 End Class

@@ -570,7 +570,7 @@ Partial Class Form1
         ' 
         properSpellingNote_lbl.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         properSpellingNote_lbl.AutoSize = True
-        properSpellingNote_lbl.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        properSpellingNote_lbl.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         properSpellingNote_lbl.ForeColor = Color.Red
         properSpellingNote_lbl.Location = New Point(3, 428)
         properSpellingNote_lbl.Name = "properSpellingNote_lbl"
@@ -581,7 +581,7 @@ Partial Class Form1
         ' essData_lbl
         ' 
         essData_lbl.AutoSize = True
-        essData_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        essData_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         essData_lbl.Location = New Point(3, 132)
         essData_lbl.Name = "essData_lbl"
         essData_lbl.Size = New Size(184, 32)
@@ -757,7 +757,7 @@ Partial Class Form1
         ' trainerInfoHeader_lbl
         ' 
         trainerInfoHeader_lbl.AutoSize = True
-        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         trainerInfoHeader_lbl.Location = New Point(3, 0)
         trainerInfoHeader_lbl.Name = "trainerInfoHeader_lbl"
         trainerInfoHeader_lbl.Size = New Size(239, 32)
@@ -4618,7 +4618,7 @@ Partial Class Form1
         ' aboutHeader_lbl
         ' 
         aboutHeader_lbl.AutoSize = True
-        aboutHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        aboutHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         aboutHeader_lbl.Location = New Point(3, 0)
         aboutHeader_lbl.Name = "aboutHeader_lbl"
         aboutHeader_lbl.Size = New Size(280, 32)
@@ -4642,7 +4642,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(779, 595)
         Controls.Add(editor_grp)
