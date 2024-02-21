@@ -30,54 +30,33 @@ Public Class Form1
     End Sub
 
     Private Sub numPoké_cmb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles numPoké_cmb.SelectedIndexChanged
-        If numPoké_cmb.SelectedIndex = 0 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = False
-            pokemon3_grp.Enabled = False
-            pokemon4_grp.Enabled = False
-            pokemon5_grp.Enabled = False
-            pokemon6_grp.Enabled = False
+        ' New Function, this doesn't touch pokemon1_grp as it doesn't need to.
+        ' This new one works dynamically and took me forever to figure out. It
+        ' isn't the prettiest thing, but it does the job.
 
-        ElseIf numPoké_cmb.SelectedIndex = 1 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = False
-            pokemon4_grp.Enabled = False
-            pokemon5_grp.Enabled = False
-            pokemon6_grp.Enabled = False
+        'Get the Index of NumPoke and set it as SelIndex
+        Dim SelIndex As Integer = numPoké_cmb.SelectedIndex + 1
 
-        ElseIf numPoké_cmb.SelectedIndex = 2 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = True
-            pokemon4_grp.Enabled = False
-            pokemon5_grp.Enabled = False
-            pokemon6_grp.Enabled = False
+        For Index As Integer = 0 To 5
+            ' Dynamically create the control names.
+            Dim grpBoxName As String = "pokemon" & (Index + 2) & "_grp"
 
-        ElseIf numPoké_cmb.SelectedIndex = 3 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = True
-            pokemon4_grp.Enabled = True
-            pokemon5_grp.Enabled = False
-            pokemon6_grp.Enabled = False
+            ' Making sure they exists
+            Dim controlArray() As Control = Me.Controls.Find(grpBoxName, True)
 
-        ElseIf numPoké_cmb.SelectedIndex = 4 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = True
-            pokemon4_grp.Enabled = True
-            pokemon5_grp.Enabled = True
-            pokemon6_grp.Enabled = False
+            ' Making Sure that the array is more than zero
+            ' but also making sure that the is a groupbox so
+            ' I don't accidently blow anything up.
+            If controlArray.Length > 0 AndAlso TypeOf controlArray(0) Is GroupBox Then
+                'Create a groupBox that acts as a DirectCast
+                Dim Grps As GroupBox = DirectCast(controlArray(0), GroupBox)
 
-        ElseIf numPoké_cmb.SelectedIndex = 5 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = True
-            pokemon4_grp.Enabled = True
-            pokemon5_grp.Enabled = True
-            pokemon6_grp.Enabled = True
-        End If
+                ' Now enable by the selindex, making it act as a bool
+                Grps.Enabled = (Index < SelIndex)
+
+                Debug.WriteLine(Grps.Name & "=" & (Index < SelIndex))
+            End If
+        Next
     End Sub
 
     Private Sub useAbilityIndex_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles useAbilityIndex_chkBox.CheckedChanged
@@ -92,9 +71,6 @@ Public Class Form1
         ObjectCheck.SuperShiny()
     End Sub
 
-    Private Sub customBallIDs_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles customBallIDs_chkBox.CheckedChanged
-
-    End Sub
 
 #Region "Old Gen Code"
 
