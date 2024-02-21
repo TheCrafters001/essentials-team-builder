@@ -39,7 +39,7 @@ Public Class Form1
 
         For Index As Integer = 0 To 5
             ' Dynamically create the control names.
-            Dim grpBoxName As String = "pokemon" & (Index + 2) & "_grp"
+            Dim grpBoxName As String = "pokemon" & (Index + 1) & "_grp"
 
             ' Making sure they exists
             Dim controlArray() As Control = Me.Controls.Find(grpBoxName, True)
