@@ -179,38 +179,38 @@ Partial Class Form1
         pg_pkmn3 = New TabPage()
         pokemon3_grp = New GroupBox()
         pokemon3Shadow_grp = New GroupBox()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
+        pokemon3Shadow_rad = New RadioButton()
+        pokemon3NotShadow_rad = New RadioButton()
         pokemon3Name_lbl = New Label()
         pokemon3EVs_grp = New GroupBox()
-        TextBox7 = New TextBox()
-        Label9 = New Label()
-        TextBox8 = New TextBox()
-        Label10 = New Label()
-        TextBox9 = New TextBox()
-        Label11 = New Label()
-        TextBox10 = New TextBox()
-        Label12 = New Label()
-        TextBox11 = New TextBox()
-        Label13 = New Label()
-        TextBox12 = New TextBox()
-        Label14 = New Label()
+        pokemon3EVsDEF_txt = New TextBox()
+        pokemon3EVsDEF_lbl = New Label()
+        pokemon3EVsSPDEF_txt = New TextBox()
+        pokemon3EVsSPDEF_lbl = New Label()
+        pokemon3EVsSPATK_txt = New TextBox()
+        pokemon3EVsSPATK_lbl = New Label()
+        pokemon3EVsSPD_txt = New TextBox()
+        pokemon3EVsSPD_lbl = New Label()
+        pokemon3EVsATK_txt = New TextBox()
+        pokemon3EVsATK_lbl = New Label()
+        pokemon3EVsHP_txt = New TextBox()
+        pokemon3EVsHP_lbl = New Label()
         pokemon3Name_txt = New TextBox()
         pokemon3IVs_grp = New GroupBox()
         Button3 = New Button()
         Button4 = New Button()
-        TextBox14 = New TextBox()
-        Label15 = New Label()
-        TextBox15 = New TextBox()
-        Label16 = New Label()
-        TextBox16 = New TextBox()
-        Label17 = New Label()
-        TextBox17 = New TextBox()
-        Label18 = New Label()
-        TextBox18 = New TextBox()
-        Label19 = New Label()
-        TextBox19 = New TextBox()
-        Label20 = New Label()
+        pokemon3IVsDEF_txt = New TextBox()
+        pokemon3IVsDEF_lbl = New Label()
+        pokemon3IVsSPDEF_txt = New TextBox()
+        pokemon3IVsSPDEF_lbl = New Label()
+        pokemon3IVsSPATK_txt = New TextBox()
+        pokemon3IVsSPATK_lbl = New Label()
+        pokemon3IVsSPD_txt = New TextBox()
+        pokemon3IVsSPD_lbl = New Label()
+        pokemon3IVsATK_txt = New TextBox()
+        pokemon3IVsATK_lbl = New Label()
+        pokemon3IVsHP_txt = New TextBox()
+        pokemon3IVsHP_lbl = New Label()
         pokemon3HeldItem_txt = New TextBox()
         pokemon3PokeBall_cmb = New ComboBox()
         pokemon3HeldItem_lbl = New Label()
@@ -234,14 +234,14 @@ Partial Class Form1
         pokemon3Gender_cmb = New ComboBox()
         pokemon3Shiny_grp = New GroupBox()
         CheckBox2 = New CheckBox()
-        RadioButton3 = New RadioButton()
-        RadioButton4 = New RadioButton()
+        pokemon3Shiny_rad = New RadioButton()
+        pokemon3NotShiny_rad = New RadioButton()
         pokemon3Form_lbl = New Label()
         pokemon3Form_txt = New TextBox()
         pg_pkmn4 = New TabPage()
         pokemon4_grp = New GroupBox()
         pokemon4Shadow_grp = New GroupBox()
-        RadioButton5 = New RadioButton()
+        pokemon4Shadow_rad = New RadioButton()
         RadioButton6 = New RadioButton()
         Label30 = New Label()
         pokemon4EVs_grp = New GroupBox()
@@ -570,7 +570,7 @@ Partial Class Form1
         ' 
         properSpellingNote_lbl.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         properSpellingNote_lbl.AutoSize = True
-        properSpellingNote_lbl.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        properSpellingNote_lbl.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
         properSpellingNote_lbl.ForeColor = Color.Red
         properSpellingNote_lbl.Location = New Point(3, 428)
         properSpellingNote_lbl.Name = "properSpellingNote_lbl"
@@ -581,7 +581,7 @@ Partial Class Form1
         ' essData_lbl
         ' 
         essData_lbl.AutoSize = True
-        essData_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        essData_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
         essData_lbl.Location = New Point(3, 132)
         essData_lbl.Name = "essData_lbl"
         essData_lbl.Size = New Size(184, 32)
@@ -757,7 +757,7 @@ Partial Class Form1
         ' trainerInfoHeader_lbl
         ' 
         trainerInfoHeader_lbl.AutoSize = True
-        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
         trainerInfoHeader_lbl.Location = New Point(3, 0)
         trainerInfoHeader_lbl.Name = "trainerInfoHeader_lbl"
         trainerInfoHeader_lbl.Size = New Size(239, 32)
@@ -2107,8 +2107,8 @@ Partial Class Form1
         ' 
         ' pokemon3Shadow_grp
         ' 
-        pokemon3Shadow_grp.Controls.Add(RadioButton1)
-        pokemon3Shadow_grp.Controls.Add(RadioButton2)
+        pokemon3Shadow_grp.Controls.Add(pokemon3Shadow_rad)
+        pokemon3Shadow_grp.Controls.Add(pokemon3NotShadow_rad)
         pokemon3Shadow_grp.Location = New Point(444, 198)
         pokemon3Shadow_grp.Name = "pokemon3Shadow_grp"
         pokemon3Shadow_grp.Size = New Size(273, 82)
@@ -2116,27 +2116,27 @@ Partial Class Form1
         pokemon3Shadow_grp.TabStop = False
         pokemon3Shadow_grp.Text = "Shadow"
         ' 
-        ' RadioButton1
+        ' pokemon3Shadow_rad
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(6, 47)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(67, 19)
-        RadioButton1.TabIndex = 1
-        RadioButton1.Text = "Shadow"
-        RadioButton1.UseVisualStyleBackColor = True
+        pokemon3Shadow_rad.AutoSize = True
+        pokemon3Shadow_rad.Location = New Point(6, 47)
+        pokemon3Shadow_rad.Name = "pokemon3Shadow_rad"
+        pokemon3Shadow_rad.Size = New Size(67, 19)
+        pokemon3Shadow_rad.TabIndex = 1
+        pokemon3Shadow_rad.Text = "Shadow"
+        pokemon3Shadow_rad.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton2
+        ' pokemon3NotShadow_rad
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Checked = True
-        RadioButton2.Location = New Point(6, 22)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(90, 19)
-        RadioButton2.TabIndex = 0
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "Not Shadow"
-        RadioButton2.UseVisualStyleBackColor = True
+        pokemon3NotShadow_rad.AutoSize = True
+        pokemon3NotShadow_rad.Checked = True
+        pokemon3NotShadow_rad.Location = New Point(6, 22)
+        pokemon3NotShadow_rad.Name = "pokemon3NotShadow_rad"
+        pokemon3NotShadow_rad.Size = New Size(90, 19)
+        pokemon3NotShadow_rad.TabIndex = 0
+        pokemon3NotShadow_rad.TabStop = True
+        pokemon3NotShadow_rad.Text = "Not Shadow"
+        pokemon3NotShadow_rad.UseVisualStyleBackColor = True
         ' 
         ' pokemon3Name_lbl
         ' 
@@ -2149,18 +2149,18 @@ Partial Class Form1
         ' 
         ' pokemon3EVs_grp
         ' 
-        pokemon3EVs_grp.Controls.Add(TextBox7)
-        pokemon3EVs_grp.Controls.Add(Label9)
-        pokemon3EVs_grp.Controls.Add(TextBox8)
-        pokemon3EVs_grp.Controls.Add(Label10)
-        pokemon3EVs_grp.Controls.Add(TextBox9)
-        pokemon3EVs_grp.Controls.Add(Label11)
-        pokemon3EVs_grp.Controls.Add(TextBox10)
-        pokemon3EVs_grp.Controls.Add(Label12)
-        pokemon3EVs_grp.Controls.Add(TextBox11)
-        pokemon3EVs_grp.Controls.Add(Label13)
-        pokemon3EVs_grp.Controls.Add(TextBox12)
-        pokemon3EVs_grp.Controls.Add(Label14)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsDEF_txt)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsDEF_lbl)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsSPDEF_txt)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsSPDEF_lbl)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsSPATK_txt)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsSPATK_lbl)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsSPD_txt)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsSPD_lbl)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsATK_txt)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsATK_lbl)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsHP_txt)
+        pokemon3EVs_grp.Controls.Add(pokemon3EVsHP_lbl)
         pokemon3EVs_grp.Location = New Point(324, 154)
         pokemon3EVs_grp.Name = "pokemon3EVs_grp"
         pokemon3EVs_grp.Size = New Size(114, 156)
@@ -2168,113 +2168,113 @@ Partial Class Form1
         pokemon3EVs_grp.TabStop = False
         pokemon3EVs_grp.Text = "EVs"
         ' 
-        ' TextBox7
+        ' pokemon3EVsDEF_txt
         ' 
-        TextBox7.Location = New Point(6, 125)
-        TextBox7.MaxLength = 3
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(44, 23)
-        TextBox7.TabIndex = 11
-        TextBox7.Text = "0"
+        pokemon3EVsDEF_txt.Location = New Point(6, 125)
+        pokemon3EVsDEF_txt.MaxLength = 3
+        pokemon3EVsDEF_txt.Name = "pokemon3EVsDEF_txt"
+        pokemon3EVsDEF_txt.Size = New Size(44, 23)
+        pokemon3EVsDEF_txt.TabIndex = 11
+        pokemon3EVsDEF_txt.Text = "0"
         ' 
-        ' Label9
+        ' pokemon3EVsDEF_lbl
         ' 
-        Label9.AutoSize = True
-        Label9.Location = New Point(14, 107)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(27, 15)
-        Label9.TabIndex = 10
-        Label9.Text = "DEF"
+        pokemon3EVsDEF_lbl.AutoSize = True
+        pokemon3EVsDEF_lbl.Location = New Point(14, 107)
+        pokemon3EVsDEF_lbl.Name = "pokemon3EVsDEF_lbl"
+        pokemon3EVsDEF_lbl.Size = New Size(27, 15)
+        pokemon3EVsDEF_lbl.TabIndex = 10
+        pokemon3EVsDEF_lbl.Text = "DEF"
         ' 
-        ' TextBox8
+        ' pokemon3EVsSPDEF_txt
         ' 
-        TextBox8.Location = New Point(55, 125)
-        TextBox8.MaxLength = 3
-        TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(44, 23)
-        TextBox8.TabIndex = 9
-        TextBox8.Text = "0"
+        pokemon3EVsSPDEF_txt.Location = New Point(55, 125)
+        pokemon3EVsSPDEF_txt.MaxLength = 3
+        pokemon3EVsSPDEF_txt.Name = "pokemon3EVsSPDEF_txt"
+        pokemon3EVsSPDEF_txt.Size = New Size(44, 23)
+        pokemon3EVsSPDEF_txt.TabIndex = 9
+        pokemon3EVsSPDEF_txt.Text = "0"
         ' 
-        ' Label10
+        ' pokemon3EVsSPDEF_lbl
         ' 
-        Label10.AutoSize = True
-        Label10.Location = New Point(55, 109)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(40, 15)
-        Label10.TabIndex = 8
-        Label10.Text = "SPDEF"
+        pokemon3EVsSPDEF_lbl.AutoSize = True
+        pokemon3EVsSPDEF_lbl.Location = New Point(55, 109)
+        pokemon3EVsSPDEF_lbl.Name = "pokemon3EVsSPDEF_lbl"
+        pokemon3EVsSPDEF_lbl.Size = New Size(40, 15)
+        pokemon3EVsSPDEF_lbl.TabIndex = 8
+        pokemon3EVsSPDEF_lbl.Text = "SPDEF"
         ' 
-        ' TextBox9
+        ' pokemon3EVsSPATK_txt
         ' 
-        TextBox9.Location = New Point(55, 81)
-        TextBox9.MaxLength = 3
-        TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(44, 23)
-        TextBox9.TabIndex = 7
-        TextBox9.Text = "0"
+        pokemon3EVsSPATK_txt.Location = New Point(55, 81)
+        pokemon3EVsSPATK_txt.MaxLength = 3
+        pokemon3EVsSPATK_txt.Name = "pokemon3EVsSPATK_txt"
+        pokemon3EVsSPATK_txt.Size = New Size(44, 23)
+        pokemon3EVsSPATK_txt.TabIndex = 7
+        pokemon3EVsSPATK_txt.Text = "0"
         ' 
-        ' Label11
+        ' pokemon3EVsSPATK_lbl
         ' 
-        Label11.AutoSize = True
-        Label11.Location = New Point(56, 65)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(39, 15)
-        Label11.TabIndex = 6
-        Label11.Text = "SPATK"
+        pokemon3EVsSPATK_lbl.AutoSize = True
+        pokemon3EVsSPATK_lbl.Location = New Point(56, 65)
+        pokemon3EVsSPATK_lbl.Name = "pokemon3EVsSPATK_lbl"
+        pokemon3EVsSPATK_lbl.Size = New Size(39, 15)
+        pokemon3EVsSPATK_lbl.TabIndex = 6
+        pokemon3EVsSPATK_lbl.Text = "SPATK"
         ' 
-        ' TextBox10
+        ' pokemon3EVsSPD_txt
         ' 
-        TextBox10.Location = New Point(55, 37)
-        TextBox10.MaxLength = 3
-        TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(44, 23)
-        TextBox10.TabIndex = 5
-        TextBox10.Text = "0"
+        pokemon3EVsSPD_txt.Location = New Point(55, 37)
+        pokemon3EVsSPD_txt.MaxLength = 3
+        pokemon3EVsSPD_txt.Name = "pokemon3EVsSPD_txt"
+        pokemon3EVsSPD_txt.Size = New Size(44, 23)
+        pokemon3EVsSPD_txt.TabIndex = 5
+        pokemon3EVsSPD_txt.Text = "0"
         ' 
-        ' Label12
+        ' pokemon3EVsSPD_lbl
         ' 
-        Label12.AutoSize = True
-        Label12.Location = New Point(63, 21)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(28, 15)
-        Label12.TabIndex = 4
-        Label12.Text = "SPD"
+        pokemon3EVsSPD_lbl.AutoSize = True
+        pokemon3EVsSPD_lbl.Location = New Point(63, 21)
+        pokemon3EVsSPD_lbl.Name = "pokemon3EVsSPD_lbl"
+        pokemon3EVsSPD_lbl.Size = New Size(28, 15)
+        pokemon3EVsSPD_lbl.TabIndex = 4
+        pokemon3EVsSPD_lbl.Text = "SPD"
         ' 
-        ' TextBox11
+        ' pokemon3EVsATK_txt
         ' 
-        TextBox11.Location = New Point(6, 81)
-        TextBox11.MaxLength = 3
-        TextBox11.Name = "TextBox11"
-        TextBox11.Size = New Size(44, 23)
-        TextBox11.TabIndex = 3
-        TextBox11.Text = "0"
+        pokemon3EVsATK_txt.Location = New Point(6, 81)
+        pokemon3EVsATK_txt.MaxLength = 3
+        pokemon3EVsATK_txt.Name = "pokemon3EVsATK_txt"
+        pokemon3EVsATK_txt.Size = New Size(44, 23)
+        pokemon3EVsATK_txt.TabIndex = 3
+        pokemon3EVsATK_txt.Text = "0"
         ' 
-        ' Label13
+        ' pokemon3EVsATK_lbl
         ' 
-        Label13.AutoSize = True
-        Label13.Location = New Point(14, 63)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(27, 15)
-        Label13.TabIndex = 2
-        Label13.Text = "ATK"
+        pokemon3EVsATK_lbl.AutoSize = True
+        pokemon3EVsATK_lbl.Location = New Point(14, 63)
+        pokemon3EVsATK_lbl.Name = "pokemon3EVsATK_lbl"
+        pokemon3EVsATK_lbl.Size = New Size(27, 15)
+        pokemon3EVsATK_lbl.TabIndex = 2
+        pokemon3EVsATK_lbl.Text = "ATK"
         ' 
-        ' TextBox12
+        ' pokemon3EVsHP_txt
         ' 
-        TextBox12.Location = New Point(6, 37)
-        TextBox12.MaxLength = 3
-        TextBox12.Name = "TextBox12"
-        TextBox12.Size = New Size(44, 23)
-        TextBox12.TabIndex = 1
-        TextBox12.Text = "0"
+        pokemon3EVsHP_txt.Location = New Point(6, 37)
+        pokemon3EVsHP_txt.MaxLength = 3
+        pokemon3EVsHP_txt.Name = "pokemon3EVsHP_txt"
+        pokemon3EVsHP_txt.Size = New Size(44, 23)
+        pokemon3EVsHP_txt.TabIndex = 1
+        pokemon3EVsHP_txt.Text = "0"
         ' 
-        ' Label14
+        ' pokemon3EVsHP_lbl
         ' 
-        Label14.AutoSize = True
-        Label14.Location = New Point(16, 19)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(23, 15)
-        Label14.TabIndex = 0
-        Label14.Text = "HP"
+        pokemon3EVsHP_lbl.AutoSize = True
+        pokemon3EVsHP_lbl.Location = New Point(16, 19)
+        pokemon3EVsHP_lbl.Name = "pokemon3EVsHP_lbl"
+        pokemon3EVsHP_lbl.Size = New Size(23, 15)
+        pokemon3EVsHP_lbl.TabIndex = 0
+        pokemon3EVsHP_lbl.Text = "HP"
         ' 
         ' pokemon3Name_txt
         ' 
@@ -2291,18 +2291,18 @@ Partial Class Form1
         ' 
         pokemon3IVs_grp.Controls.Add(Button3)
         pokemon3IVs_grp.Controls.Add(Button4)
-        pokemon3IVs_grp.Controls.Add(TextBox14)
-        pokemon3IVs_grp.Controls.Add(Label15)
-        pokemon3IVs_grp.Controls.Add(TextBox15)
-        pokemon3IVs_grp.Controls.Add(Label16)
-        pokemon3IVs_grp.Controls.Add(TextBox16)
-        pokemon3IVs_grp.Controls.Add(Label17)
-        pokemon3IVs_grp.Controls.Add(TextBox17)
-        pokemon3IVs_grp.Controls.Add(Label18)
-        pokemon3IVs_grp.Controls.Add(TextBox18)
-        pokemon3IVs_grp.Controls.Add(Label19)
-        pokemon3IVs_grp.Controls.Add(TextBox19)
-        pokemon3IVs_grp.Controls.Add(Label20)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsDEF_txt)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsDEF_lbl)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsSPDEF_txt)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsSPDEF_lbl)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsSPATK_txt)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsSPATK_lbl)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsSPD_txt)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsSPD_lbl)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsATK_txt)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsATK_lbl)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsHP_txt)
+        pokemon3IVs_grp.Controls.Add(pokemon3IVsHP_lbl)
         pokemon3IVs_grp.Location = New Point(204, 154)
         pokemon3IVs_grp.Name = "pokemon3IVs_grp"
         pokemon3IVs_grp.Size = New Size(114, 188)
@@ -2328,113 +2328,113 @@ Partial Class Form1
         Button4.Text = "Max"
         Button4.UseVisualStyleBackColor = True
         ' 
-        ' TextBox14
+        ' pokemon3IVsDEF_txt
         ' 
-        TextBox14.Location = New Point(7, 123)
-        TextBox14.MaxLength = 3
-        TextBox14.Name = "TextBox14"
-        TextBox14.Size = New Size(44, 23)
-        TextBox14.TabIndex = 13
-        TextBox14.Text = "0"
+        pokemon3IVsDEF_txt.Location = New Point(7, 123)
+        pokemon3IVsDEF_txt.MaxLength = 3
+        pokemon3IVsDEF_txt.Name = "pokemon3IVsDEF_txt"
+        pokemon3IVsDEF_txt.Size = New Size(44, 23)
+        pokemon3IVsDEF_txt.TabIndex = 13
+        pokemon3IVsDEF_txt.Text = "0"
         ' 
-        ' Label15
+        ' pokemon3IVsDEF_lbl
         ' 
-        Label15.AutoSize = True
-        Label15.Location = New Point(18, 105)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(27, 15)
-        Label15.TabIndex = 12
-        Label15.Text = "DEF"
+        pokemon3IVsDEF_lbl.AutoSize = True
+        pokemon3IVsDEF_lbl.Location = New Point(18, 105)
+        pokemon3IVsDEF_lbl.Name = "pokemon3IVsDEF_lbl"
+        pokemon3IVsDEF_lbl.Size = New Size(27, 15)
+        pokemon3IVsDEF_lbl.TabIndex = 12
+        pokemon3IVsDEF_lbl.Text = "DEF"
         ' 
-        ' TextBox15
+        ' pokemon3IVsSPDEF_txt
         ' 
-        TextBox15.Location = New Point(57, 123)
-        TextBox15.MaxLength = 3
-        TextBox15.Name = "TextBox15"
-        TextBox15.Size = New Size(44, 23)
-        TextBox15.TabIndex = 9
-        TextBox15.Text = "0"
+        pokemon3IVsSPDEF_txt.Location = New Point(57, 123)
+        pokemon3IVsSPDEF_txt.MaxLength = 3
+        pokemon3IVsSPDEF_txt.Name = "pokemon3IVsSPDEF_txt"
+        pokemon3IVsSPDEF_txt.Size = New Size(44, 23)
+        pokemon3IVsSPDEF_txt.TabIndex = 9
+        pokemon3IVsSPDEF_txt.Text = "0"
         ' 
-        ' Label16
+        ' pokemon3IVsSPDEF_lbl
         ' 
-        Label16.AutoSize = True
-        Label16.Location = New Point(59, 105)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(40, 15)
-        Label16.TabIndex = 8
-        Label16.Text = "SPDEF"
+        pokemon3IVsSPDEF_lbl.AutoSize = True
+        pokemon3IVsSPDEF_lbl.Location = New Point(59, 105)
+        pokemon3IVsSPDEF_lbl.Name = "pokemon3IVsSPDEF_lbl"
+        pokemon3IVsSPDEF_lbl.Size = New Size(40, 15)
+        pokemon3IVsSPDEF_lbl.TabIndex = 8
+        pokemon3IVsSPDEF_lbl.Text = "SPDEF"
         ' 
-        ' TextBox16
+        ' pokemon3IVsSPATK_txt
         ' 
-        TextBox16.Location = New Point(57, 79)
-        TextBox16.MaxLength = 3
-        TextBox16.Name = "TextBox16"
-        TextBox16.Size = New Size(44, 23)
-        TextBox16.TabIndex = 7
-        TextBox16.Text = "0"
+        pokemon3IVsSPATK_txt.Location = New Point(57, 79)
+        pokemon3IVsSPATK_txt.MaxLength = 3
+        pokemon3IVsSPATK_txt.Name = "pokemon3IVsSPATK_txt"
+        pokemon3IVsSPATK_txt.Size = New Size(44, 23)
+        pokemon3IVsSPATK_txt.TabIndex = 7
+        pokemon3IVsSPATK_txt.Text = "0"
         ' 
-        ' Label17
+        ' pokemon3IVsSPATK_lbl
         ' 
-        Label17.AutoSize = True
-        Label17.Location = New Point(59, 61)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(39, 15)
-        Label17.TabIndex = 6
-        Label17.Text = "SPATK"
+        pokemon3IVsSPATK_lbl.AutoSize = True
+        pokemon3IVsSPATK_lbl.Location = New Point(59, 61)
+        pokemon3IVsSPATK_lbl.Name = "pokemon3IVsSPATK_lbl"
+        pokemon3IVsSPATK_lbl.Size = New Size(39, 15)
+        pokemon3IVsSPATK_lbl.TabIndex = 6
+        pokemon3IVsSPATK_lbl.Text = "SPATK"
         ' 
-        ' TextBox17
+        ' pokemon3IVsSPD_txt
         ' 
-        TextBox17.Location = New Point(57, 35)
-        TextBox17.MaxLength = 3
-        TextBox17.Name = "TextBox17"
-        TextBox17.Size = New Size(44, 23)
-        TextBox17.TabIndex = 5
-        TextBox17.Text = "0"
+        pokemon3IVsSPD_txt.Location = New Point(57, 35)
+        pokemon3IVsSPD_txt.MaxLength = 3
+        pokemon3IVsSPD_txt.Name = "pokemon3IVsSPD_txt"
+        pokemon3IVsSPD_txt.Size = New Size(44, 23)
+        pokemon3IVsSPD_txt.TabIndex = 5
+        pokemon3IVsSPD_txt.Text = "0"
         ' 
-        ' Label18
+        ' pokemon3IVsSPD_lbl
         ' 
-        Label18.AutoSize = True
-        Label18.Location = New Point(65, 17)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(28, 15)
-        Label18.TabIndex = 4
-        Label18.Text = "SPD"
+        pokemon3IVsSPD_lbl.AutoSize = True
+        pokemon3IVsSPD_lbl.Location = New Point(65, 17)
+        pokemon3IVsSPD_lbl.Name = "pokemon3IVsSPD_lbl"
+        pokemon3IVsSPD_lbl.Size = New Size(28, 15)
+        pokemon3IVsSPD_lbl.TabIndex = 4
+        pokemon3IVsSPD_lbl.Text = "SPD"
         ' 
-        ' TextBox18
+        ' pokemon3IVsATK_txt
         ' 
-        TextBox18.Location = New Point(7, 79)
-        TextBox18.MaxLength = 3
-        TextBox18.Name = "TextBox18"
-        TextBox18.Size = New Size(44, 23)
-        TextBox18.TabIndex = 3
-        TextBox18.Text = "0"
+        pokemon3IVsATK_txt.Location = New Point(7, 79)
+        pokemon3IVsATK_txt.MaxLength = 3
+        pokemon3IVsATK_txt.Name = "pokemon3IVsATK_txt"
+        pokemon3IVsATK_txt.Size = New Size(44, 23)
+        pokemon3IVsATK_txt.TabIndex = 3
+        pokemon3IVsATK_txt.Text = "0"
         ' 
-        ' Label19
+        ' pokemon3IVsATK_lbl
         ' 
-        Label19.AutoSize = True
-        Label19.Location = New Point(18, 61)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(27, 15)
-        Label19.TabIndex = 2
-        Label19.Text = "ATK"
+        pokemon3IVsATK_lbl.AutoSize = True
+        pokemon3IVsATK_lbl.Location = New Point(18, 61)
+        pokemon3IVsATK_lbl.Name = "pokemon3IVsATK_lbl"
+        pokemon3IVsATK_lbl.Size = New Size(27, 15)
+        pokemon3IVsATK_lbl.TabIndex = 2
+        pokemon3IVsATK_lbl.Text = "ATK"
         ' 
-        ' TextBox19
+        ' pokemon3IVsHP_txt
         ' 
-        TextBox19.Location = New Point(7, 35)
-        TextBox19.MaxLength = 3
-        TextBox19.Name = "TextBox19"
-        TextBox19.Size = New Size(44, 23)
-        TextBox19.TabIndex = 1
-        TextBox19.Text = "0"
+        pokemon3IVsHP_txt.Location = New Point(7, 35)
+        pokemon3IVsHP_txt.MaxLength = 3
+        pokemon3IVsHP_txt.Name = "pokemon3IVsHP_txt"
+        pokemon3IVsHP_txt.Size = New Size(44, 23)
+        pokemon3IVsHP_txt.TabIndex = 1
+        pokemon3IVsHP_txt.Text = "0"
         ' 
-        ' Label20
+        ' pokemon3IVsHP_lbl
         ' 
-        Label20.AutoSize = True
-        Label20.Location = New Point(18, 19)
-        Label20.Name = "Label20"
-        Label20.Size = New Size(23, 15)
-        Label20.TabIndex = 0
-        Label20.Text = "HP"
+        pokemon3IVsHP_lbl.AutoSize = True
+        pokemon3IVsHP_lbl.Location = New Point(18, 19)
+        pokemon3IVsHP_lbl.Name = "pokemon3IVsHP_lbl"
+        pokemon3IVsHP_lbl.Size = New Size(23, 15)
+        pokemon3IVsHP_lbl.TabIndex = 0
+        pokemon3IVsHP_lbl.Text = "HP"
         ' 
         ' pokemon3HeldItem_txt
         ' 
@@ -2629,8 +2629,8 @@ Partial Class Form1
         ' pokemon3Shiny_grp
         ' 
         pokemon3Shiny_grp.Controls.Add(CheckBox2)
-        pokemon3Shiny_grp.Controls.Add(RadioButton3)
-        pokemon3Shiny_grp.Controls.Add(RadioButton4)
+        pokemon3Shiny_grp.Controls.Add(pokemon3Shiny_rad)
+        pokemon3Shiny_grp.Controls.Add(pokemon3NotShiny_rad)
         pokemon3Shiny_grp.Location = New Point(444, 110)
         pokemon3Shiny_grp.Name = "pokemon3Shiny_grp"
         pokemon3Shiny_grp.Size = New Size(273, 82)
@@ -2649,27 +2649,27 @@ Partial Class Form1
         CheckBox2.Text = "Super Shiny"
         CheckBox2.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton3
+        ' pokemon3Shiny_rad
         ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(6, 47)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(54, 19)
-        RadioButton3.TabIndex = 1
-        RadioButton3.Text = "Shiny"
-        RadioButton3.UseVisualStyleBackColor = True
+        pokemon3Shiny_rad.AutoSize = True
+        pokemon3Shiny_rad.Location = New Point(6, 47)
+        pokemon3Shiny_rad.Name = "pokemon3Shiny_rad"
+        pokemon3Shiny_rad.Size = New Size(54, 19)
+        pokemon3Shiny_rad.TabIndex = 1
+        pokemon3Shiny_rad.Text = "Shiny"
+        pokemon3Shiny_rad.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton4
+        ' pokemon3NotShiny_rad
         ' 
-        RadioButton4.AutoSize = True
-        RadioButton4.Checked = True
-        RadioButton4.Location = New Point(6, 22)
-        RadioButton4.Name = "RadioButton4"
-        RadioButton4.Size = New Size(77, 19)
-        RadioButton4.TabIndex = 0
-        RadioButton4.TabStop = True
-        RadioButton4.Text = "Not Shiny"
-        RadioButton4.UseVisualStyleBackColor = True
+        pokemon3NotShiny_rad.AutoSize = True
+        pokemon3NotShiny_rad.Checked = True
+        pokemon3NotShiny_rad.Location = New Point(6, 22)
+        pokemon3NotShiny_rad.Name = "pokemon3NotShiny_rad"
+        pokemon3NotShiny_rad.Size = New Size(77, 19)
+        pokemon3NotShiny_rad.TabIndex = 0
+        pokemon3NotShiny_rad.TabStop = True
+        pokemon3NotShiny_rad.Text = "Not Shiny"
+        pokemon3NotShiny_rad.UseVisualStyleBackColor = True
         ' 
         ' pokemon3Form_lbl
         ' 
@@ -2736,7 +2736,7 @@ Partial Class Form1
         ' 
         ' pokemon4Shadow_grp
         ' 
-        pokemon4Shadow_grp.Controls.Add(RadioButton5)
+        pokemon4Shadow_grp.Controls.Add(pokemon4Shadow_rad)
         pokemon4Shadow_grp.Controls.Add(RadioButton6)
         pokemon4Shadow_grp.Location = New Point(444, 198)
         pokemon4Shadow_grp.Name = "pokemon4Shadow_grp"
@@ -2745,15 +2745,15 @@ Partial Class Form1
         pokemon4Shadow_grp.TabStop = False
         pokemon4Shadow_grp.Text = "Shadow"
         ' 
-        ' RadioButton5
+        ' pokemon4Shadow_rad
         ' 
-        RadioButton5.AutoSize = True
-        RadioButton5.Location = New Point(6, 47)
-        RadioButton5.Name = "RadioButton5"
-        RadioButton5.Size = New Size(67, 19)
-        RadioButton5.TabIndex = 1
-        RadioButton5.Text = "Shadow"
-        RadioButton5.UseVisualStyleBackColor = True
+        pokemon4Shadow_rad.AutoSize = True
+        pokemon4Shadow_rad.Location = New Point(6, 47)
+        pokemon4Shadow_rad.Name = "pokemon4Shadow_rad"
+        pokemon4Shadow_rad.Size = New Size(67, 19)
+        pokemon4Shadow_rad.TabIndex = 1
+        pokemon4Shadow_rad.Text = "Shadow"
+        pokemon4Shadow_rad.UseVisualStyleBackColor = True
         ' 
         ' RadioButton6
         ' 
@@ -4618,7 +4618,7 @@ Partial Class Form1
         ' aboutHeader_lbl
         ' 
         aboutHeader_lbl.AutoSize = True
-        aboutHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        aboutHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
         aboutHeader_lbl.Location = New Point(3, 0)
         aboutHeader_lbl.Name = "aboutHeader_lbl"
         aboutHeader_lbl.Size = New Size(280, 32)
@@ -4642,7 +4642,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(779, 595)
         Controls.Add(editor_grp)
@@ -4915,38 +4915,38 @@ Partial Class Form1
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents GeneratePreviewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents pokemon3Shadow_grp As GroupBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents pokemon3Shadow_rad As RadioButton
+    Friend WithEvents pokemon3NotShadow_rad As RadioButton
     Friend WithEvents pokemon3Name_lbl As Label
     Friend WithEvents pokemon3EVs_grp As GroupBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents Label12 As Label
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents Label13 As Label
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents Label14 As Label
+    Friend WithEvents pokemon3EVsDEF_txt As TextBox
+    Friend WithEvents pokemon3EVsDEF_lbl As Label
+    Friend WithEvents pokemon3EVsSPDEF_txt As TextBox
+    Friend WithEvents pokemon3EVsSPDEF_lbl As Label
+    Friend WithEvents pokemon3EVsSPATK_txt As TextBox
+    Friend WithEvents pokemon3EVsSPATK_lbl As Label
+    Friend WithEvents pokemon3EVsSPD_txt As TextBox
+    Friend WithEvents pokemon3EVsSPD_lbl As Label
+    Friend WithEvents pokemon3EVsATK_txt As TextBox
+    Friend WithEvents pokemon3EVsATK_lbl As Label
+    Friend WithEvents pokemon3EVsHP_txt As TextBox
+    Friend WithEvents pokemon3EVsHP_lbl As Label
     Friend WithEvents pokemon3Name_txt As TextBox
     Friend WithEvents pokemon3IVs_grp As GroupBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents Label17 As Label
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents Label18 As Label
-    Friend WithEvents TextBox18 As TextBox
-    Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox19 As TextBox
-    Friend WithEvents Label20 As Label
+    Friend WithEvents pokemon3IVsDEF_txt As TextBox
+    Friend WithEvents pokemon3IVsDEF_lbl As Label
+    Friend WithEvents pokemon3IVsSPDEF_txt As TextBox
+    Friend WithEvents pokemon3IVsSPDEF_lbl As Label
+    Friend WithEvents pokemon3IVsSPATK_txt As TextBox
+    Friend WithEvents pokemon3IVsSPATK_lbl As Label
+    Friend WithEvents pokemon3IVsSPD_txt As TextBox
+    Friend WithEvents pokemon3IVsSPD_lbl As Label
+    Friend WithEvents pokemon3IVsATK_txt As TextBox
+    Friend WithEvents pokemon3IVsATK_lbl As Label
+    Friend WithEvents pokemon3IVsHP_txt As TextBox
+    Friend WithEvents pokemon3IVsHP_lbl As Label
     Friend WithEvents pokemon3HeldItem_txt As TextBox
     Friend WithEvents pokemon3PokeBall_cmb As ComboBox
     Friend WithEvents pokemon3HeldItem_lbl As Label
@@ -4970,12 +4970,12 @@ Partial Class Form1
     Friend WithEvents pokemon3Gender_cmb As ComboBox
     Friend WithEvents pokemon3Shiny_grp As GroupBox
     Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents pokemon3Shiny_rad As RadioButton
+    Friend WithEvents pokemon3NotShiny_rad As RadioButton
     Friend WithEvents pokemon3Form_lbl As Label
     Friend WithEvents pokemon3Form_txt As TextBox
     Friend WithEvents pokemon4Shadow_grp As GroupBox
-    Friend WithEvents RadioButton5 As RadioButton
+    Friend WithEvents pokemon4Shadow_rad As RadioButton
     Friend WithEvents RadioButton6 As RadioButton
     Friend WithEvents Label30 As Label
     Friend WithEvents pokemon4EVs_grp As GroupBox
