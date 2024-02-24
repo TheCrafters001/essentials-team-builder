@@ -33,10 +33,10 @@ Public Class Form1
     Private Sub existingBattle_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles existingBattle_chkBox.CheckedChanged
         If existingBattle_chkBox.Checked = True Then
             battleTeamID_lbl.Enabled = True
-            battleTeamID_txtBox.Enabled = True
+            battleTeamID_nbr.Enabled = True
         Else
             battleTeamID_lbl.Enabled = False
-            battleTeamID_txtBox.Enabled = False
+            battleTeamID_nbr.Enabled = False
         End If
     End Sub
 

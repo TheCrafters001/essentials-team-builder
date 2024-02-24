@@ -38,7 +38,6 @@ Partial Class Form1
         customBallIDs_chkBox = New CheckBox()
         essVersion_cmb = New ComboBox()
         essVersion_lbl = New Label()
-        battleTeamID_txtBox = New TextBox()
         battleTeamID_lbl = New Label()
         numPoké_lbl = New Label()
         numPoké_cmb = New ComboBox()
@@ -54,6 +53,9 @@ Partial Class Form1
         TabControl3 = New TabControl()
         pg_pkmn1 = New TabPage()
         pokemon1_grp = New GroupBox()
+        pokemon1Level_nbr = New NumericUpDown()
+        pokemon1Form_nbr = New NumericUpDown()
+        pokemon1Happiness_nbr = New NumericUpDown()
         pokemon1Shadow_grp = New GroupBox()
         pokemon1Shadow_rad = New RadioButton()
         pokemon1NotShadow_rad = New RadioButton()
@@ -89,7 +91,6 @@ Partial Class Form1
         pokemon1Ball_lbl = New Label()
         pokemon1Nickname_txtBox = New TextBox()
         pokemon1Nickname_lbl = New Label()
-        pokemon1Happiness_txtBox = New TextBox()
         pokemon1Happiness_lbl = New Label()
         pokemon1Nature_cmb = New ComboBox()
         pokemon1Nature_lbl = New Label()
@@ -97,7 +98,6 @@ Partial Class Form1
         pokemon1SuperShiny_chkBox = New CheckBox()
         pokemon1Shiny_rad = New RadioButton()
         pokemon1NotShiny_rad = New RadioButton()
-        pokemon1Form_txtBox = New TextBox()
         pokemon1Form_lbl = New Label()
         pokemon1Gender_cmb = New ComboBox()
         pokemon1Gender_lbl = New Label()
@@ -108,7 +108,6 @@ Partial Class Form1
         pokemon1Move3_txtBox = New TextBox()
         pokemon1Move2_txtBox = New TextBox()
         pokemon1Move1_txtBox = New TextBox()
-        pokemon1Level_txtBox = New TextBox()
         pokemon1Level_lbl = New Label()
         pokemon1HeldItem_lbl = New Label()
         pokemon1HeldItem_txtBox = New TextBox()
@@ -116,6 +115,9 @@ Partial Class Form1
         pokemon1Name_lbl = New Label()
         pg_pkmn2 = New TabPage()
         pokemon2_grp = New GroupBox()
+        pokemon2Level_nbr = New NumericUpDown()
+        pokemon2Form_nbr = New NumericUpDown()
+        pokemon2Happiness_nbr = New NumericUpDown()
         pokemon2Shadow_grp = New GroupBox()
         pokemon2Shadow_rad = New RadioButton()
         pokemon2NotShadow_rad = New RadioButton()
@@ -155,14 +157,12 @@ Partial Class Form1
         pokemon2PokeBall_lbl = New Label()
         pokemon2Level_lbl = New Label()
         pokemon2Nickname_txt = New TextBox()
-        pokemon2Level_txt = New TextBox()
         pokemon2Nickname_lbl = New Label()
         pokemon2Moves_grp = New GroupBox()
         pokemon2Move4_txtBox = New TextBox()
         pokemon2Move3_txtBox = New TextBox()
         pokemon2Move2_txtBox = New TextBox()
         pokemon2Move1_txtBox = New TextBox()
-        pokemon2Happiness_txt = New TextBox()
         pokemon2Ability_lbl = New Label()
         pokemon2Happiness_lbl = New Label()
         pokemon2Ability_cmb = New ComboBox()
@@ -175,9 +175,11 @@ Partial Class Form1
         pokemon2Shiny_rad = New RadioButton()
         pokemon2NotShiny_rad = New RadioButton()
         pokemon2Form_lbl = New Label()
-        pokemon2Form_txt = New TextBox()
         pg_pkmn3 = New TabPage()
         pokemon3_grp = New GroupBox()
+        pokemon3Level_nbr = New NumericUpDown()
+        pokemon3Form_nbr = New NumericUpDown()
+        pokemon3Happiness_nbr = New NumericUpDown()
         pokemon3Shadow_grp = New GroupBox()
         pokemon3Shadow_rad = New RadioButton()
         pokemon3NotShadow_rad = New RadioButton()
@@ -197,8 +199,8 @@ Partial Class Form1
         pokemon3EVsHP_lbl = New Label()
         pokemon3Name_txt = New TextBox()
         pokemon3IVs_grp = New GroupBox()
-        Button3 = New Button()
-        Button4 = New Button()
+        pokemon3RandomIVs_btn = New Button()
+        pokemon3MaxIVs_btn = New Button()
         pokemon3IVsDEF_txt = New TextBox()
         pokemon3IVsDEF_lbl = New Label()
         pokemon3IVsSPDEF_txt = New TextBox()
@@ -217,14 +219,12 @@ Partial Class Form1
         pokemon3PokeBall_lbl = New Label()
         pokemon3Level_lbl = New Label()
         pokemon3Nickname_txt = New TextBox()
-        pokemon3Level_txt = New TextBox()
         pokemon3Nickname_lbl = New Label()
         pokemon3Moves_grp = New GroupBox()
         pokemon3Move4_txtBox = New TextBox()
         pokemon3Move3_txtBox = New TextBox()
         pokemon3Move2_txtBox = New TextBox()
         pokemon3Move1_txtBox = New TextBox()
-        pokemon3Happiness_txt = New TextBox()
         pokemon3Ability_lbl = New Label()
         pokemon3Happiness_lbl = New Label()
         pokemon3Ability_cmb = New ComboBox()
@@ -237,30 +237,32 @@ Partial Class Form1
         pokemon3Shiny_rad = New RadioButton()
         pokemon3NotShiny_rad = New RadioButton()
         pokemon3Form_lbl = New Label()
-        pokemon3Form_txt = New TextBox()
         pg_pkmn4 = New TabPage()
         pokemon4_grp = New GroupBox()
+        pokemon4Level_nbr = New NumericUpDown()
+        pokemon4Form_nbr = New NumericUpDown()
+        pokemon4Happiness_nbr = New NumericUpDown()
         pokemon4Shadow_grp = New GroupBox()
         pokemon4Shadow_rad = New RadioButton()
         pokemon4NotShadow_rad = New RadioButton()
         pokemon4Name_lbl = New Label()
         pokemon4EVs_grp = New GroupBox()
-        TextBox29 = New TextBox()
-        Label31 = New Label()
-        TextBox30 = New TextBox()
-        Label32 = New Label()
-        TextBox31 = New TextBox()
-        Label33 = New Label()
-        TextBox32 = New TextBox()
-        Label34 = New Label()
-        TextBox33 = New TextBox()
-        Label35 = New Label()
-        TextBox34 = New TextBox()
-        Label36 = New Label()
+        pokemon4EVsDEF_txt = New TextBox()
+        pokemon4EVsDEF_lbl = New Label()
+        pokemon4EVsSPDEF_txt = New TextBox()
+        pokemon4EVsSPDEF_lbl = New Label()
+        pokemon4EVsSPATK_txt = New TextBox()
+        pokemon4EVsSPATK_lbl = New Label()
+        pokemon4EVsSPD_txt = New TextBox()
+        pokemon4EVsSPD_lbl = New Label()
+        pokemon4EVsATK_txt = New TextBox()
+        pokemon4EVsATK_lbl = New Label()
+        pokemon4EVsHP_txt = New TextBox()
+        pokemon4EVsHP_lbl = New Label()
         pokemon4Name_txt = New TextBox()
         pokemon4IVs_grp = New GroupBox()
-        Button5 = New Button()
-        Button6 = New Button()
+        pokemon4RandomIVs_btn = New Button()
+        pokemon4MaxIVs_btn = New Button()
         pokemon4IVsDEF_txt = New TextBox()
         pokemon4IVsDEF_lbl = New Label()
         pokemon4IVsSPDEF_txt = New TextBox()
@@ -279,14 +281,12 @@ Partial Class Form1
         pokemon4PokeBall_lbl = New Label()
         pokemon4Level_lbl = New Label()
         pokemon4Nickname_txt = New TextBox()
-        pokemon4Level_txt = New TextBox()
         pokemon4Nickname_lbl = New Label()
         pokemon4Moves_grp = New GroupBox()
         pokemon4Move4_txt = New TextBox()
         pokemon4Move3_txt = New TextBox()
         pokemon4Move2_txt = New TextBox()
         pokemon4Move1_txt = New TextBox()
-        pokemon4Happiness_txt = New TextBox()
         pokemon4Ability_lbl = New Label()
         pokemon4Happiness_lbl = New Label()
         pokemon4Ability_cmb = New ComboBox()
@@ -299,30 +299,32 @@ Partial Class Form1
         pokemon4Shiny_rad = New RadioButton()
         pokemon4NotShiny_rad = New RadioButton()
         pokemon4Form_lbl = New Label()
-        pokemon4Form_txt = New TextBox()
         pg_pkmn5 = New TabPage()
         pokemon5_grp = New GroupBox()
+        pokemon5Level_nbr = New NumericUpDown()
+        pokemon5Form_nbr = New NumericUpDown()
+        pokemon5Happiness_nbr = New NumericUpDown()
         pokemon5Shadow_grp = New GroupBox()
-        RadioButton9 = New RadioButton()
-        RadioButton10 = New RadioButton()
-        Label52 = New Label()
+        pokemon5Shadow_rad = New RadioButton()
+        pokemon5NotShadow_rad = New RadioButton()
+        pokemon5Name_lbl = New Label()
         pokemon5EVs_grp = New GroupBox()
-        TextBox51 = New TextBox()
-        Label53 = New Label()
-        TextBox52 = New TextBox()
-        Label54 = New Label()
-        TextBox53 = New TextBox()
-        Label55 = New Label()
-        TextBox54 = New TextBox()
-        Label56 = New Label()
-        TextBox55 = New TextBox()
-        Label57 = New Label()
-        TextBox56 = New TextBox()
-        Label58 = New Label()
-        TextBox57 = New TextBox()
+        pokemon5EVsDEF_txt = New TextBox()
+        pokemon5EVsDEF_lbl = New Label()
+        pokemon5EVsSPDEF_txt = New TextBox()
+        pokemon5EVsSPDEF_lbl = New Label()
+        pokemon5EVsSPATK_txt = New TextBox()
+        pokemon5EVsSPATK_lbl = New Label()
+        pokemon5EVsSPD_txt = New TextBox()
+        pokemon5EVsSPD_lbl = New Label()
+        pokemon5EVsATK_txt = New TextBox()
+        pokemon5EVsATK_lbl = New Label()
+        pokemon5EVsHP_txt = New TextBox()
+        pokemon5EVsHP_lbl = New Label()
+        pokemon5Name_txt = New TextBox()
         pokemon5IVs_grp = New GroupBox()
-        Button7 = New Button()
-        Button8 = New Button()
+        pokemon5RandomIVs_btn = New Button()
+        pokemon5MaxIVs_btn = New Button()
         pokemon5IVsDEF_txt = New TextBox()
         pokemon5IVsDEF_lbl = New Label()
         pokemon5IVsSPDEF_txt = New TextBox()
@@ -335,95 +337,92 @@ Partial Class Form1
         pokemon5IVsATK_lbl = New Label()
         pokemon5IVsHP_txt = New TextBox()
         pokemon5IVsHP_lbl = New Label()
-        TextBox64 = New TextBox()
-        ComboBox9 = New ComboBox()
-        Label65 = New Label()
-        Label66 = New Label()
-        Label67 = New Label()
-        TextBox65 = New TextBox()
-        TextBox66 = New TextBox()
-        Label68 = New Label()
+        pokemon5HeldItem_txt = New TextBox()
+        pokemon5PokeBall_cmb = New ComboBox()
+        pokemon5HeldItem_lbl = New Label()
+        pokemon5PokeBall_lbl = New Label()
+        pokemon5Level_lbl = New Label()
+        pokemon5Nickname_txt = New TextBox()
+        pokemon5Nickname_lbl = New Label()
         pokemon5Moves_grp = New GroupBox()
         pokemon5Move4_txt = New TextBox()
         pokemon5Move3_txt = New TextBox()
         pokemon5Move2_txt = New TextBox()
         pokemon5Move1_txt = New TextBox()
-        TextBox71 = New TextBox()
-        Label69 = New Label()
-        Label70 = New Label()
-        ComboBox10 = New ComboBox()
-        ComboBox11 = New ComboBox()
-        Label71 = New Label()
-        Label72 = New Label()
+        pokemon5Ability_lbl = New Label()
+        pokemon5Happiness_lbl = New Label()
+        pokemon5Ability_cmb = New ComboBox()
+        pokemon5Nature_cmb = New ComboBox()
+        pokemon5Gender_lbl = New Label()
+        pokemon5Nature_lbl = New Label()
         pokemon5Gender_cmb = New ComboBox()
         pokemon5Shiny_grp = New GroupBox()
         pokemon5SuperShiny_chkBox = New CheckBox()
-        RadioButton11 = New RadioButton()
-        RadioButton12 = New RadioButton()
-        Label73 = New Label()
-        TextBox72 = New TextBox()
+        pokemon5Shiny_rad = New RadioButton()
+        pokemon5NotShiny_rad = New RadioButton()
+        pokemon5Form_lbl = New Label()
         pg_pkmn6 = New TabPage()
         pokemon6_grp = New GroupBox()
+        pokemon6Level_nbr = New NumericUpDown()
+        pokemon6Form_nbr = New NumericUpDown()
+        pokemon6Happiness_nbr = New NumericUpDown()
         pokemon6Shadow_grp = New GroupBox()
-        RadioButton13 = New RadioButton()
-        RadioButton14 = New RadioButton()
-        Label74 = New Label()
+        pokemon6Shadow_rad = New RadioButton()
+        pokemon6NotShadow_rad = New RadioButton()
+        pokemon6Name_lbl = New Label()
         pokemon6EVs_grp = New GroupBox()
-        TextBox73 = New TextBox()
-        Label75 = New Label()
-        TextBox74 = New TextBox()
-        Label76 = New Label()
-        TextBox75 = New TextBox()
-        Label77 = New Label()
-        TextBox76 = New TextBox()
-        Label78 = New Label()
-        TextBox77 = New TextBox()
-        Label79 = New Label()
-        TextBox78 = New TextBox()
-        Label80 = New Label()
-        TextBox79 = New TextBox()
+        pokemon6EVsDEF_txt = New TextBox()
+        pokemon6EVsDEF_lbl = New Label()
+        pokemon6EVsSPDEF_txt = New TextBox()
+        pokemon6EVsSPDEF_lbl = New Label()
+        pokemon6EVsSPATK_txt = New TextBox()
+        pokemon6EVsSPATK_lbl = New Label()
+        pokemon6EVsSPD_txt = New TextBox()
+        pokemon6EVsSPD_lbl = New Label()
+        pokemon6EVsATK_txt = New TextBox()
+        pokemon6EVsATK_lbl = New Label()
+        pokemon6EVsHP_txt = New TextBox()
+        pokemon6EVsHP_lbl = New Label()
+        pokemon6Name_txt = New TextBox()
         pokemon6IVs_grp = New GroupBox()
-        Button9 = New Button()
-        Button10 = New Button()
-        TextBox80 = New TextBox()
+        pokemon6RandomIVs_btn = New Button()
+        pokemon6MaxIVs_btn = New Button()
+        pokemon6IVsDEF_txt = New TextBox()
         pokemon6IVsDEF_lbl = New Label()
-        TextBox81 = New TextBox()
+        pokemon6IVsSPDEF_txt = New TextBox()
         pokemon6IVsSPDEF_lbl = New Label()
-        TextBox82 = New TextBox()
+        pokemon6IVsSPATK_txt = New TextBox()
         pokemon6IVsSPATK_lbl = New Label()
-        TextBox83 = New TextBox()
+        pokemon6IVsSPD_txt = New TextBox()
         pokemon6IVsSPD_lbl = New Label()
-        TextBox84 = New TextBox()
+        pokemon6IVsATK_txt = New TextBox()
         pokemon6IVsATK_lbl = New Label()
-        TextBox85 = New TextBox()
+        pokemon6IVsHP_txt = New TextBox()
         pokemon6IVsHP_lbl = New Label()
-        TextBox86 = New TextBox()
-        ComboBox13 = New ComboBox()
-        Label87 = New Label()
-        Label88 = New Label()
-        Label89 = New Label()
-        TextBox87 = New TextBox()
-        TextBox88 = New TextBox()
-        Label90 = New Label()
+        pokemon6HeldItem_txt = New TextBox()
+        pokemon6PokeBall_cmb = New ComboBox()
+        pokemon6HeldItem_lbl = New Label()
+        pokemon6Pokeball_lbl = New Label()
+        pokemon6Level_lbl = New Label()
+        pokemon6Nickname_txt = New TextBox()
+        pokemon6Nickname_lbl = New Label()
         pokemon6Moves_grp = New GroupBox()
         pokemon6Move4_txt = New TextBox()
         pokemon6Move3_txt = New TextBox()
         pokemon6Move2_txt = New TextBox()
         pokemon6Move1_txt = New TextBox()
-        TextBox93 = New TextBox()
-        Label91 = New Label()
-        Label92 = New Label()
-        ComboBox14 = New ComboBox()
-        ComboBox15 = New ComboBox()
-        Label93 = New Label()
-        Label94 = New Label()
+        pokemon6Ability_lbl = New Label()
+        pokemon6Happiness_lbl = New Label()
+        pokemon6Ability_cmb = New ComboBox()
+        pokemon6Nature_cmb = New ComboBox()
+        pokemon6Gender_lbl = New Label()
+        pokemon6Nature_lbl = New Label()
         pokemon6Gender_cmb = New ComboBox()
         pokemon6Shiny_grp = New GroupBox()
         pokemon6SuperShiny_chkBox = New CheckBox()
-        RadioButton15 = New RadioButton()
-        RadioButton16 = New RadioButton()
-        Label95 = New Label()
-        TextBox94 = New TextBox()
+        pokemon6Shiny_rad = New RadioButton()
+        pokemon6NotShiny_rad = New RadioButton()
+        pokemon6Form_lbl = New Label()
         pg_about = New TabPage()
         aboutInfo_lbl = New Label()
         copyright_lbl = New Label()
@@ -431,6 +430,7 @@ Partial Class Form1
         aboutHeader_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
+        battleTeamID_nbr = New NumericUpDown()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -440,6 +440,9 @@ Partial Class Form1
         TabControl3.SuspendLayout()
         pg_pkmn1.SuspendLayout()
         pokemon1_grp.SuspendLayout()
+        CType(pokemon1Level_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon1Form_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon1Happiness_nbr, ComponentModel.ISupportInitialize).BeginInit()
         pokemon1Shadow_grp.SuspendLayout()
         pokemon1EVs_grp.SuspendLayout()
         pokemon1IVs_grp.SuspendLayout()
@@ -447,6 +450,9 @@ Partial Class Form1
         pokemon1Moves_grp.SuspendLayout()
         pg_pkmn2.SuspendLayout()
         pokemon2_grp.SuspendLayout()
+        CType(pokemon2Level_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon2Form_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon2Happiness_nbr, ComponentModel.ISupportInitialize).BeginInit()
         pokemon2Shadow_grp.SuspendLayout()
         pokemon2EVs_grp.SuspendLayout()
         pokemon2IVs_grp.SuspendLayout()
@@ -454,6 +460,9 @@ Partial Class Form1
         pokemon2Shiny_grp.SuspendLayout()
         pg_pkmn3.SuspendLayout()
         pokemon3_grp.SuspendLayout()
+        CType(pokemon3Level_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon3Form_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon3Happiness_nbr, ComponentModel.ISupportInitialize).BeginInit()
         pokemon3Shadow_grp.SuspendLayout()
         pokemon3EVs_grp.SuspendLayout()
         pokemon3IVs_grp.SuspendLayout()
@@ -461,6 +470,9 @@ Partial Class Form1
         pokemon3Shiny_grp.SuspendLayout()
         pg_pkmn4.SuspendLayout()
         pokemon4_grp.SuspendLayout()
+        CType(pokemon4Level_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon4Form_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon4Happiness_nbr, ComponentModel.ISupportInitialize).BeginInit()
         pokemon4Shadow_grp.SuspendLayout()
         pokemon4EVs_grp.SuspendLayout()
         pokemon4IVs_grp.SuspendLayout()
@@ -468,6 +480,9 @@ Partial Class Form1
         pokemon4Shiny_grp.SuspendLayout()
         pg_pkmn5.SuspendLayout()
         pokemon5_grp.SuspendLayout()
+        CType(pokemon5Level_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon5Form_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon5Happiness_nbr, ComponentModel.ISupportInitialize).BeginInit()
         pokemon5Shadow_grp.SuspendLayout()
         pokemon5EVs_grp.SuspendLayout()
         pokemon5IVs_grp.SuspendLayout()
@@ -475,6 +490,9 @@ Partial Class Form1
         pokemon5Shiny_grp.SuspendLayout()
         pg_pkmn6.SuspendLayout()
         pokemon6_grp.SuspendLayout()
+        CType(pokemon6Level_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon6Form_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pokemon6Happiness_nbr, ComponentModel.ISupportInitialize).BeginInit()
         pokemon6Shadow_grp.SuspendLayout()
         pokemon6EVs_grp.SuspendLayout()
         pokemon6IVs_grp.SuspendLayout()
@@ -482,6 +500,7 @@ Partial Class Form1
         pokemon6Shiny_grp.SuspendLayout()
         pg_about.SuspendLayout()
         MenuStrip1.SuspendLayout()
+        CType(battleTeamID_nbr, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' editor_grp
@@ -530,6 +549,7 @@ Partial Class Form1
         ' 
         ' pg_basic
         ' 
+        pg_basic.Controls.Add(battleTeamID_nbr)
         pg_basic.Controls.Add(Label2)
         pg_basic.Controls.Add(properSpellingNote_lbl)
         pg_basic.Controls.Add(essData_lbl)
@@ -540,7 +560,6 @@ Partial Class Form1
         pg_basic.Controls.Add(customBallIDs_chkBox)
         pg_basic.Controls.Add(essVersion_cmb)
         pg_basic.Controls.Add(essVersion_lbl)
-        pg_basic.Controls.Add(battleTeamID_txtBox)
         pg_basic.Controls.Add(battleTeamID_lbl)
         pg_basic.Controls.Add(numPoké_lbl)
         pg_basic.Controls.Add(numPoké_cmb)
@@ -661,25 +680,15 @@ Partial Class Form1
         essVersion_lbl.TabIndex = 22
         essVersion_lbl.Text = "Essentials Version"
         ' 
-        ' battleTeamID_txtBox
-        ' 
-        battleTeamID_txtBox.Enabled = False
-        battleTeamID_txtBox.Location = New Point(8, 92)
-        battleTeamID_txtBox.MaxLength = 25
-        battleTeamID_txtBox.Name = "battleTeamID_txtBox"
-        battleTeamID_txtBox.PlaceholderText = "3"
-        battleTeamID_txtBox.Size = New Size(168, 23)
-        battleTeamID_txtBox.TabIndex = 19
-        ' 
         ' battleTeamID_lbl
         ' 
         battleTeamID_lbl.AutoSize = True
         battleTeamID_lbl.Enabled = False
         battleTeamID_lbl.Location = New Point(8, 76)
         battleTeamID_lbl.Name = "battleTeamID_lbl"
-        battleTeamID_lbl.Size = New Size(190, 15)
+        battleTeamID_lbl.Size = New Size(82, 15)
         battleTeamID_lbl.TabIndex = 20
-        battleTeamID_lbl.Text = "Battle Team ID (Must be a number)"
+        battleTeamID_lbl.Text = "Battle Team ID"
         ' 
         ' numPoké_lbl
         ' 
@@ -814,6 +823,9 @@ Partial Class Form1
         ' 
         ' pokemon1_grp
         ' 
+        pokemon1_grp.Controls.Add(pokemon1Level_nbr)
+        pokemon1_grp.Controls.Add(pokemon1Form_nbr)
+        pokemon1_grp.Controls.Add(pokemon1Happiness_nbr)
         pokemon1_grp.Controls.Add(pokemon1Shadow_grp)
         pokemon1_grp.Controls.Add(pokemon1EVs_grp)
         pokemon1_grp.Controls.Add(pokemon1IVs_grp)
@@ -821,19 +833,16 @@ Partial Class Form1
         pokemon1_grp.Controls.Add(pokemon1Ball_lbl)
         pokemon1_grp.Controls.Add(pokemon1Nickname_txtBox)
         pokemon1_grp.Controls.Add(pokemon1Nickname_lbl)
-        pokemon1_grp.Controls.Add(pokemon1Happiness_txtBox)
         pokemon1_grp.Controls.Add(pokemon1Happiness_lbl)
         pokemon1_grp.Controls.Add(pokemon1Nature_cmb)
         pokemon1_grp.Controls.Add(pokemon1Nature_lbl)
         pokemon1_grp.Controls.Add(pokemon1Shiny_grp)
-        pokemon1_grp.Controls.Add(pokemon1Form_txtBox)
         pokemon1_grp.Controls.Add(pokemon1Form_lbl)
         pokemon1_grp.Controls.Add(pokemon1Gender_cmb)
         pokemon1_grp.Controls.Add(pokemon1Gender_lbl)
         pokemon1_grp.Controls.Add(pokemon1Ability_cmb)
         pokemon1_grp.Controls.Add(pokemon1Ability_lbl)
         pokemon1_grp.Controls.Add(pokemon1Moves_grp)
-        pokemon1_grp.Controls.Add(pokemon1Level_txtBox)
         pokemon1_grp.Controls.Add(pokemon1Level_lbl)
         pokemon1_grp.Controls.Add(pokemon1HeldItem_lbl)
         pokemon1_grp.Controls.Add(pokemon1HeldItem_txtBox)
@@ -846,6 +855,32 @@ Partial Class Form1
         pokemon1_grp.TabIndex = 0
         pokemon1_grp.TabStop = False
         pokemon1_grp.Text = "Pokémon 1"
+        ' 
+        ' pokemon1Level_nbr
+        ' 
+        pokemon1Level_nbr.Location = New Point(298, 37)
+        pokemon1Level_nbr.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        pokemon1Level_nbr.Name = "pokemon1Level_nbr"
+        pokemon1Level_nbr.Size = New Size(140, 23)
+        pokemon1Level_nbr.TabIndex = 33
+        pokemon1Level_nbr.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        ' 
+        ' pokemon1Form_nbr
+        ' 
+        pokemon1Form_nbr.Location = New Point(298, 80)
+        pokemon1Form_nbr.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        pokemon1Form_nbr.Name = "pokemon1Form_nbr"
+        pokemon1Form_nbr.Size = New Size(140, 23)
+        pokemon1Form_nbr.TabIndex = 32
+        ' 
+        ' pokemon1Happiness_nbr
+        ' 
+        pokemon1Happiness_nbr.Location = New Point(152, 124)
+        pokemon1Happiness_nbr.Maximum = New Decimal(New Integer() {256, 0, 0, 0})
+        pokemon1Happiness_nbr.Name = "pokemon1Happiness_nbr"
+        pokemon1Happiness_nbr.Size = New Size(140, 23)
+        pokemon1Happiness_nbr.TabIndex = 31
+        pokemon1Happiness_nbr.Value = New Decimal(New Integer() {70, 0, 0, 0})
         ' 
         ' pokemon1Shadow_grp
         ' 
@@ -1193,14 +1228,6 @@ Partial Class Form1
         pokemon1Nickname_lbl.TabIndex = 18
         pokemon1Nickname_lbl.Text = "Nickname"
         ' 
-        ' pokemon1Happiness_txtBox
-        ' 
-        pokemon1Happiness_txtBox.Location = New Point(152, 125)
-        pokemon1Happiness_txtBox.Name = "pokemon1Happiness_txtBox"
-        pokemon1Happiness_txtBox.PlaceholderText = "70"
-        pokemon1Happiness_txtBox.Size = New Size(140, 23)
-        pokemon1Happiness_txtBox.TabIndex = 17
-        ' 
         ' pokemon1Happiness_lbl
         ' 
         pokemon1Happiness_lbl.AutoSize = True
@@ -1273,22 +1300,14 @@ Partial Class Form1
         pokemon1NotShiny_rad.Text = "Not Shiny"
         pokemon1NotShiny_rad.UseVisualStyleBackColor = True
         ' 
-        ' pokemon1Form_txtBox
-        ' 
-        pokemon1Form_txtBox.Location = New Point(298, 81)
-        pokemon1Form_txtBox.Name = "pokemon1Form_txtBox"
-        pokemon1Form_txtBox.PlaceholderText = "1"
-        pokemon1Form_txtBox.Size = New Size(140, 23)
-        pokemon1Form_txtBox.TabIndex = 12
-        ' 
         ' pokemon1Form_lbl
         ' 
         pokemon1Form_lbl.AutoSize = True
         pokemon1Form_lbl.Location = New Point(298, 63)
         pokemon1Form_lbl.Name = "pokemon1Form_lbl"
-        pokemon1Form_lbl.Size = New Size(123, 15)
+        pokemon1Form_lbl.Size = New Size(35, 15)
         pokemon1Form_lbl.TabIndex = 11
-        pokemon1Form_lbl.Text = "Form (Numbers Only)"
+        pokemon1Form_lbl.Text = "Form"
         ' 
         ' pokemon1Gender_cmb
         ' 
@@ -1375,15 +1394,6 @@ Partial Class Form1
         pokemon1Move1_txtBox.Size = New Size(120, 23)
         pokemon1Move1_txtBox.TabIndex = 0
         ' 
-        ' pokemon1Level_txtBox
-        ' 
-        pokemon1Level_txtBox.Location = New Point(298, 37)
-        pokemon1Level_txtBox.MaxLength = 3
-        pokemon1Level_txtBox.Name = "pokemon1Level_txtBox"
-        pokemon1Level_txtBox.PlaceholderText = "100"
-        pokemon1Level_txtBox.Size = New Size(140, 23)
-        pokemon1Level_txtBox.TabIndex = 5
-        ' 
         ' pokemon1Level_lbl
         ' 
         pokemon1Level_lbl.AutoSize = True
@@ -1443,6 +1453,9 @@ Partial Class Form1
         ' 
         ' pokemon2_grp
         ' 
+        pokemon2_grp.Controls.Add(pokemon2Level_nbr)
+        pokemon2_grp.Controls.Add(pokemon2Form_nbr)
+        pokemon2_grp.Controls.Add(pokemon2Happiness_nbr)
         pokemon2_grp.Controls.Add(pokemon2Shadow_grp)
         pokemon2_grp.Controls.Add(pokemon2Name_lbl)
         pokemon2_grp.Controls.Add(pokemon2EVs_grp)
@@ -1454,10 +1467,8 @@ Partial Class Form1
         pokemon2_grp.Controls.Add(pokemon2PokeBall_lbl)
         pokemon2_grp.Controls.Add(pokemon2Level_lbl)
         pokemon2_grp.Controls.Add(pokemon2Nickname_txt)
-        pokemon2_grp.Controls.Add(pokemon2Level_txt)
         pokemon2_grp.Controls.Add(pokemon2Nickname_lbl)
         pokemon2_grp.Controls.Add(pokemon2Moves_grp)
-        pokemon2_grp.Controls.Add(pokemon2Happiness_txt)
         pokemon2_grp.Controls.Add(pokemon2Ability_lbl)
         pokemon2_grp.Controls.Add(pokemon2Happiness_lbl)
         pokemon2_grp.Controls.Add(pokemon2Ability_cmb)
@@ -1467,7 +1478,6 @@ Partial Class Form1
         pokemon2_grp.Controls.Add(pokemon2Gender_cmb)
         pokemon2_grp.Controls.Add(pokemon2Shiny_grp)
         pokemon2_grp.Controls.Add(pokemon2Form_lbl)
-        pokemon2_grp.Controls.Add(pokemon2Form_txt)
         pokemon2_grp.Dock = DockStyle.Fill
         pokemon2_grp.Location = New Point(3, 3)
         pokemon2_grp.Name = "pokemon2_grp"
@@ -1475,6 +1485,32 @@ Partial Class Form1
         pokemon2_grp.TabIndex = 0
         pokemon2_grp.TabStop = False
         pokemon2_grp.Text = "Pokémon 2"
+        ' 
+        ' pokemon2Level_nbr
+        ' 
+        pokemon2Level_nbr.Location = New Point(298, 37)
+        pokemon2Level_nbr.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        pokemon2Level_nbr.Name = "pokemon2Level_nbr"
+        pokemon2Level_nbr.Size = New Size(140, 23)
+        pokemon2Level_nbr.TabIndex = 58
+        pokemon2Level_nbr.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        ' 
+        ' pokemon2Form_nbr
+        ' 
+        pokemon2Form_nbr.Location = New Point(298, 80)
+        pokemon2Form_nbr.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        pokemon2Form_nbr.Name = "pokemon2Form_nbr"
+        pokemon2Form_nbr.Size = New Size(140, 23)
+        pokemon2Form_nbr.TabIndex = 57
+        ' 
+        ' pokemon2Happiness_nbr
+        ' 
+        pokemon2Happiness_nbr.Location = New Point(152, 124)
+        pokemon2Happiness_nbr.Maximum = New Decimal(New Integer() {256, 0, 0, 0})
+        pokemon2Happiness_nbr.Name = "pokemon2Happiness_nbr"
+        pokemon2Happiness_nbr.Size = New Size(140, 23)
+        pokemon2Happiness_nbr.TabIndex = 56
+        pokemon2Happiness_nbr.Value = New Decimal(New Integer() {70, 0, 0, 0})
         ' 
         ' pokemon2Shadow_grp
         ' 
@@ -1859,15 +1895,6 @@ Partial Class Form1
         pokemon2Nickname_txt.Size = New Size(140, 23)
         pokemon2Nickname_txt.TabIndex = 50
         ' 
-        ' pokemon2Level_txt
-        ' 
-        pokemon2Level_txt.Location = New Point(298, 37)
-        pokemon2Level_txt.MaxLength = 3
-        pokemon2Level_txt.Name = "pokemon2Level_txt"
-        pokemon2Level_txt.PlaceholderText = "100"
-        pokemon2Level_txt.Size = New Size(140, 23)
-        pokemon2Level_txt.TabIndex = 36
-        ' 
         ' pokemon2Nickname_lbl
         ' 
         pokemon2Nickname_lbl.AutoSize = True
@@ -1921,14 +1948,6 @@ Partial Class Form1
         pokemon2Move1_txtBox.PlaceholderText = "Move 1"
         pokemon2Move1_txtBox.Size = New Size(120, 23)
         pokemon2Move1_txtBox.TabIndex = 0
-        ' 
-        ' pokemon2Happiness_txt
-        ' 
-        pokemon2Happiness_txt.Location = New Point(152, 125)
-        pokemon2Happiness_txt.Name = "pokemon2Happiness_txt"
-        pokemon2Happiness_txt.PlaceholderText = "70"
-        pokemon2Happiness_txt.Size = New Size(140, 23)
-        pokemon2Happiness_txt.TabIndex = 48
         ' 
         ' pokemon2Ability_lbl
         ' 
@@ -2047,17 +2066,9 @@ Partial Class Form1
         pokemon2Form_lbl.AutoSize = True
         pokemon2Form_lbl.Location = New Point(298, 63)
         pokemon2Form_lbl.Name = "pokemon2Form_lbl"
-        pokemon2Form_lbl.Size = New Size(123, 15)
+        pokemon2Form_lbl.Size = New Size(35, 15)
         pokemon2Form_lbl.TabIndex = 42
-        pokemon2Form_lbl.Text = "Form (Numbers Only)"
-        ' 
-        ' pokemon2Form_txt
-        ' 
-        pokemon2Form_txt.Location = New Point(298, 81)
-        pokemon2Form_txt.Name = "pokemon2Form_txt"
-        pokemon2Form_txt.PlaceholderText = "1"
-        pokemon2Form_txt.Size = New Size(140, 23)
-        pokemon2Form_txt.TabIndex = 43
+        pokemon2Form_lbl.Text = "Form"
         ' 
         ' pg_pkmn3
         ' 
@@ -2072,6 +2083,9 @@ Partial Class Form1
         ' 
         ' pokemon3_grp
         ' 
+        pokemon3_grp.Controls.Add(pokemon3Level_nbr)
+        pokemon3_grp.Controls.Add(pokemon3Form_nbr)
+        pokemon3_grp.Controls.Add(pokemon3Happiness_nbr)
         pokemon3_grp.Controls.Add(pokemon3Shadow_grp)
         pokemon3_grp.Controls.Add(pokemon3Name_lbl)
         pokemon3_grp.Controls.Add(pokemon3EVs_grp)
@@ -2083,10 +2097,8 @@ Partial Class Form1
         pokemon3_grp.Controls.Add(pokemon3PokeBall_lbl)
         pokemon3_grp.Controls.Add(pokemon3Level_lbl)
         pokemon3_grp.Controls.Add(pokemon3Nickname_txt)
-        pokemon3_grp.Controls.Add(pokemon3Level_txt)
         pokemon3_grp.Controls.Add(pokemon3Nickname_lbl)
         pokemon3_grp.Controls.Add(pokemon3Moves_grp)
-        pokemon3_grp.Controls.Add(pokemon3Happiness_txt)
         pokemon3_grp.Controls.Add(pokemon3Ability_lbl)
         pokemon3_grp.Controls.Add(pokemon3Happiness_lbl)
         pokemon3_grp.Controls.Add(pokemon3Ability_cmb)
@@ -2096,7 +2108,6 @@ Partial Class Form1
         pokemon3_grp.Controls.Add(pokemon3Gender_cmb)
         pokemon3_grp.Controls.Add(pokemon3Shiny_grp)
         pokemon3_grp.Controls.Add(pokemon3Form_lbl)
-        pokemon3_grp.Controls.Add(pokemon3Form_txt)
         pokemon3_grp.Dock = DockStyle.Fill
         pokemon3_grp.Location = New Point(3, 3)
         pokemon3_grp.Name = "pokemon3_grp"
@@ -2104,6 +2115,32 @@ Partial Class Form1
         pokemon3_grp.TabIndex = 0
         pokemon3_grp.TabStop = False
         pokemon3_grp.Text = "Pokémon 3"
+        ' 
+        ' pokemon3Level_nbr
+        ' 
+        pokemon3Level_nbr.Location = New Point(298, 37)
+        pokemon3Level_nbr.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        pokemon3Level_nbr.Name = "pokemon3Level_nbr"
+        pokemon3Level_nbr.Size = New Size(140, 23)
+        pokemon3Level_nbr.TabIndex = 83
+        pokemon3Level_nbr.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        ' 
+        ' pokemon3Form_nbr
+        ' 
+        pokemon3Form_nbr.Location = New Point(298, 80)
+        pokemon3Form_nbr.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        pokemon3Form_nbr.Name = "pokemon3Form_nbr"
+        pokemon3Form_nbr.Size = New Size(140, 23)
+        pokemon3Form_nbr.TabIndex = 82
+        ' 
+        ' pokemon3Happiness_nbr
+        ' 
+        pokemon3Happiness_nbr.Location = New Point(152, 124)
+        pokemon3Happiness_nbr.Maximum = New Decimal(New Integer() {256, 0, 0, 0})
+        pokemon3Happiness_nbr.Name = "pokemon3Happiness_nbr"
+        pokemon3Happiness_nbr.Size = New Size(140, 23)
+        pokemon3Happiness_nbr.TabIndex = 81
+        pokemon3Happiness_nbr.Value = New Decimal(New Integer() {70, 0, 0, 0})
         ' 
         ' pokemon3Shadow_grp
         ' 
@@ -2289,8 +2326,8 @@ Partial Class Form1
         ' 
         ' pokemon3IVs_grp
         ' 
-        pokemon3IVs_grp.Controls.Add(Button3)
-        pokemon3IVs_grp.Controls.Add(Button4)
+        pokemon3IVs_grp.Controls.Add(pokemon3RandomIVs_btn)
+        pokemon3IVs_grp.Controls.Add(pokemon3MaxIVs_btn)
         pokemon3IVs_grp.Controls.Add(pokemon3IVsDEF_txt)
         pokemon3IVs_grp.Controls.Add(pokemon3IVsDEF_lbl)
         pokemon3IVs_grp.Controls.Add(pokemon3IVsSPDEF_txt)
@@ -2310,23 +2347,23 @@ Partial Class Form1
         pokemon3IVs_grp.TabStop = False
         pokemon3IVs_grp.Text = "IVs (Max 31 Each)"
         ' 
-        ' Button3
+        ' pokemon3RandomIVs_btn
         ' 
-        Button3.Location = New Point(57, 152)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(44, 23)
-        Button3.TabIndex = 15
-        Button3.Text = "Rand"
-        Button3.UseVisualStyleBackColor = True
+        pokemon3RandomIVs_btn.Location = New Point(57, 152)
+        pokemon3RandomIVs_btn.Name = "pokemon3RandomIVs_btn"
+        pokemon3RandomIVs_btn.Size = New Size(44, 23)
+        pokemon3RandomIVs_btn.TabIndex = 15
+        pokemon3RandomIVs_btn.Text = "Rand"
+        pokemon3RandomIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' Button4
+        ' pokemon3MaxIVs_btn
         ' 
-        Button4.Location = New Point(7, 152)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(44, 23)
-        Button4.TabIndex = 14
-        Button4.Text = "Max"
-        Button4.UseVisualStyleBackColor = True
+        pokemon3MaxIVs_btn.Location = New Point(7, 152)
+        pokemon3MaxIVs_btn.Name = "pokemon3MaxIVs_btn"
+        pokemon3MaxIVs_btn.Size = New Size(44, 23)
+        pokemon3MaxIVs_btn.TabIndex = 14
+        pokemon3MaxIVs_btn.Text = "Max"
+        pokemon3MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
         ' pokemon3IVsDEF_txt
         ' 
@@ -2488,15 +2525,6 @@ Partial Class Form1
         pokemon3Nickname_txt.Size = New Size(140, 23)
         pokemon3Nickname_txt.TabIndex = 75
         ' 
-        ' pokemon3Level_txt
-        ' 
-        pokemon3Level_txt.Location = New Point(298, 37)
-        pokemon3Level_txt.MaxLength = 3
-        pokemon3Level_txt.Name = "pokemon3Level_txt"
-        pokemon3Level_txt.PlaceholderText = "100"
-        pokemon3Level_txt.Size = New Size(140, 23)
-        pokemon3Level_txt.TabIndex = 61
-        ' 
         ' pokemon3Nickname_lbl
         ' 
         pokemon3Nickname_lbl.AutoSize = True
@@ -2550,14 +2578,6 @@ Partial Class Form1
         pokemon3Move1_txtBox.PlaceholderText = "Move 1"
         pokemon3Move1_txtBox.Size = New Size(120, 23)
         pokemon3Move1_txtBox.TabIndex = 0
-        ' 
-        ' pokemon3Happiness_txt
-        ' 
-        pokemon3Happiness_txt.Location = New Point(152, 125)
-        pokemon3Happiness_txt.Name = "pokemon3Happiness_txt"
-        pokemon3Happiness_txt.PlaceholderText = "70"
-        pokemon3Happiness_txt.Size = New Size(140, 23)
-        pokemon3Happiness_txt.TabIndex = 73
         ' 
         ' pokemon3Ability_lbl
         ' 
@@ -2676,17 +2696,9 @@ Partial Class Form1
         pokemon3Form_lbl.AutoSize = True
         pokemon3Form_lbl.Location = New Point(298, 63)
         pokemon3Form_lbl.Name = "pokemon3Form_lbl"
-        pokemon3Form_lbl.Size = New Size(123, 15)
+        pokemon3Form_lbl.Size = New Size(35, 15)
         pokemon3Form_lbl.TabIndex = 67
-        pokemon3Form_lbl.Text = "Form (Numbers Only)"
-        ' 
-        ' pokemon3Form_txt
-        ' 
-        pokemon3Form_txt.Location = New Point(298, 81)
-        pokemon3Form_txt.Name = "pokemon3Form_txt"
-        pokemon3Form_txt.PlaceholderText = "1"
-        pokemon3Form_txt.Size = New Size(140, 23)
-        pokemon3Form_txt.TabIndex = 68
+        pokemon3Form_lbl.Text = "Form"
         ' 
         ' pg_pkmn4
         ' 
@@ -2701,6 +2713,9 @@ Partial Class Form1
         ' 
         ' pokemon4_grp
         ' 
+        pokemon4_grp.Controls.Add(pokemon4Level_nbr)
+        pokemon4_grp.Controls.Add(pokemon4Form_nbr)
+        pokemon4_grp.Controls.Add(pokemon4Happiness_nbr)
         pokemon4_grp.Controls.Add(pokemon4Shadow_grp)
         pokemon4_grp.Controls.Add(pokemon4Name_lbl)
         pokemon4_grp.Controls.Add(pokemon4EVs_grp)
@@ -2712,10 +2727,8 @@ Partial Class Form1
         pokemon4_grp.Controls.Add(pokemon4PokeBall_lbl)
         pokemon4_grp.Controls.Add(pokemon4Level_lbl)
         pokemon4_grp.Controls.Add(pokemon4Nickname_txt)
-        pokemon4_grp.Controls.Add(pokemon4Level_txt)
         pokemon4_grp.Controls.Add(pokemon4Nickname_lbl)
         pokemon4_grp.Controls.Add(pokemon4Moves_grp)
-        pokemon4_grp.Controls.Add(pokemon4Happiness_txt)
         pokemon4_grp.Controls.Add(pokemon4Ability_lbl)
         pokemon4_grp.Controls.Add(pokemon4Happiness_lbl)
         pokemon4_grp.Controls.Add(pokemon4Ability_cmb)
@@ -2725,7 +2738,6 @@ Partial Class Form1
         pokemon4_grp.Controls.Add(pokemon4Gender_cmb)
         pokemon4_grp.Controls.Add(pokemon4Shiny_grp)
         pokemon4_grp.Controls.Add(pokemon4Form_lbl)
-        pokemon4_grp.Controls.Add(pokemon4Form_txt)
         pokemon4_grp.Dock = DockStyle.Fill
         pokemon4_grp.Location = New Point(3, 3)
         pokemon4_grp.Name = "pokemon4_grp"
@@ -2733,6 +2745,32 @@ Partial Class Form1
         pokemon4_grp.TabIndex = 0
         pokemon4_grp.TabStop = False
         pokemon4_grp.Text = "Pokémon 4"
+        ' 
+        ' pokemon4Level_nbr
+        ' 
+        pokemon4Level_nbr.Location = New Point(298, 37)
+        pokemon4Level_nbr.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        pokemon4Level_nbr.Name = "pokemon4Level_nbr"
+        pokemon4Level_nbr.Size = New Size(140, 23)
+        pokemon4Level_nbr.TabIndex = 83
+        pokemon4Level_nbr.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        ' 
+        ' pokemon4Form_nbr
+        ' 
+        pokemon4Form_nbr.Location = New Point(298, 80)
+        pokemon4Form_nbr.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        pokemon4Form_nbr.Name = "pokemon4Form_nbr"
+        pokemon4Form_nbr.Size = New Size(140, 23)
+        pokemon4Form_nbr.TabIndex = 82
+        ' 
+        ' pokemon4Happiness_nbr
+        ' 
+        pokemon4Happiness_nbr.Location = New Point(152, 124)
+        pokemon4Happiness_nbr.Maximum = New Decimal(New Integer() {256, 0, 0, 0})
+        pokemon4Happiness_nbr.Name = "pokemon4Happiness_nbr"
+        pokemon4Happiness_nbr.Size = New Size(140, 23)
+        pokemon4Happiness_nbr.TabIndex = 81
+        pokemon4Happiness_nbr.Value = New Decimal(New Integer() {70, 0, 0, 0})
         ' 
         ' pokemon4Shadow_grp
         ' 
@@ -2778,18 +2816,18 @@ Partial Class Form1
         ' 
         ' pokemon4EVs_grp
         ' 
-        pokemon4EVs_grp.Controls.Add(TextBox29)
-        pokemon4EVs_grp.Controls.Add(Label31)
-        pokemon4EVs_grp.Controls.Add(TextBox30)
-        pokemon4EVs_grp.Controls.Add(Label32)
-        pokemon4EVs_grp.Controls.Add(TextBox31)
-        pokemon4EVs_grp.Controls.Add(Label33)
-        pokemon4EVs_grp.Controls.Add(TextBox32)
-        pokemon4EVs_grp.Controls.Add(Label34)
-        pokemon4EVs_grp.Controls.Add(TextBox33)
-        pokemon4EVs_grp.Controls.Add(Label35)
-        pokemon4EVs_grp.Controls.Add(TextBox34)
-        pokemon4EVs_grp.Controls.Add(Label36)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsDEF_txt)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsDEF_lbl)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsSPDEF_txt)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsSPDEF_lbl)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsSPATK_txt)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsSPATK_lbl)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsSPD_txt)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsSPD_lbl)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsATK_txt)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsATK_lbl)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsHP_txt)
+        pokemon4EVs_grp.Controls.Add(pokemon4EVsHP_lbl)
         pokemon4EVs_grp.Location = New Point(324, 154)
         pokemon4EVs_grp.Name = "pokemon4EVs_grp"
         pokemon4EVs_grp.Size = New Size(114, 156)
@@ -2797,113 +2835,113 @@ Partial Class Form1
         pokemon4EVs_grp.TabStop = False
         pokemon4EVs_grp.Text = "EVs"
         ' 
-        ' TextBox29
+        ' pokemon4EVsDEF_txt
         ' 
-        TextBox29.Location = New Point(6, 125)
-        TextBox29.MaxLength = 3
-        TextBox29.Name = "TextBox29"
-        TextBox29.Size = New Size(44, 23)
-        TextBox29.TabIndex = 11
-        TextBox29.Text = "0"
+        pokemon4EVsDEF_txt.Location = New Point(6, 125)
+        pokemon4EVsDEF_txt.MaxLength = 3
+        pokemon4EVsDEF_txt.Name = "pokemon4EVsDEF_txt"
+        pokemon4EVsDEF_txt.Size = New Size(44, 23)
+        pokemon4EVsDEF_txt.TabIndex = 11
+        pokemon4EVsDEF_txt.Text = "0"
         ' 
-        ' Label31
+        ' pokemon4EVsDEF_lbl
         ' 
-        Label31.AutoSize = True
-        Label31.Location = New Point(14, 107)
-        Label31.Name = "Label31"
-        Label31.Size = New Size(27, 15)
-        Label31.TabIndex = 10
-        Label31.Text = "DEF"
+        pokemon4EVsDEF_lbl.AutoSize = True
+        pokemon4EVsDEF_lbl.Location = New Point(14, 107)
+        pokemon4EVsDEF_lbl.Name = "pokemon4EVsDEF_lbl"
+        pokemon4EVsDEF_lbl.Size = New Size(27, 15)
+        pokemon4EVsDEF_lbl.TabIndex = 10
+        pokemon4EVsDEF_lbl.Text = "DEF"
         ' 
-        ' TextBox30
+        ' pokemon4EVsSPDEF_txt
         ' 
-        TextBox30.Location = New Point(55, 125)
-        TextBox30.MaxLength = 3
-        TextBox30.Name = "TextBox30"
-        TextBox30.Size = New Size(44, 23)
-        TextBox30.TabIndex = 9
-        TextBox30.Text = "0"
+        pokemon4EVsSPDEF_txt.Location = New Point(55, 125)
+        pokemon4EVsSPDEF_txt.MaxLength = 3
+        pokemon4EVsSPDEF_txt.Name = "pokemon4EVsSPDEF_txt"
+        pokemon4EVsSPDEF_txt.Size = New Size(44, 23)
+        pokemon4EVsSPDEF_txt.TabIndex = 9
+        pokemon4EVsSPDEF_txt.Text = "0"
         ' 
-        ' Label32
+        ' pokemon4EVsSPDEF_lbl
         ' 
-        Label32.AutoSize = True
-        Label32.Location = New Point(55, 109)
-        Label32.Name = "Label32"
-        Label32.Size = New Size(40, 15)
-        Label32.TabIndex = 8
-        Label32.Text = "SPDEF"
+        pokemon4EVsSPDEF_lbl.AutoSize = True
+        pokemon4EVsSPDEF_lbl.Location = New Point(55, 109)
+        pokemon4EVsSPDEF_lbl.Name = "pokemon4EVsSPDEF_lbl"
+        pokemon4EVsSPDEF_lbl.Size = New Size(40, 15)
+        pokemon4EVsSPDEF_lbl.TabIndex = 8
+        pokemon4EVsSPDEF_lbl.Text = "SPDEF"
         ' 
-        ' TextBox31
+        ' pokemon4EVsSPATK_txt
         ' 
-        TextBox31.Location = New Point(55, 81)
-        TextBox31.MaxLength = 3
-        TextBox31.Name = "TextBox31"
-        TextBox31.Size = New Size(44, 23)
-        TextBox31.TabIndex = 7
-        TextBox31.Text = "0"
+        pokemon4EVsSPATK_txt.Location = New Point(55, 81)
+        pokemon4EVsSPATK_txt.MaxLength = 3
+        pokemon4EVsSPATK_txt.Name = "pokemon4EVsSPATK_txt"
+        pokemon4EVsSPATK_txt.Size = New Size(44, 23)
+        pokemon4EVsSPATK_txt.TabIndex = 7
+        pokemon4EVsSPATK_txt.Text = "0"
         ' 
-        ' Label33
+        ' pokemon4EVsSPATK_lbl
         ' 
-        Label33.AutoSize = True
-        Label33.Location = New Point(56, 65)
-        Label33.Name = "Label33"
-        Label33.Size = New Size(39, 15)
-        Label33.TabIndex = 6
-        Label33.Text = "SPATK"
+        pokemon4EVsSPATK_lbl.AutoSize = True
+        pokemon4EVsSPATK_lbl.Location = New Point(56, 65)
+        pokemon4EVsSPATK_lbl.Name = "pokemon4EVsSPATK_lbl"
+        pokemon4EVsSPATK_lbl.Size = New Size(39, 15)
+        pokemon4EVsSPATK_lbl.TabIndex = 6
+        pokemon4EVsSPATK_lbl.Text = "SPATK"
         ' 
-        ' TextBox32
+        ' pokemon4EVsSPD_txt
         ' 
-        TextBox32.Location = New Point(55, 37)
-        TextBox32.MaxLength = 3
-        TextBox32.Name = "TextBox32"
-        TextBox32.Size = New Size(44, 23)
-        TextBox32.TabIndex = 5
-        TextBox32.Text = "0"
+        pokemon4EVsSPD_txt.Location = New Point(55, 37)
+        pokemon4EVsSPD_txt.MaxLength = 3
+        pokemon4EVsSPD_txt.Name = "pokemon4EVsSPD_txt"
+        pokemon4EVsSPD_txt.Size = New Size(44, 23)
+        pokemon4EVsSPD_txt.TabIndex = 5
+        pokemon4EVsSPD_txt.Text = "0"
         ' 
-        ' Label34
+        ' pokemon4EVsSPD_lbl
         ' 
-        Label34.AutoSize = True
-        Label34.Location = New Point(63, 21)
-        Label34.Name = "Label34"
-        Label34.Size = New Size(28, 15)
-        Label34.TabIndex = 4
-        Label34.Text = "SPD"
+        pokemon4EVsSPD_lbl.AutoSize = True
+        pokemon4EVsSPD_lbl.Location = New Point(63, 21)
+        pokemon4EVsSPD_lbl.Name = "pokemon4EVsSPD_lbl"
+        pokemon4EVsSPD_lbl.Size = New Size(28, 15)
+        pokemon4EVsSPD_lbl.TabIndex = 4
+        pokemon4EVsSPD_lbl.Text = "SPD"
         ' 
-        ' TextBox33
+        ' pokemon4EVsATK_txt
         ' 
-        TextBox33.Location = New Point(6, 81)
-        TextBox33.MaxLength = 3
-        TextBox33.Name = "TextBox33"
-        TextBox33.Size = New Size(44, 23)
-        TextBox33.TabIndex = 3
-        TextBox33.Text = "0"
+        pokemon4EVsATK_txt.Location = New Point(6, 81)
+        pokemon4EVsATK_txt.MaxLength = 3
+        pokemon4EVsATK_txt.Name = "pokemon4EVsATK_txt"
+        pokemon4EVsATK_txt.Size = New Size(44, 23)
+        pokemon4EVsATK_txt.TabIndex = 3
+        pokemon4EVsATK_txt.Text = "0"
         ' 
-        ' Label35
+        ' pokemon4EVsATK_lbl
         ' 
-        Label35.AutoSize = True
-        Label35.Location = New Point(14, 63)
-        Label35.Name = "Label35"
-        Label35.Size = New Size(27, 15)
-        Label35.TabIndex = 2
-        Label35.Text = "ATK"
+        pokemon4EVsATK_lbl.AutoSize = True
+        pokemon4EVsATK_lbl.Location = New Point(14, 63)
+        pokemon4EVsATK_lbl.Name = "pokemon4EVsATK_lbl"
+        pokemon4EVsATK_lbl.Size = New Size(27, 15)
+        pokemon4EVsATK_lbl.TabIndex = 2
+        pokemon4EVsATK_lbl.Text = "ATK"
         ' 
-        ' TextBox34
+        ' pokemon4EVsHP_txt
         ' 
-        TextBox34.Location = New Point(6, 37)
-        TextBox34.MaxLength = 3
-        TextBox34.Name = "TextBox34"
-        TextBox34.Size = New Size(44, 23)
-        TextBox34.TabIndex = 1
-        TextBox34.Text = "0"
+        pokemon4EVsHP_txt.Location = New Point(6, 37)
+        pokemon4EVsHP_txt.MaxLength = 3
+        pokemon4EVsHP_txt.Name = "pokemon4EVsHP_txt"
+        pokemon4EVsHP_txt.Size = New Size(44, 23)
+        pokemon4EVsHP_txt.TabIndex = 1
+        pokemon4EVsHP_txt.Text = "0"
         ' 
-        ' Label36
+        ' pokemon4EVsHP_lbl
         ' 
-        Label36.AutoSize = True
-        Label36.Location = New Point(16, 19)
-        Label36.Name = "Label36"
-        Label36.Size = New Size(23, 15)
-        Label36.TabIndex = 0
-        Label36.Text = "HP"
+        pokemon4EVsHP_lbl.AutoSize = True
+        pokemon4EVsHP_lbl.Location = New Point(16, 19)
+        pokemon4EVsHP_lbl.Name = "pokemon4EVsHP_lbl"
+        pokemon4EVsHP_lbl.Size = New Size(23, 15)
+        pokemon4EVsHP_lbl.TabIndex = 0
+        pokemon4EVsHP_lbl.Text = "HP"
         ' 
         ' pokemon4Name_txt
         ' 
@@ -2918,8 +2956,8 @@ Partial Class Form1
         ' 
         ' pokemon4IVs_grp
         ' 
-        pokemon4IVs_grp.Controls.Add(Button5)
-        pokemon4IVs_grp.Controls.Add(Button6)
+        pokemon4IVs_grp.Controls.Add(pokemon4RandomIVs_btn)
+        pokemon4IVs_grp.Controls.Add(pokemon4MaxIVs_btn)
         pokemon4IVs_grp.Controls.Add(pokemon4IVsDEF_txt)
         pokemon4IVs_grp.Controls.Add(pokemon4IVsDEF_lbl)
         pokemon4IVs_grp.Controls.Add(pokemon4IVsSPDEF_txt)
@@ -2939,23 +2977,23 @@ Partial Class Form1
         pokemon4IVs_grp.TabStop = False
         pokemon4IVs_grp.Text = "IVs (Max 31 Each)"
         ' 
-        ' Button5
+        ' pokemon4RandomIVs_btn
         ' 
-        Button5.Location = New Point(57, 152)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(44, 23)
-        Button5.TabIndex = 15
-        Button5.Text = "Rand"
-        Button5.UseVisualStyleBackColor = True
+        pokemon4RandomIVs_btn.Location = New Point(57, 152)
+        pokemon4RandomIVs_btn.Name = "pokemon4RandomIVs_btn"
+        pokemon4RandomIVs_btn.Size = New Size(44, 23)
+        pokemon4RandomIVs_btn.TabIndex = 15
+        pokemon4RandomIVs_btn.Text = "Rand"
+        pokemon4RandomIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' Button6
+        ' pokemon4MaxIVs_btn
         ' 
-        Button6.Location = New Point(7, 152)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(44, 23)
-        Button6.TabIndex = 14
-        Button6.Text = "Max"
-        Button6.UseVisualStyleBackColor = True
+        pokemon4MaxIVs_btn.Location = New Point(7, 152)
+        pokemon4MaxIVs_btn.Name = "pokemon4MaxIVs_btn"
+        pokemon4MaxIVs_btn.Size = New Size(44, 23)
+        pokemon4MaxIVs_btn.TabIndex = 14
+        pokemon4MaxIVs_btn.Text = "Max"
+        pokemon4MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
         ' pokemon4IVsDEF_txt
         ' 
@@ -3041,7 +3079,7 @@ Partial Class Form1
         ' pokemon4IVsATK_lbl
         ' 
         pokemon4IVsATK_lbl.AutoSize = True
-        pokemon4IVsATK_lbl.Location = New Point(17, 61)
+        pokemon4IVsATK_lbl.Location = New Point(18, 61)
         pokemon4IVsATK_lbl.Name = "pokemon4IVsATK_lbl"
         pokemon4IVsATK_lbl.Size = New Size(27, 15)
         pokemon4IVsATK_lbl.TabIndex = 2
@@ -3117,15 +3155,6 @@ Partial Class Form1
         pokemon4Nickname_txt.Size = New Size(140, 23)
         pokemon4Nickname_txt.TabIndex = 75
         ' 
-        ' pokemon4Level_txt
-        ' 
-        pokemon4Level_txt.Location = New Point(298, 37)
-        pokemon4Level_txt.MaxLength = 3
-        pokemon4Level_txt.Name = "pokemon4Level_txt"
-        pokemon4Level_txt.PlaceholderText = "100"
-        pokemon4Level_txt.Size = New Size(140, 23)
-        pokemon4Level_txt.TabIndex = 61
-        ' 
         ' pokemon4Nickname_lbl
         ' 
         pokemon4Nickname_lbl.AutoSize = True
@@ -3179,14 +3208,6 @@ Partial Class Form1
         pokemon4Move1_txt.PlaceholderText = "Move 1"
         pokemon4Move1_txt.Size = New Size(120, 23)
         pokemon4Move1_txt.TabIndex = 0
-        ' 
-        ' pokemon4Happiness_txt
-        ' 
-        pokemon4Happiness_txt.Location = New Point(152, 125)
-        pokemon4Happiness_txt.Name = "pokemon4Happiness_txt"
-        pokemon4Happiness_txt.PlaceholderText = "70"
-        pokemon4Happiness_txt.Size = New Size(140, 23)
-        pokemon4Happiness_txt.TabIndex = 73
         ' 
         ' pokemon4Ability_lbl
         ' 
@@ -3305,17 +3326,9 @@ Partial Class Form1
         pokemon4Form_lbl.AutoSize = True
         pokemon4Form_lbl.Location = New Point(298, 63)
         pokemon4Form_lbl.Name = "pokemon4Form_lbl"
-        pokemon4Form_lbl.Size = New Size(123, 15)
+        pokemon4Form_lbl.Size = New Size(35, 15)
         pokemon4Form_lbl.TabIndex = 67
-        pokemon4Form_lbl.Text = "Form (Numbers Only)"
-        ' 
-        ' pokemon4Form_txt
-        ' 
-        pokemon4Form_txt.Location = New Point(298, 81)
-        pokemon4Form_txt.Name = "pokemon4Form_txt"
-        pokemon4Form_txt.PlaceholderText = "1"
-        pokemon4Form_txt.Size = New Size(140, 23)
-        pokemon4Form_txt.TabIndex = 68
+        pokemon4Form_lbl.Text = "Form"
         ' 
         ' pg_pkmn5
         ' 
@@ -3330,31 +3343,31 @@ Partial Class Form1
         ' 
         ' pokemon5_grp
         ' 
+        pokemon5_grp.Controls.Add(pokemon5Level_nbr)
+        pokemon5_grp.Controls.Add(pokemon5Form_nbr)
+        pokemon5_grp.Controls.Add(pokemon5Happiness_nbr)
         pokemon5_grp.Controls.Add(pokemon5Shadow_grp)
-        pokemon5_grp.Controls.Add(Label52)
+        pokemon5_grp.Controls.Add(pokemon5Name_lbl)
         pokemon5_grp.Controls.Add(pokemon5EVs_grp)
-        pokemon5_grp.Controls.Add(TextBox57)
+        pokemon5_grp.Controls.Add(pokemon5Name_txt)
         pokemon5_grp.Controls.Add(pokemon5IVs_grp)
-        pokemon5_grp.Controls.Add(TextBox64)
-        pokemon5_grp.Controls.Add(ComboBox9)
-        pokemon5_grp.Controls.Add(Label65)
-        pokemon5_grp.Controls.Add(Label66)
-        pokemon5_grp.Controls.Add(Label67)
-        pokemon5_grp.Controls.Add(TextBox65)
-        pokemon5_grp.Controls.Add(TextBox66)
-        pokemon5_grp.Controls.Add(Label68)
+        pokemon5_grp.Controls.Add(pokemon5HeldItem_txt)
+        pokemon5_grp.Controls.Add(pokemon5PokeBall_cmb)
+        pokemon5_grp.Controls.Add(pokemon5HeldItem_lbl)
+        pokemon5_grp.Controls.Add(pokemon5PokeBall_lbl)
+        pokemon5_grp.Controls.Add(pokemon5Level_lbl)
+        pokemon5_grp.Controls.Add(pokemon5Nickname_txt)
+        pokemon5_grp.Controls.Add(pokemon5Nickname_lbl)
         pokemon5_grp.Controls.Add(pokemon5Moves_grp)
-        pokemon5_grp.Controls.Add(TextBox71)
-        pokemon5_grp.Controls.Add(Label69)
-        pokemon5_grp.Controls.Add(Label70)
-        pokemon5_grp.Controls.Add(ComboBox10)
-        pokemon5_grp.Controls.Add(ComboBox11)
-        pokemon5_grp.Controls.Add(Label71)
-        pokemon5_grp.Controls.Add(Label72)
+        pokemon5_grp.Controls.Add(pokemon5Ability_lbl)
+        pokemon5_grp.Controls.Add(pokemon5Happiness_lbl)
+        pokemon5_grp.Controls.Add(pokemon5Ability_cmb)
+        pokemon5_grp.Controls.Add(pokemon5Nature_cmb)
+        pokemon5_grp.Controls.Add(pokemon5Gender_lbl)
+        pokemon5_grp.Controls.Add(pokemon5Nature_lbl)
         pokemon5_grp.Controls.Add(pokemon5Gender_cmb)
         pokemon5_grp.Controls.Add(pokemon5Shiny_grp)
-        pokemon5_grp.Controls.Add(Label73)
-        pokemon5_grp.Controls.Add(TextBox72)
+        pokemon5_grp.Controls.Add(pokemon5Form_lbl)
         pokemon5_grp.Dock = DockStyle.Fill
         pokemon5_grp.Location = New Point(3, 3)
         pokemon5_grp.Name = "pokemon5_grp"
@@ -3363,10 +3376,36 @@ Partial Class Form1
         pokemon5_grp.TabStop = False
         pokemon5_grp.Text = "Pokémon 5"
         ' 
+        ' pokemon5Level_nbr
+        ' 
+        pokemon5Level_nbr.Location = New Point(298, 37)
+        pokemon5Level_nbr.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        pokemon5Level_nbr.Name = "pokemon5Level_nbr"
+        pokemon5Level_nbr.Size = New Size(140, 23)
+        pokemon5Level_nbr.TabIndex = 83
+        pokemon5Level_nbr.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        ' 
+        ' pokemon5Form_nbr
+        ' 
+        pokemon5Form_nbr.Location = New Point(298, 80)
+        pokemon5Form_nbr.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        pokemon5Form_nbr.Name = "pokemon5Form_nbr"
+        pokemon5Form_nbr.Size = New Size(140, 23)
+        pokemon5Form_nbr.TabIndex = 82
+        ' 
+        ' pokemon5Happiness_nbr
+        ' 
+        pokemon5Happiness_nbr.Location = New Point(152, 124)
+        pokemon5Happiness_nbr.Maximum = New Decimal(New Integer() {256, 0, 0, 0})
+        pokemon5Happiness_nbr.Name = "pokemon5Happiness_nbr"
+        pokemon5Happiness_nbr.Size = New Size(140, 23)
+        pokemon5Happiness_nbr.TabIndex = 81
+        pokemon5Happiness_nbr.Value = New Decimal(New Integer() {70, 0, 0, 0})
+        ' 
         ' pokemon5Shadow_grp
         ' 
-        pokemon5Shadow_grp.Controls.Add(RadioButton9)
-        pokemon5Shadow_grp.Controls.Add(RadioButton10)
+        pokemon5Shadow_grp.Controls.Add(pokemon5Shadow_rad)
+        pokemon5Shadow_grp.Controls.Add(pokemon5NotShadow_rad)
         pokemon5Shadow_grp.Location = New Point(444, 198)
         pokemon5Shadow_grp.Name = "pokemon5Shadow_grp"
         pokemon5Shadow_grp.Size = New Size(273, 82)
@@ -3374,51 +3413,51 @@ Partial Class Form1
         pokemon5Shadow_grp.TabStop = False
         pokemon5Shadow_grp.Text = "Shadow"
         ' 
-        ' RadioButton9
+        ' pokemon5Shadow_rad
         ' 
-        RadioButton9.AutoSize = True
-        RadioButton9.Location = New Point(6, 47)
-        RadioButton9.Name = "RadioButton9"
-        RadioButton9.Size = New Size(67, 19)
-        RadioButton9.TabIndex = 1
-        RadioButton9.Text = "Shadow"
-        RadioButton9.UseVisualStyleBackColor = True
+        pokemon5Shadow_rad.AutoSize = True
+        pokemon5Shadow_rad.Location = New Point(6, 47)
+        pokemon5Shadow_rad.Name = "pokemon5Shadow_rad"
+        pokemon5Shadow_rad.Size = New Size(67, 19)
+        pokemon5Shadow_rad.TabIndex = 1
+        pokemon5Shadow_rad.Text = "Shadow"
+        pokemon5Shadow_rad.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton10
+        ' pokemon5NotShadow_rad
         ' 
-        RadioButton10.AutoSize = True
-        RadioButton10.Checked = True
-        RadioButton10.Location = New Point(6, 22)
-        RadioButton10.Name = "RadioButton10"
-        RadioButton10.Size = New Size(90, 19)
-        RadioButton10.TabIndex = 0
-        RadioButton10.TabStop = True
-        RadioButton10.Text = "Not Shadow"
-        RadioButton10.UseVisualStyleBackColor = True
+        pokemon5NotShadow_rad.AutoSize = True
+        pokemon5NotShadow_rad.Checked = True
+        pokemon5NotShadow_rad.Location = New Point(6, 22)
+        pokemon5NotShadow_rad.Name = "pokemon5NotShadow_rad"
+        pokemon5NotShadow_rad.Size = New Size(90, 19)
+        pokemon5NotShadow_rad.TabIndex = 0
+        pokemon5NotShadow_rad.TabStop = True
+        pokemon5NotShadow_rad.Text = "Not Shadow"
+        pokemon5NotShadow_rad.UseVisualStyleBackColor = True
         ' 
-        ' Label52
+        ' pokemon5Name_lbl
         ' 
-        Label52.AutoSize = True
-        Label52.Location = New Point(6, 19)
-        Label52.Name = "Label52"
-        Label52.Size = New Size(93, 15)
-        Label52.TabIndex = 56
-        Label52.Text = "Pokémon Name"
+        pokemon5Name_lbl.AutoSize = True
+        pokemon5Name_lbl.Location = New Point(6, 19)
+        pokemon5Name_lbl.Name = "pokemon5Name_lbl"
+        pokemon5Name_lbl.Size = New Size(93, 15)
+        pokemon5Name_lbl.TabIndex = 56
+        pokemon5Name_lbl.Text = "Pokémon Name"
         ' 
         ' pokemon5EVs_grp
         ' 
-        pokemon5EVs_grp.Controls.Add(TextBox51)
-        pokemon5EVs_grp.Controls.Add(Label53)
-        pokemon5EVs_grp.Controls.Add(TextBox52)
-        pokemon5EVs_grp.Controls.Add(Label54)
-        pokemon5EVs_grp.Controls.Add(TextBox53)
-        pokemon5EVs_grp.Controls.Add(Label55)
-        pokemon5EVs_grp.Controls.Add(TextBox54)
-        pokemon5EVs_grp.Controls.Add(Label56)
-        pokemon5EVs_grp.Controls.Add(TextBox55)
-        pokemon5EVs_grp.Controls.Add(Label57)
-        pokemon5EVs_grp.Controls.Add(TextBox56)
-        pokemon5EVs_grp.Controls.Add(Label58)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsDEF_txt)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsDEF_lbl)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsSPDEF_txt)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsSPDEF_lbl)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsSPATK_txt)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsSPATK_lbl)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsSPD_txt)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsSPD_lbl)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsATK_txt)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsATK_lbl)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsHP_txt)
+        pokemon5EVs_grp.Controls.Add(pokemon5EVsHP_lbl)
         pokemon5EVs_grp.Location = New Point(324, 154)
         pokemon5EVs_grp.Name = "pokemon5EVs_grp"
         pokemon5EVs_grp.Size = New Size(114, 156)
@@ -3426,129 +3465,129 @@ Partial Class Form1
         pokemon5EVs_grp.TabStop = False
         pokemon5EVs_grp.Text = "EVs"
         ' 
-        ' TextBox51
+        ' pokemon5EVsDEF_txt
         ' 
-        TextBox51.Location = New Point(6, 125)
-        TextBox51.MaxLength = 3
-        TextBox51.Name = "TextBox51"
-        TextBox51.Size = New Size(44, 23)
-        TextBox51.TabIndex = 11
-        TextBox51.Text = "0"
+        pokemon5EVsDEF_txt.Location = New Point(6, 125)
+        pokemon5EVsDEF_txt.MaxLength = 3
+        pokemon5EVsDEF_txt.Name = "pokemon5EVsDEF_txt"
+        pokemon5EVsDEF_txt.Size = New Size(44, 23)
+        pokemon5EVsDEF_txt.TabIndex = 11
+        pokemon5EVsDEF_txt.Text = "0"
         ' 
-        ' Label53
+        ' pokemon5EVsDEF_lbl
         ' 
-        Label53.AutoSize = True
-        Label53.Location = New Point(14, 107)
-        Label53.Name = "Label53"
-        Label53.Size = New Size(27, 15)
-        Label53.TabIndex = 10
-        Label53.Text = "DEF"
+        pokemon5EVsDEF_lbl.AutoSize = True
+        pokemon5EVsDEF_lbl.Location = New Point(14, 107)
+        pokemon5EVsDEF_lbl.Name = "pokemon5EVsDEF_lbl"
+        pokemon5EVsDEF_lbl.Size = New Size(27, 15)
+        pokemon5EVsDEF_lbl.TabIndex = 10
+        pokemon5EVsDEF_lbl.Text = "DEF"
         ' 
-        ' TextBox52
+        ' pokemon5EVsSPDEF_txt
         ' 
-        TextBox52.Location = New Point(55, 125)
-        TextBox52.MaxLength = 3
-        TextBox52.Name = "TextBox52"
-        TextBox52.Size = New Size(44, 23)
-        TextBox52.TabIndex = 9
-        TextBox52.Text = "0"
+        pokemon5EVsSPDEF_txt.Location = New Point(55, 125)
+        pokemon5EVsSPDEF_txt.MaxLength = 3
+        pokemon5EVsSPDEF_txt.Name = "pokemon5EVsSPDEF_txt"
+        pokemon5EVsSPDEF_txt.Size = New Size(44, 23)
+        pokemon5EVsSPDEF_txt.TabIndex = 9
+        pokemon5EVsSPDEF_txt.Text = "0"
         ' 
-        ' Label54
+        ' pokemon5EVsSPDEF_lbl
         ' 
-        Label54.AutoSize = True
-        Label54.Location = New Point(55, 109)
-        Label54.Name = "Label54"
-        Label54.Size = New Size(40, 15)
-        Label54.TabIndex = 8
-        Label54.Text = "SPDEF"
+        pokemon5EVsSPDEF_lbl.AutoSize = True
+        pokemon5EVsSPDEF_lbl.Location = New Point(55, 109)
+        pokemon5EVsSPDEF_lbl.Name = "pokemon5EVsSPDEF_lbl"
+        pokemon5EVsSPDEF_lbl.Size = New Size(40, 15)
+        pokemon5EVsSPDEF_lbl.TabIndex = 8
+        pokemon5EVsSPDEF_lbl.Text = "SPDEF"
         ' 
-        ' TextBox53
+        ' pokemon5EVsSPATK_txt
         ' 
-        TextBox53.Location = New Point(55, 81)
-        TextBox53.MaxLength = 3
-        TextBox53.Name = "TextBox53"
-        TextBox53.Size = New Size(44, 23)
-        TextBox53.TabIndex = 7
-        TextBox53.Text = "0"
+        pokemon5EVsSPATK_txt.Location = New Point(55, 81)
+        pokemon5EVsSPATK_txt.MaxLength = 3
+        pokemon5EVsSPATK_txt.Name = "pokemon5EVsSPATK_txt"
+        pokemon5EVsSPATK_txt.Size = New Size(44, 23)
+        pokemon5EVsSPATK_txt.TabIndex = 7
+        pokemon5EVsSPATK_txt.Text = "0"
         ' 
-        ' Label55
+        ' pokemon5EVsSPATK_lbl
         ' 
-        Label55.AutoSize = True
-        Label55.Location = New Point(56, 65)
-        Label55.Name = "Label55"
-        Label55.Size = New Size(39, 15)
-        Label55.TabIndex = 6
-        Label55.Text = "SPATK"
+        pokemon5EVsSPATK_lbl.AutoSize = True
+        pokemon5EVsSPATK_lbl.Location = New Point(56, 65)
+        pokemon5EVsSPATK_lbl.Name = "pokemon5EVsSPATK_lbl"
+        pokemon5EVsSPATK_lbl.Size = New Size(39, 15)
+        pokemon5EVsSPATK_lbl.TabIndex = 6
+        pokemon5EVsSPATK_lbl.Text = "SPATK"
         ' 
-        ' TextBox54
+        ' pokemon5EVsSPD_txt
         ' 
-        TextBox54.Location = New Point(55, 37)
-        TextBox54.MaxLength = 3
-        TextBox54.Name = "TextBox54"
-        TextBox54.Size = New Size(44, 23)
-        TextBox54.TabIndex = 5
-        TextBox54.Text = "0"
+        pokemon5EVsSPD_txt.Location = New Point(55, 37)
+        pokemon5EVsSPD_txt.MaxLength = 3
+        pokemon5EVsSPD_txt.Name = "pokemon5EVsSPD_txt"
+        pokemon5EVsSPD_txt.Size = New Size(44, 23)
+        pokemon5EVsSPD_txt.TabIndex = 5
+        pokemon5EVsSPD_txt.Text = "0"
         ' 
-        ' Label56
+        ' pokemon5EVsSPD_lbl
         ' 
-        Label56.AutoSize = True
-        Label56.Location = New Point(63, 21)
-        Label56.Name = "Label56"
-        Label56.Size = New Size(28, 15)
-        Label56.TabIndex = 4
-        Label56.Text = "SPD"
+        pokemon5EVsSPD_lbl.AutoSize = True
+        pokemon5EVsSPD_lbl.Location = New Point(63, 21)
+        pokemon5EVsSPD_lbl.Name = "pokemon5EVsSPD_lbl"
+        pokemon5EVsSPD_lbl.Size = New Size(28, 15)
+        pokemon5EVsSPD_lbl.TabIndex = 4
+        pokemon5EVsSPD_lbl.Text = "SPD"
         ' 
-        ' TextBox55
+        ' pokemon5EVsATK_txt
         ' 
-        TextBox55.Location = New Point(6, 81)
-        TextBox55.MaxLength = 3
-        TextBox55.Name = "TextBox55"
-        TextBox55.Size = New Size(44, 23)
-        TextBox55.TabIndex = 3
-        TextBox55.Text = "0"
+        pokemon5EVsATK_txt.Location = New Point(6, 81)
+        pokemon5EVsATK_txt.MaxLength = 3
+        pokemon5EVsATK_txt.Name = "pokemon5EVsATK_txt"
+        pokemon5EVsATK_txt.Size = New Size(44, 23)
+        pokemon5EVsATK_txt.TabIndex = 3
+        pokemon5EVsATK_txt.Text = "0"
         ' 
-        ' Label57
+        ' pokemon5EVsATK_lbl
         ' 
-        Label57.AutoSize = True
-        Label57.Location = New Point(14, 63)
-        Label57.Name = "Label57"
-        Label57.Size = New Size(27, 15)
-        Label57.TabIndex = 2
-        Label57.Text = "ATK"
+        pokemon5EVsATK_lbl.AutoSize = True
+        pokemon5EVsATK_lbl.Location = New Point(14, 63)
+        pokemon5EVsATK_lbl.Name = "pokemon5EVsATK_lbl"
+        pokemon5EVsATK_lbl.Size = New Size(27, 15)
+        pokemon5EVsATK_lbl.TabIndex = 2
+        pokemon5EVsATK_lbl.Text = "ATK"
         ' 
-        ' TextBox56
+        ' pokemon5EVsHP_txt
         ' 
-        TextBox56.Location = New Point(6, 37)
-        TextBox56.MaxLength = 3
-        TextBox56.Name = "TextBox56"
-        TextBox56.Size = New Size(44, 23)
-        TextBox56.TabIndex = 1
-        TextBox56.Text = "0"
+        pokemon5EVsHP_txt.Location = New Point(6, 37)
+        pokemon5EVsHP_txt.MaxLength = 3
+        pokemon5EVsHP_txt.Name = "pokemon5EVsHP_txt"
+        pokemon5EVsHP_txt.Size = New Size(44, 23)
+        pokemon5EVsHP_txt.TabIndex = 1
+        pokemon5EVsHP_txt.Text = "0"
         ' 
-        ' Label58
+        ' pokemon5EVsHP_lbl
         ' 
-        Label58.AutoSize = True
-        Label58.Location = New Point(16, 19)
-        Label58.Name = "Label58"
-        Label58.Size = New Size(23, 15)
-        Label58.TabIndex = 0
-        Label58.Text = "HP"
+        pokemon5EVsHP_lbl.AutoSize = True
+        pokemon5EVsHP_lbl.Location = New Point(16, 19)
+        pokemon5EVsHP_lbl.Name = "pokemon5EVsHP_lbl"
+        pokemon5EVsHP_lbl.Size = New Size(23, 15)
+        pokemon5EVsHP_lbl.TabIndex = 0
+        pokemon5EVsHP_lbl.Text = "HP"
         ' 
-        ' TextBox57
+        ' pokemon5Name_txt
         ' 
-        TextBox57.AutoCompleteCustomSource.AddRange(New String() {"BULBASAUR", "IVYSAUR", "VENUSAUR", "CHARMANDER", "CHARMELEON", "CHARIZARD", "SQUIRTLE", "WARTORTLE", "BLASTOISE", "CATERPIE", "METAPOD", "BUTTERFREE", "WEEDLE", "KAKUNA", "BEEDRILL", "PIDGEY", "PIDGEOTTO", "PIDGEOT", "RATTATA", "RATICATE", "SPEAROW", "FEAROW", "EKANS", "ARBOK", "PIKACHU", "RAICHU", "SANDSHREW", "SANDSLASH", "NIDORANfE", "NIDORINA", "NIDOQUEEN", "NIDORANmA", "NIDORINO", "NIDOKING", "CLEFAIRY", "CLEFABLE", "VULPIX", "NINETALES", "JIGGLYPUFF", "WIGGLYTUFF", "ZUBAT", "GOLBAT", "ODDISH", "GLOOM", "VILEPLUME", "PARAS", "PARASECT", "VENONAT", "VENOMOTH", "DIGLETT", "DUGTRIO", "MEOWTH", "PERSIAN", "PSYDUCK", "GOLDUCK", "MANKEY", "PRIMEAPE", "GROWLITHE", "ARCANINE", "POLIWAG", "POLIWHIRL", "POLIWRATH", "ABRA", "KADABRA", "ALAKAZAM", "MACHOP", "MACHOKE", "MACHAMP", "BELLSPROUT", "WEEPINBELL", "VICTREEBEL", "TENTACOOL", "TENTACRUEL", "GEODUDE", "GRAVELER", "GOLEM", "PONYTA", "RAPIDASH", "SLOWPOKE", "SLOWBRO", "MAGNEMITE", "MAGNETON", "FARFETCHD", "DODUO", "DODRIO", "SEEL", "DEWGONG", "GRIMER", "MUK", "SHELLDER", "CLOYSTER", "GASTLY", "HAUNTER", "GENGAR", "ONIX", "DROWZEE", "HYPNO", "KRABBY", "KINGLER", "VOLTORB", "ELECTRODE", "EXEGGCUTE", "EXEGGUTOR", "CUBONE", "MAROWAK", "HITMONLEE", "HITMONCHAN", "LICKITUNG", "KOFFING", "WEEZING", "RHYHORN", "RHYDON", "CHANSEY", "TANGELA", "KANGASKHAN", "HORSEA", "SEADRA", "GOLDEEN", "SEAKING", "STARYU", "STARMIE", "MRMIME", "SCYTHER", "JYNX", "ELECTABUZZ", "MAGMAR", "PINSIR", "TAUROS", "MAGIKARP", "GYARADOS", "LAPRAS", "DITTO", "EEVEE", "VAPOREON", "JOLTEON", "FLAREON", "PORYGON", "OMANYTE", "OMASTAR", "KABUTO", "KABUTOPS", "AERODACTYL", "SNORLAX", "ARTICUNO", "ZAPDOS", "MOLTRES", "DRATINI", "DRAGONAIR", "DRAGONITE", "MEWTWO", "MEW", "CHIKORITA", "BAYLEEF", "MEGANIUM", "CYNDAQUIL", "QUILAVA", "TYPHLOSION", "TOTODILE", "CROCONAW", "FERALIGATR", "SENTRET", "FURRET", "HOOTHOOT", "NOCTOWL", "LEDYBA", "LEDIAN", "SPINARAK", "ARIADOS", "CROBAT", "CHINCHOU", "LANTURN", "PICHU", "CLEFFA", "IGGLYBUFF", "TOGEPI", "TOGETIC", "NATU", "XATU", "MAREEP", "FLAAFFY", "AMPHAROS", "BELLOSSOM", "MARILL", "AZUMARILL", "SUDOWOODO", "POLITOED", "HOPPIP", "SKIPLOOM", "JUMPLUFF", "AIPOM", "SUNKERN", "SUNFLORA", "YANMA", "WOOPER", "QUAGSIRE", "ESPEON", "UMBREON", "MURKROW", "SLOWKING", "MISDREAVUS", "UNOWN", "WOBBUFFET", "GIRAFARIG", "PINECO", "FORRETRESS", "DUNSPARCE", "GLIGAR", "STEELIX", "SNUBBULL", "GRANBULL", "QWILFISH", "SCIZOR", "SHUCKLE", "HERACROSS", "SNEASEL", "TEDDIURSA", "URSARING", "SLUGMA", "MAGCARGO", "SWINUB", "PILOSWINE", "CORSOLA", "REMORAID", "OCTILLERY", "DELIBIRD", "MANTINE", "SKARMORY", "HOUNDOUR", "HOUNDOOM", "KINGDRA", "PHANPY", "DONPHAN", "PORYGON2", "STANTLER", "SMEARGLE", "TYROGUE", "HITMONTOP", "SMOOCHUM", "ELEKID", "MAGBY", "MILTANK", "BLISSEY", "RAIKOU", "ENTEI", "SUICUNE", "LARVITAR", "PUPITAR", "TYRANITAR", "LUGIA", "HO-OH", "CELEBI", "TREECKO", "GROVYLE", "SCEPTILE", "TORCHIC", "COMBUSKEN", "BLAZIKEN", "MUDKIP", "MARSHTOMP", "SWAMPERT", "POOCHYENA", "MIGHTYENA", "ZIGZAGOON", "LINOONE", "WURMPLE", "SILCOON", "BEAUTIFLY", "CASCOON", "DUSTOX", "LOTAD", "LOMBRE", "LUDICOLO", "SEEDOT", "NUZLEAF", "SHIFTRY", "TAILLOW", "SWELLOW", "WINGULL", "PELIPPER", "RALTS", "KIRLIA", "GARDEVOIR", "SURSKIT", "MASQUERAIN", "SHROOMISH", "BRELOOM", "SLAKOTH", "VIGOROTH", "SLAKING", "NINCADA", "NINJASK", "SHEDINJA", "WHISMUR", "LOUDRED", "EXPLOUD", "MAKUHITA", "HARIYAMA", "AZURILL", "NOSEPASS", "SKITTY", "DELCATTY", "SABLEYE", "MAWILE", "ARON", "LAIRON", "AGGRON", "MEDITITE", "MEDICHAM", "ELECTRIKE", "MANECTRIC", "PLUSLE", "MINUN", "VOLBEAT", "ILLUMISE", "ROSELIA", "GULPIN", "SWALOT", "CARVANHA", "SHARPEDO", "WAILMER", "WAILORD", "NUMEL", "CAMERUPT", "TORKOAL", "SPOINK", "GRUMPIG", "SPINDA", "TRAPINCH", "VIBRAVA", "FLYGON", "CACNEA", "CACTURNE", "SWABLU", "ALTARIA", "ZANGOOSE", "SEVIPER", "LUNATONE", "SOLROCK", "BARBOACH", "WHISCASH", "CORPHISH", "CRAWDAUNT", "BALTOY", "CLAYDOL", "LILEEP", "CRADILY", "ANORITH", "ARMALDO", "FEEBAS", "MILOTIC", "CASTFORM", "KECLEON", "SHUPPET", "BANETTE", "DUSKULL", "DUSCLOPS", "TROPIUS", "CHIMECHO", "ABSOL", "WYNAUT", "SNORUNT", "GLALIE", "SPHEAL", "SEALEO", "WALREIN", "CLAMPERL", "HUNTAIL", "GOREBYSS", "RELICANTH", "LUVDISC", "BAGON", "SHELGON", "SALAMENCE", "BELDUM", "METANG", "METAGROSS", "REGIROCK", "REGICE", "REGISTEEL", "LATIAS", "LATIOS", "KYOGRE", "GROUDON", "RAYQUAZA", "JIRACHI", "DEOXYS", "TURTWIG", "GROTLE", "TORTERRA", "CHIMCHAR", "MONFERNO", "INFERNAPE", "PIPLUP", "PRINPLUP", "EMPOLEON", "STARLY", "STARAVIA", "STARAPTOR", "BIDOOF", "BIBAREL", "KRICKETOT", "KRICKETUNE", "SHINX", "LUXIO", "LUXRAY", "BUDEW", "ROSERADE", "CRANIDOS", "RAMPARDOS", "SHIELDON", "BASTIODON", "BURMY", "WORMADAM", "MOTHIM", "COMBEE", "VESPIQUEN", "PACHIRISU", "BUIZEL", "FLOATZEL", "CHERUBI", "CHERRIM", "SHELLOS", "GASTRODON", "AMBIPOM", "DRIFLOON", "DRIFBLIM", "BUNEARY", "LOPUNNY", "MISMAGIUS", "HONCHKROW", "GLAMEOW", "PURUGLY", "CHINGLING", "STUNKY", "SKUNTANK", "BRONZOR", "BRONZONG", "BONSLY", "MIMEJR", "HAPPINY", "CHATOT", "SPIRITOMB", "GIBLE", "GABITE", "GARCHOMP", "MUNCHLAX", "RIOLU", "LUCARIO", "HIPPOPOTAS", "HIPPOWDON", "SKORUPI", "DRAPION", "CROAGUNK", "TOXICROAK", "CARNIVINE", "FINNEON", "LUMINEON", "MANTYKE", "SNOVER", "ABOMASNOW", "WEAVILE", "MAGNEZONE", "LICKILICKY", "RHYPERIOR", "TANGROWTH", "ELECTIVIRE", "MAGMORTAR", "TOGEKISS", "YANMEGA", "LEAFEON", "GLACEON", "GLISCOR", "MAMOSWINE", "PORYGON-Z", "GALLADE", "PROBOPASS", "DUSKNOIR", "FROSLASS", "ROTOM", "UXIE", "MESPRIT", "AZELF", "DIALGA", "PALKIA", "HEATRAN", "REGIGIGAS", "GIRATINA", "CRESSELIA", "PHIONE", "MANAPHY", "DARKRAI", "SHAYMIN", "ARCEUS", "VICTINI", "SNIVY", "SERVINE", "SERPERIOR", "TEPIG", "PIGNITE", "EMBOAR", "OSHAWOTT", "DEWOTT", "SAMUROTT", "PATRAT", "WATCHOG", "LILLIPUP", "HERDIER", "STOUTLAND", "PURRLOIN", "LIEPARD", "PANSAGE", "SIMISAGE", "PANSEAR", "SIMISEAR", "PANPOUR", "SIMIPOUR", "MUNNA", "MUSHARNA", "PIDOVE", "TRANQUILL", "UNFEZANT", "BLITZLE", "ZEBSTRIKA", "ROGGENROLA", "BOLDORE", "GIGALITH", "WOOBAT", "SWOOBAT", "DRILBUR", "EXCADRILL", "AUDINO", "TIMBURR", "GURDURR", "CONKELDURR", "TYMPOLE", "PALPITOAD", "SEISMITOAD", "THROH", "SAWK", "SEWADDLE", "SWADLOON", "LEAVANNY", "VENIPEDE", "WHIRLIPEDE", "SCOLIPEDE", "COTTONEE", "WHIMSICOTT", "PETILIL", "LILLIGANT", "BASCULIN", "SANDILE", "KROKOROK", "KROOKODILE", "DARUMAKA", "DARMANITAN", "MARACTUS", "DWEBBLE", "CRUSTLE", "SCRAGGY", "SCRAFTY", "SIGILYPH", "YAMASK", "COFAGRIGUS", "TIRTOUGA", "CARRACOSTA", "ARCHEN", "ARCHEOPS", "TRUBBISH", "GARBODOR", "ZORUA", "ZOROARK", "MINCCINO", "CINCCINO", "GOTHITA", "GOTHORITA", "GOTHITELLE", "SOLOSIS", "DUOSION", "REUNICLUS", "DUCKLETT", "SWANNA", "VANILLITE", "VANILLISH", "VANILLUXE", "DEERLING", "SAWSBUCK", "EMOLGA", "KARRABLAST", "ESCAVALIER", "FOONGUS", "AMOONGUSS", "FRILLISH", "JELLICENT", "ALOMOMOLA", "JOLTIK", "GALVANTULA", "FERROSEED", "FERROTHORN", "KLINK", "KLANG", "KLINKLANG", "TYNAMO", "EELEKTRIK", "EELEKTROSS", "ELGYEM", "BEHEEYEM", "LITWICK", "LAMPENT", "CHANDELURE", "AXEW", "FRAXURE", "HAXORUS", "CUBCHOO", "BEARTIC", "CRYOGONAL", "SHELMET", "ACCELGOR", "STUNFISK", "MIENFOO", "MIENSHAO", "DRUDDIGON", "GOLETT", "GOLURK", "PAWNIARD", "BISHARP", "BOUFFALANT", "RUFFLET", "BRAVIARY", "VULLABY", "MANDIBUZZ", "HEATMOR", "DURANT", "DEINO", "ZWEILOUS", "HYDREIGON", "LARVESTA", "VOLCARONA", "COBALION", "TERRAKION", "VIRIZION", "TORNADUS", "THUNDURUS", "RESHIRAM", "ZEKROM", "LANDORUS", "KYUREM", "KELDEO", "MELOETTA", "GENESECT", "CHESPIN", "QUILLADIN", "CHESNAUGHT", "FENNEKIN", "BRAIXEN", "DELPHOX", "FROAKIE", "FROGADIER", "GRENINJA", "BUNNELBY", "DIGGERSBY", "FLETCHLING", "FLETCHINDER", "TALONFLAME", "SCATTERBUG", "SPEWPA", "VIVILLON", "LITLEO", "PYROAR", "FLABEBE", "FLOETTE", "FLORGES", "SKIDDO", "GOGOAT", "PANCHAM", "PANGORO", "FURFROU", "ESPURR", "MEOWSTIC", "HONEDGE", "DOUBLADE", "AEGISLASH", "SPRITZEE", "AROMATISSE", "SWIRLIX", "SLURPUFF", "INKAY", "MALAMAR", "BINACLE", "BARBARACLE", "SKRELP", "DRAGALGE", "CLAUNCHER", "CLAWITZER", "HELIOPTILE", "HELIOLISK", "TYRUNT", "TYRANTRUM", "AMAURA", "AURORUS", "SYLVEON", "HAWLUCHA", "DEDENNE", "CARBINK", "GOOMY", "SLIGGOO", "GOODRA", "KLEFKI", "PHANTUMP", "TREVENANT", "PUMPKABOO", "GOURGEIST", "BERGMITE", "AVALUGG", "NOIBAT", "NOIVERN", "XERNEAS", "YVELTAL", "ZYGARDE", "DIANCIE", "HOOPA", "VOLCANION", "ROWLET", "DARTRIX", "DECIDUEYE", "LITTEN", "TORRACAT", "INCINEROAR", "POPPLIO", "BRIONNE", "PRIMARINA", "PIKIPEK", "TRUMBEAK", "TOUCANNON", "YUNGOOS", "GUMSHOOS", "GRUBBIN", "CHARJABUG", "VIKAVOLT", "CRABRAWLER", "CRABOMINABLE", "ORICORIO", "CUTIEFLY", "RIBOMBEE", "ROCKRUFF", "LYCANROC", "WISHIWASHI", "MAREANIE", "TOXAPEX", "MUDBRAY", "MUDSDALE", "DEWPIDER", "ARAQUANID", "FOMANTIS", "LURANTIS", "MORELULL", "SHIINOTIC", "SALANDIT", "SALAZZLE", "STUFFUL", "BEWEAR", "BOUNSWEET", "STEENEE", "TSAREENA", "COMFEY", "ORANGURU", "PASSIMIAN", "WIMPOD", "GOLISOPOD", "SANDYGAST", "PALOSSAND", "PYUKUMUKU", "TYPENULL", "SILVALLY", "MINIOR", "KOMALA", "TURTONATOR", "TOGEDEMARU", "MIMIKYU", "BRUXISH", "DRAMPA", "DHELMISE", "JANGMO-O", "HAKAMO-O", "KOMMO-O", "TAPUKOKO", "TAPULELE", "TAPUBULU", "TAPUFINI", "COSMOG", "COSMOEM", "SOLGALEO", "LUNALA", "NIHILEGO", "BUZZWOLE", "PHEROMOSA", "XURKITREE", "CELESTEELA", "KARTANA", "GUZZLORD", "NECROZMA", "MAGEARNA", "MARSHADOW", "POIPOLE", "NAGANADEL", "STAKATAKA", "BLACEPHALON", "ZERAORA", "MELTAN", "MELMETAL", "GROOKEY", "THWACKEY", "RILLABOOM", "SCORBUNNY", "RABOOT", "CINDERACE", "SOBBLE", "DRIZZILE", "INTELEON", "SKWOVET", "GREEDENT", "ROOKIDEE", "CORVISQUIRE", "CORVIKNIGHT", "BLIPBUG", "DOTTLER", "ORBEETLE", "NICKIT", "THIEVUL", "GOSSIFLEUR", "ELDEGOSS", "WOOLOO", "DUBWOOL", "CHEWTLE", "DREDNAW", "YAMPER", "BOLTUND", "ROLYCOLY", "CARKOL", "COALOSSAL", "APPLIN", "FLAPPLE", "APPLETUN", "SILICOBRA", "SANDACONDA", "CRAMORANT", "ARROKUDA", "BARRASKEWDA", "TOXEL", "TOXTRICITY", "SIZZLIPEDE", "CENTISKORCH", "CLOBBOPUS", "GRAPPLOCT", "SINISTEA", "POLTEAGEIST", "HATENNA", "HATTREM", "HATTERENE", "IMPIDIMP", "MORGREM", "GRIMMSNARL", "OBSTAGOON", "PERRSERKER", "CURSOLA", "SIRFETCHD", "MRRIME", "RUNERIGUS", "MILCERY", "ALCREMIE", "FALINKS", "PINCURCHIN", "SNOM", "FROSMOTH", "STONJOURNER", "EISCUE", "INDEEDEE", "MORPEKO", "CUFANT", "COPPERAJAH", "DRACOZOLT", "ARCTOZOLT", "DRACOVISH", "ARCTOVISH", "DURALUDON", "DREEPY", "DRAKLOAK", "DRAGAPULT", "ZACIAN", "ZAMAZENTA", "ETERNATUS", "KUBFU", "URSHIFU", "ZARUDE", "REGIELEKI", "REGIDRAGO", "GLASTRIER", "SPECTRIER", "CALYREX"})
-        TextBox57.AutoCompleteMode = AutoCompleteMode.SuggestAppend
-        TextBox57.AutoCompleteSource = AutoCompleteSource.CustomSource
-        TextBox57.Location = New Point(6, 37)
-        TextBox57.Name = "TextBox57"
-        TextBox57.PlaceholderText = "Bulbasaur"
-        TextBox57.Size = New Size(140, 23)
-        TextBox57.TabIndex = 57
+        pokemon5Name_txt.AutoCompleteCustomSource.AddRange(New String() {"BULBASAUR", "IVYSAUR", "VENUSAUR", "CHARMANDER", "CHARMELEON", "CHARIZARD", "SQUIRTLE", "WARTORTLE", "BLASTOISE", "CATERPIE", "METAPOD", "BUTTERFREE", "WEEDLE", "KAKUNA", "BEEDRILL", "PIDGEY", "PIDGEOTTO", "PIDGEOT", "RATTATA", "RATICATE", "SPEAROW", "FEAROW", "EKANS", "ARBOK", "PIKACHU", "RAICHU", "SANDSHREW", "SANDSLASH", "NIDORANfE", "NIDORINA", "NIDOQUEEN", "NIDORANmA", "NIDORINO", "NIDOKING", "CLEFAIRY", "CLEFABLE", "VULPIX", "NINETALES", "JIGGLYPUFF", "WIGGLYTUFF", "ZUBAT", "GOLBAT", "ODDISH", "GLOOM", "VILEPLUME", "PARAS", "PARASECT", "VENONAT", "VENOMOTH", "DIGLETT", "DUGTRIO", "MEOWTH", "PERSIAN", "PSYDUCK", "GOLDUCK", "MANKEY", "PRIMEAPE", "GROWLITHE", "ARCANINE", "POLIWAG", "POLIWHIRL", "POLIWRATH", "ABRA", "KADABRA", "ALAKAZAM", "MACHOP", "MACHOKE", "MACHAMP", "BELLSPROUT", "WEEPINBELL", "VICTREEBEL", "TENTACOOL", "TENTACRUEL", "GEODUDE", "GRAVELER", "GOLEM", "PONYTA", "RAPIDASH", "SLOWPOKE", "SLOWBRO", "MAGNEMITE", "MAGNETON", "FARFETCHD", "DODUO", "DODRIO", "SEEL", "DEWGONG", "GRIMER", "MUK", "SHELLDER", "CLOYSTER", "GASTLY", "HAUNTER", "GENGAR", "ONIX", "DROWZEE", "HYPNO", "KRABBY", "KINGLER", "VOLTORB", "ELECTRODE", "EXEGGCUTE", "EXEGGUTOR", "CUBONE", "MAROWAK", "HITMONLEE", "HITMONCHAN", "LICKITUNG", "KOFFING", "WEEZING", "RHYHORN", "RHYDON", "CHANSEY", "TANGELA", "KANGASKHAN", "HORSEA", "SEADRA", "GOLDEEN", "SEAKING", "STARYU", "STARMIE", "MRMIME", "SCYTHER", "JYNX", "ELECTABUZZ", "MAGMAR", "PINSIR", "TAUROS", "MAGIKARP", "GYARADOS", "LAPRAS", "DITTO", "EEVEE", "VAPOREON", "JOLTEON", "FLAREON", "PORYGON", "OMANYTE", "OMASTAR", "KABUTO", "KABUTOPS", "AERODACTYL", "SNORLAX", "ARTICUNO", "ZAPDOS", "MOLTRES", "DRATINI", "DRAGONAIR", "DRAGONITE", "MEWTWO", "MEW", "CHIKORITA", "BAYLEEF", "MEGANIUM", "CYNDAQUIL", "QUILAVA", "TYPHLOSION", "TOTODILE", "CROCONAW", "FERALIGATR", "SENTRET", "FURRET", "HOOTHOOT", "NOCTOWL", "LEDYBA", "LEDIAN", "SPINARAK", "ARIADOS", "CROBAT", "CHINCHOU", "LANTURN", "PICHU", "CLEFFA", "IGGLYBUFF", "TOGEPI", "TOGETIC", "NATU", "XATU", "MAREEP", "FLAAFFY", "AMPHAROS", "BELLOSSOM", "MARILL", "AZUMARILL", "SUDOWOODO", "POLITOED", "HOPPIP", "SKIPLOOM", "JUMPLUFF", "AIPOM", "SUNKERN", "SUNFLORA", "YANMA", "WOOPER", "QUAGSIRE", "ESPEON", "UMBREON", "MURKROW", "SLOWKING", "MISDREAVUS", "UNOWN", "WOBBUFFET", "GIRAFARIG", "PINECO", "FORRETRESS", "DUNSPARCE", "GLIGAR", "STEELIX", "SNUBBULL", "GRANBULL", "QWILFISH", "SCIZOR", "SHUCKLE", "HERACROSS", "SNEASEL", "TEDDIURSA", "URSARING", "SLUGMA", "MAGCARGO", "SWINUB", "PILOSWINE", "CORSOLA", "REMORAID", "OCTILLERY", "DELIBIRD", "MANTINE", "SKARMORY", "HOUNDOUR", "HOUNDOOM", "KINGDRA", "PHANPY", "DONPHAN", "PORYGON2", "STANTLER", "SMEARGLE", "TYROGUE", "HITMONTOP", "SMOOCHUM", "ELEKID", "MAGBY", "MILTANK", "BLISSEY", "RAIKOU", "ENTEI", "SUICUNE", "LARVITAR", "PUPITAR", "TYRANITAR", "LUGIA", "HO-OH", "CELEBI", "TREECKO", "GROVYLE", "SCEPTILE", "TORCHIC", "COMBUSKEN", "BLAZIKEN", "MUDKIP", "MARSHTOMP", "SWAMPERT", "POOCHYENA", "MIGHTYENA", "ZIGZAGOON", "LINOONE", "WURMPLE", "SILCOON", "BEAUTIFLY", "CASCOON", "DUSTOX", "LOTAD", "LOMBRE", "LUDICOLO", "SEEDOT", "NUZLEAF", "SHIFTRY", "TAILLOW", "SWELLOW", "WINGULL", "PELIPPER", "RALTS", "KIRLIA", "GARDEVOIR", "SURSKIT", "MASQUERAIN", "SHROOMISH", "BRELOOM", "SLAKOTH", "VIGOROTH", "SLAKING", "NINCADA", "NINJASK", "SHEDINJA", "WHISMUR", "LOUDRED", "EXPLOUD", "MAKUHITA", "HARIYAMA", "AZURILL", "NOSEPASS", "SKITTY", "DELCATTY", "SABLEYE", "MAWILE", "ARON", "LAIRON", "AGGRON", "MEDITITE", "MEDICHAM", "ELECTRIKE", "MANECTRIC", "PLUSLE", "MINUN", "VOLBEAT", "ILLUMISE", "ROSELIA", "GULPIN", "SWALOT", "CARVANHA", "SHARPEDO", "WAILMER", "WAILORD", "NUMEL", "CAMERUPT", "TORKOAL", "SPOINK", "GRUMPIG", "SPINDA", "TRAPINCH", "VIBRAVA", "FLYGON", "CACNEA", "CACTURNE", "SWABLU", "ALTARIA", "ZANGOOSE", "SEVIPER", "LUNATONE", "SOLROCK", "BARBOACH", "WHISCASH", "CORPHISH", "CRAWDAUNT", "BALTOY", "CLAYDOL", "LILEEP", "CRADILY", "ANORITH", "ARMALDO", "FEEBAS", "MILOTIC", "CASTFORM", "KECLEON", "SHUPPET", "BANETTE", "DUSKULL", "DUSCLOPS", "TROPIUS", "CHIMECHO", "ABSOL", "WYNAUT", "SNORUNT", "GLALIE", "SPHEAL", "SEALEO", "WALREIN", "CLAMPERL", "HUNTAIL", "GOREBYSS", "RELICANTH", "LUVDISC", "BAGON", "SHELGON", "SALAMENCE", "BELDUM", "METANG", "METAGROSS", "REGIROCK", "REGICE", "REGISTEEL", "LATIAS", "LATIOS", "KYOGRE", "GROUDON", "RAYQUAZA", "JIRACHI", "DEOXYS", "TURTWIG", "GROTLE", "TORTERRA", "CHIMCHAR", "MONFERNO", "INFERNAPE", "PIPLUP", "PRINPLUP", "EMPOLEON", "STARLY", "STARAVIA", "STARAPTOR", "BIDOOF", "BIBAREL", "KRICKETOT", "KRICKETUNE", "SHINX", "LUXIO", "LUXRAY", "BUDEW", "ROSERADE", "CRANIDOS", "RAMPARDOS", "SHIELDON", "BASTIODON", "BURMY", "WORMADAM", "MOTHIM", "COMBEE", "VESPIQUEN", "PACHIRISU", "BUIZEL", "FLOATZEL", "CHERUBI", "CHERRIM", "SHELLOS", "GASTRODON", "AMBIPOM", "DRIFLOON", "DRIFBLIM", "BUNEARY", "LOPUNNY", "MISMAGIUS", "HONCHKROW", "GLAMEOW", "PURUGLY", "CHINGLING", "STUNKY", "SKUNTANK", "BRONZOR", "BRONZONG", "BONSLY", "MIMEJR", "HAPPINY", "CHATOT", "SPIRITOMB", "GIBLE", "GABITE", "GARCHOMP", "MUNCHLAX", "RIOLU", "LUCARIO", "HIPPOPOTAS", "HIPPOWDON", "SKORUPI", "DRAPION", "CROAGUNK", "TOXICROAK", "CARNIVINE", "FINNEON", "LUMINEON", "MANTYKE", "SNOVER", "ABOMASNOW", "WEAVILE", "MAGNEZONE", "LICKILICKY", "RHYPERIOR", "TANGROWTH", "ELECTIVIRE", "MAGMORTAR", "TOGEKISS", "YANMEGA", "LEAFEON", "GLACEON", "GLISCOR", "MAMOSWINE", "PORYGON-Z", "GALLADE", "PROBOPASS", "DUSKNOIR", "FROSLASS", "ROTOM", "UXIE", "MESPRIT", "AZELF", "DIALGA", "PALKIA", "HEATRAN", "REGIGIGAS", "GIRATINA", "CRESSELIA", "PHIONE", "MANAPHY", "DARKRAI", "SHAYMIN", "ARCEUS", "VICTINI", "SNIVY", "SERVINE", "SERPERIOR", "TEPIG", "PIGNITE", "EMBOAR", "OSHAWOTT", "DEWOTT", "SAMUROTT", "PATRAT", "WATCHOG", "LILLIPUP", "HERDIER", "STOUTLAND", "PURRLOIN", "LIEPARD", "PANSAGE", "SIMISAGE", "PANSEAR", "SIMISEAR", "PANPOUR", "SIMIPOUR", "MUNNA", "MUSHARNA", "PIDOVE", "TRANQUILL", "UNFEZANT", "BLITZLE", "ZEBSTRIKA", "ROGGENROLA", "BOLDORE", "GIGALITH", "WOOBAT", "SWOOBAT", "DRILBUR", "EXCADRILL", "AUDINO", "TIMBURR", "GURDURR", "CONKELDURR", "TYMPOLE", "PALPITOAD", "SEISMITOAD", "THROH", "SAWK", "SEWADDLE", "SWADLOON", "LEAVANNY", "VENIPEDE", "WHIRLIPEDE", "SCOLIPEDE", "COTTONEE", "WHIMSICOTT", "PETILIL", "LILLIGANT", "BASCULIN", "SANDILE", "KROKOROK", "KROOKODILE", "DARUMAKA", "DARMANITAN", "MARACTUS", "DWEBBLE", "CRUSTLE", "SCRAGGY", "SCRAFTY", "SIGILYPH", "YAMASK", "COFAGRIGUS", "TIRTOUGA", "CARRACOSTA", "ARCHEN", "ARCHEOPS", "TRUBBISH", "GARBODOR", "ZORUA", "ZOROARK", "MINCCINO", "CINCCINO", "GOTHITA", "GOTHORITA", "GOTHITELLE", "SOLOSIS", "DUOSION", "REUNICLUS", "DUCKLETT", "SWANNA", "VANILLITE", "VANILLISH", "VANILLUXE", "DEERLING", "SAWSBUCK", "EMOLGA", "KARRABLAST", "ESCAVALIER", "FOONGUS", "AMOONGUSS", "FRILLISH", "JELLICENT", "ALOMOMOLA", "JOLTIK", "GALVANTULA", "FERROSEED", "FERROTHORN", "KLINK", "KLANG", "KLINKLANG", "TYNAMO", "EELEKTRIK", "EELEKTROSS", "ELGYEM", "BEHEEYEM", "LITWICK", "LAMPENT", "CHANDELURE", "AXEW", "FRAXURE", "HAXORUS", "CUBCHOO", "BEARTIC", "CRYOGONAL", "SHELMET", "ACCELGOR", "STUNFISK", "MIENFOO", "MIENSHAO", "DRUDDIGON", "GOLETT", "GOLURK", "PAWNIARD", "BISHARP", "BOUFFALANT", "RUFFLET", "BRAVIARY", "VULLABY", "MANDIBUZZ", "HEATMOR", "DURANT", "DEINO", "ZWEILOUS", "HYDREIGON", "LARVESTA", "VOLCARONA", "COBALION", "TERRAKION", "VIRIZION", "TORNADUS", "THUNDURUS", "RESHIRAM", "ZEKROM", "LANDORUS", "KYUREM", "KELDEO", "MELOETTA", "GENESECT", "CHESPIN", "QUILLADIN", "CHESNAUGHT", "FENNEKIN", "BRAIXEN", "DELPHOX", "FROAKIE", "FROGADIER", "GRENINJA", "BUNNELBY", "DIGGERSBY", "FLETCHLING", "FLETCHINDER", "TALONFLAME", "SCATTERBUG", "SPEWPA", "VIVILLON", "LITLEO", "PYROAR", "FLABEBE", "FLOETTE", "FLORGES", "SKIDDO", "GOGOAT", "PANCHAM", "PANGORO", "FURFROU", "ESPURR", "MEOWSTIC", "HONEDGE", "DOUBLADE", "AEGISLASH", "SPRITZEE", "AROMATISSE", "SWIRLIX", "SLURPUFF", "INKAY", "MALAMAR", "BINACLE", "BARBARACLE", "SKRELP", "DRAGALGE", "CLAUNCHER", "CLAWITZER", "HELIOPTILE", "HELIOLISK", "TYRUNT", "TYRANTRUM", "AMAURA", "AURORUS", "SYLVEON", "HAWLUCHA", "DEDENNE", "CARBINK", "GOOMY", "SLIGGOO", "GOODRA", "KLEFKI", "PHANTUMP", "TREVENANT", "PUMPKABOO", "GOURGEIST", "BERGMITE", "AVALUGG", "NOIBAT", "NOIVERN", "XERNEAS", "YVELTAL", "ZYGARDE", "DIANCIE", "HOOPA", "VOLCANION", "ROWLET", "DARTRIX", "DECIDUEYE", "LITTEN", "TORRACAT", "INCINEROAR", "POPPLIO", "BRIONNE", "PRIMARINA", "PIKIPEK", "TRUMBEAK", "TOUCANNON", "YUNGOOS", "GUMSHOOS", "GRUBBIN", "CHARJABUG", "VIKAVOLT", "CRABRAWLER", "CRABOMINABLE", "ORICORIO", "CUTIEFLY", "RIBOMBEE", "ROCKRUFF", "LYCANROC", "WISHIWASHI", "MAREANIE", "TOXAPEX", "MUDBRAY", "MUDSDALE", "DEWPIDER", "ARAQUANID", "FOMANTIS", "LURANTIS", "MORELULL", "SHIINOTIC", "SALANDIT", "SALAZZLE", "STUFFUL", "BEWEAR", "BOUNSWEET", "STEENEE", "TSAREENA", "COMFEY", "ORANGURU", "PASSIMIAN", "WIMPOD", "GOLISOPOD", "SANDYGAST", "PALOSSAND", "PYUKUMUKU", "TYPENULL", "SILVALLY", "MINIOR", "KOMALA", "TURTONATOR", "TOGEDEMARU", "MIMIKYU", "BRUXISH", "DRAMPA", "DHELMISE", "JANGMO-O", "HAKAMO-O", "KOMMO-O", "TAPUKOKO", "TAPULELE", "TAPUBULU", "TAPUFINI", "COSMOG", "COSMOEM", "SOLGALEO", "LUNALA", "NIHILEGO", "BUZZWOLE", "PHEROMOSA", "XURKITREE", "CELESTEELA", "KARTANA", "GUZZLORD", "NECROZMA", "MAGEARNA", "MARSHADOW", "POIPOLE", "NAGANADEL", "STAKATAKA", "BLACEPHALON", "ZERAORA", "MELTAN", "MELMETAL", "GROOKEY", "THWACKEY", "RILLABOOM", "SCORBUNNY", "RABOOT", "CINDERACE", "SOBBLE", "DRIZZILE", "INTELEON", "SKWOVET", "GREEDENT", "ROOKIDEE", "CORVISQUIRE", "CORVIKNIGHT", "BLIPBUG", "DOTTLER", "ORBEETLE", "NICKIT", "THIEVUL", "GOSSIFLEUR", "ELDEGOSS", "WOOLOO", "DUBWOOL", "CHEWTLE", "DREDNAW", "YAMPER", "BOLTUND", "ROLYCOLY", "CARKOL", "COALOSSAL", "APPLIN", "FLAPPLE", "APPLETUN", "SILICOBRA", "SANDACONDA", "CRAMORANT", "ARROKUDA", "BARRASKEWDA", "TOXEL", "TOXTRICITY", "SIZZLIPEDE", "CENTISKORCH", "CLOBBOPUS", "GRAPPLOCT", "SINISTEA", "POLTEAGEIST", "HATENNA", "HATTREM", "HATTERENE", "IMPIDIMP", "MORGREM", "GRIMMSNARL", "OBSTAGOON", "PERRSERKER", "CURSOLA", "SIRFETCHD", "MRRIME", "RUNERIGUS", "MILCERY", "ALCREMIE", "FALINKS", "PINCURCHIN", "SNOM", "FROSMOTH", "STONJOURNER", "EISCUE", "INDEEDEE", "MORPEKO", "CUFANT", "COPPERAJAH", "DRACOZOLT", "ARCTOZOLT", "DRACOVISH", "ARCTOVISH", "DURALUDON", "DREEPY", "DRAKLOAK", "DRAGAPULT", "ZACIAN", "ZAMAZENTA", "ETERNATUS", "KUBFU", "URSHIFU", "ZARUDE", "REGIELEKI", "REGIDRAGO", "GLASTRIER", "SPECTRIER", "CALYREX"})
+        pokemon5Name_txt.AutoCompleteMode = AutoCompleteMode.SuggestAppend
+        pokemon5Name_txt.AutoCompleteSource = AutoCompleteSource.CustomSource
+        pokemon5Name_txt.Location = New Point(6, 37)
+        pokemon5Name_txt.Name = "pokemon5Name_txt"
+        pokemon5Name_txt.PlaceholderText = "Bulbasaur"
+        pokemon5Name_txt.Size = New Size(140, 23)
+        pokemon5Name_txt.TabIndex = 57
         ' 
         ' pokemon5IVs_grp
         ' 
-        pokemon5IVs_grp.Controls.Add(Button7)
-        pokemon5IVs_grp.Controls.Add(Button8)
+        pokemon5IVs_grp.Controls.Add(pokemon5RandomIVs_btn)
+        pokemon5IVs_grp.Controls.Add(pokemon5MaxIVs_btn)
         pokemon5IVs_grp.Controls.Add(pokemon5IVsDEF_txt)
         pokemon5IVs_grp.Controls.Add(pokemon5IVsDEF_lbl)
         pokemon5IVs_grp.Controls.Add(pokemon5IVsSPDEF_txt)
@@ -3568,23 +3607,23 @@ Partial Class Form1
         pokemon5IVs_grp.TabStop = False
         pokemon5IVs_grp.Text = "IVs (Max 31 Each)"
         ' 
-        ' Button7
+        ' pokemon5RandomIVs_btn
         ' 
-        Button7.Location = New Point(57, 152)
-        Button7.Name = "Button7"
-        Button7.Size = New Size(44, 23)
-        Button7.TabIndex = 15
-        Button7.Text = "Rand"
-        Button7.UseVisualStyleBackColor = True
+        pokemon5RandomIVs_btn.Location = New Point(57, 152)
+        pokemon5RandomIVs_btn.Name = "pokemon5RandomIVs_btn"
+        pokemon5RandomIVs_btn.Size = New Size(44, 23)
+        pokemon5RandomIVs_btn.TabIndex = 15
+        pokemon5RandomIVs_btn.Text = "Rand"
+        pokemon5RandomIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' Button8
+        ' pokemon5MaxIVs_btn
         ' 
-        Button8.Location = New Point(7, 152)
-        Button8.Name = "Button8"
-        Button8.Size = New Size(44, 23)
-        Button8.TabIndex = 14
-        Button8.Text = "Max"
-        Button8.UseVisualStyleBackColor = True
+        pokemon5MaxIVs_btn.Location = New Point(7, 152)
+        pokemon5MaxIVs_btn.Name = "pokemon5MaxIVs_btn"
+        pokemon5MaxIVs_btn.Size = New Size(44, 23)
+        pokemon5MaxIVs_btn.TabIndex = 14
+        pokemon5MaxIVs_btn.Text = "Max"
+        pokemon5MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
         ' pokemon5IVsDEF_txt
         ' 
@@ -3694,75 +3733,66 @@ Partial Class Form1
         pokemon5IVsHP_lbl.TabIndex = 0
         pokemon5IVsHP_lbl.Text = "HP"
         ' 
-        ' TextBox64
+        ' pokemon5HeldItem_txt
         ' 
-        TextBox64.Location = New Point(152, 37)
-        TextBox64.Name = "TextBox64"
-        TextBox64.PlaceholderText = "FocusSash"
-        TextBox64.Size = New Size(140, 23)
-        TextBox64.TabIndex = 58
+        pokemon5HeldItem_txt.Location = New Point(152, 37)
+        pokemon5HeldItem_txt.Name = "pokemon5HeldItem_txt"
+        pokemon5HeldItem_txt.PlaceholderText = "FocusSash"
+        pokemon5HeldItem_txt.Size = New Size(140, 23)
+        pokemon5HeldItem_txt.TabIndex = 58
         ' 
-        ' ComboBox9
+        ' pokemon5PokeBall_cmb
         ' 
-        ComboBox9.FormattingEnabled = True
-        ComboBox9.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
-        ComboBox9.Location = New Point(6, 169)
-        ComboBox9.Name = "ComboBox9"
-        ComboBox9.Size = New Size(140, 23)
-        ComboBox9.TabIndex = 77
+        pokemon5PokeBall_cmb.FormattingEnabled = True
+        pokemon5PokeBall_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
+        pokemon5PokeBall_cmb.Location = New Point(6, 169)
+        pokemon5PokeBall_cmb.Name = "pokemon5PokeBall_cmb"
+        pokemon5PokeBall_cmb.Size = New Size(140, 23)
+        pokemon5PokeBall_cmb.TabIndex = 77
         ' 
-        ' Label65
+        ' pokemon5HeldItem_lbl
         ' 
-        Label65.AutoSize = True
-        Label65.Location = New Point(152, 19)
-        Label65.Name = "Label65"
-        Label65.Size = New Size(59, 15)
-        Label65.TabIndex = 59
-        Label65.Text = "Held Item"
+        pokemon5HeldItem_lbl.AutoSize = True
+        pokemon5HeldItem_lbl.Location = New Point(152, 19)
+        pokemon5HeldItem_lbl.Name = "pokemon5HeldItem_lbl"
+        pokemon5HeldItem_lbl.Size = New Size(59, 15)
+        pokemon5HeldItem_lbl.TabIndex = 59
+        pokemon5HeldItem_lbl.Text = "Held Item"
         ' 
-        ' Label66
+        ' pokemon5PokeBall_lbl
         ' 
-        Label66.AutoSize = True
-        Label66.Location = New Point(8, 151)
-        Label66.Name = "Label66"
-        Label66.Size = New Size(52, 15)
-        Label66.TabIndex = 76
-        Label66.Text = "PokéBall"
+        pokemon5PokeBall_lbl.AutoSize = True
+        pokemon5PokeBall_lbl.Location = New Point(8, 151)
+        pokemon5PokeBall_lbl.Name = "pokemon5PokeBall_lbl"
+        pokemon5PokeBall_lbl.Size = New Size(52, 15)
+        pokemon5PokeBall_lbl.TabIndex = 76
+        pokemon5PokeBall_lbl.Text = "PokéBall"
         ' 
-        ' Label67
+        ' pokemon5Level_lbl
         ' 
-        Label67.AutoSize = True
-        Label67.Location = New Point(298, 19)
-        Label67.Name = "Label67"
-        Label67.Size = New Size(34, 15)
-        Label67.TabIndex = 60
-        Label67.Text = "Level"
+        pokemon5Level_lbl.AutoSize = True
+        pokemon5Level_lbl.Location = New Point(298, 19)
+        pokemon5Level_lbl.Name = "pokemon5Level_lbl"
+        pokemon5Level_lbl.Size = New Size(34, 15)
+        pokemon5Level_lbl.TabIndex = 60
+        pokemon5Level_lbl.Text = "Level"
         ' 
-        ' TextBox65
+        ' pokemon5Nickname_txt
         ' 
-        TextBox65.Location = New Point(298, 125)
-        TextBox65.Name = "TextBox65"
-        TextBox65.PlaceholderText = "Bloom"
-        TextBox65.Size = New Size(140, 23)
-        TextBox65.TabIndex = 75
+        pokemon5Nickname_txt.Location = New Point(298, 125)
+        pokemon5Nickname_txt.Name = "pokemon5Nickname_txt"
+        pokemon5Nickname_txt.PlaceholderText = "Bloom"
+        pokemon5Nickname_txt.Size = New Size(140, 23)
+        pokemon5Nickname_txt.TabIndex = 75
         ' 
-        ' TextBox66
+        ' pokemon5Nickname_lbl
         ' 
-        TextBox66.Location = New Point(298, 37)
-        TextBox66.MaxLength = 3
-        TextBox66.Name = "TextBox66"
-        TextBox66.PlaceholderText = "100"
-        TextBox66.Size = New Size(140, 23)
-        TextBox66.TabIndex = 61
-        ' 
-        ' Label68
-        ' 
-        Label68.AutoSize = True
-        Label68.Location = New Point(298, 107)
-        Label68.Name = "Label68"
-        Label68.Size = New Size(61, 15)
-        Label68.TabIndex = 74
-        Label68.Text = "Nickname"
+        pokemon5Nickname_lbl.AutoSize = True
+        pokemon5Nickname_lbl.Location = New Point(298, 107)
+        pokemon5Nickname_lbl.Name = "pokemon5Nickname_lbl"
+        pokemon5Nickname_lbl.Size = New Size(61, 15)
+        pokemon5Nickname_lbl.TabIndex = 74
+        pokemon5Nickname_lbl.Text = "Nickname"
         ' 
         ' pokemon5Moves_grp
         ' 
@@ -3809,70 +3839,62 @@ Partial Class Form1
         pokemon5Move1_txt.Size = New Size(120, 23)
         pokemon5Move1_txt.TabIndex = 0
         ' 
-        ' TextBox71
+        ' pokemon5Ability_lbl
         ' 
-        TextBox71.Location = New Point(152, 125)
-        TextBox71.Name = "TextBox71"
-        TextBox71.PlaceholderText = "70"
-        TextBox71.Size = New Size(140, 23)
-        TextBox71.TabIndex = 73
+        pokemon5Ability_lbl.AutoSize = True
+        pokemon5Ability_lbl.Location = New Point(6, 63)
+        pokemon5Ability_lbl.Name = "pokemon5Ability_lbl"
+        pokemon5Ability_lbl.Size = New Size(41, 15)
+        pokemon5Ability_lbl.TabIndex = 63
+        pokemon5Ability_lbl.Text = "Ability"
         ' 
-        ' Label69
+        ' pokemon5Happiness_lbl
         ' 
-        Label69.AutoSize = True
-        Label69.Location = New Point(6, 63)
-        Label69.Name = "Label69"
-        Label69.Size = New Size(41, 15)
-        Label69.TabIndex = 63
-        Label69.Text = "Ability"
+        pokemon5Happiness_lbl.AutoSize = True
+        pokemon5Happiness_lbl.Location = New Point(152, 107)
+        pokemon5Happiness_lbl.Name = "pokemon5Happiness_lbl"
+        pokemon5Happiness_lbl.Size = New Size(62, 15)
+        pokemon5Happiness_lbl.TabIndex = 72
+        pokemon5Happiness_lbl.Text = "Happiness"
         ' 
-        ' Label70
+        ' pokemon5Ability_cmb
         ' 
-        Label70.AutoSize = True
-        Label70.Location = New Point(152, 107)
-        Label70.Name = "Label70"
-        Label70.Size = New Size(62, 15)
-        Label70.TabIndex = 72
-        Label70.Text = "Happiness"
+        pokemon5Ability_cmb.AutoCompleteCustomSource.AddRange(New String() {"Aerilate", "Aftermath", "Air Lock", "Analytic", "Anger Point", "Anger Shell", "Anticipation", "Arena Trap", "Armor Tail", "Aroma Veil", "As One - Unnerve Chilling Neigh", "As One - Unnerve Grim Neigh", "Aura Break", "Bad Dreams", "Ball Fetch", "Battery", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Berserk", "Big Pecks", "Blaze", "Bulletproof", "Cheek Pouch", "Chilling Neigh", "Chlorophyll", "Clear Body", "Cloud Nine", "Color Change", "Comatose", "Commander", "Competitive", "Compoundeyes", "Contrary", "Corrosion", "Costar", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Damp", "Dancer", "Dark Aura", "Dauntless Shield", "Dazzling", "Defeatist", "Defiant", "Delta Stream", "Desolate Land", "Disguise", "Download", "Dragon's Maw", "Drizzle", "Drought", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Electromorphosis", "Embody Aspect - Cornerstone Mask", "Embody Aspect - Hearthflame Mask", "Embody Aspect - Teal Mask", "Embody Aspect - Wellspring Mask", "Emergency Exit", "Fairy Aura", "Filter", "Flame Body", "Flare Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Fluffy", "Forecast", "Forewarn", "Friend Guard", "Frisk", "Full Metal Body", "Fur Coat", "Gale Wings", "Galvanize", "Gluttony", "Good as Gold", "Gooey", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Guts", "Hadron Engine", "Harvest", "Healer", "Heatproof", "Heavy Metal", "Honey Gather", "Hospitality", "Huge Power", "Hunger Switch", "Hustle", "Hydration", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Illuminate", "Illusion", "Immunity", "Imposter", "Infiltrator", "Innards Out", "Inner Focus", "Insomnia", "Intimidate", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Justified", "Keen Eye", "Klutz", "Leaf Guard", "Levitate", "Libero", "Light Metal", "Lightning Rod", "Limber", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magician", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Merciless", "Mimicry", "Mind's Eye", "Minus", "Mirror Armor", "Misty Surge", "Mold Breaker", "Moody", "Motor Drive", "Moxie", "Multiscale", "Multitype", "Mummy", "Mycelium Might", "Natural Cure", "Neuroforce", "Neutralizing Gas", "No Guard", "Normalize", "Oblivious", "Opportunist", "Orichalcum Pulse", "Overcoat", "Overgrow", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Pickpocket", "Pickup", "Pixilate", "Plus", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Prankster", "Pressure", "Primordial Sea", "Prism Armor", "Propeller Tail", "Protean", "Protosynthesis", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "Rattled", "Receiver", "Reckless", "Refrigerate", "Regenerator", "Ripen", "Rivalry", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Schooling", "Scrappy", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sharpness", "Shed Skin", "Sheer Force", "Shell Armor", "Shield Dust", "Shields Down", "Simple", "Skill Link", "Slow Start", "Slush Rush", "Sniper", "Snow Cloak", "Snow Warning", "Solar Power", "Solid Rock", "Soul-Heart", "Soundproof", "Speed Boost", "Stakeout", "Stall", "Stalwart", "Stamina", "Stance Change", "Static", "Steadfast", "Steam Engine", "Steelworker", "Steely Spirit", "Stench", "Sticky Hold", "Storm Drain", "Strong Jaw", "Sturdy", "Suction Cups", "Super Luck", "Supersweet Syrup", "Supreme Overlord", "Surge Surfer", "Swarm", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Symbiosis", "Synchronize", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Technician", "Telepathy", "Teravolt", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Torrent", "Tough Claws", "Toxic Boost", "Toxic Chain", "Toxic Debris", "Trace", "Transistor", "Triage", "Truant", "Turboblaze", "Unaware", "Unburden", "Unnerve", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Compaction", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Wonder Skin ", "Zen Mode", "Zero to Hero"})
+        pokemon5Ability_cmb.AutoCompleteMode = AutoCompleteMode.SuggestAppend
+        pokemon5Ability_cmb.AutoCompleteSource = AutoCompleteSource.CustomSource
+        pokemon5Ability_cmb.FormattingEnabled = True
+        pokemon5Ability_cmb.Items.AddRange(New Object() {"Aerilate", "Aftermath", "Air Lock", "Analytic", "Anger Point", "Anger Shell", "Anticipation", "Arena Trap", "Armor Tail", "Aroma Veil", "As One - Unnerve Chilling Neigh", "As One - Unnerve Grim Neigh", "Aura Break", "Bad Dreams", "Ball Fetch", "Battery", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Berserk", "Big Pecks", "Blaze", "Bulletproof", "Cheek Pouch", "Chilling Neigh", "Chlorophyll", "Clear Body", "Cloud Nine", "Color Change", "Comatose", "Commander", "Competitive", "Compoundeyes", "Contrary", "Corrosion", "Costar", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Damp", "Dancer", "Dark Aura", "Dauntless Shield", "Dazzling", "Defeatist", "Defiant", "Delta Stream", "Desolate Land", "Disguise", "Download", "Dragon's Maw", "Drizzle", "Drought", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Electromorphosis", "Embody Aspect - Cornerstone Mask", "Embody Aspect - Hearthflame Mask", "Embody Aspect - Teal Mask", "Embody Aspect - Wellspring Mask", "Emergency Exit", "Fairy Aura", "Filter", "Flame Body", "Flare Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Fluffy", "Forecast", "Forewarn", "Friend Guard", "Frisk", "Full Metal Body", "Fur Coat", "Gale Wings", "Galvanize", "Gluttony", "Good as Gold", "Gooey", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Guts", "Hadron Engine", "Harvest", "Healer", "Heatproof", "Heavy Metal", "Honey Gather", "Hospitality", "Huge Power", "Hunger Switch", "Hustle", "Hydration", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Illuminate", "Illusion", "Immunity", "Imposter", "Infiltrator", "Innards Out", "Inner Focus", "Insomnia", "Intimidate", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Justified", "Keen Eye", "Klutz", "Leaf Guard", "Levitate", "Libero", "Light Metal", "Lightning Rod", "Limber", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magician", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Merciless", "Mimicry", "Mind's Eye", "Minus", "Mirror Armor", "Misty Surge", "Mold Breaker", "Moody", "Motor Drive", "Moxie", "Multiscale", "Multitype", "Mummy", "Mycelium Might", "Natural Cure", "Neuroforce", "Neutralizing Gas", "No Guard", "Normalize", "Oblivious", "Opportunist", "Orichalcum Pulse", "Overcoat", "Overgrow", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Pickpocket", "Pickup", "Pixilate", "Plus", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Prankster", "Pressure", "Primordial Sea", "Prism Armor", "Propeller Tail", "Protean", "Protosynthesis", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "Rattled", "Receiver", "Reckless", "Refrigerate", "Regenerator", "Ripen", "Rivalry", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Schooling", "Scrappy", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sharpness", "Shed Skin", "Sheer Force", "Shell Armor", "Shield Dust", "Shields Down", "Simple", "Skill Link", "Slow Start", "Slush Rush", "Sniper", "Snow Cloak", "Snow Warning", "Solar Power", "Solid Rock", "Soul-Heart", "Soundproof", "Speed Boost", "Stakeout", "Stall", "Stalwart", "Stamina", "Stance Change", "Static", "Steadfast", "Steam Engine", "Steelworker", "Steely Spirit", "Stench", "Sticky Hold", "Storm Drain", "Strong Jaw", "Sturdy", "Suction Cups", "Super Luck", "Supersweet Syrup", "Supreme Overlord", "Surge Surfer", "Swarm", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Symbiosis", "Synchronize", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Technician", "Telepathy", "Teravolt", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Torrent", "Tough Claws", "Toxic Boost", "Toxic Chain", "Toxic Debris", "Trace", "Transistor", "Triage", "Truant", "Turboblaze", "Unaware", "Unburden", "Unnerve", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Compaction", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Wonder Skin ", "Zen Mode", "Zero to Hero"})
+        pokemon5Ability_cmb.Location = New Point(6, 81)
+        pokemon5Ability_cmb.Name = "pokemon5Ability_cmb"
+        pokemon5Ability_cmb.Size = New Size(140, 23)
+        pokemon5Ability_cmb.TabIndex = 64
         ' 
-        ' ComboBox10
+        ' pokemon5Nature_cmb
         ' 
-        ComboBox10.AutoCompleteCustomSource.AddRange(New String() {"Aerilate", "Aftermath", "Air Lock", "Analytic", "Anger Point", "Anger Shell", "Anticipation", "Arena Trap", "Armor Tail", "Aroma Veil", "As One - Unnerve Chilling Neigh", "As One - Unnerve Grim Neigh", "Aura Break", "Bad Dreams", "Ball Fetch", "Battery", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Berserk", "Big Pecks", "Blaze", "Bulletproof", "Cheek Pouch", "Chilling Neigh", "Chlorophyll", "Clear Body", "Cloud Nine", "Color Change", "Comatose", "Commander", "Competitive", "Compoundeyes", "Contrary", "Corrosion", "Costar", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Damp", "Dancer", "Dark Aura", "Dauntless Shield", "Dazzling", "Defeatist", "Defiant", "Delta Stream", "Desolate Land", "Disguise", "Download", "Dragon's Maw", "Drizzle", "Drought", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Electromorphosis", "Embody Aspect - Cornerstone Mask", "Embody Aspect - Hearthflame Mask", "Embody Aspect - Teal Mask", "Embody Aspect - Wellspring Mask", "Emergency Exit", "Fairy Aura", "Filter", "Flame Body", "Flare Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Fluffy", "Forecast", "Forewarn", "Friend Guard", "Frisk", "Full Metal Body", "Fur Coat", "Gale Wings", "Galvanize", "Gluttony", "Good as Gold", "Gooey", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Guts", "Hadron Engine", "Harvest", "Healer", "Heatproof", "Heavy Metal", "Honey Gather", "Hospitality", "Huge Power", "Hunger Switch", "Hustle", "Hydration", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Illuminate", "Illusion", "Immunity", "Imposter", "Infiltrator", "Innards Out", "Inner Focus", "Insomnia", "Intimidate", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Justified", "Keen Eye", "Klutz", "Leaf Guard", "Levitate", "Libero", "Light Metal", "Lightning Rod", "Limber", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magician", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Merciless", "Mimicry", "Mind's Eye", "Minus", "Mirror Armor", "Misty Surge", "Mold Breaker", "Moody", "Motor Drive", "Moxie", "Multiscale", "Multitype", "Mummy", "Mycelium Might", "Natural Cure", "Neuroforce", "Neutralizing Gas", "No Guard", "Normalize", "Oblivious", "Opportunist", "Orichalcum Pulse", "Overcoat", "Overgrow", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Pickpocket", "Pickup", "Pixilate", "Plus", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Prankster", "Pressure", "Primordial Sea", "Prism Armor", "Propeller Tail", "Protean", "Protosynthesis", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "Rattled", "Receiver", "Reckless", "Refrigerate", "Regenerator", "Ripen", "Rivalry", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Schooling", "Scrappy", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sharpness", "Shed Skin", "Sheer Force", "Shell Armor", "Shield Dust", "Shields Down", "Simple", "Skill Link", "Slow Start", "Slush Rush", "Sniper", "Snow Cloak", "Snow Warning", "Solar Power", "Solid Rock", "Soul-Heart", "Soundproof", "Speed Boost", "Stakeout", "Stall", "Stalwart", "Stamina", "Stance Change", "Static", "Steadfast", "Steam Engine", "Steelworker", "Steely Spirit", "Stench", "Sticky Hold", "Storm Drain", "Strong Jaw", "Sturdy", "Suction Cups", "Super Luck", "Supersweet Syrup", "Supreme Overlord", "Surge Surfer", "Swarm", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Symbiosis", "Synchronize", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Technician", "Telepathy", "Teravolt", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Torrent", "Tough Claws", "Toxic Boost", "Toxic Chain", "Toxic Debris", "Trace", "Transistor", "Triage", "Truant", "Turboblaze", "Unaware", "Unburden", "Unnerve", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Compaction", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Wonder Skin ", "Zen Mode", "Zero to Hero"})
-        ComboBox10.AutoCompleteMode = AutoCompleteMode.SuggestAppend
-        ComboBox10.AutoCompleteSource = AutoCompleteSource.CustomSource
-        ComboBox10.FormattingEnabled = True
-        ComboBox10.Items.AddRange(New Object() {"Aerilate", "Aftermath", "Air Lock", "Analytic", "Anger Point", "Anger Shell", "Anticipation", "Arena Trap", "Armor Tail", "Aroma Veil", "As One - Unnerve Chilling Neigh", "As One - Unnerve Grim Neigh", "Aura Break", "Bad Dreams", "Ball Fetch", "Battery", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Berserk", "Big Pecks", "Blaze", "Bulletproof", "Cheek Pouch", "Chilling Neigh", "Chlorophyll", "Clear Body", "Cloud Nine", "Color Change", "Comatose", "Commander", "Competitive", "Compoundeyes", "Contrary", "Corrosion", "Costar", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Damp", "Dancer", "Dark Aura", "Dauntless Shield", "Dazzling", "Defeatist", "Defiant", "Delta Stream", "Desolate Land", "Disguise", "Download", "Dragon's Maw", "Drizzle", "Drought", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Electromorphosis", "Embody Aspect - Cornerstone Mask", "Embody Aspect - Hearthflame Mask", "Embody Aspect - Teal Mask", "Embody Aspect - Wellspring Mask", "Emergency Exit", "Fairy Aura", "Filter", "Flame Body", "Flare Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Fluffy", "Forecast", "Forewarn", "Friend Guard", "Frisk", "Full Metal Body", "Fur Coat", "Gale Wings", "Galvanize", "Gluttony", "Good as Gold", "Gooey", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Guts", "Hadron Engine", "Harvest", "Healer", "Heatproof", "Heavy Metal", "Honey Gather", "Hospitality", "Huge Power", "Hunger Switch", "Hustle", "Hydration", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Illuminate", "Illusion", "Immunity", "Imposter", "Infiltrator", "Innards Out", "Inner Focus", "Insomnia", "Intimidate", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Justified", "Keen Eye", "Klutz", "Leaf Guard", "Levitate", "Libero", "Light Metal", "Lightning Rod", "Limber", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magician", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Merciless", "Mimicry", "Mind's Eye", "Minus", "Mirror Armor", "Misty Surge", "Mold Breaker", "Moody", "Motor Drive", "Moxie", "Multiscale", "Multitype", "Mummy", "Mycelium Might", "Natural Cure", "Neuroforce", "Neutralizing Gas", "No Guard", "Normalize", "Oblivious", "Opportunist", "Orichalcum Pulse", "Overcoat", "Overgrow", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Pickpocket", "Pickup", "Pixilate", "Plus", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Prankster", "Pressure", "Primordial Sea", "Prism Armor", "Propeller Tail", "Protean", "Protosynthesis", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "Rattled", "Receiver", "Reckless", "Refrigerate", "Regenerator", "Ripen", "Rivalry", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Schooling", "Scrappy", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sharpness", "Shed Skin", "Sheer Force", "Shell Armor", "Shield Dust", "Shields Down", "Simple", "Skill Link", "Slow Start", "Slush Rush", "Sniper", "Snow Cloak", "Snow Warning", "Solar Power", "Solid Rock", "Soul-Heart", "Soundproof", "Speed Boost", "Stakeout", "Stall", "Stalwart", "Stamina", "Stance Change", "Static", "Steadfast", "Steam Engine", "Steelworker", "Steely Spirit", "Stench", "Sticky Hold", "Storm Drain", "Strong Jaw", "Sturdy", "Suction Cups", "Super Luck", "Supersweet Syrup", "Supreme Overlord", "Surge Surfer", "Swarm", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Symbiosis", "Synchronize", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Technician", "Telepathy", "Teravolt", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Torrent", "Tough Claws", "Toxic Boost", "Toxic Chain", "Toxic Debris", "Trace", "Transistor", "Triage", "Truant", "Turboblaze", "Unaware", "Unburden", "Unnerve", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Compaction", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Wonder Skin ", "Zen Mode", "Zero to Hero"})
-        ComboBox10.Location = New Point(6, 81)
-        ComboBox10.Name = "ComboBox10"
-        ComboBox10.Size = New Size(140, 23)
-        ComboBox10.TabIndex = 64
+        pokemon5Nature_cmb.FormattingEnabled = True
+        pokemon5Nature_cmb.Items.AddRange(New Object() {"(random)", "HARDY", "LONELY", "BRAVE", "ADAMANT", "NAUGHTY", "BOLD", "DOCILE", "RELAXED", "IMPISH", "LAX", "MODEST", "MILD", "SERIOUS", "QUIET", "RASH", "CALM", "GENTLE", "SASSY", "BASHFUL", "CAREFUL", "TIMID", "HASTY", "JOLLY", "NAIVE", "QUIRKY"})
+        pokemon5Nature_cmb.Location = New Point(6, 125)
+        pokemon5Nature_cmb.Name = "pokemon5Nature_cmb"
+        pokemon5Nature_cmb.Size = New Size(140, 23)
+        pokemon5Nature_cmb.TabIndex = 71
         ' 
-        ' ComboBox11
+        ' pokemon5Gender_lbl
         ' 
-        ComboBox11.FormattingEnabled = True
-        ComboBox11.Items.AddRange(New Object() {"(random)", "HARDY", "LONELY", "BRAVE", "ADAMANT", "NAUGHTY", "BOLD", "DOCILE", "RELAXED", "IMPISH", "LAX", "MODEST", "MILD", "SERIOUS", "QUIET", "RASH", "CALM", "GENTLE", "SASSY", "BASHFUL", "CAREFUL", "TIMID", "HASTY", "JOLLY", "NAIVE", "QUIRKY"})
-        ComboBox11.Location = New Point(6, 125)
-        ComboBox11.Name = "ComboBox11"
-        ComboBox11.Size = New Size(140, 23)
-        ComboBox11.TabIndex = 71
+        pokemon5Gender_lbl.AutoSize = True
+        pokemon5Gender_lbl.Location = New Point(152, 63)
+        pokemon5Gender_lbl.Name = "pokemon5Gender_lbl"
+        pokemon5Gender_lbl.Size = New Size(45, 15)
+        pokemon5Gender_lbl.TabIndex = 65
+        pokemon5Gender_lbl.Text = "Gender"
         ' 
-        ' Label71
+        ' pokemon5Nature_lbl
         ' 
-        Label71.AutoSize = True
-        Label71.Location = New Point(152, 63)
-        Label71.Name = "Label71"
-        Label71.Size = New Size(45, 15)
-        Label71.TabIndex = 65
-        Label71.Text = "Gender"
-        ' 
-        ' Label72
-        ' 
-        Label72.AutoSize = True
-        Label72.Location = New Point(6, 107)
-        Label72.Name = "Label72"
-        Label72.Size = New Size(43, 15)
-        Label72.TabIndex = 70
-        Label72.Text = "Nature"
+        pokemon5Nature_lbl.AutoSize = True
+        pokemon5Nature_lbl.Location = New Point(6, 107)
+        pokemon5Nature_lbl.Name = "pokemon5Nature_lbl"
+        pokemon5Nature_lbl.Size = New Size(43, 15)
+        pokemon5Nature_lbl.TabIndex = 70
+        pokemon5Nature_lbl.Text = "Nature"
         ' 
         ' pokemon5Gender_cmb
         ' 
@@ -3887,8 +3909,8 @@ Partial Class Form1
         ' pokemon5Shiny_grp
         ' 
         pokemon5Shiny_grp.Controls.Add(pokemon5SuperShiny_chkBox)
-        pokemon5Shiny_grp.Controls.Add(RadioButton11)
-        pokemon5Shiny_grp.Controls.Add(RadioButton12)
+        pokemon5Shiny_grp.Controls.Add(pokemon5Shiny_rad)
+        pokemon5Shiny_grp.Controls.Add(pokemon5NotShiny_rad)
         pokemon5Shiny_grp.Location = New Point(444, 110)
         pokemon5Shiny_grp.Name = "pokemon5Shiny_grp"
         pokemon5Shiny_grp.Size = New Size(273, 82)
@@ -3907,44 +3929,36 @@ Partial Class Form1
         pokemon5SuperShiny_chkBox.Text = "Super Shiny"
         pokemon5SuperShiny_chkBox.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton11
+        ' pokemon5Shiny_rad
         ' 
-        RadioButton11.AutoSize = True
-        RadioButton11.Location = New Point(6, 47)
-        RadioButton11.Name = "RadioButton11"
-        RadioButton11.Size = New Size(54, 19)
-        RadioButton11.TabIndex = 1
-        RadioButton11.Text = "Shiny"
-        RadioButton11.UseVisualStyleBackColor = True
+        pokemon5Shiny_rad.AutoSize = True
+        pokemon5Shiny_rad.Location = New Point(6, 47)
+        pokemon5Shiny_rad.Name = "pokemon5Shiny_rad"
+        pokemon5Shiny_rad.Size = New Size(54, 19)
+        pokemon5Shiny_rad.TabIndex = 1
+        pokemon5Shiny_rad.Text = "Shiny"
+        pokemon5Shiny_rad.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton12
+        ' pokemon5NotShiny_rad
         ' 
-        RadioButton12.AutoSize = True
-        RadioButton12.Checked = True
-        RadioButton12.Location = New Point(6, 22)
-        RadioButton12.Name = "RadioButton12"
-        RadioButton12.Size = New Size(77, 19)
-        RadioButton12.TabIndex = 0
-        RadioButton12.TabStop = True
-        RadioButton12.Text = "Not Shiny"
-        RadioButton12.UseVisualStyleBackColor = True
+        pokemon5NotShiny_rad.AutoSize = True
+        pokemon5NotShiny_rad.Checked = True
+        pokemon5NotShiny_rad.Location = New Point(6, 22)
+        pokemon5NotShiny_rad.Name = "pokemon5NotShiny_rad"
+        pokemon5NotShiny_rad.Size = New Size(77, 19)
+        pokemon5NotShiny_rad.TabIndex = 0
+        pokemon5NotShiny_rad.TabStop = True
+        pokemon5NotShiny_rad.Text = "Not Shiny"
+        pokemon5NotShiny_rad.UseVisualStyleBackColor = True
         ' 
-        ' Label73
+        ' pokemon5Form_lbl
         ' 
-        Label73.AutoSize = True
-        Label73.Location = New Point(298, 63)
-        Label73.Name = "Label73"
-        Label73.Size = New Size(123, 15)
-        Label73.TabIndex = 67
-        Label73.Text = "Form (Numbers Only)"
-        ' 
-        ' TextBox72
-        ' 
-        TextBox72.Location = New Point(298, 81)
-        TextBox72.Name = "TextBox72"
-        TextBox72.PlaceholderText = "1"
-        TextBox72.Size = New Size(140, 23)
-        TextBox72.TabIndex = 68
+        pokemon5Form_lbl.AutoSize = True
+        pokemon5Form_lbl.Location = New Point(298, 63)
+        pokemon5Form_lbl.Name = "pokemon5Form_lbl"
+        pokemon5Form_lbl.Size = New Size(35, 15)
+        pokemon5Form_lbl.TabIndex = 67
+        pokemon5Form_lbl.Text = "Form"
         ' 
         ' pg_pkmn6
         ' 
@@ -3959,31 +3973,31 @@ Partial Class Form1
         ' 
         ' pokemon6_grp
         ' 
+        pokemon6_grp.Controls.Add(pokemon6Level_nbr)
+        pokemon6_grp.Controls.Add(pokemon6Form_nbr)
+        pokemon6_grp.Controls.Add(pokemon6Happiness_nbr)
         pokemon6_grp.Controls.Add(pokemon6Shadow_grp)
-        pokemon6_grp.Controls.Add(Label74)
+        pokemon6_grp.Controls.Add(pokemon6Name_lbl)
         pokemon6_grp.Controls.Add(pokemon6EVs_grp)
-        pokemon6_grp.Controls.Add(TextBox79)
+        pokemon6_grp.Controls.Add(pokemon6Name_txt)
         pokemon6_grp.Controls.Add(pokemon6IVs_grp)
-        pokemon6_grp.Controls.Add(TextBox86)
-        pokemon6_grp.Controls.Add(ComboBox13)
-        pokemon6_grp.Controls.Add(Label87)
-        pokemon6_grp.Controls.Add(Label88)
-        pokemon6_grp.Controls.Add(Label89)
-        pokemon6_grp.Controls.Add(TextBox87)
-        pokemon6_grp.Controls.Add(TextBox88)
-        pokemon6_grp.Controls.Add(Label90)
+        pokemon6_grp.Controls.Add(pokemon6HeldItem_txt)
+        pokemon6_grp.Controls.Add(pokemon6PokeBall_cmb)
+        pokemon6_grp.Controls.Add(pokemon6HeldItem_lbl)
+        pokemon6_grp.Controls.Add(pokemon6Pokeball_lbl)
+        pokemon6_grp.Controls.Add(pokemon6Level_lbl)
+        pokemon6_grp.Controls.Add(pokemon6Nickname_txt)
+        pokemon6_grp.Controls.Add(pokemon6Nickname_lbl)
         pokemon6_grp.Controls.Add(pokemon6Moves_grp)
-        pokemon6_grp.Controls.Add(TextBox93)
-        pokemon6_grp.Controls.Add(Label91)
-        pokemon6_grp.Controls.Add(Label92)
-        pokemon6_grp.Controls.Add(ComboBox14)
-        pokemon6_grp.Controls.Add(ComboBox15)
-        pokemon6_grp.Controls.Add(Label93)
-        pokemon6_grp.Controls.Add(Label94)
+        pokemon6_grp.Controls.Add(pokemon6Ability_lbl)
+        pokemon6_grp.Controls.Add(pokemon6Happiness_lbl)
+        pokemon6_grp.Controls.Add(pokemon6Ability_cmb)
+        pokemon6_grp.Controls.Add(pokemon6Nature_cmb)
+        pokemon6_grp.Controls.Add(pokemon6Gender_lbl)
+        pokemon6_grp.Controls.Add(pokemon6Nature_lbl)
         pokemon6_grp.Controls.Add(pokemon6Gender_cmb)
         pokemon6_grp.Controls.Add(pokemon6Shiny_grp)
-        pokemon6_grp.Controls.Add(Label95)
-        pokemon6_grp.Controls.Add(TextBox94)
+        pokemon6_grp.Controls.Add(pokemon6Form_lbl)
         pokemon6_grp.Dock = DockStyle.Fill
         pokemon6_grp.Location = New Point(3, 3)
         pokemon6_grp.Name = "pokemon6_grp"
@@ -3992,10 +4006,36 @@ Partial Class Form1
         pokemon6_grp.TabStop = False
         pokemon6_grp.Text = "Pokémon 6"
         ' 
+        ' pokemon6Level_nbr
+        ' 
+        pokemon6Level_nbr.Location = New Point(298, 37)
+        pokemon6Level_nbr.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        pokemon6Level_nbr.Name = "pokemon6Level_nbr"
+        pokemon6Level_nbr.Size = New Size(140, 23)
+        pokemon6Level_nbr.TabIndex = 83
+        pokemon6Level_nbr.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        ' 
+        ' pokemon6Form_nbr
+        ' 
+        pokemon6Form_nbr.Location = New Point(298, 80)
+        pokemon6Form_nbr.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        pokemon6Form_nbr.Name = "pokemon6Form_nbr"
+        pokemon6Form_nbr.Size = New Size(140, 23)
+        pokemon6Form_nbr.TabIndex = 82
+        ' 
+        ' pokemon6Happiness_nbr
+        ' 
+        pokemon6Happiness_nbr.Location = New Point(152, 124)
+        pokemon6Happiness_nbr.Maximum = New Decimal(New Integer() {256, 0, 0, 0})
+        pokemon6Happiness_nbr.Name = "pokemon6Happiness_nbr"
+        pokemon6Happiness_nbr.Size = New Size(140, 23)
+        pokemon6Happiness_nbr.TabIndex = 81
+        pokemon6Happiness_nbr.Value = New Decimal(New Integer() {70, 0, 0, 0})
+        ' 
         ' pokemon6Shadow_grp
         ' 
-        pokemon6Shadow_grp.Controls.Add(RadioButton13)
-        pokemon6Shadow_grp.Controls.Add(RadioButton14)
+        pokemon6Shadow_grp.Controls.Add(pokemon6Shadow_rad)
+        pokemon6Shadow_grp.Controls.Add(pokemon6NotShadow_rad)
         pokemon6Shadow_grp.Location = New Point(444, 198)
         pokemon6Shadow_grp.Name = "pokemon6Shadow_grp"
         pokemon6Shadow_grp.Size = New Size(273, 82)
@@ -4003,51 +4043,51 @@ Partial Class Form1
         pokemon6Shadow_grp.TabStop = False
         pokemon6Shadow_grp.Text = "Shadow"
         ' 
-        ' RadioButton13
+        ' pokemon6Shadow_rad
         ' 
-        RadioButton13.AutoSize = True
-        RadioButton13.Location = New Point(6, 47)
-        RadioButton13.Name = "RadioButton13"
-        RadioButton13.Size = New Size(67, 19)
-        RadioButton13.TabIndex = 1
-        RadioButton13.Text = "Shadow"
-        RadioButton13.UseVisualStyleBackColor = True
+        pokemon6Shadow_rad.AutoSize = True
+        pokemon6Shadow_rad.Location = New Point(6, 47)
+        pokemon6Shadow_rad.Name = "pokemon6Shadow_rad"
+        pokemon6Shadow_rad.Size = New Size(67, 19)
+        pokemon6Shadow_rad.TabIndex = 1
+        pokemon6Shadow_rad.Text = "Shadow"
+        pokemon6Shadow_rad.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton14
+        ' pokemon6NotShadow_rad
         ' 
-        RadioButton14.AutoSize = True
-        RadioButton14.Checked = True
-        RadioButton14.Location = New Point(6, 22)
-        RadioButton14.Name = "RadioButton14"
-        RadioButton14.Size = New Size(90, 19)
-        RadioButton14.TabIndex = 0
-        RadioButton14.TabStop = True
-        RadioButton14.Text = "Not Shadow"
-        RadioButton14.UseVisualStyleBackColor = True
+        pokemon6NotShadow_rad.AutoSize = True
+        pokemon6NotShadow_rad.Checked = True
+        pokemon6NotShadow_rad.Location = New Point(6, 22)
+        pokemon6NotShadow_rad.Name = "pokemon6NotShadow_rad"
+        pokemon6NotShadow_rad.Size = New Size(90, 19)
+        pokemon6NotShadow_rad.TabIndex = 0
+        pokemon6NotShadow_rad.TabStop = True
+        pokemon6NotShadow_rad.Text = "Not Shadow"
+        pokemon6NotShadow_rad.UseVisualStyleBackColor = True
         ' 
-        ' Label74
+        ' pokemon6Name_lbl
         ' 
-        Label74.AutoSize = True
-        Label74.Location = New Point(6, 19)
-        Label74.Name = "Label74"
-        Label74.Size = New Size(93, 15)
-        Label74.TabIndex = 56
-        Label74.Text = "Pokémon Name"
+        pokemon6Name_lbl.AutoSize = True
+        pokemon6Name_lbl.Location = New Point(6, 19)
+        pokemon6Name_lbl.Name = "pokemon6Name_lbl"
+        pokemon6Name_lbl.Size = New Size(93, 15)
+        pokemon6Name_lbl.TabIndex = 56
+        pokemon6Name_lbl.Text = "Pokémon Name"
         ' 
         ' pokemon6EVs_grp
         ' 
-        pokemon6EVs_grp.Controls.Add(TextBox73)
-        pokemon6EVs_grp.Controls.Add(Label75)
-        pokemon6EVs_grp.Controls.Add(TextBox74)
-        pokemon6EVs_grp.Controls.Add(Label76)
-        pokemon6EVs_grp.Controls.Add(TextBox75)
-        pokemon6EVs_grp.Controls.Add(Label77)
-        pokemon6EVs_grp.Controls.Add(TextBox76)
-        pokemon6EVs_grp.Controls.Add(Label78)
-        pokemon6EVs_grp.Controls.Add(TextBox77)
-        pokemon6EVs_grp.Controls.Add(Label79)
-        pokemon6EVs_grp.Controls.Add(TextBox78)
-        pokemon6EVs_grp.Controls.Add(Label80)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsDEF_txt)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsDEF_lbl)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsSPDEF_txt)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsSPDEF_lbl)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsSPATK_txt)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsSPATK_lbl)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsSPD_txt)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsSPD_lbl)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsATK_txt)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsATK_lbl)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsHP_txt)
+        pokemon6EVs_grp.Controls.Add(pokemon6EVsHP_lbl)
         pokemon6EVs_grp.Location = New Point(324, 154)
         pokemon6EVs_grp.Name = "pokemon6EVs_grp"
         pokemon6EVs_grp.Size = New Size(114, 156)
@@ -4055,140 +4095,140 @@ Partial Class Form1
         pokemon6EVs_grp.TabStop = False
         pokemon6EVs_grp.Text = "EVs"
         ' 
-        ' TextBox73
+        ' pokemon6EVsDEF_txt
         ' 
-        TextBox73.Location = New Point(6, 125)
-        TextBox73.MaxLength = 3
-        TextBox73.Name = "TextBox73"
-        TextBox73.Size = New Size(44, 23)
-        TextBox73.TabIndex = 11
-        TextBox73.Text = "0"
+        pokemon6EVsDEF_txt.Location = New Point(6, 125)
+        pokemon6EVsDEF_txt.MaxLength = 3
+        pokemon6EVsDEF_txt.Name = "pokemon6EVsDEF_txt"
+        pokemon6EVsDEF_txt.Size = New Size(44, 23)
+        pokemon6EVsDEF_txt.TabIndex = 11
+        pokemon6EVsDEF_txt.Text = "0"
         ' 
-        ' Label75
+        ' pokemon6EVsDEF_lbl
         ' 
-        Label75.AutoSize = True
-        Label75.Location = New Point(14, 107)
-        Label75.Name = "Label75"
-        Label75.Size = New Size(27, 15)
-        Label75.TabIndex = 10
-        Label75.Text = "DEF"
+        pokemon6EVsDEF_lbl.AutoSize = True
+        pokemon6EVsDEF_lbl.Location = New Point(14, 107)
+        pokemon6EVsDEF_lbl.Name = "pokemon6EVsDEF_lbl"
+        pokemon6EVsDEF_lbl.Size = New Size(27, 15)
+        pokemon6EVsDEF_lbl.TabIndex = 10
+        pokemon6EVsDEF_lbl.Text = "DEF"
         ' 
-        ' TextBox74
+        ' pokemon6EVsSPDEF_txt
         ' 
-        TextBox74.Location = New Point(55, 125)
-        TextBox74.MaxLength = 3
-        TextBox74.Name = "TextBox74"
-        TextBox74.Size = New Size(44, 23)
-        TextBox74.TabIndex = 9
-        TextBox74.Text = "0"
+        pokemon6EVsSPDEF_txt.Location = New Point(55, 125)
+        pokemon6EVsSPDEF_txt.MaxLength = 3
+        pokemon6EVsSPDEF_txt.Name = "pokemon6EVsSPDEF_txt"
+        pokemon6EVsSPDEF_txt.Size = New Size(44, 23)
+        pokemon6EVsSPDEF_txt.TabIndex = 9
+        pokemon6EVsSPDEF_txt.Text = "0"
         ' 
-        ' Label76
+        ' pokemon6EVsSPDEF_lbl
         ' 
-        Label76.AutoSize = True
-        Label76.Location = New Point(55, 109)
-        Label76.Name = "Label76"
-        Label76.Size = New Size(40, 15)
-        Label76.TabIndex = 8
-        Label76.Text = "SPDEF"
+        pokemon6EVsSPDEF_lbl.AutoSize = True
+        pokemon6EVsSPDEF_lbl.Location = New Point(55, 109)
+        pokemon6EVsSPDEF_lbl.Name = "pokemon6EVsSPDEF_lbl"
+        pokemon6EVsSPDEF_lbl.Size = New Size(40, 15)
+        pokemon6EVsSPDEF_lbl.TabIndex = 8
+        pokemon6EVsSPDEF_lbl.Text = "SPDEF"
         ' 
-        ' TextBox75
+        ' pokemon6EVsSPATK_txt
         ' 
-        TextBox75.Location = New Point(55, 81)
-        TextBox75.MaxLength = 3
-        TextBox75.Name = "TextBox75"
-        TextBox75.Size = New Size(44, 23)
-        TextBox75.TabIndex = 7
-        TextBox75.Text = "0"
+        pokemon6EVsSPATK_txt.Location = New Point(55, 81)
+        pokemon6EVsSPATK_txt.MaxLength = 3
+        pokemon6EVsSPATK_txt.Name = "pokemon6EVsSPATK_txt"
+        pokemon6EVsSPATK_txt.Size = New Size(44, 23)
+        pokemon6EVsSPATK_txt.TabIndex = 7
+        pokemon6EVsSPATK_txt.Text = "0"
         ' 
-        ' Label77
+        ' pokemon6EVsSPATK_lbl
         ' 
-        Label77.AutoSize = True
-        Label77.Location = New Point(56, 65)
-        Label77.Name = "Label77"
-        Label77.Size = New Size(39, 15)
-        Label77.TabIndex = 6
-        Label77.Text = "SPATK"
+        pokemon6EVsSPATK_lbl.AutoSize = True
+        pokemon6EVsSPATK_lbl.Location = New Point(56, 65)
+        pokemon6EVsSPATK_lbl.Name = "pokemon6EVsSPATK_lbl"
+        pokemon6EVsSPATK_lbl.Size = New Size(39, 15)
+        pokemon6EVsSPATK_lbl.TabIndex = 6
+        pokemon6EVsSPATK_lbl.Text = "SPATK"
         ' 
-        ' TextBox76
+        ' pokemon6EVsSPD_txt
         ' 
-        TextBox76.Location = New Point(55, 37)
-        TextBox76.MaxLength = 3
-        TextBox76.Name = "TextBox76"
-        TextBox76.Size = New Size(44, 23)
-        TextBox76.TabIndex = 5
-        TextBox76.Text = "0"
+        pokemon6EVsSPD_txt.Location = New Point(55, 37)
+        pokemon6EVsSPD_txt.MaxLength = 3
+        pokemon6EVsSPD_txt.Name = "pokemon6EVsSPD_txt"
+        pokemon6EVsSPD_txt.Size = New Size(44, 23)
+        pokemon6EVsSPD_txt.TabIndex = 5
+        pokemon6EVsSPD_txt.Text = "0"
         ' 
-        ' Label78
+        ' pokemon6EVsSPD_lbl
         ' 
-        Label78.AutoSize = True
-        Label78.Location = New Point(63, 21)
-        Label78.Name = "Label78"
-        Label78.Size = New Size(28, 15)
-        Label78.TabIndex = 4
-        Label78.Text = "SPD"
+        pokemon6EVsSPD_lbl.AutoSize = True
+        pokemon6EVsSPD_lbl.Location = New Point(63, 21)
+        pokemon6EVsSPD_lbl.Name = "pokemon6EVsSPD_lbl"
+        pokemon6EVsSPD_lbl.Size = New Size(28, 15)
+        pokemon6EVsSPD_lbl.TabIndex = 4
+        pokemon6EVsSPD_lbl.Text = "SPD"
         ' 
-        ' TextBox77
+        ' pokemon6EVsATK_txt
         ' 
-        TextBox77.Location = New Point(6, 81)
-        TextBox77.MaxLength = 3
-        TextBox77.Name = "TextBox77"
-        TextBox77.Size = New Size(44, 23)
-        TextBox77.TabIndex = 3
-        TextBox77.Text = "0"
+        pokemon6EVsATK_txt.Location = New Point(6, 81)
+        pokemon6EVsATK_txt.MaxLength = 3
+        pokemon6EVsATK_txt.Name = "pokemon6EVsATK_txt"
+        pokemon6EVsATK_txt.Size = New Size(44, 23)
+        pokemon6EVsATK_txt.TabIndex = 3
+        pokemon6EVsATK_txt.Text = "0"
         ' 
-        ' Label79
+        ' pokemon6EVsATK_lbl
         ' 
-        Label79.AutoSize = True
-        Label79.Location = New Point(14, 63)
-        Label79.Name = "Label79"
-        Label79.Size = New Size(27, 15)
-        Label79.TabIndex = 2
-        Label79.Text = "ATK"
+        pokemon6EVsATK_lbl.AutoSize = True
+        pokemon6EVsATK_lbl.Location = New Point(14, 63)
+        pokemon6EVsATK_lbl.Name = "pokemon6EVsATK_lbl"
+        pokemon6EVsATK_lbl.Size = New Size(27, 15)
+        pokemon6EVsATK_lbl.TabIndex = 2
+        pokemon6EVsATK_lbl.Text = "ATK"
         ' 
-        ' TextBox78
+        ' pokemon6EVsHP_txt
         ' 
-        TextBox78.Location = New Point(6, 37)
-        TextBox78.MaxLength = 3
-        TextBox78.Name = "TextBox78"
-        TextBox78.Size = New Size(44, 23)
-        TextBox78.TabIndex = 1
-        TextBox78.Text = "0"
+        pokemon6EVsHP_txt.Location = New Point(6, 37)
+        pokemon6EVsHP_txt.MaxLength = 3
+        pokemon6EVsHP_txt.Name = "pokemon6EVsHP_txt"
+        pokemon6EVsHP_txt.Size = New Size(44, 23)
+        pokemon6EVsHP_txt.TabIndex = 1
+        pokemon6EVsHP_txt.Text = "0"
         ' 
-        ' Label80
+        ' pokemon6EVsHP_lbl
         ' 
-        Label80.AutoSize = True
-        Label80.Location = New Point(16, 19)
-        Label80.Name = "Label80"
-        Label80.Size = New Size(23, 15)
-        Label80.TabIndex = 0
-        Label80.Text = "HP"
+        pokemon6EVsHP_lbl.AutoSize = True
+        pokemon6EVsHP_lbl.Location = New Point(16, 19)
+        pokemon6EVsHP_lbl.Name = "pokemon6EVsHP_lbl"
+        pokemon6EVsHP_lbl.Size = New Size(23, 15)
+        pokemon6EVsHP_lbl.TabIndex = 0
+        pokemon6EVsHP_lbl.Text = "HP"
         ' 
-        ' TextBox79
+        ' pokemon6Name_txt
         ' 
-        TextBox79.AutoCompleteCustomSource.AddRange(New String() {"BULBASAUR", "IVYSAUR", "VENUSAUR", "CHARMANDER", "CHARMELEON", "CHARIZARD", "SQUIRTLE", "WARTORTLE", "BLASTOISE", "CATERPIE", "METAPOD", "BUTTERFREE", "WEEDLE", "KAKUNA", "BEEDRILL", "PIDGEY", "PIDGEOTTO", "PIDGEOT", "RATTATA", "RATICATE", "SPEAROW", "FEAROW", "EKANS", "ARBOK", "PIKACHU", "RAICHU", "SANDSHREW", "SANDSLASH", "NIDORANfE", "NIDORINA", "NIDOQUEEN", "NIDORANmA", "NIDORINO", "NIDOKING", "CLEFAIRY", "CLEFABLE", "VULPIX", "NINETALES", "JIGGLYPUFF", "WIGGLYTUFF", "ZUBAT", "GOLBAT", "ODDISH", "GLOOM", "VILEPLUME", "PARAS", "PARASECT", "VENONAT", "VENOMOTH", "DIGLETT", "DUGTRIO", "MEOWTH", "PERSIAN", "PSYDUCK", "GOLDUCK", "MANKEY", "PRIMEAPE", "GROWLITHE", "ARCANINE", "POLIWAG", "POLIWHIRL", "POLIWRATH", "ABRA", "KADABRA", "ALAKAZAM", "MACHOP", "MACHOKE", "MACHAMP", "BELLSPROUT", "WEEPINBELL", "VICTREEBEL", "TENTACOOL", "TENTACRUEL", "GEODUDE", "GRAVELER", "GOLEM", "PONYTA", "RAPIDASH", "SLOWPOKE", "SLOWBRO", "MAGNEMITE", "MAGNETON", "FARFETCHD", "DODUO", "DODRIO", "SEEL", "DEWGONG", "GRIMER", "MUK", "SHELLDER", "CLOYSTER", "GASTLY", "HAUNTER", "GENGAR", "ONIX", "DROWZEE", "HYPNO", "KRABBY", "KINGLER", "VOLTORB", "ELECTRODE", "EXEGGCUTE", "EXEGGUTOR", "CUBONE", "MAROWAK", "HITMONLEE", "HITMONCHAN", "LICKITUNG", "KOFFING", "WEEZING", "RHYHORN", "RHYDON", "CHANSEY", "TANGELA", "KANGASKHAN", "HORSEA", "SEADRA", "GOLDEEN", "SEAKING", "STARYU", "STARMIE", "MRMIME", "SCYTHER", "JYNX", "ELECTABUZZ", "MAGMAR", "PINSIR", "TAUROS", "MAGIKARP", "GYARADOS", "LAPRAS", "DITTO", "EEVEE", "VAPOREON", "JOLTEON", "FLAREON", "PORYGON", "OMANYTE", "OMASTAR", "KABUTO", "KABUTOPS", "AERODACTYL", "SNORLAX", "ARTICUNO", "ZAPDOS", "MOLTRES", "DRATINI", "DRAGONAIR", "DRAGONITE", "MEWTWO", "MEW", "CHIKORITA", "BAYLEEF", "MEGANIUM", "CYNDAQUIL", "QUILAVA", "TYPHLOSION", "TOTODILE", "CROCONAW", "FERALIGATR", "SENTRET", "FURRET", "HOOTHOOT", "NOCTOWL", "LEDYBA", "LEDIAN", "SPINARAK", "ARIADOS", "CROBAT", "CHINCHOU", "LANTURN", "PICHU", "CLEFFA", "IGGLYBUFF", "TOGEPI", "TOGETIC", "NATU", "XATU", "MAREEP", "FLAAFFY", "AMPHAROS", "BELLOSSOM", "MARILL", "AZUMARILL", "SUDOWOODO", "POLITOED", "HOPPIP", "SKIPLOOM", "JUMPLUFF", "AIPOM", "SUNKERN", "SUNFLORA", "YANMA", "WOOPER", "QUAGSIRE", "ESPEON", "UMBREON", "MURKROW", "SLOWKING", "MISDREAVUS", "UNOWN", "WOBBUFFET", "GIRAFARIG", "PINECO", "FORRETRESS", "DUNSPARCE", "GLIGAR", "STEELIX", "SNUBBULL", "GRANBULL", "QWILFISH", "SCIZOR", "SHUCKLE", "HERACROSS", "SNEASEL", "TEDDIURSA", "URSARING", "SLUGMA", "MAGCARGO", "SWINUB", "PILOSWINE", "CORSOLA", "REMORAID", "OCTILLERY", "DELIBIRD", "MANTINE", "SKARMORY", "HOUNDOUR", "HOUNDOOM", "KINGDRA", "PHANPY", "DONPHAN", "PORYGON2", "STANTLER", "SMEARGLE", "TYROGUE", "HITMONTOP", "SMOOCHUM", "ELEKID", "MAGBY", "MILTANK", "BLISSEY", "RAIKOU", "ENTEI", "SUICUNE", "LARVITAR", "PUPITAR", "TYRANITAR", "LUGIA", "HO-OH", "CELEBI", "TREECKO", "GROVYLE", "SCEPTILE", "TORCHIC", "COMBUSKEN", "BLAZIKEN", "MUDKIP", "MARSHTOMP", "SWAMPERT", "POOCHYENA", "MIGHTYENA", "ZIGZAGOON", "LINOONE", "WURMPLE", "SILCOON", "BEAUTIFLY", "CASCOON", "DUSTOX", "LOTAD", "LOMBRE", "LUDICOLO", "SEEDOT", "NUZLEAF", "SHIFTRY", "TAILLOW", "SWELLOW", "WINGULL", "PELIPPER", "RALTS", "KIRLIA", "GARDEVOIR", "SURSKIT", "MASQUERAIN", "SHROOMISH", "BRELOOM", "SLAKOTH", "VIGOROTH", "SLAKING", "NINCADA", "NINJASK", "SHEDINJA", "WHISMUR", "LOUDRED", "EXPLOUD", "MAKUHITA", "HARIYAMA", "AZURILL", "NOSEPASS", "SKITTY", "DELCATTY", "SABLEYE", "MAWILE", "ARON", "LAIRON", "AGGRON", "MEDITITE", "MEDICHAM", "ELECTRIKE", "MANECTRIC", "PLUSLE", "MINUN", "VOLBEAT", "ILLUMISE", "ROSELIA", "GULPIN", "SWALOT", "CARVANHA", "SHARPEDO", "WAILMER", "WAILORD", "NUMEL", "CAMERUPT", "TORKOAL", "SPOINK", "GRUMPIG", "SPINDA", "TRAPINCH", "VIBRAVA", "FLYGON", "CACNEA", "CACTURNE", "SWABLU", "ALTARIA", "ZANGOOSE", "SEVIPER", "LUNATONE", "SOLROCK", "BARBOACH", "WHISCASH", "CORPHISH", "CRAWDAUNT", "BALTOY", "CLAYDOL", "LILEEP", "CRADILY", "ANORITH", "ARMALDO", "FEEBAS", "MILOTIC", "CASTFORM", "KECLEON", "SHUPPET", "BANETTE", "DUSKULL", "DUSCLOPS", "TROPIUS", "CHIMECHO", "ABSOL", "WYNAUT", "SNORUNT", "GLALIE", "SPHEAL", "SEALEO", "WALREIN", "CLAMPERL", "HUNTAIL", "GOREBYSS", "RELICANTH", "LUVDISC", "BAGON", "SHELGON", "SALAMENCE", "BELDUM", "METANG", "METAGROSS", "REGIROCK", "REGICE", "REGISTEEL", "LATIAS", "LATIOS", "KYOGRE", "GROUDON", "RAYQUAZA", "JIRACHI", "DEOXYS", "TURTWIG", "GROTLE", "TORTERRA", "CHIMCHAR", "MONFERNO", "INFERNAPE", "PIPLUP", "PRINPLUP", "EMPOLEON", "STARLY", "STARAVIA", "STARAPTOR", "BIDOOF", "BIBAREL", "KRICKETOT", "KRICKETUNE", "SHINX", "LUXIO", "LUXRAY", "BUDEW", "ROSERADE", "CRANIDOS", "RAMPARDOS", "SHIELDON", "BASTIODON", "BURMY", "WORMADAM", "MOTHIM", "COMBEE", "VESPIQUEN", "PACHIRISU", "BUIZEL", "FLOATZEL", "CHERUBI", "CHERRIM", "SHELLOS", "GASTRODON", "AMBIPOM", "DRIFLOON", "DRIFBLIM", "BUNEARY", "LOPUNNY", "MISMAGIUS", "HONCHKROW", "GLAMEOW", "PURUGLY", "CHINGLING", "STUNKY", "SKUNTANK", "BRONZOR", "BRONZONG", "BONSLY", "MIMEJR", "HAPPINY", "CHATOT", "SPIRITOMB", "GIBLE", "GABITE", "GARCHOMP", "MUNCHLAX", "RIOLU", "LUCARIO", "HIPPOPOTAS", "HIPPOWDON", "SKORUPI", "DRAPION", "CROAGUNK", "TOXICROAK", "CARNIVINE", "FINNEON", "LUMINEON", "MANTYKE", "SNOVER", "ABOMASNOW", "WEAVILE", "MAGNEZONE", "LICKILICKY", "RHYPERIOR", "TANGROWTH", "ELECTIVIRE", "MAGMORTAR", "TOGEKISS", "YANMEGA", "LEAFEON", "GLACEON", "GLISCOR", "MAMOSWINE", "PORYGON-Z", "GALLADE", "PROBOPASS", "DUSKNOIR", "FROSLASS", "ROTOM", "UXIE", "MESPRIT", "AZELF", "DIALGA", "PALKIA", "HEATRAN", "REGIGIGAS", "GIRATINA", "CRESSELIA", "PHIONE", "MANAPHY", "DARKRAI", "SHAYMIN", "ARCEUS", "VICTINI", "SNIVY", "SERVINE", "SERPERIOR", "TEPIG", "PIGNITE", "EMBOAR", "OSHAWOTT", "DEWOTT", "SAMUROTT", "PATRAT", "WATCHOG", "LILLIPUP", "HERDIER", "STOUTLAND", "PURRLOIN", "LIEPARD", "PANSAGE", "SIMISAGE", "PANSEAR", "SIMISEAR", "PANPOUR", "SIMIPOUR", "MUNNA", "MUSHARNA", "PIDOVE", "TRANQUILL", "UNFEZANT", "BLITZLE", "ZEBSTRIKA", "ROGGENROLA", "BOLDORE", "GIGALITH", "WOOBAT", "SWOOBAT", "DRILBUR", "EXCADRILL", "AUDINO", "TIMBURR", "GURDURR", "CONKELDURR", "TYMPOLE", "PALPITOAD", "SEISMITOAD", "THROH", "SAWK", "SEWADDLE", "SWADLOON", "LEAVANNY", "VENIPEDE", "WHIRLIPEDE", "SCOLIPEDE", "COTTONEE", "WHIMSICOTT", "PETILIL", "LILLIGANT", "BASCULIN", "SANDILE", "KROKOROK", "KROOKODILE", "DARUMAKA", "DARMANITAN", "MARACTUS", "DWEBBLE", "CRUSTLE", "SCRAGGY", "SCRAFTY", "SIGILYPH", "YAMASK", "COFAGRIGUS", "TIRTOUGA", "CARRACOSTA", "ARCHEN", "ARCHEOPS", "TRUBBISH", "GARBODOR", "ZORUA", "ZOROARK", "MINCCINO", "CINCCINO", "GOTHITA", "GOTHORITA", "GOTHITELLE", "SOLOSIS", "DUOSION", "REUNICLUS", "DUCKLETT", "SWANNA", "VANILLITE", "VANILLISH", "VANILLUXE", "DEERLING", "SAWSBUCK", "EMOLGA", "KARRABLAST", "ESCAVALIER", "FOONGUS", "AMOONGUSS", "FRILLISH", "JELLICENT", "ALOMOMOLA", "JOLTIK", "GALVANTULA", "FERROSEED", "FERROTHORN", "KLINK", "KLANG", "KLINKLANG", "TYNAMO", "EELEKTRIK", "EELEKTROSS", "ELGYEM", "BEHEEYEM", "LITWICK", "LAMPENT", "CHANDELURE", "AXEW", "FRAXURE", "HAXORUS", "CUBCHOO", "BEARTIC", "CRYOGONAL", "SHELMET", "ACCELGOR", "STUNFISK", "MIENFOO", "MIENSHAO", "DRUDDIGON", "GOLETT", "GOLURK", "PAWNIARD", "BISHARP", "BOUFFALANT", "RUFFLET", "BRAVIARY", "VULLABY", "MANDIBUZZ", "HEATMOR", "DURANT", "DEINO", "ZWEILOUS", "HYDREIGON", "LARVESTA", "VOLCARONA", "COBALION", "TERRAKION", "VIRIZION", "TORNADUS", "THUNDURUS", "RESHIRAM", "ZEKROM", "LANDORUS", "KYUREM", "KELDEO", "MELOETTA", "GENESECT", "CHESPIN", "QUILLADIN", "CHESNAUGHT", "FENNEKIN", "BRAIXEN", "DELPHOX", "FROAKIE", "FROGADIER", "GRENINJA", "BUNNELBY", "DIGGERSBY", "FLETCHLING", "FLETCHINDER", "TALONFLAME", "SCATTERBUG", "SPEWPA", "VIVILLON", "LITLEO", "PYROAR", "FLABEBE", "FLOETTE", "FLORGES", "SKIDDO", "GOGOAT", "PANCHAM", "PANGORO", "FURFROU", "ESPURR", "MEOWSTIC", "HONEDGE", "DOUBLADE", "AEGISLASH", "SPRITZEE", "AROMATISSE", "SWIRLIX", "SLURPUFF", "INKAY", "MALAMAR", "BINACLE", "BARBARACLE", "SKRELP", "DRAGALGE", "CLAUNCHER", "CLAWITZER", "HELIOPTILE", "HELIOLISK", "TYRUNT", "TYRANTRUM", "AMAURA", "AURORUS", "SYLVEON", "HAWLUCHA", "DEDENNE", "CARBINK", "GOOMY", "SLIGGOO", "GOODRA", "KLEFKI", "PHANTUMP", "TREVENANT", "PUMPKABOO", "GOURGEIST", "BERGMITE", "AVALUGG", "NOIBAT", "NOIVERN", "XERNEAS", "YVELTAL", "ZYGARDE", "DIANCIE", "HOOPA", "VOLCANION", "ROWLET", "DARTRIX", "DECIDUEYE", "LITTEN", "TORRACAT", "INCINEROAR", "POPPLIO", "BRIONNE", "PRIMARINA", "PIKIPEK", "TRUMBEAK", "TOUCANNON", "YUNGOOS", "GUMSHOOS", "GRUBBIN", "CHARJABUG", "VIKAVOLT", "CRABRAWLER", "CRABOMINABLE", "ORICORIO", "CUTIEFLY", "RIBOMBEE", "ROCKRUFF", "LYCANROC", "WISHIWASHI", "MAREANIE", "TOXAPEX", "MUDBRAY", "MUDSDALE", "DEWPIDER", "ARAQUANID", "FOMANTIS", "LURANTIS", "MORELULL", "SHIINOTIC", "SALANDIT", "SALAZZLE", "STUFFUL", "BEWEAR", "BOUNSWEET", "STEENEE", "TSAREENA", "COMFEY", "ORANGURU", "PASSIMIAN", "WIMPOD", "GOLISOPOD", "SANDYGAST", "PALOSSAND", "PYUKUMUKU", "TYPENULL", "SILVALLY", "MINIOR", "KOMALA", "TURTONATOR", "TOGEDEMARU", "MIMIKYU", "BRUXISH", "DRAMPA", "DHELMISE", "JANGMO-O", "HAKAMO-O", "KOMMO-O", "TAPUKOKO", "TAPULELE", "TAPUBULU", "TAPUFINI", "COSMOG", "COSMOEM", "SOLGALEO", "LUNALA", "NIHILEGO", "BUZZWOLE", "PHEROMOSA", "XURKITREE", "CELESTEELA", "KARTANA", "GUZZLORD", "NECROZMA", "MAGEARNA", "MARSHADOW", "POIPOLE", "NAGANADEL", "STAKATAKA", "BLACEPHALON", "ZERAORA", "MELTAN", "MELMETAL", "GROOKEY", "THWACKEY", "RILLABOOM", "SCORBUNNY", "RABOOT", "CINDERACE", "SOBBLE", "DRIZZILE", "INTELEON", "SKWOVET", "GREEDENT", "ROOKIDEE", "CORVISQUIRE", "CORVIKNIGHT", "BLIPBUG", "DOTTLER", "ORBEETLE", "NICKIT", "THIEVUL", "GOSSIFLEUR", "ELDEGOSS", "WOOLOO", "DUBWOOL", "CHEWTLE", "DREDNAW", "YAMPER", "BOLTUND", "ROLYCOLY", "CARKOL", "COALOSSAL", "APPLIN", "FLAPPLE", "APPLETUN", "SILICOBRA", "SANDACONDA", "CRAMORANT", "ARROKUDA", "BARRASKEWDA", "TOXEL", "TOXTRICITY", "SIZZLIPEDE", "CENTISKORCH", "CLOBBOPUS", "GRAPPLOCT", "SINISTEA", "POLTEAGEIST", "HATENNA", "HATTREM", "HATTERENE", "IMPIDIMP", "MORGREM", "GRIMMSNARL", "OBSTAGOON", "PERRSERKER", "CURSOLA", "SIRFETCHD", "MRRIME", "RUNERIGUS", "MILCERY", "ALCREMIE", "FALINKS", "PINCURCHIN", "SNOM", "FROSMOTH", "STONJOURNER", "EISCUE", "INDEEDEE", "MORPEKO", "CUFANT", "COPPERAJAH", "DRACOZOLT", "ARCTOZOLT", "DRACOVISH", "ARCTOVISH", "DURALUDON", "DREEPY", "DRAKLOAK", "DRAGAPULT", "ZACIAN", "ZAMAZENTA", "ETERNATUS", "KUBFU", "URSHIFU", "ZARUDE", "REGIELEKI", "REGIDRAGO", "GLASTRIER", "SPECTRIER", "CALYREX"})
-        TextBox79.AutoCompleteMode = AutoCompleteMode.SuggestAppend
-        TextBox79.AutoCompleteSource = AutoCompleteSource.CustomSource
-        TextBox79.Location = New Point(6, 37)
-        TextBox79.Name = "TextBox79"
-        TextBox79.PlaceholderText = "Bulbasaur"
-        TextBox79.Size = New Size(140, 23)
-        TextBox79.TabIndex = 57
+        pokemon6Name_txt.AutoCompleteCustomSource.AddRange(New String() {"BULBASAUR", "IVYSAUR", "VENUSAUR", "CHARMANDER", "CHARMELEON", "CHARIZARD", "SQUIRTLE", "WARTORTLE", "BLASTOISE", "CATERPIE", "METAPOD", "BUTTERFREE", "WEEDLE", "KAKUNA", "BEEDRILL", "PIDGEY", "PIDGEOTTO", "PIDGEOT", "RATTATA", "RATICATE", "SPEAROW", "FEAROW", "EKANS", "ARBOK", "PIKACHU", "RAICHU", "SANDSHREW", "SANDSLASH", "NIDORANfE", "NIDORINA", "NIDOQUEEN", "NIDORANmA", "NIDORINO", "NIDOKING", "CLEFAIRY", "CLEFABLE", "VULPIX", "NINETALES", "JIGGLYPUFF", "WIGGLYTUFF", "ZUBAT", "GOLBAT", "ODDISH", "GLOOM", "VILEPLUME", "PARAS", "PARASECT", "VENONAT", "VENOMOTH", "DIGLETT", "DUGTRIO", "MEOWTH", "PERSIAN", "PSYDUCK", "GOLDUCK", "MANKEY", "PRIMEAPE", "GROWLITHE", "ARCANINE", "POLIWAG", "POLIWHIRL", "POLIWRATH", "ABRA", "KADABRA", "ALAKAZAM", "MACHOP", "MACHOKE", "MACHAMP", "BELLSPROUT", "WEEPINBELL", "VICTREEBEL", "TENTACOOL", "TENTACRUEL", "GEODUDE", "GRAVELER", "GOLEM", "PONYTA", "RAPIDASH", "SLOWPOKE", "SLOWBRO", "MAGNEMITE", "MAGNETON", "FARFETCHD", "DODUO", "DODRIO", "SEEL", "DEWGONG", "GRIMER", "MUK", "SHELLDER", "CLOYSTER", "GASTLY", "HAUNTER", "GENGAR", "ONIX", "DROWZEE", "HYPNO", "KRABBY", "KINGLER", "VOLTORB", "ELECTRODE", "EXEGGCUTE", "EXEGGUTOR", "CUBONE", "MAROWAK", "HITMONLEE", "HITMONCHAN", "LICKITUNG", "KOFFING", "WEEZING", "RHYHORN", "RHYDON", "CHANSEY", "TANGELA", "KANGASKHAN", "HORSEA", "SEADRA", "GOLDEEN", "SEAKING", "STARYU", "STARMIE", "MRMIME", "SCYTHER", "JYNX", "ELECTABUZZ", "MAGMAR", "PINSIR", "TAUROS", "MAGIKARP", "GYARADOS", "LAPRAS", "DITTO", "EEVEE", "VAPOREON", "JOLTEON", "FLAREON", "PORYGON", "OMANYTE", "OMASTAR", "KABUTO", "KABUTOPS", "AERODACTYL", "SNORLAX", "ARTICUNO", "ZAPDOS", "MOLTRES", "DRATINI", "DRAGONAIR", "DRAGONITE", "MEWTWO", "MEW", "CHIKORITA", "BAYLEEF", "MEGANIUM", "CYNDAQUIL", "QUILAVA", "TYPHLOSION", "TOTODILE", "CROCONAW", "FERALIGATR", "SENTRET", "FURRET", "HOOTHOOT", "NOCTOWL", "LEDYBA", "LEDIAN", "SPINARAK", "ARIADOS", "CROBAT", "CHINCHOU", "LANTURN", "PICHU", "CLEFFA", "IGGLYBUFF", "TOGEPI", "TOGETIC", "NATU", "XATU", "MAREEP", "FLAAFFY", "AMPHAROS", "BELLOSSOM", "MARILL", "AZUMARILL", "SUDOWOODO", "POLITOED", "HOPPIP", "SKIPLOOM", "JUMPLUFF", "AIPOM", "SUNKERN", "SUNFLORA", "YANMA", "WOOPER", "QUAGSIRE", "ESPEON", "UMBREON", "MURKROW", "SLOWKING", "MISDREAVUS", "UNOWN", "WOBBUFFET", "GIRAFARIG", "PINECO", "FORRETRESS", "DUNSPARCE", "GLIGAR", "STEELIX", "SNUBBULL", "GRANBULL", "QWILFISH", "SCIZOR", "SHUCKLE", "HERACROSS", "SNEASEL", "TEDDIURSA", "URSARING", "SLUGMA", "MAGCARGO", "SWINUB", "PILOSWINE", "CORSOLA", "REMORAID", "OCTILLERY", "DELIBIRD", "MANTINE", "SKARMORY", "HOUNDOUR", "HOUNDOOM", "KINGDRA", "PHANPY", "DONPHAN", "PORYGON2", "STANTLER", "SMEARGLE", "TYROGUE", "HITMONTOP", "SMOOCHUM", "ELEKID", "MAGBY", "MILTANK", "BLISSEY", "RAIKOU", "ENTEI", "SUICUNE", "LARVITAR", "PUPITAR", "TYRANITAR", "LUGIA", "HO-OH", "CELEBI", "TREECKO", "GROVYLE", "SCEPTILE", "TORCHIC", "COMBUSKEN", "BLAZIKEN", "MUDKIP", "MARSHTOMP", "SWAMPERT", "POOCHYENA", "MIGHTYENA", "ZIGZAGOON", "LINOONE", "WURMPLE", "SILCOON", "BEAUTIFLY", "CASCOON", "DUSTOX", "LOTAD", "LOMBRE", "LUDICOLO", "SEEDOT", "NUZLEAF", "SHIFTRY", "TAILLOW", "SWELLOW", "WINGULL", "PELIPPER", "RALTS", "KIRLIA", "GARDEVOIR", "SURSKIT", "MASQUERAIN", "SHROOMISH", "BRELOOM", "SLAKOTH", "VIGOROTH", "SLAKING", "NINCADA", "NINJASK", "SHEDINJA", "WHISMUR", "LOUDRED", "EXPLOUD", "MAKUHITA", "HARIYAMA", "AZURILL", "NOSEPASS", "SKITTY", "DELCATTY", "SABLEYE", "MAWILE", "ARON", "LAIRON", "AGGRON", "MEDITITE", "MEDICHAM", "ELECTRIKE", "MANECTRIC", "PLUSLE", "MINUN", "VOLBEAT", "ILLUMISE", "ROSELIA", "GULPIN", "SWALOT", "CARVANHA", "SHARPEDO", "WAILMER", "WAILORD", "NUMEL", "CAMERUPT", "TORKOAL", "SPOINK", "GRUMPIG", "SPINDA", "TRAPINCH", "VIBRAVA", "FLYGON", "CACNEA", "CACTURNE", "SWABLU", "ALTARIA", "ZANGOOSE", "SEVIPER", "LUNATONE", "SOLROCK", "BARBOACH", "WHISCASH", "CORPHISH", "CRAWDAUNT", "BALTOY", "CLAYDOL", "LILEEP", "CRADILY", "ANORITH", "ARMALDO", "FEEBAS", "MILOTIC", "CASTFORM", "KECLEON", "SHUPPET", "BANETTE", "DUSKULL", "DUSCLOPS", "TROPIUS", "CHIMECHO", "ABSOL", "WYNAUT", "SNORUNT", "GLALIE", "SPHEAL", "SEALEO", "WALREIN", "CLAMPERL", "HUNTAIL", "GOREBYSS", "RELICANTH", "LUVDISC", "BAGON", "SHELGON", "SALAMENCE", "BELDUM", "METANG", "METAGROSS", "REGIROCK", "REGICE", "REGISTEEL", "LATIAS", "LATIOS", "KYOGRE", "GROUDON", "RAYQUAZA", "JIRACHI", "DEOXYS", "TURTWIG", "GROTLE", "TORTERRA", "CHIMCHAR", "MONFERNO", "INFERNAPE", "PIPLUP", "PRINPLUP", "EMPOLEON", "STARLY", "STARAVIA", "STARAPTOR", "BIDOOF", "BIBAREL", "KRICKETOT", "KRICKETUNE", "SHINX", "LUXIO", "LUXRAY", "BUDEW", "ROSERADE", "CRANIDOS", "RAMPARDOS", "SHIELDON", "BASTIODON", "BURMY", "WORMADAM", "MOTHIM", "COMBEE", "VESPIQUEN", "PACHIRISU", "BUIZEL", "FLOATZEL", "CHERUBI", "CHERRIM", "SHELLOS", "GASTRODON", "AMBIPOM", "DRIFLOON", "DRIFBLIM", "BUNEARY", "LOPUNNY", "MISMAGIUS", "HONCHKROW", "GLAMEOW", "PURUGLY", "CHINGLING", "STUNKY", "SKUNTANK", "BRONZOR", "BRONZONG", "BONSLY", "MIMEJR", "HAPPINY", "CHATOT", "SPIRITOMB", "GIBLE", "GABITE", "GARCHOMP", "MUNCHLAX", "RIOLU", "LUCARIO", "HIPPOPOTAS", "HIPPOWDON", "SKORUPI", "DRAPION", "CROAGUNK", "TOXICROAK", "CARNIVINE", "FINNEON", "LUMINEON", "MANTYKE", "SNOVER", "ABOMASNOW", "WEAVILE", "MAGNEZONE", "LICKILICKY", "RHYPERIOR", "TANGROWTH", "ELECTIVIRE", "MAGMORTAR", "TOGEKISS", "YANMEGA", "LEAFEON", "GLACEON", "GLISCOR", "MAMOSWINE", "PORYGON-Z", "GALLADE", "PROBOPASS", "DUSKNOIR", "FROSLASS", "ROTOM", "UXIE", "MESPRIT", "AZELF", "DIALGA", "PALKIA", "HEATRAN", "REGIGIGAS", "GIRATINA", "CRESSELIA", "PHIONE", "MANAPHY", "DARKRAI", "SHAYMIN", "ARCEUS", "VICTINI", "SNIVY", "SERVINE", "SERPERIOR", "TEPIG", "PIGNITE", "EMBOAR", "OSHAWOTT", "DEWOTT", "SAMUROTT", "PATRAT", "WATCHOG", "LILLIPUP", "HERDIER", "STOUTLAND", "PURRLOIN", "LIEPARD", "PANSAGE", "SIMISAGE", "PANSEAR", "SIMISEAR", "PANPOUR", "SIMIPOUR", "MUNNA", "MUSHARNA", "PIDOVE", "TRANQUILL", "UNFEZANT", "BLITZLE", "ZEBSTRIKA", "ROGGENROLA", "BOLDORE", "GIGALITH", "WOOBAT", "SWOOBAT", "DRILBUR", "EXCADRILL", "AUDINO", "TIMBURR", "GURDURR", "CONKELDURR", "TYMPOLE", "PALPITOAD", "SEISMITOAD", "THROH", "SAWK", "SEWADDLE", "SWADLOON", "LEAVANNY", "VENIPEDE", "WHIRLIPEDE", "SCOLIPEDE", "COTTONEE", "WHIMSICOTT", "PETILIL", "LILLIGANT", "BASCULIN", "SANDILE", "KROKOROK", "KROOKODILE", "DARUMAKA", "DARMANITAN", "MARACTUS", "DWEBBLE", "CRUSTLE", "SCRAGGY", "SCRAFTY", "SIGILYPH", "YAMASK", "COFAGRIGUS", "TIRTOUGA", "CARRACOSTA", "ARCHEN", "ARCHEOPS", "TRUBBISH", "GARBODOR", "ZORUA", "ZOROARK", "MINCCINO", "CINCCINO", "GOTHITA", "GOTHORITA", "GOTHITELLE", "SOLOSIS", "DUOSION", "REUNICLUS", "DUCKLETT", "SWANNA", "VANILLITE", "VANILLISH", "VANILLUXE", "DEERLING", "SAWSBUCK", "EMOLGA", "KARRABLAST", "ESCAVALIER", "FOONGUS", "AMOONGUSS", "FRILLISH", "JELLICENT", "ALOMOMOLA", "JOLTIK", "GALVANTULA", "FERROSEED", "FERROTHORN", "KLINK", "KLANG", "KLINKLANG", "TYNAMO", "EELEKTRIK", "EELEKTROSS", "ELGYEM", "BEHEEYEM", "LITWICK", "LAMPENT", "CHANDELURE", "AXEW", "FRAXURE", "HAXORUS", "CUBCHOO", "BEARTIC", "CRYOGONAL", "SHELMET", "ACCELGOR", "STUNFISK", "MIENFOO", "MIENSHAO", "DRUDDIGON", "GOLETT", "GOLURK", "PAWNIARD", "BISHARP", "BOUFFALANT", "RUFFLET", "BRAVIARY", "VULLABY", "MANDIBUZZ", "HEATMOR", "DURANT", "DEINO", "ZWEILOUS", "HYDREIGON", "LARVESTA", "VOLCARONA", "COBALION", "TERRAKION", "VIRIZION", "TORNADUS", "THUNDURUS", "RESHIRAM", "ZEKROM", "LANDORUS", "KYUREM", "KELDEO", "MELOETTA", "GENESECT", "CHESPIN", "QUILLADIN", "CHESNAUGHT", "FENNEKIN", "BRAIXEN", "DELPHOX", "FROAKIE", "FROGADIER", "GRENINJA", "BUNNELBY", "DIGGERSBY", "FLETCHLING", "FLETCHINDER", "TALONFLAME", "SCATTERBUG", "SPEWPA", "VIVILLON", "LITLEO", "PYROAR", "FLABEBE", "FLOETTE", "FLORGES", "SKIDDO", "GOGOAT", "PANCHAM", "PANGORO", "FURFROU", "ESPURR", "MEOWSTIC", "HONEDGE", "DOUBLADE", "AEGISLASH", "SPRITZEE", "AROMATISSE", "SWIRLIX", "SLURPUFF", "INKAY", "MALAMAR", "BINACLE", "BARBARACLE", "SKRELP", "DRAGALGE", "CLAUNCHER", "CLAWITZER", "HELIOPTILE", "HELIOLISK", "TYRUNT", "TYRANTRUM", "AMAURA", "AURORUS", "SYLVEON", "HAWLUCHA", "DEDENNE", "CARBINK", "GOOMY", "SLIGGOO", "GOODRA", "KLEFKI", "PHANTUMP", "TREVENANT", "PUMPKABOO", "GOURGEIST", "BERGMITE", "AVALUGG", "NOIBAT", "NOIVERN", "XERNEAS", "YVELTAL", "ZYGARDE", "DIANCIE", "HOOPA", "VOLCANION", "ROWLET", "DARTRIX", "DECIDUEYE", "LITTEN", "TORRACAT", "INCINEROAR", "POPPLIO", "BRIONNE", "PRIMARINA", "PIKIPEK", "TRUMBEAK", "TOUCANNON", "YUNGOOS", "GUMSHOOS", "GRUBBIN", "CHARJABUG", "VIKAVOLT", "CRABRAWLER", "CRABOMINABLE", "ORICORIO", "CUTIEFLY", "RIBOMBEE", "ROCKRUFF", "LYCANROC", "WISHIWASHI", "MAREANIE", "TOXAPEX", "MUDBRAY", "MUDSDALE", "DEWPIDER", "ARAQUANID", "FOMANTIS", "LURANTIS", "MORELULL", "SHIINOTIC", "SALANDIT", "SALAZZLE", "STUFFUL", "BEWEAR", "BOUNSWEET", "STEENEE", "TSAREENA", "COMFEY", "ORANGURU", "PASSIMIAN", "WIMPOD", "GOLISOPOD", "SANDYGAST", "PALOSSAND", "PYUKUMUKU", "TYPENULL", "SILVALLY", "MINIOR", "KOMALA", "TURTONATOR", "TOGEDEMARU", "MIMIKYU", "BRUXISH", "DRAMPA", "DHELMISE", "JANGMO-O", "HAKAMO-O", "KOMMO-O", "TAPUKOKO", "TAPULELE", "TAPUBULU", "TAPUFINI", "COSMOG", "COSMOEM", "SOLGALEO", "LUNALA", "NIHILEGO", "BUZZWOLE", "PHEROMOSA", "XURKITREE", "CELESTEELA", "KARTANA", "GUZZLORD", "NECROZMA", "MAGEARNA", "MARSHADOW", "POIPOLE", "NAGANADEL", "STAKATAKA", "BLACEPHALON", "ZERAORA", "MELTAN", "MELMETAL", "GROOKEY", "THWACKEY", "RILLABOOM", "SCORBUNNY", "RABOOT", "CINDERACE", "SOBBLE", "DRIZZILE", "INTELEON", "SKWOVET", "GREEDENT", "ROOKIDEE", "CORVISQUIRE", "CORVIKNIGHT", "BLIPBUG", "DOTTLER", "ORBEETLE", "NICKIT", "THIEVUL", "GOSSIFLEUR", "ELDEGOSS", "WOOLOO", "DUBWOOL", "CHEWTLE", "DREDNAW", "YAMPER", "BOLTUND", "ROLYCOLY", "CARKOL", "COALOSSAL", "APPLIN", "FLAPPLE", "APPLETUN", "SILICOBRA", "SANDACONDA", "CRAMORANT", "ARROKUDA", "BARRASKEWDA", "TOXEL", "TOXTRICITY", "SIZZLIPEDE", "CENTISKORCH", "CLOBBOPUS", "GRAPPLOCT", "SINISTEA", "POLTEAGEIST", "HATENNA", "HATTREM", "HATTERENE", "IMPIDIMP", "MORGREM", "GRIMMSNARL", "OBSTAGOON", "PERRSERKER", "CURSOLA", "SIRFETCHD", "MRRIME", "RUNERIGUS", "MILCERY", "ALCREMIE", "FALINKS", "PINCURCHIN", "SNOM", "FROSMOTH", "STONJOURNER", "EISCUE", "INDEEDEE", "MORPEKO", "CUFANT", "COPPERAJAH", "DRACOZOLT", "ARCTOZOLT", "DRACOVISH", "ARCTOVISH", "DURALUDON", "DREEPY", "DRAKLOAK", "DRAGAPULT", "ZACIAN", "ZAMAZENTA", "ETERNATUS", "KUBFU", "URSHIFU", "ZARUDE", "REGIELEKI", "REGIDRAGO", "GLASTRIER", "SPECTRIER", "CALYREX"})
+        pokemon6Name_txt.AutoCompleteMode = AutoCompleteMode.SuggestAppend
+        pokemon6Name_txt.AutoCompleteSource = AutoCompleteSource.CustomSource
+        pokemon6Name_txt.Location = New Point(6, 37)
+        pokemon6Name_txt.Name = "pokemon6Name_txt"
+        pokemon6Name_txt.PlaceholderText = "Bulbasaur"
+        pokemon6Name_txt.Size = New Size(140, 23)
+        pokemon6Name_txt.TabIndex = 57
         ' 
         ' pokemon6IVs_grp
         ' 
-        pokemon6IVs_grp.Controls.Add(Button9)
-        pokemon6IVs_grp.Controls.Add(Button10)
-        pokemon6IVs_grp.Controls.Add(TextBox80)
+        pokemon6IVs_grp.Controls.Add(pokemon6RandomIVs_btn)
+        pokemon6IVs_grp.Controls.Add(pokemon6MaxIVs_btn)
+        pokemon6IVs_grp.Controls.Add(pokemon6IVsDEF_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsDEF_lbl)
-        pokemon6IVs_grp.Controls.Add(TextBox81)
+        pokemon6IVs_grp.Controls.Add(pokemon6IVsSPDEF_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsSPDEF_lbl)
-        pokemon6IVs_grp.Controls.Add(TextBox82)
+        pokemon6IVs_grp.Controls.Add(pokemon6IVsSPATK_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsSPATK_lbl)
-        pokemon6IVs_grp.Controls.Add(TextBox83)
+        pokemon6IVs_grp.Controls.Add(pokemon6IVsSPD_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsSPD_lbl)
-        pokemon6IVs_grp.Controls.Add(TextBox84)
+        pokemon6IVs_grp.Controls.Add(pokemon6IVsATK_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsATK_lbl)
-        pokemon6IVs_grp.Controls.Add(TextBox85)
+        pokemon6IVs_grp.Controls.Add(pokemon6IVsHP_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsHP_lbl)
         pokemon6IVs_grp.Location = New Point(204, 154)
         pokemon6IVs_grp.Name = "pokemon6IVs_grp"
@@ -4197,32 +4237,32 @@ Partial Class Form1
         pokemon6IVs_grp.TabStop = False
         pokemon6IVs_grp.Text = "IVs (Max 31 Each)"
         ' 
-        ' Button9
+        ' pokemon6RandomIVs_btn
         ' 
-        Button9.Location = New Point(57, 152)
-        Button9.Name = "Button9"
-        Button9.Size = New Size(44, 23)
-        Button9.TabIndex = 15
-        Button9.Text = "Rand"
-        Button9.UseVisualStyleBackColor = True
+        pokemon6RandomIVs_btn.Location = New Point(57, 152)
+        pokemon6RandomIVs_btn.Name = "pokemon6RandomIVs_btn"
+        pokemon6RandomIVs_btn.Size = New Size(44, 23)
+        pokemon6RandomIVs_btn.TabIndex = 15
+        pokemon6RandomIVs_btn.Text = "Rand"
+        pokemon6RandomIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' Button10
+        ' pokemon6MaxIVs_btn
         ' 
-        Button10.Location = New Point(7, 152)
-        Button10.Name = "Button10"
-        Button10.Size = New Size(44, 23)
-        Button10.TabIndex = 14
-        Button10.Text = "Max"
-        Button10.UseVisualStyleBackColor = True
+        pokemon6MaxIVs_btn.Location = New Point(7, 152)
+        pokemon6MaxIVs_btn.Name = "pokemon6MaxIVs_btn"
+        pokemon6MaxIVs_btn.Size = New Size(44, 23)
+        pokemon6MaxIVs_btn.TabIndex = 14
+        pokemon6MaxIVs_btn.Text = "Max"
+        pokemon6MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' TextBox80
+        ' pokemon6IVsDEF_txt
         ' 
-        TextBox80.Location = New Point(7, 123)
-        TextBox80.MaxLength = 3
-        TextBox80.Name = "TextBox80"
-        TextBox80.Size = New Size(44, 23)
-        TextBox80.TabIndex = 13
-        TextBox80.Text = "0"
+        pokemon6IVsDEF_txt.Location = New Point(7, 123)
+        pokemon6IVsDEF_txt.MaxLength = 3
+        pokemon6IVsDEF_txt.Name = "pokemon6IVsDEF_txt"
+        pokemon6IVsDEF_txt.Size = New Size(44, 23)
+        pokemon6IVsDEF_txt.TabIndex = 13
+        pokemon6IVsDEF_txt.Text = "0"
         ' 
         ' pokemon6IVsDEF_lbl
         ' 
@@ -4233,14 +4273,14 @@ Partial Class Form1
         pokemon6IVsDEF_lbl.TabIndex = 12
         pokemon6IVsDEF_lbl.Text = "DEF"
         ' 
-        ' TextBox81
+        ' pokemon6IVsSPDEF_txt
         ' 
-        TextBox81.Location = New Point(57, 123)
-        TextBox81.MaxLength = 3
-        TextBox81.Name = "TextBox81"
-        TextBox81.Size = New Size(44, 23)
-        TextBox81.TabIndex = 9
-        TextBox81.Text = "0"
+        pokemon6IVsSPDEF_txt.Location = New Point(57, 123)
+        pokemon6IVsSPDEF_txt.MaxLength = 3
+        pokemon6IVsSPDEF_txt.Name = "pokemon6IVsSPDEF_txt"
+        pokemon6IVsSPDEF_txt.Size = New Size(44, 23)
+        pokemon6IVsSPDEF_txt.TabIndex = 9
+        pokemon6IVsSPDEF_txt.Text = "0"
         ' 
         ' pokemon6IVsSPDEF_lbl
         ' 
@@ -4251,14 +4291,14 @@ Partial Class Form1
         pokemon6IVsSPDEF_lbl.TabIndex = 8
         pokemon6IVsSPDEF_lbl.Text = "SPDEF"
         ' 
-        ' TextBox82
+        ' pokemon6IVsSPATK_txt
         ' 
-        TextBox82.Location = New Point(57, 79)
-        TextBox82.MaxLength = 3
-        TextBox82.Name = "TextBox82"
-        TextBox82.Size = New Size(44, 23)
-        TextBox82.TabIndex = 7
-        TextBox82.Text = "0"
+        pokemon6IVsSPATK_txt.Location = New Point(57, 79)
+        pokemon6IVsSPATK_txt.MaxLength = 3
+        pokemon6IVsSPATK_txt.Name = "pokemon6IVsSPATK_txt"
+        pokemon6IVsSPATK_txt.Size = New Size(44, 23)
+        pokemon6IVsSPATK_txt.TabIndex = 7
+        pokemon6IVsSPATK_txt.Text = "0"
         ' 
         ' pokemon6IVsSPATK_lbl
         ' 
@@ -4269,14 +4309,14 @@ Partial Class Form1
         pokemon6IVsSPATK_lbl.TabIndex = 6
         pokemon6IVsSPATK_lbl.Text = "SPATK"
         ' 
-        ' TextBox83
+        ' pokemon6IVsSPD_txt
         ' 
-        TextBox83.Location = New Point(57, 35)
-        TextBox83.MaxLength = 3
-        TextBox83.Name = "TextBox83"
-        TextBox83.Size = New Size(44, 23)
-        TextBox83.TabIndex = 5
-        TextBox83.Text = "0"
+        pokemon6IVsSPD_txt.Location = New Point(57, 35)
+        pokemon6IVsSPD_txt.MaxLength = 3
+        pokemon6IVsSPD_txt.Name = "pokemon6IVsSPD_txt"
+        pokemon6IVsSPD_txt.Size = New Size(44, 23)
+        pokemon6IVsSPD_txt.TabIndex = 5
+        pokemon6IVsSPD_txt.Text = "0"
         ' 
         ' pokemon6IVsSPD_lbl
         ' 
@@ -4287,14 +4327,14 @@ Partial Class Form1
         pokemon6IVsSPD_lbl.TabIndex = 4
         pokemon6IVsSPD_lbl.Text = "SPD"
         ' 
-        ' TextBox84
+        ' pokemon6IVsATK_txt
         ' 
-        TextBox84.Location = New Point(7, 79)
-        TextBox84.MaxLength = 3
-        TextBox84.Name = "TextBox84"
-        TextBox84.Size = New Size(44, 23)
-        TextBox84.TabIndex = 3
-        TextBox84.Text = "0"
+        pokemon6IVsATK_txt.Location = New Point(7, 79)
+        pokemon6IVsATK_txt.MaxLength = 3
+        pokemon6IVsATK_txt.Name = "pokemon6IVsATK_txt"
+        pokemon6IVsATK_txt.Size = New Size(44, 23)
+        pokemon6IVsATK_txt.TabIndex = 3
+        pokemon6IVsATK_txt.Text = "0"
         ' 
         ' pokemon6IVsATK_lbl
         ' 
@@ -4305,14 +4345,14 @@ Partial Class Form1
         pokemon6IVsATK_lbl.TabIndex = 2
         pokemon6IVsATK_lbl.Text = "ATK"
         ' 
-        ' TextBox85
+        ' pokemon6IVsHP_txt
         ' 
-        TextBox85.Location = New Point(7, 35)
-        TextBox85.MaxLength = 3
-        TextBox85.Name = "TextBox85"
-        TextBox85.Size = New Size(44, 23)
-        TextBox85.TabIndex = 1
-        TextBox85.Text = "0"
+        pokemon6IVsHP_txt.Location = New Point(7, 35)
+        pokemon6IVsHP_txt.MaxLength = 3
+        pokemon6IVsHP_txt.Name = "pokemon6IVsHP_txt"
+        pokemon6IVsHP_txt.Size = New Size(44, 23)
+        pokemon6IVsHP_txt.TabIndex = 1
+        pokemon6IVsHP_txt.Text = "0"
         ' 
         ' pokemon6IVsHP_lbl
         ' 
@@ -4323,75 +4363,66 @@ Partial Class Form1
         pokemon6IVsHP_lbl.TabIndex = 0
         pokemon6IVsHP_lbl.Text = "HP"
         ' 
-        ' TextBox86
+        ' pokemon6HeldItem_txt
         ' 
-        TextBox86.Location = New Point(152, 37)
-        TextBox86.Name = "TextBox86"
-        TextBox86.PlaceholderText = "FocusSash"
-        TextBox86.Size = New Size(140, 23)
-        TextBox86.TabIndex = 58
+        pokemon6HeldItem_txt.Location = New Point(152, 37)
+        pokemon6HeldItem_txt.Name = "pokemon6HeldItem_txt"
+        pokemon6HeldItem_txt.PlaceholderText = "FocusSash"
+        pokemon6HeldItem_txt.Size = New Size(140, 23)
+        pokemon6HeldItem_txt.TabIndex = 58
         ' 
-        ' ComboBox13
+        ' pokemon6PokeBall_cmb
         ' 
-        ComboBox13.FormattingEnabled = True
-        ComboBox13.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
-        ComboBox13.Location = New Point(6, 169)
-        ComboBox13.Name = "ComboBox13"
-        ComboBox13.Size = New Size(140, 23)
-        ComboBox13.TabIndex = 77
+        pokemon6PokeBall_cmb.FormattingEnabled = True
+        pokemon6PokeBall_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
+        pokemon6PokeBall_cmb.Location = New Point(6, 169)
+        pokemon6PokeBall_cmb.Name = "pokemon6PokeBall_cmb"
+        pokemon6PokeBall_cmb.Size = New Size(140, 23)
+        pokemon6PokeBall_cmb.TabIndex = 77
         ' 
-        ' Label87
+        ' pokemon6HeldItem_lbl
         ' 
-        Label87.AutoSize = True
-        Label87.Location = New Point(152, 19)
-        Label87.Name = "Label87"
-        Label87.Size = New Size(59, 15)
-        Label87.TabIndex = 59
-        Label87.Text = "Held Item"
+        pokemon6HeldItem_lbl.AutoSize = True
+        pokemon6HeldItem_lbl.Location = New Point(152, 19)
+        pokemon6HeldItem_lbl.Name = "pokemon6HeldItem_lbl"
+        pokemon6HeldItem_lbl.Size = New Size(59, 15)
+        pokemon6HeldItem_lbl.TabIndex = 59
+        pokemon6HeldItem_lbl.Text = "Held Item"
         ' 
-        ' Label88
+        ' pokemon6Pokeball_lbl
         ' 
-        Label88.AutoSize = True
-        Label88.Location = New Point(8, 151)
-        Label88.Name = "Label88"
-        Label88.Size = New Size(52, 15)
-        Label88.TabIndex = 76
-        Label88.Text = "PokéBall"
+        pokemon6Pokeball_lbl.AutoSize = True
+        pokemon6Pokeball_lbl.Location = New Point(8, 151)
+        pokemon6Pokeball_lbl.Name = "pokemon6Pokeball_lbl"
+        pokemon6Pokeball_lbl.Size = New Size(52, 15)
+        pokemon6Pokeball_lbl.TabIndex = 76
+        pokemon6Pokeball_lbl.Text = "PokéBall"
         ' 
-        ' Label89
+        ' pokemon6Level_lbl
         ' 
-        Label89.AutoSize = True
-        Label89.Location = New Point(298, 19)
-        Label89.Name = "Label89"
-        Label89.Size = New Size(34, 15)
-        Label89.TabIndex = 60
-        Label89.Text = "Level"
+        pokemon6Level_lbl.AutoSize = True
+        pokemon6Level_lbl.Location = New Point(298, 19)
+        pokemon6Level_lbl.Name = "pokemon6Level_lbl"
+        pokemon6Level_lbl.Size = New Size(34, 15)
+        pokemon6Level_lbl.TabIndex = 60
+        pokemon6Level_lbl.Text = "Level"
         ' 
-        ' TextBox87
+        ' pokemon6Nickname_txt
         ' 
-        TextBox87.Location = New Point(298, 125)
-        TextBox87.Name = "TextBox87"
-        TextBox87.PlaceholderText = "Bloom"
-        TextBox87.Size = New Size(140, 23)
-        TextBox87.TabIndex = 75
+        pokemon6Nickname_txt.Location = New Point(298, 125)
+        pokemon6Nickname_txt.Name = "pokemon6Nickname_txt"
+        pokemon6Nickname_txt.PlaceholderText = "Bloom"
+        pokemon6Nickname_txt.Size = New Size(140, 23)
+        pokemon6Nickname_txt.TabIndex = 75
         ' 
-        ' TextBox88
+        ' pokemon6Nickname_lbl
         ' 
-        TextBox88.Location = New Point(298, 37)
-        TextBox88.MaxLength = 3
-        TextBox88.Name = "TextBox88"
-        TextBox88.PlaceholderText = "100"
-        TextBox88.Size = New Size(140, 23)
-        TextBox88.TabIndex = 61
-        ' 
-        ' Label90
-        ' 
-        Label90.AutoSize = True
-        Label90.Location = New Point(298, 107)
-        Label90.Name = "Label90"
-        Label90.Size = New Size(61, 15)
-        Label90.TabIndex = 74
-        Label90.Text = "Nickname"
+        pokemon6Nickname_lbl.AutoSize = True
+        pokemon6Nickname_lbl.Location = New Point(298, 107)
+        pokemon6Nickname_lbl.Name = "pokemon6Nickname_lbl"
+        pokemon6Nickname_lbl.Size = New Size(61, 15)
+        pokemon6Nickname_lbl.TabIndex = 74
+        pokemon6Nickname_lbl.Text = "Nickname"
         ' 
         ' pokemon6Moves_grp
         ' 
@@ -4438,70 +4469,62 @@ Partial Class Form1
         pokemon6Move1_txt.Size = New Size(120, 23)
         pokemon6Move1_txt.TabIndex = 0
         ' 
-        ' TextBox93
+        ' pokemon6Ability_lbl
         ' 
-        TextBox93.Location = New Point(152, 125)
-        TextBox93.Name = "TextBox93"
-        TextBox93.PlaceholderText = "70"
-        TextBox93.Size = New Size(140, 23)
-        TextBox93.TabIndex = 73
+        pokemon6Ability_lbl.AutoSize = True
+        pokemon6Ability_lbl.Location = New Point(6, 63)
+        pokemon6Ability_lbl.Name = "pokemon6Ability_lbl"
+        pokemon6Ability_lbl.Size = New Size(41, 15)
+        pokemon6Ability_lbl.TabIndex = 63
+        pokemon6Ability_lbl.Text = "Ability"
         ' 
-        ' Label91
+        ' pokemon6Happiness_lbl
         ' 
-        Label91.AutoSize = True
-        Label91.Location = New Point(6, 63)
-        Label91.Name = "Label91"
-        Label91.Size = New Size(41, 15)
-        Label91.TabIndex = 63
-        Label91.Text = "Ability"
+        pokemon6Happiness_lbl.AutoSize = True
+        pokemon6Happiness_lbl.Location = New Point(152, 107)
+        pokemon6Happiness_lbl.Name = "pokemon6Happiness_lbl"
+        pokemon6Happiness_lbl.Size = New Size(62, 15)
+        pokemon6Happiness_lbl.TabIndex = 72
+        pokemon6Happiness_lbl.Text = "Happiness"
         ' 
-        ' Label92
+        ' pokemon6Ability_cmb
         ' 
-        Label92.AutoSize = True
-        Label92.Location = New Point(152, 107)
-        Label92.Name = "Label92"
-        Label92.Size = New Size(62, 15)
-        Label92.TabIndex = 72
-        Label92.Text = "Happiness"
+        pokemon6Ability_cmb.AutoCompleteCustomSource.AddRange(New String() {"Aerilate", "Aftermath", "Air Lock", "Analytic", "Anger Point", "Anger Shell", "Anticipation", "Arena Trap", "Armor Tail", "Aroma Veil", "As One - Unnerve Chilling Neigh", "As One - Unnerve Grim Neigh", "Aura Break", "Bad Dreams", "Ball Fetch", "Battery", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Berserk", "Big Pecks", "Blaze", "Bulletproof", "Cheek Pouch", "Chilling Neigh", "Chlorophyll", "Clear Body", "Cloud Nine", "Color Change", "Comatose", "Commander", "Competitive", "Compoundeyes", "Contrary", "Corrosion", "Costar", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Damp", "Dancer", "Dark Aura", "Dauntless Shield", "Dazzling", "Defeatist", "Defiant", "Delta Stream", "Desolate Land", "Disguise", "Download", "Dragon's Maw", "Drizzle", "Drought", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Electromorphosis", "Embody Aspect - Cornerstone Mask", "Embody Aspect - Hearthflame Mask", "Embody Aspect - Teal Mask", "Embody Aspect - Wellspring Mask", "Emergency Exit", "Fairy Aura", "Filter", "Flame Body", "Flare Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Fluffy", "Forecast", "Forewarn", "Friend Guard", "Frisk", "Full Metal Body", "Fur Coat", "Gale Wings", "Galvanize", "Gluttony", "Good as Gold", "Gooey", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Guts", "Hadron Engine", "Harvest", "Healer", "Heatproof", "Heavy Metal", "Honey Gather", "Hospitality", "Huge Power", "Hunger Switch", "Hustle", "Hydration", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Illuminate", "Illusion", "Immunity", "Imposter", "Infiltrator", "Innards Out", "Inner Focus", "Insomnia", "Intimidate", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Justified", "Keen Eye", "Klutz", "Leaf Guard", "Levitate", "Libero", "Light Metal", "Lightning Rod", "Limber", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magician", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Merciless", "Mimicry", "Mind's Eye", "Minus", "Mirror Armor", "Misty Surge", "Mold Breaker", "Moody", "Motor Drive", "Moxie", "Multiscale", "Multitype", "Mummy", "Mycelium Might", "Natural Cure", "Neuroforce", "Neutralizing Gas", "No Guard", "Normalize", "Oblivious", "Opportunist", "Orichalcum Pulse", "Overcoat", "Overgrow", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Pickpocket", "Pickup", "Pixilate", "Plus", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Prankster", "Pressure", "Primordial Sea", "Prism Armor", "Propeller Tail", "Protean", "Protosynthesis", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "Rattled", "Receiver", "Reckless", "Refrigerate", "Regenerator", "Ripen", "Rivalry", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Schooling", "Scrappy", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sharpness", "Shed Skin", "Sheer Force", "Shell Armor", "Shield Dust", "Shields Down", "Simple", "Skill Link", "Slow Start", "Slush Rush", "Sniper", "Snow Cloak", "Snow Warning", "Solar Power", "Solid Rock", "Soul-Heart", "Soundproof", "Speed Boost", "Stakeout", "Stall", "Stalwart", "Stamina", "Stance Change", "Static", "Steadfast", "Steam Engine", "Steelworker", "Steely Spirit", "Stench", "Sticky Hold", "Storm Drain", "Strong Jaw", "Sturdy", "Suction Cups", "Super Luck", "Supersweet Syrup", "Supreme Overlord", "Surge Surfer", "Swarm", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Symbiosis", "Synchronize", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Technician", "Telepathy", "Teravolt", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Torrent", "Tough Claws", "Toxic Boost", "Toxic Chain", "Toxic Debris", "Trace", "Transistor", "Triage", "Truant", "Turboblaze", "Unaware", "Unburden", "Unnerve", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Compaction", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Wonder Skin ", "Zen Mode", "Zero to Hero"})
+        pokemon6Ability_cmb.AutoCompleteMode = AutoCompleteMode.SuggestAppend
+        pokemon6Ability_cmb.AutoCompleteSource = AutoCompleteSource.CustomSource
+        pokemon6Ability_cmb.FormattingEnabled = True
+        pokemon6Ability_cmb.Items.AddRange(New Object() {"Aerilate", "Aftermath", "Air Lock", "Analytic", "Anger Point", "Anger Shell", "Anticipation", "Arena Trap", "Armor Tail", "Aroma Veil", "As One - Unnerve Chilling Neigh", "As One - Unnerve Grim Neigh", "Aura Break", "Bad Dreams", "Ball Fetch", "Battery", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Berserk", "Big Pecks", "Blaze", "Bulletproof", "Cheek Pouch", "Chilling Neigh", "Chlorophyll", "Clear Body", "Cloud Nine", "Color Change", "Comatose", "Commander", "Competitive", "Compoundeyes", "Contrary", "Corrosion", "Costar", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Damp", "Dancer", "Dark Aura", "Dauntless Shield", "Dazzling", "Defeatist", "Defiant", "Delta Stream", "Desolate Land", "Disguise", "Download", "Dragon's Maw", "Drizzle", "Drought", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Electromorphosis", "Embody Aspect - Cornerstone Mask", "Embody Aspect - Hearthflame Mask", "Embody Aspect - Teal Mask", "Embody Aspect - Wellspring Mask", "Emergency Exit", "Fairy Aura", "Filter", "Flame Body", "Flare Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Fluffy", "Forecast", "Forewarn", "Friend Guard", "Frisk", "Full Metal Body", "Fur Coat", "Gale Wings", "Galvanize", "Gluttony", "Good as Gold", "Gooey", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Guts", "Hadron Engine", "Harvest", "Healer", "Heatproof", "Heavy Metal", "Honey Gather", "Hospitality", "Huge Power", "Hunger Switch", "Hustle", "Hydration", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Illuminate", "Illusion", "Immunity", "Imposter", "Infiltrator", "Innards Out", "Inner Focus", "Insomnia", "Intimidate", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Justified", "Keen Eye", "Klutz", "Leaf Guard", "Levitate", "Libero", "Light Metal", "Lightning Rod", "Limber", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magician", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Merciless", "Mimicry", "Mind's Eye", "Minus", "Mirror Armor", "Misty Surge", "Mold Breaker", "Moody", "Motor Drive", "Moxie", "Multiscale", "Multitype", "Mummy", "Mycelium Might", "Natural Cure", "Neuroforce", "Neutralizing Gas", "No Guard", "Normalize", "Oblivious", "Opportunist", "Orichalcum Pulse", "Overcoat", "Overgrow", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Pickpocket", "Pickup", "Pixilate", "Plus", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Prankster", "Pressure", "Primordial Sea", "Prism Armor", "Propeller Tail", "Protean", "Protosynthesis", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "Rattled", "Receiver", "Reckless", "Refrigerate", "Regenerator", "Ripen", "Rivalry", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Schooling", "Scrappy", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sharpness", "Shed Skin", "Sheer Force", "Shell Armor", "Shield Dust", "Shields Down", "Simple", "Skill Link", "Slow Start", "Slush Rush", "Sniper", "Snow Cloak", "Snow Warning", "Solar Power", "Solid Rock", "Soul-Heart", "Soundproof", "Speed Boost", "Stakeout", "Stall", "Stalwart", "Stamina", "Stance Change", "Static", "Steadfast", "Steam Engine", "Steelworker", "Steely Spirit", "Stench", "Sticky Hold", "Storm Drain", "Strong Jaw", "Sturdy", "Suction Cups", "Super Luck", "Supersweet Syrup", "Supreme Overlord", "Surge Surfer", "Swarm", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Symbiosis", "Synchronize", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Technician", "Telepathy", "Teravolt", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Torrent", "Tough Claws", "Toxic Boost", "Toxic Chain", "Toxic Debris", "Trace", "Transistor", "Triage", "Truant", "Turboblaze", "Unaware", "Unburden", "Unnerve", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Compaction", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Wonder Skin ", "Zen Mode", "Zero to Hero"})
+        pokemon6Ability_cmb.Location = New Point(6, 81)
+        pokemon6Ability_cmb.Name = "pokemon6Ability_cmb"
+        pokemon6Ability_cmb.Size = New Size(140, 23)
+        pokemon6Ability_cmb.TabIndex = 64
         ' 
-        ' ComboBox14
+        ' pokemon6Nature_cmb
         ' 
-        ComboBox14.AutoCompleteCustomSource.AddRange(New String() {"Aerilate", "Aftermath", "Air Lock", "Analytic", "Anger Point", "Anger Shell", "Anticipation", "Arena Trap", "Armor Tail", "Aroma Veil", "As One - Unnerve Chilling Neigh", "As One - Unnerve Grim Neigh", "Aura Break", "Bad Dreams", "Ball Fetch", "Battery", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Berserk", "Big Pecks", "Blaze", "Bulletproof", "Cheek Pouch", "Chilling Neigh", "Chlorophyll", "Clear Body", "Cloud Nine", "Color Change", "Comatose", "Commander", "Competitive", "Compoundeyes", "Contrary", "Corrosion", "Costar", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Damp", "Dancer", "Dark Aura", "Dauntless Shield", "Dazzling", "Defeatist", "Defiant", "Delta Stream", "Desolate Land", "Disguise", "Download", "Dragon's Maw", "Drizzle", "Drought", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Electromorphosis", "Embody Aspect - Cornerstone Mask", "Embody Aspect - Hearthflame Mask", "Embody Aspect - Teal Mask", "Embody Aspect - Wellspring Mask", "Emergency Exit", "Fairy Aura", "Filter", "Flame Body", "Flare Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Fluffy", "Forecast", "Forewarn", "Friend Guard", "Frisk", "Full Metal Body", "Fur Coat", "Gale Wings", "Galvanize", "Gluttony", "Good as Gold", "Gooey", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Guts", "Hadron Engine", "Harvest", "Healer", "Heatproof", "Heavy Metal", "Honey Gather", "Hospitality", "Huge Power", "Hunger Switch", "Hustle", "Hydration", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Illuminate", "Illusion", "Immunity", "Imposter", "Infiltrator", "Innards Out", "Inner Focus", "Insomnia", "Intimidate", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Justified", "Keen Eye", "Klutz", "Leaf Guard", "Levitate", "Libero", "Light Metal", "Lightning Rod", "Limber", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magician", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Merciless", "Mimicry", "Mind's Eye", "Minus", "Mirror Armor", "Misty Surge", "Mold Breaker", "Moody", "Motor Drive", "Moxie", "Multiscale", "Multitype", "Mummy", "Mycelium Might", "Natural Cure", "Neuroforce", "Neutralizing Gas", "No Guard", "Normalize", "Oblivious", "Opportunist", "Orichalcum Pulse", "Overcoat", "Overgrow", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Pickpocket", "Pickup", "Pixilate", "Plus", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Prankster", "Pressure", "Primordial Sea", "Prism Armor", "Propeller Tail", "Protean", "Protosynthesis", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "Rattled", "Receiver", "Reckless", "Refrigerate", "Regenerator", "Ripen", "Rivalry", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Schooling", "Scrappy", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sharpness", "Shed Skin", "Sheer Force", "Shell Armor", "Shield Dust", "Shields Down", "Simple", "Skill Link", "Slow Start", "Slush Rush", "Sniper", "Snow Cloak", "Snow Warning", "Solar Power", "Solid Rock", "Soul-Heart", "Soundproof", "Speed Boost", "Stakeout", "Stall", "Stalwart", "Stamina", "Stance Change", "Static", "Steadfast", "Steam Engine", "Steelworker", "Steely Spirit", "Stench", "Sticky Hold", "Storm Drain", "Strong Jaw", "Sturdy", "Suction Cups", "Super Luck", "Supersweet Syrup", "Supreme Overlord", "Surge Surfer", "Swarm", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Symbiosis", "Synchronize", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Technician", "Telepathy", "Teravolt", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Torrent", "Tough Claws", "Toxic Boost", "Toxic Chain", "Toxic Debris", "Trace", "Transistor", "Triage", "Truant", "Turboblaze", "Unaware", "Unburden", "Unnerve", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Compaction", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Wonder Skin ", "Zen Mode", "Zero to Hero"})
-        ComboBox14.AutoCompleteMode = AutoCompleteMode.SuggestAppend
-        ComboBox14.AutoCompleteSource = AutoCompleteSource.CustomSource
-        ComboBox14.FormattingEnabled = True
-        ComboBox14.Items.AddRange(New Object() {"Aerilate", "Aftermath", "Air Lock", "Analytic", "Anger Point", "Anger Shell", "Anticipation", "Arena Trap", "Armor Tail", "Aroma Veil", "As One - Unnerve Chilling Neigh", "As One - Unnerve Grim Neigh", "Aura Break", "Bad Dreams", "Ball Fetch", "Battery", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Berserk", "Big Pecks", "Blaze", "Bulletproof", "Cheek Pouch", "Chilling Neigh", "Chlorophyll", "Clear Body", "Cloud Nine", "Color Change", "Comatose", "Commander", "Competitive", "Compoundeyes", "Contrary", "Corrosion", "Costar", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Damp", "Dancer", "Dark Aura", "Dauntless Shield", "Dazzling", "Defeatist", "Defiant", "Delta Stream", "Desolate Land", "Disguise", "Download", "Dragon's Maw", "Drizzle", "Drought", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Electromorphosis", "Embody Aspect - Cornerstone Mask", "Embody Aspect - Hearthflame Mask", "Embody Aspect - Teal Mask", "Embody Aspect - Wellspring Mask", "Emergency Exit", "Fairy Aura", "Filter", "Flame Body", "Flare Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Fluffy", "Forecast", "Forewarn", "Friend Guard", "Frisk", "Full Metal Body", "Fur Coat", "Gale Wings", "Galvanize", "Gluttony", "Good as Gold", "Gooey", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Guts", "Hadron Engine", "Harvest", "Healer", "Heatproof", "Heavy Metal", "Honey Gather", "Hospitality", "Huge Power", "Hunger Switch", "Hustle", "Hydration", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Illuminate", "Illusion", "Immunity", "Imposter", "Infiltrator", "Innards Out", "Inner Focus", "Insomnia", "Intimidate", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Justified", "Keen Eye", "Klutz", "Leaf Guard", "Levitate", "Libero", "Light Metal", "Lightning Rod", "Limber", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magician", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Merciless", "Mimicry", "Mind's Eye", "Minus", "Mirror Armor", "Misty Surge", "Mold Breaker", "Moody", "Motor Drive", "Moxie", "Multiscale", "Multitype", "Mummy", "Mycelium Might", "Natural Cure", "Neuroforce", "Neutralizing Gas", "No Guard", "Normalize", "Oblivious", "Opportunist", "Orichalcum Pulse", "Overcoat", "Overgrow", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Pickpocket", "Pickup", "Pixilate", "Plus", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Prankster", "Pressure", "Primordial Sea", "Prism Armor", "Propeller Tail", "Protean", "Protosynthesis", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "Rattled", "Receiver", "Reckless", "Refrigerate", "Regenerator", "Ripen", "Rivalry", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Schooling", "Scrappy", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sharpness", "Shed Skin", "Sheer Force", "Shell Armor", "Shield Dust", "Shields Down", "Simple", "Skill Link", "Slow Start", "Slush Rush", "Sniper", "Snow Cloak", "Snow Warning", "Solar Power", "Solid Rock", "Soul-Heart", "Soundproof", "Speed Boost", "Stakeout", "Stall", "Stalwart", "Stamina", "Stance Change", "Static", "Steadfast", "Steam Engine", "Steelworker", "Steely Spirit", "Stench", "Sticky Hold", "Storm Drain", "Strong Jaw", "Sturdy", "Suction Cups", "Super Luck", "Supersweet Syrup", "Supreme Overlord", "Surge Surfer", "Swarm", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Symbiosis", "Synchronize", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Technician", "Telepathy", "Teravolt", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Torrent", "Tough Claws", "Toxic Boost", "Toxic Chain", "Toxic Debris", "Trace", "Transistor", "Triage", "Truant", "Turboblaze", "Unaware", "Unburden", "Unnerve", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Compaction", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Wonder Skin ", "Zen Mode", "Zero to Hero"})
-        ComboBox14.Location = New Point(6, 81)
-        ComboBox14.Name = "ComboBox14"
-        ComboBox14.Size = New Size(140, 23)
-        ComboBox14.TabIndex = 64
+        pokemon6Nature_cmb.FormattingEnabled = True
+        pokemon6Nature_cmb.Items.AddRange(New Object() {"(random)", "HARDY", "LONELY", "BRAVE", "ADAMANT", "NAUGHTY", "BOLD", "DOCILE", "RELAXED", "IMPISH", "LAX", "MODEST", "MILD", "SERIOUS", "QUIET", "RASH", "CALM", "GENTLE", "SASSY", "BASHFUL", "CAREFUL", "TIMID", "HASTY", "JOLLY", "NAIVE", "QUIRKY"})
+        pokemon6Nature_cmb.Location = New Point(6, 125)
+        pokemon6Nature_cmb.Name = "pokemon6Nature_cmb"
+        pokemon6Nature_cmb.Size = New Size(140, 23)
+        pokemon6Nature_cmb.TabIndex = 71
         ' 
-        ' ComboBox15
+        ' pokemon6Gender_lbl
         ' 
-        ComboBox15.FormattingEnabled = True
-        ComboBox15.Items.AddRange(New Object() {"(random)", "HARDY", "LONELY", "BRAVE", "ADAMANT", "NAUGHTY", "BOLD", "DOCILE", "RELAXED", "IMPISH", "LAX", "MODEST", "MILD", "SERIOUS", "QUIET", "RASH", "CALM", "GENTLE", "SASSY", "BASHFUL", "CAREFUL", "TIMID", "HASTY", "JOLLY", "NAIVE", "QUIRKY"})
-        ComboBox15.Location = New Point(6, 125)
-        ComboBox15.Name = "ComboBox15"
-        ComboBox15.Size = New Size(140, 23)
-        ComboBox15.TabIndex = 71
+        pokemon6Gender_lbl.AutoSize = True
+        pokemon6Gender_lbl.Location = New Point(152, 63)
+        pokemon6Gender_lbl.Name = "pokemon6Gender_lbl"
+        pokemon6Gender_lbl.Size = New Size(45, 15)
+        pokemon6Gender_lbl.TabIndex = 65
+        pokemon6Gender_lbl.Text = "Gender"
         ' 
-        ' Label93
+        ' pokemon6Nature_lbl
         ' 
-        Label93.AutoSize = True
-        Label93.Location = New Point(152, 63)
-        Label93.Name = "Label93"
-        Label93.Size = New Size(45, 15)
-        Label93.TabIndex = 65
-        Label93.Text = "Gender"
-        ' 
-        ' Label94
-        ' 
-        Label94.AutoSize = True
-        Label94.Location = New Point(6, 107)
-        Label94.Name = "Label94"
-        Label94.Size = New Size(43, 15)
-        Label94.TabIndex = 70
-        Label94.Text = "Nature"
+        pokemon6Nature_lbl.AutoSize = True
+        pokemon6Nature_lbl.Location = New Point(6, 107)
+        pokemon6Nature_lbl.Name = "pokemon6Nature_lbl"
+        pokemon6Nature_lbl.Size = New Size(43, 15)
+        pokemon6Nature_lbl.TabIndex = 70
+        pokemon6Nature_lbl.Text = "Nature"
         ' 
         ' pokemon6Gender_cmb
         ' 
@@ -4516,8 +4539,8 @@ Partial Class Form1
         ' pokemon6Shiny_grp
         ' 
         pokemon6Shiny_grp.Controls.Add(pokemon6SuperShiny_chkBox)
-        pokemon6Shiny_grp.Controls.Add(RadioButton15)
-        pokemon6Shiny_grp.Controls.Add(RadioButton16)
+        pokemon6Shiny_grp.Controls.Add(pokemon6Shiny_rad)
+        pokemon6Shiny_grp.Controls.Add(pokemon6NotShiny_rad)
         pokemon6Shiny_grp.Location = New Point(444, 110)
         pokemon6Shiny_grp.Name = "pokemon6Shiny_grp"
         pokemon6Shiny_grp.Size = New Size(273, 82)
@@ -4536,44 +4559,36 @@ Partial Class Form1
         pokemon6SuperShiny_chkBox.Text = "Super Shiny"
         pokemon6SuperShiny_chkBox.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton15
+        ' pokemon6Shiny_rad
         ' 
-        RadioButton15.AutoSize = True
-        RadioButton15.Location = New Point(6, 47)
-        RadioButton15.Name = "RadioButton15"
-        RadioButton15.Size = New Size(54, 19)
-        RadioButton15.TabIndex = 1
-        RadioButton15.Text = "Shiny"
-        RadioButton15.UseVisualStyleBackColor = True
+        pokemon6Shiny_rad.AutoSize = True
+        pokemon6Shiny_rad.Location = New Point(6, 47)
+        pokemon6Shiny_rad.Name = "pokemon6Shiny_rad"
+        pokemon6Shiny_rad.Size = New Size(54, 19)
+        pokemon6Shiny_rad.TabIndex = 1
+        pokemon6Shiny_rad.Text = "Shiny"
+        pokemon6Shiny_rad.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton16
+        ' pokemon6NotShiny_rad
         ' 
-        RadioButton16.AutoSize = True
-        RadioButton16.Checked = True
-        RadioButton16.Location = New Point(6, 22)
-        RadioButton16.Name = "RadioButton16"
-        RadioButton16.Size = New Size(77, 19)
-        RadioButton16.TabIndex = 0
-        RadioButton16.TabStop = True
-        RadioButton16.Text = "Not Shiny"
-        RadioButton16.UseVisualStyleBackColor = True
+        pokemon6NotShiny_rad.AutoSize = True
+        pokemon6NotShiny_rad.Checked = True
+        pokemon6NotShiny_rad.Location = New Point(6, 22)
+        pokemon6NotShiny_rad.Name = "pokemon6NotShiny_rad"
+        pokemon6NotShiny_rad.Size = New Size(77, 19)
+        pokemon6NotShiny_rad.TabIndex = 0
+        pokemon6NotShiny_rad.TabStop = True
+        pokemon6NotShiny_rad.Text = "Not Shiny"
+        pokemon6NotShiny_rad.UseVisualStyleBackColor = True
         ' 
-        ' Label95
+        ' pokemon6Form_lbl
         ' 
-        Label95.AutoSize = True
-        Label95.Location = New Point(298, 63)
-        Label95.Name = "Label95"
-        Label95.Size = New Size(123, 15)
-        Label95.TabIndex = 67
-        Label95.Text = "Form (Numbers Only)"
-        ' 
-        ' TextBox94
-        ' 
-        TextBox94.Location = New Point(298, 81)
-        TextBox94.Name = "TextBox94"
-        TextBox94.PlaceholderText = "1"
-        TextBox94.Size = New Size(140, 23)
-        TextBox94.TabIndex = 68
+        pokemon6Form_lbl.AutoSize = True
+        pokemon6Form_lbl.Location = New Point(298, 63)
+        pokemon6Form_lbl.Name = "pokemon6Form_lbl"
+        pokemon6Form_lbl.Size = New Size(35, 15)
+        pokemon6Form_lbl.TabIndex = 67
+        pokemon6Form_lbl.Text = "Form"
         ' 
         ' pg_about
         ' 
@@ -4640,6 +4655,15 @@ Partial Class Form1
         GeneratePreviewToolStripMenuItem.Size = New Size(112, 20)
         GeneratePreviewToolStripMenuItem.Text = "Generate/Preview"
         ' 
+        ' battleTeamID_nbr
+        ' 
+        battleTeamID_nbr.Enabled = False
+        battleTeamID_nbr.Location = New Point(8, 94)
+        battleTeamID_nbr.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        battleTeamID_nbr.Name = "battleTeamID_nbr"
+        battleTeamID_nbr.Size = New Size(168, 23)
+        battleTeamID_nbr.TabIndex = 32
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -4663,6 +4687,9 @@ Partial Class Form1
         pg_pkmn1.ResumeLayout(False)
         pokemon1_grp.ResumeLayout(False)
         pokemon1_grp.PerformLayout()
+        CType(pokemon1Level_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon1Form_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon1Happiness_nbr, ComponentModel.ISupportInitialize).EndInit()
         pokemon1Shadow_grp.ResumeLayout(False)
         pokemon1Shadow_grp.PerformLayout()
         pokemon1EVs_grp.ResumeLayout(False)
@@ -4676,6 +4703,9 @@ Partial Class Form1
         pg_pkmn2.ResumeLayout(False)
         pokemon2_grp.ResumeLayout(False)
         pokemon2_grp.PerformLayout()
+        CType(pokemon2Level_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon2Form_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon2Happiness_nbr, ComponentModel.ISupportInitialize).EndInit()
         pokemon2Shadow_grp.ResumeLayout(False)
         pokemon2Shadow_grp.PerformLayout()
         pokemon2EVs_grp.ResumeLayout(False)
@@ -4689,6 +4719,9 @@ Partial Class Form1
         pg_pkmn3.ResumeLayout(False)
         pokemon3_grp.ResumeLayout(False)
         pokemon3_grp.PerformLayout()
+        CType(pokemon3Level_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon3Form_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon3Happiness_nbr, ComponentModel.ISupportInitialize).EndInit()
         pokemon3Shadow_grp.ResumeLayout(False)
         pokemon3Shadow_grp.PerformLayout()
         pokemon3EVs_grp.ResumeLayout(False)
@@ -4702,6 +4735,9 @@ Partial Class Form1
         pg_pkmn4.ResumeLayout(False)
         pokemon4_grp.ResumeLayout(False)
         pokemon4_grp.PerformLayout()
+        CType(pokemon4Level_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon4Form_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon4Happiness_nbr, ComponentModel.ISupportInitialize).EndInit()
         pokemon4Shadow_grp.ResumeLayout(False)
         pokemon4Shadow_grp.PerformLayout()
         pokemon4EVs_grp.ResumeLayout(False)
@@ -4715,6 +4751,9 @@ Partial Class Form1
         pg_pkmn5.ResumeLayout(False)
         pokemon5_grp.ResumeLayout(False)
         pokemon5_grp.PerformLayout()
+        CType(pokemon5Level_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon5Form_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon5Happiness_nbr, ComponentModel.ISupportInitialize).EndInit()
         pokemon5Shadow_grp.ResumeLayout(False)
         pokemon5Shadow_grp.PerformLayout()
         pokemon5EVs_grp.ResumeLayout(False)
@@ -4728,6 +4767,9 @@ Partial Class Form1
         pg_pkmn6.ResumeLayout(False)
         pokemon6_grp.ResumeLayout(False)
         pokemon6_grp.PerformLayout()
+        CType(pokemon6Level_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon6Form_nbr, ComponentModel.ISupportInitialize).EndInit()
+        CType(pokemon6Happiness_nbr, ComponentModel.ISupportInitialize).EndInit()
         pokemon6Shadow_grp.ResumeLayout(False)
         pokemon6Shadow_grp.PerformLayout()
         pokemon6EVs_grp.ResumeLayout(False)
@@ -4742,6 +4784,7 @@ Partial Class Form1
         pg_about.PerformLayout()
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
+        CType(battleTeamID_nbr, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -4767,7 +4810,6 @@ Partial Class Form1
     Friend WithEvents trainerType_lbl As Label
     Friend WithEvents loseText_lbl As Label
     Friend WithEvents loseText_txt As TextBox
-    Friend WithEvents battleTeamID_txtBox As TextBox
     Friend WithEvents battleTeamID_lbl As Label
     Friend WithEvents numPoké_lbl As Label
     Friend WithEvents numPoké_cmb As ComboBox
@@ -4789,7 +4831,6 @@ Partial Class Form1
     Friend WithEvents pokemon1Name_txtBox As TextBox
     Friend WithEvents pokemon1HeldItem_lbl As Label
     Friend WithEvents pokemon1HeldItem_txtBox As TextBox
-    Friend WithEvents pokemon1Level_txtBox As TextBox
     Friend WithEvents pokemon1Level_lbl As Label
     Friend WithEvents pokemon1Moves_grp As GroupBox
     Friend WithEvents pokemon1Move4_txtBox As TextBox
@@ -4800,7 +4841,6 @@ Partial Class Form1
     Friend WithEvents pokemon1Ability_lbl As Label
     Friend WithEvents pokemon1Gender_cmb As ComboBox
     Friend WithEvents pokemon1Gender_lbl As Label
-    Friend WithEvents pokemon1Form_txtBox As TextBox
     Friend WithEvents pokemon1Form_lbl As Label
     Friend WithEvents pokemon1Shiny_grp As GroupBox
     Friend WithEvents pokemon1SuperShiny_chkBox As CheckBox
@@ -4808,7 +4848,6 @@ Partial Class Form1
     Friend WithEvents pokemon1NotShiny_rad As RadioButton
     Friend WithEvents pokemon1Nature_lbl As Label
     Friend WithEvents pokemon1Nature_cmb As ComboBox
-    Friend WithEvents pokemon1Happiness_txtBox As TextBox
     Friend WithEvents pokemon1Happiness_lbl As Label
     Friend WithEvents pokemon1Nickname_txtBox As TextBox
     Friend WithEvents pokemon1Nickname_lbl As Label
@@ -4889,14 +4928,12 @@ Partial Class Form1
     Friend WithEvents pokemon2PokeBall_lbl As Label
     Friend WithEvents pokemon2Level_lbl As Label
     Friend WithEvents pokemon2Nickname_txt As TextBox
-    Friend WithEvents pokemon2Level_txt As TextBox
     Friend WithEvents pokemon2Nickname_lbl As Label
     Friend WithEvents pokemon2Moves_grp As GroupBox
     Friend WithEvents pokemon2Move4_txtBox As TextBox
     Friend WithEvents pokemon2Move3_txtBox As TextBox
     Friend WithEvents pokemon2Move2_txtBox As TextBox
     Friend WithEvents pokemon2Move1_txtBox As TextBox
-    Friend WithEvents pokemon2Happiness_txt As TextBox
     Friend WithEvents pokemon2Ability_lbl As Label
     Friend WithEvents pokemon2Happiness_lbl As Label
     Friend WithEvents pokemon2Ability_cmb As ComboBox
@@ -4909,7 +4946,6 @@ Partial Class Form1
     Friend WithEvents pokemon2Shiny_rad As RadioButton
     Friend WithEvents pokemon2NotShiny_rad As RadioButton
     Friend WithEvents pokemon2Form_lbl As Label
-    Friend WithEvents pokemon2Form_txt As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents properSpellingNote_lbl As Label
     Friend WithEvents MenuStrip1 As MenuStrip
@@ -4933,8 +4969,8 @@ Partial Class Form1
     Friend WithEvents pokemon3EVsHP_lbl As Label
     Friend WithEvents pokemon3Name_txt As TextBox
     Friend WithEvents pokemon3IVs_grp As GroupBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents pokemon3RandomIVs_btn As Button
+    Friend WithEvents pokemon3MaxIVs_btn As Button
     Friend WithEvents pokemon3IVsDEF_txt As TextBox
     Friend WithEvents pokemon3IVsDEF_lbl As Label
     Friend WithEvents pokemon3IVsSPDEF_txt As TextBox
@@ -4953,14 +4989,12 @@ Partial Class Form1
     Friend WithEvents pokemon3PokeBall_lbl As Label
     Friend WithEvents pokemon3Level_lbl As Label
     Friend WithEvents pokemon3Nickname_txt As TextBox
-    Friend WithEvents pokemon3Level_txt As TextBox
     Friend WithEvents pokemon3Nickname_lbl As Label
     Friend WithEvents pokemon3Moves_grp As GroupBox
     Friend WithEvents pokemon3Move4_txtBox As TextBox
     Friend WithEvents pokemon3Move3_txtBox As TextBox
     Friend WithEvents pokemon3Move2_txtBox As TextBox
     Friend WithEvents pokemon3Move1_txtBox As TextBox
-    Friend WithEvents pokemon3Happiness_txt As TextBox
     Friend WithEvents pokemon3Ability_lbl As Label
     Friend WithEvents pokemon3Happiness_lbl As Label
     Friend WithEvents pokemon3Ability_cmb As ComboBox
@@ -4973,28 +5007,27 @@ Partial Class Form1
     Friend WithEvents pokemon3Shiny_rad As RadioButton
     Friend WithEvents pokemon3NotShiny_rad As RadioButton
     Friend WithEvents pokemon3Form_lbl As Label
-    Friend WithEvents pokemon3Form_txt As TextBox
     Friend WithEvents pokemon4Shadow_grp As GroupBox
     Friend WithEvents pokemon4Shadow_rad As RadioButton
     Friend WithEvents pokemon4NotShadow_rad As RadioButton
     Friend WithEvents pokemon4Name_lbl As Label
     Friend WithEvents pokemon4EVs_grp As GroupBox
-    Friend WithEvents TextBox29 As TextBox
-    Friend WithEvents Label31 As Label
-    Friend WithEvents TextBox30 As TextBox
-    Friend WithEvents Label32 As Label
-    Friend WithEvents TextBox31 As TextBox
-    Friend WithEvents Label33 As Label
-    Friend WithEvents TextBox32 As TextBox
-    Friend WithEvents Label34 As Label
-    Friend WithEvents TextBox33 As TextBox
-    Friend WithEvents Label35 As Label
-    Friend WithEvents TextBox34 As TextBox
-    Friend WithEvents Label36 As Label
+    Friend WithEvents pokemon4EVsDEF_txt As TextBox
+    Friend WithEvents pokemon4EVsDEF_lbl As Label
+    Friend WithEvents pokemon4EVsSPDEF_txt As TextBox
+    Friend WithEvents pokemon4EVsSPDEF_lbl As Label
+    Friend WithEvents pokemon4EVsSPATK_txt As TextBox
+    Friend WithEvents pokemon4EVsSPATK_lbl As Label
+    Friend WithEvents pokemon4EVsSPD_txt As TextBox
+    Friend WithEvents pokemon4EVsSPD_lbl As Label
+    Friend WithEvents pokemon4EVsATK_txt As TextBox
+    Friend WithEvents pokemon4EVsATK_lbl As Label
+    Friend WithEvents pokemon4EVsHP_txt As TextBox
+    Friend WithEvents pokemon4EVsHP_lbl As Label
     Friend WithEvents pokemon4Name_txt As TextBox
     Friend WithEvents pokemon4IVs_grp As GroupBox
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents pokemon4RandomIVs_btn As Button
+    Friend WithEvents pokemon4MaxIVs_btn As Button
     Friend WithEvents pokemon4IVsDEF_txt As TextBox
     Friend WithEvents pokemon4IVsDEF_lbl As Label
     Friend WithEvents pokemon4IVsSPDEF_txt As TextBox
@@ -5013,14 +5046,12 @@ Partial Class Form1
     Friend WithEvents pokemon4PokeBall_lbl As Label
     Friend WithEvents pokemon4Level_lbl As Label
     Friend WithEvents pokemon4Nickname_txt As TextBox
-    Friend WithEvents pokemon4Level_txt As TextBox
     Friend WithEvents pokemon4Nickname_lbl As Label
     Friend WithEvents pokemon4Moves_grp As GroupBox
     Friend WithEvents pokemon4Move4_txt As TextBox
     Friend WithEvents pokemon4Move3_txt As TextBox
     Friend WithEvents pokemon4Move2_txt As TextBox
     Friend WithEvents pokemon4Move1_txt As TextBox
-    Friend WithEvents pokemon4Happiness_txt As TextBox
     Friend WithEvents pokemon4Ability_lbl As Label
     Friend WithEvents pokemon4Happiness_lbl As Label
     Friend WithEvents pokemon4Ability_cmb As ComboBox
@@ -5033,28 +5064,27 @@ Partial Class Form1
     Friend WithEvents pokemon4Shiny_rad As RadioButton
     Friend WithEvents pokemon4NotShiny_rad As RadioButton
     Friend WithEvents pokemon4Form_lbl As Label
-    Friend WithEvents pokemon4Form_txt As TextBox
     Friend WithEvents pokemon5Shadow_grp As GroupBox
-    Friend WithEvents RadioButton9 As RadioButton
-    Friend WithEvents RadioButton10 As RadioButton
-    Friend WithEvents Label52 As Label
+    Friend WithEvents pokemon5Shadow_rad As RadioButton
+    Friend WithEvents pokemon5NotShadow_rad As RadioButton
+    Friend WithEvents pokemon5Name_lbl As Label
     Friend WithEvents pokemon5EVs_grp As GroupBox
-    Friend WithEvents TextBox51 As TextBox
-    Friend WithEvents Label53 As Label
-    Friend WithEvents TextBox52 As TextBox
-    Friend WithEvents Label54 As Label
-    Friend WithEvents TextBox53 As TextBox
-    Friend WithEvents Label55 As Label
-    Friend WithEvents TextBox54 As TextBox
-    Friend WithEvents Label56 As Label
-    Friend WithEvents TextBox55 As TextBox
-    Friend WithEvents Label57 As Label
-    Friend WithEvents TextBox56 As TextBox
-    Friend WithEvents Label58 As Label
-    Friend WithEvents TextBox57 As TextBox
+    Friend WithEvents pokemon5EVsDEF_txt As TextBox
+    Friend WithEvents pokemon5EVsDEF_lbl As Label
+    Friend WithEvents pokemon5EVsSPDEF_txt As TextBox
+    Friend WithEvents pokemon5EVsSPDEF_lbl As Label
+    Friend WithEvents pokemon5EVsSPATK_txt As TextBox
+    Friend WithEvents pokemon5EVsSPATK_lbl As Label
+    Friend WithEvents pokemon5EVsSPD_txt As TextBox
+    Friend WithEvents pokemon5EVsSPD_lbl As Label
+    Friend WithEvents pokemon5EVsATK_txt As TextBox
+    Friend WithEvents pokemon5EVsATK_lbl As Label
+    Friend WithEvents pokemon5EVsHP_txt As TextBox
+    Friend WithEvents pokemon5EVsHP_lbl As Label
+    Friend WithEvents pokemon5Name_txt As TextBox
     Friend WithEvents pokemon5IVs_grp As GroupBox
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
+    Friend WithEvents pokemon5RandomIVs_btn As Button
+    Friend WithEvents pokemon5MaxIVs_btn As Button
     Friend WithEvents pokemon5IVsDEF_txt As TextBox
     Friend WithEvents pokemon5IVsDEF_lbl As Label
     Friend WithEvents pokemon5IVsSPDEF_txt As TextBox
@@ -5067,91 +5097,104 @@ Partial Class Form1
     Friend WithEvents pokemon5IVsATK_lbl As Label
     Friend WithEvents pokemon5IVsHP_txt As TextBox
     Friend WithEvents pokemon5IVsHP_lbl As Label
-    Friend WithEvents TextBox64 As TextBox
-    Friend WithEvents ComboBox9 As ComboBox
-    Friend WithEvents Label65 As Label
-    Friend WithEvents Label66 As Label
-    Friend WithEvents Label67 As Label
-    Friend WithEvents TextBox65 As TextBox
-    Friend WithEvents TextBox66 As TextBox
-    Friend WithEvents Label68 As Label
+    Friend WithEvents pokemon5HeldItem_txt As TextBox
+    Friend WithEvents pokemon5PokeBall_cmb As ComboBox
+    Friend WithEvents pokemon5HeldItem_lbl As Label
+    Friend WithEvents pokemon5PokeBall_lbl As Label
+    Friend WithEvents pokemon5Level_lbl As Label
+    Friend WithEvents pokemon5Nickname_txt As TextBox
+    Friend WithEvents pokemon5Nickname_lbl As Label
     Friend WithEvents pokemon5Moves_grp As GroupBox
     Friend WithEvents pokemon5Move4_txt As TextBox
     Friend WithEvents pokemon5Move3_txt As TextBox
     Friend WithEvents pokemon5Move2_txt As TextBox
     Friend WithEvents pokemon5Move1_txt As TextBox
-    Friend WithEvents TextBox71 As TextBox
-    Friend WithEvents Label69 As Label
-    Friend WithEvents Label70 As Label
-    Friend WithEvents ComboBox10 As ComboBox
-    Friend WithEvents ComboBox11 As ComboBox
-    Friend WithEvents Label71 As Label
-    Friend WithEvents Label72 As Label
+    Friend WithEvents pokemon5Ability_lbl As Label
+    Friend WithEvents pokemon5Happiness_lbl As Label
+    Friend WithEvents pokemon5Ability_cmb As ComboBox
+    Friend WithEvents pokemon5Nature_cmb As ComboBox
+    Friend WithEvents pokemon5Gender_lbl As Label
+    Friend WithEvents pokemon5Nature_lbl As Label
     Friend WithEvents pokemon5Gender_cmb As ComboBox
     Friend WithEvents pokemon5Shiny_grp As GroupBox
     Friend WithEvents pokemon5SuperShiny_chkBox As CheckBox
-    Friend WithEvents RadioButton11 As RadioButton
-    Friend WithEvents RadioButton12 As RadioButton
-    Friend WithEvents Label73 As Label
-    Friend WithEvents TextBox72 As TextBox
+    Friend WithEvents pokemon5Shiny_rad As RadioButton
+    Friend WithEvents pokemon5NotShiny_rad As RadioButton
+    Friend WithEvents pokemon5Form_lbl As Label
     Friend WithEvents pokemon6Shadow_grp As GroupBox
-    Friend WithEvents RadioButton13 As RadioButton
-    Friend WithEvents RadioButton14 As RadioButton
-    Friend WithEvents Label74 As Label
+    Friend WithEvents pokemon6Shadow_rad As RadioButton
+    Friend WithEvents pokemon6NotShadow_rad As RadioButton
+    Friend WithEvents pokemon6Name_lbl As Label
     Friend WithEvents pokemon6EVs_grp As GroupBox
-    Friend WithEvents TextBox73 As TextBox
-    Friend WithEvents Label75 As Label
-    Friend WithEvents TextBox74 As TextBox
-    Friend WithEvents Label76 As Label
-    Friend WithEvents TextBox75 As TextBox
-    Friend WithEvents Label77 As Label
-    Friend WithEvents TextBox76 As TextBox
-    Friend WithEvents Label78 As Label
-    Friend WithEvents TextBox77 As TextBox
-    Friend WithEvents Label79 As Label
-    Friend WithEvents TextBox78 As TextBox
-    Friend WithEvents Label80 As Label
-    Friend WithEvents TextBox79 As TextBox
+    Friend WithEvents pokemon6EVsDEF_txt As TextBox
+    Friend WithEvents pokemon6EVsDEF_lbl As Label
+    Friend WithEvents pokemon6EVsSPDEF_txt As TextBox
+    Friend WithEvents pokemon6EVsSPDEF_lbl As Label
+    Friend WithEvents pokemon6EVsSPATK_txt As TextBox
+    Friend WithEvents pokemon6EVsSPATK_lbl As Label
+    Friend WithEvents pokemon6EVsSPD_txt As TextBox
+    Friend WithEvents pokemon6EVsSPD_lbl As Label
+    Friend WithEvents pokemon6EVsATK_txt As TextBox
+    Friend WithEvents pokemon6EVsATK_lbl As Label
+    Friend WithEvents pokemon6EVsHP_txt As TextBox
+    Friend WithEvents pokemon6EVsHP_lbl As Label
+    Friend WithEvents pokemon6Name_txt As TextBox
     Friend WithEvents pokemon6IVs_grp As GroupBox
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents TextBox80 As TextBox
+    Friend WithEvents pokemon6RandomIVs_btn As Button
+    Friend WithEvents pokemon6MaxIVs_btn As Button
+    Friend WithEvents pokemon6IVsDEF_txt As TextBox
     Friend WithEvents pokemon6IVsDEF_lbl As Label
-    Friend WithEvents TextBox81 As TextBox
+    Friend WithEvents pokemon6IVsSPDEF_txt As TextBox
     Friend WithEvents pokemon6IVsSPDEF_lbl As Label
-    Friend WithEvents TextBox82 As TextBox
+    Friend WithEvents pokemon6IVsSPATK_txt As TextBox
     Friend WithEvents pokemon6IVsSPATK_lbl As Label
-    Friend WithEvents TextBox83 As TextBox
+    Friend WithEvents pokemon6IVsSPD_txt As TextBox
     Friend WithEvents pokemon6IVsSPD_lbl As Label
-    Friend WithEvents TextBox84 As TextBox
+    Friend WithEvents pokemon6IVsATK_txt As TextBox
     Friend WithEvents pokemon6IVsATK_lbl As Label
-    Friend WithEvents TextBox85 As TextBox
+    Friend WithEvents pokemon6IVsHP_txt As TextBox
     Friend WithEvents pokemon6IVsHP_lbl As Label
-    Friend WithEvents TextBox86 As TextBox
-    Friend WithEvents ComboBox13 As ComboBox
-    Friend WithEvents Label87 As Label
-    Friend WithEvents Label88 As Label
-    Friend WithEvents Label89 As Label
-    Friend WithEvents TextBox87 As TextBox
-    Friend WithEvents TextBox88 As TextBox
-    Friend WithEvents Label90 As Label
+    Friend WithEvents pokemon6HeldItem_txt As TextBox
+    Friend WithEvents pokemon6PokeBall_cmb As ComboBox
+    Friend WithEvents pokemon6HeldItem_lbl As Label
+    Friend WithEvents pokemon6Pokeball_lbl As Label
+    Friend WithEvents pokemon6Level_lbl As Label
+    Friend WithEvents pokemon6Nickname_txt As TextBox
+    Friend WithEvents pokemon6Nickname_lbl As Label
     Friend WithEvents pokemon6Moves_grp As GroupBox
     Friend WithEvents pokemon6Move4_txt As TextBox
     Friend WithEvents pokemon6Move3_txt As TextBox
     Friend WithEvents pokemon6Move2_txt As TextBox
     Friend WithEvents pokemon6Move1_txt As TextBox
-    Friend WithEvents TextBox93 As TextBox
-    Friend WithEvents Label91 As Label
-    Friend WithEvents Label92 As Label
-    Friend WithEvents ComboBox14 As ComboBox
-    Friend WithEvents ComboBox15 As ComboBox
-    Friend WithEvents Label93 As Label
-    Friend WithEvents Label94 As Label
+    Friend WithEvents pokemon6Ability_lbl As Label
+    Friend WithEvents pokemon6Happiness_lbl As Label
+    Friend WithEvents pokemon6Ability_cmb As ComboBox
+    Friend WithEvents pokemon6Nature_cmb As ComboBox
+    Friend WithEvents pokemon6Gender_lbl As Label
+    Friend WithEvents pokemon6Nature_lbl As Label
     Friend WithEvents pokemon6Gender_cmb As ComboBox
     Friend WithEvents pokemon6Shiny_grp As GroupBox
     Friend WithEvents pokemon6SuperShiny_chkBox As CheckBox
-    Friend WithEvents RadioButton15 As RadioButton
-    Friend WithEvents RadioButton16 As RadioButton
-    Friend WithEvents Label95 As Label
-    Friend WithEvents TextBox94 As TextBox
+    Friend WithEvents pokemon6Shiny_rad As RadioButton
+    Friend WithEvents pokemon6NotShiny_rad As RadioButton
+    Friend WithEvents pokemon6Form_lbl As Label
+    Friend WithEvents pokemon1Level_nbr As NumericUpDown
+    Friend WithEvents pokemon1Form_nbr As NumericUpDown
+    Friend WithEvents pokemon1Happiness_nbr As NumericUpDown
+    Friend WithEvents pokemon2Level_nbr As NumericUpDown
+    Friend WithEvents pokemon2Form_nbr As NumericUpDown
+    Friend WithEvents pokemon2Happiness_nbr As NumericUpDown
+    Friend WithEvents pokemon3Level_nbr As NumericUpDown
+    Friend WithEvents pokemon3Form_nbr As NumericUpDown
+    Friend WithEvents pokemon3Happiness_nbr As NumericUpDown
+    Friend WithEvents pokemon4Level_nbr As NumericUpDown
+    Friend WithEvents pokemon4Form_nbr As NumericUpDown
+    Friend WithEvents pokemon4Happiness_nbr As NumericUpDown
+    Friend WithEvents pokemon5Level_nbr As NumericUpDown
+    Friend WithEvents pokemon5Form_nbr As NumericUpDown
+    Friend WithEvents pokemon5Happiness_nbr As NumericUpDown
+    Friend WithEvents pokemon6Level_nbr As NumericUpDown
+    Friend WithEvents pokemon6Form_nbr As NumericUpDown
+    Friend WithEvents pokemon6Happiness_nbr As NumericUpDown
+    Friend WithEvents battleTeamID_nbr As NumericUpDown
 End Class

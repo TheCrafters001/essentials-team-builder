@@ -103,11 +103,19 @@ Public Class ObjectCheck
     ''' Used to update the status of Super Shiny stuff.
     ''' </summary>
     Public Shared Sub SuperShiny()
-        If Form1.allowSuperShiny_chk.Checked = True Then
-            Form1.pokemon1SuperShiny_chkBox.Enabled = True
-        Else
-            Form1.pokemon1SuperShiny_chkBox.Enabled = False
-        End If
+        For Index As Integer = 0 To 5
+            ' Get the name via the Index + 1
+            Dim pokemonName As String = "pokemon" & (Index + 1) & "SuperShiny_chkBox"
+            'Create a ComboBox that acts as a DirectCast that is FirstOrDefault
+            Dim chkBox As CheckBox = DirectCast(Form1.Controls.Find(pokemonName, True).FirstOrDefault(), CheckBox)
+
+            ' Make sure the comboBox isn't nothing. If it is nothing, it doesn't exist.
+            If chkBox IsNot Nothing Then
+                chkBox.Enabled = True
+            Else
+                Debug.WriteLine("Could not find ComboBox: " & pokemonName)
+            End If
+        Next
     End Sub
 
 
