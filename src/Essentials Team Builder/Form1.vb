@@ -9,7 +9,22 @@ Public Class Form1
         numPoké_cmb.SelectedIndex = 0
 
         ' Gender
-        pokemon1Gender_cmb.SelectedIndex = 2
+        ' This works like numPoké_cmb_SelectedIndexChanged, but because of it
+        ' being a little less complex, it requires a different way to write it,
+        ' so here is the new way to do this.
+        For Index As Integer = 0 To 5
+            ' Get the name via the Index + 1
+            Dim pokemonName As String = "pokemon" & (Index + 1) & "Gender_cmb"
+            'Create a ComboBox that acts as a DirectCast that is FirstOrDefault
+            Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonName, True).FirstOrDefault(), ComboBox)
+
+            ' Make sure the comboBox isn't nothing. If it is nothing, it doesn't exist.
+            If Combo IsNot Nothing Then
+                Combo.SelectedIndex = 2
+            Else
+                Debug.WriteLine("Could not find ComboBox: " & pokemonName)
+            End If
+        Next
 
         ' Copyright
         copyright_lbl.Text = My.Application.Info.Copyright
@@ -18,10 +33,10 @@ Public Class Form1
     Private Sub existingBattle_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles existingBattle_chkBox.CheckedChanged
         If existingBattle_chkBox.Checked = True Then
             battleTeamID_lbl.Enabled = True
-            battleTeamID_txtBox.Enabled = True
+            battleTeamID_nbr.Enabled = True
         Else
             battleTeamID_lbl.Enabled = False
-            battleTeamID_txtBox.Enabled = False
+            battleTeamID_nbr.Enabled = False
         End If
     End Sub
 
@@ -30,54 +45,33 @@ Public Class Form1
     End Sub
 
     Private Sub numPoké_cmb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles numPoké_cmb.SelectedIndexChanged
-        If numPoké_cmb.SelectedIndex = 0 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = False
-            pokemon3_grp.Enabled = False
-            pokemon4_grp.Enabled = False
-            pokemon5_grp.Enabled = False
-            pokemon6_grp.Enabled = False
+        ' New Function, this doesn't touch pokemon1_grp as it doesn't need to.
+        ' This new one works dynamically and took me forever to figure out. It
+        ' isn't the prettiest thing, but it does the job.
 
-        ElseIf numPoké_cmb.SelectedIndex = 1 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = False
-            pokemon4_grp.Enabled = False
-            pokemon5_grp.Enabled = False
-            pokemon6_grp.Enabled = False
+        'Get the Index of NumPoke and set it as SelIndex
+        Dim SelIndex As Integer = numPoké_cmb.SelectedIndex + 1
 
-        ElseIf numPoké_cmb.SelectedIndex = 2 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = True
-            pokemon4_grp.Enabled = False
-            pokemon5_grp.Enabled = False
-            pokemon6_grp.Enabled = False
+        For Index As Integer = 0 To 5
+            ' Dynamically create the control names.
+            Dim grpBoxName As String = "pokemon" & (Index + 1) & "_grp"
 
-        ElseIf numPoké_cmb.SelectedIndex = 3 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = True
-            pokemon4_grp.Enabled = True
-            pokemon5_grp.Enabled = False
-            pokemon6_grp.Enabled = False
+            ' Making sure they exists
+            Dim controlArray() As Control = Me.Controls.Find(grpBoxName, True)
 
-        ElseIf numPoké_cmb.SelectedIndex = 4 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = True
-            pokemon4_grp.Enabled = True
-            pokemon5_grp.Enabled = True
-            pokemon6_grp.Enabled = False
+            ' Making Sure that the array is more than zero
+            ' but also making sure that the is a groupbox so
+            ' I don't accidently blow anything up.
+            If controlArray.Length > 0 AndAlso TypeOf controlArray(0) Is GroupBox Then
+                'Create a groupBox that acts as a DirectCast
+                Dim Grps As GroupBox = DirectCast(controlArray(0), GroupBox)
 
-        ElseIf numPoké_cmb.SelectedIndex = 5 Then
-            pokemon1_grp.Enabled = True
-            pokemon2_grp.Enabled = True
-            pokemon3_grp.Enabled = True
-            pokemon4_grp.Enabled = True
-            pokemon5_grp.Enabled = True
-            pokemon6_grp.Enabled = True
-        End If
+                ' Now enable by the selindex, making it act as a bool
+                Grps.Enabled = (Index < SelIndex)
+
+                Debug.WriteLine(Grps.Name & "=" & (Index < SelIndex))
+            End If
+        Next
     End Sub
 
     Private Sub useAbilityIndex_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles useAbilityIndex_chkBox.CheckedChanged
@@ -92,59 +86,98 @@ Public Class Form1
         ObjectCheck.SuperShiny()
     End Sub
 
-    Private Sub customBallIDs_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles customBallIDs_chkBox.CheckedChanged
+
+#Region "Old Gen Code"
+
+    ' This is where an old function lives for now. It might stay, not sure though.
+    ' DO NOT DELETE FOR NOW.
+
+    'Private Sub updatePreview_btn_Click(sender As Object, e As EventArgs) Handles updatePreview_btn.Click
+    '    If essVersion_cmb.SelectedIndex <= 0 Then
+    '        ' Generator.essentials17()
+    '    ElseIf essVersion_cmb.SelectedIndex >= 1 Then
+
+    '        ' Clear the preview box
+    '        preview_rtb.Text = ""
+
+    '        Try
+    '            ' Pokemon1
+    '            If numPoké_cmb.SelectedIndex >= 0 Then
+    '                preview_rtb.Text &= Generator.essentials18(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text,
+    '                                       Integer.Parse(pokemon1Level_txtBox.Text), pokemon1Ability_cmb.Text, pokemon1Gender_cmb.Text, Integer.Parse(pokemon1Form_txtBox.Text),
+    '                                       pokemon1Nature_cmb.Text, pokemon1Happiness_txtBox.Text, pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked,
+    '                                       pokemon1SuperShiny_chkBox.Checked, pokemon1Shadow_rad.Checked,
+    '                                       pokemon1IVsHP_txt.Text, pokemon1IVsATK_txt.Text, pokemon1IVsDEF_txt.Text, pokemon1IVsSPD_txt.Text, pokemon1IVsSPATK_txt.Text, pokemon1IVsSPDEF_txt.Text,
+    '                                       pokemon1EVsHP_txt.Text, pokemon1EVsATK_txt.Text, pokemon1EVsDEF_txt.Text, pokemon1EVsSPD_txt.Text, pokemon1EVsSPATK_txt.Text, pokemon1EVsSPDEF_txt.Text)
+    '            End If
+
+    '            ' Pokemon2
+    '            If numPoké_cmb.SelectedIndex >= 1 Then
+    '                preview_rtb.Text &= ""
+    '            End If
+
+    '            ' Pokemon3
+    '            If numPoké_cmb.SelectedIndex >= 2 Then
+    '                preview_rtb.Text &= ""
+    '            End If
+
+    '            ' Pokemon4
+    '            If numPoké_cmb.SelectedIndex >= 3 Then
+    '                preview_rtb.Text &= ""
+    '            End If
+
+    '            ' Pokemon5
+    '            If numPoké_cmb.SelectedIndex >= 4 Then
+    '                preview_rtb.Text &= ""
+    '            End If
+
+    '            ' Pokemon6
+    '            If numPoké_cmb.SelectedIndex = 5 Then
+    '                preview_rtb.Text &= ""
+    '            End If
+    '        Catch ex As Exception
+    '            MessageBox.Show("There was an error when generating the team. Please make sure there are only numbers in the Level, Happiness, Form, IVs and EVs boxes.", "Error",
+    '                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+    '        End Try
+
+    '    End If
+    'End Sub
+
+#End Region
+
+    Private Sub GeneratePreviewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneratePreviewToolStripMenuItem.Click
 
     End Sub
 
-    Private Sub updatePreview_btn_Click(sender As Object, e As EventArgs) Handles updatePreview_btn.Click
-        If essVersion_cmb.SelectedIndex <= 0 Then
-            ' Generator.essentials17()
-        ElseIf essVersion_cmb.SelectedIndex >= 1 Then
+    Private Sub customBallIDs_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles customBallIDs_chkBox.CheckedChanged
+        If customBallIDs_chkBox.Checked = True Then
+            For Index As Integer = 0 To 5
+                ' Get the name via the Index + 1
+                Dim pokemonName As String = "pokemon" & (Index + 1) & "PokeballID_cmb"
+                'Create a ComboBox that acts as a DirectCast that is FirstOrDefault
+                Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonName, True).FirstOrDefault(), ComboBox)
 
-            ' Clear the preview box
-            preview_rtb.Text = ""
-
-            Try
-                ' Pokemon1
-                If numPoké_cmb.SelectedIndex >= 0 Then
-                    preview_rtb.Text &= Generator.essentials18(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text,
-                                           Integer.Parse(pokemon1Level_txtBox.Text), pokemon1Ability_cmb.Text, pokemon1Gender_cmb.Text, Integer.Parse(pokemon1Form_txtBox.Text),
-                                           pokemon1Nature_cmb.Text, pokemon1Happiness_txtBox.Text, pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked,
-                                           pokemon1SuperShiny_chkBox.Checked, pokemon1Shadow_rad.Checked,
-                                           {pokemon1Move1_txtBox.Text, pokemon1Move2_txtBox.Text, pokemon1Move3_txtBox.Text, pokemon1Move4_txtBox.Text},
-                                           {pokemon1IVsHP_txt.Text, pokemon1IVsATK_txt.Text, pokemon1IVsDEF_txt.Text, pokemon1IVsSPD_txt.Text, pokemon1IVsSPATK_txt.Text, pokemon1IVsSPDEF_txt.Text},
-                                           {pokemon1EVsHP_txt.Text, pokemon1EVsATK_txt.Text, pokemon1EVsDEF_txt.Text, pokemon1EVsSPD_txt.Text, pokemon1EVsSPATK_txt.Text, pokemon1EVsSPDEF_txt.Text})
+                ' Make sure the comboBox isn't nothing. If it is nothing, it doesn't exist.
+                If Combo IsNot Nothing Then
+                    Combo.DropDownStyle = ComboBoxStyle.DropDown
+                Else
+                    Debug.WriteLine("Could not find ComboBox: " & pokemonName)
                 End If
+            Next
+        Else
+            For Index As Integer = 0 To 5
+                ' Get the name via the Index + 1
+                Dim pokemonName As String = "pokemon" & (Index + 1) & "PokeballID_cmb"
+                'Create a ComboBox that acts as a DirectCast that is FirstOrDefault
+                Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonName, True).FirstOrDefault(), ComboBox)
 
-                ' Pokemon2
-                If numPoké_cmb.SelectedIndex >= 1 Then
-                    preview_rtb.Text &= ""
+                ' Make sure the comboBox isn't nothing. If it is nothing, it doesn't exist.
+                If Combo IsNot Nothing Then
+                    Combo.DropDownStyle = ComboBoxStyle.DropDownList
+                Else
+                    Debug.WriteLine("Could not find ComboBox: " & pokemonName)
                 End If
-
-                ' Pokemon3
-                If numPoké_cmb.SelectedIndex >= 2 Then
-                    preview_rtb.Text &= ""
-                End If
-
-                ' Pokemon4
-                If numPoké_cmb.SelectedIndex >= 3 Then
-                    preview_rtb.Text &= ""
-                End If
-
-                ' Pokemon5
-                If numPoké_cmb.SelectedIndex >= 4 Then
-                    preview_rtb.Text &= ""
-                End If
-
-                ' Pokemon6
-                If numPoké_cmb.SelectedIndex = 5 Then
-                    preview_rtb.Text &= ""
-                End If
-            Catch ex As Exception
-                MessageBox.Show("There was an error when generating the team. Please make sure there are only numbers in the Level, Happiness, Form, IVs and EVs boxes.", "Error",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End Try
-
+            Next
         End If
     End Sub
 End Class

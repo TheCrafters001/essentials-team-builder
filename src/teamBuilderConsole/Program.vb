@@ -5,11 +5,11 @@ Module Program
         If args(0) = "test" Then
             Console.WriteLine(Generator.essentials18("Bulbasaur", "", 12, "Ability", "Male", "1", "Nature", 255, "NickName", "PokeBall", True, False, False, {"Move1", "Move2"}, {0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0}))
             Console.WriteLine("Test Success!")
-        ElseIf args.count < 24 Then
+        ElseIf args.Count < 24 Then
             Help()
             Environment.ExitCode = -1
 
-        ElseIf args.count > 30 Then
+        ElseIf args.Count > 30 Then
             Help()
             Environment.ExitCode = -2
         ElseIf args(0) = "17" Then
