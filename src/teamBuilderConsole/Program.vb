@@ -3,8 +3,7 @@ Imports teamGen
 Module Program
     Sub Main(args As String())
         If args(0) = "test" Then
-            Console.WriteLine(Generator.essentials18("Bulbasaur", "", 5, "0", "Male", 0, "Bold", 70, "Bloom", "Pokeball", False,
-            False, False, "", "", "", "", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+            Console.WriteLine(Generator.essentials18("Bulbasaur", "", 12, "Ability", "Male", "1", "Nature", 255, "NickName", "PokeBall", True, False, False, {"Move1", "Move2"}, {0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0}))
             Console.WriteLine("Test Success!")
         ElseIf args.count < 24 Then
             Help()
