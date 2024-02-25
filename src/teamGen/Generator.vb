@@ -31,7 +31,6 @@ Public Class Generator
                                    ByVal pokeBall As String, ByVal shiny As Boolean, ByVal superShiny As Boolean,
                                    ByVal shadow As Boolean, ByVal Moves As String(), ByVal IVs As Integer(),
                                    ByVal EVs As Integer())
-        Dim output As String = ""
         ' Used for indenting stuff.
         ' Honestly makes soring easier for me.
         Dim Indent As String = "    "
@@ -52,7 +51,7 @@ Public Class Generator
         Dim gender As String = If(pkmnGender <> "Random", Indent & "Gender = " & pkmnGender & vbCrLf, "")
 
         ' Ability = ability
-        Dim PKMNAbility As String = If(Not String.IsNullOrEmpty(ability), Indent & "Item = " & ability & vbCrLf, "")
+        Dim pkmnAbility As String = If(Not String.IsNullOrEmpty(ability), Indent & "Item = " & ability & vbCrLf, "")
 
         ' Moves = Move1,Move2,Move3,Move4
         Dim MoveString As String = ""
@@ -70,17 +69,44 @@ Public Class Generator
             Return "Failed to get moves. Make sure they are a part of an array."
         End If
 
-        'IV = HP,ATK,DEF,SPD,SPATK,SPDEF
+        ' IV = HP,ATK,DEF,SPD,SPATK,SPDEF
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''HP,ATK,DEF,SPD,SPATK,SPDEF
         Dim IVsString As String = String.Format(Indent & "IV = {0},{1},{2},{3},{4},{5}" & vbCrLf,
                                                 IVs(0), IVs(1), IVs(2), IVs(3), IVs(4), IVs(5))
 
-        'EV = HP,ATK,DEF,SPD,SPATK,SPDEF
+        ' EV = HP,ATK,DEF,SPD,SPATK,SPDEF
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''HP,ATK,DEF,SPD,SPATK,SPDEF
         Dim EVsString As String = String.Format(Indent & "EV = {0},{1},{2},{3},{4},{5}" & vbCrLf,
                                                 EVs(0), EVs(1), EVs(2), EVs(3), EVs(4), EVs(5))
 
-        output = pkmn & pkmnForm & name & gender & item & PKMNAbility & MoveString & EVsString & IVsString
+        ' Nature = Nature
+        Dim pkmnNature As String = If(Not String.IsNullOrEmpty(nature), Indent & "Nature = " & nature & vbCrLf, "")
+
+        ' Shiny = true
+        ' If SuperShiny is true, then don't use shiny, but use SuperShiny instead.
+        Dim pkmnShiny As String = ""
+        If superShiny = True Then
+            pkmnShiny = Indent & "SuperShiny = " & superShiny & vbCrLf
+        ElseIf shiny = True And Not superShiny = True Then
+            pkmnShiny = Indent & "Shiny = " & shiny & vbCrLf
+        Else
+            pkmnShiny = ""
+        End If
+
+        ' Shadow = TrueFalse
+        Dim pkmnShadow As String = If(Not String.IsNullOrEmpty(shadow), Indent & "Shadow = " & shadow & vbCrLf, "")
+
+        ' Happiness = Min0Max255
+        Dim pkmnHappiness As String = If(Not String.IsNullOrEmpty(happiness), Indent & "Happiness = " & happiness & vbCrLf, "")
+
+        ' Ball = ID
+        Dim pkmnBall As String = If(Not String.IsNullOrEmpty(pokeBall), Indent & "Ball = " & pokeBall & vbCrLf, "")
+
+        ' Output string.
+        ' This is to build everything into what is needed to output it correctly.
+        ' Please do not edit this unless making changes to the generator above
+        ' that require it to be edited.
+        Dim output As String = pkmn & pkmnForm & name & gender & item & pkmnAbility & MoveString & EVsString & IVsString & pkmnNature & pkmnShiny & pkmnShadow & pkmnHappiness & pkmnBall
 
         Return output
     End Function
@@ -102,28 +128,18 @@ Public Class Generator
     ''' <param name="shiny">Get the Shiny of the Pokemon. Pass only a Boolean.</param>
     ''' <param name="shadow">Get the shadow of the Pokemon. Pass only a Boolean.</param>
     ''' 
-    ''' <param name="ivHP">Get the HP IV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="ivATK">Get the ATK IV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="ivDEF">Get the DEF IV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="ivSPD">Get the SPD IV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="ivSPATK">Get the SPATK IV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="ivSPDEF">Get the SPDEF IV for the Pokemon. Pass only an integer.</param>
+    ''' <param name="Moves">Get the First Move of the Pokemon</param>
     ''' 
-    ''' <param name="evHP">Get the HP EV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="evATK">Get the ATK EV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="evDEF">Get the DEF EV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="evSPD">Get the SPD EV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="evSPATK">Get the SPATK EV for the Pokemon. Pass only an integer.</param>
-    ''' <param name="evSPDEF">Get the SPDEF EV for the Pokemon. Pass only an integer.</param>
+    ''' <param name="IVs">Get the IVs for the Pokemon. Pass as array.</param>
+    ''' 
+    ''' <param name="EVs">Get the EVs for the Pokemon. Pass as array.</param>
     ''' <returns>A formatted string that should be added to the output.</returns>
     Public Shared Function essentials17(ByVal pkmnName As String, ByVal heldItem As String, ByVal lvl As Integer,
                                    ByVal ability As String, ByVal pkmnGender As String, ByVal form As String,
                                    ByVal nature As String, ByVal happiness As Integer, ByVal nickname As String,
-                                   ByVal pokeBall As String, ByVal shiny As Boolean, ByVal shadow As Boolean,
-                                   ByVal ivHP As Integer, ByVal ivATK As Integer, ByVal ivDEF As Integer,
-                                   ByVal ivSPD As Integer, ByVal ivSPATK As Integer, ByVal ivSPDEF As Integer,
-                                   ByVal evHP As Integer, ByVal evATK As Integer, ByVal evDEF As Integer,
-                                   ByVal evSPD As Integer, ByVal evSPATK As Integer, ByVal evSPDEF As Integer)
+                                   ByVal pokeBall As String, ByVal shiny As Boolean,
+                                   ByVal shadow As Boolean, ByVal Moves As String(), ByVal IVs As Integer(),
+                                   ByVal EVs As Integer())
 
     End Function
 
