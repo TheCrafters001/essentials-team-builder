@@ -50,7 +50,9 @@ Partial Class Form1
         trainerName_lbl = New Label()
         trainerInfoHeader_lbl = New Label()
         pg_items = New TabPage()
+        trainerItemsHeader_lbl = New Label()
         items_grp = New GroupBox()
+        items_lst = New ListBox()
         pg_pokemon = New TabPage()
         pkmnTabs_tab = New TabControl()
         pg_pkmn1 = New TabPage()
@@ -432,7 +434,6 @@ Partial Class Form1
         aboutHeader_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
-        ListView1 = New ListView()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -788,6 +789,7 @@ Partial Class Form1
         ' 
         ' pg_items
         ' 
+        pg_items.Controls.Add(trainerItemsHeader_lbl)
         pg_items.Controls.Add(items_grp)
         pg_items.Location = New Point(4, 24)
         pg_items.Name = "pg_items"
@@ -797,15 +799,35 @@ Partial Class Form1
         pg_items.Text = "Items"
         pg_items.UseVisualStyleBackColor = True
         ' 
+        ' trainerItemsHeader_lbl
+        ' 
+        trainerItemsHeader_lbl.AutoSize = True
+        trainerItemsHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        trainerItemsHeader_lbl.Location = New Point(257, 6)
+        trainerItemsHeader_lbl.Name = "trainerItemsHeader_lbl"
+        trainerItemsHeader_lbl.Size = New Size(164, 32)
+        trainerItemsHeader_lbl.TabIndex = 1
+        trainerItemsHeader_lbl.Text = "Trainer Items"
+        ' 
         ' items_grp
         ' 
-        items_grp.Controls.Add(ListView1)
+        items_grp.Controls.Add(items_lst)
         items_grp.Location = New Point(6, 6)
         items_grp.Name = "items_grp"
         items_grp.Size = New Size(245, 261)
         items_grp.TabIndex = 0
         items_grp.TabStop = False
         items_grp.Text = "Items"
+        ' 
+        ' items_lst
+        ' 
+        items_lst.Dock = DockStyle.Fill
+        items_lst.FormattingEnabled = True
+        items_lst.ItemHeight = 15
+        items_lst.Location = New Point(3, 19)
+        items_lst.Name = "items_lst"
+        items_lst.Size = New Size(239, 239)
+        items_lst.TabIndex = 0
         ' 
         ' pg_pokemon
         ' 
@@ -4679,14 +4701,6 @@ Partial Class Form1
         GeneratePreviewToolStripMenuItem.Size = New Size(112, 20)
         GeneratePreviewToolStripMenuItem.Text = "Generate/Preview"
         ' 
-        ' ListView1
-        ' 
-        ListView1.Location = New Point(6, 22)
-        ListView1.Name = "ListView1"
-        ListView1.Size = New Size(233, 233)
-        ListView1.TabIndex = 0
-        ListView1.UseCompatibleStateImageBehavior = False
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
@@ -4707,6 +4721,7 @@ Partial Class Form1
         pg_basic.PerformLayout()
         CType(battleTeamID_nbr, ComponentModel.ISupportInitialize).EndInit()
         pg_items.ResumeLayout(False)
+        pg_items.PerformLayout()
         items_grp.ResumeLayout(False)
         pg_pokemon.ResumeLayout(False)
         pkmnTabs_tab.ResumeLayout(False)
@@ -5223,5 +5238,6 @@ Partial Class Form1
     Friend WithEvents pokemon6Happiness_nbr As NumericUpDown
     Friend WithEvents battleTeamID_nbr As NumericUpDown
     Friend WithEvents items_grp As GroupBox
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents items_lst As ListBox
+    Friend WithEvents trainerItemsHeader_lbl As Label
 End Class
