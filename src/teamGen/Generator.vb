@@ -135,12 +135,44 @@ Public Class Generator
     ''' <param name="EVs">Get the EVs for the Pokemon. Pass as array.</param>
     ''' <returns>A formatted string that should be added to the output.</returns>
     Public Shared Function essentials17(ByVal pkmnName As String, ByVal heldItem As String, ByVal lvl As Integer,
-                                   ByVal ability As String, ByVal pkmnGender As String, ByVal form As String,
+                                   ByVal ability As Integer, ByVal pkmnGender As Integer, ByVal form As String,
                                    ByVal nature As String, ByVal happiness As Integer, ByVal nickname As String,
-                                   ByVal pokeBall As String, ByVal shiny As Boolean,
-                                   ByVal shadow As Boolean, ByVal Moves As String(), ByVal IVs As Integer(),
-                                   ByVal EVs As Integer())
+                                   ByVal pokeBall As Integer, ByVal shiny As Boolean,
+                                   ByVal shadow As Boolean, ByVal Moves As String(), ByVal IVs As Integer)
+        Dim PKMN As New List(Of String)
 
+        Try
+            PKMN.Add(pkmnName.ToUpper)
+            PKMN.Add(lvl)
+            PKMN.Add(heldItem.ToUpper)
+            Dim validMoves As New List(Of String)
+            For Each move As String In Moves
+                If Not String.IsNullOrEmpty(move) AndAlso validMoves.Count < 4 Then
+                    validMoves.Add(move.ToUpper)
+                End If
+            Next
+            PKMN.Add(String.Join(",", validMoves))
+            PKMN.Add(ability)
+            PKMN.Add(pkmnGender)
+            PKMN.Add(form)
+            PKMN.Add(shiny)
+            PKMN.Add(nature.ToUpper)
+            PKMN.Add(happiness)
+            PKMN.Add(shadow)
+            PKMN.Add(pokeBall)
+
+
+            ' Output string.
+            ' This is to build everything into what is needed to output it correctly.
+            ' Please do not edit this unless making changes to the generator above
+            ' that require it to be edited. 
+        Catch ex As Exception
+            Return "There was an error processing the string." & ex.Message
+        End Try
+
+        Dim output As String = String.Join(",", PKMN)
+
+        Return output
     End Function
 
 
