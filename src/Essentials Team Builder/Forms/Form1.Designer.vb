@@ -50,6 +50,15 @@ Partial Class Form1
         trainerName_lbl = New Label()
         trainerInfoHeader_lbl = New Label()
         pg_items = New TabPage()
+        itemAddMaxElixir_btn = New Button()
+        itemAddElixir_btn = New Button()
+        itemAddMaxEther_btn = New Button()
+        itemAddEther_btn = New Button()
+        itemAddFullRestore_btn = New Button()
+        itemAddHyperPotion_btn = New Button()
+        itemAddMaxPotion_btn = New Button()
+        itemAddSuperPotion_btn = New Button()
+        itemAddPotion_btn = New Button()
         removeItem_btn = New Button()
         addItem_btn = New Button()
         trainerItemsInfo_lbl = New Label()
@@ -431,21 +440,14 @@ Partial Class Form1
         pokemon6NotShiny_rad = New RadioButton()
         pokemon6Form_lbl = New Label()
         pg_about = New TabPage()
+        thirdPartyLicenses_btn = New Button()
+        licenseText_lbl = New Label()
         PictureBox1 = New PictureBox()
         aboutInfo_lbl = New Label()
         copyright_lbl = New Label()
         aboutHeaderAuthor_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
-        itemAddPotion_btn = New Button()
-        itemAddSuperPotion_btn = New Button()
-        itemAddMaxPotion_btn = New Button()
-        itemAddHyperPotion_btn = New Button()
-        itemAddFullRestore_btn = New Button()
-        itemAddEther_btn = New Button()
-        itemAddMaxEther_btn = New Button()
-        itemAddMaxElixir_btn = New Button()
-        itemAddElixir_btn = New Button()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -616,7 +618,7 @@ Partial Class Form1
         ' 
         properSpellingNote_lbl.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         properSpellingNote_lbl.AutoSize = True
-        properSpellingNote_lbl.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        properSpellingNote_lbl.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         properSpellingNote_lbl.ForeColor = Color.Red
         properSpellingNote_lbl.Location = New Point(3, 428)
         properSpellingNote_lbl.Name = "properSpellingNote_lbl"
@@ -627,7 +629,7 @@ Partial Class Form1
         ' essData_lbl
         ' 
         essData_lbl.AutoSize = True
-        essData_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        essData_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         essData_lbl.Location = New Point(3, 132)
         essData_lbl.Name = "essData_lbl"
         essData_lbl.Size = New Size(184, 32)
@@ -793,7 +795,7 @@ Partial Class Form1
         ' trainerInfoHeader_lbl
         ' 
         trainerInfoHeader_lbl.AutoSize = True
-        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         trainerInfoHeader_lbl.Location = New Point(3, 0)
         trainerInfoHeader_lbl.Name = "trainerInfoHeader_lbl"
         trainerInfoHeader_lbl.Size = New Size(239, 32)
@@ -824,6 +826,87 @@ Partial Class Form1
         pg_items.Text = "Items"
         pg_items.UseVisualStyleBackColor = True
         ' 
+        ' itemAddMaxElixir_btn
+        ' 
+        itemAddMaxElixir_btn.Location = New Point(500, 198)
+        itemAddMaxElixir_btn.Name = "itemAddMaxElixir_btn"
+        itemAddMaxElixir_btn.Size = New Size(75, 47)
+        itemAddMaxElixir_btn.TabIndex = 13
+        itemAddMaxElixir_btn.Text = "Add Max Elixir"
+        itemAddMaxElixir_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddElixir_btn
+        ' 
+        itemAddElixir_btn.Location = New Point(257, 198)
+        itemAddElixir_btn.Name = "itemAddElixir_btn"
+        itemAddElixir_btn.Size = New Size(75, 47)
+        itemAddElixir_btn.TabIndex = 12
+        itemAddElixir_btn.Text = "Add Elixir"
+        itemAddElixir_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddMaxEther_btn
+        ' 
+        itemAddMaxEther_btn.Location = New Point(500, 145)
+        itemAddMaxEther_btn.Name = "itemAddMaxEther_btn"
+        itemAddMaxEther_btn.Size = New Size(75, 47)
+        itemAddMaxEther_btn.TabIndex = 11
+        itemAddMaxEther_btn.Text = "Add Max Ether"
+        itemAddMaxEther_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddEther_btn
+        ' 
+        itemAddEther_btn.Location = New Point(257, 145)
+        itemAddEther_btn.Name = "itemAddEther_btn"
+        itemAddEther_btn.Size = New Size(75, 47)
+        itemAddEther_btn.TabIndex = 10
+        itemAddEther_btn.Text = "Add Ether"
+        itemAddEther_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddFullRestore_btn
+        ' 
+        itemAddFullRestore_btn.Location = New Point(581, 92)
+        itemAddFullRestore_btn.Name = "itemAddFullRestore_btn"
+        itemAddFullRestore_btn.Size = New Size(75, 47)
+        itemAddFullRestore_btn.TabIndex = 9
+        itemAddFullRestore_btn.Text = "Add Full Restore"
+        itemAddFullRestore_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddHyperPotion_btn
+        ' 
+        itemAddHyperPotion_btn.Location = New Point(419, 92)
+        itemAddHyperPotion_btn.Name = "itemAddHyperPotion_btn"
+        itemAddHyperPotion_btn.Size = New Size(75, 47)
+        itemAddHyperPotion_btn.TabIndex = 8
+        itemAddHyperPotion_btn.Text = "Add Hyper Potion"
+        itemAddHyperPotion_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddMaxPotion_btn
+        ' 
+        itemAddMaxPotion_btn.Location = New Point(500, 92)
+        itemAddMaxPotion_btn.Name = "itemAddMaxPotion_btn"
+        itemAddMaxPotion_btn.Size = New Size(75, 47)
+        itemAddMaxPotion_btn.TabIndex = 7
+        itemAddMaxPotion_btn.Text = "Add Max Potion"
+        itemAddMaxPotion_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddSuperPotion_btn
+        ' 
+        itemAddSuperPotion_btn.Location = New Point(338, 92)
+        itemAddSuperPotion_btn.Name = "itemAddSuperPotion_btn"
+        itemAddSuperPotion_btn.Size = New Size(75, 47)
+        itemAddSuperPotion_btn.TabIndex = 6
+        itemAddSuperPotion_btn.Text = "Add Super Potion"
+        itemAddSuperPotion_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddPotion_btn
+        ' 
+        itemAddPotion_btn.Location = New Point(257, 92)
+        itemAddPotion_btn.Name = "itemAddPotion_btn"
+        itemAddPotion_btn.Size = New Size(75, 47)
+        itemAddPotion_btn.TabIndex = 5
+        itemAddPotion_btn.Text = "Add Potion"
+        itemAddPotion_btn.UseVisualStyleBackColor = True
+        ' 
         ' removeItem_btn
         ' 
         removeItem_btn.Location = New Point(3, 302)
@@ -853,7 +936,7 @@ Partial Class Form1
         ' trainerItemsHeader_lbl
         ' 
         trainerItemsHeader_lbl.AutoSize = True
-        trainerItemsHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        trainerItemsHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         trainerItemsHeader_lbl.Location = New Point(257, 6)
         trainerItemsHeader_lbl.Name = "trainerItemsHeader_lbl"
         trainerItemsHeader_lbl.Size = New Size(164, 32)
@@ -4689,6 +4772,8 @@ Partial Class Form1
         ' 
         ' pg_about
         ' 
+        pg_about.Controls.Add(thirdPartyLicenses_btn)
+        pg_about.Controls.Add(licenseText_lbl)
         pg_about.Controls.Add(PictureBox1)
         pg_about.Controls.Add(aboutInfo_lbl)
         pg_about.Controls.Add(copyright_lbl)
@@ -4699,6 +4784,23 @@ Partial Class Form1
         pg_about.TabIndex = 2
         pg_about.Text = "About"
         pg_about.UseVisualStyleBackColor = True
+        ' 
+        ' thirdPartyLicenses_btn
+        ' 
+        thirdPartyLicenses_btn.Location = New Point(513, 483)
+        thirdPartyLicenses_btn.Name = "thirdPartyLicenses_btn"
+        thirdPartyLicenses_btn.Size = New Size(227, 23)
+        thirdPartyLicenses_btn.TabIndex = 6
+        thirdPartyLicenses_btn.Text = "Third-Party Licenses"
+        thirdPartyLicenses_btn.UseVisualStyleBackColor = True
+        ' 
+        ' licenseText_lbl
+        ' 
+        licenseText_lbl.Location = New Point(3, 159)
+        licenseText_lbl.Name = "licenseText_lbl"
+        licenseText_lbl.Size = New Size(504, 335)
+        licenseText_lbl.TabIndex = 5
+        licenseText_lbl.Text = resources.GetString("licenseText_lbl.Text")
         ' 
         ' PictureBox1
         ' 
@@ -4752,90 +4854,9 @@ Partial Class Form1
         GeneratePreviewToolStripMenuItem.Size = New Size(112, 20)
         GeneratePreviewToolStripMenuItem.Text = "Generate/Preview"
         ' 
-        ' itemAddPotion_btn
-        ' 
-        itemAddPotion_btn.Location = New Point(257, 92)
-        itemAddPotion_btn.Name = "itemAddPotion_btn"
-        itemAddPotion_btn.Size = New Size(75, 47)
-        itemAddPotion_btn.TabIndex = 5
-        itemAddPotion_btn.Text = "Add Potion"
-        itemAddPotion_btn.UseVisualStyleBackColor = True
-        ' 
-        ' itemAddSuperPotion_btn
-        ' 
-        itemAddSuperPotion_btn.Location = New Point(338, 92)
-        itemAddSuperPotion_btn.Name = "itemAddSuperPotion_btn"
-        itemAddSuperPotion_btn.Size = New Size(75, 47)
-        itemAddSuperPotion_btn.TabIndex = 6
-        itemAddSuperPotion_btn.Text = "Add Super Potion"
-        itemAddSuperPotion_btn.UseVisualStyleBackColor = True
-        ' 
-        ' itemAddMaxPotion_btn
-        ' 
-        itemAddMaxPotion_btn.Location = New Point(500, 92)
-        itemAddMaxPotion_btn.Name = "itemAddMaxPotion_btn"
-        itemAddMaxPotion_btn.Size = New Size(75, 47)
-        itemAddMaxPotion_btn.TabIndex = 7
-        itemAddMaxPotion_btn.Text = "Add Max Potion"
-        itemAddMaxPotion_btn.UseVisualStyleBackColor = True
-        ' 
-        ' itemAddHyperPotion_btn
-        ' 
-        itemAddHyperPotion_btn.Location = New Point(419, 92)
-        itemAddHyperPotion_btn.Name = "itemAddHyperPotion_btn"
-        itemAddHyperPotion_btn.Size = New Size(75, 47)
-        itemAddHyperPotion_btn.TabIndex = 8
-        itemAddHyperPotion_btn.Text = "Add Hyper Potion"
-        itemAddHyperPotion_btn.UseVisualStyleBackColor = True
-        ' 
-        ' itemAddFullRestore_btn
-        ' 
-        itemAddFullRestore_btn.Location = New Point(581, 92)
-        itemAddFullRestore_btn.Name = "itemAddFullRestore_btn"
-        itemAddFullRestore_btn.Size = New Size(75, 47)
-        itemAddFullRestore_btn.TabIndex = 9
-        itemAddFullRestore_btn.Text = "Add Full Restore"
-        itemAddFullRestore_btn.UseVisualStyleBackColor = True
-        ' 
-        ' itemAddEther_btn
-        ' 
-        itemAddEther_btn.Location = New Point(257, 145)
-        itemAddEther_btn.Name = "itemAddEther_btn"
-        itemAddEther_btn.Size = New Size(75, 47)
-        itemAddEther_btn.TabIndex = 10
-        itemAddEther_btn.Text = "Add Ether"
-        itemAddEther_btn.UseVisualStyleBackColor = True
-        ' 
-        ' itemAddMaxEther_btn
-        ' 
-        itemAddMaxEther_btn.Location = New Point(500, 145)
-        itemAddMaxEther_btn.Name = "itemAddMaxEther_btn"
-        itemAddMaxEther_btn.Size = New Size(75, 47)
-        itemAddMaxEther_btn.TabIndex = 11
-        itemAddMaxEther_btn.Text = "Add Max Ether"
-        itemAddMaxEther_btn.UseVisualStyleBackColor = True
-        ' 
-        ' itemAddMaxElixir_btn
-        ' 
-        itemAddMaxElixir_btn.Location = New Point(500, 198)
-        itemAddMaxElixir_btn.Name = "itemAddMaxElixir_btn"
-        itemAddMaxElixir_btn.Size = New Size(75, 47)
-        itemAddMaxElixir_btn.TabIndex = 13
-        itemAddMaxElixir_btn.Text = "Add Max Elixir"
-        itemAddMaxElixir_btn.UseVisualStyleBackColor = True
-        ' 
-        ' itemAddElixir_btn
-        ' 
-        itemAddElixir_btn.Location = New Point(257, 198)
-        itemAddElixir_btn.Name = "itemAddElixir_btn"
-        itemAddElixir_btn.Size = New Size(75, 47)
-        itemAddElixir_btn.TabIndex = 12
-        itemAddElixir_btn.Text = "Add Elixir"
-        itemAddElixir_btn.UseVisualStyleBackColor = True
-        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(779, 595)
         Controls.Add(editor_grp)
@@ -4843,6 +4864,7 @@ Partial Class Form1
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MainMenuStrip = MenuStrip1
+        MaximizeBox = False
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Essentials Team Editor"
@@ -5386,4 +5408,6 @@ Partial Class Form1
     Friend WithEvents itemAddMaxElixir_btn As Button
     Friend WithEvents itemAddElixir_btn As Button
     Friend WithEvents itemAddMaxEther_btn As Button
+    Friend WithEvents licenseText_lbl As Label
+    Friend WithEvents thirdPartyLicenses_btn As Button
 End Class

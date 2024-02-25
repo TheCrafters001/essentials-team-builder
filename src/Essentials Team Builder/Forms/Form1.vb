@@ -1,4 +1,5 @@
-﻿Imports teamGen
+﻿Imports System.Windows.Controls.Primitives
+Imports teamGen
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -179,5 +180,26 @@ Public Class Form1
                 End If
             Next
         End If
+    End Sub
+
+    Private Sub addItem_btn_Click(sender As Object, e As EventArgs) Handles addItem_btn.Click
+        Dim Input As String = InputBox("Enter an Item Name", "Add Item")
+        AddItem(Input)
+    End Sub
+
+    Private Sub removeItem_btn_Click(sender As Object, e As EventArgs) Handles removeItem_btn.Click
+        items_lst.Items.Remove(items_lst.SelectedItem)
+    End Sub
+
+    Private Shared Sub AddItem(ByVal item As String)
+        If Form1.items_lst.Items.Count < 8 Then
+            Form1.items_lst.Items.Add(item)
+        ElseIf Form1.items_lst.Items.Count >= 8 Then
+            MessageBox.Show("You can only have 8 items max. Remove an item before adding a new one.", "Add Item", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+
+    Private Sub thirdPartyLicenses_btn_Click(sender As Object, e As EventArgs) Handles thirdPartyLicenses_btn.Click
+        ThirdPartyLicenses.Show()
     End Sub
 End Class
