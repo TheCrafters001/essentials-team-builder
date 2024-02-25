@@ -50,6 +50,9 @@ Partial Class Form1
         trainerName_lbl = New Label()
         trainerInfoHeader_lbl = New Label()
         pg_items = New TabPage()
+        removeItem_btn = New Button()
+        addItem_btn = New Button()
+        trainerItemsInfo_lbl = New Label()
         trainerItemsHeader_lbl = New Label()
         items_grp = New GroupBox()
         items_lst = New ListBox()
@@ -428,15 +431,12 @@ Partial Class Form1
         pokemon6NotShiny_rad = New RadioButton()
         pokemon6Form_lbl = New Label()
         pg_about = New TabPage()
+        PictureBox1 = New PictureBox()
         aboutInfo_lbl = New Label()
         copyright_lbl = New Label()
         aboutHeaderAuthor_lbl = New Label()
-        aboutHeader_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
-        trainerItemsInfo_lbl = New Label()
-        addItem_btn = New Button()
-        removeItem_btn = New Button()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -508,6 +508,7 @@ Partial Class Form1
         pokemon6Moves_grp.SuspendLayout()
         pokemon6Shiny_grp.SuspendLayout()
         pg_about.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -804,6 +805,32 @@ Partial Class Form1
         pg_items.TabIndex = 1
         pg_items.Text = "Items"
         pg_items.UseVisualStyleBackColor = True
+        ' 
+        ' removeItem_btn
+        ' 
+        removeItem_btn.Location = New Point(3, 302)
+        removeItem_btn.Name = "removeItem_btn"
+        removeItem_btn.Size = New Size(248, 23)
+        removeItem_btn.TabIndex = 4
+        removeItem_btn.Text = "Remove Item"
+        removeItem_btn.UseVisualStyleBackColor = True
+        ' 
+        ' addItem_btn
+        ' 
+        addItem_btn.Location = New Point(3, 273)
+        addItem_btn.Name = "addItem_btn"
+        addItem_btn.Size = New Size(248, 23)
+        addItem_btn.TabIndex = 3
+        addItem_btn.Text = "Add Item"
+        addItem_btn.UseVisualStyleBackColor = True
+        ' 
+        ' trainerItemsInfo_lbl
+        ' 
+        trainerItemsInfo_lbl.Location = New Point(257, 38)
+        trainerItemsInfo_lbl.Name = "trainerItemsInfo_lbl"
+        trainerItemsInfo_lbl.Size = New Size(466, 51)
+        trainerItemsInfo_lbl.TabIndex = 2
+        trainerItemsInfo_lbl.Text = resources.GetString("trainerItemsInfo_lbl.Text")
         ' 
         ' trainerItemsHeader_lbl
         ' 
@@ -4644,10 +4671,10 @@ Partial Class Form1
         ' 
         ' pg_about
         ' 
+        pg_about.Controls.Add(PictureBox1)
         pg_about.Controls.Add(aboutInfo_lbl)
         pg_about.Controls.Add(copyright_lbl)
         pg_about.Controls.Add(aboutHeaderAuthor_lbl)
-        pg_about.Controls.Add(aboutHeader_lbl)
         pg_about.Location = New Point(4, 24)
         pg_about.Name = "pg_about"
         pg_about.Size = New Size(743, 509)
@@ -4655,11 +4682,21 @@ Partial Class Form1
         pg_about.Text = "About"
         pg_about.UseVisualStyleBackColor = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.ETB_LOGO_FULL_BLACK
+        PictureBox1.Location = New Point(3, 6)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(300, 150)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 4
+        PictureBox1.TabStop = False
+        ' 
         ' aboutInfo_lbl
         ' 
-        aboutInfo_lbl.Location = New Point(3, 62)
+        aboutInfo_lbl.Location = New Point(309, 41)
         aboutInfo_lbl.Name = "aboutInfo_lbl"
-        aboutInfo_lbl.Size = New Size(737, 115)
+        aboutInfo_lbl.Size = New Size(431, 115)
         aboutInfo_lbl.TabIndex = 3
         aboutInfo_lbl.Text = resources.GetString("aboutInfo_lbl.Text")
         ' 
@@ -4676,21 +4713,11 @@ Partial Class Form1
         ' 
         aboutHeaderAuthor_lbl.AutoSize = True
         aboutHeaderAuthor_lbl.Font = New Font("Segoe UI", 15.75F)
-        aboutHeaderAuthor_lbl.Location = New Point(3, 32)
+        aboutHeaderAuthor_lbl.Location = New Point(309, 6)
         aboutHeaderAuthor_lbl.Name = "aboutHeaderAuthor_lbl"
         aboutHeaderAuthor_lbl.Size = New Size(180, 30)
         aboutHeaderAuthor_lbl.TabIndex = 1
         aboutHeaderAuthor_lbl.Text = "By TheCrafters001"
-        ' 
-        ' aboutHeader_lbl
-        ' 
-        aboutHeader_lbl.AutoSize = True
-        aboutHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
-        aboutHeader_lbl.Location = New Point(3, 0)
-        aboutHeader_lbl.Name = "aboutHeader_lbl"
-        aboutHeader_lbl.Size = New Size(280, 32)
-        aboutHeader_lbl.TabIndex = 0
-        aboutHeader_lbl.Text = "Essentials Team Builder"
         ' 
         ' MenuStrip1
         ' 
@@ -4707,32 +4734,6 @@ Partial Class Form1
         GeneratePreviewToolStripMenuItem.Size = New Size(112, 20)
         GeneratePreviewToolStripMenuItem.Text = "Generate/Preview"
         ' 
-        ' trainerItemsInfo_lbl
-        ' 
-        trainerItemsInfo_lbl.Location = New Point(257, 38)
-        trainerItemsInfo_lbl.Name = "trainerItemsInfo_lbl"
-        trainerItemsInfo_lbl.Size = New Size(466, 51)
-        trainerItemsInfo_lbl.TabIndex = 2
-        trainerItemsInfo_lbl.Text = resources.GetString("trainerItemsInfo_lbl.Text")
-        ' 
-        ' addItem_btn
-        ' 
-        addItem_btn.Location = New Point(3, 273)
-        addItem_btn.Name = "addItem_btn"
-        addItem_btn.Size = New Size(248, 23)
-        addItem_btn.TabIndex = 3
-        addItem_btn.Text = "Add Item"
-        addItem_btn.UseVisualStyleBackColor = True
-        ' 
-        ' removeItem_btn
-        ' 
-        removeItem_btn.Location = New Point(3, 302)
-        removeItem_btn.Name = "removeItem_btn"
-        removeItem_btn.Size = New Size(248, 23)
-        removeItem_btn.TabIndex = 4
-        removeItem_btn.Text = "Remove Item"
-        removeItem_btn.UseVisualStyleBackColor = True
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
@@ -4741,6 +4742,7 @@ Partial Class Form1
         Controls.Add(editor_grp)
         Controls.Add(MenuStrip1)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MainMenuStrip = MenuStrip1
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
@@ -4855,6 +4857,7 @@ Partial Class Form1
         pokemon6Shiny_grp.PerformLayout()
         pg_about.ResumeLayout(False)
         pg_about.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
         ResumeLayout(False)
@@ -4954,7 +4957,6 @@ Partial Class Form1
     Friend WithEvents pokemon1EVsHP_txt As TextBox
     Friend WithEvents pokemon1EVsHP_lbl As Label
     Friend WithEvents pg_about As TabPage
-    Friend WithEvents aboutHeader_lbl As Label
     Friend WithEvents copyright_lbl As Label
     Friend WithEvents aboutHeaderAuthor_lbl As Label
     Friend WithEvents aboutInfo_lbl As Label
@@ -5275,4 +5277,5 @@ Partial Class Form1
     Friend WithEvents trainerItemsInfo_lbl As Label
     Friend WithEvents removeItem_btn As Button
     Friend WithEvents addItem_btn As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
