@@ -3,11 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <RootNamespace>teamBuilderConsole</RootNamespace>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\teamGen\teamGen.vbproj" />
+    <ProjectReference Include="..\teamGen\TheCrafters001.TeamGen.vbproj" />
   </ItemGroup>
 
 </Project>

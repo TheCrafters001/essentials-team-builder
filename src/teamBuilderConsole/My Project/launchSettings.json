@@ -2,7 +2,7 @@
   "profiles": {
     "teamBuilderConsole": {
       "commandName": "Project",
-      "commandLineArgs": "18"
+      "commandLineArgs": "test"
     }
   }
 }
