@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="trainerItemsInfo_lbl.Text" xml:space="preserve">
+    <value>Here, you can set your trainers' items. You can add and/or remove them here. You can only have a maximum of 8 items per trainer (per Pokémon Essentials Limitation)
+Use the buttons below or click the Add button to add your own item.</value>
+  </data>
   <data name="aboutInfo_lbl.Text" xml:space="preserve">
     <value>The EASY Way to Build a Team.
 This tool is free and open-source. It is built so you can build your own teams in the Pokemon Essentials game engine!

@@ -434,6 +434,9 @@ Partial Class Form1
         aboutHeader_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
+        trainerItemsInfo_lbl = New Label()
+        addItem_btn = New Button()
+        removeItem_btn = New Button()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -789,6 +792,9 @@ Partial Class Form1
         ' 
         ' pg_items
         ' 
+        pg_items.Controls.Add(removeItem_btn)
+        pg_items.Controls.Add(addItem_btn)
+        pg_items.Controls.Add(trainerItemsInfo_lbl)
         pg_items.Controls.Add(trainerItemsHeader_lbl)
         pg_items.Controls.Add(items_grp)
         pg_items.Location = New Point(4, 24)
@@ -4701,6 +4707,32 @@ Partial Class Form1
         GeneratePreviewToolStripMenuItem.Size = New Size(112, 20)
         GeneratePreviewToolStripMenuItem.Text = "Generate/Preview"
         ' 
+        ' trainerItemsInfo_lbl
+        ' 
+        trainerItemsInfo_lbl.Location = New Point(257, 38)
+        trainerItemsInfo_lbl.Name = "trainerItemsInfo_lbl"
+        trainerItemsInfo_lbl.Size = New Size(466, 51)
+        trainerItemsInfo_lbl.TabIndex = 2
+        trainerItemsInfo_lbl.Text = resources.GetString("trainerItemsInfo_lbl.Text")
+        ' 
+        ' addItem_btn
+        ' 
+        addItem_btn.Location = New Point(3, 273)
+        addItem_btn.Name = "addItem_btn"
+        addItem_btn.Size = New Size(248, 23)
+        addItem_btn.TabIndex = 3
+        addItem_btn.Text = "Add Item"
+        addItem_btn.UseVisualStyleBackColor = True
+        ' 
+        ' removeItem_btn
+        ' 
+        removeItem_btn.Location = New Point(3, 302)
+        removeItem_btn.Name = "removeItem_btn"
+        removeItem_btn.Size = New Size(248, 23)
+        removeItem_btn.TabIndex = 4
+        removeItem_btn.Text = "Remove Item"
+        removeItem_btn.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
@@ -5240,4 +5272,7 @@ Partial Class Form1
     Friend WithEvents items_grp As GroupBox
     Friend WithEvents items_lst As ListBox
     Friend WithEvents trainerItemsHeader_lbl As Label
+    Friend WithEvents trainerItemsInfo_lbl As Label
+    Friend WithEvents removeItem_btn As Button
+    Friend WithEvents addItem_btn As Button
 End Class
