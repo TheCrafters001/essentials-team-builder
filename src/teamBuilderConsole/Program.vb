@@ -3,7 +3,7 @@ Imports teamGen
 Module Program
     Sub Main(args As String())
         If args(0) = "test" Then
-            Console.WriteLine(Generator.essentials18("Bulbasaur", "", 12, "Ability", "Male", "1", "Nature", 255, "NickName", "PokeBall", True, False, False, {"Move1", "Move2"}, {0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0}))
+            Console.WriteLine(Generator.essentials18("Bulbasaur", "", 5, "Overgrow", "male", 0, "Nature", 256, "Nickname", "PokeBall", False, False, False, {"move1", "move2", "Move3", "move4"}, {1, 2, 3, 4, 5, 6}, {7, 8, 9, 10, 11, 12}))
             Console.WriteLine("Test Success!")
         ElseIf args.Count < 24 Then
             Help()
@@ -27,6 +27,6 @@ Module Program
     End Sub
 
     Private Sub Help()
-
+        Console.Write("AAAAAAAAAAAAAAAAAAAAAA")
     End Sub
 End Module

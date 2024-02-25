@@ -1,0 +1,18 @@
+﻿[TYPE,Name,ID]
+Items = ITEM,ITEM2,ITEM3,ITEM4,ITEM5,ITEM6,ITEM7,ITEM8
+LoseText = "Lose Text"
+# If Essentials 20, don't use quotes for lose text.
+Pokemon = PKMN1,LVL
+    Name = NickName
+    Form = FormID
+    Gender = GENDER
+    Shiny = YESNO
+    Shadow = YESNO
+    Moves = MOVE,MOVE2,MOVE3,MOVE4
+    Ability = NUMBER (Between 0-5)
+    Item = HELDITEM
+    Nature = NATURE
+    IV = HP,ATK,DEF,SPD,SPATK,SPDEF
+    EV = HP,ATK,DEF,SPD,SPATK,SPDEF
+    Happiness = NUMBER (1-255)
+    Ball = ID (0-25)

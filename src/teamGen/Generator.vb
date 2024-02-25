@@ -1,3 +1,5 @@
+Imports System.CodeDom.Compiler
+
 Public Class Generator
 
     ''' <summary>
@@ -44,20 +46,41 @@ Public Class Generator
         Dim name As String = If(Not String.IsNullOrEmpty(nickname), Indent & "Nickname = " & nickname & vbCrLf, "")
 
         ' Item = heldItem
-        Dim item As String = ""
-            If Not heldItem = "" Then
-                item = Indent & "Item = " & heldItem.ToUpper & vbCrLf
-            End If
+        Dim item As String = If(Not String.IsNullOrEmpty(heldItem), Indent & "Item = " & heldItem & vbCrLf, "")
 
-            ' Gender = pkmnGender
-            Dim gender As String = ""
-            If pkmnGender = "Random" Then
-                gender = ""
-            Else
-                gender = Indent & "Gender = " & pkmnGender & vbCrLf
-            End If
+        ' Gender = pkmnGender
+        Dim gender As String = If(pkmnGender <> "Random", Indent & "Gender = " & pkmnGender & vbCrLf, "")
 
-            output = pkmn & pkmnForm & name & gender & item
+        ' Ability = ability
+        Dim PKMNAbility As String = If(Not String.IsNullOrEmpty(ability), Indent & "Item = " & ability & vbCrLf, "")
+
+        ' Moves = Move1,Move2,Move3,Move4
+        Dim MoveString As String = ""
+        Dim validMoves As New List(Of String)
+        For Each move As String In Moves
+            If Not String.IsNullOrEmpty(move) AndAlso validMoves.Count < 4 Then
+                validMoves.Add(move)
+            End If
+        Next
+
+        ' Print MoveString
+        If validMoves.Count > 0 Then
+            MoveString = Indent & "Moves = " & String.Join(",", validMoves) & vbCrLf
+        Else
+            Return "Failed to get moves. Make sure they are a part of an array."
+        End If
+
+        'IV = HP,ATK,DEF,SPD,SPATK,SPDEF
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''''''HP,ATK,DEF,SPD,SPATK,SPDEF
+        Dim IVsString As String = String.Format(Indent & "IV = {0},{1},{2},{3},{4},{5}" & vbCrLf,
+                                                IVs(0), IVs(1), IVs(2), IVs(3), IVs(4), IVs(5))
+
+        'EV = HP,ATK,DEF,SPD,SPATK,SPDEF
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''''''HP,ATK,DEF,SPD,SPATK,SPDEF
+        Dim EVsString As String = String.Format(Indent & "EV = {0},{1},{2},{3},{4},{5}" & vbCrLf,
+                                                EVs(0), EVs(1), EVs(2), EVs(3), EVs(4), EVs(5))
+
+        output = pkmn & pkmnForm & name & gender & item & PKMNAbility & MoveString & EVsString & IVsString
 
         Return output
     End Function

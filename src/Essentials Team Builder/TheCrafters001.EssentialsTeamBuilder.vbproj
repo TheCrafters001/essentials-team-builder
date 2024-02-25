@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\teamBuilderConsole\teamBuilderConsole.vbproj" />
-    <ProjectReference Include="..\teamGen\teamGen.vbproj" />
+    <ProjectReference Include="..\teamBuilderConsole\TheCrafters001.teamBuilderConsole.vbproj" />
+    <ProjectReference Include="..\teamGen\TheCrafters001.TeamGen.vbproj" />
   </ItemGroup>
 
   <ItemGroup>
