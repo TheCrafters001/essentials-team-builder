@@ -9,16 +9,35 @@
     <MyType>WindowsForms</MyType>
     <Authors>TheCrafters001</Authors>
     <Company />
-    <Copyright>Copyright © TheCrafters001 2023</Copyright>
+    <Copyright>Copyright © TheCrafters001 2024</Copyright>
     <Version>4.0.0</Version>
     <PackageId>$(AssemblyName)</PackageId>
     <Title></Title>
+    <PackageProjectUrl>https://github.com/TheCrafters001/essentials-team-builder</PackageProjectUrl>
+    <PackageIcon>ETB_LOGO.png</PackageIcon>
+    <RepositoryUrl>https://github.com/TheCrafters001/essentials-team-builder</RepositoryUrl>
+    <ApplicationIcon>ETB_LOGO_ICON.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="ETB_LOGO_ICON.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\logo\ETB_LOGO.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autoupdater.NET.Official" Version="1.8.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,11 +51,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Update="My Project\Settings.Designer.vb">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

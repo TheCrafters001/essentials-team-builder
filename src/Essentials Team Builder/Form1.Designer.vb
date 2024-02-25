@@ -28,6 +28,7 @@ Partial Class Form1
         pg_trainer = New TabPage()
         trainer_tab = New TabControl()
         pg_basic = New TabPage()
+        battleTeamID_nbr = New NumericUpDown()
         Label2 = New Label()
         properSpellingNote_lbl = New Label()
         essData_lbl = New Label()
@@ -49,8 +50,14 @@ Partial Class Form1
         trainerName_lbl = New Label()
         trainerInfoHeader_lbl = New Label()
         pg_items = New TabPage()
+        removeItem_btn = New Button()
+        addItem_btn = New Button()
+        trainerItemsInfo_lbl = New Label()
+        trainerItemsHeader_lbl = New Label()
+        items_grp = New GroupBox()
+        items_lst = New ListBox()
         pg_pokemon = New TabPage()
-        TabControl3 = New TabControl()
+        pkmnTabs_tab = New TabControl()
         pg_pkmn1 = New TabPage()
         pokemon1_grp = New GroupBox()
         pokemon1Level_nbr = New NumericUpDown()
@@ -123,18 +130,18 @@ Partial Class Form1
         pokemon2NotShadow_rad = New RadioButton()
         pokemon2Name_lbl = New Label()
         pokemon2EVs_grp = New GroupBox()
-        TextBox1 = New TextBox()
-        Label1 = New Label()
-        TextBox2 = New TextBox()
-        Label3 = New Label()
-        TextBox3 = New TextBox()
-        Label4 = New Label()
-        TextBox4 = New TextBox()
-        Label5 = New Label()
-        TextBox5 = New TextBox()
-        Label6 = New Label()
-        TextBox6 = New TextBox()
-        Label7 = New Label()
+        pokemon2EVsDEF_txt = New TextBox()
+        pokemon2EVsDEF_lbl = New Label()
+        pokemon2EVsSPDEF_txt = New TextBox()
+        pokemon2EVsSPDEF_lbl = New Label()
+        pokemon2EVsSPATK_txt = New TextBox()
+        pokemon2EVsSPATK_lbl = New Label()
+        pokemon2EVsSPD_txt = New TextBox()
+        pokemon2EVsSPD_lbl = New Label()
+        pokemon2EVsATK_txt = New TextBox()
+        pokemon2EVsATK_lbl = New Label()
+        pokemon2EVsHP_txt = New TextBox()
+        pokemon2EVsHP_lbl = New Label()
         pokemon2Name_txt = New TextBox()
         pokemon2IVs_grp = New GroupBox()
         pokemon2RandomIVs_btn = New Button()
@@ -424,20 +431,31 @@ Partial Class Form1
         pokemon6NotShiny_rad = New RadioButton()
         pokemon6Form_lbl = New Label()
         pg_about = New TabPage()
+        PictureBox1 = New PictureBox()
         aboutInfo_lbl = New Label()
         copyright_lbl = New Label()
         aboutHeaderAuthor_lbl = New Label()
-        aboutHeader_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
-        battleTeamID_nbr = New NumericUpDown()
+        itemAddPotion_btn = New Button()
+        itemAddSuperPotion_btn = New Button()
+        itemAddMaxPotion_btn = New Button()
+        itemAddHyperPotion_btn = New Button()
+        itemAddFullRestore_btn = New Button()
+        itemAddEther_btn = New Button()
+        itemAddMaxEther_btn = New Button()
+        itemAddMaxElixir_btn = New Button()
+        itemAddElixir_btn = New Button()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
         trainer_tab.SuspendLayout()
         pg_basic.SuspendLayout()
+        CType(battleTeamID_nbr, ComponentModel.ISupportInitialize).BeginInit()
+        pg_items.SuspendLayout()
+        items_grp.SuspendLayout()
         pg_pokemon.SuspendLayout()
-        TabControl3.SuspendLayout()
+        pkmnTabs_tab.SuspendLayout()
         pg_pkmn1.SuspendLayout()
         pokemon1_grp.SuspendLayout()
         CType(pokemon1Level_nbr, ComponentModel.ISupportInitialize).BeginInit()
@@ -499,8 +517,8 @@ Partial Class Form1
         pokemon6Moves_grp.SuspendLayout()
         pokemon6Shiny_grp.SuspendLayout()
         pg_about.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
-        CType(battleTeamID_nbr, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' editor_grp
@@ -577,6 +595,15 @@ Partial Class Form1
         pg_basic.Text = "Basic Info"
         pg_basic.UseVisualStyleBackColor = True
         ' 
+        ' battleTeamID_nbr
+        ' 
+        battleTeamID_nbr.Enabled = False
+        battleTeamID_nbr.Location = New Point(8, 94)
+        battleTeamID_nbr.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        battleTeamID_nbr.Name = "battleTeamID_nbr"
+        battleTeamID_nbr.Size = New Size(168, 23)
+        battleTeamID_nbr.TabIndex = 32
+        ' 
         ' Label2
         ' 
         Label2.Location = New Point(3, 443)
@@ -589,7 +616,7 @@ Partial Class Form1
         ' 
         properSpellingNote_lbl.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         properSpellingNote_lbl.AutoSize = True
-        properSpellingNote_lbl.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        properSpellingNote_lbl.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
         properSpellingNote_lbl.ForeColor = Color.Red
         properSpellingNote_lbl.Location = New Point(3, 428)
         properSpellingNote_lbl.Name = "properSpellingNote_lbl"
@@ -600,7 +627,7 @@ Partial Class Form1
         ' essData_lbl
         ' 
         essData_lbl.AutoSize = True
-        essData_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        essData_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
         essData_lbl.Location = New Point(3, 132)
         essData_lbl.Name = "essData_lbl"
         essData_lbl.Size = New Size(184, 32)
@@ -766,7 +793,7 @@ Partial Class Form1
         ' trainerInfoHeader_lbl
         ' 
         trainerInfoHeader_lbl.AutoSize = True
-        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        trainerInfoHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
         trainerInfoHeader_lbl.Location = New Point(3, 0)
         trainerInfoHeader_lbl.Name = "trainerInfoHeader_lbl"
         trainerInfoHeader_lbl.Size = New Size(239, 32)
@@ -775,6 +802,20 @@ Partial Class Form1
         ' 
         ' pg_items
         ' 
+        pg_items.Controls.Add(itemAddMaxElixir_btn)
+        pg_items.Controls.Add(itemAddElixir_btn)
+        pg_items.Controls.Add(itemAddMaxEther_btn)
+        pg_items.Controls.Add(itemAddEther_btn)
+        pg_items.Controls.Add(itemAddFullRestore_btn)
+        pg_items.Controls.Add(itemAddHyperPotion_btn)
+        pg_items.Controls.Add(itemAddMaxPotion_btn)
+        pg_items.Controls.Add(itemAddSuperPotion_btn)
+        pg_items.Controls.Add(itemAddPotion_btn)
+        pg_items.Controls.Add(removeItem_btn)
+        pg_items.Controls.Add(addItem_btn)
+        pg_items.Controls.Add(trainerItemsInfo_lbl)
+        pg_items.Controls.Add(trainerItemsHeader_lbl)
+        pg_items.Controls.Add(items_grp)
         pg_items.Location = New Point(4, 24)
         pg_items.Name = "pg_items"
         pg_items.Padding = New Padding(3)
@@ -783,9 +824,65 @@ Partial Class Form1
         pg_items.Text = "Items"
         pg_items.UseVisualStyleBackColor = True
         ' 
+        ' removeItem_btn
+        ' 
+        removeItem_btn.Location = New Point(3, 302)
+        removeItem_btn.Name = "removeItem_btn"
+        removeItem_btn.Size = New Size(248, 23)
+        removeItem_btn.TabIndex = 4
+        removeItem_btn.Text = "Remove Item"
+        removeItem_btn.UseVisualStyleBackColor = True
+        ' 
+        ' addItem_btn
+        ' 
+        addItem_btn.Location = New Point(3, 273)
+        addItem_btn.Name = "addItem_btn"
+        addItem_btn.Size = New Size(248, 23)
+        addItem_btn.TabIndex = 3
+        addItem_btn.Text = "Add Item"
+        addItem_btn.UseVisualStyleBackColor = True
+        ' 
+        ' trainerItemsInfo_lbl
+        ' 
+        trainerItemsInfo_lbl.Location = New Point(257, 38)
+        trainerItemsInfo_lbl.Name = "trainerItemsInfo_lbl"
+        trainerItemsInfo_lbl.Size = New Size(466, 51)
+        trainerItemsInfo_lbl.TabIndex = 2
+        trainerItemsInfo_lbl.Text = resources.GetString("trainerItemsInfo_lbl.Text")
+        ' 
+        ' trainerItemsHeader_lbl
+        ' 
+        trainerItemsHeader_lbl.AutoSize = True
+        trainerItemsHeader_lbl.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        trainerItemsHeader_lbl.Location = New Point(257, 6)
+        trainerItemsHeader_lbl.Name = "trainerItemsHeader_lbl"
+        trainerItemsHeader_lbl.Size = New Size(164, 32)
+        trainerItemsHeader_lbl.TabIndex = 1
+        trainerItemsHeader_lbl.Text = "Trainer Items"
+        ' 
+        ' items_grp
+        ' 
+        items_grp.Controls.Add(items_lst)
+        items_grp.Location = New Point(6, 6)
+        items_grp.Name = "items_grp"
+        items_grp.Size = New Size(245, 261)
+        items_grp.TabIndex = 0
+        items_grp.TabStop = False
+        items_grp.Text = "Items"
+        ' 
+        ' items_lst
+        ' 
+        items_lst.Dock = DockStyle.Fill
+        items_lst.FormattingEnabled = True
+        items_lst.ItemHeight = 15
+        items_lst.Location = New Point(3, 19)
+        items_lst.Name = "items_lst"
+        items_lst.Size = New Size(239, 239)
+        items_lst.TabIndex = 0
+        ' 
         ' pg_pokemon
         ' 
-        pg_pokemon.Controls.Add(TabControl3)
+        pg_pokemon.Controls.Add(pkmnTabs_tab)
         pg_pokemon.Location = New Point(4, 24)
         pg_pokemon.Name = "pg_pokemon"
         pg_pokemon.Padding = New Padding(3)
@@ -794,21 +891,21 @@ Partial Class Form1
         pg_pokemon.Text = "Pokémon"
         pg_pokemon.UseVisualStyleBackColor = True
         ' 
-        ' TabControl3
+        ' pkmnTabs_tab
         ' 
-        TabControl3.Controls.Add(pg_pkmn1)
-        TabControl3.Controls.Add(pg_pkmn2)
-        TabControl3.Controls.Add(pg_pkmn3)
-        TabControl3.Controls.Add(pg_pkmn4)
-        TabControl3.Controls.Add(pg_pkmn5)
-        TabControl3.Controls.Add(pg_pkmn6)
-        TabControl3.Dock = DockStyle.Fill
-        TabControl3.Location = New Point(3, 3)
-        TabControl3.Multiline = True
-        TabControl3.Name = "TabControl3"
-        TabControl3.SelectedIndex = 0
-        TabControl3.Size = New Size(737, 503)
-        TabControl3.TabIndex = 0
+        pkmnTabs_tab.Controls.Add(pg_pkmn1)
+        pkmnTabs_tab.Controls.Add(pg_pkmn2)
+        pkmnTabs_tab.Controls.Add(pg_pkmn3)
+        pkmnTabs_tab.Controls.Add(pg_pkmn4)
+        pkmnTabs_tab.Controls.Add(pg_pkmn5)
+        pkmnTabs_tab.Controls.Add(pg_pkmn6)
+        pkmnTabs_tab.Dock = DockStyle.Fill
+        pkmnTabs_tab.Location = New Point(3, 3)
+        pkmnTabs_tab.Multiline = True
+        pkmnTabs_tab.Name = "pkmnTabs_tab"
+        pkmnTabs_tab.SelectedIndex = 0
+        pkmnTabs_tab.Size = New Size(737, 503)
+        pkmnTabs_tab.TabIndex = 0
         ' 
         ' pg_pkmn1
         ' 
@@ -1556,18 +1653,18 @@ Partial Class Form1
         ' 
         ' pokemon2EVs_grp
         ' 
-        pokemon2EVs_grp.Controls.Add(TextBox1)
-        pokemon2EVs_grp.Controls.Add(Label1)
-        pokemon2EVs_grp.Controls.Add(TextBox2)
-        pokemon2EVs_grp.Controls.Add(Label3)
-        pokemon2EVs_grp.Controls.Add(TextBox3)
-        pokemon2EVs_grp.Controls.Add(Label4)
-        pokemon2EVs_grp.Controls.Add(TextBox4)
-        pokemon2EVs_grp.Controls.Add(Label5)
-        pokemon2EVs_grp.Controls.Add(TextBox5)
-        pokemon2EVs_grp.Controls.Add(Label6)
-        pokemon2EVs_grp.Controls.Add(TextBox6)
-        pokemon2EVs_grp.Controls.Add(Label7)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsDEF_txt)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsDEF_lbl)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsSPDEF_txt)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsSPDEF_lbl)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsSPATK_txt)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsSPATK_lbl)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsSPD_txt)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsSPD_lbl)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsATK_txt)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsATK_lbl)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsHP_txt)
+        pokemon2EVs_grp.Controls.Add(pokemon2EVsHP_lbl)
         pokemon2EVs_grp.Location = New Point(324, 154)
         pokemon2EVs_grp.Name = "pokemon2EVs_grp"
         pokemon2EVs_grp.Size = New Size(114, 156)
@@ -1575,113 +1672,113 @@ Partial Class Form1
         pokemon2EVs_grp.TabStop = False
         pokemon2EVs_grp.Text = "EVs"
         ' 
-        ' TextBox1
+        ' pokemon2EVsDEF_txt
         ' 
-        TextBox1.Location = New Point(6, 125)
-        TextBox1.MaxLength = 3
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(44, 23)
-        TextBox1.TabIndex = 11
-        TextBox1.Text = "0"
+        pokemon2EVsDEF_txt.Location = New Point(6, 125)
+        pokemon2EVsDEF_txt.MaxLength = 3
+        pokemon2EVsDEF_txt.Name = "pokemon2EVsDEF_txt"
+        pokemon2EVsDEF_txt.Size = New Size(44, 23)
+        pokemon2EVsDEF_txt.TabIndex = 11
+        pokemon2EVsDEF_txt.Text = "0"
         ' 
-        ' Label1
+        ' pokemon2EVsDEF_lbl
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(14, 107)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(27, 15)
-        Label1.TabIndex = 10
-        Label1.Text = "DEF"
+        pokemon2EVsDEF_lbl.AutoSize = True
+        pokemon2EVsDEF_lbl.Location = New Point(14, 107)
+        pokemon2EVsDEF_lbl.Name = "pokemon2EVsDEF_lbl"
+        pokemon2EVsDEF_lbl.Size = New Size(27, 15)
+        pokemon2EVsDEF_lbl.TabIndex = 10
+        pokemon2EVsDEF_lbl.Text = "DEF"
         ' 
-        ' TextBox2
+        ' pokemon2EVsSPDEF_txt
         ' 
-        TextBox2.Location = New Point(55, 125)
-        TextBox2.MaxLength = 3
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(44, 23)
-        TextBox2.TabIndex = 9
-        TextBox2.Text = "0"
+        pokemon2EVsSPDEF_txt.Location = New Point(55, 125)
+        pokemon2EVsSPDEF_txt.MaxLength = 3
+        pokemon2EVsSPDEF_txt.Name = "pokemon2EVsSPDEF_txt"
+        pokemon2EVsSPDEF_txt.Size = New Size(44, 23)
+        pokemon2EVsSPDEF_txt.TabIndex = 9
+        pokemon2EVsSPDEF_txt.Text = "0"
         ' 
-        ' Label3
+        ' pokemon2EVsSPDEF_lbl
         ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(55, 109)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(40, 15)
-        Label3.TabIndex = 8
-        Label3.Text = "SPDEF"
+        pokemon2EVsSPDEF_lbl.AutoSize = True
+        pokemon2EVsSPDEF_lbl.Location = New Point(55, 109)
+        pokemon2EVsSPDEF_lbl.Name = "pokemon2EVsSPDEF_lbl"
+        pokemon2EVsSPDEF_lbl.Size = New Size(40, 15)
+        pokemon2EVsSPDEF_lbl.TabIndex = 8
+        pokemon2EVsSPDEF_lbl.Text = "SPDEF"
         ' 
-        ' TextBox3
+        ' pokemon2EVsSPATK_txt
         ' 
-        TextBox3.Location = New Point(55, 81)
-        TextBox3.MaxLength = 3
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(44, 23)
-        TextBox3.TabIndex = 7
-        TextBox3.Text = "0"
+        pokemon2EVsSPATK_txt.Location = New Point(55, 81)
+        pokemon2EVsSPATK_txt.MaxLength = 3
+        pokemon2EVsSPATK_txt.Name = "pokemon2EVsSPATK_txt"
+        pokemon2EVsSPATK_txt.Size = New Size(44, 23)
+        pokemon2EVsSPATK_txt.TabIndex = 7
+        pokemon2EVsSPATK_txt.Text = "0"
         ' 
-        ' Label4
+        ' pokemon2EVsSPATK_lbl
         ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(56, 65)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(39, 15)
-        Label4.TabIndex = 6
-        Label4.Text = "SPATK"
+        pokemon2EVsSPATK_lbl.AutoSize = True
+        pokemon2EVsSPATK_lbl.Location = New Point(56, 65)
+        pokemon2EVsSPATK_lbl.Name = "pokemon2EVsSPATK_lbl"
+        pokemon2EVsSPATK_lbl.Size = New Size(39, 15)
+        pokemon2EVsSPATK_lbl.TabIndex = 6
+        pokemon2EVsSPATK_lbl.Text = "SPATK"
         ' 
-        ' TextBox4
+        ' pokemon2EVsSPD_txt
         ' 
-        TextBox4.Location = New Point(55, 37)
-        TextBox4.MaxLength = 3
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(44, 23)
-        TextBox4.TabIndex = 5
-        TextBox4.Text = "0"
+        pokemon2EVsSPD_txt.Location = New Point(55, 37)
+        pokemon2EVsSPD_txt.MaxLength = 3
+        pokemon2EVsSPD_txt.Name = "pokemon2EVsSPD_txt"
+        pokemon2EVsSPD_txt.Size = New Size(44, 23)
+        pokemon2EVsSPD_txt.TabIndex = 5
+        pokemon2EVsSPD_txt.Text = "0"
         ' 
-        ' Label5
+        ' pokemon2EVsSPD_lbl
         ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(63, 21)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(28, 15)
-        Label5.TabIndex = 4
-        Label5.Text = "SPD"
+        pokemon2EVsSPD_lbl.AutoSize = True
+        pokemon2EVsSPD_lbl.Location = New Point(63, 21)
+        pokemon2EVsSPD_lbl.Name = "pokemon2EVsSPD_lbl"
+        pokemon2EVsSPD_lbl.Size = New Size(28, 15)
+        pokemon2EVsSPD_lbl.TabIndex = 4
+        pokemon2EVsSPD_lbl.Text = "SPD"
         ' 
-        ' TextBox5
+        ' pokemon2EVsATK_txt
         ' 
-        TextBox5.Location = New Point(6, 81)
-        TextBox5.MaxLength = 3
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(44, 23)
-        TextBox5.TabIndex = 3
-        TextBox5.Text = "0"
+        pokemon2EVsATK_txt.Location = New Point(6, 81)
+        pokemon2EVsATK_txt.MaxLength = 3
+        pokemon2EVsATK_txt.Name = "pokemon2EVsATK_txt"
+        pokemon2EVsATK_txt.Size = New Size(44, 23)
+        pokemon2EVsATK_txt.TabIndex = 3
+        pokemon2EVsATK_txt.Text = "0"
         ' 
-        ' Label6
+        ' pokemon2EVsATK_lbl
         ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(14, 63)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(27, 15)
-        Label6.TabIndex = 2
-        Label6.Text = "ATK"
+        pokemon2EVsATK_lbl.AutoSize = True
+        pokemon2EVsATK_lbl.Location = New Point(14, 63)
+        pokemon2EVsATK_lbl.Name = "pokemon2EVsATK_lbl"
+        pokemon2EVsATK_lbl.Size = New Size(27, 15)
+        pokemon2EVsATK_lbl.TabIndex = 2
+        pokemon2EVsATK_lbl.Text = "ATK"
         ' 
-        ' TextBox6
+        ' pokemon2EVsHP_txt
         ' 
-        TextBox6.Location = New Point(6, 37)
-        TextBox6.MaxLength = 3
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(44, 23)
-        TextBox6.TabIndex = 1
-        TextBox6.Text = "0"
+        pokemon2EVsHP_txt.Location = New Point(6, 37)
+        pokemon2EVsHP_txt.MaxLength = 3
+        pokemon2EVsHP_txt.Name = "pokemon2EVsHP_txt"
+        pokemon2EVsHP_txt.Size = New Size(44, 23)
+        pokemon2EVsHP_txt.TabIndex = 1
+        pokemon2EVsHP_txt.Text = "0"
         ' 
-        ' Label7
+        ' pokemon2EVsHP_lbl
         ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(16, 19)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(23, 15)
-        Label7.TabIndex = 0
-        Label7.Text = "HP"
+        pokemon2EVsHP_lbl.AutoSize = True
+        pokemon2EVsHP_lbl.Location = New Point(16, 19)
+        pokemon2EVsHP_lbl.Name = "pokemon2EVsHP_lbl"
+        pokemon2EVsHP_lbl.Size = New Size(23, 15)
+        pokemon2EVsHP_lbl.TabIndex = 0
+        pokemon2EVsHP_lbl.Text = "HP"
         ' 
         ' pokemon2Name_txt
         ' 
@@ -4592,10 +4689,10 @@ Partial Class Form1
         ' 
         ' pg_about
         ' 
+        pg_about.Controls.Add(PictureBox1)
         pg_about.Controls.Add(aboutInfo_lbl)
         pg_about.Controls.Add(copyright_lbl)
         pg_about.Controls.Add(aboutHeaderAuthor_lbl)
-        pg_about.Controls.Add(aboutHeader_lbl)
         pg_about.Location = New Point(4, 24)
         pg_about.Name = "pg_about"
         pg_about.Size = New Size(743, 509)
@@ -4603,11 +4700,21 @@ Partial Class Form1
         pg_about.Text = "About"
         pg_about.UseVisualStyleBackColor = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.ETB_LOGO_FULL_BLACK
+        PictureBox1.Location = New Point(3, 6)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(300, 150)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 4
+        PictureBox1.TabStop = False
+        ' 
         ' aboutInfo_lbl
         ' 
-        aboutInfo_lbl.Location = New Point(3, 62)
+        aboutInfo_lbl.Location = New Point(309, 41)
         aboutInfo_lbl.Name = "aboutInfo_lbl"
-        aboutInfo_lbl.Size = New Size(737, 115)
+        aboutInfo_lbl.Size = New Size(431, 115)
         aboutInfo_lbl.TabIndex = 3
         aboutInfo_lbl.Text = resources.GetString("aboutInfo_lbl.Text")
         ' 
@@ -4624,21 +4731,11 @@ Partial Class Form1
         ' 
         aboutHeaderAuthor_lbl.AutoSize = True
         aboutHeaderAuthor_lbl.Font = New Font("Segoe UI", 15.75F)
-        aboutHeaderAuthor_lbl.Location = New Point(3, 32)
+        aboutHeaderAuthor_lbl.Location = New Point(309, 6)
         aboutHeaderAuthor_lbl.Name = "aboutHeaderAuthor_lbl"
         aboutHeaderAuthor_lbl.Size = New Size(180, 30)
         aboutHeaderAuthor_lbl.TabIndex = 1
         aboutHeaderAuthor_lbl.Text = "By TheCrafters001"
-        ' 
-        ' aboutHeader_lbl
-        ' 
-        aboutHeader_lbl.AutoSize = True
-        aboutHeader_lbl.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
-        aboutHeader_lbl.Location = New Point(3, 0)
-        aboutHeader_lbl.Name = "aboutHeader_lbl"
-        aboutHeader_lbl.Size = New Size(280, 32)
-        aboutHeader_lbl.TabIndex = 0
-        aboutHeader_lbl.Text = "Essentials Team Builder"
         ' 
         ' MenuStrip1
         ' 
@@ -4655,23 +4752,96 @@ Partial Class Form1
         GeneratePreviewToolStripMenuItem.Size = New Size(112, 20)
         GeneratePreviewToolStripMenuItem.Text = "Generate/Preview"
         ' 
-        ' battleTeamID_nbr
+        ' itemAddPotion_btn
         ' 
-        battleTeamID_nbr.Enabled = False
-        battleTeamID_nbr.Location = New Point(8, 94)
-        battleTeamID_nbr.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        battleTeamID_nbr.Name = "battleTeamID_nbr"
-        battleTeamID_nbr.Size = New Size(168, 23)
-        battleTeamID_nbr.TabIndex = 32
+        itemAddPotion_btn.Location = New Point(257, 92)
+        itemAddPotion_btn.Name = "itemAddPotion_btn"
+        itemAddPotion_btn.Size = New Size(75, 47)
+        itemAddPotion_btn.TabIndex = 5
+        itemAddPotion_btn.Text = "Add Potion"
+        itemAddPotion_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddSuperPotion_btn
+        ' 
+        itemAddSuperPotion_btn.Location = New Point(338, 92)
+        itemAddSuperPotion_btn.Name = "itemAddSuperPotion_btn"
+        itemAddSuperPotion_btn.Size = New Size(75, 47)
+        itemAddSuperPotion_btn.TabIndex = 6
+        itemAddSuperPotion_btn.Text = "Add Super Potion"
+        itemAddSuperPotion_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddMaxPotion_btn
+        ' 
+        itemAddMaxPotion_btn.Location = New Point(500, 92)
+        itemAddMaxPotion_btn.Name = "itemAddMaxPotion_btn"
+        itemAddMaxPotion_btn.Size = New Size(75, 47)
+        itemAddMaxPotion_btn.TabIndex = 7
+        itemAddMaxPotion_btn.Text = "Add Max Potion"
+        itemAddMaxPotion_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddHyperPotion_btn
+        ' 
+        itemAddHyperPotion_btn.Location = New Point(419, 92)
+        itemAddHyperPotion_btn.Name = "itemAddHyperPotion_btn"
+        itemAddHyperPotion_btn.Size = New Size(75, 47)
+        itemAddHyperPotion_btn.TabIndex = 8
+        itemAddHyperPotion_btn.Text = "Add Hyper Potion"
+        itemAddHyperPotion_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddFullRestore_btn
+        ' 
+        itemAddFullRestore_btn.Location = New Point(581, 92)
+        itemAddFullRestore_btn.Name = "itemAddFullRestore_btn"
+        itemAddFullRestore_btn.Size = New Size(75, 47)
+        itemAddFullRestore_btn.TabIndex = 9
+        itemAddFullRestore_btn.Text = "Add Full Restore"
+        itemAddFullRestore_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddEther_btn
+        ' 
+        itemAddEther_btn.Location = New Point(257, 145)
+        itemAddEther_btn.Name = "itemAddEther_btn"
+        itemAddEther_btn.Size = New Size(75, 47)
+        itemAddEther_btn.TabIndex = 10
+        itemAddEther_btn.Text = "Add Ether"
+        itemAddEther_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddMaxEther_btn
+        ' 
+        itemAddMaxEther_btn.Location = New Point(500, 145)
+        itemAddMaxEther_btn.Name = "itemAddMaxEther_btn"
+        itemAddMaxEther_btn.Size = New Size(75, 47)
+        itemAddMaxEther_btn.TabIndex = 11
+        itemAddMaxEther_btn.Text = "Add Max Ether"
+        itemAddMaxEther_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddMaxElixir_btn
+        ' 
+        itemAddMaxElixir_btn.Location = New Point(500, 198)
+        itemAddMaxElixir_btn.Name = "itemAddMaxElixir_btn"
+        itemAddMaxElixir_btn.Size = New Size(75, 47)
+        itemAddMaxElixir_btn.TabIndex = 13
+        itemAddMaxElixir_btn.Text = "Add Max Elixir"
+        itemAddMaxElixir_btn.UseVisualStyleBackColor = True
+        ' 
+        ' itemAddElixir_btn
+        ' 
+        itemAddElixir_btn.Location = New Point(257, 198)
+        itemAddElixir_btn.Name = "itemAddElixir_btn"
+        itemAddElixir_btn.Size = New Size(75, 47)
+        itemAddElixir_btn.TabIndex = 12
+        itemAddElixir_btn.Text = "Add Elixir"
+        itemAddElixir_btn.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(779, 595)
         Controls.Add(editor_grp)
         Controls.Add(MenuStrip1)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MainMenuStrip = MenuStrip1
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
@@ -4682,8 +4852,12 @@ Partial Class Form1
         trainer_tab.ResumeLayout(False)
         pg_basic.ResumeLayout(False)
         pg_basic.PerformLayout()
+        CType(battleTeamID_nbr, ComponentModel.ISupportInitialize).EndInit()
+        pg_items.ResumeLayout(False)
+        pg_items.PerformLayout()
+        items_grp.ResumeLayout(False)
         pg_pokemon.ResumeLayout(False)
-        TabControl3.ResumeLayout(False)
+        pkmnTabs_tab.ResumeLayout(False)
         pg_pkmn1.ResumeLayout(False)
         pokemon1_grp.ResumeLayout(False)
         pokemon1_grp.PerformLayout()
@@ -4782,9 +4956,9 @@ Partial Class Form1
         pokemon6Shiny_grp.PerformLayout()
         pg_about.ResumeLayout(False)
         pg_about.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
-        CType(battleTeamID_nbr, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -4795,7 +4969,7 @@ Partial Class Form1
     Friend WithEvents trainer_tab As TabControl
     Friend WithEvents pg_items As TabPage
     Friend WithEvents pg_pokemon As TabPage
-    Friend WithEvents TabControl3 As TabControl
+    Friend WithEvents pkmnTabs_tab As TabControl
     Friend WithEvents pg_pkmn5 As TabPage
     Friend WithEvents pg_pkmn6 As TabPage
     Friend WithEvents pg_basic As TabPage
@@ -4882,7 +5056,6 @@ Partial Class Form1
     Friend WithEvents pokemon1EVsHP_txt As TextBox
     Friend WithEvents pokemon1EVsHP_lbl As Label
     Friend WithEvents pg_about As TabPage
-    Friend WithEvents aboutHeader_lbl As Label
     Friend WithEvents copyright_lbl As Label
     Friend WithEvents aboutHeaderAuthor_lbl As Label
     Friend WithEvents aboutInfo_lbl As Label
@@ -4894,18 +5067,18 @@ Partial Class Form1
     Friend WithEvents pokemon2NotShadow_rad As RadioButton
     Friend WithEvents pokemon2Name_lbl As Label
     Friend WithEvents pokemon2EVs_grp As GroupBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label7 As Label
+    Friend WithEvents pokemon2EVsDEF_txt As TextBox
+    Friend WithEvents pokemon2EVsDEF_lbl As Label
+    Friend WithEvents pokemon2EVsSPDEF_txt As TextBox
+    Friend WithEvents pokemon2EVsSPDEF_lbl As Label
+    Friend WithEvents pokemon2EVsSPATK_txt As TextBox
+    Friend WithEvents pokemon2EVsSPATK_lbl As Label
+    Friend WithEvents pokemon2EVsSPD_txt As TextBox
+    Friend WithEvents pokemon2EVsSPD_lbl As Label
+    Friend WithEvents pokemon2EVsATK_txt As TextBox
+    Friend WithEvents pokemon2EVsATK_lbl As Label
+    Friend WithEvents pokemon2EVsHP_txt As TextBox
+    Friend WithEvents pokemon2EVsHP_lbl As Label
     Friend WithEvents pokemon2Name_txt As TextBox
     Friend WithEvents pokemon2IVs_grp As GroupBox
     Friend WithEvents pokemon2RandomIVs_btn As Button
@@ -5197,4 +5370,20 @@ Partial Class Form1
     Friend WithEvents pokemon6Form_nbr As NumericUpDown
     Friend WithEvents pokemon6Happiness_nbr As NumericUpDown
     Friend WithEvents battleTeamID_nbr As NumericUpDown
+    Friend WithEvents items_grp As GroupBox
+    Friend WithEvents items_lst As ListBox
+    Friend WithEvents trainerItemsHeader_lbl As Label
+    Friend WithEvents trainerItemsInfo_lbl As Label
+    Friend WithEvents removeItem_btn As Button
+    Friend WithEvents addItem_btn As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents itemAddEther_btn As Button
+    Friend WithEvents itemAddFullRestore_btn As Button
+    Friend WithEvents itemAddHyperPotion_btn As Button
+    Friend WithEvents itemAddMaxPotion_btn As Button
+    Friend WithEvents itemAddSuperPotion_btn As Button
+    Friend WithEvents itemAddPotion_btn As Button
+    Friend WithEvents itemAddMaxElixir_btn As Button
+    Friend WithEvents itemAddElixir_btn As Button
+    Friend WithEvents itemAddMaxEther_btn As Button
 End Class
