@@ -1,4 +1,5 @@
 Imports System.CodeDom.Compiler
+Imports System.Text.Json
 
 Public Class Generator
 
@@ -177,7 +178,8 @@ Public Class Generator
 
 
     Public Shared Function trainer18(ByVal trainerName As String, ByVal trainerType As String, ByVal loseText As String,
-                                     ByVal loseTextQuotes As Boolean, Optional ByVal battleTeamID As Integer = 0)
+                                     ByVal loseTextQuotes As Boolean, Optional ByVal battleTeamID As Integer = 0,
+                                     Optional ByVal Items As String() = Nothing)
         Dim Output As String = ""
 
         ' [trainerType,trainerName,battleID]
@@ -203,7 +205,25 @@ Public Class Generator
             LoseTextOutput = "LoseText = " & loseText & vbCrLf
         End If
 
-        Output = type & name & LoseTextOutput
+        Dim ItemsOutput As String = ""
+        Dim validItems As New List(Of String)
+
+        If Items IsNot Nothing Then
+            For Each item As String In Items
+                If Not String.IsNullOrEmpty(item) AndAlso validItems.Count < 8 Then
+                    validItems.Add(item)
+                End If
+            Next
+
+            ' Print MoveString
+            If validItems.Count >= 0 Then
+                ItemsOutput = "Items = " & String.Join(",", validItems).ToUpper & vbCrLf
+            Else
+                Return "Failed to get Items. Make sure they are a part of an array."
+            End If
+        End If
+
+        Output = type & name & ItemsOutput & LoseTextOutput
 
         Return Output
     End Function

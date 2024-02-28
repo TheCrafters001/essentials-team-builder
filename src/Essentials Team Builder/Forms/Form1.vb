@@ -156,7 +156,8 @@ Public Class Form1
 
         Else
             ' Trainer Generator
-            Preview.output_rchTxt.Text = Generator.trainer18(trainerName_txtBox.Text, trainerType_txtBox.Text, loseText_txt.Text, loseTextQuotes_chkBox.Checked, battleTeamID_nbr.Value)
+            Preview.output_rchTxt.Text = Generator.trainer18(trainerName_txtBox.Text, trainerType_txtBox.Text, loseText_txt.Text, loseTextQuotes_chkBox.Checked, battleTeamID_nbr.Value,
+                                                             items_lst.)
 
             If numPoké_cmb.SelectedIndex = 0 Then
                 ' Pokemon 1
