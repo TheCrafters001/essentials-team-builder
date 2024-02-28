@@ -66,7 +66,11 @@ Partial Class Preview
         Controls.Add(saveToTrainers_btn)
         Controls.Add(exit_btn)
         Controls.Add(output_rchTxt)
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "Preview"
+        ShowIcon = False
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Preview"
         ResumeLayout(False)
     End Sub
