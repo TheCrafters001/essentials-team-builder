@@ -22,20 +22,21 @@ Partial Class Preview
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        RichTextBox1 = New RichTextBox()
+        output_rchTxt = New RichTextBox()
         exit_btn = New Button()
         saveToTrainers_btn = New Button()
         SuspendLayout()
         ' 
-        ' RichTextBox1
+        ' output_rchTxt
         ' 
-        RichTextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        RichTextBox1.Location = New Point(12, 12)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.ReadOnly = True
-        RichTextBox1.Size = New Size(501, 471)
-        RichTextBox1.TabIndex = 0
-        RichTextBox1.Text = ""
+        output_rchTxt.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        output_rchTxt.BorderStyle = BorderStyle.None
+        output_rchTxt.Location = New Point(12, 12)
+        output_rchTxt.Name = "output_rchTxt"
+        output_rchTxt.ReadOnly = True
+        output_rchTxt.Size = New Size(501, 471)
+        output_rchTxt.TabIndex = 0
+        output_rchTxt.Text = ""
         ' 
         ' exit_btn
         ' 
@@ -64,13 +65,13 @@ Partial Class Preview
         ClientSize = New Size(525, 524)
         Controls.Add(saveToTrainers_btn)
         Controls.Add(exit_btn)
-        Controls.Add(RichTextBox1)
+        Controls.Add(output_rchTxt)
         Name = "Preview"
         Text = "Preview"
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents output_rchTxt As RichTextBox
     Friend WithEvents exit_btn As Button
     Friend WithEvents saveToTrainers_btn As Button
 End Class

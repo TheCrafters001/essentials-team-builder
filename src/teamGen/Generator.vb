@@ -194,9 +194,16 @@ Public Class Generator
 
         ' Trainer Type and name
         type = "[" & trainerType.ToUpper & ","
-        name = trainerName & id & "]"
+        name = trainerName & id & "]" & vbCrLf
 
-        Output = type & name
+        Dim LoseTextOutput As String = ""
+        If loseTextQuotes = True Then
+            LoseTextOutput = "LoseText = """ & loseText & """" & vbCrLf
+        Else
+            LoseTextOutput = "LoseText = " & loseText & vbCrLf
+        End If
+
+        Output = type & name & LoseTextOutput
 
         Return Output
     End Function

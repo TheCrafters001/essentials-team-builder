@@ -147,7 +147,42 @@ Public Class Form1
 #End Region
 
     Private Sub GeneratePreviewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneratePreviewToolStripMenuItem.Click
+        'Show the form
+        Preview.Show()
 
+        'Do the thing - Generate the teams.
+        If essVersion_cmb.SelectedIndex = 0 Then
+
+        Else
+            ' Trainer Generator
+            Preview.output_rchTxt.Text = Generator.trainer18(trainerName_txtBox.Text, trainerType_txtBox.Text, loseText_txt.Text, loseTextQuotes_chkBox.Checked, battleTeamID_nbr.Value)
+
+            If numPoké_cmb.SelectedIndex = 0 Then
+                ' Pokemon 1
+                Preview.output_rchTxt.Text &= Generator.essentials18(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text, pokemon1Level_nbr.Value, pokemon1Ability_cmb.Text, pokemon1Gender_cmb.Text, pokemon1Form_nbr.Value,
+                                       pokemon1Nature_cmb.Text, pokemon1Happiness_nbr.Value, pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked,
+                                       pokemon1SuperShiny_chkBox.Checked, pokemon1Shadow_rad.Checked,
+                                       {pokemon1Move1_txtBox.Text, pokemon1Move2_txtBox.Text, pokemon1Move3_txtBox.Text, pokemon1Move4_txtBox.Text},
+                                       {pokemon1IVsHP_txt.Text, pokemon1IVsATK_txt.Text, pokemon1IVsDEF_txt.Text, pokemon1IVsSPD_txt.Text, pokemon1IVsSPATK_txt.Text, pokemon1IVsSPDEF_txt.Text},
+                                       {pokemon1EVsHP_txt.Text, pokemon1EVsATK_txt.Text, pokemon1EVsDEF_txt.Text, pokemon1EVsSPD_txt.Text, pokemon1EVsSPATK_txt.Text, pokemon1EVsSPDEF_txt.Text})
+            ElseIf numPoké_cmb.SelectedIndex = 1 Then
+                ' Pokemon 1
+                Preview.output_rchTxt.Text &= Generator.essentials18(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text, pokemon1Level_nbr.Value, pokemon1Ability_cmb.Text, pokemon1Gender_cmb.Text, pokemon1Form_nbr.Value,
+                                       pokemon1Nature_cmb.Text, pokemon1Happiness_nbr.Value, pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked,
+                                       pokemon1SuperShiny_chkBox.Checked, pokemon1Shadow_rad.Checked,
+                                       {pokemon1Move1_txtBox.Text, pokemon1Move2_txtBox.Text, pokemon1Move3_txtBox.Text, pokemon1Move4_txtBox.Text},
+                                       {pokemon1IVsHP_txt.Text, pokemon1IVsATK_txt.Text, pokemon1IVsDEF_txt.Text, pokemon1IVsSPD_txt.Text, pokemon1IVsSPATK_txt.Text, pokemon1IVsSPDEF_txt.Text},
+                                       {pokemon1EVsHP_txt.Text, pokemon1EVsATK_txt.Text, pokemon1EVsDEF_txt.Text, pokemon1EVsSPD_txt.Text, pokemon1EVsSPATK_txt.Text, pokemon1EVsSPDEF_txt.Text})
+                ' Pokemon 2
+                Preview.output_rchTxt.Text &= Generator.essentials18(pokemon2Name_txt.Text, pokemon2HeldItem_txt.Text, pokemon2Level_nbr.Value, pokemon2Ability_cmb.Text, pokemon2Gender_cmb.Text, pokemon2Form_nbr.Value,
+                                       pokemon2Nature_cmb.Text, pokemon2Happiness_nbr.Value, pokemon2Nickname_txt.Text, pokemon2PokeballID_cmb.Text, pokemon2Shiny_rad.Checked,
+                                       pokemon2SuperShiny_chkBox.Checked, pokemon2Shadow_rad.Checked,
+                                       {pokemon2Move1_txtBox.Text, pokemon2Move2_txtBox.Text, pokemon2Move3_txtBox.Text, pokemon2Move4_txtBox.Text},
+                                       {pokemon2IVsHP_txt.Text, pokemon2IVsATK_txt.Text, pokemon2IVsDEF_txt.Text, pokemon2IVsSPD_txt.Text, pokemon2IVsSPATK_txt.Text, pokemon2IVsSPDEF_txt.Text},
+                                       {pokemon2EVsHP_txt.Text, pokemon2EVsATK_txt.Text, pokemon2EVsDEF_txt.Text, pokemon2EVsSPD_txt.Text, pokemon2EVsSPATK_txt.Text, pokemon2EVsSPDEF_txt.Text})
+            End If
+
+        End If
     End Sub
 
     Private Sub customBallIDs_chkBox_CheckedChanged(sender As Object, e As EventArgs) Handles customBallIDs_chkBox.CheckedChanged
