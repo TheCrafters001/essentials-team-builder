@@ -179,7 +179,7 @@ Public Class Generator
 
     Public Shared Function trainer18(ByVal trainerName As String, ByVal trainerType As String, ByVal loseText As String,
                                      ByVal loseTextQuotes As Boolean, Optional ByVal battleTeamID As Integer = 0,
-                                     Optional ByVal Items As String() = Nothing)
+                                     Optional ByVal Items As List(Of String) = Nothing)
         Dim Output As String = ""
 
         ' [trainerType,trainerName,battleID]
