@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Controls
+﻿Imports System.IO
+Imports System.Windows.Controls.Primitives
 Imports teamGen
 
 Public Class Form1
@@ -17,8 +18,7 @@ Public Class Form1
             ' Get the name via the Index + 1
             Dim pokemonGender As String = "pokemon" & (Index + 1) & "Gender_cmb"
             'Create a ComboBox that acts as a DirectCast that is FirstOrDefault
-            Dim combo As ComboBox = DirectCast(Me.Controls.Find(pokemonGender, True).FirstOrDefault(), ComboBox)
-            'Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonName, True).FirstOrDefault(), ComboBox)
+            Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonGender, True).FirstOrDefault(), ComboBox)
 
             ' Make sure the comboBox isn't nothing. If it is nothing, it doesn't exist.
             If Combo IsNot Nothing Then
@@ -87,7 +87,6 @@ Public Class Form1
     Private Sub allowSuperShiny_chk_CheckedChanged(sender As Object, e As EventArgs) Handles allowSuperShiny_chk.CheckedChanged
         ObjectCheck.SuperShiny()
     End Sub
-
 
     Private Sub GeneratePreviewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneratePreviewToolStripMenuItem.Click
         'Show the form
