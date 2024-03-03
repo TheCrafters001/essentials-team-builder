@@ -1,5 +1,4 @@
-﻿Imports System.IO
-Imports System.Windows.Controls.Primitives
+﻿Imports System.Windows.Controls
 Imports teamGen
 
 Public Class Form1
@@ -16,15 +15,16 @@ Public Class Form1
         ' so here is the new way to do this.
         For Index As Integer = 0 To 5
             ' Get the name via the Index + 1
-            Dim pokemonName As String = "pokemon" & (Index + 1) & "Gender_cmb"
+            Dim pokemonGender As String = "pokemon" & (Index + 1) & "Gender_cmb"
             'Create a ComboBox that acts as a DirectCast that is FirstOrDefault
-            Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonName, True).FirstOrDefault(), ComboBox)
+            Dim combo As ComboBox = DirectCast(Me.Controls.Find(pokemonGender, True).FirstOrDefault(), ComboBox)
+            'Dim Combo As ComboBox = DirectCast(Me.Controls.Find(pokemonName, True).FirstOrDefault(), ComboBox)
 
             ' Make sure the comboBox isn't nothing. If it is nothing, it doesn't exist.
             If Combo IsNot Nothing Then
                 Combo.SelectedIndex = 2
             Else
-                Debug.WriteLine("Could not find ComboBox: " & pokemonName)
+                Debug.WriteLine("Could not find ComboBox: " & pokemonGender)
             End If
         Next
 
@@ -89,64 +89,6 @@ Public Class Form1
     End Sub
 
 
-#Region "Old Gen Code"
-
-    ' This is where an old function lives for now. It might stay, not sure though.
-    ' DO NOT DELETE FOR NOW.
-
-    'Private Sub updatePreview_btn_Click(sender As Object, e As EventArgs) Handles updatePreview_btn.Click
-    '    If essVersion_cmb.SelectedIndex <= 0 Then
-    '        ' Generator.essentials17()
-    '    ElseIf essVersion_cmb.SelectedIndex >= 1 Then
-
-    '        ' Clear the preview box
-    '        preview_rtb.Text = ""
-
-    '        Try
-    '            ' Pokemon1
-    '            If numPoké_cmb.SelectedIndex >= 0 Then
-    '                preview_rtb.Text &= Generator.essentials18(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text,
-    '                                       Integer.Parse(pokemon1Level_txtBox.Text), pokemon1Ability_cmb.Text, pokemon1Gender_cmb.Text, Integer.Parse(pokemon1Form_txtBox.Text),
-    '                                       pokemon1Nature_cmb.Text, pokemon1Happiness_txtBox.Text, pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked,
-    '                                       pokemon1SuperShiny_chkBox.Checked, pokemon1Shadow_rad.Checked,
-    '                                       pokemon1IVsHP_txt.Text, pokemon1IVsATK_txt.Text, pokemon1IVsDEF_txt.Text, pokemon1IVsSPD_txt.Text, pokemon1IVsSPATK_txt.Text, pokemon1IVsSPDEF_txt.Text,
-    '                                       pokemon1EVsHP_txt.Text, pokemon1EVsATK_txt.Text, pokemon1EVsDEF_txt.Text, pokemon1EVsSPD_txt.Text, pokemon1EVsSPATK_txt.Text, pokemon1EVsSPDEF_txt.Text)
-    '            End If
-
-    '            ' Pokemon2
-    '            If numPoké_cmb.SelectedIndex >= 1 Then
-    '                preview_rtb.Text &= ""
-    '            End If
-
-    '            ' Pokemon3
-    '            If numPoké_cmb.SelectedIndex >= 2 Then
-    '                preview_rtb.Text &= ""
-    '            End If
-
-    '            ' Pokemon4
-    '            If numPoké_cmb.SelectedIndex >= 3 Then
-    '                preview_rtb.Text &= ""
-    '            End If
-
-    '            ' Pokemon5
-    '            If numPoké_cmb.SelectedIndex >= 4 Then
-    '                preview_rtb.Text &= ""
-    '            End If
-
-    '            ' Pokemon6
-    '            If numPoké_cmb.SelectedIndex = 5 Then
-    '                preview_rtb.Text &= ""
-    '            End If
-    '        Catch ex As Exception
-    '            MessageBox.Show("There was an error when generating the team. Please make sure there are only numbers in the Level, Happiness, Form, IVs and EVs boxes.", "Error",
-    '                            MessageBoxButtons.OK, MessageBoxIcon.Error)
-    '        End Try
-
-    '    End If
-    'End Sub
-
-#End Region
-
     Private Sub GeneratePreviewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneratePreviewToolStripMenuItem.Click
         'Show the form
         Preview.Show()
@@ -156,8 +98,13 @@ Public Class Form1
 
         Else
             ' Trainer Generator
+            Dim TrainerItems As List(Of String) = New List(Of String)
+            For Each Items As String In items_lst.Items
+                TrainerItems.Add(Items)
+            Next
+
             Preview.output_rchTxt.Text = Generator.trainer18(trainerName_txtBox.Text, trainerType_txtBox.Text, loseText_txt.Text, loseTextQuotes_chkBox.Checked, battleTeamID_nbr.Value,
-                                                             items_lst.Items)
+                                                             TrainerItems)
 
             If numPoké_cmb.SelectedIndex = 0 Then
                 ' Pokemon 1

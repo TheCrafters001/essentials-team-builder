@@ -215,7 +215,6 @@ Public Class Generator
                 End If
             Next
 
-            ' Print MoveString
             If validItems.Count >= 0 Then
                 ItemsOutput = "Items = " & String.Join(",", validItems).ToUpper & vbCrLf
             Else

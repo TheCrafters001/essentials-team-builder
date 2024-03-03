@@ -17,6 +17,7 @@
     <PackageIcon>ETB_LOGO.png</PackageIcon>
     <RepositoryUrl>https://github.com/TheCrafters001/essentials-team-builder</RepositoryUrl>
     <ApplicationIcon>ETB_LOGO_ICON.ico</ApplicationIcon>
+    <ImportedNamespaces>System.Data=False,System.Drawing=False,System.Windows.Forms=False,System.Windows.Forms.Automation=False,System.Windows.Forms.ComponentModel.Com2Interop=False,System.Windows.Forms.Design=False,System.Windows.Forms.Design.Behavior=False,System.Windows.Forms.Integration=False,System.Windows.Forms.Layout=False,System.Windows.Forms.PropertyGridInternal=False,System.Windows.Forms.VisualStyles=False,Microsoft.VisualBasic=True,System=True,System.Collections=True,System.Collections.Generic=True,System.Diagnostics=True,System.Linq=True,System.Xml.Linq=True,System.Threading.Tasks=True,TheCrafters001.EssentialsTeamBuilder=True</ImportedNamespaces>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +28,14 @@
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
+    <Import Include="System.Windows.Forms.Automation" />
+    <Import Include="System.Windows.Forms.ComponentModel.Com2Interop" />
+    <Import Include="System.Windows.Forms.Design" />
+    <Import Include="System.Windows.Forms.Design.Behavior" />
+    <Import Include="System.Windows.Forms.Integration" />
+    <Import Include="System.Windows.Forms.Layout" />
+    <Import Include="System.Windows.Forms.PropertyGridInternal" />
+    <Import Include="System.Windows.Forms.VisualStyles" />
   </ItemGroup>
 
   <ItemGroup>
