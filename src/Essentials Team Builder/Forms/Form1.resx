@@ -121,6 +121,12 @@
     <value>Here, you can set your trainers' items. You can add and/or remove them here. You can only have a maximum of 8 items per trainer (per Pokémon Essentials Limitation)
 Use the buttons below or click the Add button to add your own item.</value>
   </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>This is a fan-made tool. Pokémon is not owned by TheCrafters001
+Pokémon is owned by Nintendo/GAME FREAK Inc./Creatures Inc./The Pokémon Company International.
+This is a non-profit fan-made tool. No copyright infringements intended. Please support the official games!
+</value>
+  </data>
   <data name="licenseText_lbl.Text" xml:space="preserve">
     <value>MIT License
 
@@ -146,8 +152,7 @@ SOFTWARE.</value>
   </data>
   <data name="aboutInfo_lbl.Text" xml:space="preserve">
     <value>The EASY Way to Build a Team.
-This tool is free and open-source. It is built so you can build your own teams in the Pokemon Essentials game engine!
-I always have found the tools that come with essentials to be pretty bad, so I am building my own custom tools to make it easier!</value>
+This tool is free and open-source. It is built so you can build your own teams in the Pokemon Essentials game engine! I always have found the tools that come with essentials to be pretty bad, so I am building my own custom tools to make it easier!</value>
   </data>
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

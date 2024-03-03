@@ -230,7 +230,7 @@ Partial Class Form1
         pokemon3IVsHP_txt = New TextBox()
         pokemon3IVsHP_lbl = New Label()
         pokemon3HeldItem_txt = New TextBox()
-        pokemon3PokeBall_cmb = New ComboBox()
+        pokemon3PokeballID_cmb = New ComboBox()
         pokemon3HeldItem_lbl = New Label()
         pokemon3PokeBall_lbl = New Label()
         pokemon3Level_lbl = New Label()
@@ -292,17 +292,17 @@ Partial Class Form1
         pokemon4IVsHP_txt = New TextBox()
         pokemon4IVsHP_lbl = New Label()
         pokemon4HeldItem_txt = New TextBox()
-        pokemon4PokeBall_cmb = New ComboBox()
+        pokemon4PokeballID_cmb = New ComboBox()
         pokemon4HeldItem_lbl = New Label()
         pokemon4PokeBall_lbl = New Label()
         pokemon4Level_lbl = New Label()
         pokemon4Nickname_txt = New TextBox()
         pokemon4Nickname_lbl = New Label()
         pokemon4Moves_grp = New GroupBox()
-        pokemon4Move4_txt = New TextBox()
-        pokemon4Move3_txt = New TextBox()
-        pokemon4Move2_txt = New TextBox()
-        pokemon4Move1_txt = New TextBox()
+        pokemon4Move4_txtBox = New TextBox()
+        pokemon4Move3_txtBox = New TextBox()
+        pokemon4Move2_txtBox = New TextBox()
+        pokemon4Move1_txtBox = New TextBox()
         pokemon4Ability_lbl = New Label()
         pokemon4Happiness_lbl = New Label()
         pokemon4Ability_cmb = New ComboBox()
@@ -354,7 +354,7 @@ Partial Class Form1
         pokemon5IVsHP_txt = New TextBox()
         pokemon5IVsHP_lbl = New Label()
         pokemon5HeldItem_txt = New TextBox()
-        pokemon5PokeBall_cmb = New ComboBox()
+        pokemon5PokeballID_cmb = New ComboBox()
         pokemon5HeldItem_lbl = New Label()
         pokemon5PokeBall_lbl = New Label()
         pokemon5Level_lbl = New Label()
@@ -416,7 +416,7 @@ Partial Class Form1
         pokemon6IVsHP_txt = New TextBox()
         pokemon6IVsHP_lbl = New Label()
         pokemon6HeldItem_txt = New TextBox()
-        pokemon6PokeBall_cmb = New ComboBox()
+        pokemon6PokeballID_cmb = New ComboBox()
         pokemon6HeldItem_lbl = New Label()
         pokemon6Pokeball_lbl = New Label()
         pokemon6Level_lbl = New Label()
@@ -440,6 +440,7 @@ Partial Class Form1
         pokemon6NotShiny_rad = New RadioButton()
         pokemon6Form_lbl = New Label()
         pg_about = New TabPage()
+        Label1 = New Label()
         thirdPartyLicenses_btn = New Button()
         licenseText_lbl = New Label()
         PictureBox1 = New PictureBox()
@@ -2272,7 +2273,7 @@ Partial Class Form1
         pokemon3_grp.Controls.Add(pokemon3Name_txt)
         pokemon3_grp.Controls.Add(pokemon3IVs_grp)
         pokemon3_grp.Controls.Add(pokemon3HeldItem_txt)
-        pokemon3_grp.Controls.Add(pokemon3PokeBall_cmb)
+        pokemon3_grp.Controls.Add(pokemon3PokeballID_cmb)
         pokemon3_grp.Controls.Add(pokemon3HeldItem_lbl)
         pokemon3_grp.Controls.Add(pokemon3PokeBall_lbl)
         pokemon3_grp.Controls.Add(pokemon3Level_lbl)
@@ -2661,14 +2662,14 @@ Partial Class Form1
         pokemon3HeldItem_txt.Size = New Size(140, 23)
         pokemon3HeldItem_txt.TabIndex = 58
         ' 
-        ' pokemon3PokeBall_cmb
+        ' pokemon3PokeballID_cmb
         ' 
-        pokemon3PokeBall_cmb.FormattingEnabled = True
-        pokemon3PokeBall_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
-        pokemon3PokeBall_cmb.Location = New Point(6, 169)
-        pokemon3PokeBall_cmb.Name = "pokemon3PokeBall_cmb"
-        pokemon3PokeBall_cmb.Size = New Size(140, 23)
-        pokemon3PokeBall_cmb.TabIndex = 77
+        pokemon3PokeballID_cmb.FormattingEnabled = True
+        pokemon3PokeballID_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
+        pokemon3PokeballID_cmb.Location = New Point(6, 169)
+        pokemon3PokeballID_cmb.Name = "pokemon3PokeballID_cmb"
+        pokemon3PokeballID_cmb.Size = New Size(140, 23)
+        pokemon3PokeballID_cmb.TabIndex = 77
         ' 
         ' pokemon3HeldItem_lbl
         ' 
@@ -2902,7 +2903,7 @@ Partial Class Form1
         pokemon4_grp.Controls.Add(pokemon4Name_txt)
         pokemon4_grp.Controls.Add(pokemon4IVs_grp)
         pokemon4_grp.Controls.Add(pokemon4HeldItem_txt)
-        pokemon4_grp.Controls.Add(pokemon4PokeBall_cmb)
+        pokemon4_grp.Controls.Add(pokemon4PokeballID_cmb)
         pokemon4_grp.Controls.Add(pokemon4HeldItem_lbl)
         pokemon4_grp.Controls.Add(pokemon4PokeBall_lbl)
         pokemon4_grp.Controls.Add(pokemon4Level_lbl)
@@ -3291,14 +3292,14 @@ Partial Class Form1
         pokemon4HeldItem_txt.Size = New Size(140, 23)
         pokemon4HeldItem_txt.TabIndex = 58
         ' 
-        ' pokemon4PokeBall_cmb
+        ' pokemon4PokeballID_cmb
         ' 
-        pokemon4PokeBall_cmb.FormattingEnabled = True
-        pokemon4PokeBall_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
-        pokemon4PokeBall_cmb.Location = New Point(6, 169)
-        pokemon4PokeBall_cmb.Name = "pokemon4PokeBall_cmb"
-        pokemon4PokeBall_cmb.Size = New Size(140, 23)
-        pokemon4PokeBall_cmb.TabIndex = 77
+        pokemon4PokeballID_cmb.FormattingEnabled = True
+        pokemon4PokeballID_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
+        pokemon4PokeballID_cmb.Location = New Point(6, 169)
+        pokemon4PokeballID_cmb.Name = "pokemon4PokeballID_cmb"
+        pokemon4PokeballID_cmb.Size = New Size(140, 23)
+        pokemon4PokeballID_cmb.TabIndex = 77
         ' 
         ' pokemon4HeldItem_lbl
         ' 
@@ -3346,10 +3347,10 @@ Partial Class Form1
         ' 
         ' pokemon4Moves_grp
         ' 
-        pokemon4Moves_grp.Controls.Add(pokemon4Move4_txt)
-        pokemon4Moves_grp.Controls.Add(pokemon4Move3_txt)
-        pokemon4Moves_grp.Controls.Add(pokemon4Move2_txt)
-        pokemon4Moves_grp.Controls.Add(pokemon4Move1_txt)
+        pokemon4Moves_grp.Controls.Add(pokemon4Move4_txtBox)
+        pokemon4Moves_grp.Controls.Add(pokemon4Move3_txtBox)
+        pokemon4Moves_grp.Controls.Add(pokemon4Move2_txtBox)
+        pokemon4Moves_grp.Controls.Add(pokemon4Move1_txtBox)
         pokemon4Moves_grp.Location = New Point(444, 22)
         pokemon4Moves_grp.Name = "pokemon4Moves_grp"
         pokemon4Moves_grp.Size = New Size(273, 82)
@@ -3357,37 +3358,37 @@ Partial Class Form1
         pokemon4Moves_grp.TabStop = False
         pokemon4Moves_grp.Text = "Moves"
         ' 
-        ' pokemon4Move4_txt
+        ' pokemon4Move4_txtBox
         ' 
-        pokemon4Move4_txt.Location = New Point(132, 51)
-        pokemon4Move4_txt.Name = "pokemon4Move4_txt"
-        pokemon4Move4_txt.PlaceholderText = "Move 4"
-        pokemon4Move4_txt.Size = New Size(120, 23)
-        pokemon4Move4_txt.TabIndex = 3
+        pokemon4Move4_txtBox.Location = New Point(132, 51)
+        pokemon4Move4_txtBox.Name = "pokemon4Move4_txtBox"
+        pokemon4Move4_txtBox.PlaceholderText = "Move 4"
+        pokemon4Move4_txtBox.Size = New Size(120, 23)
+        pokemon4Move4_txtBox.TabIndex = 3
         ' 
-        ' pokemon4Move3_txt
+        ' pokemon4Move3_txtBox
         ' 
-        pokemon4Move3_txt.Location = New Point(6, 51)
-        pokemon4Move3_txt.Name = "pokemon4Move3_txt"
-        pokemon4Move3_txt.PlaceholderText = "Move 3"
-        pokemon4Move3_txt.Size = New Size(120, 23)
-        pokemon4Move3_txt.TabIndex = 2
+        pokemon4Move3_txtBox.Location = New Point(6, 51)
+        pokemon4Move3_txtBox.Name = "pokemon4Move3_txtBox"
+        pokemon4Move3_txtBox.PlaceholderText = "Move 3"
+        pokemon4Move3_txtBox.Size = New Size(120, 23)
+        pokemon4Move3_txtBox.TabIndex = 2
         ' 
-        ' pokemon4Move2_txt
+        ' pokemon4Move2_txtBox
         ' 
-        pokemon4Move2_txt.Location = New Point(132, 22)
-        pokemon4Move2_txt.Name = "pokemon4Move2_txt"
-        pokemon4Move2_txt.PlaceholderText = "Move 2"
-        pokemon4Move2_txt.Size = New Size(120, 23)
-        pokemon4Move2_txt.TabIndex = 1
+        pokemon4Move2_txtBox.Location = New Point(132, 22)
+        pokemon4Move2_txtBox.Name = "pokemon4Move2_txtBox"
+        pokemon4Move2_txtBox.PlaceholderText = "Move 2"
+        pokemon4Move2_txtBox.Size = New Size(120, 23)
+        pokemon4Move2_txtBox.TabIndex = 1
         ' 
-        ' pokemon4Move1_txt
+        ' pokemon4Move1_txtBox
         ' 
-        pokemon4Move1_txt.Location = New Point(6, 22)
-        pokemon4Move1_txt.Name = "pokemon4Move1_txt"
-        pokemon4Move1_txt.PlaceholderText = "Move 1"
-        pokemon4Move1_txt.Size = New Size(120, 23)
-        pokemon4Move1_txt.TabIndex = 0
+        pokemon4Move1_txtBox.Location = New Point(6, 22)
+        pokemon4Move1_txtBox.Name = "pokemon4Move1_txtBox"
+        pokemon4Move1_txtBox.PlaceholderText = "Move 1"
+        pokemon4Move1_txtBox.Size = New Size(120, 23)
+        pokemon4Move1_txtBox.TabIndex = 0
         ' 
         ' pokemon4Ability_lbl
         ' 
@@ -3532,7 +3533,7 @@ Partial Class Form1
         pokemon5_grp.Controls.Add(pokemon5Name_txt)
         pokemon5_grp.Controls.Add(pokemon5IVs_grp)
         pokemon5_grp.Controls.Add(pokemon5HeldItem_txt)
-        pokemon5_grp.Controls.Add(pokemon5PokeBall_cmb)
+        pokemon5_grp.Controls.Add(pokemon5PokeballID_cmb)
         pokemon5_grp.Controls.Add(pokemon5HeldItem_lbl)
         pokemon5_grp.Controls.Add(pokemon5PokeBall_lbl)
         pokemon5_grp.Controls.Add(pokemon5Level_lbl)
@@ -3921,14 +3922,14 @@ Partial Class Form1
         pokemon5HeldItem_txt.Size = New Size(140, 23)
         pokemon5HeldItem_txt.TabIndex = 58
         ' 
-        ' pokemon5PokeBall_cmb
+        ' pokemon5PokeballID_cmb
         ' 
-        pokemon5PokeBall_cmb.FormattingEnabled = True
-        pokemon5PokeBall_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
-        pokemon5PokeBall_cmb.Location = New Point(6, 169)
-        pokemon5PokeBall_cmb.Name = "pokemon5PokeBall_cmb"
-        pokemon5PokeBall_cmb.Size = New Size(140, 23)
-        pokemon5PokeBall_cmb.TabIndex = 77
+        pokemon5PokeballID_cmb.FormattingEnabled = True
+        pokemon5PokeballID_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
+        pokemon5PokeballID_cmb.Location = New Point(6, 169)
+        pokemon5PokeballID_cmb.Name = "pokemon5PokeballID_cmb"
+        pokemon5PokeballID_cmb.Size = New Size(140, 23)
+        pokemon5PokeballID_cmb.TabIndex = 77
         ' 
         ' pokemon5HeldItem_lbl
         ' 
@@ -4162,7 +4163,7 @@ Partial Class Form1
         pokemon6_grp.Controls.Add(pokemon6Name_txt)
         pokemon6_grp.Controls.Add(pokemon6IVs_grp)
         pokemon6_grp.Controls.Add(pokemon6HeldItem_txt)
-        pokemon6_grp.Controls.Add(pokemon6PokeBall_cmb)
+        pokemon6_grp.Controls.Add(pokemon6PokeballID_cmb)
         pokemon6_grp.Controls.Add(pokemon6HeldItem_lbl)
         pokemon6_grp.Controls.Add(pokemon6Pokeball_lbl)
         pokemon6_grp.Controls.Add(pokemon6Level_lbl)
@@ -4551,14 +4552,14 @@ Partial Class Form1
         pokemon6HeldItem_txt.Size = New Size(140, 23)
         pokemon6HeldItem_txt.TabIndex = 58
         ' 
-        ' pokemon6PokeBall_cmb
+        ' pokemon6PokeballID_cmb
         ' 
-        pokemon6PokeBall_cmb.FormattingEnabled = True
-        pokemon6PokeBall_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
-        pokemon6PokeBall_cmb.Location = New Point(6, 169)
-        pokemon6PokeBall_cmb.Name = "pokemon6PokeBall_cmb"
-        pokemon6PokeBall_cmb.Size = New Size(140, 23)
-        pokemon6PokeBall_cmb.TabIndex = 77
+        pokemon6PokeballID_cmb.FormattingEnabled = True
+        pokemon6PokeballID_cmb.Items.AddRange(New Object() {"POKEBALL", "GREATBALL", "SAFARIBALL", "ULTRABALL", "MASTERBALL", "NETBALL", "DIVEBALL", "NESTBALL", "REPEATBALL", "TIMERBALL", "LUXURYBALL", "PREMIERBALL", "DUSKBALL", "HEALBALL", "QUICKBALL", "CHERISHBALL", "FASTBALL", "LEVELBALL", "LUREBALL", "HEAVYBALL", "LOVEBALL", "FRIENDBALL", "MOONBALL", "SPORTBALL", "DREAMBALL", "BEASTBALL"})
+        pokemon6PokeballID_cmb.Location = New Point(6, 169)
+        pokemon6PokeballID_cmb.Name = "pokemon6PokeballID_cmb"
+        pokemon6PokeballID_cmb.Size = New Size(140, 23)
+        pokemon6PokeballID_cmb.TabIndex = 77
         ' 
         ' pokemon6HeldItem_lbl
         ' 
@@ -4772,6 +4773,7 @@ Partial Class Form1
         ' 
         ' pg_about
         ' 
+        pg_about.Controls.Add(Label1)
         pg_about.Controls.Add(thirdPartyLicenses_btn)
         pg_about.Controls.Add(licenseText_lbl)
         pg_about.Controls.Add(PictureBox1)
@@ -4784,6 +4786,14 @@ Partial Class Form1
         pg_about.TabIndex = 2
         pg_about.Text = "About"
         pg_about.UseVisualStyleBackColor = True
+        ' 
+        ' Label1
+        ' 
+        Label1.Location = New Point(513, 354)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(227, 126)
+        Label1.TabIndex = 7
+        Label1.Text = resources.GetString("Label1.Text")
         ' 
         ' thirdPartyLicenses_btn
         ' 
@@ -4816,7 +4826,7 @@ Partial Class Form1
         ' 
         aboutInfo_lbl.Location = New Point(309, 41)
         aboutInfo_lbl.Name = "aboutInfo_lbl"
-        aboutInfo_lbl.Size = New Size(431, 115)
+        aboutInfo_lbl.Size = New Size(431, 80)
         aboutInfo_lbl.TabIndex = 3
         aboutInfo_lbl.Text = resources.GetString("aboutInfo_lbl.Text")
         ' 
@@ -5179,7 +5189,7 @@ Partial Class Form1
     Friend WithEvents pokemon3IVsHP_txt As TextBox
     Friend WithEvents pokemon3IVsHP_lbl As Label
     Friend WithEvents pokemon3HeldItem_txt As TextBox
-    Friend WithEvents pokemon3PokeBall_cmb As ComboBox
+    Friend WithEvents pokemon3PokeballID_cmb As ComboBox
     Friend WithEvents pokemon3HeldItem_lbl As Label
     Friend WithEvents pokemon3PokeBall_lbl As Label
     Friend WithEvents pokemon3Level_lbl As Label
@@ -5236,17 +5246,17 @@ Partial Class Form1
     Friend WithEvents pokemon4IVsHP_txt As TextBox
     Friend WithEvents pokemon4IVsHP_lbl As Label
     Friend WithEvents pokemon4HeldItem_txt As TextBox
-    Friend WithEvents pokemon4PokeBall_cmb As ComboBox
+    Friend WithEvents pokemon4PokeballID_cmb As ComboBox
     Friend WithEvents pokemon4HeldItem_lbl As Label
     Friend WithEvents pokemon4PokeBall_lbl As Label
     Friend WithEvents pokemon4Level_lbl As Label
     Friend WithEvents pokemon4Nickname_txt As TextBox
     Friend WithEvents pokemon4Nickname_lbl As Label
     Friend WithEvents pokemon4Moves_grp As GroupBox
-    Friend WithEvents pokemon4Move4_txt As TextBox
-    Friend WithEvents pokemon4Move3_txt As TextBox
-    Friend WithEvents pokemon4Move2_txt As TextBox
-    Friend WithEvents pokemon4Move1_txt As TextBox
+    Friend WithEvents pokemon4Move4_txtBox As TextBox
+    Friend WithEvents pokemon4Move3_txtBox As TextBox
+    Friend WithEvents pokemon4Move2_txtBox As TextBox
+    Friend WithEvents pokemon4Move1_txtBox As TextBox
     Friend WithEvents pokemon4Ability_lbl As Label
     Friend WithEvents pokemon4Happiness_lbl As Label
     Friend WithEvents pokemon4Ability_cmb As ComboBox
@@ -5293,7 +5303,7 @@ Partial Class Form1
     Friend WithEvents pokemon5IVsHP_txt As TextBox
     Friend WithEvents pokemon5IVsHP_lbl As Label
     Friend WithEvents pokemon5HeldItem_txt As TextBox
-    Friend WithEvents pokemon5PokeBall_cmb As ComboBox
+    Friend WithEvents pokemon5PokeballID_cmb As ComboBox
     Friend WithEvents pokemon5HeldItem_lbl As Label
     Friend WithEvents pokemon5PokeBall_lbl As Label
     Friend WithEvents pokemon5Level_lbl As Label
@@ -5350,7 +5360,7 @@ Partial Class Form1
     Friend WithEvents pokemon6IVsHP_txt As TextBox
     Friend WithEvents pokemon6IVsHP_lbl As Label
     Friend WithEvents pokemon6HeldItem_txt As TextBox
-    Friend WithEvents pokemon6PokeBall_cmb As ComboBox
+    Friend WithEvents pokemon6PokeballID_cmb As ComboBox
     Friend WithEvents pokemon6HeldItem_lbl As Label
     Friend WithEvents pokemon6Pokeball_lbl As Label
     Friend WithEvents pokemon6Level_lbl As Label
@@ -5410,4 +5420,5 @@ Partial Class Form1
     Friend WithEvents itemAddMaxEther_btn As Button
     Friend WithEvents licenseText_lbl As Label
     Friend WithEvents thirdPartyLicenses_btn As Button
+    Friend WithEvents Label1 As Label
 End Class
