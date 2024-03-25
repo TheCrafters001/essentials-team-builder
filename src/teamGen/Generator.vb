@@ -228,10 +228,28 @@ Public Class Generator
     End Function
 
     Public Shared Function trainer17(ByVal trainerName As String, ByVal trainerType As String, ByVal loseText As String,
-                                     ByVal pokeNumber As Integer, Optional ByVal battleTeamID As Integer = 0)
+                                     ByVal pokeNumber As Integer, Optional ByVal battleTeamID As Integer = 0,
+                                     Optional ByVal Items As List(Of String) = Nothing)
         Dim output As String = ""
 
-        output = trainerType.ToUpper & vbCrLf & trainerName & vbCrLf & pokeNumber.ToString
+        Dim ItemsOutput As String = ""
+        Dim validItems As New List(Of String)
+
+        If Items IsNot Nothing Then
+            For Each item As String In Items
+                If Not String.IsNullOrEmpty(item) AndAlso validItems.Count < 8 Then
+                    validItems.Add(item)
+                End If
+            Next
+
+            If validItems.Count >= 0 Then
+                ItemsOutput = "," & String.Join(",", validItems).ToUpper & vbCrLf
+            Else
+                Return "Failed to get Items. Make sure they are a part of an array."
+            End If
+        End If
+
+        output = trainerType.ToUpper & vbCrLf & trainerName & vbCrLf & pokeNumber.ToString & ItemsOutput & vbCrLf
 
         Return output
     End Function

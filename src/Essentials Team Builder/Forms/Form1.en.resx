@@ -38970,6 +38970,9 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="lang_cmb.Items" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="lang_cmb.Items1" xml:space="preserve">
+    <value>Español</value>
+  </data>
   <data name="lang_cmb.Location" type="System.Drawing.Point, System.Drawing">
     <value>513, 211</value>
   </data>

@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows7.0</TargetFramework>
     <RootNamespace>Essentials_Team_Builder</RootNamespace>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>Essentials_Team_Builder.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <Authors>TheCrafters001</Authors>
@@ -18,6 +18,8 @@
     <RepositoryUrl>https://github.com/TheCrafters001/essentials-team-builder</RepositoryUrl>
     <ApplicationIcon>ETB_LOGO_ICON.ico</ApplicationIcon>
     <ImportedNamespaces>System.Data=False,System.Drawing=False,System.Windows.Forms=False,System.Windows.Forms.Automation=False,System.Windows.Forms.ComponentModel.Com2Interop=False,System.Windows.Forms.Design=False,System.Windows.Forms.Design.Behavior=False,System.Windows.Forms.Integration=False,System.Windows.Forms.Layout=False,System.Windows.Forms.PropertyGridInternal=False,System.Windows.Forms.VisualStyles=False,Microsoft.VisualBasic=True,System=True,System.Collections=True,System.Collections.Generic=True,System.Diagnostics=True,System.Linq=True,System.Xml.Linq=True,System.Threading.Tasks=True,TheCrafters001.EssentialsTeamBuilder=True</ImportedNamespaces>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
@@ -55,10 +57,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="My Project\Application.Designer.vb">
+    <Compile Update="My Project\Resources.en.Designer.vb">
+      <DependentUpon>Resources.en.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Update="My Project\Resources.Designer.vb">
       <DesignTime>True</DesignTime>
@@ -73,6 +75,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.en.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Resources.en.Designer.vb</LastGenOutput>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -81,10 +88,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="My Project\Application.myapp">
-      <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
-    </None>
     <None Update="My Project\Settings.settings">
       <CustomToolNamespace>My</CustomToolNamespace>
       <Generator>SettingsSingleFileGenerator</Generator>
