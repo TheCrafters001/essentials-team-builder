@@ -1,12 +1,14 @@
 <p align="center">
-    <img src="./src/Showdown to Essentials Converter/Resources/Showdown to Essentials Logo.png">
+    <img src="./logo/ETB_LOGO.png" height="250px">
+    <h1>Essentials Team Builder</h1>
 </p>
-<h1>Pokémon Showdown to Pokémon Essentials Converter</h1>
-<p>This tool makes it easier to convert Pokémon Showdown format into Pokémon Essentials format. <br>
-Note: this program isn't perfect. Far from it. There will be updates to this program from time to time to either fix bugs or add functionality.<br>
-Other note: This is a fan-made tool. Pokémon is not owned by TheCrafters001; Pokémon is owned by Nintendo/GameFreak/Creatures/The Pokémon Company International<br><br>
 
-This is a non-profit fan-made tool. No copyright infringements intended. Please support the official games!
-</p>
-<h3>Building</h3>
-<p>You will need Visual Studio 2017 or Higher to build this software.</p>
+This tool is designed to help make the development of Pok&eacute;mon fan-games easier, by providing an easy-to-use GUI. Just fill out the required fields, click the "Generate/Preview" button, and you are done!
+
+This is a fan-made tool. Pok&eacute;mon is not owned by TheCrafters001; Pok&eacute;mon is owned by GAME FREAK Inc. This tool does not allow you to create your own fan-games, rather it is to help aid you.
+
+## Installing
+To install this tool, you can download the lastest version [here](https://github.com/TheCrafters001/essentials-team-builder/releases/latest).
+
+### Building from Source
+To build this software, you will need to download [Visual Studio](https://visualstudio.com/) 2017 or higher.
