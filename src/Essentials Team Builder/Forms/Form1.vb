@@ -1,8 +1,4 @@
-﻿Imports System.IO
-Imports System.Threading
-Imports System.Windows.Controls.Primitives
-Imports AutoUpdaterDotNET
-Imports teamGen
+﻿Imports teamGen
 
 Public Class Form1
 
@@ -485,12 +481,6 @@ Public Class Form1
 
         ' Copyright
         copyright_lbl.Text = My.Application.Info.Copyright
-
-        AutoUpdater.ReportErrors = False
-        AutoUpdater.LetUserSelectRemindLater = True
-        AutoUpdater.Synchronous = True
-        AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\Temp\essentials-team-builder\"
-        AutoUpdater.Start("https://github.com/TheCrafters001/essentials-team-builder/releases/latest/download/update.xml")
 
         ' Load this from startup
         lang_cmb.SelectedIndex = My.Settings.Lang
