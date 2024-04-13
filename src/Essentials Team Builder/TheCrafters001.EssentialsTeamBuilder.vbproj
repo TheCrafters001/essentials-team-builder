@@ -48,7 +48,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\teamBuilderConsole\TheCrafters001.teamBuilderConsole.vbproj" />
     <ProjectReference Include="..\teamGen\TheCrafters001.TeamGen.vbproj" />
   </ItemGroup>
 
