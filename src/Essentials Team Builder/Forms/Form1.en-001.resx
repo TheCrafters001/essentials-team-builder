@@ -117,75 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="IVStatsNoteHeader_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="IVStatsNoteHeader_lbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="IVStatsNoteHeader_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="IVStatsNoteHeader_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="IVStatsNoteHeader_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 428</value>
-  </data>
-  <data name="IVStatsNoteHeader_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 15</value>
-  </data>
-  <data name="IVStatsNoteHeader_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="IVStatsNoteHeader_lbl.Text" xml:space="preserve">
-    <value>Note:</value>
-  </data>
-  <data name="&gt;&gt;IVStatsNoteHeader_lbl.Name" xml:space="preserve">
-    <value>IVStatsNoteHeader_lbl</value>
-  </data>
-  <data name="&gt;&gt;IVStatsNoteHeader_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IVStatsNoteHeader_lbl.Parent" xml:space="preserve">
-    <value>pg_basic</value>
-  </data>
-  <data name="&gt;&gt;IVStatsNoteHeader_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="IVStatsNote_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="IVStatsNote_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 443</value>
-  </data>
-  <data name="IVStatsNote_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 32</value>
-  </data>
-  <data name="IVStatsNote_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="IVStatsNote_lbl.Text" xml:space="preserve">
-    <value>If you are on Essentials 17, your IVs will all match the same as your HP Stat. It will not pull from any other stats.</value>
-  </data>
-  <data name="&gt;&gt;IVStatsNote_lbl.Name" xml:space="preserve">
-    <value>IVStatsNote_lbl</value>
-  </data>
-  <data name="&gt;&gt;IVStatsNote_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IVStatsNote_lbl.Parent" xml:space="preserve">
-    <value>pg_basic</value>
-  </data>
-  <data name="&gt;&gt;IVStatsNote_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="battleTeamID_nbr.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="battleTeamID_nbr.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 94</value>
   </data>
@@ -205,13 +141,13 @@
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;battleTeamID_nbr.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 443</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>392, 32</value>
+    <value>723, 32</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -229,8 +165,9 @@
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="properSpellingNote_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
@@ -262,7 +199,7 @@
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;properSpellingNote_lbl.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="essData_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -280,7 +217,7 @@
     <value>29</value>
   </data>
   <data name="essData_lbl.Text" xml:space="preserve">
-    <value>Essentials Data</value>
+    <value>3553n71415 d474</value>
   </data>
   <data name="&gt;&gt;essData_lbl.Name" xml:space="preserve">
     <value>essData_lbl</value>
@@ -292,7 +229,7 @@
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;essData_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="allowSuperShiny_chk.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -307,8 +244,8 @@
     <value>28</value>
   </data>
   <data name="allowSuperShiny_chk.Text" xml:space="preserve">
-    <value>Allow Super Shinies
-(Essentials 21)</value>
+    <value>4110w 5up32 5h1n135
+(3553n71415 21)</value>
   </data>
   <data name="&gt;&gt;allowSuperShiny_chk.Name" xml:space="preserve">
     <value>allowSuperShiny_chk</value>
@@ -320,7 +257,7 @@
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;allowSuperShiny_chk.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="loseTextQuotes_chkBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -348,7 +285,7 @@
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;loseTextQuotes_chkBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="useAbilityIndex_chkBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -379,7 +316,7 @@
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;useAbilityIndex_chkBox.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="existingBattle_chkBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -394,8 +331,8 @@
     <value>24</value>
   </data>
   <data name="existingBattle_chkBox.Text" xml:space="preserve">
-    <value>Check this box if this NPC already has a team, 
-then enter the Battle Team ID above.</value>
+    <value>ch3ck 7h15 80x 1f 7h15 npc 41234dy h45 4 734m,
+7h3n 3n732 7h3 847713 734m 1d 480v3.</value>
   </data>
   <data name="&gt;&gt;existingBattle_chkBox.Name" xml:space="preserve">
     <value>existingBattle_chkBox</value>
@@ -407,7 +344,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;existingBattle_chkBox.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="customBallIDs_chkBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -422,7 +359,7 @@ then enter the Battle Team ID above.</value>
     <value>25</value>
   </data>
   <data name="customBallIDs_chkBox.Text" xml:space="preserve">
-    <value>Allow use of Custom Pokéball IDs</value>
+    <value>4110w u53 0f cu570m p0ké8411 1d5</value>
   </data>
   <data name="&gt;&gt;customBallIDs_chkBox.Name" xml:space="preserve">
     <value>customBallIDs_chkBox</value>
@@ -434,22 +371,22 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;customBallIDs_chkBox.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="essVersion_cmb.Items" xml:space="preserve">
-    <value>Essentials 17</value>
+    <value>3553n71415 17</value>
   </data>
   <data name="essVersion_cmb.Items1" xml:space="preserve">
-    <value>Essentials 18</value>
+    <value>3553n71415 18</value>
   </data>
   <data name="essVersion_cmb.Items2" xml:space="preserve">
-    <value>Essentials 19</value>
+    <value>3553n71415 19</value>
   </data>
   <data name="essVersion_cmb.Items3" xml:space="preserve">
-    <value>Essentials 20</value>
+    <value>3553n71415 20</value>
   </data>
   <data name="essVersion_cmb.Items4" xml:space="preserve">
-    <value>Essentials 21</value>
+    <value>3553n71415 21</value>
   </data>
   <data name="essVersion_cmb.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 184</value>
@@ -470,7 +407,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;essVersion_cmb.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="essVersion_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -488,7 +425,7 @@ then enter the Battle Team ID above.</value>
     <value>22</value>
   </data>
   <data name="essVersion_lbl.Text" xml:space="preserve">
-    <value>Essentials Version</value>
+    <value>3553n71415 v32510n</value>
   </data>
   <data name="&gt;&gt;essVersion_lbl.Name" xml:space="preserve">
     <value>essVersion_lbl</value>
@@ -500,7 +437,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;essVersion_lbl.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="battleTeamID_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -518,7 +455,7 @@ then enter the Battle Team ID above.</value>
     <value>20</value>
   </data>
   <data name="battleTeamID_lbl.Text" xml:space="preserve">
-    <value>Battle Team ID</value>
+    <value>847713 734m 1d</value>
   </data>
   <data name="&gt;&gt;battleTeamID_lbl.Name" xml:space="preserve">
     <value>battleTeamID_lbl</value>
@@ -530,7 +467,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;battleTeamID_lbl.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="numPoké_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -557,7 +494,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;numPoké_lbl.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>12</value>
   </data>
   <data name="numPoké_cmb.Items" xml:space="preserve">
     <value>1</value>
@@ -596,7 +533,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;numPoké_cmb.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>13</value>
   </data>
   <data name="loseText_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -623,7 +560,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;loseText_lbl.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>14</value>
   </data>
   <data name="loseText_txt.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 50</value>
@@ -650,7 +587,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;loseText_txt.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>15</value>
   </data>
   <data name="trainerType_txtBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>182, 50</value>
@@ -677,7 +614,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;trainerType_txtBox.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>16</value>
   </data>
   <data name="trainerType_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -707,7 +644,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;trainerType_lbl.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>17</value>
   </data>
   <data name="trainerName_txtBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 50</value>
@@ -731,7 +668,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;trainerName_txtBox.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>18</value>
   </data>
   <data name="trainerName_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -758,7 +695,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;trainerName_lbl.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>19</value>
   </data>
   <data name="trainerInfoHeader_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -788,7 +725,7 @@ then enter the Battle Team ID above.</value>
     <value>pg_basic</value>
   </data>
   <data name="&gt;&gt;trainerInfoHeader_lbl.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>20</value>
   </data>
   <data name="pg_basic.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
@@ -1064,7 +1001,7 @@ then enter the Battle Team ID above.</value>
     <value>3</value>
   </data>
   <data name="addItem_btn.Text" xml:space="preserve">
-    <value>Add Item</value>
+    <value>4dd 173m</value>
   </data>
   <data name="&gt;&gt;addItem_btn.Name" xml:space="preserve">
     <value>addItem_btn</value>
@@ -39016,7 +38953,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>10</value>
   </data>
   <data name="Button1.Text" xml:space="preserve">
-    <value>Select Language</value>
+    <value>5313c7 14n9u493</value>
   </data>
   <data name="&gt;&gt;Button1.Name" xml:space="preserve">
     <value>Button1</value>
@@ -39029,12 +38966,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   </data>
   <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="lang_cmb.Items" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="lang_cmb.Items1" xml:space="preserve">
-    <value>1337 5p34k (13v31 1)</value>
   </data>
   <data name="lang_cmb.Location" type="System.Drawing.Point, System.Drawing">
     <value>513, 211</value>
@@ -39213,8 +39144,8 @@ SOFTWARE.</value>
     <value>3</value>
   </data>
   <data name="aboutInfo_lbl.Text" xml:space="preserve">
-    <value>The EASY Way to Build a Team.
-This tool is free and open-source. It is built so you can build your own teams in the Pokemon Essentials game engine! I always have found the tools that come with essentials to be pretty bad, so I am building my own custom tools to make it easier!</value>
+    <value>7h3 345y w4y 70 8u11d 4 734m.
+7h15 7001 15 f233 4nd 0p3n-50u2c3. 17 15 8u117 50 y0u c4n 8u11d y0u2 0wn 734m5 1n 7h3 p0k3m0n 3553n71415 94m3 3n91n3! 1 41w4y5 h4v3 f0und 7h3 70015 7h47 c0m3 w17h 3553n71415 70 83 p2377y 84d, 50 1 4m 8u11d1n9 my 0wn cu570m 70015 70 m4k3 17 345132!</value>
   </data>
   <data name="&gt;&gt;aboutInfo_lbl.Name" xml:space="preserve">
     <value>aboutInfo_lbl</value>
@@ -39239,9 +39170,6 @@ This tool is free and open-source. It is built so you can build your own teams i
   </data>
   <data name="copyright_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="copyright_lbl.Text" xml:space="preserve">
-    <value>Copyright</value>
   </data>
   <data name="&gt;&gt;copyright_lbl.Name" xml:space="preserve">
     <value>copyright_lbl</value>
@@ -39271,7 +39199,7 @@ This tool is free and open-source. It is built so you can build your own teams i
     <value>1</value>
   </data>
   <data name="aboutHeaderAuthor_lbl.Text" xml:space="preserve">
-    <value>By TheCrafters001</value>
+    <value>8y 7h3c24f7325001</value>
   </data>
   <data name="&gt;&gt;aboutHeaderAuthor_lbl.Name" xml:space="preserve">
     <value>aboutHeaderAuthor_lbl</value>
@@ -39343,7 +39271,7 @@ This tool is free and open-source. It is built so you can build your own teams i
     <value>0</value>
   </data>
   <data name="editor_grp.Text" xml:space="preserve">
-    <value>Editor</value>
+    <value>3d1702</value>
   </data>
   <data name="&gt;&gt;editor_grp.Name" xml:space="preserve">
     <value>editor_grp</value>
@@ -39364,7 +39292,7 @@ This tool is free and open-source. It is built so you can build your own teams i
     <value>112, 20</value>
   </data>
   <data name="GeneratePreviewToolStripMenuItem.Text" xml:space="preserve">
-    <value>Generate/Preview</value>
+    <value>93n32473/p23v13w</value>
   </data>
   <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -39946,7 +39874,7 @@ This tool is free and open-source. It is built so you can build your own teams i
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Essentials Team Editor</value>
+    <value>3553n71415 734m 3d1702</value>
   </data>
   <data name="&gt;&gt;GeneratePreviewToolStripMenuItem.Name" xml:space="preserve">
     <value>GeneratePreviewToolStripMenuItem</value>

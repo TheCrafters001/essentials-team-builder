@@ -9,6 +9,17 @@ Public Class Form1
 
     Public Sub New()
 
+        ' Get the language stuff BEFORE InitializeComponent() so
+        ' that it can, you know, display the saved language.
+        If My.Settings.Lang = 0 Then
+            Threading.Thread.CurrentThread.CurrentCulture = Globalization.CultureInfo.GetCultureInfo("en")
+            Threading.Thread.CurrentThread.CurrentUICulture = Globalization.CultureInfo.GetCultureInfo("en")
+        ElseIf My.Settings.Lang = 1 Then
+            ' I borrowed English (World) for Leet Speak. Don't mind me.
+            Threading.Thread.CurrentThread.CurrentCulture = Globalization.CultureInfo.GetCultureInfo("en-001")
+            Threading.Thread.CurrentThread.CurrentUICulture = Globalization.CultureInfo.GetCultureInfo("en-001")
+        End If
+
         ' This call is required by the designer.
         InitializeComponent()
 
@@ -83,9 +94,139 @@ Public Class Form1
 
             If numPoké_cmb.SelectedIndex = 0 Then
                 ' Pokemon 1
-                'Preview.output_rchTxt.Text &= Generator.essentials17(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text, pokemon1Level_nbr.Value, pokemon1Ability_cmb.Text,
-                '                                                     pokemon1Gender_cmb.SelectedIndex, pokemon1Form_nbr.Value, pokemon1Nature_cmb.Text, pokemon1Happiness_nbr.Value,
-                '                                                     pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, )
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text, pokemon1Level_nbr.Value, pokemon1Ability_cmb.Text,
+                                                                     pokemon1Gender_cmb.SelectedIndex, pokemon1Form_nbr.Value, pokemon1Nature_cmb.Text, pokemon1Happiness_nbr.Value,
+                                                                     pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked, pokemon1Shadow_rad.Checked,
+                                                                     {pokemon1Move1_txtBox.Text, pokemon1Move2_txtBox.Text, pokemon1Move3_txtBox.Text, pokemon1Move4_txtBox.Text},
+                                                                     pokemon1IVsHP_txt.Text)
+
+            ElseIf numPoké_cmb.SelectedIndex = 1 Then
+                ' Pokemon 1
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text, pokemon1Level_nbr.Value, pokemon1Ability_cmb.Text,
+                                                                     pokemon1Gender_cmb.SelectedIndex, pokemon1Form_nbr.Value, pokemon1Nature_cmb.Text, pokemon1Happiness_nbr.Value,
+                                                                     pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked, pokemon1Shadow_rad.Checked,
+                                                                     {pokemon1Move1_txtBox.Text, pokemon1Move2_txtBox.Text, pokemon1Move3_txtBox.Text, pokemon1Move4_txtBox.Text},
+                                                                     pokemon1IVsHP_txt.Text)
+                ' Pokemon 2
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon2Name_txt.Text, pokemon2HeldItem_txt.Text, pokemon2Level_nbr.Value, pokemon2Ability_cmb.Text,
+                                                                     pokemon2Gender_cmb.SelectedIndex, pokemon2Form_nbr.Value, pokemon2Nature_cmb.Text, pokemon2Happiness_nbr.Value,
+                                                                     pokemon2Nickname_txt.Text, pokemon2PokeballID_cmb.Text, pokemon2Shiny_rad.Checked, pokemon2Shadow_rad.Checked,
+                                                                     {pokemon2Move1_txtBox.Text, pokemon2Move2_txtBox.Text, pokemon2Move3_txtBox.Text, pokemon2Move4_txtBox.Text},
+                                                                     pokemon2IVsHP_txt.Text)
+
+            ElseIf numPoké_cmb.SelectedIndex = 2 Then
+                ' Pokemon 1
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text, pokemon1Level_nbr.Value, pokemon1Ability_cmb.Text,
+                                                                     pokemon1Gender_cmb.SelectedIndex, pokemon1Form_nbr.Value, pokemon1Nature_cmb.Text, pokemon1Happiness_nbr.Value,
+                                                                     pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked, pokemon1Shadow_rad.Checked,
+                                                                     {pokemon1Move1_txtBox.Text, pokemon1Move2_txtBox.Text, pokemon1Move3_txtBox.Text, pokemon1Move4_txtBox.Text},
+                                                                     pokemon1IVsHP_txt.Text)
+                ' Pokemon 2
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon2Name_txt.Text, pokemon2HeldItem_txt.Text, pokemon2Level_nbr.Value, pokemon2Ability_cmb.Text,
+                                                                     pokemon2Gender_cmb.SelectedIndex, pokemon2Form_nbr.Value, pokemon2Nature_cmb.Text, pokemon2Happiness_nbr.Value,
+                                                                     pokemon2Nickname_txt.Text, pokemon2PokeballID_cmb.Text, pokemon2Shiny_rad.Checked, pokemon2Shadow_rad.Checked,
+                                                                     {pokemon2Move1_txtBox.Text, pokemon2Move2_txtBox.Text, pokemon2Move3_txtBox.Text, pokemon2Move4_txtBox.Text},
+                                                                     pokemon2IVsHP_txt.Text)
+                ' Pokemon 3
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon3Name_txt.Text, pokemon3HeldItem_txt.Text, pokemon3Level_nbr.Value, pokemon3Ability_cmb.Text,
+                                                                     pokemon3Gender_cmb.SelectedIndex, pokemon3Form_nbr.Value, pokemon3Nature_cmb.Text, pokemon3Happiness_nbr.Value,
+                                                                     pokemon3Nickname_txt.Text, pokemon3PokeballID_cmb.Text, pokemon3Shiny_rad.Checked, pokemon3Shadow_rad.Checked,
+                                                                     {pokemon3Move1_txtBox.Text, pokemon3Move2_txtBox.Text, pokemon3Move3_txtBox.Text, pokemon3Move4_txtBox.Text},
+                                                                     pokemon3IVsHP_txt.Text)
+            ElseIf numPoké_cmb.SelectedIndex = 3 Then
+                ' Pokemon 1
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text, pokemon1Level_nbr.Value, pokemon1Ability_cmb.Text,
+                                                                     pokemon1Gender_cmb.SelectedIndex, pokemon1Form_nbr.Value, pokemon1Nature_cmb.Text, pokemon1Happiness_nbr.Value,
+                                                                     pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked, pokemon1Shadow_rad.Checked,
+                                                                     {pokemon1Move1_txtBox.Text, pokemon1Move2_txtBox.Text, pokemon1Move3_txtBox.Text, pokemon1Move4_txtBox.Text},
+                                                                     pokemon1IVsHP_txt.Text)
+                ' Pokemon 2
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon2Name_txt.Text, pokemon2HeldItem_txt.Text, pokemon2Level_nbr.Value, pokemon2Ability_cmb.Text,
+                                                                     pokemon2Gender_cmb.SelectedIndex, pokemon2Form_nbr.Value, pokemon2Nature_cmb.Text, pokemon2Happiness_nbr.Value,
+                                                                     pokemon2Nickname_txt.Text, pokemon2PokeballID_cmb.Text, pokemon2Shiny_rad.Checked, pokemon2Shadow_rad.Checked,
+                                                                     {pokemon2Move1_txtBox.Text, pokemon2Move2_txtBox.Text, pokemon2Move3_txtBox.Text, pokemon2Move4_txtBox.Text},
+                                                                     pokemon2IVsHP_txt.Text)
+                ' Pokemon 3
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon3Name_txt.Text, pokemon3HeldItem_txt.Text, pokemon3Level_nbr.Value, pokemon3Ability_cmb.Text,
+                                                                     pokemon3Gender_cmb.SelectedIndex, pokemon3Form_nbr.Value, pokemon3Nature_cmb.Text, pokemon3Happiness_nbr.Value,
+                                                                     pokemon3Nickname_txt.Text, pokemon3PokeballID_cmb.Text, pokemon3Shiny_rad.Checked, pokemon3Shadow_rad.Checked,
+                                                                     {pokemon3Move1_txtBox.Text, pokemon3Move2_txtBox.Text, pokemon3Move3_txtBox.Text, pokemon3Move4_txtBox.Text},
+                                                                     pokemon3IVsHP_txt.Text)
+                ' Pokemon 4
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon4Name_txt.Text, pokemon4HeldItem_txt.Text, pokemon4Level_nbr.Value, pokemon4Ability_cmb.Text,
+                                                                     pokemon4Gender_cmb.SelectedIndex, pokemon4Form_nbr.Value, pokemon4Nature_cmb.Text, pokemon4Happiness_nbr.Value,
+                                                                     pokemon4Nickname_txt.Text, pokemon4PokeballID_cmb.Text, pokemon4Shiny_rad.Checked, pokemon4Shadow_rad.Checked,
+                                                                     {pokemon4Move1_txtBox.Text, pokemon4Move2_txtBox.Text, pokemon4Move3_txtBox.Text, pokemon4Move4_txtBox.Text},
+                                                                     pokemon4IVsHP_txt.Text)
+            ElseIf numPoké_cmb.SelectedIndex = 4 Then
+                ' Pokemon 1
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text, pokemon1Level_nbr.Value, pokemon1Ability_cmb.Text,
+                                                                     pokemon1Gender_cmb.SelectedIndex, pokemon1Form_nbr.Value, pokemon1Nature_cmb.Text, pokemon1Happiness_nbr.Value,
+                                                                     pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked, pokemon1Shadow_rad.Checked,
+                                                                     {pokemon1Move1_txtBox.Text, pokemon1Move2_txtBox.Text, pokemon1Move3_txtBox.Text, pokemon1Move4_txtBox.Text},
+                                                                     pokemon1IVsHP_txt.Text)
+                ' Pokemon 2
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon2Name_txt.Text, pokemon2HeldItem_txt.Text, pokemon2Level_nbr.Value, pokemon2Ability_cmb.Text,
+                                                                     pokemon2Gender_cmb.SelectedIndex, pokemon2Form_nbr.Value, pokemon2Nature_cmb.Text, pokemon2Happiness_nbr.Value,
+                                                                     pokemon2Nickname_txt.Text, pokemon2PokeballID_cmb.Text, pokemon2Shiny_rad.Checked, pokemon2Shadow_rad.Checked,
+                                                                     {pokemon2Move1_txtBox.Text, pokemon2Move2_txtBox.Text, pokemon2Move3_txtBox.Text, pokemon2Move4_txtBox.Text},
+                                                                     pokemon2IVsHP_txt.Text)
+                ' Pokemon 3
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon3Name_txt.Text, pokemon3HeldItem_txt.Text, pokemon3Level_nbr.Value, pokemon3Ability_cmb.Text,
+                                                                     pokemon3Gender_cmb.SelectedIndex, pokemon3Form_nbr.Value, pokemon3Nature_cmb.Text, pokemon3Happiness_nbr.Value,
+                                                                     pokemon3Nickname_txt.Text, pokemon3PokeballID_cmb.Text, pokemon3Shiny_rad.Checked, pokemon3Shadow_rad.Checked,
+                                                                     {pokemon3Move1_txtBox.Text, pokemon3Move2_txtBox.Text, pokemon3Move3_txtBox.Text, pokemon3Move4_txtBox.Text},
+                                                                     pokemon3IVsHP_txt.Text)
+                ' Pokemon 4
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon4Name_txt.Text, pokemon4HeldItem_txt.Text, pokemon4Level_nbr.Value, pokemon4Ability_cmb.Text,
+                                                                     pokemon4Gender_cmb.SelectedIndex, pokemon4Form_nbr.Value, pokemon4Nature_cmb.Text, pokemon4Happiness_nbr.Value,
+                                                                     pokemon4Nickname_txt.Text, pokemon4PokeballID_cmb.Text, pokemon4Shiny_rad.Checked, pokemon4Shadow_rad.Checked,
+                                                                     {pokemon4Move1_txtBox.Text, pokemon4Move2_txtBox.Text, pokemon4Move3_txtBox.Text, pokemon4Move4_txtBox.Text},
+                                                                     pokemon4IVsHP_txt.Text)
+                ' Pokemon 5
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon5Name_txt.Text, pokemon5HeldItem_txt.Text, pokemon5Level_nbr.Value, pokemon5Ability_cmb.Text,
+                                                                     pokemon5Gender_cmb.SelectedIndex, pokemon5Form_nbr.Value, pokemon5Nature_cmb.Text, pokemon5Happiness_nbr.Value,
+                                                                     pokemon5Nickname_txt.Text, pokemon5PokeballID_cmb.Text, pokemon5Shiny_rad.Checked, pokemon5Shadow_rad.Checked,
+                                                                     {pokemon5Move1_txt.Text, pokemon5Move2_txt.Text, pokemon5Move3_txt.Text, pokemon5Move4_txt.Text},
+                                                                     pokemon5IVsHP_txt.Text)
+
+            ElseIf numPoké_cmb.SelectedIndex = 5 Then
+                ' Pokemon 1
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon1Name_txtBox.Text, pokemon1HeldItem_txtBox.Text, pokemon1Level_nbr.Value, pokemon1Ability_cmb.Text,
+                                                                     pokemon1Gender_cmb.SelectedIndex, pokemon1Form_nbr.Value, pokemon1Nature_cmb.Text, pokemon1Happiness_nbr.Value,
+                                                                     pokemon1Nickname_txtBox.Text, pokemon1PokeballID_cmb.Text, pokemon1Shiny_rad.Checked, pokemon1Shadow_rad.Checked,
+                                                                     {pokemon1Move1_txtBox.Text, pokemon1Move2_txtBox.Text, pokemon1Move3_txtBox.Text, pokemon1Move4_txtBox.Text},
+                                                                     pokemon1IVsHP_txt.Text)
+                ' Pokemon 2
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon2Name_txt.Text, pokemon2HeldItem_txt.Text, pokemon2Level_nbr.Value, pokemon2Ability_cmb.Text,
+                                                                     pokemon2Gender_cmb.SelectedIndex, pokemon2Form_nbr.Value, pokemon2Nature_cmb.Text, pokemon2Happiness_nbr.Value,
+                                                                     pokemon2Nickname_txt.Text, pokemon2PokeballID_cmb.Text, pokemon2Shiny_rad.Checked, pokemon2Shadow_rad.Checked,
+                                                                     {pokemon2Move1_txtBox.Text, pokemon2Move2_txtBox.Text, pokemon2Move3_txtBox.Text, pokemon2Move4_txtBox.Text},
+                                                                     pokemon2IVsHP_txt.Text)
+                ' Pokemon 3
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon3Name_txt.Text, pokemon3HeldItem_txt.Text, pokemon3Level_nbr.Value, pokemon3Ability_cmb.Text,
+                                                                     pokemon3Gender_cmb.SelectedIndex, pokemon3Form_nbr.Value, pokemon3Nature_cmb.Text, pokemon3Happiness_nbr.Value,
+                                                                     pokemon3Nickname_txt.Text, pokemon3PokeballID_cmb.Text, pokemon3Shiny_rad.Checked, pokemon3Shadow_rad.Checked,
+                                                                     {pokemon3Move1_txtBox.Text, pokemon3Move2_txtBox.Text, pokemon3Move3_txtBox.Text, pokemon3Move4_txtBox.Text},
+                                                                     pokemon3IVsHP_txt.Text)
+                ' Pokemon 4
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon4Name_txt.Text, pokemon4HeldItem_txt.Text, pokemon4Level_nbr.Value, pokemon4Ability_cmb.Text,
+                                                                     pokemon4Gender_cmb.SelectedIndex, pokemon4Form_nbr.Value, pokemon4Nature_cmb.Text, pokemon4Happiness_nbr.Value,
+                                                                     pokemon4Nickname_txt.Text, pokemon4PokeballID_cmb.Text, pokemon4Shiny_rad.Checked, pokemon4Shadow_rad.Checked,
+                                                                     {pokemon4Move1_txtBox.Text, pokemon4Move2_txtBox.Text, pokemon4Move3_txtBox.Text, pokemon4Move4_txtBox.Text},
+                                                                     pokemon4IVsHP_txt.Text)
+                ' Pokemon 5
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon5Name_txt.Text, pokemon5HeldItem_txt.Text, pokemon5Level_nbr.Value, pokemon5Ability_cmb.Text,
+                                                                     pokemon5Gender_cmb.SelectedIndex, pokemon5Form_nbr.Value, pokemon5Nature_cmb.Text, pokemon5Happiness_nbr.Value,
+                                                                     pokemon5Nickname_txt.Text, pokemon5PokeballID_cmb.Text, pokemon5Shiny_rad.Checked, pokemon5Shadow_rad.Checked,
+                                                                     {pokemon5Move1_txt.Text, pokemon5Move2_txt.Text, pokemon5Move3_txt.Text, pokemon5Move4_txt.Text},
+                                                                     pokemon5IVsHP_txt.Text)
+                ' Pokemon 6
+                Preview.output_rchTxt.Text &= Generator.essentials17(pokemon6Name_txt.Text, pokemon6HeldItem_txt.Text, pokemon6Level_nbr.Value, pokemon6Ability_cmb.Text,
+                                                                     pokemon6Gender_cmb.SelectedIndex, pokemon6Form_nbr.Value, pokemon6Nature_cmb.Text, pokemon6Happiness_nbr.Value,
+                                                                     pokemon6Nickname_txt.Text, pokemon6PokeballID_cmb.Text, pokemon6Shiny_rad.Checked, pokemon6Shadow_rad.Checked,
+                                                                     {pokemon6Move1_txt.Text, pokemon6Move2_txt.Text, pokemon6Move3_txt.Text, pokemon6Move4_txt.Text},
+                                                                     pokemon6IVsHP_txt.Text)
 
             End If
 
@@ -364,8 +505,6 @@ Public Class Form1
 
     Private Sub LangManager()
 
-        lang_cmb.SelectedIndex = My.Settings.Lang
-
 
         If Not lang_cmb.SelectedIndex = My.Settings.Lang Then
             ' Set Display Language
@@ -373,7 +512,8 @@ Public Class Form1
                 Threading.Thread.CurrentThread.CurrentCulture = Globalization.CultureInfo.GetCultureInfo("en")
                 Threading.Thread.CurrentThread.CurrentUICulture = Globalization.CultureInfo.GetCultureInfo("en")
             ElseIf lang_cmb.SelectedIndex = 1 Then
-
+                Threading.Thread.CurrentThread.CurrentCulture = Globalization.CultureInfo.GetCultureInfo("en-001")
+                Threading.Thread.CurrentThread.CurrentUICulture = Globalization.CultureInfo.GetCultureInfo("en-001")
             End If
 
             ' Save the settings
@@ -382,11 +522,11 @@ Public Class Form1
 
             Debug.WriteLine("Reloading Language...")
 
+            ' These three lines wasted 30 minutes of my life
+            ' because they were not inside the if statement.
             Me.Controls.Clear()
             InitializeComponent()
             Form1_Activated(Nothing, Nothing)
-
         End If
-
     End Sub
 End Class

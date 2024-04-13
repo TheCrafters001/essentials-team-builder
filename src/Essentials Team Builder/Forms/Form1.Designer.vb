@@ -452,6 +452,8 @@ Partial Class Form1
         aboutHeaderAuthor_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
+        IVStatsNote_lbl = New Label()
+        IVStatsNoteHeader_lbl = New Label()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -560,6 +562,8 @@ Partial Class Form1
         ' 
         ' pg_basic
         ' 
+        pg_basic.Controls.Add(IVStatsNoteHeader_lbl)
+        pg_basic.Controls.Add(IVStatsNote_lbl)
         pg_basic.Controls.Add(battleTeamID_nbr)
         pg_basic.Controls.Add(Label2)
         pg_basic.Controls.Add(properSpellingNote_lbl)
@@ -3314,7 +3318,7 @@ Partial Class Form1
         ' 
         lang_cmb.DropDownStyle = ComboBoxStyle.DropDownList
         lang_cmb.FormattingEnabled = True
-        lang_cmb.Items.AddRange(New Object() {resources.GetString("lang_cmb.Items")})
+        lang_cmb.Items.AddRange(New Object() {resources.GetString("lang_cmb.Items"), resources.GetString("lang_cmb.Items1")})
         resources.ApplyResources(lang_cmb, "lang_cmb")
         lang_cmb.Name = "lang_cmb"
         ' 
@@ -3371,6 +3375,17 @@ Partial Class Form1
         ' 
         GeneratePreviewToolStripMenuItem.Name = "GeneratePreviewToolStripMenuItem"
         resources.ApplyResources(GeneratePreviewToolStripMenuItem, "GeneratePreviewToolStripMenuItem")
+        ' 
+        ' IVStatsNote_lbl
+        ' 
+        resources.ApplyResources(IVStatsNote_lbl, "IVStatsNote_lbl")
+        IVStatsNote_lbl.Name = "IVStatsNote_lbl"
+        ' 
+        ' IVStatsNoteHeader_lbl
+        ' 
+        resources.ApplyResources(IVStatsNoteHeader_lbl, "IVStatsNoteHeader_lbl")
+        IVStatsNoteHeader_lbl.ForeColor = Color.Red
+        IVStatsNoteHeader_lbl.Name = "IVStatsNoteHeader_lbl"
         ' 
         ' Form1
         ' 
@@ -3928,4 +3943,6 @@ Partial Class Form1
     Friend WithEvents lang_cmb As ComboBox
     Friend WithEvents lang_lbl As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents IVStatsNoteHeader_lbl As Label
+    Friend WithEvents IVStatsNote_lbl As Label
 End Class
