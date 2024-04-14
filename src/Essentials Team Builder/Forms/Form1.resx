@@ -1404,31 +1404,25 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon1Shadow_grp.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="pokemon1EVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 125</value>
+  <data name="NumericUpDown7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 123</value>
   </data>
-  <data name="pokemon1EVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1EVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NumericUpDown7.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
   </data>
-  <data name="pokemon1EVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="NumericUpDown7.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
   </data>
-  <data name="pokemon1EVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;NumericUpDown7.Name" xml:space="preserve">
+    <value>NumericUpDown7</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon1EVsDEF_txt</value>
+  <data name="&gt;&gt;NumericUpDown7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1EVsDEF_txt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown7.Parent" xml:space="preserve">
     <value>pokemon1EVs_grp</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsDEF_txt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown7.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="pokemon1EVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
@@ -1458,31 +1452,25 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon1EVsDEF_lbl.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pokemon1EVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 125</value>
+  <data name="NumericUpDown8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 79</value>
   </data>
-  <data name="pokemon1EVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1EVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NumericUpDown8.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
   </data>
-  <data name="pokemon1EVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="NumericUpDown8.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
-  <data name="pokemon1EVsSPDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;NumericUpDown8.Name" xml:space="preserve">
+    <value>NumericUpDown8</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon1EVsSPDEF_txt</value>
+  <data name="&gt;&gt;NumericUpDown8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1EVsSPDEF_txt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown8.Parent" xml:space="preserve">
     <value>pokemon1EVs_grp</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsSPDEF_txt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown8.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="pokemon1EVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
@@ -1512,31 +1500,25 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon1EVsSPDEF_lbl.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="pokemon1EVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 81</value>
+  <data name="NumericUpDown9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 37</value>
   </data>
-  <data name="pokemon1EVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1EVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NumericUpDown9.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
   </data>
-  <data name="pokemon1EVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="NumericUpDown9.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
   </data>
-  <data name="pokemon1EVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;NumericUpDown9.Name" xml:space="preserve">
+    <value>NumericUpDown9</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon1EVsSPATK_txt</value>
+  <data name="&gt;&gt;NumericUpDown9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1EVsSPATK_txt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown9.Parent" xml:space="preserve">
     <value>pokemon1EVs_grp</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsSPATK_txt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown9.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="pokemon1EVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
@@ -1566,31 +1548,25 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon1EVsSPATK_lbl.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="pokemon1EVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 37</value>
+  <data name="NumericUpDown10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 123</value>
   </data>
-  <data name="pokemon1EVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1EVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NumericUpDown10.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
   </data>
-  <data name="pokemon1EVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="NumericUpDown10.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
   </data>
-  <data name="pokemon1EVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;NumericUpDown10.Name" xml:space="preserve">
+    <value>NumericUpDown10</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon1EVsSPD_txt</value>
+  <data name="&gt;&gt;NumericUpDown10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1EVsSPD_txt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown10.Parent" xml:space="preserve">
     <value>pokemon1EVs_grp</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsSPD_txt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown10.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="pokemon1EVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
@@ -1620,31 +1596,25 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon1EVsSPD_lbl.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="pokemon1EVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 81</value>
+  <data name="NumericUpDown11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 79</value>
   </data>
-  <data name="pokemon1EVsATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1EVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NumericUpDown11.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
   </data>
-  <data name="pokemon1EVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="NumericUpDown11.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
   </data>
-  <data name="pokemon1EVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;NumericUpDown11.Name" xml:space="preserve">
+    <value>NumericUpDown11</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon1EVsATK_txt</value>
+  <data name="&gt;&gt;NumericUpDown11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1EVsATK_txt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown11.Parent" xml:space="preserve">
     <value>pokemon1EVs_grp</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsATK_txt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown11.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="pokemon1EVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
@@ -1674,31 +1644,25 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon1EVsATK_lbl.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="pokemon1EVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="NumericUpDown12.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 37</value>
   </data>
-  <data name="pokemon1EVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1EVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NumericUpDown12.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
   </data>
-  <data name="pokemon1EVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="NumericUpDown12.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
   </data>
-  <data name="pokemon1EVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;NumericUpDown12.Name" xml:space="preserve">
+    <value>NumericUpDown12</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon1EVsHP_txt</value>
+  <data name="&gt;&gt;NumericUpDown12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1EVsHP_txt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown12.Parent" xml:space="preserve">
     <value>pokemon1EVs_grp</value>
   </data>
-  <data name="&gt;&gt;pokemon1EVsHP_txt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;NumericUpDown12.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="pokemon1EVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
@@ -1752,6 +1716,132 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon1EVs_grp.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="NumericUpDown4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 123</value>
+  </data>
+  <data name="NumericUpDown4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="NumericUpDown4.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown4.Name" xml:space="preserve">
+    <value>NumericUpDown4</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown4.Parent" xml:space="preserve">
+    <value>pokemon1IVs_grp</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NumericUpDown5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 79</value>
+  </data>
+  <data name="NumericUpDown5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="NumericUpDown5.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown5.Name" xml:space="preserve">
+    <value>NumericUpDown5</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown5.Parent" xml:space="preserve">
+    <value>pokemon1IVs_grp</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NumericUpDown6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 37</value>
+  </data>
+  <data name="NumericUpDown6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="NumericUpDown6.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown6.Name" xml:space="preserve">
+    <value>NumericUpDown6</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown6.Parent" xml:space="preserve">
+    <value>pokemon1IVs_grp</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NumericUpDown3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 123</value>
+  </data>
+  <data name="NumericUpDown3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="NumericUpDown3.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown3.Name" xml:space="preserve">
+    <value>NumericUpDown3</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown3.Parent" xml:space="preserve">
+    <value>pokemon1IVs_grp</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="NumericUpDown2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 79</value>
+  </data>
+  <data name="NumericUpDown2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="NumericUpDown2.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown2.Name" xml:space="preserve">
+    <value>NumericUpDown2</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown2.Parent" xml:space="preserve">
+    <value>pokemon1IVs_grp</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="NumericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 37</value>
+  </data>
+  <data name="NumericUpDown1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="NumericUpDown1.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown1.Name" xml:space="preserve">
+    <value>NumericUpDown1</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown1.Parent" xml:space="preserve">
+    <value>pokemon1IVs_grp</value>
+  </data>
+  <data name="&gt;&gt;NumericUpDown1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="pokemon1RandomIVs_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>57, 152</value>
   </data>
@@ -1774,7 +1864,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon1IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon1RandomIVs_btn.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>6</value>
   </data>
   <data name="pokemon1MaxIVs_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 152</value>
@@ -1798,34 +1888,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon1IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon1MaxIVs_btn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pokemon1IVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 123</value>
-  </data>
-  <data name="pokemon1IVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1IVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon1IVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="pokemon1IVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon1IVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon1IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>7</value>
   </data>
   <data name="pokemon1IVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1852,34 +1915,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon1IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon1IVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon1IVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 123</value>
-  </data>
-  <data name="pokemon1IVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1IVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon1IVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon1IVsSPDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon1IVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon1IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="pokemon1IVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1906,34 +1942,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon1IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon1IVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon1IVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 79</value>
-  </data>
-  <data name="pokemon1IVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1IVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon1IVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon1IVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon1IVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon1IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="pokemon1IVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1960,34 +1969,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon1IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon1IVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon1IVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 35</value>
-  </data>
-  <data name="pokemon1IVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1IVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon1IVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon1IVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon1IVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon1IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="pokemon1IVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2014,34 +1996,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon1IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon1IVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon1IVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 79</value>
-  </data>
-  <data name="pokemon1IVsATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1IVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon1IVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1IVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon1IVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon1IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsATK_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="pokemon1IVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2068,33 +2023,6 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon1IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon1IVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="pokemon1IVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 35</value>
-  </data>
-  <data name="pokemon1IVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon1IVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon1IVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon1IVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon1IVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon1IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon1IVsHP_txt.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
   <data name="pokemon1IVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
@@ -7713,33 +7641,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon2Name_lbl.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="pokemon2EVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 125</value>
-  </data>
-  <data name="pokemon2EVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2EVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2EVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="pokemon2EVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon2EVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon2EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="pokemon2EVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -7765,34 +7666,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2EVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pokemon2EVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 125</value>
-  </data>
-  <data name="pokemon2EVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2EVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2EVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon2EVsSPDEF_txt.Text" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon2EVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon2EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="pokemon2EVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7819,34 +7693,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2EVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon2EVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 81</value>
-  </data>
-  <data name="pokemon2EVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2EVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2EVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon2EVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon2EVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon2EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="pokemon2EVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7873,34 +7720,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2EVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon2EVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 37</value>
-  </data>
-  <data name="pokemon2EVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2EVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2EVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon2EVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon2EVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon2EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="pokemon2EVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7927,34 +7747,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2EVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon2EVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 81</value>
-  </data>
-  <data name="pokemon2EVsATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon2EVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2EVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2EVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon2EVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon2EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsATK_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="pokemon2EVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7981,34 +7774,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2EVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon2EVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 37</value>
-  </data>
-  <data name="pokemon2EVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2EVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2EVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon2EVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon2EVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon2EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2EVsHP_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>4</value>
   </data>
   <data name="pokemon2EVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -8035,7 +7801,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2EVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>5</value>
   </data>
   <data name="pokemon2EVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 154</value>
@@ -10827,33 +10593,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon2MaxIVs_btn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pokemon2IVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 123</value>
-  </data>
-  <data name="pokemon2IVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2IVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2IVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="pokemon2IVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon2IVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon2IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="pokemon2IVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -10879,34 +10618,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2IVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon2IVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 123</value>
-  </data>
-  <data name="pokemon2IVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2IVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2IVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon2IVsSPDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon2IVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon2IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="pokemon2IVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -10933,34 +10645,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2IVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon2IVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 79</value>
-  </data>
-  <data name="pokemon2IVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon2IVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2IVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon2IVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon2IVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon2IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="pokemon2IVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -10987,34 +10672,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2IVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon2IVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 35</value>
-  </data>
-  <data name="pokemon2IVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2IVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2IVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon2IVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon2IVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon2IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="pokemon2IVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -11041,34 +10699,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2IVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon2IVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 79</value>
-  </data>
-  <data name="pokemon2IVsATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2IVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2IVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2IVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon2IVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon2IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsATK_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>5</value>
   </data>
   <data name="pokemon2IVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -11095,34 +10726,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2IVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="pokemon2IVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 35</value>
-  </data>
-  <data name="pokemon2IVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon2IVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon2IVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon2IVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon2IVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon2IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon2IVsHP_txt.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>6</value>
   </data>
   <data name="pokemon2IVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -11149,7 +10753,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon2IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon2IVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>7</value>
   </data>
   <data name="pokemon2IVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 154</value>
@@ -13995,33 +13599,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon3Name_lbl.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="pokemon3EVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 125</value>
-  </data>
-  <data name="pokemon3EVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3EVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3EVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="pokemon3EVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon3EVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon3EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="pokemon3EVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -14047,34 +13624,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3EVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pokemon3EVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 125</value>
-  </data>
-  <data name="pokemon3EVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3EVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3EVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon3EVsSPDEF_txt.Text" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon3EVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon3EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="pokemon3EVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14101,34 +13651,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3EVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon3EVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 81</value>
-  </data>
-  <data name="pokemon3EVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3EVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3EVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon3EVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon3EVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon3EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="pokemon3EVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14155,34 +13678,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3EVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon3EVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 37</value>
-  </data>
-  <data name="pokemon3EVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3EVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3EVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon3EVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon3EVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon3EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="pokemon3EVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14209,34 +13705,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3EVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon3EVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 81</value>
-  </data>
-  <data name="pokemon3EVsATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon3EVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3EVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3EVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon3EVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon3EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsATK_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="pokemon3EVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14263,34 +13732,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3EVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon3EVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 37</value>
-  </data>
-  <data name="pokemon3EVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3EVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3EVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon3EVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon3EVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon3EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3EVsHP_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>4</value>
   </data>
   <data name="pokemon3EVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14317,7 +13759,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3EVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>5</value>
   </data>
   <data name="pokemon3EVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 154</value>
@@ -17109,33 +16551,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon3MaxIVs_btn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pokemon3IVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 123</value>
-  </data>
-  <data name="pokemon3IVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3IVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3IVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="pokemon3IVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon3IVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon3IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="pokemon3IVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -17161,34 +16576,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3IVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon3IVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 123</value>
-  </data>
-  <data name="pokemon3IVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3IVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3IVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon3IVsSPDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon3IVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon3IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="pokemon3IVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -17215,34 +16603,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3IVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon3IVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 79</value>
-  </data>
-  <data name="pokemon3IVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon3IVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3IVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon3IVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon3IVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon3IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="pokemon3IVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -17269,34 +16630,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3IVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon3IVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 35</value>
-  </data>
-  <data name="pokemon3IVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3IVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3IVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon3IVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon3IVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon3IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="pokemon3IVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -17323,34 +16657,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3IVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon3IVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 79</value>
-  </data>
-  <data name="pokemon3IVsATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3IVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3IVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3IVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon3IVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon3IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsATK_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>5</value>
   </data>
   <data name="pokemon3IVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -17377,34 +16684,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3IVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="pokemon3IVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 35</value>
-  </data>
-  <data name="pokemon3IVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon3IVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon3IVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon3IVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon3IVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon3IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon3IVsHP_txt.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>6</value>
   </data>
   <data name="pokemon3IVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -17431,7 +16711,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon3IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon3IVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>7</value>
   </data>
   <data name="pokemon3IVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 154</value>
@@ -20277,33 +19557,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon4Name_lbl.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="pokemon4EVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 125</value>
-  </data>
-  <data name="pokemon4EVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4EVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4EVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="pokemon4EVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon4EVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon4EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="pokemon4EVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -20329,34 +19582,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4EVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pokemon4EVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 125</value>
-  </data>
-  <data name="pokemon4EVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4EVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4EVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon4EVsSPDEF_txt.Text" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon4EVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon4EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="pokemon4EVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -20383,34 +19609,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4EVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon4EVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 81</value>
-  </data>
-  <data name="pokemon4EVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4EVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4EVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon4EVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon4EVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon4EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="pokemon4EVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -20437,34 +19636,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4EVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon4EVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 37</value>
-  </data>
-  <data name="pokemon4EVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4EVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4EVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon4EVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon4EVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon4EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="pokemon4EVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -20491,34 +19663,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4EVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon4EVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 81</value>
-  </data>
-  <data name="pokemon4EVsATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon4EVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4EVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4EVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon4EVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon4EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsATK_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="pokemon4EVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -20545,34 +19690,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4EVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon4EVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 37</value>
-  </data>
-  <data name="pokemon4EVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4EVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4EVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon4EVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon4EVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon4EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4EVsHP_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>4</value>
   </data>
   <data name="pokemon4EVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -20599,7 +19717,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4EVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>5</value>
   </data>
   <data name="pokemon4EVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 154</value>
@@ -23391,33 +22509,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon4MaxIVs_btn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pokemon4IVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 123</value>
-  </data>
-  <data name="pokemon4IVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4IVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4IVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="pokemon4IVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon4IVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon4IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="pokemon4IVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -23443,34 +22534,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4IVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon4IVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 123</value>
-  </data>
-  <data name="pokemon4IVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4IVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4IVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon4IVsSPDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon4IVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon4IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="pokemon4IVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -23497,34 +22561,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4IVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon4IVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 79</value>
-  </data>
-  <data name="pokemon4IVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon4IVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4IVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon4IVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon4IVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon4IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="pokemon4IVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -23551,34 +22588,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4IVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon4IVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 35</value>
-  </data>
-  <data name="pokemon4IVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4IVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4IVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon4IVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon4IVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon4IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="pokemon4IVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -23605,34 +22615,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4IVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon4IVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 79</value>
-  </data>
-  <data name="pokemon4IVsATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4IVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4IVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4IVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon4IVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon4IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsATK_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>5</value>
   </data>
   <data name="pokemon4IVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -23659,34 +22642,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4IVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="pokemon4IVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 35</value>
-  </data>
-  <data name="pokemon4IVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon4IVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon4IVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon4IVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon4IVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon4IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon4IVsHP_txt.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>6</value>
   </data>
   <data name="pokemon4IVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -23713,7 +22669,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon4IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon4IVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>7</value>
   </data>
   <data name="pokemon4IVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 154</value>
@@ -26559,33 +25515,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon5Name_lbl.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="pokemon5EVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 125</value>
-  </data>
-  <data name="pokemon5EVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5EVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5EVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="pokemon5EVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon5EVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon5EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="pokemon5EVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -26611,34 +25540,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5EVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pokemon5EVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 125</value>
-  </data>
-  <data name="pokemon5EVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5EVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5EVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon5EVsSPDEF_txt.Text" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon5EVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon5EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="pokemon5EVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -26665,34 +25567,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5EVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon5EVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 81</value>
-  </data>
-  <data name="pokemon5EVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5EVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5EVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon5EVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon5EVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon5EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="pokemon5EVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -26719,34 +25594,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5EVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon5EVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 37</value>
-  </data>
-  <data name="pokemon5EVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5EVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5EVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon5EVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon5EVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon5EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="pokemon5EVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -26773,34 +25621,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5EVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon5EVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 81</value>
-  </data>
-  <data name="pokemon5EVsATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon5EVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5EVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5EVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon5EVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon5EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsATK_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="pokemon5EVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -26827,34 +25648,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5EVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon5EVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 37</value>
-  </data>
-  <data name="pokemon5EVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5EVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5EVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon5EVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon5EVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon5EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5EVsHP_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>4</value>
   </data>
   <data name="pokemon5EVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -26881,7 +25675,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5EVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>5</value>
   </data>
   <data name="pokemon5EVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 154</value>
@@ -29673,33 +28467,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon5MaxIVs_btn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pokemon5IVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 123</value>
-  </data>
-  <data name="pokemon5IVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5IVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5IVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="pokemon5IVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon5IVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon5IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="pokemon5IVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -29725,34 +28492,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5IVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon5IVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 123</value>
-  </data>
-  <data name="pokemon5IVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5IVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5IVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon5IVsSPDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon5IVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon5IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="pokemon5IVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -29779,34 +28519,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5IVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon5IVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 79</value>
-  </data>
-  <data name="pokemon5IVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon5IVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5IVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon5IVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon5IVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon5IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="pokemon5IVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -29833,34 +28546,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5IVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon5IVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 35</value>
-  </data>
-  <data name="pokemon5IVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5IVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5IVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon5IVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon5IVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon5IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="pokemon5IVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -29887,34 +28573,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5IVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon5IVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 79</value>
-  </data>
-  <data name="pokemon5IVsATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5IVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5IVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5IVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon5IVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon5IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsATK_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>5</value>
   </data>
   <data name="pokemon5IVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -29941,34 +28600,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5IVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="pokemon5IVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 35</value>
-  </data>
-  <data name="pokemon5IVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon5IVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon5IVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon5IVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon5IVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon5IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon5IVsHP_txt.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>6</value>
   </data>
   <data name="pokemon5IVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -29995,7 +28627,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon5IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon5IVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>7</value>
   </data>
   <data name="pokemon5IVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 154</value>
@@ -32841,33 +31473,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon6Name_lbl.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="pokemon6EVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 125</value>
-  </data>
-  <data name="pokemon6EVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6EVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6EVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="pokemon6EVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon6EVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon6EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="pokemon6EVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -32893,34 +31498,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6EVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pokemon6EVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 125</value>
-  </data>
-  <data name="pokemon6EVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6EVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6EVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon6EVsSPDEF_txt.Text" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon6EVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon6EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="pokemon6EVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -32947,34 +31525,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6EVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon6EVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 81</value>
-  </data>
-  <data name="pokemon6EVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6EVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6EVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon6EVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon6EVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon6EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="pokemon6EVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -33001,34 +31552,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6EVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon6EVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 37</value>
-  </data>
-  <data name="pokemon6EVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6EVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6EVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon6EVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon6EVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon6EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="pokemon6EVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -33055,34 +31579,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6EVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon6EVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 81</value>
-  </data>
-  <data name="pokemon6EVsATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon6EVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6EVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6EVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon6EVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon6EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsATK_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="pokemon6EVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -33109,34 +31606,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6EVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon6EVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 37</value>
-  </data>
-  <data name="pokemon6EVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6EVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6EVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon6EVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon6EVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon6EVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6EVsHP_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>4</value>
   </data>
   <data name="pokemon6EVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -33163,7 +31633,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6EVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6EVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>5</value>
   </data>
   <data name="pokemon6EVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 154</value>
@@ -35955,33 +34425,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon6MaxIVs_btn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pokemon6IVsDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 123</value>
-  </data>
-  <data name="pokemon6IVsDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6IVsDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6IVsDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="pokemon6IVsDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsDEF_txt.Name" xml:space="preserve">
-    <value>pokemon6IVsDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon6IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsDEF_txt.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="pokemon6IVsDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -36007,34 +34450,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6IVsDEF_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pokemon6IVsSPDEF_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 123</value>
-  </data>
-  <data name="pokemon6IVsSPDEF_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6IVsSPDEF_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6IVsSPDEF_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pokemon6IVsSPDEF_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPDEF_txt.Name" xml:space="preserve">
-    <value>pokemon6IVsSPDEF_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPDEF_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPDEF_txt.Parent" xml:space="preserve">
-    <value>pokemon6IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPDEF_txt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="pokemon6IVsSPDEF_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -36061,34 +34477,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6IVsSPDEF_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pokemon6IVsSPATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 79</value>
-  </data>
-  <data name="pokemon6IVsSPATK_txt.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="pokemon6IVsSPATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6IVsSPATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pokemon6IVsSPATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPATK_txt.Name" xml:space="preserve">
-    <value>pokemon6IVsSPATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPATK_txt.Parent" xml:space="preserve">
-    <value>pokemon6IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPATK_txt.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="pokemon6IVsSPATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -36115,34 +34504,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6IVsSPATK_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pokemon6IVsSPD_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 35</value>
-  </data>
-  <data name="pokemon6IVsSPD_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6IVsSPD_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6IVsSPD_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pokemon6IVsSPD_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPD_txt.Name" xml:space="preserve">
-    <value>pokemon6IVsSPD_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPD_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPD_txt.Parent" xml:space="preserve">
-    <value>pokemon6IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsSPD_txt.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="pokemon6IVsSPD_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -36169,34 +34531,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6IVsSPD_lbl.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pokemon6IVsATK_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 79</value>
-  </data>
-  <data name="pokemon6IVsATK_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6IVsATK_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6IVsATK_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6IVsATK_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsATK_txt.Name" xml:space="preserve">
-    <value>pokemon6IVsATK_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsATK_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsATK_txt.Parent" xml:space="preserve">
-    <value>pokemon6IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsATK_txt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>5</value>
   </data>
   <data name="pokemon6IVsATK_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -36223,34 +34558,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6IVsATK_lbl.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="pokemon6IVsHP_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 35</value>
-  </data>
-  <data name="pokemon6IVsHP_txt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="pokemon6IVsHP_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="pokemon6IVsHP_txt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pokemon6IVsHP_txt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsHP_txt.Name" xml:space="preserve">
-    <value>pokemon6IVsHP_txt</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsHP_txt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsHP_txt.Parent" xml:space="preserve">
-    <value>pokemon6IVs_grp</value>
-  </data>
-  <data name="&gt;&gt;pokemon6IVsHP_txt.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>6</value>
   </data>
   <data name="pokemon6IVsHP_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -36277,7 +34585,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pokemon6IVs_grp</value>
   </data>
   <data name="&gt;&gt;pokemon6IVsHP_lbl.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>7</value>
   </data>
   <data name="pokemon6IVs_grp.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 154</value>

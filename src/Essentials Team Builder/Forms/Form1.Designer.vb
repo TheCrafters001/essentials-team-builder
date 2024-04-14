@@ -28,6 +28,8 @@ Partial Class Form1
         pg_trainer = New TabPage()
         trainer_tab = New TabControl()
         pg_basic = New TabPage()
+        IVStatsNoteHeader_lbl = New Label()
+        IVStatsNote_lbl = New Label()
         battleTeamID_nbr = New NumericUpDown()
         Label2 = New Label()
         properSpellingNote_lbl = New Label()
@@ -76,32 +78,20 @@ Partial Class Form1
         pokemon1Shadow_rad = New RadioButton()
         pokemon1NotShadow_rad = New RadioButton()
         pokemon1EVs_grp = New GroupBox()
-        pokemon1EVsDEF_txt = New TextBox()
         pokemon1EVsDEF_lbl = New Label()
-        pokemon1EVsSPDEF_txt = New TextBox()
         pokemon1EVsSPDEF_lbl = New Label()
-        pokemon1EVsSPATK_txt = New TextBox()
         pokemon1EVsSPATK_lbl = New Label()
-        pokemon1EVsSPD_txt = New TextBox()
         pokemon1EVsSPD_lbl = New Label()
-        pokemon1EVsATK_txt = New TextBox()
         pokemon1EVsATK_lbl = New Label()
-        pokemon1EVsHP_txt = New TextBox()
         pokemon1EVsHP_lbl = New Label()
         pokemon1IVs_grp = New GroupBox()
         pokemon1RandomIVs_btn = New Button()
         pokemon1MaxIVs_btn = New Button()
-        pokemon1IVsDEF_txt = New TextBox()
         pokemon1IVsDEF_lbl = New Label()
-        pokemon1IVsSPDEF_txt = New TextBox()
         pokemon1IVsSPDEF_lbl = New Label()
-        pokemon1IVsSPATK_txt = New TextBox()
         pokemon1IVsSPATK_lbl = New Label()
-        pokemon1IVsSPD_txt = New TextBox()
         pokemon1IVsSPD_lbl = New Label()
-        pokemon1IVsATK_txt = New TextBox()
         pokemon1IVsATK_lbl = New Label()
-        pokemon1IVsHP_txt = New TextBox()
         pokemon1IVsHP_lbl = New Label()
         pokemon1PokeballID_cmb = New ComboBox()
         pokemon1Ball_lbl = New Label()
@@ -139,33 +129,21 @@ Partial Class Form1
         pokemon2NotShadow_rad = New RadioButton()
         pokemon2Name_lbl = New Label()
         pokemon2EVs_grp = New GroupBox()
-        pokemon2EVsDEF_txt = New TextBox()
         pokemon2EVsDEF_lbl = New Label()
-        pokemon2EVsSPDEF_txt = New TextBox()
         pokemon2EVsSPDEF_lbl = New Label()
-        pokemon2EVsSPATK_txt = New TextBox()
         pokemon2EVsSPATK_lbl = New Label()
-        pokemon2EVsSPD_txt = New TextBox()
         pokemon2EVsSPD_lbl = New Label()
-        pokemon2EVsATK_txt = New TextBox()
         pokemon2EVsATK_lbl = New Label()
-        pokemon2EVsHP_txt = New TextBox()
         pokemon2EVsHP_lbl = New Label()
         pokemon2Name_txt = New TextBox()
         pokemon2IVs_grp = New GroupBox()
         pokemon2RandomIVs_btn = New Button()
         pokemon2MaxIVs_btn = New Button()
-        pokemon2IVsDEF_txt = New TextBox()
         pokemon2IVsDEF_lbl = New Label()
-        pokemon2IVsSPDEF_txt = New TextBox()
         pokemon2IVsSPDEF_lbl = New Label()
-        pokemon2IVsSPATK_txt = New TextBox()
         pokemon2IVsSPATK_lbl = New Label()
-        pokemon2IVsSPD_txt = New TextBox()
         pokemon2IVsSPD_lbl = New Label()
-        pokemon2IVsATK_txt = New TextBox()
         pokemon2IVsATK_lbl = New Label()
-        pokemon2IVsHP_txt = New TextBox()
         pokemon2IVsHP_lbl = New Label()
         pokemon2HeldItem_txt = New TextBox()
         pokemon2PokeballID_cmb = New ComboBox()
@@ -201,33 +179,21 @@ Partial Class Form1
         pokemon3NotShadow_rad = New RadioButton()
         pokemon3Name_lbl = New Label()
         pokemon3EVs_grp = New GroupBox()
-        pokemon3EVsDEF_txt = New TextBox()
         pokemon3EVsDEF_lbl = New Label()
-        pokemon3EVsSPDEF_txt = New TextBox()
         pokemon3EVsSPDEF_lbl = New Label()
-        pokemon3EVsSPATK_txt = New TextBox()
         pokemon3EVsSPATK_lbl = New Label()
-        pokemon3EVsSPD_txt = New TextBox()
         pokemon3EVsSPD_lbl = New Label()
-        pokemon3EVsATK_txt = New TextBox()
         pokemon3EVsATK_lbl = New Label()
-        pokemon3EVsHP_txt = New TextBox()
         pokemon3EVsHP_lbl = New Label()
         pokemon3Name_txt = New TextBox()
         pokemon3IVs_grp = New GroupBox()
         pokemon3RandomIVs_btn = New Button()
         pokemon3MaxIVs_btn = New Button()
-        pokemon3IVsDEF_txt = New TextBox()
         pokemon3IVsDEF_lbl = New Label()
-        pokemon3IVsSPDEF_txt = New TextBox()
         pokemon3IVsSPDEF_lbl = New Label()
-        pokemon3IVsSPATK_txt = New TextBox()
         pokemon3IVsSPATK_lbl = New Label()
-        pokemon3IVsSPD_txt = New TextBox()
         pokemon3IVsSPD_lbl = New Label()
-        pokemon3IVsATK_txt = New TextBox()
         pokemon3IVsATK_lbl = New Label()
-        pokemon3IVsHP_txt = New TextBox()
         pokemon3IVsHP_lbl = New Label()
         pokemon3HeldItem_txt = New TextBox()
         pokemon3PokeballID_cmb = New ComboBox()
@@ -263,33 +229,21 @@ Partial Class Form1
         pokemon4NotShadow_rad = New RadioButton()
         pokemon4Name_lbl = New Label()
         pokemon4EVs_grp = New GroupBox()
-        pokemon4EVsDEF_txt = New TextBox()
         pokemon4EVsDEF_lbl = New Label()
-        pokemon4EVsSPDEF_txt = New TextBox()
         pokemon4EVsSPDEF_lbl = New Label()
-        pokemon4EVsSPATK_txt = New TextBox()
         pokemon4EVsSPATK_lbl = New Label()
-        pokemon4EVsSPD_txt = New TextBox()
         pokemon4EVsSPD_lbl = New Label()
-        pokemon4EVsATK_txt = New TextBox()
         pokemon4EVsATK_lbl = New Label()
-        pokemon4EVsHP_txt = New TextBox()
         pokemon4EVsHP_lbl = New Label()
         pokemon4Name_txt = New TextBox()
         pokemon4IVs_grp = New GroupBox()
         pokemon4RandomIVs_btn = New Button()
         pokemon4MaxIVs_btn = New Button()
-        pokemon4IVsDEF_txt = New TextBox()
         pokemon4IVsDEF_lbl = New Label()
-        pokemon4IVsSPDEF_txt = New TextBox()
         pokemon4IVsSPDEF_lbl = New Label()
-        pokemon4IVsSPATK_txt = New TextBox()
         pokemon4IVsSPATK_lbl = New Label()
-        pokemon4IVsSPD_txt = New TextBox()
         pokemon4IVsSPD_lbl = New Label()
-        pokemon4IVsATK_txt = New TextBox()
         pokemon4IVsATK_lbl = New Label()
-        pokemon4IVsHP_txt = New TextBox()
         pokemon4IVsHP_lbl = New Label()
         pokemon4HeldItem_txt = New TextBox()
         pokemon4PokeballID_cmb = New ComboBox()
@@ -325,33 +279,21 @@ Partial Class Form1
         pokemon5NotShadow_rad = New RadioButton()
         pokemon5Name_lbl = New Label()
         pokemon5EVs_grp = New GroupBox()
-        pokemon5EVsDEF_txt = New TextBox()
         pokemon5EVsDEF_lbl = New Label()
-        pokemon5EVsSPDEF_txt = New TextBox()
         pokemon5EVsSPDEF_lbl = New Label()
-        pokemon5EVsSPATK_txt = New TextBox()
         pokemon5EVsSPATK_lbl = New Label()
-        pokemon5EVsSPD_txt = New TextBox()
         pokemon5EVsSPD_lbl = New Label()
-        pokemon5EVsATK_txt = New TextBox()
         pokemon5EVsATK_lbl = New Label()
-        pokemon5EVsHP_txt = New TextBox()
         pokemon5EVsHP_lbl = New Label()
         pokemon5Name_txt = New TextBox()
         pokemon5IVs_grp = New GroupBox()
         pokemon5RandomIVs_btn = New Button()
         pokemon5MaxIVs_btn = New Button()
-        pokemon5IVsDEF_txt = New TextBox()
         pokemon5IVsDEF_lbl = New Label()
-        pokemon5IVsSPDEF_txt = New TextBox()
         pokemon5IVsSPDEF_lbl = New Label()
-        pokemon5IVsSPATK_txt = New TextBox()
         pokemon5IVsSPATK_lbl = New Label()
-        pokemon5IVsSPD_txt = New TextBox()
         pokemon5IVsSPD_lbl = New Label()
-        pokemon5IVsATK_txt = New TextBox()
         pokemon5IVsATK_lbl = New Label()
-        pokemon5IVsHP_txt = New TextBox()
         pokemon5IVsHP_lbl = New Label()
         pokemon5HeldItem_txt = New TextBox()
         pokemon5PokeballID_cmb = New ComboBox()
@@ -387,33 +329,21 @@ Partial Class Form1
         pokemon6NotShadow_rad = New RadioButton()
         pokemon6Name_lbl = New Label()
         pokemon6EVs_grp = New GroupBox()
-        pokemon6EVsDEF_txt = New TextBox()
         pokemon6EVsDEF_lbl = New Label()
-        pokemon6EVsSPDEF_txt = New TextBox()
         pokemon6EVsSPDEF_lbl = New Label()
-        pokemon6EVsSPATK_txt = New TextBox()
         pokemon6EVsSPATK_lbl = New Label()
-        pokemon6EVsSPD_txt = New TextBox()
         pokemon6EVsSPD_lbl = New Label()
-        pokemon6EVsATK_txt = New TextBox()
         pokemon6EVsATK_lbl = New Label()
-        pokemon6EVsHP_txt = New TextBox()
         pokemon6EVsHP_lbl = New Label()
         pokemon6Name_txt = New TextBox()
         pokemon6IVs_grp = New GroupBox()
         pokemon6RandomIVs_btn = New Button()
         pokemon6MaxIVs_btn = New Button()
-        pokemon6IVsDEF_txt = New TextBox()
         pokemon6IVsDEF_lbl = New Label()
-        pokemon6IVsSPDEF_txt = New TextBox()
         pokemon6IVsSPDEF_lbl = New Label()
-        pokemon6IVsSPATK_txt = New TextBox()
         pokemon6IVsSPATK_lbl = New Label()
-        pokemon6IVsSPD_txt = New TextBox()
         pokemon6IVsSPD_lbl = New Label()
-        pokemon6IVsATK_txt = New TextBox()
         pokemon6IVsATK_lbl = New Label()
-        pokemon6IVsHP_txt = New TextBox()
         pokemon6IVsHP_lbl = New Label()
         pokemon6HeldItem_txt = New TextBox()
         pokemon6PokeballID_cmb = New ComboBox()
@@ -452,8 +382,18 @@ Partial Class Form1
         aboutHeaderAuthor_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
-        IVStatsNote_lbl = New Label()
-        IVStatsNoteHeader_lbl = New Label()
+        NumericUpDown1 = New NumericUpDown()
+        NumericUpDown2 = New NumericUpDown()
+        NumericUpDown3 = New NumericUpDown()
+        NumericUpDown4 = New NumericUpDown()
+        NumericUpDown5 = New NumericUpDown()
+        NumericUpDown6 = New NumericUpDown()
+        NumericUpDown7 = New NumericUpDown()
+        NumericUpDown8 = New NumericUpDown()
+        NumericUpDown9 = New NumericUpDown()
+        NumericUpDown10 = New NumericUpDown()
+        NumericUpDown11 = New NumericUpDown()
+        NumericUpDown12 = New NumericUpDown()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -527,6 +467,18 @@ Partial Class Form1
         pg_about.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
+        CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown8, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown9, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown10, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown11, ComponentModel.ISupportInitialize).BeginInit()
+        CType(NumericUpDown12, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' editor_grp
@@ -588,6 +540,17 @@ Partial Class Form1
         resources.ApplyResources(pg_basic, "pg_basic")
         pg_basic.Name = "pg_basic"
         pg_basic.UseVisualStyleBackColor = True
+        ' 
+        ' IVStatsNoteHeader_lbl
+        ' 
+        resources.ApplyResources(IVStatsNoteHeader_lbl, "IVStatsNoteHeader_lbl")
+        IVStatsNoteHeader_lbl.ForeColor = Color.Red
+        IVStatsNoteHeader_lbl.Name = "IVStatsNoteHeader_lbl"
+        ' 
+        ' IVStatsNote_lbl
+        ' 
+        resources.ApplyResources(IVStatsNote_lbl, "IVStatsNote_lbl")
+        IVStatsNote_lbl.Name = "IVStatsNote_lbl"
         ' 
         ' battleTeamID_nbr
         ' 
@@ -920,76 +883,46 @@ Partial Class Form1
         ' 
         ' pokemon1EVs_grp
         ' 
-        pokemon1EVs_grp.Controls.Add(pokemon1EVsDEF_txt)
+        pokemon1EVs_grp.Controls.Add(NumericUpDown7)
         pokemon1EVs_grp.Controls.Add(pokemon1EVsDEF_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemon1EVsSPDEF_txt)
+        pokemon1EVs_grp.Controls.Add(NumericUpDown8)
         pokemon1EVs_grp.Controls.Add(pokemon1EVsSPDEF_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemon1EVsSPATK_txt)
+        pokemon1EVs_grp.Controls.Add(NumericUpDown9)
         pokemon1EVs_grp.Controls.Add(pokemon1EVsSPATK_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemon1EVsSPD_txt)
+        pokemon1EVs_grp.Controls.Add(NumericUpDown10)
         pokemon1EVs_grp.Controls.Add(pokemon1EVsSPD_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemon1EVsATK_txt)
+        pokemon1EVs_grp.Controls.Add(NumericUpDown11)
         pokemon1EVs_grp.Controls.Add(pokemon1EVsATK_lbl)
-        pokemon1EVs_grp.Controls.Add(pokemon1EVsHP_txt)
+        pokemon1EVs_grp.Controls.Add(NumericUpDown12)
         pokemon1EVs_grp.Controls.Add(pokemon1EVsHP_lbl)
         resources.ApplyResources(pokemon1EVs_grp, "pokemon1EVs_grp")
         pokemon1EVs_grp.Name = "pokemon1EVs_grp"
         pokemon1EVs_grp.TabStop = False
-        ' 
-        ' pokemon1EVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon1EVsDEF_txt, "pokemon1EVsDEF_txt")
-        pokemon1EVsDEF_txt.Name = "pokemon1EVsDEF_txt"
         ' 
         ' pokemon1EVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon1EVsDEF_lbl, "pokemon1EVsDEF_lbl")
         pokemon1EVsDEF_lbl.Name = "pokemon1EVsDEF_lbl"
         ' 
-        ' pokemon1EVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon1EVsSPDEF_txt, "pokemon1EVsSPDEF_txt")
-        pokemon1EVsSPDEF_txt.Name = "pokemon1EVsSPDEF_txt"
-        ' 
         ' pokemon1EVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon1EVsSPDEF_lbl, "pokemon1EVsSPDEF_lbl")
         pokemon1EVsSPDEF_lbl.Name = "pokemon1EVsSPDEF_lbl"
-        ' 
-        ' pokemon1EVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon1EVsSPATK_txt, "pokemon1EVsSPATK_txt")
-        pokemon1EVsSPATK_txt.Name = "pokemon1EVsSPATK_txt"
         ' 
         ' pokemon1EVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon1EVsSPATK_lbl, "pokemon1EVsSPATK_lbl")
         pokemon1EVsSPATK_lbl.Name = "pokemon1EVsSPATK_lbl"
         ' 
-        ' pokemon1EVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon1EVsSPD_txt, "pokemon1EVsSPD_txt")
-        pokemon1EVsSPD_txt.Name = "pokemon1EVsSPD_txt"
-        ' 
         ' pokemon1EVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon1EVsSPD_lbl, "pokemon1EVsSPD_lbl")
         pokemon1EVsSPD_lbl.Name = "pokemon1EVsSPD_lbl"
         ' 
-        ' pokemon1EVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon1EVsATK_txt, "pokemon1EVsATK_txt")
-        pokemon1EVsATK_txt.Name = "pokemon1EVsATK_txt"
-        ' 
         ' pokemon1EVsATK_lbl
         ' 
         resources.ApplyResources(pokemon1EVsATK_lbl, "pokemon1EVsATK_lbl")
         pokemon1EVsATK_lbl.Name = "pokemon1EVsATK_lbl"
-        ' 
-        ' pokemon1EVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon1EVsHP_txt, "pokemon1EVsHP_txt")
-        pokemon1EVsHP_txt.Name = "pokemon1EVsHP_txt"
         ' 
         ' pokemon1EVsHP_lbl
         ' 
@@ -998,19 +931,19 @@ Partial Class Form1
         ' 
         ' pokemon1IVs_grp
         ' 
+        pokemon1IVs_grp.Controls.Add(NumericUpDown4)
+        pokemon1IVs_grp.Controls.Add(NumericUpDown5)
+        pokemon1IVs_grp.Controls.Add(NumericUpDown6)
+        pokemon1IVs_grp.Controls.Add(NumericUpDown3)
+        pokemon1IVs_grp.Controls.Add(NumericUpDown2)
+        pokemon1IVs_grp.Controls.Add(NumericUpDown1)
         pokemon1IVs_grp.Controls.Add(pokemon1RandomIVs_btn)
         pokemon1IVs_grp.Controls.Add(pokemon1MaxIVs_btn)
-        pokemon1IVs_grp.Controls.Add(pokemon1IVsDEF_txt)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsDEF_lbl)
-        pokemon1IVs_grp.Controls.Add(pokemon1IVsSPDEF_txt)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsSPDEF_lbl)
-        pokemon1IVs_grp.Controls.Add(pokemon1IVsSPATK_txt)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsSPATK_lbl)
-        pokemon1IVs_grp.Controls.Add(pokemon1IVsSPD_txt)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsSPD_lbl)
-        pokemon1IVs_grp.Controls.Add(pokemon1IVsATK_txt)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsATK_lbl)
-        pokemon1IVs_grp.Controls.Add(pokemon1IVsHP_txt)
         pokemon1IVs_grp.Controls.Add(pokemon1IVsHP_lbl)
         resources.ApplyResources(pokemon1IVs_grp, "pokemon1IVs_grp")
         pokemon1IVs_grp.Name = "pokemon1IVs_grp"
@@ -1028,60 +961,30 @@ Partial Class Form1
         pokemon1MaxIVs_btn.Name = "pokemon1MaxIVs_btn"
         pokemon1MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' pokemon1IVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon1IVsDEF_txt, "pokemon1IVsDEF_txt")
-        pokemon1IVsDEF_txt.Name = "pokemon1IVsDEF_txt"
-        ' 
         ' pokemon1IVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon1IVsDEF_lbl, "pokemon1IVsDEF_lbl")
         pokemon1IVsDEF_lbl.Name = "pokemon1IVsDEF_lbl"
-        ' 
-        ' pokemon1IVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon1IVsSPDEF_txt, "pokemon1IVsSPDEF_txt")
-        pokemon1IVsSPDEF_txt.Name = "pokemon1IVsSPDEF_txt"
         ' 
         ' pokemon1IVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon1IVsSPDEF_lbl, "pokemon1IVsSPDEF_lbl")
         pokemon1IVsSPDEF_lbl.Name = "pokemon1IVsSPDEF_lbl"
         ' 
-        ' pokemon1IVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon1IVsSPATK_txt, "pokemon1IVsSPATK_txt")
-        pokemon1IVsSPATK_txt.Name = "pokemon1IVsSPATK_txt"
-        ' 
         ' pokemon1IVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon1IVsSPATK_lbl, "pokemon1IVsSPATK_lbl")
         pokemon1IVsSPATK_lbl.Name = "pokemon1IVsSPATK_lbl"
-        ' 
-        ' pokemon1IVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon1IVsSPD_txt, "pokemon1IVsSPD_txt")
-        pokemon1IVsSPD_txt.Name = "pokemon1IVsSPD_txt"
         ' 
         ' pokemon1IVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon1IVsSPD_lbl, "pokemon1IVsSPD_lbl")
         pokemon1IVsSPD_lbl.Name = "pokemon1IVsSPD_lbl"
         ' 
-        ' pokemon1IVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon1IVsATK_txt, "pokemon1IVsATK_txt")
-        pokemon1IVsATK_txt.Name = "pokemon1IVsATK_txt"
-        ' 
         ' pokemon1IVsATK_lbl
         ' 
         resources.ApplyResources(pokemon1IVsATK_lbl, "pokemon1IVsATK_lbl")
         pokemon1IVsATK_lbl.Name = "pokemon1IVsATK_lbl"
-        ' 
-        ' pokemon1IVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon1IVsHP_txt, "pokemon1IVsHP_txt")
-        pokemon1IVsHP_txt.Name = "pokemon1IVsHP_txt"
         ' 
         ' pokemon1IVsHP_lbl
         ' 
@@ -1334,76 +1237,40 @@ Partial Class Form1
         ' 
         ' pokemon2EVs_grp
         ' 
-        pokemon2EVs_grp.Controls.Add(pokemon2EVsDEF_txt)
         pokemon2EVs_grp.Controls.Add(pokemon2EVsDEF_lbl)
-        pokemon2EVs_grp.Controls.Add(pokemon2EVsSPDEF_txt)
         pokemon2EVs_grp.Controls.Add(pokemon2EVsSPDEF_lbl)
-        pokemon2EVs_grp.Controls.Add(pokemon2EVsSPATK_txt)
         pokemon2EVs_grp.Controls.Add(pokemon2EVsSPATK_lbl)
-        pokemon2EVs_grp.Controls.Add(pokemon2EVsSPD_txt)
         pokemon2EVs_grp.Controls.Add(pokemon2EVsSPD_lbl)
-        pokemon2EVs_grp.Controls.Add(pokemon2EVsATK_txt)
         pokemon2EVs_grp.Controls.Add(pokemon2EVsATK_lbl)
-        pokemon2EVs_grp.Controls.Add(pokemon2EVsHP_txt)
         pokemon2EVs_grp.Controls.Add(pokemon2EVsHP_lbl)
         resources.ApplyResources(pokemon2EVs_grp, "pokemon2EVs_grp")
         pokemon2EVs_grp.Name = "pokemon2EVs_grp"
         pokemon2EVs_grp.TabStop = False
-        ' 
-        ' pokemon2EVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon2EVsDEF_txt, "pokemon2EVsDEF_txt")
-        pokemon2EVsDEF_txt.Name = "pokemon2EVsDEF_txt"
         ' 
         ' pokemon2EVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon2EVsDEF_lbl, "pokemon2EVsDEF_lbl")
         pokemon2EVsDEF_lbl.Name = "pokemon2EVsDEF_lbl"
         ' 
-        ' pokemon2EVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon2EVsSPDEF_txt, "pokemon2EVsSPDEF_txt")
-        pokemon2EVsSPDEF_txt.Name = "pokemon2EVsSPDEF_txt"
-        ' 
         ' pokemon2EVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon2EVsSPDEF_lbl, "pokemon2EVsSPDEF_lbl")
         pokemon2EVsSPDEF_lbl.Name = "pokemon2EVsSPDEF_lbl"
-        ' 
-        ' pokemon2EVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon2EVsSPATK_txt, "pokemon2EVsSPATK_txt")
-        pokemon2EVsSPATK_txt.Name = "pokemon2EVsSPATK_txt"
         ' 
         ' pokemon2EVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon2EVsSPATK_lbl, "pokemon2EVsSPATK_lbl")
         pokemon2EVsSPATK_lbl.Name = "pokemon2EVsSPATK_lbl"
         ' 
-        ' pokemon2EVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon2EVsSPD_txt, "pokemon2EVsSPD_txt")
-        pokemon2EVsSPD_txt.Name = "pokemon2EVsSPD_txt"
-        ' 
         ' pokemon2EVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon2EVsSPD_lbl, "pokemon2EVsSPD_lbl")
         pokemon2EVsSPD_lbl.Name = "pokemon2EVsSPD_lbl"
         ' 
-        ' pokemon2EVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon2EVsATK_txt, "pokemon2EVsATK_txt")
-        pokemon2EVsATK_txt.Name = "pokemon2EVsATK_txt"
-        ' 
         ' pokemon2EVsATK_lbl
         ' 
         resources.ApplyResources(pokemon2EVsATK_lbl, "pokemon2EVsATK_lbl")
         pokemon2EVsATK_lbl.Name = "pokemon2EVsATK_lbl"
-        ' 
-        ' pokemon2EVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon2EVsHP_txt, "pokemon2EVsHP_txt")
-        pokemon2EVsHP_txt.Name = "pokemon2EVsHP_txt"
         ' 
         ' pokemon2EVsHP_lbl
         ' 
@@ -1422,17 +1289,11 @@ Partial Class Form1
         ' 
         pokemon2IVs_grp.Controls.Add(pokemon2RandomIVs_btn)
         pokemon2IVs_grp.Controls.Add(pokemon2MaxIVs_btn)
-        pokemon2IVs_grp.Controls.Add(pokemon2IVsDEF_txt)
         pokemon2IVs_grp.Controls.Add(pokemon2IVsDEF_lbl)
-        pokemon2IVs_grp.Controls.Add(pokemon2IVsSPDEF_txt)
         pokemon2IVs_grp.Controls.Add(pokemon2IVsSPDEF_lbl)
-        pokemon2IVs_grp.Controls.Add(pokemon2IVsSPATK_txt)
         pokemon2IVs_grp.Controls.Add(pokemon2IVsSPATK_lbl)
-        pokemon2IVs_grp.Controls.Add(pokemon2IVsSPD_txt)
         pokemon2IVs_grp.Controls.Add(pokemon2IVsSPD_lbl)
-        pokemon2IVs_grp.Controls.Add(pokemon2IVsATK_txt)
         pokemon2IVs_grp.Controls.Add(pokemon2IVsATK_lbl)
-        pokemon2IVs_grp.Controls.Add(pokemon2IVsHP_txt)
         pokemon2IVs_grp.Controls.Add(pokemon2IVsHP_lbl)
         resources.ApplyResources(pokemon2IVs_grp, "pokemon2IVs_grp")
         pokemon2IVs_grp.Name = "pokemon2IVs_grp"
@@ -1450,60 +1311,30 @@ Partial Class Form1
         pokemon2MaxIVs_btn.Name = "pokemon2MaxIVs_btn"
         pokemon2MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' pokemon2IVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon2IVsDEF_txt, "pokemon2IVsDEF_txt")
-        pokemon2IVsDEF_txt.Name = "pokemon2IVsDEF_txt"
-        ' 
         ' pokemon2IVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon2IVsDEF_lbl, "pokemon2IVsDEF_lbl")
         pokemon2IVsDEF_lbl.Name = "pokemon2IVsDEF_lbl"
-        ' 
-        ' pokemon2IVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon2IVsSPDEF_txt, "pokemon2IVsSPDEF_txt")
-        pokemon2IVsSPDEF_txt.Name = "pokemon2IVsSPDEF_txt"
         ' 
         ' pokemon2IVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon2IVsSPDEF_lbl, "pokemon2IVsSPDEF_lbl")
         pokemon2IVsSPDEF_lbl.Name = "pokemon2IVsSPDEF_lbl"
         ' 
-        ' pokemon2IVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon2IVsSPATK_txt, "pokemon2IVsSPATK_txt")
-        pokemon2IVsSPATK_txt.Name = "pokemon2IVsSPATK_txt"
-        ' 
         ' pokemon2IVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon2IVsSPATK_lbl, "pokemon2IVsSPATK_lbl")
         pokemon2IVsSPATK_lbl.Name = "pokemon2IVsSPATK_lbl"
-        ' 
-        ' pokemon2IVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon2IVsSPD_txt, "pokemon2IVsSPD_txt")
-        pokemon2IVsSPD_txt.Name = "pokemon2IVsSPD_txt"
         ' 
         ' pokemon2IVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon2IVsSPD_lbl, "pokemon2IVsSPD_lbl")
         pokemon2IVsSPD_lbl.Name = "pokemon2IVsSPD_lbl"
         ' 
-        ' pokemon2IVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon2IVsATK_txt, "pokemon2IVsATK_txt")
-        pokemon2IVsATK_txt.Name = "pokemon2IVsATK_txt"
-        ' 
         ' pokemon2IVsATK_lbl
         ' 
         resources.ApplyResources(pokemon2IVsATK_lbl, "pokemon2IVsATK_lbl")
         pokemon2IVsATK_lbl.Name = "pokemon2IVsATK_lbl"
-        ' 
-        ' pokemon2IVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon2IVsHP_txt, "pokemon2IVsHP_txt")
-        pokemon2IVsHP_txt.Name = "pokemon2IVsHP_txt"
         ' 
         ' pokemon2IVsHP_lbl
         ' 
@@ -1743,76 +1574,40 @@ Partial Class Form1
         ' 
         ' pokemon3EVs_grp
         ' 
-        pokemon3EVs_grp.Controls.Add(pokemon3EVsDEF_txt)
         pokemon3EVs_grp.Controls.Add(pokemon3EVsDEF_lbl)
-        pokemon3EVs_grp.Controls.Add(pokemon3EVsSPDEF_txt)
         pokemon3EVs_grp.Controls.Add(pokemon3EVsSPDEF_lbl)
-        pokemon3EVs_grp.Controls.Add(pokemon3EVsSPATK_txt)
         pokemon3EVs_grp.Controls.Add(pokemon3EVsSPATK_lbl)
-        pokemon3EVs_grp.Controls.Add(pokemon3EVsSPD_txt)
         pokemon3EVs_grp.Controls.Add(pokemon3EVsSPD_lbl)
-        pokemon3EVs_grp.Controls.Add(pokemon3EVsATK_txt)
         pokemon3EVs_grp.Controls.Add(pokemon3EVsATK_lbl)
-        pokemon3EVs_grp.Controls.Add(pokemon3EVsHP_txt)
         pokemon3EVs_grp.Controls.Add(pokemon3EVsHP_lbl)
         resources.ApplyResources(pokemon3EVs_grp, "pokemon3EVs_grp")
         pokemon3EVs_grp.Name = "pokemon3EVs_grp"
         pokemon3EVs_grp.TabStop = False
-        ' 
-        ' pokemon3EVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon3EVsDEF_txt, "pokemon3EVsDEF_txt")
-        pokemon3EVsDEF_txt.Name = "pokemon3EVsDEF_txt"
         ' 
         ' pokemon3EVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon3EVsDEF_lbl, "pokemon3EVsDEF_lbl")
         pokemon3EVsDEF_lbl.Name = "pokemon3EVsDEF_lbl"
         ' 
-        ' pokemon3EVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon3EVsSPDEF_txt, "pokemon3EVsSPDEF_txt")
-        pokemon3EVsSPDEF_txt.Name = "pokemon3EVsSPDEF_txt"
-        ' 
         ' pokemon3EVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon3EVsSPDEF_lbl, "pokemon3EVsSPDEF_lbl")
         pokemon3EVsSPDEF_lbl.Name = "pokemon3EVsSPDEF_lbl"
-        ' 
-        ' pokemon3EVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon3EVsSPATK_txt, "pokemon3EVsSPATK_txt")
-        pokemon3EVsSPATK_txt.Name = "pokemon3EVsSPATK_txt"
         ' 
         ' pokemon3EVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon3EVsSPATK_lbl, "pokemon3EVsSPATK_lbl")
         pokemon3EVsSPATK_lbl.Name = "pokemon3EVsSPATK_lbl"
         ' 
-        ' pokemon3EVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon3EVsSPD_txt, "pokemon3EVsSPD_txt")
-        pokemon3EVsSPD_txt.Name = "pokemon3EVsSPD_txt"
-        ' 
         ' pokemon3EVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon3EVsSPD_lbl, "pokemon3EVsSPD_lbl")
         pokemon3EVsSPD_lbl.Name = "pokemon3EVsSPD_lbl"
         ' 
-        ' pokemon3EVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon3EVsATK_txt, "pokemon3EVsATK_txt")
-        pokemon3EVsATK_txt.Name = "pokemon3EVsATK_txt"
-        ' 
         ' pokemon3EVsATK_lbl
         ' 
         resources.ApplyResources(pokemon3EVsATK_lbl, "pokemon3EVsATK_lbl")
         pokemon3EVsATK_lbl.Name = "pokemon3EVsATK_lbl"
-        ' 
-        ' pokemon3EVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon3EVsHP_txt, "pokemon3EVsHP_txt")
-        pokemon3EVsHP_txt.Name = "pokemon3EVsHP_txt"
         ' 
         ' pokemon3EVsHP_lbl
         ' 
@@ -1831,17 +1626,11 @@ Partial Class Form1
         ' 
         pokemon3IVs_grp.Controls.Add(pokemon3RandomIVs_btn)
         pokemon3IVs_grp.Controls.Add(pokemon3MaxIVs_btn)
-        pokemon3IVs_grp.Controls.Add(pokemon3IVsDEF_txt)
         pokemon3IVs_grp.Controls.Add(pokemon3IVsDEF_lbl)
-        pokemon3IVs_grp.Controls.Add(pokemon3IVsSPDEF_txt)
         pokemon3IVs_grp.Controls.Add(pokemon3IVsSPDEF_lbl)
-        pokemon3IVs_grp.Controls.Add(pokemon3IVsSPATK_txt)
         pokemon3IVs_grp.Controls.Add(pokemon3IVsSPATK_lbl)
-        pokemon3IVs_grp.Controls.Add(pokemon3IVsSPD_txt)
         pokemon3IVs_grp.Controls.Add(pokemon3IVsSPD_lbl)
-        pokemon3IVs_grp.Controls.Add(pokemon3IVsATK_txt)
         pokemon3IVs_grp.Controls.Add(pokemon3IVsATK_lbl)
-        pokemon3IVs_grp.Controls.Add(pokemon3IVsHP_txt)
         pokemon3IVs_grp.Controls.Add(pokemon3IVsHP_lbl)
         resources.ApplyResources(pokemon3IVs_grp, "pokemon3IVs_grp")
         pokemon3IVs_grp.Name = "pokemon3IVs_grp"
@@ -1859,60 +1648,30 @@ Partial Class Form1
         pokemon3MaxIVs_btn.Name = "pokemon3MaxIVs_btn"
         pokemon3MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' pokemon3IVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon3IVsDEF_txt, "pokemon3IVsDEF_txt")
-        pokemon3IVsDEF_txt.Name = "pokemon3IVsDEF_txt"
-        ' 
         ' pokemon3IVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon3IVsDEF_lbl, "pokemon3IVsDEF_lbl")
         pokemon3IVsDEF_lbl.Name = "pokemon3IVsDEF_lbl"
-        ' 
-        ' pokemon3IVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon3IVsSPDEF_txt, "pokemon3IVsSPDEF_txt")
-        pokemon3IVsSPDEF_txt.Name = "pokemon3IVsSPDEF_txt"
         ' 
         ' pokemon3IVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon3IVsSPDEF_lbl, "pokemon3IVsSPDEF_lbl")
         pokemon3IVsSPDEF_lbl.Name = "pokemon3IVsSPDEF_lbl"
         ' 
-        ' pokemon3IVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon3IVsSPATK_txt, "pokemon3IVsSPATK_txt")
-        pokemon3IVsSPATK_txt.Name = "pokemon3IVsSPATK_txt"
-        ' 
         ' pokemon3IVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon3IVsSPATK_lbl, "pokemon3IVsSPATK_lbl")
         pokemon3IVsSPATK_lbl.Name = "pokemon3IVsSPATK_lbl"
-        ' 
-        ' pokemon3IVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon3IVsSPD_txt, "pokemon3IVsSPD_txt")
-        pokemon3IVsSPD_txt.Name = "pokemon3IVsSPD_txt"
         ' 
         ' pokemon3IVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon3IVsSPD_lbl, "pokemon3IVsSPD_lbl")
         pokemon3IVsSPD_lbl.Name = "pokemon3IVsSPD_lbl"
         ' 
-        ' pokemon3IVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon3IVsATK_txt, "pokemon3IVsATK_txt")
-        pokemon3IVsATK_txt.Name = "pokemon3IVsATK_txt"
-        ' 
         ' pokemon3IVsATK_lbl
         ' 
         resources.ApplyResources(pokemon3IVsATK_lbl, "pokemon3IVsATK_lbl")
         pokemon3IVsATK_lbl.Name = "pokemon3IVsATK_lbl"
-        ' 
-        ' pokemon3IVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon3IVsHP_txt, "pokemon3IVsHP_txt")
-        pokemon3IVsHP_txt.Name = "pokemon3IVsHP_txt"
         ' 
         ' pokemon3IVsHP_lbl
         ' 
@@ -2152,76 +1911,40 @@ Partial Class Form1
         ' 
         ' pokemon4EVs_grp
         ' 
-        pokemon4EVs_grp.Controls.Add(pokemon4EVsDEF_txt)
         pokemon4EVs_grp.Controls.Add(pokemon4EVsDEF_lbl)
-        pokemon4EVs_grp.Controls.Add(pokemon4EVsSPDEF_txt)
         pokemon4EVs_grp.Controls.Add(pokemon4EVsSPDEF_lbl)
-        pokemon4EVs_grp.Controls.Add(pokemon4EVsSPATK_txt)
         pokemon4EVs_grp.Controls.Add(pokemon4EVsSPATK_lbl)
-        pokemon4EVs_grp.Controls.Add(pokemon4EVsSPD_txt)
         pokemon4EVs_grp.Controls.Add(pokemon4EVsSPD_lbl)
-        pokemon4EVs_grp.Controls.Add(pokemon4EVsATK_txt)
         pokemon4EVs_grp.Controls.Add(pokemon4EVsATK_lbl)
-        pokemon4EVs_grp.Controls.Add(pokemon4EVsHP_txt)
         pokemon4EVs_grp.Controls.Add(pokemon4EVsHP_lbl)
         resources.ApplyResources(pokemon4EVs_grp, "pokemon4EVs_grp")
         pokemon4EVs_grp.Name = "pokemon4EVs_grp"
         pokemon4EVs_grp.TabStop = False
-        ' 
-        ' pokemon4EVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon4EVsDEF_txt, "pokemon4EVsDEF_txt")
-        pokemon4EVsDEF_txt.Name = "pokemon4EVsDEF_txt"
         ' 
         ' pokemon4EVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon4EVsDEF_lbl, "pokemon4EVsDEF_lbl")
         pokemon4EVsDEF_lbl.Name = "pokemon4EVsDEF_lbl"
         ' 
-        ' pokemon4EVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon4EVsSPDEF_txt, "pokemon4EVsSPDEF_txt")
-        pokemon4EVsSPDEF_txt.Name = "pokemon4EVsSPDEF_txt"
-        ' 
         ' pokemon4EVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon4EVsSPDEF_lbl, "pokemon4EVsSPDEF_lbl")
         pokemon4EVsSPDEF_lbl.Name = "pokemon4EVsSPDEF_lbl"
-        ' 
-        ' pokemon4EVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon4EVsSPATK_txt, "pokemon4EVsSPATK_txt")
-        pokemon4EVsSPATK_txt.Name = "pokemon4EVsSPATK_txt"
         ' 
         ' pokemon4EVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon4EVsSPATK_lbl, "pokemon4EVsSPATK_lbl")
         pokemon4EVsSPATK_lbl.Name = "pokemon4EVsSPATK_lbl"
         ' 
-        ' pokemon4EVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon4EVsSPD_txt, "pokemon4EVsSPD_txt")
-        pokemon4EVsSPD_txt.Name = "pokemon4EVsSPD_txt"
-        ' 
         ' pokemon4EVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon4EVsSPD_lbl, "pokemon4EVsSPD_lbl")
         pokemon4EVsSPD_lbl.Name = "pokemon4EVsSPD_lbl"
         ' 
-        ' pokemon4EVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon4EVsATK_txt, "pokemon4EVsATK_txt")
-        pokemon4EVsATK_txt.Name = "pokemon4EVsATK_txt"
-        ' 
         ' pokemon4EVsATK_lbl
         ' 
         resources.ApplyResources(pokemon4EVsATK_lbl, "pokemon4EVsATK_lbl")
         pokemon4EVsATK_lbl.Name = "pokemon4EVsATK_lbl"
-        ' 
-        ' pokemon4EVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon4EVsHP_txt, "pokemon4EVsHP_txt")
-        pokemon4EVsHP_txt.Name = "pokemon4EVsHP_txt"
         ' 
         ' pokemon4EVsHP_lbl
         ' 
@@ -2240,17 +1963,11 @@ Partial Class Form1
         ' 
         pokemon4IVs_grp.Controls.Add(pokemon4RandomIVs_btn)
         pokemon4IVs_grp.Controls.Add(pokemon4MaxIVs_btn)
-        pokemon4IVs_grp.Controls.Add(pokemon4IVsDEF_txt)
         pokemon4IVs_grp.Controls.Add(pokemon4IVsDEF_lbl)
-        pokemon4IVs_grp.Controls.Add(pokemon4IVsSPDEF_txt)
         pokemon4IVs_grp.Controls.Add(pokemon4IVsSPDEF_lbl)
-        pokemon4IVs_grp.Controls.Add(pokemon4IVsSPATK_txt)
         pokemon4IVs_grp.Controls.Add(pokemon4IVsSPATK_lbl)
-        pokemon4IVs_grp.Controls.Add(pokemon4IVsSPD_txt)
         pokemon4IVs_grp.Controls.Add(pokemon4IVsSPD_lbl)
-        pokemon4IVs_grp.Controls.Add(pokemon4IVsATK_txt)
         pokemon4IVs_grp.Controls.Add(pokemon4IVsATK_lbl)
-        pokemon4IVs_grp.Controls.Add(pokemon4IVsHP_txt)
         pokemon4IVs_grp.Controls.Add(pokemon4IVsHP_lbl)
         resources.ApplyResources(pokemon4IVs_grp, "pokemon4IVs_grp")
         pokemon4IVs_grp.Name = "pokemon4IVs_grp"
@@ -2268,60 +1985,30 @@ Partial Class Form1
         pokemon4MaxIVs_btn.Name = "pokemon4MaxIVs_btn"
         pokemon4MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' pokemon4IVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon4IVsDEF_txt, "pokemon4IVsDEF_txt")
-        pokemon4IVsDEF_txt.Name = "pokemon4IVsDEF_txt"
-        ' 
         ' pokemon4IVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon4IVsDEF_lbl, "pokemon4IVsDEF_lbl")
         pokemon4IVsDEF_lbl.Name = "pokemon4IVsDEF_lbl"
-        ' 
-        ' pokemon4IVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon4IVsSPDEF_txt, "pokemon4IVsSPDEF_txt")
-        pokemon4IVsSPDEF_txt.Name = "pokemon4IVsSPDEF_txt"
         ' 
         ' pokemon4IVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon4IVsSPDEF_lbl, "pokemon4IVsSPDEF_lbl")
         pokemon4IVsSPDEF_lbl.Name = "pokemon4IVsSPDEF_lbl"
         ' 
-        ' pokemon4IVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon4IVsSPATK_txt, "pokemon4IVsSPATK_txt")
-        pokemon4IVsSPATK_txt.Name = "pokemon4IVsSPATK_txt"
-        ' 
         ' pokemon4IVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon4IVsSPATK_lbl, "pokemon4IVsSPATK_lbl")
         pokemon4IVsSPATK_lbl.Name = "pokemon4IVsSPATK_lbl"
-        ' 
-        ' pokemon4IVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon4IVsSPD_txt, "pokemon4IVsSPD_txt")
-        pokemon4IVsSPD_txt.Name = "pokemon4IVsSPD_txt"
         ' 
         ' pokemon4IVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon4IVsSPD_lbl, "pokemon4IVsSPD_lbl")
         pokemon4IVsSPD_lbl.Name = "pokemon4IVsSPD_lbl"
         ' 
-        ' pokemon4IVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon4IVsATK_txt, "pokemon4IVsATK_txt")
-        pokemon4IVsATK_txt.Name = "pokemon4IVsATK_txt"
-        ' 
         ' pokemon4IVsATK_lbl
         ' 
         resources.ApplyResources(pokemon4IVsATK_lbl, "pokemon4IVsATK_lbl")
         pokemon4IVsATK_lbl.Name = "pokemon4IVsATK_lbl"
-        ' 
-        ' pokemon4IVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon4IVsHP_txt, "pokemon4IVsHP_txt")
-        pokemon4IVsHP_txt.Name = "pokemon4IVsHP_txt"
         ' 
         ' pokemon4IVsHP_lbl
         ' 
@@ -2561,76 +2248,40 @@ Partial Class Form1
         ' 
         ' pokemon5EVs_grp
         ' 
-        pokemon5EVs_grp.Controls.Add(pokemon5EVsDEF_txt)
         pokemon5EVs_grp.Controls.Add(pokemon5EVsDEF_lbl)
-        pokemon5EVs_grp.Controls.Add(pokemon5EVsSPDEF_txt)
         pokemon5EVs_grp.Controls.Add(pokemon5EVsSPDEF_lbl)
-        pokemon5EVs_grp.Controls.Add(pokemon5EVsSPATK_txt)
         pokemon5EVs_grp.Controls.Add(pokemon5EVsSPATK_lbl)
-        pokemon5EVs_grp.Controls.Add(pokemon5EVsSPD_txt)
         pokemon5EVs_grp.Controls.Add(pokemon5EVsSPD_lbl)
-        pokemon5EVs_grp.Controls.Add(pokemon5EVsATK_txt)
         pokemon5EVs_grp.Controls.Add(pokemon5EVsATK_lbl)
-        pokemon5EVs_grp.Controls.Add(pokemon5EVsHP_txt)
         pokemon5EVs_grp.Controls.Add(pokemon5EVsHP_lbl)
         resources.ApplyResources(pokemon5EVs_grp, "pokemon5EVs_grp")
         pokemon5EVs_grp.Name = "pokemon5EVs_grp"
         pokemon5EVs_grp.TabStop = False
-        ' 
-        ' pokemon5EVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon5EVsDEF_txt, "pokemon5EVsDEF_txt")
-        pokemon5EVsDEF_txt.Name = "pokemon5EVsDEF_txt"
         ' 
         ' pokemon5EVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon5EVsDEF_lbl, "pokemon5EVsDEF_lbl")
         pokemon5EVsDEF_lbl.Name = "pokemon5EVsDEF_lbl"
         ' 
-        ' pokemon5EVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon5EVsSPDEF_txt, "pokemon5EVsSPDEF_txt")
-        pokemon5EVsSPDEF_txt.Name = "pokemon5EVsSPDEF_txt"
-        ' 
         ' pokemon5EVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon5EVsSPDEF_lbl, "pokemon5EVsSPDEF_lbl")
         pokemon5EVsSPDEF_lbl.Name = "pokemon5EVsSPDEF_lbl"
-        ' 
-        ' pokemon5EVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon5EVsSPATK_txt, "pokemon5EVsSPATK_txt")
-        pokemon5EVsSPATK_txt.Name = "pokemon5EVsSPATK_txt"
         ' 
         ' pokemon5EVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon5EVsSPATK_lbl, "pokemon5EVsSPATK_lbl")
         pokemon5EVsSPATK_lbl.Name = "pokemon5EVsSPATK_lbl"
         ' 
-        ' pokemon5EVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon5EVsSPD_txt, "pokemon5EVsSPD_txt")
-        pokemon5EVsSPD_txt.Name = "pokemon5EVsSPD_txt"
-        ' 
         ' pokemon5EVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon5EVsSPD_lbl, "pokemon5EVsSPD_lbl")
         pokemon5EVsSPD_lbl.Name = "pokemon5EVsSPD_lbl"
         ' 
-        ' pokemon5EVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon5EVsATK_txt, "pokemon5EVsATK_txt")
-        pokemon5EVsATK_txt.Name = "pokemon5EVsATK_txt"
-        ' 
         ' pokemon5EVsATK_lbl
         ' 
         resources.ApplyResources(pokemon5EVsATK_lbl, "pokemon5EVsATK_lbl")
         pokemon5EVsATK_lbl.Name = "pokemon5EVsATK_lbl"
-        ' 
-        ' pokemon5EVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon5EVsHP_txt, "pokemon5EVsHP_txt")
-        pokemon5EVsHP_txt.Name = "pokemon5EVsHP_txt"
         ' 
         ' pokemon5EVsHP_lbl
         ' 
@@ -2649,17 +2300,11 @@ Partial Class Form1
         ' 
         pokemon5IVs_grp.Controls.Add(pokemon5RandomIVs_btn)
         pokemon5IVs_grp.Controls.Add(pokemon5MaxIVs_btn)
-        pokemon5IVs_grp.Controls.Add(pokemon5IVsDEF_txt)
         pokemon5IVs_grp.Controls.Add(pokemon5IVsDEF_lbl)
-        pokemon5IVs_grp.Controls.Add(pokemon5IVsSPDEF_txt)
         pokemon5IVs_grp.Controls.Add(pokemon5IVsSPDEF_lbl)
-        pokemon5IVs_grp.Controls.Add(pokemon5IVsSPATK_txt)
         pokemon5IVs_grp.Controls.Add(pokemon5IVsSPATK_lbl)
-        pokemon5IVs_grp.Controls.Add(pokemon5IVsSPD_txt)
         pokemon5IVs_grp.Controls.Add(pokemon5IVsSPD_lbl)
-        pokemon5IVs_grp.Controls.Add(pokemon5IVsATK_txt)
         pokemon5IVs_grp.Controls.Add(pokemon5IVsATK_lbl)
-        pokemon5IVs_grp.Controls.Add(pokemon5IVsHP_txt)
         pokemon5IVs_grp.Controls.Add(pokemon5IVsHP_lbl)
         resources.ApplyResources(pokemon5IVs_grp, "pokemon5IVs_grp")
         pokemon5IVs_grp.Name = "pokemon5IVs_grp"
@@ -2677,60 +2322,30 @@ Partial Class Form1
         pokemon5MaxIVs_btn.Name = "pokemon5MaxIVs_btn"
         pokemon5MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' pokemon5IVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon5IVsDEF_txt, "pokemon5IVsDEF_txt")
-        pokemon5IVsDEF_txt.Name = "pokemon5IVsDEF_txt"
-        ' 
         ' pokemon5IVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon5IVsDEF_lbl, "pokemon5IVsDEF_lbl")
         pokemon5IVsDEF_lbl.Name = "pokemon5IVsDEF_lbl"
-        ' 
-        ' pokemon5IVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon5IVsSPDEF_txt, "pokemon5IVsSPDEF_txt")
-        pokemon5IVsSPDEF_txt.Name = "pokemon5IVsSPDEF_txt"
         ' 
         ' pokemon5IVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon5IVsSPDEF_lbl, "pokemon5IVsSPDEF_lbl")
         pokemon5IVsSPDEF_lbl.Name = "pokemon5IVsSPDEF_lbl"
         ' 
-        ' pokemon5IVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon5IVsSPATK_txt, "pokemon5IVsSPATK_txt")
-        pokemon5IVsSPATK_txt.Name = "pokemon5IVsSPATK_txt"
-        ' 
         ' pokemon5IVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon5IVsSPATK_lbl, "pokemon5IVsSPATK_lbl")
         pokemon5IVsSPATK_lbl.Name = "pokemon5IVsSPATK_lbl"
-        ' 
-        ' pokemon5IVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon5IVsSPD_txt, "pokemon5IVsSPD_txt")
-        pokemon5IVsSPD_txt.Name = "pokemon5IVsSPD_txt"
         ' 
         ' pokemon5IVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon5IVsSPD_lbl, "pokemon5IVsSPD_lbl")
         pokemon5IVsSPD_lbl.Name = "pokemon5IVsSPD_lbl"
         ' 
-        ' pokemon5IVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon5IVsATK_txt, "pokemon5IVsATK_txt")
-        pokemon5IVsATK_txt.Name = "pokemon5IVsATK_txt"
-        ' 
         ' pokemon5IVsATK_lbl
         ' 
         resources.ApplyResources(pokemon5IVsATK_lbl, "pokemon5IVsATK_lbl")
         pokemon5IVsATK_lbl.Name = "pokemon5IVsATK_lbl"
-        ' 
-        ' pokemon5IVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon5IVsHP_txt, "pokemon5IVsHP_txt")
-        pokemon5IVsHP_txt.Name = "pokemon5IVsHP_txt"
         ' 
         ' pokemon5IVsHP_lbl
         ' 
@@ -2970,76 +2585,40 @@ Partial Class Form1
         ' 
         ' pokemon6EVs_grp
         ' 
-        pokemon6EVs_grp.Controls.Add(pokemon6EVsDEF_txt)
         pokemon6EVs_grp.Controls.Add(pokemon6EVsDEF_lbl)
-        pokemon6EVs_grp.Controls.Add(pokemon6EVsSPDEF_txt)
         pokemon6EVs_grp.Controls.Add(pokemon6EVsSPDEF_lbl)
-        pokemon6EVs_grp.Controls.Add(pokemon6EVsSPATK_txt)
         pokemon6EVs_grp.Controls.Add(pokemon6EVsSPATK_lbl)
-        pokemon6EVs_grp.Controls.Add(pokemon6EVsSPD_txt)
         pokemon6EVs_grp.Controls.Add(pokemon6EVsSPD_lbl)
-        pokemon6EVs_grp.Controls.Add(pokemon6EVsATK_txt)
         pokemon6EVs_grp.Controls.Add(pokemon6EVsATK_lbl)
-        pokemon6EVs_grp.Controls.Add(pokemon6EVsHP_txt)
         pokemon6EVs_grp.Controls.Add(pokemon6EVsHP_lbl)
         resources.ApplyResources(pokemon6EVs_grp, "pokemon6EVs_grp")
         pokemon6EVs_grp.Name = "pokemon6EVs_grp"
         pokemon6EVs_grp.TabStop = False
-        ' 
-        ' pokemon6EVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon6EVsDEF_txt, "pokemon6EVsDEF_txt")
-        pokemon6EVsDEF_txt.Name = "pokemon6EVsDEF_txt"
         ' 
         ' pokemon6EVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon6EVsDEF_lbl, "pokemon6EVsDEF_lbl")
         pokemon6EVsDEF_lbl.Name = "pokemon6EVsDEF_lbl"
         ' 
-        ' pokemon6EVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon6EVsSPDEF_txt, "pokemon6EVsSPDEF_txt")
-        pokemon6EVsSPDEF_txt.Name = "pokemon6EVsSPDEF_txt"
-        ' 
         ' pokemon6EVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon6EVsSPDEF_lbl, "pokemon6EVsSPDEF_lbl")
         pokemon6EVsSPDEF_lbl.Name = "pokemon6EVsSPDEF_lbl"
-        ' 
-        ' pokemon6EVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon6EVsSPATK_txt, "pokemon6EVsSPATK_txt")
-        pokemon6EVsSPATK_txt.Name = "pokemon6EVsSPATK_txt"
         ' 
         ' pokemon6EVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon6EVsSPATK_lbl, "pokemon6EVsSPATK_lbl")
         pokemon6EVsSPATK_lbl.Name = "pokemon6EVsSPATK_lbl"
         ' 
-        ' pokemon6EVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon6EVsSPD_txt, "pokemon6EVsSPD_txt")
-        pokemon6EVsSPD_txt.Name = "pokemon6EVsSPD_txt"
-        ' 
         ' pokemon6EVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon6EVsSPD_lbl, "pokemon6EVsSPD_lbl")
         pokemon6EVsSPD_lbl.Name = "pokemon6EVsSPD_lbl"
         ' 
-        ' pokemon6EVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon6EVsATK_txt, "pokemon6EVsATK_txt")
-        pokemon6EVsATK_txt.Name = "pokemon6EVsATK_txt"
-        ' 
         ' pokemon6EVsATK_lbl
         ' 
         resources.ApplyResources(pokemon6EVsATK_lbl, "pokemon6EVsATK_lbl")
         pokemon6EVsATK_lbl.Name = "pokemon6EVsATK_lbl"
-        ' 
-        ' pokemon6EVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon6EVsHP_txt, "pokemon6EVsHP_txt")
-        pokemon6EVsHP_txt.Name = "pokemon6EVsHP_txt"
         ' 
         ' pokemon6EVsHP_lbl
         ' 
@@ -3058,17 +2637,11 @@ Partial Class Form1
         ' 
         pokemon6IVs_grp.Controls.Add(pokemon6RandomIVs_btn)
         pokemon6IVs_grp.Controls.Add(pokemon6MaxIVs_btn)
-        pokemon6IVs_grp.Controls.Add(pokemon6IVsDEF_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsDEF_lbl)
-        pokemon6IVs_grp.Controls.Add(pokemon6IVsSPDEF_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsSPDEF_lbl)
-        pokemon6IVs_grp.Controls.Add(pokemon6IVsSPATK_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsSPATK_lbl)
-        pokemon6IVs_grp.Controls.Add(pokemon6IVsSPD_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsSPD_lbl)
-        pokemon6IVs_grp.Controls.Add(pokemon6IVsATK_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsATK_lbl)
-        pokemon6IVs_grp.Controls.Add(pokemon6IVsHP_txt)
         pokemon6IVs_grp.Controls.Add(pokemon6IVsHP_lbl)
         resources.ApplyResources(pokemon6IVs_grp, "pokemon6IVs_grp")
         pokemon6IVs_grp.Name = "pokemon6IVs_grp"
@@ -3086,60 +2659,30 @@ Partial Class Form1
         pokemon6MaxIVs_btn.Name = "pokemon6MaxIVs_btn"
         pokemon6MaxIVs_btn.UseVisualStyleBackColor = True
         ' 
-        ' pokemon6IVsDEF_txt
-        ' 
-        resources.ApplyResources(pokemon6IVsDEF_txt, "pokemon6IVsDEF_txt")
-        pokemon6IVsDEF_txt.Name = "pokemon6IVsDEF_txt"
-        ' 
         ' pokemon6IVsDEF_lbl
         ' 
         resources.ApplyResources(pokemon6IVsDEF_lbl, "pokemon6IVsDEF_lbl")
         pokemon6IVsDEF_lbl.Name = "pokemon6IVsDEF_lbl"
-        ' 
-        ' pokemon6IVsSPDEF_txt
-        ' 
-        resources.ApplyResources(pokemon6IVsSPDEF_txt, "pokemon6IVsSPDEF_txt")
-        pokemon6IVsSPDEF_txt.Name = "pokemon6IVsSPDEF_txt"
         ' 
         ' pokemon6IVsSPDEF_lbl
         ' 
         resources.ApplyResources(pokemon6IVsSPDEF_lbl, "pokemon6IVsSPDEF_lbl")
         pokemon6IVsSPDEF_lbl.Name = "pokemon6IVsSPDEF_lbl"
         ' 
-        ' pokemon6IVsSPATK_txt
-        ' 
-        resources.ApplyResources(pokemon6IVsSPATK_txt, "pokemon6IVsSPATK_txt")
-        pokemon6IVsSPATK_txt.Name = "pokemon6IVsSPATK_txt"
-        ' 
         ' pokemon6IVsSPATK_lbl
         ' 
         resources.ApplyResources(pokemon6IVsSPATK_lbl, "pokemon6IVsSPATK_lbl")
         pokemon6IVsSPATK_lbl.Name = "pokemon6IVsSPATK_lbl"
-        ' 
-        ' pokemon6IVsSPD_txt
-        ' 
-        resources.ApplyResources(pokemon6IVsSPD_txt, "pokemon6IVsSPD_txt")
-        pokemon6IVsSPD_txt.Name = "pokemon6IVsSPD_txt"
         ' 
         ' pokemon6IVsSPD_lbl
         ' 
         resources.ApplyResources(pokemon6IVsSPD_lbl, "pokemon6IVsSPD_lbl")
         pokemon6IVsSPD_lbl.Name = "pokemon6IVsSPD_lbl"
         ' 
-        ' pokemon6IVsATK_txt
-        ' 
-        resources.ApplyResources(pokemon6IVsATK_txt, "pokemon6IVsATK_txt")
-        pokemon6IVsATK_txt.Name = "pokemon6IVsATK_txt"
-        ' 
         ' pokemon6IVsATK_lbl
         ' 
         resources.ApplyResources(pokemon6IVsATK_lbl, "pokemon6IVsATK_lbl")
         pokemon6IVsATK_lbl.Name = "pokemon6IVsATK_lbl"
-        ' 
-        ' pokemon6IVsHP_txt
-        ' 
-        resources.ApplyResources(pokemon6IVsHP_txt, "pokemon6IVsHP_txt")
-        pokemon6IVsHP_txt.Name = "pokemon6IVsHP_txt"
         ' 
         ' pokemon6IVsHP_lbl
         ' 
@@ -3376,16 +2919,65 @@ Partial Class Form1
         GeneratePreviewToolStripMenuItem.Name = "GeneratePreviewToolStripMenuItem"
         resources.ApplyResources(GeneratePreviewToolStripMenuItem, "GeneratePreviewToolStripMenuItem")
         ' 
-        ' IVStatsNote_lbl
+        ' NumericUpDown1
         ' 
-        resources.ApplyResources(IVStatsNote_lbl, "IVStatsNote_lbl")
-        IVStatsNote_lbl.Name = "IVStatsNote_lbl"
+        resources.ApplyResources(NumericUpDown1, "NumericUpDown1")
+        NumericUpDown1.Name = "NumericUpDown1"
         ' 
-        ' IVStatsNoteHeader_lbl
+        ' NumericUpDown2
         ' 
-        resources.ApplyResources(IVStatsNoteHeader_lbl, "IVStatsNoteHeader_lbl")
-        IVStatsNoteHeader_lbl.ForeColor = Color.Red
-        IVStatsNoteHeader_lbl.Name = "IVStatsNoteHeader_lbl"
+        resources.ApplyResources(NumericUpDown2, "NumericUpDown2")
+        NumericUpDown2.Name = "NumericUpDown2"
+        ' 
+        ' NumericUpDown3
+        ' 
+        resources.ApplyResources(NumericUpDown3, "NumericUpDown3")
+        NumericUpDown3.Name = "NumericUpDown3"
+        ' 
+        ' NumericUpDown4
+        ' 
+        resources.ApplyResources(NumericUpDown4, "NumericUpDown4")
+        NumericUpDown4.Name = "NumericUpDown4"
+        ' 
+        ' NumericUpDown5
+        ' 
+        resources.ApplyResources(NumericUpDown5, "NumericUpDown5")
+        NumericUpDown5.Name = "NumericUpDown5"
+        ' 
+        ' NumericUpDown6
+        ' 
+        resources.ApplyResources(NumericUpDown6, "NumericUpDown6")
+        NumericUpDown6.Name = "NumericUpDown6"
+        ' 
+        ' NumericUpDown7
+        ' 
+        resources.ApplyResources(NumericUpDown7, "NumericUpDown7")
+        NumericUpDown7.Name = "NumericUpDown7"
+        ' 
+        ' NumericUpDown8
+        ' 
+        resources.ApplyResources(NumericUpDown8, "NumericUpDown8")
+        NumericUpDown8.Name = "NumericUpDown8"
+        ' 
+        ' NumericUpDown9
+        ' 
+        resources.ApplyResources(NumericUpDown9, "NumericUpDown9")
+        NumericUpDown9.Name = "NumericUpDown9"
+        ' 
+        ' NumericUpDown10
+        ' 
+        resources.ApplyResources(NumericUpDown10, "NumericUpDown10")
+        NumericUpDown10.Name = "NumericUpDown10"
+        ' 
+        ' NumericUpDown11
+        ' 
+        resources.ApplyResources(NumericUpDown11, "NumericUpDown11")
+        NumericUpDown11.Name = "NumericUpDown11"
+        ' 
+        ' NumericUpDown12
+        ' 
+        resources.ApplyResources(NumericUpDown12, "NumericUpDown12")
+        NumericUpDown12.Name = "NumericUpDown12"
         ' 
         ' Form1
         ' 
@@ -3510,6 +3102,18 @@ Partial Class Form1
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
+        CType(NumericUpDown1, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown2, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown3, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown4, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown5, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown6, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown7, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown8, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown9, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown10, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown11, ComponentModel.ISupportInitialize).EndInit()
+        CType(NumericUpDown12, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -3581,30 +3185,18 @@ Partial Class Form1
     Friend WithEvents pokemon1IVs_grp As GroupBox
     Friend WithEvents pokemon1RandomIVs_btn As Button
     Friend WithEvents pokemon1MaxIVs_btn As Button
-    Friend WithEvents pokemon1IVsDEF_txt As TextBox
     Friend WithEvents pokemon1IVsDEF_lbl As Label
-    Friend WithEvents pokemon1IVsSPDEF_txt As TextBox
     Friend WithEvents pokemon1IVsSPDEF_lbl As Label
-    Friend WithEvents pokemon1IVsSPATK_txt As TextBox
     Friend WithEvents pokemon1IVsSPATK_lbl As Label
-    Friend WithEvents pokemon1IVsSPD_txt As TextBox
     Friend WithEvents pokemon1IVsSPD_lbl As Label
-    Friend WithEvents pokemon1IVsATK_txt As TextBox
     Friend WithEvents pokemon1IVsATK_lbl As Label
-    Friend WithEvents pokemon1IVsHP_txt As TextBox
     Friend WithEvents pokemon1IVsHP_lbl As Label
     Friend WithEvents pokemon1EVs_grp As GroupBox
-    Friend WithEvents pokemon1EVsDEF_txt As TextBox
     Friend WithEvents pokemon1EVsDEF_lbl As Label
-    Friend WithEvents pokemon1EVsSPDEF_txt As TextBox
     Friend WithEvents pokemon1EVsSPDEF_lbl As Label
-    Friend WithEvents pokemon1EVsSPATK_txt As TextBox
     Friend WithEvents pokemon1EVsSPATK_lbl As Label
-    Friend WithEvents pokemon1EVsSPD_txt As TextBox
     Friend WithEvents pokemon1EVsSPD_lbl As Label
-    Friend WithEvents pokemon1EVsATK_txt As TextBox
     Friend WithEvents pokemon1EVsATK_lbl As Label
-    Friend WithEvents pokemon1EVsHP_txt As TextBox
     Friend WithEvents pokemon1EVsHP_lbl As Label
     Friend WithEvents pg_about As TabPage
     Friend WithEvents copyright_lbl As Label
@@ -3618,33 +3210,21 @@ Partial Class Form1
     Friend WithEvents pokemon2NotShadow_rad As RadioButton
     Friend WithEvents pokemon2Name_lbl As Label
     Friend WithEvents pokemon2EVs_grp As GroupBox
-    Friend WithEvents pokemon2EVsDEF_txt As TextBox
     Friend WithEvents pokemon2EVsDEF_lbl As Label
-    Friend WithEvents pokemon2EVsSPDEF_txt As TextBox
     Friend WithEvents pokemon2EVsSPDEF_lbl As Label
-    Friend WithEvents pokemon2EVsSPATK_txt As TextBox
     Friend WithEvents pokemon2EVsSPATK_lbl As Label
-    Friend WithEvents pokemon2EVsSPD_txt As TextBox
     Friend WithEvents pokemon2EVsSPD_lbl As Label
-    Friend WithEvents pokemon2EVsATK_txt As TextBox
     Friend WithEvents pokemon2EVsATK_lbl As Label
-    Friend WithEvents pokemon2EVsHP_txt As TextBox
     Friend WithEvents pokemon2EVsHP_lbl As Label
     Friend WithEvents pokemon2Name_txt As TextBox
     Friend WithEvents pokemon2IVs_grp As GroupBox
     Friend WithEvents pokemon2RandomIVs_btn As Button
     Friend WithEvents pokemon2MaxIVs_btn As Button
-    Friend WithEvents pokemon2IVsDEF_txt As TextBox
     Friend WithEvents pokemon2IVsDEF_lbl As Label
-    Friend WithEvents pokemon2IVsSPDEF_txt As TextBox
     Friend WithEvents pokemon2IVsSPDEF_lbl As Label
-    Friend WithEvents pokemon2IVsSPATK_txt As TextBox
     Friend WithEvents pokemon2IVsSPATK_lbl As Label
-    Friend WithEvents pokemon2IVsSPD_txt As TextBox
     Friend WithEvents pokemon2IVsSPD_lbl As Label
-    Friend WithEvents pokemon2IVsATK_txt As TextBox
     Friend WithEvents pokemon2IVsATK_lbl As Label
-    Friend WithEvents pokemon2IVsHP_txt As TextBox
     Friend WithEvents pokemon2IVsHP_lbl As Label
     Friend WithEvents pokemon2HeldItem_txt As TextBox
     Friend WithEvents pokemon2PokeballID_cmb As ComboBox
@@ -3679,33 +3259,21 @@ Partial Class Form1
     Friend WithEvents pokemon3NotShadow_rad As RadioButton
     Friend WithEvents pokemon3Name_lbl As Label
     Friend WithEvents pokemon3EVs_grp As GroupBox
-    Friend WithEvents pokemon3EVsDEF_txt As TextBox
     Friend WithEvents pokemon3EVsDEF_lbl As Label
-    Friend WithEvents pokemon3EVsSPDEF_txt As TextBox
     Friend WithEvents pokemon3EVsSPDEF_lbl As Label
-    Friend WithEvents pokemon3EVsSPATK_txt As TextBox
     Friend WithEvents pokemon3EVsSPATK_lbl As Label
-    Friend WithEvents pokemon3EVsSPD_txt As TextBox
     Friend WithEvents pokemon3EVsSPD_lbl As Label
-    Friend WithEvents pokemon3EVsATK_txt As TextBox
     Friend WithEvents pokemon3EVsATK_lbl As Label
-    Friend WithEvents pokemon3EVsHP_txt As TextBox
     Friend WithEvents pokemon3EVsHP_lbl As Label
     Friend WithEvents pokemon3Name_txt As TextBox
     Friend WithEvents pokemon3IVs_grp As GroupBox
     Friend WithEvents pokemon3RandomIVs_btn As Button
     Friend WithEvents pokemon3MaxIVs_btn As Button
-    Friend WithEvents pokemon3IVsDEF_txt As TextBox
     Friend WithEvents pokemon3IVsDEF_lbl As Label
-    Friend WithEvents pokemon3IVsSPDEF_txt As TextBox
     Friend WithEvents pokemon3IVsSPDEF_lbl As Label
-    Friend WithEvents pokemon3IVsSPATK_txt As TextBox
     Friend WithEvents pokemon3IVsSPATK_lbl As Label
-    Friend WithEvents pokemon3IVsSPD_txt As TextBox
     Friend WithEvents pokemon3IVsSPD_lbl As Label
-    Friend WithEvents pokemon3IVsATK_txt As TextBox
     Friend WithEvents pokemon3IVsATK_lbl As Label
-    Friend WithEvents pokemon3IVsHP_txt As TextBox
     Friend WithEvents pokemon3IVsHP_lbl As Label
     Friend WithEvents pokemon3HeldItem_txt As TextBox
     Friend WithEvents pokemon3PokeballID_cmb As ComboBox
@@ -3736,33 +3304,21 @@ Partial Class Form1
     Friend WithEvents pokemon4NotShadow_rad As RadioButton
     Friend WithEvents pokemon4Name_lbl As Label
     Friend WithEvents pokemon4EVs_grp As GroupBox
-    Friend WithEvents pokemon4EVsDEF_txt As TextBox
     Friend WithEvents pokemon4EVsDEF_lbl As Label
-    Friend WithEvents pokemon4EVsSPDEF_txt As TextBox
     Friend WithEvents pokemon4EVsSPDEF_lbl As Label
-    Friend WithEvents pokemon4EVsSPATK_txt As TextBox
     Friend WithEvents pokemon4EVsSPATK_lbl As Label
-    Friend WithEvents pokemon4EVsSPD_txt As TextBox
     Friend WithEvents pokemon4EVsSPD_lbl As Label
-    Friend WithEvents pokemon4EVsATK_txt As TextBox
     Friend WithEvents pokemon4EVsATK_lbl As Label
-    Friend WithEvents pokemon4EVsHP_txt As TextBox
     Friend WithEvents pokemon4EVsHP_lbl As Label
     Friend WithEvents pokemon4Name_txt As TextBox
     Friend WithEvents pokemon4IVs_grp As GroupBox
     Friend WithEvents pokemon4RandomIVs_btn As Button
     Friend WithEvents pokemon4MaxIVs_btn As Button
-    Friend WithEvents pokemon4IVsDEF_txt As TextBox
     Friend WithEvents pokemon4IVsDEF_lbl As Label
-    Friend WithEvents pokemon4IVsSPDEF_txt As TextBox
     Friend WithEvents pokemon4IVsSPDEF_lbl As Label
-    Friend WithEvents pokemon4IVsSPATK_txt As TextBox
     Friend WithEvents pokemon4IVsSPATK_lbl As Label
-    Friend WithEvents pokemon4IVsSPD_txt As TextBox
     Friend WithEvents pokemon4IVsSPD_lbl As Label
-    Friend WithEvents pokemon4IVsATK_txt As TextBox
     Friend WithEvents pokemon4IVsATK_lbl As Label
-    Friend WithEvents pokemon4IVsHP_txt As TextBox
     Friend WithEvents pokemon4IVsHP_lbl As Label
     Friend WithEvents pokemon4HeldItem_txt As TextBox
     Friend WithEvents pokemon4PokeballID_cmb As ComboBox
@@ -3793,33 +3349,21 @@ Partial Class Form1
     Friend WithEvents pokemon5NotShadow_rad As RadioButton
     Friend WithEvents pokemon5Name_lbl As Label
     Friend WithEvents pokemon5EVs_grp As GroupBox
-    Friend WithEvents pokemon5EVsDEF_txt As TextBox
     Friend WithEvents pokemon5EVsDEF_lbl As Label
-    Friend WithEvents pokemon5EVsSPDEF_txt As TextBox
     Friend WithEvents pokemon5EVsSPDEF_lbl As Label
-    Friend WithEvents pokemon5EVsSPATK_txt As TextBox
     Friend WithEvents pokemon5EVsSPATK_lbl As Label
-    Friend WithEvents pokemon5EVsSPD_txt As TextBox
     Friend WithEvents pokemon5EVsSPD_lbl As Label
-    Friend WithEvents pokemon5EVsATK_txt As TextBox
     Friend WithEvents pokemon5EVsATK_lbl As Label
-    Friend WithEvents pokemon5EVsHP_txt As TextBox
     Friend WithEvents pokemon5EVsHP_lbl As Label
     Friend WithEvents pokemon5Name_txt As TextBox
     Friend WithEvents pokemon5IVs_grp As GroupBox
     Friend WithEvents pokemon5RandomIVs_btn As Button
     Friend WithEvents pokemon5MaxIVs_btn As Button
-    Friend WithEvents pokemon5IVsDEF_txt As TextBox
     Friend WithEvents pokemon5IVsDEF_lbl As Label
-    Friend WithEvents pokemon5IVsSPDEF_txt As TextBox
     Friend WithEvents pokemon5IVsSPDEF_lbl As Label
-    Friend WithEvents pokemon5IVsSPATK_txt As TextBox
     Friend WithEvents pokemon5IVsSPATK_lbl As Label
-    Friend WithEvents pokemon5IVsSPD_txt As TextBox
     Friend WithEvents pokemon5IVsSPD_lbl As Label
-    Friend WithEvents pokemon5IVsATK_txt As TextBox
     Friend WithEvents pokemon5IVsATK_lbl As Label
-    Friend WithEvents pokemon5IVsHP_txt As TextBox
     Friend WithEvents pokemon5IVsHP_lbl As Label
     Friend WithEvents pokemon5HeldItem_txt As TextBox
     Friend WithEvents pokemon5PokeballID_cmb As ComboBox
@@ -3850,33 +3394,21 @@ Partial Class Form1
     Friend WithEvents pokemon6NotShadow_rad As RadioButton
     Friend WithEvents pokemon6Name_lbl As Label
     Friend WithEvents pokemon6EVs_grp As GroupBox
-    Friend WithEvents pokemon6EVsDEF_txt As TextBox
     Friend WithEvents pokemon6EVsDEF_lbl As Label
-    Friend WithEvents pokemon6EVsSPDEF_txt As TextBox
     Friend WithEvents pokemon6EVsSPDEF_lbl As Label
-    Friend WithEvents pokemon6EVsSPATK_txt As TextBox
     Friend WithEvents pokemon6EVsSPATK_lbl As Label
-    Friend WithEvents pokemon6EVsSPD_txt As TextBox
     Friend WithEvents pokemon6EVsSPD_lbl As Label
-    Friend WithEvents pokemon6EVsATK_txt As TextBox
     Friend WithEvents pokemon6EVsATK_lbl As Label
-    Friend WithEvents pokemon6EVsHP_txt As TextBox
     Friend WithEvents pokemon6EVsHP_lbl As Label
     Friend WithEvents pokemon6Name_txt As TextBox
     Friend WithEvents pokemon6IVs_grp As GroupBox
     Friend WithEvents pokemon6RandomIVs_btn As Button
     Friend WithEvents pokemon6MaxIVs_btn As Button
-    Friend WithEvents pokemon6IVsDEF_txt As TextBox
     Friend WithEvents pokemon6IVsDEF_lbl As Label
-    Friend WithEvents pokemon6IVsSPDEF_txt As TextBox
     Friend WithEvents pokemon6IVsSPDEF_lbl As Label
-    Friend WithEvents pokemon6IVsSPATK_txt As TextBox
     Friend WithEvents pokemon6IVsSPATK_lbl As Label
-    Friend WithEvents pokemon6IVsSPD_txt As TextBox
     Friend WithEvents pokemon6IVsSPD_lbl As Label
-    Friend WithEvents pokemon6IVsATK_txt As TextBox
     Friend WithEvents pokemon6IVsATK_lbl As Label
-    Friend WithEvents pokemon6IVsHP_txt As TextBox
     Friend WithEvents pokemon6IVsHP_lbl As Label
     Friend WithEvents pokemon6HeldItem_txt As TextBox
     Friend WithEvents pokemon6PokeballID_cmb As ComboBox
@@ -3945,4 +3477,16 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents IVStatsNoteHeader_lbl As Label
     Friend WithEvents IVStatsNote_lbl As Label
+    Friend WithEvents NumericUpDown7 As NumericUpDown
+    Friend WithEvents NumericUpDown8 As NumericUpDown
+    Friend WithEvents NumericUpDown9 As NumericUpDown
+    Friend WithEvents NumericUpDown10 As NumericUpDown
+    Friend WithEvents NumericUpDown11 As NumericUpDown
+    Friend WithEvents NumericUpDown12 As NumericUpDown
+    Friend WithEvents NumericUpDown4 As NumericUpDown
+    Friend WithEvents NumericUpDown5 As NumericUpDown
+    Friend WithEvents NumericUpDown6 As NumericUpDown
+    Friend WithEvents NumericUpDown3 As NumericUpDown
+    Friend WithEvents NumericUpDown2 As NumericUpDown
+    Friend WithEvents NumericUpDown1 As NumericUpDown
 End Class
