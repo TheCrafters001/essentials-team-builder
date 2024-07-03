@@ -429,7 +429,7 @@ Public Class Form1
 
     Private Sub addItem_btn_Click(sender As Object, e As EventArgs) Handles addItem_btn.Click
         Dim Input As String = InputBox("Enter an Item Name", "Add Item")
-        AddItem(Input)
+        AddItem(Input.ToUpper)
     End Sub
 
     Private Sub removeItem_btn_Click(sender As Object, e As EventArgs) Handles removeItem_btn.Click
@@ -442,10 +442,6 @@ Public Class Form1
         ElseIf Form1.items_lst.Items.Count >= 8 Then
             MessageBox.Show("You can only have 8 items max. Remove an item before adding a new one.", "Add Item", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
-    End Sub
-
-    Private Sub thirdPartyLicenses_btn_Click(sender As Object, e As EventArgs) Handles thirdPartyLicenses_btn.Click
-        ThirdPartyLicenses.Show()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -490,8 +486,48 @@ Public Class Form1
 
     End Sub
 
+#Region "Item Buttons"
 
+    ' These get their own #Region because I don't want to have to look
+    ' at them all the time.
 
+    Private Sub itemAddPotion_btn_Click(sender As Object, e As EventArgs) Handles itemAddPotion_btn.Click
+        AddItem("POTION")
+    End Sub
+
+    Private Sub itemAddEther_btn_Click(sender As Object, e As EventArgs) Handles itemAddEther_btn.Click
+        AddItem("ETHER")
+    End Sub
+
+    Private Sub itemAddElixir_btn_Click(sender As Object, e As EventArgs) Handles itemAddElixir_btn.Click
+        AddItem("ELIXIR")
+    End Sub
+
+    Private Sub itemAddSuperPotion_btn_Click(sender As Object, e As EventArgs) Handles itemAddSuperPotion_btn.Click
+        AddItem("SUPERPOTION")
+    End Sub
+
+    Private Sub itemAddHyperPotion_btn_Click(sender As Object, e As EventArgs) Handles itemAddHyperPotion_btn.Click
+        AddItem("HYPERPOTION")
+    End Sub
+
+    Private Sub itemAddMaxPotion_btn_Click(sender As Object, e As EventArgs) Handles itemAddMaxPotion_btn.Click
+        AddItem("MAXPOTION")
+    End Sub
+
+    Private Sub itemAddMaxEther_btn_Click(sender As Object, e As EventArgs) Handles itemAddMaxEther_btn.Click
+        AddItem("MAXETHER")
+    End Sub
+
+    Private Sub itemAddMaxElixir_btn_Click(sender As Object, e As EventArgs) Handles itemAddMaxElixir_btn.Click
+        AddItem("MAXELIXIR")
+    End Sub
+
+    Private Sub itemAddFullRestore_btn_Click(sender As Object, e As EventArgs) Handles itemAddFullRestore_btn.Click
+        AddItem("FULLRESTORE")
+    End Sub
+
+#End Region
 
     Private Sub LangManager()
 

@@ -28,6 +28,8 @@ Partial Class Form1
         pg_trainer = New TabPage()
         trainer_tab = New TabControl()
         pg_basic = New TabPage()
+        IVStatsNoteHeader_lbl = New Label()
+        IVStatsNote_lbl = New Label()
         battleTeamID_nbr = New NumericUpDown()
         Label2 = New Label()
         properSpellingNote_lbl = New Label()
@@ -444,7 +446,6 @@ Partial Class Form1
         lang_cmb = New ComboBox()
         lang_lbl = New Label()
         Label1 = New Label()
-        thirdPartyLicenses_btn = New Button()
         licenseText_lbl = New Label()
         PictureBox1 = New PictureBox()
         aboutInfo_lbl = New Label()
@@ -452,8 +453,6 @@ Partial Class Form1
         aboutHeaderAuthor_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
-        IVStatsNote_lbl = New Label()
-        IVStatsNoteHeader_lbl = New Label()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -588,6 +587,17 @@ Partial Class Form1
         resources.ApplyResources(pg_basic, "pg_basic")
         pg_basic.Name = "pg_basic"
         pg_basic.UseVisualStyleBackColor = True
+        ' 
+        ' IVStatsNoteHeader_lbl
+        ' 
+        resources.ApplyResources(IVStatsNoteHeader_lbl, "IVStatsNoteHeader_lbl")
+        IVStatsNoteHeader_lbl.ForeColor = Color.Red
+        IVStatsNoteHeader_lbl.Name = "IVStatsNoteHeader_lbl"
+        ' 
+        ' IVStatsNote_lbl
+        ' 
+        resources.ApplyResources(IVStatsNote_lbl, "IVStatsNote_lbl")
+        IVStatsNote_lbl.Name = "IVStatsNote_lbl"
         ' 
         ' battleTeamID_nbr
         ' 
@@ -3298,7 +3308,6 @@ Partial Class Form1
         pg_about.Controls.Add(lang_cmb)
         pg_about.Controls.Add(lang_lbl)
         pg_about.Controls.Add(Label1)
-        pg_about.Controls.Add(thirdPartyLicenses_btn)
         pg_about.Controls.Add(licenseText_lbl)
         pg_about.Controls.Add(PictureBox1)
         pg_about.Controls.Add(aboutInfo_lbl)
@@ -3331,12 +3340,6 @@ Partial Class Form1
         ' 
         resources.ApplyResources(Label1, "Label1")
         Label1.Name = "Label1"
-        ' 
-        ' thirdPartyLicenses_btn
-        ' 
-        resources.ApplyResources(thirdPartyLicenses_btn, "thirdPartyLicenses_btn")
-        thirdPartyLicenses_btn.Name = "thirdPartyLicenses_btn"
-        thirdPartyLicenses_btn.UseVisualStyleBackColor = True
         ' 
         ' licenseText_lbl
         ' 
@@ -3375,17 +3378,6 @@ Partial Class Form1
         ' 
         GeneratePreviewToolStripMenuItem.Name = "GeneratePreviewToolStripMenuItem"
         resources.ApplyResources(GeneratePreviewToolStripMenuItem, "GeneratePreviewToolStripMenuItem")
-        ' 
-        ' IVStatsNote_lbl
-        ' 
-        resources.ApplyResources(IVStatsNote_lbl, "IVStatsNote_lbl")
-        IVStatsNote_lbl.Name = "IVStatsNote_lbl"
-        ' 
-        ' IVStatsNoteHeader_lbl
-        ' 
-        resources.ApplyResources(IVStatsNoteHeader_lbl, "IVStatsNoteHeader_lbl")
-        IVStatsNoteHeader_lbl.ForeColor = Color.Red
-        IVStatsNoteHeader_lbl.Name = "IVStatsNoteHeader_lbl"
         ' 
         ' Form1
         ' 
@@ -3938,7 +3930,6 @@ Partial Class Form1
     Friend WithEvents itemAddElixir_btn As Button
     Friend WithEvents itemAddMaxEther_btn As Button
     Friend WithEvents licenseText_lbl As Label
-    Friend WithEvents thirdPartyLicenses_btn As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents lang_cmb As ComboBox
     Friend WithEvents lang_lbl As Label

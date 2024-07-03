@@ -25,6 +25,7 @@ Partial Class Preview
         output_rchTxt = New RichTextBox()
         exit_btn = New Button()
         saveToTrainers_btn = New Button()
+        saveToTrainerText = New OpenFileDialog()
         SuspendLayout()
         ' 
         ' output_rchTxt
@@ -58,6 +59,11 @@ Partial Class Preview
         saveToTrainers_btn.Text = "Save to trainers.txt"
         saveToTrainers_btn.UseVisualStyleBackColor = True
         ' 
+        ' saveToTrainerText
+        ' 
+        saveToTrainerText.FileName = "trainers.txt"
+        saveToTrainerText.Filter = "Trainers File|trainer.txt"
+        ' 
         ' Preview
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -78,4 +84,5 @@ Partial Class Preview
     Friend WithEvents output_rchTxt As RichTextBox
     Friend WithEvents exit_btn As Button
     Friend WithEvents saveToTrainers_btn As Button
+    Friend WithEvents saveToTrainerText As OpenFileDialog
 End Class

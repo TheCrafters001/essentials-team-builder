@@ -152,9 +152,6 @@
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>Moves and Items MUST be one word. (ie: Fire Blast = FireBlast). Leave IVs and EVs 0 if you don't want to set them, or don't know how to use them.</value>
-  </data>
   <data name="&gt;&gt;Label2.Name" xml:space="preserve">
     <value>Label2</value>
   </data>
@@ -216,9 +213,6 @@
   <data name="essData_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="essData_lbl.Text" xml:space="preserve">
-    <value>Essentials Data</value>
-  </data>
   <data name="&gt;&gt;essData_lbl.Name" xml:space="preserve">
     <value>essData_lbl</value>
   </data>
@@ -243,10 +237,6 @@
   <data name="allowSuperShiny_chk.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="allowSuperShiny_chk.Text" xml:space="preserve">
-    <value>Allow Super Shinies
-(Essentials 21)</value>
-  </data>
   <data name="&gt;&gt;allowSuperShiny_chk.Name" xml:space="preserve">
     <value>allowSuperShiny_chk</value>
   </data>
@@ -270,10 +260,6 @@
   </data>
   <data name="loseTextQuotes_chkBox.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
-  </data>
-  <data name="loseTextQuotes_chkBox.Text" xml:space="preserve">
-    <value>Add Quotes to Lose Text
-(Essentials 19)</value>
   </data>
   <data name="&gt;&gt;loseTextQuotes_chkBox.Name" xml:space="preserve">
     <value>loseTextQuotes_chkBox</value>
@@ -330,10 +316,6 @@
   <data name="existingBattle_chkBox.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="existingBattle_chkBox.Text" xml:space="preserve">
-    <value>Check this box if this NPC already has a team, 
-then enter the Battle Team ID above.</value>
-  </data>
   <data name="&gt;&gt;existingBattle_chkBox.Name" xml:space="preserve">
     <value>existingBattle_chkBox</value>
   </data>
@@ -358,9 +340,6 @@ then enter the Battle Team ID above.</value>
   <data name="customBallIDs_chkBox.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="customBallIDs_chkBox.Text" xml:space="preserve">
-    <value>Allow use of Custom Pokéball IDs</value>
-  </data>
   <data name="&gt;&gt;customBallIDs_chkBox.Name" xml:space="preserve">
     <value>customBallIDs_chkBox</value>
   </data>
@@ -372,21 +351,6 @@ then enter the Battle Team ID above.</value>
   </data>
   <data name="&gt;&gt;customBallIDs_chkBox.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="essVersion_cmb.Items" xml:space="preserve">
-    <value>Essentials 17</value>
-  </data>
-  <data name="essVersion_cmb.Items1" xml:space="preserve">
-    <value>Essentials 18</value>
-  </data>
-  <data name="essVersion_cmb.Items2" xml:space="preserve">
-    <value>Essentials 19</value>
-  </data>
-  <data name="essVersion_cmb.Items3" xml:space="preserve">
-    <value>Essentials 20</value>
-  </data>
-  <data name="essVersion_cmb.Items4" xml:space="preserve">
-    <value>Essentials 21</value>
   </data>
   <data name="essVersion_cmb.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 184</value>
@@ -424,9 +388,6 @@ then enter the Battle Team ID above.</value>
   <data name="essVersion_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="essVersion_lbl.Text" xml:space="preserve">
-    <value>Essentials Version</value>
-  </data>
   <data name="&gt;&gt;essVersion_lbl.Name" xml:space="preserve">
     <value>essVersion_lbl</value>
   </data>
@@ -454,9 +415,6 @@ then enter the Battle Team ID above.</value>
   <data name="battleTeamID_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="battleTeamID_lbl.Text" xml:space="preserve">
-    <value>Battle Team ID</value>
-  </data>
   <data name="&gt;&gt;battleTeamID_lbl.Name" xml:space="preserve">
     <value>battleTeamID_lbl</value>
   </data>
@@ -481,9 +439,6 @@ then enter the Battle Team ID above.</value>
   <data name="numPoké_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="numPoké_lbl.Text" xml:space="preserve">
-    <value>Number of Pokémon</value>
-  </data>
   <data name="&gt;&gt;numPoké_lbl.Name" xml:space="preserve">
     <value>numPoké_lbl</value>
   </data>
@@ -495,24 +450,6 @@ then enter the Battle Team ID above.</value>
   </data>
   <data name="&gt;&gt;numPoké_lbl.ZOrder" xml:space="preserve">
     <value>12</value>
-  </data>
-  <data name="numPoké_cmb.Items" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="numPoké_cmb.Items1" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="numPoké_cmb.Items2" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="numPoké_cmb.Items3" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="numPoké_cmb.Items4" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="numPoké_cmb.Items5" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="numPoké_cmb.Location" type="System.Drawing.Point, System.Drawing">
     <value>530, 50</value>
@@ -547,9 +484,6 @@ then enter the Battle Team ID above.</value>
   <data name="loseText_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="loseText_lbl.Text" xml:space="preserve">
-    <value>Lose Text</value>
-  </data>
   <data name="&gt;&gt;loseText_lbl.Name" xml:space="preserve">
     <value>loseText_lbl</value>
   </data>
@@ -567,9 +501,6 @@ then enter the Battle Team ID above.</value>
   </data>
   <data name="loseText_txt.MaxLength" type="System.Int32, mscorlib">
     <value>255</value>
-  </data>
-  <data name="loseText_txt.PlaceholderText" xml:space="preserve">
-    <value>Oh dear, it seems I have lost...</value>
   </data>
   <data name="loseText_txt.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 23</value>
@@ -736,9 +667,6 @@ then enter the Battle Team ID above.</value>
   <data name="pg_basic.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="pg_basic.Text" xml:space="preserve">
-    <value>Basic Info</value>
-  </data>
   <data name="&gt;&gt;pg_basic.Name" xml:space="preserve">
     <value>pg_basic</value>
   </data>
@@ -759,9 +687,6 @@ then enter the Battle Team ID above.</value>
   </data>
   <data name="itemAddMaxElixir_btn.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="itemAddMaxElixir_btn.Text" xml:space="preserve">
-    <value>Add Max Elixir</value>
   </data>
   <data name="&gt;&gt;itemAddMaxElixir_btn.Name" xml:space="preserve">
     <value>itemAddMaxElixir_btn</value>
@@ -784,9 +709,6 @@ then enter the Battle Team ID above.</value>
   <data name="itemAddElixir_btn.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="itemAddElixir_btn.Text" xml:space="preserve">
-    <value>Add Elixir</value>
-  </data>
   <data name="&gt;&gt;itemAddElixir_btn.Name" xml:space="preserve">
     <value>itemAddElixir_btn</value>
   </data>
@@ -807,9 +729,6 @@ then enter the Battle Team ID above.</value>
   </data>
   <data name="itemAddMaxEther_btn.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
-  </data>
-  <data name="itemAddMaxEther_btn.Text" xml:space="preserve">
-    <value>Add Max Ether</value>
   </data>
   <data name="&gt;&gt;itemAddMaxEther_btn.Name" xml:space="preserve">
     <value>itemAddMaxEther_btn</value>
@@ -832,9 +751,6 @@ then enter the Battle Team ID above.</value>
   <data name="itemAddEther_btn.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="itemAddEther_btn.Text" xml:space="preserve">
-    <value>Add Ether</value>
-  </data>
   <data name="&gt;&gt;itemAddEther_btn.Name" xml:space="preserve">
     <value>itemAddEther_btn</value>
   </data>
@@ -855,9 +771,6 @@ then enter the Battle Team ID above.</value>
   </data>
   <data name="itemAddFullRestore_btn.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
-  </data>
-  <data name="itemAddFullRestore_btn.Text" xml:space="preserve">
-    <value>Add Full Restore</value>
   </data>
   <data name="&gt;&gt;itemAddFullRestore_btn.Name" xml:space="preserve">
     <value>itemAddFullRestore_btn</value>
@@ -880,9 +793,6 @@ then enter the Battle Team ID above.</value>
   <data name="itemAddHyperPotion_btn.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="itemAddHyperPotion_btn.Text" xml:space="preserve">
-    <value>Add Hyper Potion</value>
-  </data>
   <data name="&gt;&gt;itemAddHyperPotion_btn.Name" xml:space="preserve">
     <value>itemAddHyperPotion_btn</value>
   </data>
@@ -903,9 +813,6 @@ then enter the Battle Team ID above.</value>
   </data>
   <data name="itemAddMaxPotion_btn.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
-  </data>
-  <data name="itemAddMaxPotion_btn.Text" xml:space="preserve">
-    <value>Add Max Potion</value>
   </data>
   <data name="&gt;&gt;itemAddMaxPotion_btn.Name" xml:space="preserve">
     <value>itemAddMaxPotion_btn</value>
@@ -928,9 +835,6 @@ then enter the Battle Team ID above.</value>
   <data name="itemAddSuperPotion_btn.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="itemAddSuperPotion_btn.Text" xml:space="preserve">
-    <value>Add Super Potion</value>
-  </data>
   <data name="&gt;&gt;itemAddSuperPotion_btn.Name" xml:space="preserve">
     <value>itemAddSuperPotion_btn</value>
   </data>
@@ -951,9 +855,6 @@ then enter the Battle Team ID above.</value>
   </data>
   <data name="itemAddPotion_btn.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="itemAddPotion_btn.Text" xml:space="preserve">
-    <value>Add Potion</value>
   </data>
   <data name="&gt;&gt;itemAddPotion_btn.Name" xml:space="preserve">
     <value>itemAddPotion_btn</value>
@@ -999,9 +900,6 @@ then enter the Battle Team ID above.</value>
   </data>
   <data name="addItem_btn.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="addItem_btn.Text" xml:space="preserve">
-    <value>Add Item</value>
   </data>
   <data name="&gt;&gt;addItem_btn.Name" xml:space="preserve">
     <value>addItem_btn</value>
@@ -1106,9 +1004,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="items_grp.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="items_grp.Text" xml:space="preserve">
-    <value>Items</value>
-  </data>
   <data name="&gt;&gt;items_grp.Name" xml:space="preserve">
     <value>items_grp</value>
   </data>
@@ -1133,9 +1028,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   </data>
   <data name="pg_items.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="pg_items.Text" xml:space="preserve">
-    <value>Items</value>
   </data>
   <data name="&gt;&gt;pg_items.Name" xml:space="preserve">
     <value>pg_items</value>
@@ -1184,9 +1076,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   </data>
   <data name="pg_trainer.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="pg_trainer.Text" xml:space="preserve">
-    <value>Trainer</value>
   </data>
   <data name="&gt;&gt;pg_trainer.Name" xml:space="preserve">
     <value>pg_trainer</value>
@@ -2607,926 +2496,8 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pokemon1Gender_lbl.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource" xml:space="preserve">
-    <value>Aerilate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>Aftermath</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>Air Lock</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>Analytic</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>Anger Point</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>Anger Shell</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Anticipation</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Arena Trap</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Armor Tail</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Aroma Veil</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>As One - Unnerve Chilling Neigh</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>As One - Unnerve Grim Neigh</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Aura Break</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Bad Dreams</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource14" xml:space="preserve">
-    <value>Ball Fetch</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource15" xml:space="preserve">
-    <value>Battery</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource16" xml:space="preserve">
-    <value>Battle Armor</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource17" xml:space="preserve">
-    <value>Battle Bond</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource18" xml:space="preserve">
-    <value>Beads of Ruin</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource19" xml:space="preserve">
-    <value>Beast Boost</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource20" xml:space="preserve">
-    <value>Berserk</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource21" xml:space="preserve">
-    <value>Big Pecks</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource22" xml:space="preserve">
-    <value>Blaze</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource23" xml:space="preserve">
-    <value>Bulletproof</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource24" xml:space="preserve">
-    <value>Cheek Pouch</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource25" xml:space="preserve">
-    <value>Chilling Neigh</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource26" xml:space="preserve">
-    <value>Chlorophyll</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource27" xml:space="preserve">
-    <value>Clear Body</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource28" xml:space="preserve">
-    <value>Cloud Nine</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource29" xml:space="preserve">
-    <value>Color Change</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource30" xml:space="preserve">
-    <value>Comatose</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource31" xml:space="preserve">
-    <value>Commander</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource32" xml:space="preserve">
-    <value>Competitive</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource33" xml:space="preserve">
-    <value>Compoundeyes</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource34" xml:space="preserve">
-    <value>Contrary</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource35" xml:space="preserve">
-    <value>Corrosion</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource36" xml:space="preserve">
-    <value>Costar</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource37" xml:space="preserve">
-    <value>Cotton Down</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource38" xml:space="preserve">
-    <value>Cud Chew</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource39" xml:space="preserve">
-    <value>Curious Medicine</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource40" xml:space="preserve">
-    <value>Cursed Body</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource41" xml:space="preserve">
-    <value>Cute Charm</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource42" xml:space="preserve">
-    <value>Damp</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource43" xml:space="preserve">
-    <value>Dancer</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource44" xml:space="preserve">
-    <value>Dark Aura</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource45" xml:space="preserve">
-    <value>Dauntless Shield</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource46" xml:space="preserve">
-    <value>Dazzling</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource47" xml:space="preserve">
-    <value>Defeatist</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource48" xml:space="preserve">
-    <value>Defiant</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource49" xml:space="preserve">
-    <value>Delta Stream</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource50" xml:space="preserve">
-    <value>Desolate Land</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource51" xml:space="preserve">
-    <value>Disguise</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource52" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource53" xml:space="preserve">
-    <value>Dragon's Maw</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource54" xml:space="preserve">
-    <value>Drizzle</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource55" xml:space="preserve">
-    <value>Drought</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource56" xml:space="preserve">
-    <value>Dry Skin</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource57" xml:space="preserve">
-    <value>Early Bird</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource58" xml:space="preserve">
-    <value>Earth Eater</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource59" xml:space="preserve">
-    <value>Effect Spore</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource60" xml:space="preserve">
-    <value>Electric Surge</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource61" xml:space="preserve">
-    <value>Electromorphosis</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource62" xml:space="preserve">
-    <value>Embody Aspect - Cornerstone Mask</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource63" xml:space="preserve">
-    <value>Embody Aspect - Hearthflame Mask</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource64" xml:space="preserve">
-    <value>Embody Aspect - Teal Mask</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource65" xml:space="preserve">
-    <value>Embody Aspect - Wellspring Mask</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource66" xml:space="preserve">
-    <value>Emergency Exit</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource67" xml:space="preserve">
-    <value>Fairy Aura</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource68" xml:space="preserve">
-    <value>Filter</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource69" xml:space="preserve">
-    <value>Flame Body</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource70" xml:space="preserve">
-    <value>Flare Boost</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource71" xml:space="preserve">
-    <value>Flash Fire</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource72" xml:space="preserve">
-    <value>Flower Gift</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource73" xml:space="preserve">
-    <value>Flower Veil</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource74" xml:space="preserve">
-    <value>Fluffy</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource75" xml:space="preserve">
-    <value>Forecast</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource76" xml:space="preserve">
-    <value>Forewarn</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource77" xml:space="preserve">
-    <value>Friend Guard</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource78" xml:space="preserve">
-    <value>Frisk</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource79" xml:space="preserve">
-    <value>Full Metal Body</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource80" xml:space="preserve">
-    <value>Fur Coat</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource81" xml:space="preserve">
-    <value>Gale Wings</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource82" xml:space="preserve">
-    <value>Galvanize</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource83" xml:space="preserve">
-    <value>Gluttony</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource84" xml:space="preserve">
-    <value>Good as Gold</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource85" xml:space="preserve">
-    <value>Gooey</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource86" xml:space="preserve">
-    <value>Gorilla Tactics</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource87" xml:space="preserve">
-    <value>Grass Pelt</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource88" xml:space="preserve">
-    <value>Grassy Surge</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource89" xml:space="preserve">
-    <value>Grim Neigh</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource90" xml:space="preserve">
-    <value>Guard Dog</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource91" xml:space="preserve">
-    <value>Gulp Missile</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource92" xml:space="preserve">
-    <value>Guts</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource93" xml:space="preserve">
-    <value>Hadron Engine</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource94" xml:space="preserve">
-    <value>Harvest</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource95" xml:space="preserve">
-    <value>Healer</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource96" xml:space="preserve">
-    <value>Heatproof</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource97" xml:space="preserve">
-    <value>Heavy Metal</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource98" xml:space="preserve">
-    <value>Honey Gather</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource99" xml:space="preserve">
-    <value>Hospitality</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource100" xml:space="preserve">
-    <value>Huge Power</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource101" xml:space="preserve">
-    <value>Hunger Switch</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource102" xml:space="preserve">
-    <value>Hustle</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource103" xml:space="preserve">
-    <value>Hydration</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource104" xml:space="preserve">
-    <value>Hyper Cutter</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource105" xml:space="preserve">
-    <value>Ice Body</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource106" xml:space="preserve">
-    <value>Ice Face</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource107" xml:space="preserve">
-    <value>Ice Scales</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource108" xml:space="preserve">
-    <value>Illuminate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource109" xml:space="preserve">
-    <value>Illusion</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource110" xml:space="preserve">
-    <value>Immunity</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource111" xml:space="preserve">
-    <value>Imposter</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource112" xml:space="preserve">
-    <value>Infiltrator</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource113" xml:space="preserve">
-    <value>Innards Out</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource114" xml:space="preserve">
-    <value>Inner Focus</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource115" xml:space="preserve">
-    <value>Insomnia</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource116" xml:space="preserve">
-    <value>Intimidate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource117" xml:space="preserve">
-    <value>Intrepid Sword</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource118" xml:space="preserve">
-    <value>Iron Barbs</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource119" xml:space="preserve">
-    <value>Iron Fist</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource120" xml:space="preserve">
-    <value>Justified</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource121" xml:space="preserve">
-    <value>Keen Eye</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource122" xml:space="preserve">
-    <value>Klutz</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource123" xml:space="preserve">
-    <value>Leaf Guard</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource124" xml:space="preserve">
-    <value>Levitate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource125" xml:space="preserve">
-    <value>Libero</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource126" xml:space="preserve">
-    <value>Light Metal</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource127" xml:space="preserve">
-    <value>Lightning Rod</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource128" xml:space="preserve">
-    <value>Limber</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource129" xml:space="preserve">
-    <value>Lingering Aroma</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource130" xml:space="preserve">
-    <value>Liquid Ooze</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource131" xml:space="preserve">
-    <value>Liquid Voice</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource132" xml:space="preserve">
-    <value>Long Reach</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource133" xml:space="preserve">
-    <value>Magic Bounce</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource134" xml:space="preserve">
-    <value>Magic Guard</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource135" xml:space="preserve">
-    <value>Magician</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource136" xml:space="preserve">
-    <value>Magma Armor</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource137" xml:space="preserve">
-    <value>Magnet Pull</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource138" xml:space="preserve">
-    <value>Marvel Scale</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource139" xml:space="preserve">
-    <value>Mega Launcher</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource140" xml:space="preserve">
-    <value>Merciless</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource141" xml:space="preserve">
-    <value>Mimicry</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource142" xml:space="preserve">
-    <value>Mind's Eye</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource143" xml:space="preserve">
-    <value>Minus</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource144" xml:space="preserve">
-    <value>Mirror Armor</value>
-  </data>
   <data name="pokemon1Ability_cmb.AutoCompleteCustomSource145" xml:space="preserve">
     <value>Misty Surge</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource146" xml:space="preserve">
-    <value>Mold Breaker</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource147" xml:space="preserve">
-    <value>Moody</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource148" xml:space="preserve">
-    <value>Motor Drive</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource149" xml:space="preserve">
-    <value>Moxie</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource150" xml:space="preserve">
-    <value>Multiscale</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource151" xml:space="preserve">
-    <value>Multitype</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource152" xml:space="preserve">
-    <value>Mummy</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource153" xml:space="preserve">
-    <value>Mycelium Might</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource154" xml:space="preserve">
-    <value>Natural Cure</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource155" xml:space="preserve">
-    <value>Neuroforce</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource156" xml:space="preserve">
-    <value>Neutralizing Gas</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource157" xml:space="preserve">
-    <value>No Guard</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource158" xml:space="preserve">
-    <value>Normalize</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource159" xml:space="preserve">
-    <value>Oblivious</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource160" xml:space="preserve">
-    <value>Opportunist</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource161" xml:space="preserve">
-    <value>Orichalcum Pulse</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource162" xml:space="preserve">
-    <value>Overcoat</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource163" xml:space="preserve">
-    <value>Overgrow</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource164" xml:space="preserve">
-    <value>Own Tempo</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource165" xml:space="preserve">
-    <value>Parental Bond</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource166" xml:space="preserve">
-    <value>Pastel Veil</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource167" xml:space="preserve">
-    <value>Perish Body</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource168" xml:space="preserve">
-    <value>Pickpocket</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource169" xml:space="preserve">
-    <value>Pickup</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource170" xml:space="preserve">
-    <value>Pixilate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource171" xml:space="preserve">
-    <value>Plus</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource172" xml:space="preserve">
-    <value>Poison Heal</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource173" xml:space="preserve">
-    <value>Poison Point</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource174" xml:space="preserve">
-    <value>Poison Touch</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource175" xml:space="preserve">
-    <value>Power Construct</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource176" xml:space="preserve">
-    <value>Power of Alchemy</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource177" xml:space="preserve">
-    <value>Power Spot</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource178" xml:space="preserve">
-    <value>Prankster</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource179" xml:space="preserve">
-    <value>Pressure</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource180" xml:space="preserve">
-    <value>Primordial Sea</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource181" xml:space="preserve">
-    <value>Prism Armor</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource182" xml:space="preserve">
-    <value>Propeller Tail</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource183" xml:space="preserve">
-    <value>Protean</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource184" xml:space="preserve">
-    <value>Protosynthesis</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource185" xml:space="preserve">
-    <value>Psychic Surge</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource186" xml:space="preserve">
-    <value>Punk Rock</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource187" xml:space="preserve">
-    <value>Pure Power</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource188" xml:space="preserve">
-    <value>Purifying Salt</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource189" xml:space="preserve">
-    <value>Quark Drive</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource190" xml:space="preserve">
-    <value>Queenly Majesty</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource191" xml:space="preserve">
-    <value>Quick Draw</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource192" xml:space="preserve">
-    <value>Quick Feet</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource193" xml:space="preserve">
-    <value>Rain Dish</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource194" xml:space="preserve">
-    <value>Rattled</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource195" xml:space="preserve">
-    <value>Receiver</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource196" xml:space="preserve">
-    <value>Reckless</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource197" xml:space="preserve">
-    <value>Refrigerate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource198" xml:space="preserve">
-    <value>Regenerator</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource199" xml:space="preserve">
-    <value>Ripen</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource200" xml:space="preserve">
-    <value>Rivalry</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource201" xml:space="preserve">
-    <value>RKS System</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource202" xml:space="preserve">
-    <value>Rock Head</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource203" xml:space="preserve">
-    <value>Rocky Payload</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource204" xml:space="preserve">
-    <value>Rough Skin</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource205" xml:space="preserve">
-    <value>Run Away</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource206" xml:space="preserve">
-    <value>Sand Force</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource207" xml:space="preserve">
-    <value>Sand Rush</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource208" xml:space="preserve">
-    <value>Sand Spit</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource209" xml:space="preserve">
-    <value>Sand Stream</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource210" xml:space="preserve">
-    <value>Sand Veil</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource211" xml:space="preserve">
-    <value>Sap Sipper</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource212" xml:space="preserve">
-    <value>Schooling</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource213" xml:space="preserve">
-    <value>Scrappy</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource214" xml:space="preserve">
-    <value>Screen Cleaner</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource215" xml:space="preserve">
-    <value>Seed Sower</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource216" xml:space="preserve">
-    <value>Serene Grace</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource217" xml:space="preserve">
-    <value>Shadow Shield</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource218" xml:space="preserve">
-    <value>Shadow Tag</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource219" xml:space="preserve">
-    <value>Sharpness</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource220" xml:space="preserve">
-    <value>Shed Skin</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource221" xml:space="preserve">
-    <value>Sheer Force</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource222" xml:space="preserve">
-    <value>Shell Armor</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource223" xml:space="preserve">
-    <value>Shield Dust</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource224" xml:space="preserve">
-    <value>Shields Down</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource225" xml:space="preserve">
-    <value>Simple</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource226" xml:space="preserve">
-    <value>Skill Link</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource227" xml:space="preserve">
-    <value>Slow Start</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource228" xml:space="preserve">
-    <value>Slush Rush</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource229" xml:space="preserve">
-    <value>Sniper</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource230" xml:space="preserve">
-    <value>Snow Cloak</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource231" xml:space="preserve">
-    <value>Snow Warning</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource232" xml:space="preserve">
-    <value>Solar Power</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource233" xml:space="preserve">
-    <value>Solid Rock</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource234" xml:space="preserve">
-    <value>Soul-Heart</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource235" xml:space="preserve">
-    <value>Soundproof</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource236" xml:space="preserve">
-    <value>Speed Boost</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource237" xml:space="preserve">
-    <value>Stakeout</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource238" xml:space="preserve">
-    <value>Stall</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource239" xml:space="preserve">
-    <value>Stalwart</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource240" xml:space="preserve">
-    <value>Stamina</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource241" xml:space="preserve">
-    <value>Stance Change</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource242" xml:space="preserve">
-    <value>Static</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource243" xml:space="preserve">
-    <value>Steadfast</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource244" xml:space="preserve">
-    <value>Steam Engine</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource245" xml:space="preserve">
-    <value>Steelworker</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource246" xml:space="preserve">
-    <value>Steely Spirit</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource247" xml:space="preserve">
-    <value>Stench</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource248" xml:space="preserve">
-    <value>Sticky Hold</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource249" xml:space="preserve">
-    <value>Storm Drain</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource250" xml:space="preserve">
-    <value>Strong Jaw</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource251" xml:space="preserve">
-    <value>Sturdy</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource252" xml:space="preserve">
-    <value>Suction Cups</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource253" xml:space="preserve">
-    <value>Super Luck</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource254" xml:space="preserve">
-    <value>Supersweet Syrup</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource255" xml:space="preserve">
-    <value>Supreme Overlord</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource256" xml:space="preserve">
-    <value>Surge Surfer</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource257" xml:space="preserve">
-    <value>Swarm</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource258" xml:space="preserve">
-    <value>Sweet Veil</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource259" xml:space="preserve">
-    <value>Swift Swim</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource260" xml:space="preserve">
-    <value>Sword of Ruin</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource261" xml:space="preserve">
-    <value>Symbiosis</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource262" xml:space="preserve">
-    <value>Synchronize</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource263" xml:space="preserve">
-    <value>Tablets of Ruin</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource264" xml:space="preserve">
-    <value>Tangled Feet</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource265" xml:space="preserve">
-    <value>Tangling Hair</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource266" xml:space="preserve">
-    <value>Technician</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource267" xml:space="preserve">
-    <value>Telepathy</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource268" xml:space="preserve">
-    <value>Teravolt</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource269" xml:space="preserve">
-    <value>Thermal Exchange</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource270" xml:space="preserve">
-    <value>Thick Fat</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource271" xml:space="preserve">
-    <value>Tinted Lens</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource272" xml:space="preserve">
-    <value>Torrent</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource273" xml:space="preserve">
-    <value>Tough Claws</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource274" xml:space="preserve">
-    <value>Toxic Boost</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource275" xml:space="preserve">
-    <value>Toxic Chain</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource276" xml:space="preserve">
-    <value>Toxic Debris</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource277" xml:space="preserve">
-    <value>Trace</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource278" xml:space="preserve">
-    <value>Transistor</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource279" xml:space="preserve">
-    <value>Triage</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource280" xml:space="preserve">
-    <value>Truant</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource281" xml:space="preserve">
-    <value>Turboblaze</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource282" xml:space="preserve">
-    <value>Unaware</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource283" xml:space="preserve">
-    <value>Unburden</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource284" xml:space="preserve">
-    <value>Unnerve</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource285" xml:space="preserve">
-    <value>Unseen Fist</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource286" xml:space="preserve">
-    <value>Vessel of Ruin</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource287" xml:space="preserve">
-    <value>Victory Star</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource288" xml:space="preserve">
-    <value>Vital Spirit</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource289" xml:space="preserve">
-    <value>Volt Absorb</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource290" xml:space="preserve">
-    <value>Wandering Spirit</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource291" xml:space="preserve">
-    <value>Water Absorb</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource292" xml:space="preserve">
-    <value>Water Bubble</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource293" xml:space="preserve">
-    <value>Water Compaction</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource294" xml:space="preserve">
-    <value>Water Veil</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource295" xml:space="preserve">
-    <value>Weak Armor</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource296" xml:space="preserve">
-    <value>Well-Baked Body</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource297" xml:space="preserve">
-    <value>White Smoke</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource298" xml:space="preserve">
-    <value>Wimp Out</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource299" xml:space="preserve">
-    <value>Wind Power</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource300" xml:space="preserve">
-    <value>Wind Rider</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource301" xml:space="preserve">
-    <value>Wonder Guard</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource302" xml:space="preserve">
-    <value>Wonder Skin </value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource303" xml:space="preserve">
-    <value>Zen Mode</value>
-  </data>
-  <data name="pokemon1Ability_cmb.AutoCompleteCustomSource304" xml:space="preserve">
-    <value>Zero to Hero</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items" xml:space="preserve">
-    <value>Aerilate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items1" xml:space="preserve">
-    <value>Aftermath</value>
   </data>
   <data name="pokemon1Ability_cmb.Items2" xml:space="preserve">
     <value>Air Lock</value>
@@ -3551,24 +2522,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   </data>
   <data name="pokemon1Ability_cmb.Items9" xml:space="preserve">
     <value>Aroma Veil</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items10" xml:space="preserve">
-    <value>As One - Unnerve Chilling Neigh</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items11" xml:space="preserve">
-    <value>As One - Unnerve Grim Neigh</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items12" xml:space="preserve">
-    <value>Aura Break</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items13" xml:space="preserve">
-    <value>Bad Dreams</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items14" xml:space="preserve">
-    <value>Ball Fetch</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items15" xml:space="preserve">
-    <value>Battery</value>
   </data>
   <data name="pokemon1Ability_cmb.Items16" xml:space="preserve">
     <value>Battle Armor</value>
@@ -3822,155 +2775,11 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="pokemon1Ability_cmb.Items99" xml:space="preserve">
     <value>Hospitality</value>
   </data>
-  <data name="pokemon1Ability_cmb.Items100" xml:space="preserve">
-    <value>Huge Power</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items101" xml:space="preserve">
-    <value>Hunger Switch</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items102" xml:space="preserve">
-    <value>Hustle</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items103" xml:space="preserve">
-    <value>Hydration</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items104" xml:space="preserve">
-    <value>Hyper Cutter</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items105" xml:space="preserve">
-    <value>Ice Body</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items106" xml:space="preserve">
-    <value>Ice Face</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items107" xml:space="preserve">
-    <value>Ice Scales</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items108" xml:space="preserve">
-    <value>Illuminate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items109" xml:space="preserve">
-    <value>Illusion</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items110" xml:space="preserve">
-    <value>Immunity</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items111" xml:space="preserve">
-    <value>Imposter</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items112" xml:space="preserve">
-    <value>Infiltrator</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items113" xml:space="preserve">
-    <value>Innards Out</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items114" xml:space="preserve">
-    <value>Inner Focus</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items115" xml:space="preserve">
-    <value>Insomnia</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items116" xml:space="preserve">
-    <value>Intimidate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items117" xml:space="preserve">
-    <value>Intrepid Sword</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items118" xml:space="preserve">
-    <value>Iron Barbs</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items119" xml:space="preserve">
-    <value>Iron Fist</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items120" xml:space="preserve">
-    <value>Justified</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items121" xml:space="preserve">
-    <value>Keen Eye</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items122" xml:space="preserve">
-    <value>Klutz</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items123" xml:space="preserve">
-    <value>Leaf Guard</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items124" xml:space="preserve">
-    <value>Levitate</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items125" xml:space="preserve">
-    <value>Libero</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items126" xml:space="preserve">
-    <value>Light Metal</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items127" xml:space="preserve">
-    <value>Lightning Rod</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items128" xml:space="preserve">
-    <value>Limber</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items129" xml:space="preserve">
-    <value>Lingering Aroma</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items130" xml:space="preserve">
-    <value>Liquid Ooze</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items131" xml:space="preserve">
-    <value>Liquid Voice</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items132" xml:space="preserve">
-    <value>Long Reach</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items133" xml:space="preserve">
-    <value>Magic Bounce</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items134" xml:space="preserve">
-    <value>Magic Guard</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items135" xml:space="preserve">
-    <value>Magician</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items136" xml:space="preserve">
-    <value>Magma Armor</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items137" xml:space="preserve">
-    <value>Magnet Pull</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items138" xml:space="preserve">
-    <value>Marvel Scale</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items139" xml:space="preserve">
-    <value>Mega Launcher</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items140" xml:space="preserve">
-    <value>Merciless</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items141" xml:space="preserve">
-    <value>Mimicry</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items142" xml:space="preserve">
-    <value>Mind's Eye</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items143" xml:space="preserve">
-    <value>Minus</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items144" xml:space="preserve">
-    <value>Mirror Armor</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items145" xml:space="preserve">
-    <value>Misty Surge</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items146" xml:space="preserve">
-    <value>Mold Breaker</value>
-  </data>
   <data name="pokemon1Ability_cmb.Items147" xml:space="preserve">
     <value>Moody</value>
   </data>
   <data name="pokemon1Ability_cmb.Items148" xml:space="preserve">
     <value>Motor Drive</value>
-  </data>
-  <data name="pokemon1Ability_cmb.Items149" xml:space="preserve">
-    <value>Moxie</value>
   </data>
   <data name="pokemon1Ability_cmb.Items150" xml:space="preserve">
     <value>Multiscale</value>
@@ -7440,9 +6249,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="pokemon1_grp.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="pokemon1_grp.Text" xml:space="preserve">
-    <value>Pokémon 1</value>
-  </data>
   <data name="&gt;&gt;pokemon1_grp.Name" xml:space="preserve">
     <value>pokemon1_grp</value>
   </data>
@@ -7466,9 +6272,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   </data>
   <data name="pg_pkmn1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="pg_pkmn1.Text" xml:space="preserve">
-    <value>Pokémon 1</value>
   </data>
   <data name="&gt;&gt;pg_pkmn1.Name" xml:space="preserve">
     <value>pg_pkmn1</value>
@@ -13749,9 +12552,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="pg_pkmn2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="pg_pkmn2.Text" xml:space="preserve">
-    <value>Pokémon 2</value>
-  </data>
   <data name="&gt;&gt;pg_pkmn2.Name" xml:space="preserve">
     <value>pg_pkmn2</value>
   </data>
@@ -20030,9 +18830,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   </data>
   <data name="pg_pkmn3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="pg_pkmn3.Text" xml:space="preserve">
-    <value>Pokémon 3</value>
   </data>
   <data name="&gt;&gt;pg_pkmn3.Name" xml:space="preserve">
     <value>pg_pkmn3</value>
@@ -26313,9 +25110,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="pg_pkmn4.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="pg_pkmn4.Text" xml:space="preserve">
-    <value>Pokémon 4</value>
-  </data>
   <data name="&gt;&gt;pg_pkmn4.Name" xml:space="preserve">
     <value>pg_pkmn4</value>
   </data>
@@ -32594,9 +31388,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   </data>
   <data name="pg_pkmn5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="pg_pkmn5.Text" xml:space="preserve">
-    <value>Pokémon 5</value>
   </data>
   <data name="&gt;&gt;pg_pkmn5.Name" xml:space="preserve">
     <value>pg_pkmn5</value>
@@ -38877,9 +37668,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="pg_pkmn6.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="pg_pkmn6.Text" xml:space="preserve">
-    <value>Pokémon 6</value>
-  </data>
   <data name="&gt;&gt;pg_pkmn6.Name" xml:space="preserve">
     <value>pg_pkmn6</value>
   </data>
@@ -38928,9 +37716,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="pg_pokemon.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="pg_pokemon.Text" xml:space="preserve">
-    <value>Pokémon</value>
-  </data>
   <data name="&gt;&gt;pg_pokemon.Name" xml:space="preserve">
     <value>pg_pokemon</value>
   </data>
@@ -38951,9 +37736,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   </data>
   <data name="Button1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
-  </data>
-  <data name="Button1.Text" xml:space="preserve">
-    <value>Select Language</value>
   </data>
   <data name="&gt;&gt;Button1.Name" xml:space="preserve">
     <value>Button1</value>
@@ -39000,9 +37782,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="lang_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="lang_lbl.Text" xml:space="preserve">
-    <value>Language</value>
-  </data>
   <data name="&gt;&gt;lang_lbl.Name" xml:space="preserve">
     <value>lang_lbl</value>
   </data>
@@ -39023,12 +37802,6 @@ Use the buttons below or click the Add button to add your own item.</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
-  </data>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>This is a fan-made tool. Pokémon is not owned by TheCrafters001
-Pokémon is owned by Nintendo/GAME FREAK Inc./Creatures Inc./The Pokémon Company International.
-This is a non-profit fan-made tool. No copyright infringements intended. Please support the official games!
-</value>
   </data>
   <data name="&gt;&gt;Label1.Name" xml:space="preserve">
     <value>Label1</value>
@@ -39075,29 +37848,6 @@ This is a non-profit fan-made tool. No copyright infringements intended. Please 
   <data name="licenseText_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="licenseText_lbl.Text" xml:space="preserve">
-    <value>MIT License
-
-Copyright (c) 2024 TheCrafters001
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</value>
-  </data>
   <data name="&gt;&gt;licenseText_lbl.Name" xml:space="preserve">
     <value>licenseText_lbl</value>
   </data>
@@ -39143,10 +37893,6 @@ SOFTWARE.</value>
   <data name="aboutInfo_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="aboutInfo_lbl.Text" xml:space="preserve">
-    <value>The EASY Way to Build a Team.
-This tool is free and open-source. It is built so you can build your own teams in the Pokemon Essentials game engine! I always have found the tools that come with essentials to be pretty bad, so I am building my own custom tools to make it easier!</value>
-  </data>
   <data name="&gt;&gt;aboutInfo_lbl.Name" xml:space="preserve">
     <value>aboutInfo_lbl</value>
   </data>
@@ -39170,9 +37916,6 @@ This tool is free and open-source. It is built so you can build your own teams i
   </data>
   <data name="copyright_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="copyright_lbl.Text" xml:space="preserve">
-    <value>Copyright</value>
   </data>
   <data name="&gt;&gt;copyright_lbl.Name" xml:space="preserve">
     <value>copyright_lbl</value>
@@ -39201,9 +37944,6 @@ This tool is free and open-source. It is built so you can build your own teams i
   <data name="aboutHeaderAuthor_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="aboutHeaderAuthor_lbl.Text" xml:space="preserve">
-    <value>By TheCrafters001</value>
-  </data>
   <data name="&gt;&gt;aboutHeaderAuthor_lbl.Name" xml:space="preserve">
     <value>aboutHeaderAuthor_lbl</value>
   </data>
@@ -39224,9 +37964,6 @@ This tool is free and open-source. It is built so you can build your own teams i
   </data>
   <data name="pg_about.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="pg_about.Text" xml:space="preserve">
-    <value>About</value>
   </data>
   <data name="&gt;&gt;pg_about.Name" xml:space="preserve">
     <value>pg_about</value>
@@ -39273,9 +38010,6 @@ This tool is free and open-source. It is built so you can build your own teams i
   <data name="editor_grp.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="editor_grp.Text" xml:space="preserve">
-    <value>Editor</value>
-  </data>
   <data name="&gt;&gt;editor_grp.Name" xml:space="preserve">
     <value>editor_grp</value>
   </data>
@@ -39294,9 +38028,6 @@ This tool is free and open-source. It is built so you can build your own teams i
   <data name="GeneratePreviewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 20</value>
   </data>
-  <data name="GeneratePreviewToolStripMenuItem.Text" xml:space="preserve">
-    <value>Generate/Preview</value>
-  </data>
   <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -39305,9 +38036,6 @@ This tool is free and open-source. It is built so you can build your own teams i
   </data>
   <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="MenuStrip1.Text" xml:space="preserve">
-    <value>MenuStrip1</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
     <value>MenuStrip1</value>
@@ -39875,9 +38603,6 @@ This tool is free and open-source. It is built so you can build your own teams i
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Essentials Team Editor</value>
   </data>
   <data name="&gt;&gt;GeneratePreviewToolStripMenuItem.Name" xml:space="preserve">
     <value>GeneratePreviewToolStripMenuItem</value>
