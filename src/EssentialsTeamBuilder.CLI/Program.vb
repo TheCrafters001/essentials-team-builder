@@ -21,6 +21,11 @@ Module Program
         Text.Color(ConsoleColor.Green)
         Text.WriteLine("TheCrafters001")
 
+        Text.ResetColor()
+        Text.Write("Version ")
+        Text.Color(ConsoleColor.Green)
+        Text.WriteLine(System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString)
+
         Console.ForegroundColor = ConsoleColor.White
 
     End Sub
