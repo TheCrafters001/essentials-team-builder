@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-    Microsoft ResX Schema 
+    Microsoft ResX Schema
 
     Version 2.0
 
@@ -48,7 +48,7 @@
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
@@ -360,7 +360,7 @@
     <value>493, 213</value>
   </data>
   <data name="useAbilityIndex_chkBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 34</value>
+    <value>202, 34</value>
   </data>
   <data name="useAbilityIndex_chkBox.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -388,7 +388,7 @@
     <value>8, 213</value>
   </data>
   <data name="existingBattle_chkBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>269, 34</value>
   </data>
   <data name="existingBattle_chkBox.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -512,7 +512,7 @@ then enter the Battle Team ID above.</value>
     <value>8, 76</value>
   </data>
   <data name="battleTeamID_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 15</value>
+    <value>83, 15</value>
   </data>
   <data name="battleTeamID_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -689,7 +689,7 @@ then enter the Battle Team ID above.</value>
     <value>182, 34</value>
   </data>
   <data name="trainerType_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 13</value>
+    <value>173, 13</value>
   </data>
   <data name="trainerType_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -740,7 +740,7 @@ then enter the Battle Team ID above.</value>
     <value>8, 32</value>
   </data>
   <data name="trainerName_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 15</value>
+    <value>78, 15</value>
   </data>
   <data name="trainerName_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1546,7 +1546,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>56, 65</value>
   </data>
   <data name="pokemon1EVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon1EVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1654,7 +1654,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>14, 63</value>
   </data>
   <data name="pokemon1EVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon1EVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1942,7 +1942,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>59, 61</value>
   </data>
   <data name="pokemon1IVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon1IVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2050,7 +2050,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>18, 61</value>
   </data>
   <data name="pokemon1IVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon1IVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -7855,7 +7855,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>56, 65</value>
   </data>
   <data name="pokemon2EVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon2EVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -7963,7 +7963,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>14, 63</value>
   </data>
   <data name="pokemon2EVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon2EVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -10969,7 +10969,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>59, 61</value>
   </data>
   <data name="pokemon2IVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon2IVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -11077,7 +11077,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>18, 61</value>
   </data>
   <data name="pokemon2IVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon2IVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -14137,7 +14137,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>56, 65</value>
   </data>
   <data name="pokemon3EVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon3EVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -14245,7 +14245,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>14, 63</value>
   </data>
   <data name="pokemon3EVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon3EVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -17251,7 +17251,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>59, 61</value>
   </data>
   <data name="pokemon3IVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon3IVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -17359,7 +17359,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>18, 61</value>
   </data>
   <data name="pokemon3IVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon3IVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -20419,7 +20419,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>56, 65</value>
   </data>
   <data name="pokemon4EVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon4EVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -20527,7 +20527,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>14, 63</value>
   </data>
   <data name="pokemon4EVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon4EVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -23533,7 +23533,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>59, 61</value>
   </data>
   <data name="pokemon4IVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon4IVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -23641,7 +23641,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>18, 61</value>
   </data>
   <data name="pokemon4IVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon4IVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -26701,7 +26701,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>56, 65</value>
   </data>
   <data name="pokemon5EVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon5EVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -26809,7 +26809,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>14, 63</value>
   </data>
   <data name="pokemon5EVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon5EVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -29815,7 +29815,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>59, 61</value>
   </data>
   <data name="pokemon5IVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon5IVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -29923,7 +29923,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>18, 61</value>
   </data>
   <data name="pokemon5IVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon5IVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -32983,7 +32983,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>56, 65</value>
   </data>
   <data name="pokemon6EVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon6EVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -33091,7 +33091,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>14, 63</value>
   </data>
   <data name="pokemon6EVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon6EVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -36097,7 +36097,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>59, 61</value>
   </data>
   <data name="pokemon6IVsSPATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>40, 15</value>
   </data>
   <data name="pokemon6IVsSPATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -36205,7 +36205,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>18, 61</value>
   </data>
   <data name="pokemon6IVsATK_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
+    <value>28, 15</value>
   </data>
   <data name="pokemon6IVsATK_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -39006,6 +39006,33 @@ Use the buttons below or click the Add button to add your own item.</value>
   <data name="&gt;&gt;pg_pokemon.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="lbl_Version.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Version.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 121</value>
+  </data>
+  <data name="lbl_Version.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 15</value>
+  </data>
+  <data name="lbl_Version.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbl_Version.Text" xml:space="preserve">
+    <value>Version x.x.x-x</value>
+  </data>
+  <data name="&gt;&gt;lbl_Version.Name" xml:space="preserve">
+    <value>lbl_Version</value>
+  </data>
+  <data name="&gt;&gt;lbl_Version.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Version.Parent" xml:space="preserve">
+    <value>pg_about</value>
+  </data>
+  <data name="&gt;&gt;lbl_Version.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>513, 240</value>
   </data>
@@ -39028,7 +39055,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pg_about</value>
   </data>
   <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="lang_cmb.Items" xml:space="preserve">
     <value>English</value>
@@ -39055,7 +39082,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pg_about</value>
   </data>
   <data name="&gt;&gt;lang_cmb.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lang_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -39082,7 +39109,7 @@ Use the buttons below or click the Add button to add your own item.</value>
     <value>pg_about</value>
   </data>
   <data name="&gt;&gt;lang_lbl.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>513, 368</value>
@@ -39109,7 +39136,7 @@ This is a non-profit fan-made tool. No copyright infringements intended. Please 
     <value>pg_about</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="licenseText_lbl.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 159</value>
@@ -39153,7 +39180,7 @@ SOFTWARE.</value>
     <value>pg_about</value>
   </data>
   <data name="&gt;&gt;licenseText_lbl.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 6</value>
@@ -39177,7 +39204,7 @@ SOFTWARE.</value>
     <value>pg_about</value>
   </data>
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="aboutInfo_lbl.Location" type="System.Drawing.Point, System.Drawing">
     <value>309, 41</value>
@@ -39202,7 +39229,7 @@ This tool is free and open-source. It is built so you can build your own teams i
     <value>pg_about</value>
   </data>
   <data name="&gt;&gt;aboutInfo_lbl.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="copyright_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -39229,7 +39256,7 @@ This tool is free and open-source. It is built so you can build your own teams i
     <value>pg_about</value>
   </data>
   <data name="&gt;&gt;copyright_lbl.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="aboutHeaderAuthor_lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -39259,7 +39286,7 @@ This tool is free and open-source. It is built so you can build your own teams i
     <value>pg_about</value>
   </data>
   <data name="&gt;&gt;aboutHeaderAuthor_lbl.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="pg_about.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
@@ -39341,6 +39368,12 @@ This tool is free and open-source. It is built so you can build your own teams i
   </data>
   <data name="GeneratePreviewToolStripMenuItem.Text" xml:space="preserve">
     <value>Generate/Preview</value>
+  </data>
+  <data name="ReportIssueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="ReportIssueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Report Issue</value>
   </data>
   <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -39928,6 +39961,12 @@ This tool is free and open-source. It is built so you can build your own teams i
     <value>GeneratePreviewToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;GeneratePreviewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReportIssueToolStripMenuItem.Name" xml:space="preserve">
+    <value>ReportIssueToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ReportIssueToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

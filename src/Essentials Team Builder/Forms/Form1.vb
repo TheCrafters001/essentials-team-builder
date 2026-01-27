@@ -478,6 +478,9 @@ Public Class Form1
         ' Copyright
         copyright_lbl.Text = My.Application.Info.Copyright
 
+        ' Version
+        lbl_Version.Text = "Version: " & My.Application.Info.Version.ToString()
+
         ' Load this from startup
         lang_cmb.SelectedIndex = My.Settings.Lang
 
@@ -554,5 +557,14 @@ Public Class Form1
             InitializeComponent()
             Form1_Activated(Nothing, Nothing)
         End If
+    End Sub
+
+    Private Sub ReportIssueToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportIssueToolStripMenuItem.Click
+        Dim issueReport As New ProcessStartInfo
+
+        issueReport.FileName = "https://github.com/TheCrafters001/essentials-team-builder/issues/new/choose"
+        issueReport.UseShellExecute = True
+
+        Process.Start(issueReport)
     End Sub
 End Class

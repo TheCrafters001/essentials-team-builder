@@ -453,6 +453,8 @@ Partial Class Form1
         aboutHeaderAuthor_lbl = New Label()
         MenuStrip1 = New MenuStrip()
         GeneratePreviewToolStripMenuItem = New ToolStripMenuItem()
+        ReportIssueToolStripMenuItem = New ToolStripMenuItem()
+        lbl_Version = New Label()
         editor_grp.SuspendLayout()
         editor_tab.SuspendLayout()
         pg_trainer.SuspendLayout()
@@ -3304,6 +3306,7 @@ Partial Class Form1
         ' 
         ' pg_about
         ' 
+        pg_about.Controls.Add(lbl_Version)
         pg_about.Controls.Add(Button1)
         pg_about.Controls.Add(lang_cmb)
         pg_about.Controls.Add(lang_lbl)
@@ -3370,7 +3373,7 @@ Partial Class Form1
         ' 
         ' MenuStrip1
         ' 
-        MenuStrip1.Items.AddRange(New ToolStripItem() {GeneratePreviewToolStripMenuItem})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {GeneratePreviewToolStripMenuItem, ReportIssueToolStripMenuItem})
         resources.ApplyResources(MenuStrip1, "MenuStrip1")
         MenuStrip1.Name = "MenuStrip1"
         ' 
@@ -3378,6 +3381,16 @@ Partial Class Form1
         ' 
         GeneratePreviewToolStripMenuItem.Name = "GeneratePreviewToolStripMenuItem"
         resources.ApplyResources(GeneratePreviewToolStripMenuItem, "GeneratePreviewToolStripMenuItem")
+        ' 
+        ' ReportIssueToolStripMenuItem
+        ' 
+        ReportIssueToolStripMenuItem.Name = "ReportIssueToolStripMenuItem"
+        resources.ApplyResources(ReportIssueToolStripMenuItem, "ReportIssueToolStripMenuItem")
+        ' 
+        ' lbl_Version
+        ' 
+        resources.ApplyResources(lbl_Version, "lbl_Version")
+        lbl_Version.Name = "lbl_Version"
         ' 
         ' Form1
         ' 
@@ -3936,4 +3949,6 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents IVStatsNoteHeader_lbl As Label
     Friend WithEvents IVStatsNote_lbl As Label
+    Friend WithEvents ReportIssueToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lbl_Version As Label
 End Class
