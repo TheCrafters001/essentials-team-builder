@@ -52,7 +52,7 @@ Public Class Generator
         Dim gender As String = If(pkmnGender <> "Random", Indent & "Gender = " & pkmnGender & vbCrLf, "")
 
         ' Ability = ability
-        Dim pkmnAbility As String = If(Not String.IsNullOrEmpty(ability), Indent & "Item = " & ability & vbCrLf, "")
+        Dim pkmnAbility As String = If(Not String.IsNullOrEmpty(ability), Indent & "Ability = " & ability & vbCrLf, "")
 
         ' Moves = Move1,Move2,Move3,Move4
         Dim MoveString As String = ""
